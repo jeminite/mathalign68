@@ -1,0 +1,12 @@
+{
+  "name": "mathalign68",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test harness for the MathAlign68 class-results engine. The site itself has no build step.",
+  "scripts": {
+    "test": "node tools/test_engine.js && node tools/test_render.js"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

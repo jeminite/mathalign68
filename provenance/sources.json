@@ -1,0 +1,173 @@
+{
+  "files": {
+    "2023-released-items-math-g6.pdf": {
+      "bytes": 2757971,
+      "fetched": "2026-09-09",
+      "grade": 6,
+      "kind": "released",
+      "pages": 34,
+      "path": "sources/2023-released-items-math-g6.pdf",
+      "sha256": "ef605c9fcefcfd9fcf9f4320fc72ea9921fe04e7f6303e800791f017fb5560d4",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-released-items-math-g6.pdf",
+      "year": 2023
+    },
+    "2023-released-items-math-g7.pdf": {
+      "bytes": 2763624,
+      "fetched": "2026-09-09",
+      "grade": 7,
+      "kind": "released",
+      "pages": 35,
+      "path": "sources/2023-released-items-math-g7.pdf",
+      "sha256": "eaa121ccdb02fa0dfe2ef9cac0f2564b036e5cbc6ee706474e9e5fb2e89ffb32",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-released-items-math-g7.pdf",
+      "year": 2023
+    },
+    "2023-released-items-math-g8.pdf": {
+      "bytes": 2741494,
+      "fetched": "2026-09-09",
+      "grade": 8,
+      "kind": "released",
+      "pages": 36,
+      "path": "sources/2023-released-items-math-g8.pdf",
+      "sha256": "81f80d3561f525988c0e454f8ccde3cba20789d837c050c9af756fc2a388be90",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-released-items-math-g8.pdf",
+      "year": 2023
+    },
+    "2024-released-items-math-g6.pdf": {
+      "bytes": 2290731,
+      "fetched": "2026-09-09",
+      "grade": 6,
+      "kind": "released",
+      "pages": 34,
+      "path": "sources/2024-released-items-math-g6.pdf",
+      "sha256": "864f848eb5e47e9f38c98cdb43944a191228f9f8b6cf698c3e33ff7d616e9c56",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "year": 2024
+    },
+    "2024-released-items-math-g7.pdf": {
+      "bytes": 2214985,
+      "fetched": "2026-09-09",
+      "grade": 7,
+      "kind": "released",
+      "pages": 36,
+      "path": "sources/2024-released-items-math-g7.pdf",
+      "sha256": "408c3e67ad9928d081858bbf0c37a5875a1bde243ddcd6be38c9ddb8a9684737",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "year": 2024
+    },
+    "2024-released-items-math-g8.pdf": {
+      "bytes": 2263453,
+      "fetched": "2026-09-09",
+      "grade": 8,
+      "kind": "released",
+      "pages": 37,
+      "path": "sources/2024-released-items-math-g8.pdf",
+      "sha256": "0b169e962dea3eb1e94963c3081070d7d23ee5b90931bfe60aeab8f6e15f958e",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "year": 2024
+    },
+    "2025-released-items-math-g6.pdf": {
+      "bytes": 2056136,
+      "fetched": "2026-09-09",
+      "grade": 6,
+      "kind": "released",
+      "pages": 38,
+      "path": "sources/2025-released-items-math-g6.pdf",
+      "sha256": "362d7383ccd2f0a298d3ad9b77af75fa54fbced08ee0b09637640d7dcf7922e2",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-released-items-math-g6.pdf",
+      "year": 2025
+    },
+    "2025-released-items-math-g7.pdf": {
+      "bytes": 2047851,
+      "fetched": "2026-09-09",
+      "grade": 7,
+      "kind": "released",
+      "pages": 37,
+      "path": "sources/2025-released-items-math-g7.pdf",
+      "sha256": "ba5f1c8a033917461c796005c2f9a7a54a8cd610cec884bbafe525e3cdcac5a2",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-released-items-math-g7.pdf",
+      "year": 2025
+    },
+    "2025-released-items-math-g8.pdf": {
+      "bytes": 2083374,
+      "fetched": "2026-09-09",
+      "grade": 8,
+      "kind": "released",
+      "pages": 38,
+      "path": "sources/2025-released-items-math-g8.pdf",
+      "sha256": "090b09d8f1b40a59251c0e87a21459941e806778214e9cc9c3bf56f265a8b2c6",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-released-items-math-g8.pdf",
+      "year": 2025
+    },
+    "2026-released-items-math-g6.pdf": {
+      "bytes": 1515582,
+      "fetched": "2026-09-09",
+      "grade": 6,
+      "kind": "released",
+      "pages": 34,
+      "path": "sources/2026-released-items-math-g6.pdf",
+      "sha256": "acfa64d6f3108a975f4c30768a716453f622a72641616aad6fd8f9504f0686b3",
+      "url": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g6.pdf",
+      "year": 2026
+    },
+    "2026-released-items-math-g7.pdf": {
+      "bytes": 1647599,
+      "fetched": "2026-09-09",
+      "grade": 7,
+      "kind": "released",
+      "pages": 38,
+      "path": "sources/2026-released-items-math-g7.pdf",
+      "sha256": "8c6be4db568fc9541fc233dd8231c1fba1eac7ad1611fbdee72e15e97e65ee28",
+      "url": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g7.pdf",
+      "year": 2026
+    },
+    "2026-released-items-math-g8.pdf": {
+      "bytes": 1672442,
+      "fetched": "2026-09-09",
+      "grade": 8,
+      "kind": "released",
+      "pages": 42,
+      "path": "sources/2026-released-items-math-g8.pdf",
+      "sha256": "040913393be8b91dd726bfb21a6d5a1e3f9d5ce7b7e97cea2a16800f9c2273ca",
+      "url": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g8.pdf",
+      "year": 2026
+    },
+    "3-8-educator-guide-math.pdf": {
+      "bytes": 954910,
+      "fetched": "2026-09-09",
+      "grade": null,
+      "kind": "guide",
+      "pages": 36,
+      "path": "sources/3-8-educator-guide-math.pdf",
+      "sha256": "9b62af30a706a0a698e254da3bf03051833b4b174af50696444948fba5aade1d",
+      "url": "https://www.nysed.gov/sites/default/files/programs/state-assessment/3-8-educator-guide-math.pdf",
+      "year": null
+    },
+    "no-scoring-g6-2021": {
+      "grade": 6,
+      "kind": "scoring",
+      "reason": "NYSED published no scoring materials for 2021",
+      "url": null,
+      "year": 2021
+    },
+    "no-scoring-g7-2021": {
+      "grade": 7,
+      "kind": "scoring",
+      "reason": "NYSED published no scoring materials for 2021",
+      "url": null,
+      "year": 2021
+    },
+    "no-scoring-g8-2021": {
+      "grade": 8,
+      "kind": "scoring",
+      "reason": "NYSED published no scoring materials for 2021",
+      "url": null,
+      "year": 2021
+    }
+  },
+  "meta": {
+    "generatedBy": "tools/fetch_sources.py",
+    "note": "Every source PDF, its URL and its sha256. preflight.py fails if a local file no longer matches its recorded hash.",
+    "updated": "2026-09-09"
+  }
+}

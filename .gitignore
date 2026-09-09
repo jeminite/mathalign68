@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+# This project contains no student data. Class results live only in each
+# teacher's own browser -- site/analyze/ never uploads a file -- and preflight
+# aborts the deploy if any student-derived field reaches site/.
+#
+# If you ever find yourself adding a rule here to exclude student data,
+# something has been put in the wrong folder. Move it instead.
+# ---------------------------------------------------------------------------
+
+# Scoring-materials PDFs: ~10MB each, 12 of them, and every page is a scanned
+# image. Nothing in the build reads them; tools/fetch_sources.py --scoring
+# pulls them on demand for the Phase 4 exemplar harvest.
+sources/scoring/
+
+# Housekeeping
+.DS_Store
+__pycache__/
+*.pyc
+~$*
+
+# npm packages for the test harness -- reinstall with: npm install
+node_modules/
+package-lock.json
+
+# Netlify CLI state
+.netlify/
+
+# Editor backups -- local working files, not part of the project history
+provenance/backups/

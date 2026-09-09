@@ -1,0 +1,2260 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_standards.py",
+    "generated": "2026-09-09",
+    "source": "sources/3-8-educator-guide-math.pdf",
+    "note": "GENERATED. Re-run the extractor rather than hand-editing. `statement` is null throughout: the guide publishes cluster descriptions, not per-standard wording. Use clusterText, and do not copy it into statement.",
+    "standardsEra": "nextgen",
+    "codeShape": "NY-<grade>.<DOMAIN>.<number><optional letter> -- grade digit first, no cluster letter. A different family from RegentsAlign's AI-<DOMAIN>.<number> Algebra I codes.",
+    "postTestFlagSources": [
+      "grade-chart Post-Test Standard column (X marks)",
+      "Grade N Post-Test Standards Assessed in Grade N+1 tables"
+    ],
+    "postTestLegend": "The guide's own key for the X column: \"X = Standards designated for instruction in May-to-June\". That is why these standards are not assessed in their own grade -- they are taught after the test is given.",
+    "domains": {
+      "OA": "Operations and Algebraic Thinking",
+      "NBT": "Number and Operations in Base Ten",
+      "NF": "Number and Operations - Fractions",
+      "MD": "Measurement and Data",
+      "RP": "Ratios and Proportional Relationships",
+      "NS": "The Number System",
+      "EE": "Expressions, Equations, and Inequalities",
+      "F": "Functions",
+      "G": "Geometry",
+      "SP": "Statistics and Probability"
+    },
+    "mapDomainAliases": {
+      "EE": "Expressions and Equations"
+    }
+  },
+  "postTestTables": {
+    "5": {
+      "testedInGrade": 6,
+      "codes": [
+        "NY-5.G.1",
+        "NY-5.G.2",
+        "NY-5.OA.1",
+        "NY-5.OA.2",
+        "NY-5.OA.3"
+      ]
+    },
+    "6": {
+      "testedInGrade": 7,
+      "codes": [
+        "NY-6.SP.1a",
+        "NY-6.SP.1b",
+        "NY-6.SP.1c",
+        "NY-6.SP.2",
+        "NY-6.SP.3",
+        "NY-6.SP.4",
+        "NY-6.SP.5a",
+        "NY-6.SP.5b",
+        "NY-6.SP.5c",
+        "NY-6.SP.5d",
+        "NY-6.SP.6",
+        "NY-6.SP.7",
+        "NY-6.SP.8a",
+        "NY-6.SP.8b"
+      ]
+    },
+    "7": {
+      "testedInGrade": 8,
+      "codes": [
+        "NY-7.G.2",
+        "NY-7.G.3",
+        "NY-7.G.4",
+        "NY-7.G.5",
+        "NY-7.G.6"
+      ]
+    }
+  },
+  "standards": {
+    "NY-5.G.1": {
+      "code": "NY-5.G.1",
+      "grade": 5,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Graph points on the coordinate plane to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 6,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-5.G.2": {
+      "code": "NY-5.G.2",
+      "grade": 5,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Graph points on the coordinate plane to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 6,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-5.G.3": {
+      "code": "NY-5.G.3",
+      "grade": 5,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Classify two-dimensional figures into categories based on their properties.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.G.4": {
+      "code": "NY-5.G.4",
+      "grade": 5,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "X = Standards designated",
+      "clusterText": "Classify two-dimensional figures into categories based on their properties.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.1": {
+      "code": "NY-5.MD.1",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Convert like measurement units within a given measurement system.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.2": {
+      "code": "NY-5.MD.2",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Represent and interpret data.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.3a": {
+      "code": "NY-5.MD.3a",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.3b": {
+      "code": "NY-5.MD.3b",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.4": {
+      "code": "NY-5.MD.4",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.5a": {
+      "code": "NY-5.MD.5a",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.5b": {
+      "code": "NY-5.MD.5b",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.MD.5c": {
+      "code": "NY-5.MD.5c",
+      "grade": 5,
+      "domain": "MD",
+      "domainName": "Measurement and Data",
+      "domainNameInGuide": "Measurement and Data",
+      "clusterText": "Geometric measurement: understand concepts of volume and relate volume to multiplication and to addition.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.1": {
+      "code": "NY-5.NBT.1",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Operations and Algebraic Thinking",
+      "clusterText": "Analyze patterns and relationships.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.2": {
+      "code": "NY-5.NBT.2",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Understand place value system.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.3a": {
+      "code": "NY-5.NBT.3a",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Understand place value system.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.3b": {
+      "code": "NY-5.NBT.3b",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Understand place value system.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.4": {
+      "code": "NY-5.NBT.4",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Perform operations with multi-digit whole numbers and with decimals to hundredths.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.5": {
+      "code": "NY-5.NBT.5",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Perform operations with multi-digit whole numbers and with decimals to hundredths.",
+      "statement": null,
+      "note": "Fluency",
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.6": {
+      "code": "NY-5.NBT.6",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Perform operations with multi-digit whole numbers and with decimals to hundredths.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NBT.7": {
+      "code": "NY-5.NBT.7",
+      "grade": 5,
+      "domain": "NBT",
+      "domainName": "Number and Operations in Base Ten",
+      "domainNameInGuide": "Number and Operations in Base Ten",
+      "clusterText": "Perform operations with multi-digit whole numbers and with decimals to hundredths.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.1": {
+      "code": "NY-5.NF.1",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Use equivalent fractions as a strategy to add and subtract fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.2": {
+      "code": "NY-5.NF.2",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Use equivalent fractions as a strategy to add and subtract fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.3": {
+      "code": "NY-5.NF.3",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.4a": {
+      "code": "NY-5.NF.4a",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.4b": {
+      "code": "NY-5.NF.4b",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.5a": {
+      "code": "NY-5.NF.5a",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.5b": {
+      "code": "NY-5.NF.5b",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.6": {
+      "code": "NY-5.NF.6",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.7a": {
+      "code": "NY-5.NF.7a",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.7b": {
+      "code": "NY-5.NF.7b",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.NF.7c": {
+      "code": "NY-5.NF.7c",
+      "grade": 5,
+      "domain": "NF",
+      "domainName": "Number and Operations - Fractions",
+      "domainNameInGuide": "Number and Operations\u2014 Fractions",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to multiply and divide fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        5
+      ]
+    },
+    "NY-5.OA.1": {
+      "code": "NY-5.OA.1",
+      "grade": 5,
+      "domain": "OA",
+      "domainName": "Operations and Algebraic Thinking",
+      "domainNameInGuide": "Operations and Algebraic Thinking",
+      "clusterText": "Write and interpret numerical expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 6,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-5.OA.2": {
+      "code": "NY-5.OA.2",
+      "grade": 5,
+      "domain": "OA",
+      "domainName": "Operations and Algebraic Thinking",
+      "domainNameInGuide": "Operations and Algebraic Thinking",
+      "clusterText": "Write and interpret numerical expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 6,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-5.OA.3": {
+      "code": "NY-5.OA.3",
+      "grade": 5,
+      "domain": "OA",
+      "domainName": "Operations and Algebraic Thinking",
+      "domainNameInGuide": "Operations and Algebraic Thinking",
+      "clusterText": "Analyze patterns and relationships.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 6,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.1": {
+      "code": "NY-6.EE.1",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.2a": {
+      "code": "NY-6.EE.2a",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.2b": {
+      "code": "NY-6.EE.2b",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.2c": {
+      "code": "NY-6.EE.2c",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.3": {
+      "code": "NY-6.EE.3",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.4": {
+      "code": "NY-6.EE.4",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Apply and extend previous understandings of arithmetic to algebraic expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.5": {
+      "code": "NY-6.EE.5",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Reason about and solve one-variable equations and inequalities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.6": {
+      "code": "NY-6.EE.6",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Reason about and solve one-variable equations and inequalities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.7": {
+      "code": "NY-6.EE.7",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Reason about and solve one-variable equations and inequalities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.8": {
+      "code": "NY-6.EE.8",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Represent and analyze quantitative relationships between dependent and independent variables.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.EE.9": {
+      "code": "NY-6.EE.9",
+      "grade": 6,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Represent and analyze quantitative relationships between dependent and independent variables.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.G.1": {
+      "code": "NY-6.G.1",
+      "grade": 6,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Represent and analyze quantitative relationships between dependent and independent variables.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.G.2": {
+      "code": "NY-6.G.2",
+      "grade": 6,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-world and mathematical problems involving area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.G.3": {
+      "code": "NY-6.G.3",
+      "grade": 6,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-world and mathematical problems involving area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.G.4": {
+      "code": "NY-6.G.4",
+      "grade": 6,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-world and mathematical problems involving area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.G.5": {
+      "code": "NY-6.G.5",
+      "grade": 6,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-world and mathematical problems involving area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.1": {
+      "code": "NY-6.NS.1",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Apply and extend previous understandings of multiplication and division to divide fractions by fractions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.2": {
+      "code": "NY-6.NS.2",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Compute fluently with multi-digit numbers and find common factors and multiples.",
+      "statement": null,
+      "note": "Fluency",
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.3": {
+      "code": "NY-6.NS.3",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Compute fluently with multi-digit numbers and find common factors and multiples.",
+      "statement": null,
+      "note": "Fluency",
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.4": {
+      "code": "NY-6.NS.4",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Compute fluently with multi-digit numbers and find common factors and multiples.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.5": {
+      "code": "NY-6.NS.5",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.6a": {
+      "code": "NY-6.NS.6a",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.6b": {
+      "code": "NY-6.NS.6b",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.6c": {
+      "code": "NY-6.NS.6c",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.7a": {
+      "code": "NY-6.NS.7a",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.7b": {
+      "code": "NY-6.NS.7b",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.7c": {
+      "code": "NY-6.NS.7c",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.7d": {
+      "code": "NY-6.NS.7d",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.NS.8": {
+      "code": "NY-6.NS.8",
+      "grade": 6,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of numbers to the system of rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.1": {
+      "code": "NY-6.RP.1",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.2": {
+      "code": "NY-6.RP.2",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.3a": {
+      "code": "NY-6.RP.3a",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.3b": {
+      "code": "NY-6.RP.3b",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.3c": {
+      "code": "NY-6.RP.3c",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.RP.3d": {
+      "code": "NY-6.RP.3d",
+      "grade": 6,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Understand ratio concepts and use ratio reasoning to solve problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        6
+      ]
+    },
+    "NY-6.SP.1a": {
+      "code": "NY-6.SP.1a",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Develop understanding of statistical variability.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.1b": {
+      "code": "NY-6.SP.1b",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Develop understanding of statistical variability.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.1c": {
+      "code": "NY-6.SP.1c",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Develop understanding of statistical variability.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.2": {
+      "code": "NY-6.SP.2",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Develop understanding of statistical variability.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.3": {
+      "code": "NY-6.SP.3",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Develop understanding of statistical variability.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.4": {
+      "code": "NY-6.SP.4",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Summarize and describe distributions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.5a": {
+      "code": "NY-6.SP.5a",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Summarize and describe distributions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.5b": {
+      "code": "NY-6.SP.5b",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Summarize and describe distributions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.5c": {
+      "code": "NY-6.SP.5c",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Summarize and describe distributions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.5d": {
+      "code": "NY-6.SP.5d",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Summarize and describe distributions.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.6": {
+      "code": "NY-6.SP.6",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.7": {
+      "code": "NY-6.SP.7",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.8a": {
+      "code": "NY-6.SP.8a",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "X = Standards designated",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-6.SP.8b": {
+      "code": "NY-6.SP.8b",
+      "grade": 6,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "X = Standards designated",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 7,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.EE.1": {
+      "code": "NY-7.EE.1",
+      "grade": 7,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Use properties of operations to generate equivalent expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.EE.2": {
+      "code": "NY-7.EE.2",
+      "grade": 7,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Use properties of operations to generate equivalent expressions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.EE.3": {
+      "code": "NY-7.EE.3",
+      "grade": 7,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Solve real-life and mathematical problems using numerical and algebraic expressions, equations, and inequalities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.EE.4a": {
+      "code": "NY-7.EE.4a",
+      "grade": 7,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Solve real-life and mathematical problems using numerical and algebraic expressions, equations, and inequalities.",
+      "statement": null,
+      "note": "Fluency",
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.EE.4b": {
+      "code": "NY-7.EE.4b",
+      "grade": 7,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Solve real-life and mathematical problems using numerical and algebraic expressions, equations, and inequalities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.G.1": {
+      "code": "NY-7.G.1",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Draw, construct, and describe geometrical figures and describe the relationships between them.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.G.2": {
+      "code": "NY-7.G.2",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Draw, construct, and describe geometrical figures and describe the relationships between them.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 8,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-7.G.3": {
+      "code": "NY-7.G.3",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Draw, construct, and describe geometrical figures and describe the relationships between them.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 8,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-7.G.4": {
+      "code": "NY-7.G.4",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 8,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-7.G.5": {
+      "code": "NY-7.G.5",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 8,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-7.G.6": {
+      "code": "NY-7.G.6",
+      "grade": 7,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Solve real-life and mathematical problems involving angle measure, area, surface area, and volume.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": 8,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-7.NS.1a": {
+      "code": "NY-7.NS.1a",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.1b": {
+      "code": "NY-7.NS.1b",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.1c": {
+      "code": "NY-7.NS.1c",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.1d": {
+      "code": "NY-7.NS.1d",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.2a": {
+      "code": "NY-7.NS.2a",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.2b": {
+      "code": "NY-7.NS.2b",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.2c": {
+      "code": "NY-7.NS.2c",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.2d": {
+      "code": "NY-7.NS.2d",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.NS.3": {
+      "code": "NY-7.NS.3",
+      "grade": 7,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Apply and extend previous understandings of operations with fractions to add, subtract, multiply, and divide rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.1": {
+      "code": "NY-7.RP.1",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.2a": {
+      "code": "NY-7.RP.2a",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.2b": {
+      "code": "NY-7.RP.2b",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.2c": {
+      "code": "NY-7.RP.2c",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.2d": {
+      "code": "NY-7.RP.2d",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.RP.3": {
+      "code": "NY-7.RP.3",
+      "grade": 7,
+      "domain": "RP",
+      "domainName": "Ratios and Proportional Relationships",
+      "domainNameInGuide": "Ratios and Proportional Relationships",
+      "clusterText": "Analyze proportional relationships and use them to solve real-world and mathematical problems.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.1": {
+      "code": "NY-7.SP.1",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Draw informal comparative inferences about two populations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.3": {
+      "code": "NY-7.SP.3",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Draw informal comparative inferences about two populations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.4": {
+      "code": "NY-7.SP.4",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Draw informal comparative inferences about two populations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.8a": {
+      "code": "NY-7.SP.8a",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.8b": {
+      "code": "NY-7.SP.8b",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-7.SP.8c": {
+      "code": "NY-7.SP.8c",
+      "grade": 7,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate chance processes and develop, use, and evaluate probability models.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        7
+      ]
+    },
+    "NY-8.EE.1": {
+      "code": "NY-8.EE.1",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Know that there are numbers that are not rational, and approximate them by rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.2": {
+      "code": "NY-8.EE.2",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Work with radicals and integer exponents.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.3": {
+      "code": "NY-8.EE.3",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Work with radicals and integer exponents.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": null,
+      "assessedOnGrades": [],
+      "postTestNote": "taught May-to-June; no grades 3-8 test assesses it (there is no grade 9 State mathematics test)"
+    },
+    "NY-8.EE.4": {
+      "code": "NY-8.EE.4",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Understand the connections between proportional relationships, lines, and linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": null,
+      "assessedOnGrades": [],
+      "postTestNote": "taught May-to-June; no grades 3-8 test assesses it (there is no grade 9 State mathematics test)"
+    },
+    "NY-8.EE.5": {
+      "code": "NY-8.EE.5",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Understand the connections between proportional relationships, lines, and linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.6": {
+      "code": "NY-8.EE.6",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Understand the connections between proportional relationships, lines, and linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.7a": {
+      "code": "NY-8.EE.7a",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Analyze and solve linear equations and pairs of simultaneous linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.7b": {
+      "code": "NY-8.EE.7b",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Analyze and solve linear equations and pairs of simultaneous linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.EE.8a": {
+      "code": "NY-8.EE.8a",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Analyze and solve linear equations and pairs of simultaneous linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": null,
+      "assessedOnGrades": [],
+      "postTestNote": "taught May-to-June; no grades 3-8 test assesses it (there is no grade 9 State mathematics test)"
+    },
+    "NY-8.EE.8b": {
+      "code": "NY-8.EE.8b",
+      "grade": 8,
+      "domain": "EE",
+      "domainName": "Expressions, Equations, and Inequalities",
+      "domainNameInGuide": "Expressions, Equations, and Inequalities",
+      "clusterText": "Analyze and solve linear equations and pairs of simultaneous linear equations.",
+      "statement": null,
+      "note": null,
+      "postTest": true,
+      "testedInGrade": null,
+      "assessedOnGrades": [],
+      "postTestNote": "taught May-to-June; no grades 3-8 test assesses it (there is no grade 9 State mathematics test)"
+    },
+    "NY-8.F.1": {
+      "code": "NY-8.F.1",
+      "grade": 8,
+      "domain": "F",
+      "domainName": "Functions",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Define, evaluate, and compare functions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.F.2": {
+      "code": "NY-8.F.2",
+      "grade": 8,
+      "domain": "F",
+      "domainName": "Functions",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Define, evaluate, and compare functions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.F.3": {
+      "code": "NY-8.F.3",
+      "grade": 8,
+      "domain": "F",
+      "domainName": "Functions",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Define, evaluate, and compare functions.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.F.4": {
+      "code": "NY-8.F.4",
+      "grade": 8,
+      "domain": "F",
+      "domainName": "Functions",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Use functions to model relationships between quantities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.F.5": {
+      "code": "NY-8.F.5",
+      "grade": 8,
+      "domain": "F",
+      "domainName": "Functions",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Use functions to model relationships between quantities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.1a": {
+      "code": "NY-8.G.1a",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Use functions to model relationships between quantities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.1b": {
+      "code": "NY-8.G.1b",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Use functions to model relationships between quantities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.1c": {
+      "code": "NY-8.G.1c",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Functions",
+      "clusterText": "Use functions to model relationships between quantities.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.2": {
+      "code": "NY-8.G.2",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand congruence and similarity using physical models, transparencies, or geometry software.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.3": {
+      "code": "NY-8.G.3",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand congruence and similarity using physical models, transparencies, or geometry software.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.4": {
+      "code": "NY-8.G.4",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand congruence and similarity using physical models, transparencies, or geometry software.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.5": {
+      "code": "NY-8.G.5",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand congruence and similarity using physical models, transparencies, or geometry software.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.6": {
+      "code": "NY-8.G.6",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand and apply the Pythagorean Theorem.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.7": {
+      "code": "NY-8.G.7",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand and apply the Pythagorean Theorem.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.8": {
+      "code": "NY-8.G.8",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Geometry",
+      "clusterText": "Understand and apply the Pythagorean Theorem.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.G.9": {
+      "code": "NY-8.G.9",
+      "grade": 8,
+      "domain": "G",
+      "domainName": "Geometry",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Solve real-world and mathematical problems involving volume of cylinders, cones, and spheres.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.NS.1": {
+      "code": "NY-8.NS.1",
+      "grade": 8,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Know that there are numbers that are not rational, and approximate them by rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.NS.2": {
+      "code": "NY-8.NS.2",
+      "grade": 8,
+      "domain": "NS",
+      "domainName": "The Number System",
+      "domainNameInGuide": "The Number System",
+      "clusterText": "Know that there are numbers that are not rational, and approximate them by rational numbers.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.SP.1": {
+      "code": "NY-8.SP.1",
+      "grade": 8,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate patterns of association in bivariate data.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.SP.2": {
+      "code": "NY-8.SP.2",
+      "grade": 8,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate patterns of association in bivariate data.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    },
+    "NY-8.SP.3": {
+      "code": "NY-8.SP.3",
+      "grade": 8,
+      "domain": "SP",
+      "domainName": "Statistics and Probability",
+      "domainNameInGuide": "Statistics and Probability",
+      "clusterText": "Investigate patterns of association in bivariate data.",
+      "statement": null,
+      "note": null,
+      "postTest": false,
+      "testedInGrade": null,
+      "assessedOnGrades": [
+        8
+      ]
+    }
+  }
+}

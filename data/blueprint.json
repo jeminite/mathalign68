@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "note": "HAND-AUTHORED from the NYSED Grades 3-8 Mathematics Educator Guide. Every figure here is a published NYSED fact, not an inference -- except expectedReleasedItems, which is recorded from the extractor's own count at ingest and then hand-confirmed against the PDF. Nothing in this file is generated, and preflight reads its counts instead of holding literals of its own.",
+    "source": "sources/3-8-educator-guide-math.pdf",
+    "sourceUrl": "https://www.nysed.gov/sites/default/files/programs/state-assessment/3-8-educator-guide-math.pdf",
+    "standardsEra": "nextgen",
+    "releaseNote": "NYSED releases a portion of each test -- 'at least 75 percent of the test questions that appeared on the tests (including all constructed-response questions) that counted toward students' scores'. Item numbering therefore has gaps, and the gaps are the withheld items. The proportion released is not constant: 2023-2025 published noticeably fewer items than 2026, so any coverage figure must be read per year and never pooled without saying so.",
+    "fieldTestNote": "The per-session counts below include embedded field-test questions, which do not count toward a student's score and are not distinguishable to the student. So designedItems is the number of questions a student sees, not the number that is scored.",
+    "sessionNote": "Two sessions administered over two days, untimed within the school day."
+  },
+
+  "grades": {
+    "6": {
+      "designedItems": 46,
+      "totalCredits": 54,
+      "itemNumbering": {
+        "multipleChoice": [1, 36],
+        "constructedResponse": [37, 46],
+        "note": "All multiple-choice items are numbered before all constructed-response items, across both sessions. Verified against all four item maps."
+      },
+      "sessions": {
+        "1": {
+          "items": [1, 30],
+          "multipleChoice": 30,
+          "constructedResponse1Credit": 0,
+          "constructedResponse2Credit": 0,
+          "constructedResponse3Credit": 0,
+          "totalItems": 30,
+          "calculator": "none",
+          "averageMinutes": [80, 90]
+        },
+        "2": {
+          "items": [31, 46],
+          "multipleChoice": 6,
+          "constructedResponse1Credit": 3,
+          "constructedResponse2Credit": 6,
+          "constructedResponse3Credit": 1,
+          "totalItems": 16,
+          "calculator": "four-function with a square root key, or scientific",
+          "averageMinutes": [75, 85]
+        }
+      },
+      "domainBlueprint": {
+        "RP": [21, 30],
+        "NS": [17, 26],
+        "EE": [25, 43],
+        "G": [14, 24],
+        "SP": null
+      },
+      "domainBlueprintNote": "Statistics and Probability has no percent range for grade 6 because every standard in that domain is a post-test standard: it is taught in grade 6 and assessed on the grade 7 test. This is the single most consequential pacing fact in the guide for a 6th-grade teacher."
+    },
+
+    "7": {
+      "designedItems": 48,
+      "totalCredits": 56,
+      "itemNumbering": {
+        "multipleChoice": [1, 38],
+        "constructedResponse": [39, 48],
+        "note": "Verified against all four item maps."
+      },
+      "sessions": {
+        "1": {
+          "items": [1, 32],
+          "multipleChoice": 32,
+          "constructedResponse1Credit": 0,
+          "constructedResponse2Credit": 0,
+          "constructedResponse3Credit": 0,
+          "totalItems": 32,
+          "calculator": "scientific",
+          "averageMinutes": [80, 90]
+        },
+        "2": {
+          "items": [33, 48],
+          "multipleChoice": 6,
+          "constructedResponse1Credit": 3,
+          "constructedResponse2Credit": 6,
+          "constructedResponse3Credit": 1,
+          "totalItems": 16,
+          "calculator": "scientific",
+          "averageMinutes": [75, 85]
+        }
+      },
+      "domainBlueprint": {
+        "RP": [24, 33],
+        "NS": [16, 25],
+        "EE": [26, 39],
+        "G": [2, 7],
+        "SP": [12, 21]
+      },
+      "domainBlueprintNote": "Geometry is only 2-7% of the grade 7 test because most of the grade 7 Geometry domain is post-test and is assessed on the grade 8 test instead. The Statistics and Probability weight is largely carried by grade 6 post-test standards."
+    },
+
+    "8": {
+      "designedItems": 48,
+      "totalCredits": 56,
+      "itemNumbering": {
+        "multipleChoice": [1, 38],
+        "constructedResponse": [39, 48],
+        "note": "Verified against all four item maps."
+      },
+      "sessions": {
+        "1": {
+          "items": [1, 32],
+          "multipleChoice": 32,
+          "constructedResponse1Credit": 0,
+          "constructedResponse2Credit": 0,
+          "constructedResponse3Credit": 0,
+          "totalItems": 32,
+          "calculator": "scientific",
+          "averageMinutes": [80, 90]
+        },
+        "2": {
+          "items": [33, 48],
+          "multipleChoice": 6,
+          "constructedResponse1Credit": 3,
+          "constructedResponse2Credit": 6,
+          "constructedResponse3Credit": 1,
+          "totalItems": 16,
+          "calculator": "scientific",
+          "averageMinutes": [75, 85]
+        }
+      },
+      "domainBlueprint": {
+        "NS": [2, 9],
+        "EE": [28, 41],
+        "F": [16, 25],
+        "G": [28, 41],
+        "SP": [4, 11]
+      },
+      "domainBlueprintNote": "Grade 8 Geometry is weighted heavily in part because five grade 7 Geometry standards are post-test and assessed here. Note that many 8th graders at this school sit the Algebra I Regents instead of this test -- RegentsAlign covers that exam."
+    }
+  },
+
+  "itemTypes": {
+    "Multiple Choice": {
+      "credits": 1,
+      "choices": 4,
+      "note": "Four answer choices; distractors are based on plausible missteps."
+    },
+    "Constructed Response": {
+      "credits": [1, 2, 3],
+      "note": "1-credit: final answer only is scored. 2-credit: must show work or explain. 3-credit: two or more tasks, or one more extensive problem. Exactly one 3-credit item per test."
+    }
+  },
+
+  "tests": {
+    "g6-2023": { "grade": 6, "year": 2023, "expectedReleasedItems": null, "mapPages": null },
+    "g6-2024": { "grade": 6, "year": 2024, "expectedReleasedItems": null, "mapPages": null },
+    "g6-2025": { "grade": 6, "year": 2025, "expectedReleasedItems": null, "mapPages": null },
+    "g6-2026": { "grade": 6, "year": 2026, "expectedReleasedItems": null, "mapPages": null },
+    "g7-2023": { "grade": 7, "year": 2023, "expectedReleasedItems": null, "mapPages": null },
+    "g7-2024": { "grade": 7, "year": 2024, "expectedReleasedItems": null, "mapPages": null },
+    "g7-2025": { "grade": 7, "year": 2025, "expectedReleasedItems": null, "mapPages": null },
+    "g7-2026": { "grade": 7, "year": 2026, "expectedReleasedItems": null, "mapPages": null },
+    "g8-2023": { "grade": 8, "year": 2023, "expectedReleasedItems": null, "mapPages": null },
+    "g8-2024": { "grade": 8, "year": 2024, "expectedReleasedItems": null, "mapPages": null },
+    "g8-2025": { "grade": 8, "year": 2025, "expectedReleasedItems": null, "mapPages": null },
+    "g8-2026": { "grade": 8, "year": 2026, "expectedReleasedItems": null, "mapPages": null }
+  },
+
+  "knownDataDefects": [
+    {
+      "test": "g8-2024",
+      "what": "The item map prints NGLS.Math.Content.NY-NY-8.EE.6, duplicating the NY- prefix.",
+      "handling": "The extractor normalises it to NY-8.EE.6 and records the repair on the item rather than hiding it."
+    },
+    {
+      "test": "any",
+      "what": "Some standard cells carry trailing whitespace inside the code (e.g. 'NY-8.F.1 ').",
+      "handling": "Stripped during normalisation."
+    }
+  ]
+}
