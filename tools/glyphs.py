@@ -1,0 +1,349 @@
+#!/usr/bin/env python3
+"""
+Decode the mathematics in a released-items PDF from its vector glyph geometry.
+
+Shared library. `tools/label_glyphs.py` builds and labels the table;
+`tools/extract_items.py` uses it to decode.
+
+WHY THIS EXISTS
+Every numeral, variable and operator in the NYSED grades 3-8 released-items
+PDFs is drawn as vector outlines with no text layer. The prose IS text, so a
+stem extracts as a template with holes where its mathematics should be:
+
+    'charged Nicholas a one time fee of ' ... ' to rent shoes and ' ...
+
+The obvious fix is to render the page and read it with a vision model, but a
+model reading a page can silently drop or invent a term, and there is no way to
+tell from the output that it did. So instead: because each character is drawn as
+a path, two instances of the same character have the SAME path geometry.
+Normalise a path's points into its own bounding box, and you get a stable
+fingerprint per character shape. Label each distinct shape once and the whole
+document decodes deterministically -- and an unlabelled shape is a loud,
+locatable failure rather than a plausible guess.
+
+Measured on the 2026 grade 7 test: 2,001 glyph-sized paths reduce to a few dozen
+distinct shapes, and the twenty most common cover more than half of all
+instances.
+
+WHY CLUSTERING IS BY DISTANCE AND NOT BY HASH
+Exact hashing of rounded coordinates leaves about a quarter of fingerprints as
+singletons -- sub-pixel placement differences split one shape across two keys.
+On item 48 the dollar sign split in exactly that way while every digit hashed
+consistently. So a fingerprint is a coarse bucket key and matching inside a
+bucket is by geometric distance with a tolerance.
+
+WHAT IT REFUSES TO DO
+Guess. An unmatched shape decodes as None, the hole carries a crop path instead
+of a value, and preflight blocks the deploy. A wrong number that looks right is
+the only outcome worse than no number at all.
+"""
+
+import hashlib
+import json
+import os
+
+try:
+    import fitz
+except ImportError:  # pragma: no cover
+    raise SystemExit("PyMuPDF is required (poppler is not installed on this machine).")
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+TABLE = os.path.join(ROOT, "data", "glyphs.json")
+
+# A glyph on an 11pt line. Anything bigger is artwork, anything smaller is a
+# rule, a tick or a stray sub-pixel rectangle.
+MIN_W, MAX_W = 0.5, 14.0
+MIN_H, MAX_H = 0.5, 16.0
+
+# Points are normalised into the glyph's own bounding box, so distance is in
+# fractions of the glyph. 0.04 is four percent of a glyph's width.
+TOLERANCE = 0.04
+
+# A horizontal rule is the same shape whether it is a minus sign, a fraction
+# bar or an answer blank, so it cannot be labelled as a character. Label it
+# RULE and the decoder decides from what sits above and below it -- the same
+# rule RegentsAlign's build_fractions() uses, and for the same reason: without
+# it every stacked pair of glyphs becomes a fraction, or every fraction becomes
+# a subtraction.
+RULE = "@rule"
+
+# Inferring spaces from horizontal gaps works for digits and letters but not
+# for narrow punctuation: a period is positioned with enough side bearing that
+# the gap before it exceeds the threshold, publishing "$11 .98" and "1 .5".
+# These characters never take a space before them, and these never take one
+# after, regardless of the measured gap.
+NO_SPACE_BEFORE = set(".,)%")
+NO_SPACE_AFTER = set("($")
+
+# Glyphs whose bounding box is tiny in one dimension carry almost no shape
+# information -- a decimal point, a minus sign, a fraction bar. They are
+# separated by aspect ratio and size instead, so the tolerance above does not
+# collapse a period into a hyphen.
+DEGENERATE_MAX = 2.5
+
+
+def _points(drawing):
+    pts = []
+    for item in drawing["items"]:
+        for value in item[1:]:
+            if isinstance(value, fitz.Point):
+                pts.append((value.x, value.y))
+            elif isinstance(value, fitz.Rect):
+                pts.extend([(value.x0, value.y0), (value.x1, value.y1)])
+            elif isinstance(value, (int, float)):
+                pass
+    return pts
+
+
+def shape_of(drawing):
+    """A normalised shape descriptor, or None if this is not a glyph.
+
+    Returns {bucket, points, width, height, items, degenerate}. `bucket` is a
+    coarse hash used only to avoid comparing every shape against every other;
+    equality is decided by `points` distance.
+    """
+    rect = drawing["rect"]
+    w, h = rect.width, rect.height
+    if not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
+        return None
+    pts = _points(drawing)
+    if not pts:
+        return None
+
+    degenerate = w < DEGENERATE_MAX or h < DEGENERATE_MAX
+    if degenerate:
+        # Shape says little; size and proportion say everything.
+        norm = ()
+        bucket = "deg:%d:%.1f:%.1f" % (len(drawing["items"]), round(w, 1), round(h, 1))
+    else:
+        norm = tuple(sorted(((x - rect.x0) / w, (y - rect.y0) / h) for x, y in pts))
+        # Bucket on the item count plus a very coarse point signature, so two
+        # instances of one character land together even when their coordinates
+        # differ in the third decimal place.
+        coarse = tuple(sorted((round(a, 1), round(b, 1)) for a, b in norm))
+        bucket = hashlib.md5(
+            ("%d|%s" % (len(drawing["items"]), coarse)).encode()).hexdigest()[:10]
+
+    return {
+        "bucket": bucket,
+        "points": norm,
+        "width": round(w, 2),
+        "height": round(h, 2),
+        "items": len(drawing["items"]),
+        "degenerate": degenerate,
+    }
+
+
+def _distance(a, b):
+    """Mean point-to-point distance between two normalised shapes, or None if
+    they are not comparable."""
+    if a["degenerate"] != b["degenerate"]:
+        return None
+    if a["degenerate"]:
+        # Compare proportion and size rather than outline.
+        if a["items"] != b["items"]:
+            return None
+        dw = abs(a["width"] - b["width"])
+        dh = abs(a["height"] - b["height"])
+        return (dw + dh) / 2.0 if dw < 0.8 and dh < 0.8 else None
+    if len(a["points"]) != len(b["points"]):
+        return None
+    total = sum(abs(ax - bx) + abs(ay - by)
+                for (ax, ay), (bx, by) in zip(a["points"], b["points"]))
+    return total / (2.0 * len(a["points"]))
+
+
+class GlyphTable:
+    """Shape clusters and their labels, persisted to data/glyphs.json."""
+
+    def __init__(self, path=TABLE):
+        self.path = path
+        self.clusters = []          # [{id, bucket, shape, label, count, samples}]
+        self._by_bucket = {}
+        if os.path.exists(path):
+            self.load()
+
+    # ------------------------------------------------------------------ io
+
+    def load(self):
+        with open(self.path) as fh:
+            doc = json.load(fh)
+        self.clusters = doc["clusters"]
+        for c in self.clusters:
+            c["shape"]["points"] = tuple(tuple(p) for p in c["shape"]["points"])
+            self._by_bucket.setdefault(c["bucket"], []).append(c)
+
+    def save(self, note=None):
+        labelled = sum(1 for c in self.clusters if c["label"] is not None)
+        doc = {
+            "meta": {
+                "generatedBy": "tools/label_glyphs.py",
+                "note": note or (
+                    "Vector glyph shapes from the released-items PDFs, mapped to the "
+                    "characters they draw. HAND-LABELLED: a script builds the clusters, "
+                    "a person (or a vision pass that is then spot-checked) supplies the "
+                    "`label`. An unlabelled cluster makes its item fail to decode rather "
+                    "than decode wrongly."),
+                "clusters": len(self.clusters),
+                "labelled": labelled,
+                "instances": sum(c["count"] for c in self.clusters),
+                "tolerance": TOLERANCE,
+            },
+            "clusters": sorted(self.clusters, key=lambda c: -c["count"]),
+        }
+        os.makedirs(os.path.dirname(self.path), exist_ok=True)
+        with open(self.path, "w") as fh:
+            json.dump(doc, fh, indent=2)
+            fh.write("\n")
+
+    # ------------------------------------------------------------- matching
+
+    def find(self, shape):
+        """The cluster this shape belongs to, or None."""
+        best, best_d = None, None
+        for cand in self._by_bucket.get(shape["bucket"], []):
+            d = _distance(shape, cand["shape"])
+            if d is not None and d < TOLERANCE and (best_d is None or d < best_d):
+                best, best_d = cand, d
+        if best is not None:
+            return best
+        # A bucket is only a speed-up, not a guarantee: fall back to a full
+        # scan so a shape whose coarse signature drifted still matches.
+        for cand in self.clusters:
+            d = _distance(shape, cand["shape"])
+            if d is not None and d < TOLERANCE and (best_d is None or d < best_d):
+                best, best_d = cand, d
+        return best
+
+    def observe(self, shape, sample):
+        """Record a sighting, creating a cluster if the shape is new."""
+        found = self.find(shape)
+        if found is None:
+            found = {
+                "id": "g%03d" % (len(self.clusters) + 1),
+                "bucket": shape["bucket"],
+                "shape": shape,
+                "label": None,
+                "count": 0,
+                "samples": [],
+            }
+            self.clusters.append(found)
+            self._by_bucket.setdefault(shape["bucket"], []).append(found)
+        found["count"] += 1
+        if len(found["samples"]) < 4:
+            found["samples"].append(sample)
+        return found
+
+    def label_of(self, shape):
+        found = self.find(shape)
+        return found["label"] if found else None
+
+    # -------------------------------------------------------------- decoding
+
+    def decode(self, drawings):
+        """Drawings in reading order -> (html, unknown_count).
+
+        Whitespace is inferred from horizontal gaps: a gap wider than a third of
+        the median glyph width becomes a space, so `450x` and `450 x` stay
+        distinguishable. Rules are resolved into fractions or minus signs by
+        what sits above and below them.
+        """
+        glyphs = []
+        for dr in drawings:
+            shape = shape_of(dr)
+            if shape is None:
+                continue
+            glyphs.append([dr["rect"], shape, self.label_of(shape)])
+        if not glyphs:
+            return "", 0
+
+        # ---- resolve rules before anything is emitted -------------------
+        consumed = set()
+        fractions = {}
+        for i, (rect, shape, label) in enumerate(glyphs):
+            if label != RULE:
+                continue
+            above, below = [], []
+            for j, (r2, s2, l2) in enumerate(glyphs):
+                if j == i or l2 == RULE:
+                    continue
+                cx = (r2.x0 + r2.x1) / 2.0
+                if not (rect.x0 - 1.5 <= cx <= rect.x1 + 1.5):
+                    continue
+                mid = (r2.y0 + r2.y1) / 2.0
+                if 0 < rect.y0 - mid < 14:
+                    above.append(j)
+                elif 0 < mid - rect.y1 < 14:
+                    below.append(j)
+            if above and below:
+                # A bar with content on both sides is a fraction. Either side
+                # empty means it is a minus sign or an answer blank, and
+                # treating it as a fraction is how a table of cell borders
+                # dissolves into nonsense.
+                fractions[i] = (above, below)
+                consumed.update(above)
+                consumed.update(below)
+
+        # ---- reading order ----------------------------------------------
+        # Lines are found by VERTICAL OVERLAP, not by y0. A period sits on the
+        # baseline and a digit starts at cap height, so their y0 values differ
+        # by most of a glyph: keying the sort on y0 put every decimal point and
+        # every operator in a row of its own after the digits, turning $540.00
+        # into "$540 00 ." and 10% into "%10". Two glyphs belong to the same
+        # line when their vertical extents overlap at all.
+        lines = []
+        for i in sorted(range(len(glyphs)), key=lambda i: glyphs[i][0].y0):
+            rect = glyphs[i][0]
+            placed = False
+            for line in lines:
+                if rect.y0 < line["y1"] - 0.5 and rect.y1 > line["y0"] + 0.5:
+                    line["y0"] = min(line["y0"], rect.y0)
+                    line["y1"] = max(line["y1"], rect.y1)
+                    line["idx"].append(i)
+                    placed = True
+                    break
+            if not placed:
+                lines.append({"y0": rect.y0, "y1": rect.y1, "idx": [i]})
+
+        order = []
+        for line in sorted(lines, key=lambda l: l["y0"]):
+            order.extend(sorted(line["idx"], key=lambda i: glyphs[i][0].x0))
+
+        widths = sorted(g[0].width for g in glyphs)
+        gap_threshold = max(1.0, widths[len(widths) // 2] / 3.0)
+
+        def text_of(indices):
+            parts = []
+            for j in sorted(indices, key=lambda j: glyphs[j][0].x0):
+                lab = glyphs[j][2]
+                parts.append("\ufffd" if lab is None or lab == RULE else lab)
+            return "".join(parts)
+
+        out, unknown, prev = [], 0, None
+        for i in order:
+            rect, shape, label = glyphs[i]
+            if i in consumed:
+                continue
+            if prev is not None:
+                same_line = rect.y0 < prev.y1 - 0.5 and rect.y1 > prev.y0 + 0.5
+                if not same_line and i not in fractions:
+                    out.append(" ")
+                elif same_line and rect.x0 - prev.x1 > gap_threshold:
+                    last = out[-1][-1] if out and out[-1] else ""
+                    if not (label in NO_SPACE_BEFORE or last in NO_SPACE_AFTER):
+                        out.append(" ")
+            if i in fractions:
+                num, den = fractions[i]
+                n, d = text_of(num), text_of(den)
+                unknown += n.count("\ufffd") + d.count("\ufffd")
+                out.append('<span class="frac"><span>%s</span><span>%s</span></span>' % (n, d))
+            elif label == RULE:
+                out.append("\u2212")            # a bare rule is a minus sign
+            elif label is None:
+                out.append("\ufffd")
+                unknown += 1
+            else:
+                out.append(label)
+            prev = rect
+        return "".join(out).strip(), unknown

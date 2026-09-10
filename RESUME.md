@@ -5,8 +5,12 @@
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
 gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
 
-Phase 2 is next: the class-results analyzer. It is the colleague-facing half of the project and
-needs no curriculum data, so nothing blocks it.
+**The glyph decode works.** All 69 inline maths holes in 2026 grade 7 decode from vector geometry
+with zero unknown glyphs, off 23 hand-labelled shapes. See "Showing the questions" below. Next
+increments there are display-maths regions and figure crops.
+
+Also outstanding: the class-results analyzer (the colleague-facing half, needs no curriculum data)
+and the curriculum index now that the Teacher Course Guides are in `sources/`.
 
 | Phase | State | Blocked by |
 |---|---|---|
@@ -69,6 +73,65 @@ Two bugs the gate found in itself, both fixed and both worth remembering:
 - Section 5's checks were named for the defect rather than the property, so a passing run
   printed `ok  multiple-choice key not in A-D`, which reads as though the defect were
   acceptable. Name a check for what is true when it passes.
+
+## Showing the questions — the glyph decode
+
+The stems in these PDFs are a **template with holes**: the prose is real text and extracts
+exactly, and only the mathematics is missing. 2026 grade 7 yields 1,593 prose words verbatim with
+~69 inline holes.
+
+The holes are located by intersecting each prose line's y-band with the vector rectangles no text
+span covers — not by whitespace heuristics, which miss a hole at a line wrap and a narrow variable
+between two commas.
+
+And the maths **decodes mechanically**. Every character is drawn as a vector path, so two
+instances of one character have the same path geometry. `tools/glyphs.py` normalises a path's
+points into its own bounding box and clusters by geometric distance; `tools/label_glyphs.py`
+renders each cluster as a 10× tile so it can be labelled once. 2,478 glyph paths in 2026 grade 7
+reduce to 178 clusters, of which **only 23 are needed for all 69 inline holes**.
+
+Result: **69 of 69 holes decode, zero unknown glyphs.** Item 48 independently reproduces `$3.75`,
+`$5.25` and `$30.00`, matching NYSED's own exemplary-response page for that item.
+
+Why this rather than a vision pass over the page: a model reading a page can silently drop or
+invent a term and the output gives no sign of it. A labelled glyph table either matches or reports
+an unknown, which is a locatable failure. Vision is the *labeller* and the *reviewer* here, not the
+transcriber.
+
+### Traps found, all fixed
+
+- **Reading order cannot key on `y0`.** A period sits on the baseline and a digit starts at cap
+  height, so their `y0` differ by most of a glyph — every decimal point and operator sorted into a
+  row of its own *after* the digits, turning `$540.00` into `$540 00 .` and `10%` into `%10`.
+  Lines must be found by vertical *overlap*.
+- **A horizontal rule cannot be labelled as a character.** The same shape is a minus sign
+  (`−10`), a fraction bar (`−2½`) and an answer blank. `g009` and `g063` are both 6.8–6.9 × 0.7pt
+  and serve two different roles. They are labelled `@rule` and resolved by what sits above and
+  below — RegentsAlign's `build_fractions()` rule, and for its reason: without it every stacked
+  pair becomes a fraction, or every fraction becomes a subtraction.
+- **Gap-inferred spacing breaks on narrow punctuation.** A period's side bearing exceeds the gap
+  threshold, publishing `$11 .98` and `1 .5`. `.`, `,`, `)` and `%` never take a space before;
+  `(` and `$` never after.
+- **Exact hashing over-splits.** Rounded-coordinate hashes leave ~a quarter of fingerprints as
+  singletons from sub-pixel placement — the dollar sign split across two keys on one page while
+  every digit hashed consistently. Clustering is by distance with a tolerance, bucketed only for
+  speed.
+- **Not every glyph cluster is a character.** `g117` (×466) is a hatched grid cell, `g079` a
+  dot-plot marker, `g084`/`g085`/`g118`/`g122` arrows. Size filters alone do not separate artwork
+  from type.
+
+### What is left
+
+- **Display-maths regions** — items 41, 44 and 47 put their expressions on their own line, so
+  there is no prose line to intersect. The glyphs are present and the fraction resolver handles
+  them; the region just has to be passed as one group. A few more labels needed.
+- **Figures** — item 46 is a graph plus a table, hundreds of glyphs. Those get cropped as images,
+  not decoded. Transplant RegentsAlign's trick of growing the crop box to enclose every span
+  stripped as furniture, or axis titles get sliced out of both the stem and the picture.
+- The remaining 155 unlabelled clusters are mostly letters inside tables and graphs. They do not
+  block anything, and decoding them is a cheap way to write accurate `longDescription` text —
+  which is where RegentsAlign had a real error (its Aug 2025 Q22 description contradicted the
+  PDF's own vector data).
 
 ## Verified, and worth not re-deriving
 
@@ -171,9 +234,18 @@ they generalise to the item-map extractor in Phase 1.
 3. **Which results export will colleagues actually have?** Unknown, which is why the analyzer is
    specified as a sniffing cascade with a fill-in template fallback. Worth simply asking a
    colleague before building Phase 2 rather than guessing at four layouts.
-4. **Imagine IM New York 6–8 course guides** are not in `sources/` yet. Phase 3b is blocked on
-   them; Phase 3a's public national tables are the unblocked fallback.
-5. **Withheld constructed-response credits are the one inferred field in the dataset.** Which
+4. **The Imagine IM New York 6–8 course guides have arrived** (`ImagineIM_NY_{6,7,8}__TCG_*.pdf`,
+   130 pages each, clean text layer), along with three NYCPS pacing workbooks and — fetched from
+   links inside them — the NYCPS *NYS Exam IM Alignment* sheets in `sources/nycps/`. Phase 3 is
+   unblocked. Three hazards are recorded in `sources/nycps/PROVENANCE.md` and the plan: grades 7
+   and 8 **swap Units 7 and 8** between the New York and national editions; the NYCPS workbooks
+   use *national* numbering on one sheet and *New York* numbering on its siblings; and grade 8's
+   TCG contradicts itself on Unit 6 (11 lessons tabled, 9 everywhere else, because `8.SP.A.4` was
+   removed under NGMLS and the table was not regenerated). Resolve lessons by title, never by
+   number.
+5. **The TCGs contain the full text of every standard**, so `statement` need not stay null for all
+   146 entries in `data/standards.json`.
+6. **Withheld constructed-response credits are the one inferred field in the dataset.** Which
    withheld CR item carries which credit value is derived from the blueprint's credit mix minus
    the released items, assigned in item order. NYSED does not publish it. Every such record
    carries a `basis` string saying so; do not let it leak into anything presented as fact.
