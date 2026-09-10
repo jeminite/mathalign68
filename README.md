@@ -4,7 +4,8 @@
 Generation standards took effect — mapped to the standards, to statewide difficulty, and to the
 Imagine IM 6–8 curriculum.**
 
-Live at **<https://mathalign68.netlify.app/>** *(built and gated, not yet deployed)*
+Live at **<https://mathalign68.netlify.app/>** *(site created; first draft deployed, not yet
+published to production)*
 
 See `../RELATIONSHIPS.md` for how this fits with the sibling RegentsAlign, AlgebraTeaching and
 TeachingBrain projects. RegentsAlign does this for Algebra I; this is its middle-school
@@ -57,16 +58,38 @@ Corrections and disagreement are welcome.
 
 ## Publishing changes
 
+**Check which site is linked first. Every time.**
+
 ```bash
-cd ~/Desktop/ClaudeProjects/MathAlign68 && python3 publish.py && python3 tools/preflight.py && netlify deploy --dir=site --prod
+cd ~/Desktop/ClaudeProjects/MathAlign68
+netlify status | grep 'Current project'      # must say: mathalign68
+```
+
+This is not a formality. The Netlify CLI keeps one linked project per directory, and
+`~/Developer/ClaudeProjects/RegentsAlign` is linked to `regentsalign` — a live site other
+teachers use. A deploy run from the wrong directory, or from a checkout that has lost its
+`.netlify/state.json`, would overwrite it. The two project ids are:
+
+| project | id |
+|---|---|
+| mathalign68 | `04752dc2-50fa-4a6f-8482-6456070148c5` |
+| regentsalign | `bcda36e2-84e6-4c75-96f8-1525d569ab69` |
+
+Then:
+
+```bash
+python3 publish.py && python3 tools/preflight.py && netlify deploy --dir=site          # draft URL
+python3 publish.py && python3 tools/preflight.py && netlify deploy --dir=site --prod   # live
 ```
 
 `preflight.py` runs every check before anything goes live and **stops the deploy if any fails** —
-the `&&` means a failure prevents the upload. Drop `--prod` for a private draft URL. Then
-hard-refresh (Cmd+Shift+R): Netlify updates instantly but browsers cache.
+the `&&` means a failure prevents the upload. Deploy without `--prod` first: it returns a private
+draft URL, visible only while signed in to the Netlify account, which is the right place to look
+a change over before other people see it. Then hard-refresh (Cmd+Shift+R): Netlify updates
+instantly but browsers cache.
 
-Each check in it exists because something like it went wrong once. Add to it whenever something
-slips through.
+Each check in preflight exists because something like it went wrong once. Add to it whenever
+something slips through.
 
 ---
 
