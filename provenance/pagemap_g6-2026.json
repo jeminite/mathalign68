@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/build_pagemap.py",
+    "generated": "2026-09-09",
+    "testId": "g6-2026",
+    "grade": 6,
+    "year": 2026,
+    "source": "sources/2026-released-items-math-g6.pdf",
+    "pdfPageCount": 34,
+    "itemsMapped": 39,
+    "itemsReleased": 39,
+    "unlocatedItems": [],
+    "unlocatedReason": null,
+    "typeCrossCheck": "agrees with the item map on every single-type page",
+    "typeDisagreements": []
+  },
+  "items": {
+    "1": {
+      "pdfPage": 4,
+      "printedPage": 2
+    },
+    "2": {
+      "pdfPage": 4,
+      "printedPage": 2
+    },
+    "3": {
+      "pdfPage": 5,
+      "printedPage": 3
+    },
+    "4": {
+      "pdfPage": 5,
+      "printedPage": 3
+    },
+    "5": {
+      "pdfPage": 5,
+      "printedPage": 3
+    },
+    "6": {
+      "pdfPage": 6,
+      "printedPage": 4
+    },
+    "8": {
+      "pdfPage": 7,
+      "printedPage": 5
+    },
+    "9": {
+      "pdfPage": 7,
+      "printedPage": 5
+    },
+    "10": {
+      "pdfPage": 8,
+      "printedPage": 6
+    },
+    "11": {
+      "pdfPage": 9,
+      "printedPage": 7
+    },
+    "12": {
+      "pdfPage": 9,
+      "printedPage": 7
+    },
+    "14": {
+      "pdfPage": 10,
+      "printedPage": 8
+    },
+    "15": {
+      "pdfPage": 10,
+      "printedPage": 8
+    },
+    "16": {
+      "pdfPage": 11,
+      "printedPage": 9
+    },
+    "17": {
+      "pdfPage": 12,
+      "printedPage": 10
+    },
+    "19": {
+      "pdfPage": 12,
+      "printedPage": 10
+    },
+    "20": {
+      "pdfPage": 13,
+      "printedPage": 11
+    },
+    "21": {
+      "pdfPage": 13,
+      "printedPage": 11
+    },
+    "22": {
+      "pdfPage": 13,
+      "printedPage": 11
+    },
+    "23": {
+      "pdfPage": 14,
+      "printedPage": 12
+    },
+    "24": {
+      "pdfPage": 14,
+      "printedPage": 12
+    },
+    "26": {
+      "pdfPage": 15,
+      "printedPage": 13
+    },
+    "27": {
+      "pdfPage": 15,
+      "printedPage": 13
+    },
+    "28": {
+      "pdfPage": 16,
+      "printedPage": 14
+    },
+    "29": {
+      "pdfPage": 16,
+      "printedPage": 14
+    },
+    "30": {
+      "pdfPage": 17,
+      "printedPage": 15
+    },
+    "31": {
+      "pdfPage": 22,
+      "printedPage": 2
+    },
+    "32": {
+      "pdfPage": 22,
+      "printedPage": 2
+    },
+    "33": {
+      "pdfPage": 23,
+      "printedPage": 3
+    },
+    "34": {
+      "pdfPage": 23,
+      "printedPage": 3
+    },
+    "35": {
+      "pdfPage": 24,
+      "printedPage": 4
+    },
+    "38": {
+      "pdfPage": 25,
+      "printedPage": 6
+    },
+    "39": {
+      "pdfPage": 26,
+      "printedPage": 7
+    },
+    "41": {
+      "pdfPage": 27,
+      "printedPage": 9
+    },
+    "42": {
+      "pdfPage": 28,
+      "printedPage": 10
+    },
+    "43": {
+      "pdfPage": 29,
+      "printedPage": 11
+    },
+    "44": {
+      "pdfPage": 30,
+      "printedPage": 12
+    },
+    "45": {
+      "pdfPage": 31,
+      "printedPage": 13
+    },
+    "46": {
+      "pdfPage": 32,
+      "printedPage": 14
+    }
+  }
+}

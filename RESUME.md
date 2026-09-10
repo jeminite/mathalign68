@@ -2,12 +2,15 @@
 
 ## Status
 
-**Phase 0 complete.** Phase 1 (the item map) is next.
+**Phase 0 complete. Phase 1 extraction complete** — 396 items across 12 tests, in
+`data/items.json`. Next in Phase 1: the site (`build/` + `templates/` + `publish.py`) and
+`tools/preflight.py`.
 
 | Phase | State | Blocked by |
 |---|---|---|
 | 0 — foundations, sources, standards registry, blueprint | done | — |
-| 1 — item map extractor, site, preflight, deploy | next | — |
+| 1a — item map + page map + data/items.json | done | — |
+| 1b — site, preflight, deploy | next | — |
 | 2 — class-results analyzer, item picker | after 1 | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | waiting | the district course guides |
@@ -22,6 +25,21 @@
   domain, cluster description, fluency notes and post-test flags.
 - `data/blueprint.json` — hand-authored test design, per-grade domain percent ranges, session
   boundaries, calculator rules, known data defects.
+
+## Done in Phase 1a
+
+- `tools/extract_item_map.py` — geometry-based item map parser; all 12 Next Gen maps plus the
+  two CCLS-era 2022 maps kept as regression coverage.
+- `tools/build_pagemap.py` — item to PDF page, self-validating; 387 of 396 items carry a link.
+- `tools/build_items.py` — assembles `data/items.json`, and `--check` rebuilds from
+  `provenance/` and fails on any difference. Proven with a tamper test: hand-editing one
+  P-value is caught.
+
+**The corpus is 396 items, not the ~419 in the original plan.** The plan's figure came from
+counting standard codes on the map page, which runs 3–4 high per test because a
+secondary-standard citation looks like an item row. Real counts: grade 6 = 29/29/29/39,
+grades 7 and 8 = 31/31/31/42, total 396 items and 489 credits. Confirmed twice by independent
+methods (the geometry parser and a plain-text count of the type strings).
 
 ## Verified, and worth not re-deriving
 
@@ -44,6 +62,36 @@
   `NGLS.Math.Content.NY-NY-8.EE.6` (doubled prefix); some codes carry trailing whitespace
   (`NY-8.F.1 `). Both are in `blueprint.json.knownDataDefects` and both need regression tests in
   `tools/test_extractor.py`.
+
+## Phase 1a findings
+
+- **NYSED renamed a column in 2024.** The domain column is headed `Cluster` in 2023, 2025 and
+  2026 and `Domain` in 2024. 2024's name is the accurate one: the values are domain names
+  ("Expressions and Equations"), not cluster descriptions, in every year. The extractor accepts
+  either header and the field is called `domainLabel`. A standard's real cluster description
+  comes from `standards.json`.
+- **Never publish a "% of the test released" figure.** NYSED promises "at least 75 percent of
+  the test questions that counted toward students' scores" — the denominator is *scored* items,
+  and `designedItems` includes embedded field-test questions whose number NYSED does not
+  publish. Released ÷ designed gives 63–65% for 2023–2025, which reads as NYSED breaking its
+  own promise and is simply the wrong denominator. There is a `doNotComputeReleaseShare` note in
+  `blueprint.json` saying so.
+- **2026 broke the all-constructed-response promise.** 2023–2025 release all ten CR items
+  (3 one-credit, 6 two-credit, 1 three-credit — the full design); 2026 releases only eight.
+- **Some item numbers are vector artwork, inconsistently.** The 2023 grade 7 booklet prints
+  items 13 and 16 as real glyphs at x=42 and items 1, 2, 17 and 18 as artwork on
+  identically laid-out pages. So the page map is deliberately allowed to be partial: nothing
+  interpolates a page, so an item is either located by its own printed number or gets no link.
+  Nine items across 2023–2025 have no link. What *is* fatal is finding a margin number the item
+  map does not list as released.
+- **Detecting a multiple-choice page needs all four letters, not a column.** Counting bare A–D
+  words fails (grade 8 2024 item 48 is a 3-credit CR about "Store A and Store B" — six of
+  them). Requiring one left-aligned column of four fails too, because graphical choices are laid
+  out 2x2 (grade 7 2025 item 2 puts A and B at x=75, C and D at x=310). Requiring all four
+  distinct letters handles both.
+- **The map's footnote had to be cut before row banding.** The last item's band extends past its
+  anchor to catch a wrapped line, which swallowed "*This item map is intended..." — and that
+  footnote contains the word "Constructed", so it parsed as part of item 48's type.
 
 ## Traps found the hard way in Phase 0
 
@@ -73,19 +121,19 @@ they generalise to the item-map extractor in Phase 1.
 
 ## Open questions
 
-1. **`expectedReleasedItems` is null for all 12 tests** in `blueprint.json`, deliberately. Fill
-   each from the extractor's own count at ingest, then confirm against the PDF. Do not use the
-   rough counts from early exploration — they ran 3–4 high per test because secondary-standard
-   citations look like item rows.
-2. **P-value population is undefined.** The guide does not say whether the published P-values
+1. **P-value population is undefined.** The guide does not say whether the published P-values
    exclude embedded field-test takers, or what the denominator is. Read the guide again before
    writing the site copy, and if it stays unclear, say so on the page rather than implying a
    like-for-like comparison with one class.
-3. **`statement` is null for all 146 standards.** The educator guide gives cluster descriptions,
+2. **`statement` is null for all 146 standards.** The educator guide gives cluster descriptions,
    not per-standard wording. Sourcing the actual statements means a different NYSED document.
    Until then the site shows `clusterText` and must label it as the cluster, not the standard.
-4. **Which results export will colleagues actually have?** Unknown, which is why the analyzer is
+3. **Which results export will colleagues actually have?** Unknown, which is why the analyzer is
    specified as a sniffing cascade with a fill-in template fallback. Worth simply asking a
    colleague before building Phase 2 rather than guessing at four layouts.
-5. **Imagine IM New York 6–8 course guides** are not in `sources/` yet. Phase 3b is blocked on
+4. **Imagine IM New York 6–8 course guides** are not in `sources/` yet. Phase 3b is blocked on
    them; Phase 3a's public national tables are the unblocked fallback.
+5. **Withheld constructed-response credits are the one inferred field in the dataset.** Which
+   withheld CR item carries which credit value is derived from the blueprint's credit mix minus
+   the released items, assigned in item order. NYSED does not publish it. Every such record
+   carries a `basis` string saying so; do not let it leak into anything presented as fact.

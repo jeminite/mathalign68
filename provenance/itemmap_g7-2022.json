@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_item_map.py",
+    "generated": "2026-09-09",
+    "testId": "g7-2022",
+    "grade": 7,
+    "year": 2022,
+    "source": "sources/ccls/2022-released-items-math-g7.pdf",
+    "pdfPageCount": 34,
+    "mapPages": [
+      33,
+      34
+    ],
+    "headerPage": 33,
+    "columns": [
+      "Question",
+      "Type",
+      "Key",
+      "Points",
+      "Standard",
+      "Domain"
+    ],
+    "standardsEra": "ccls",
+    "releasedItems": 31,
+    "multipleChoice": 23,
+    "constructedResponse": 8,
+    "creditsReleased": 40,
+    "repairs": []
+  },
+  "items": [
+    {
+      "item": 1,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.SP.C.5",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios Statistics and and Proportional",
+      "subscore": null,
+      "pValue": 0.75,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 190.6,
+        "raw": "1 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.SP.C.5 | Ratios | Statistics | and | and | Proportional | Probability | 0.75",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 2,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "7.RP.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.74,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 219.0,
+        "raw": "2 | Multiple | Choice | A | 1 | CCSS.Math.Content.7.RP.A.3 | Relationships | 0.74",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 4,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.SP.C.7b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and",
+      "subscore": null,
+      "pValue": 0.49,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 247.4,
+        "raw": "4 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.SP.C.7b | Statistics | and | Probability | 0.49",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 5,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "7.EE.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.65,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 275.9,
+        "raw": "5 | Multiple | Choice | B | 1 | CCSS.Math.Content.7.EE.A.1 | Expressions | and | Equations | 0.65",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 9,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "6.SP.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and",
+      "subscore": null,
+      "pValue": 0.48,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 304.3,
+        "raw": "9 | Multiple | Choice | B | 1 | CCSS.Math.Content.6.SP.A.3 | Statistics | and | Probability | 0.48",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 10,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.SP.C.8b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios Statistics and and Proportional",
+      "subscore": null,
+      "pValue": 0.48,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 332.8,
+        "raw": "10 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.SP.C.8b | Ratios | Statistics | and | and | Proportional | Probability | 0.48",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 11,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.RP.A.2c",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.54,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 361.2,
+        "raw": "11 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.RP.A.2c | Relationships | 0.54",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 19,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.NS.A.1c",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "The Number",
+      "subscore": null,
+      "pValue": 0.64,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 389.6,
+        "raw": "19 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.NS.A.1c | The | Number | System | 0.64",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 20,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "7.EE.B.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.42,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 418.1,
+        "raw": "20 | Multiple | Choice | B | 1 | CCSS.Math.Content.7.EE.B.3 | Expressions | and | Equations | 0.42",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 21,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "7.NS.A.1b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "The Number",
+      "subscore": null,
+      "pValue": 0.72,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 446.5,
+        "raw": "21 | Multiple | Choice | B | 1 | CCSS.Math.Content.7.NS.A.1b | The | Number | System | 0.72",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 25,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.NS.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios The and Number Proportional",
+      "subscore": null,
+      "pValue": 0.63,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 475.0,
+        "raw": "25 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.NS.A.3 | Ratios | The | and | Number | Proportional | System | 0.63",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 26,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.RP.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Relationships Proportional",
+      "subscore": null,
+      "pValue": 0.54,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 503.4,
+        "raw": "26 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.RP.A.1 | Ratios | and | Relationships | Proportional | 0.54",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 28,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.RP.A.2b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Relationships Proportional",
+      "subscore": null,
+      "pValue": 0.59,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 531.8,
+        "raw": "28 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.RP.A.2b | Ratios | and | Relationships | Proportional | 0.59",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 31,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.RP.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.63,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 560.3,
+        "raw": "31 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.RP.A.3 | Relationships | 0.63",
+        "repairs": [],
+        "mapPage": 33
+      }
+    },
+    {
+      "item": 32,
+      "session": null,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "7.EE.B.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.5,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 26.5,
+        "raw": "32 | Multiple | Choice | D | 1 | CCSS.Math.Content.7.EE.B.3 | Expressions | and | Equations | 0.5",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 33,
+      "session": null,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.G.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.4,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 55.0,
+        "raw": "Session | 33 | 2 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.G.A.1 | Geometry | 0.4",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 34,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "7.EE.B.4b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.59,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 103.6,
+        "raw": "34 | Multiple | Choice | B | 1 | CCSS.Math.Content.7.EE.B.4b | Expressions | and | Equations | 0.59",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 35,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "7.SP.B.4",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and",
+      "subscore": null,
+      "pValue": 0.5,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 132.0,
+        "raw": "35 | Multiple | Choice | B | 1 | CCSS.Math.Content.7.SP.B.4 | Statistics | and | Probability | 0.5",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 36,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "7.EE.B.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios Expressions and and Proportional",
+      "subscore": null,
+      "pValue": 0.81,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 160.4,
+        "raw": "36 | Multiple | Choice | A | 1 | CCSS.Math.Content.7.EE.B.3 | Ratios | Expressions | and | and | Proportional | Equations | 0.81",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 37,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "7.RP.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.52,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 188.9,
+        "raw": "37 | Multiple | Choice | A | 1 | CCSS.Math.Content.7.RP.A.1 | Relationships | 0.52",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 38,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "7.EE.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios Expressions and and Proportional",
+      "subscore": null,
+      "pValue": 0.5,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 217.3,
+        "raw": "38 | Multiple | Choice | A | 1 | CCSS.Math.Content.7.EE.A.1 | Ratios | Expressions | and | and | Proportional | Equations | 0.5",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 39,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.RP.A.2b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.34,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 245.8,
+        "raw": "39 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.RP.A.2b | Relationships | 0.34",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 40,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "7.EE.A.1",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.51,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 274.2,
+        "raw": "40 | Multiple | Choice | C | 1 | CCSS.Math.Content.7.EE.A.1 | Expressions | and | Equations | 0.51",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 41,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.SP.A.2",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and",
+      "subscore": null,
+      "pValue": 0.39,
+      "avgPointsEarned": 0.78,
+      "extraction": {
+        "anchorY": 302.6,
+        "raw": "41 | Constructed | Response | 2 | CCSS.Math.Content.7.SP.A.2 | Statistics | and | Probability | 0.78 | 0.39",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 42,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.NS.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios The and Number Proportional",
+      "subscore": null,
+      "pValue": 0.66,
+      "avgPointsEarned": 1.32,
+      "extraction": {
+        "anchorY": 331.1,
+        "raw": "42 | Constructed | Response | 2 | CCSS.Math.Content.7.NS.A.3 | Ratios | The | and | Number | Proportional | System | 1.32 | 0.66",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 43,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.RP.A.2b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.81,
+      "avgPointsEarned": 1.63,
+      "extraction": {
+        "anchorY": 359.5,
+        "raw": "43 | Constructed | Response | 2 | CCSS.Math.Content.7.RP.A.2b | Relationships | 1.63 | 0.81",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 44,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.NS.A.1c",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "The Number",
+      "subscore": null,
+      "pValue": 0.55,
+      "avgPointsEarned": 1.1,
+      "extraction": {
+        "anchorY": 388.0,
+        "raw": "44 | Constructed | Response | 2 | CCSS.Math.Content.7.NS.A.1c | The | Number | System | 1.1 | 0.55",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 45,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.EE.B.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and",
+      "subscore": null,
+      "pValue": 0.45,
+      "avgPointsEarned": 0.89,
+      "extraction": {
+        "anchorY": 416.4,
+        "raw": "45 | Constructed | Response | 2 | CCSS.Math.Content.7.EE.B.3 | Expressions | and | Equations | 0.89 | 0.45",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 46,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.NS.A.2b",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "The Number",
+      "subscore": null,
+      "pValue": 0.45,
+      "avgPointsEarned": 0.9,
+      "extraction": {
+        "anchorY": 444.8,
+        "raw": "46 | Constructed | Response | 2 | CCSS.Math.Content.7.NS.A.2b | The | Number | System | 0.9 | 0.45",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 47,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "7.EE.B.4a",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios Expressions and and Proportional",
+      "subscore": null,
+      "pValue": 0.38,
+      "avgPointsEarned": 0.75,
+      "extraction": {
+        "anchorY": 473.3,
+        "raw": "47 | Constructed | Response | 2 | CCSS.Math.Content.7.EE.B.4a | Ratios | Expressions | and | and | Proportional | Equations | 0.75 | 0.38",
+        "repairs": [],
+        "mapPage": 34
+      }
+    },
+    {
+      "item": 48,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 3,
+      "standard": "7.RP.A.3",
+      "standardsEra": "ccls",
+      "secondaryStandards": [],
+      "domainLabel": "Relationships",
+      "subscore": null,
+      "pValue": 0.3,
+      "avgPointsEarned": 0.9,
+      "extraction": {
+        "anchorY": 501.7,
+        "raw": "48 | Constructed | Response | 3 | CCSS.Math.Content.7.RP.A.3 | Relationships | 0.9 | 0.3",
+        "repairs": [],
+        "mapPage": 34
+      }
+    }
+  ]
+}

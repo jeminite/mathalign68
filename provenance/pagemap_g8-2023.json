@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/build_pagemap.py",
+    "generated": "2026-09-09",
+    "testId": "g8-2023",
+    "grade": 8,
+    "year": 2023,
+    "source": "sources/2023-released-items-math-g8.pdf",
+    "pdfPageCount": 36,
+    "itemsMapped": 31,
+    "itemsReleased": 31,
+    "unlocatedItems": [],
+    "unlocatedReason": null,
+    "typeCrossCheck": "agrees with the item map on every single-type page",
+    "typeDisagreements": []
+  },
+  "items": {
+    "2": {
+      "pdfPage": 7,
+      "printedPage": 2
+    },
+    "3": {
+      "pdfPage": 8,
+      "printedPage": 3
+    },
+    "7": {
+      "pdfPage": 9,
+      "printedPage": 5
+    },
+    "8": {
+      "pdfPage": 9,
+      "printedPage": 5
+    },
+    "12": {
+      "pdfPage": 10,
+      "printedPage": 7
+    },
+    "15": {
+      "pdfPage": 11,
+      "printedPage": 9
+    },
+    "16": {
+      "pdfPage": 11,
+      "printedPage": 9
+    },
+    "19": {
+      "pdfPage": 12,
+      "printedPage": 11
+    },
+    "20": {
+      "pdfPage": 12,
+      "printedPage": 11
+    },
+    "22": {
+      "pdfPage": 13,
+      "printedPage": 12
+    },
+    "23": {
+      "pdfPage": 14,
+      "printedPage": 13
+    },
+    "24": {
+      "pdfPage": 14,
+      "printedPage": 13
+    },
+    "25": {
+      "pdfPage": 15,
+      "printedPage": 14
+    },
+    "26": {
+      "pdfPage": 15,
+      "printedPage": 14
+    },
+    "29": {
+      "pdfPage": 16,
+      "printedPage": 16
+    },
+    "33": {
+      "pdfPage": 21,
+      "printedPage": 2
+    },
+    "34": {
+      "pdfPage": 22,
+      "printedPage": 3
+    },
+    "35": {
+      "pdfPage": 22,
+      "printedPage": 3
+    },
+    "36": {
+      "pdfPage": 23,
+      "printedPage": 4
+    },
+    "37": {
+      "pdfPage": 23,
+      "printedPage": 4
+    },
+    "38": {
+      "pdfPage": 24,
+      "printedPage": 5
+    },
+    "39": {
+      "pdfPage": 25,
+      "printedPage": 6
+    },
+    "40": {
+      "pdfPage": 26,
+      "printedPage": 7
+    },
+    "41": {
+      "pdfPage": 27,
+      "printedPage": 8
+    },
+    "42": {
+      "pdfPage": 28,
+      "printedPage": 9
+    },
+    "43": {
+      "pdfPage": 29,
+      "printedPage": 10
+    },
+    "44": {
+      "pdfPage": 30,
+      "printedPage": 11
+    },
+    "45": {
+      "pdfPage": 31,
+      "printedPage": 12
+    },
+    "46": {
+      "pdfPage": 32,
+      "printedPage": 13
+    },
+    "47": {
+      "pdfPage": 33,
+      "printedPage": 14
+    },
+    "48": {
+      "pdfPage": 34,
+      "printedPage": 15
+    }
+  }
+}

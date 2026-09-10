@@ -151,13 +151,48 @@ Standard codes here are **not** the same family as RegentsAlign's. These are
 are `AI-<DOMAIN>.<number>`. Neither project reads the other; the boundary is that a code
 starting `AI-` is RegentsAlign's and a code starting with a grade digit is this project's.
 
+## The corpus
+
+Released items per test, as extracted:
+
+| | 2023 | 2024 | 2025 | 2026 | total |
+|---|---|---|---|---|---|
+| Grade 6 | 29 | 29 | 29 | 39 | 126 |
+| Grade 7 | 31 | 31 | 31 | 42 | 135 |
+| Grade 8 | 31 | 31 | 31 | 42 | 135 |
+
+**396 items across 12 tests**, carrying 489 credits. RegentsAlign is 280 across 7.
+
+Every count was produced twice by independent methods — the geometry parser and a plain-text
+count of the type strings — and they agree. Don't replace them with a quick count of standard
+codes on the map page: that runs 3–4 high per test, because a secondary-standard citation looks
+like an item row.
+
+Two things to read carefully. **2026 released noticeably more than 2023–2025** (39–42 per test
+against 29–31), so read any coverage or trend figure per year rather than pooled. And
+**2023–2025 released all ten constructed-response items while 2026 released only eight** —
+NYSED's stated policy of releasing every scored constructed-response question does not hold for
+2026.
+
+There is deliberately **no "percentage of the test released" figure** anywhere in this project.
+NYSED's promise is "at least 75 percent of the test questions that counted toward students'
+scores", so the denominator is *scored* items — and the designed item counts include embedded
+field-test questions that don't count and whose number NYSED doesn't publish. Dividing released
+items by designed items gives 63–65% for 2023–2025, which looks like NYSED breaking its own
+promise and is just the wrong denominator.
+
 ## Status
 
 | | 2023 | 2024 | 2025 | 2026 |
 |---|---|---|---|---|
-| Grade 6 | — | — | — | — |
-| Grade 7 | — | — | — | — |
-| Grade 8 | — | — | — | — |
+| Grade 6 | map | map | map | map |
+| Grade 7 | map | map | map | map |
+| Grade 8 | map | map | map | map |
 
-Phase 0 complete: sources fetched, standards registry built and cross-validated against all
-twelve item maps, test blueprint authored. Phase 1 (the item map) is next. See `RESUME.md`.
+`map` = item map extracted and validated. Curriculum alignment is Phase 3.
+
+Phase 0 and the extractor half of Phase 1 are complete: sources fetched, standards registry
+built and cross-validated against all twelve item maps, test blueprint authored and its counts
+confirmed twice, and all twelve maps extracted — plus the two CCLS-era 2022 maps kept as
+regression coverage for the two-page layout. Next: the item-to-PDF-page map, `data/items.json`,
+the site, and preflight. See `RESUME.md`.

@@ -1,0 +1,614 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_item_map.py",
+    "generated": "2026-09-09",
+    "testId": "g6-2025",
+    "grade": 6,
+    "year": 2025,
+    "source": "sources/2025-released-items-math-g6.pdf",
+    "pdfPageCount": 38,
+    "mapPages": [
+      38
+    ],
+    "headerPage": 38,
+    "columns": [
+      "Question",
+      "Type",
+      "Key",
+      "Points",
+      "Standard",
+      "Domain",
+      "Subscore",
+      "Secondary"
+    ],
+    "standardsEra": "nextgen",
+    "releasedItems": 29,
+    "multipleChoice": 19,
+    "constructedResponse": 10,
+    "creditsReleased": 37,
+    "repairs": []
+  },
+  "items": [
+    {
+      "item": 1,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-6.RP.3a",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.89,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 166.3,
+        "raw": "1 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-6.RP.3a | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.89",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 3,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.NS.6c",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.84,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 178.1,
+        "raw": "3 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.NS.6c | The | Number | System | The | Number | System | 0.84",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 5,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-6.EE.2c",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.73,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 190.0,
+        "raw": "5 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-6.EE.2c | Expressions | and | Equations | Expressions | and | Equations | 0.73",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 6,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-6.NS.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.57,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 201.9,
+        "raw": "6 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-6.NS.1 | The | Number | System | The | Number | System | 0.57",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 13,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-6.G.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.53,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 213.8,
+        "raw": "13 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-6.G.4 | Geometry | 0.53",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 16,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.RP.3b",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.59,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 225.7,
+        "raw": "16 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.RP.3b | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.59",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 17,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-6.G.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.43,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 237.5,
+        "raw": "17 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-6.G.1 | Geometry | 0.43",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 19,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.EE.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.5,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 249.4,
+        "raw": "19 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.EE.1 | Expressions | and | Equations | Expressions | and | Equations | 0.50",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 21,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-6.RP.3c",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.46,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 261.3,
+        "raw": "21 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-6.RP.3c | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.46",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 23,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.EE.2b",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.4,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 273.2,
+        "raw": "23 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.EE.2b | Expressions | and | Equations | Expressions | and | Equations | 0.40",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 27,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.EE.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.61,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 285.1,
+        "raw": "27 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.EE.5 | Expressions | and | Equations | Expressions | and | Equations | 0.61",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 28,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-6.RP.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.56,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 296.9,
+        "raw": "28 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-6.RP.1 | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.56",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 30,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-6.EE.2a",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Session 2 Expressions and Equations",
+      "pValue": 0.26,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 308.8,
+        "raw": "30 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-6.EE.2a | Expressions | and | Equations | Session | 2 | Expressions | and | Equations | 0.26",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 31,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-6.NS.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.79,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 329.2,
+        "raw": "31 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-6.NS.5 | The | Number | System | The | Number | System | 0.79",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 32,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-6.RP.3d",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.61,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 341.1,
+        "raw": "32 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-6.RP.3d | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.61",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 33,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-5.OA.3",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.57,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 353.0,
+        "raw": "33 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-5.OA.3 | Expressions | and | Equations | Expressions | and | Equations | 0.57",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 34,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-6.G.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.56,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 364.9,
+        "raw": "34 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-6.G.2 | Geometry | 0.56",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 35,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-6.RP.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.47,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 376.7,
+        "raw": "35 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-6.RP.2 | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.47",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 36,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-6.G.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.39,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 388.6,
+        "raw": "36 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-6.G.1 | Geometry | 0.39",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 37,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-6.RP.3c",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.5,
+      "avgPointsEarned": 0.5,
+      "extraction": {
+        "anchorY": 400.5,
+        "raw": "37 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-6.RP.3c | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.50 | 0.50",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 38,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-6.EE.8",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.4,
+      "avgPointsEarned": 0.4,
+      "extraction": {
+        "anchorY": 412.4,
+        "raw": "38 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-6.EE.8 | Expressions | and | Equations | Expressions | and | Equations | 0.40 | 0.40",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 39,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-6.NS.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.35,
+      "avgPointsEarned": 0.35,
+      "extraction": {
+        "anchorY": 424.3,
+        "raw": "39 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-6.NS.4 | The | Number | System | The | Number | System | 0.35 | 0.35",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 40,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.EE.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.64,
+      "avgPointsEarned": 1.28,
+      "extraction": {
+        "anchorY": 436.1,
+        "raw": "40 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.EE.1 | Expressions | and | Equations | Expressions | and | Equations | 1.28 | 0.64",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 41,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.EE.9",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.16,
+      "avgPointsEarned": 0.32,
+      "extraction": {
+        "anchorY": 448.0,
+        "raw": "41 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.EE.9 | Expressions | and | Equations | Expressions | and | Equations | 0.32 | 0.16",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 42,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.G.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": null,
+      "pValue": 0.34,
+      "avgPointsEarned": 0.68,
+      "extraction": {
+        "anchorY": 459.9,
+        "raw": "42 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.G.4 | Geometry | 0.68 | 0.34",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 43,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.NS.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.27,
+      "avgPointsEarned": 0.54,
+      "extraction": {
+        "anchorY": 471.8,
+        "raw": "43 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.NS.1 | The | Number | System | The | Number | System | 0.54 | 0.27",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 44,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.NS.8",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "The Number System",
+      "subscore": "The Number System",
+      "pValue": 0.39,
+      "avgPointsEarned": 0.78,
+      "extraction": {
+        "anchorY": 483.7,
+        "raw": "44 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.NS.8 | The | Number | System | The | Number | System | 0.78 | 0.39",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 45,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-6.RP.3b",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Ratios and Proportional Relationships",
+      "subscore": "Ratios and Proportional Relationships",
+      "pValue": 0.43,
+      "avgPointsEarned": 0.86,
+      "extraction": {
+        "anchorY": 495.5,
+        "raw": "45 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-6.RP.3b | Ratios | and | Proportional | Relationships | Ratios | and | Proportional | Relationships | 0.86 | 0.43",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 46,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 3,
+      "standard": "NY-6.EE.7",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.45,
+      "avgPointsEarned": 1.35,
+      "extraction": {
+        "anchorY": 507.4,
+        "raw": "46 | Constructed | Response | n/a | 3 | NGLS.Math.Content.NY-6.EE.7 | Expressions | and | Equations | Expressions | and | Equations | 1.35 | 0.45",
+        "repairs": [],
+        "mapPage": 38
+      }
+    }
+  ]
+}

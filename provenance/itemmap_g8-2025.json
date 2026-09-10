@@ -1,0 +1,658 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_item_map.py",
+    "generated": "2026-09-09",
+    "testId": "g8-2025",
+    "grade": 8,
+    "year": 2025,
+    "source": "sources/2025-released-items-math-g8.pdf",
+    "pdfPageCount": 38,
+    "mapPages": [
+      38
+    ],
+    "headerPage": 38,
+    "columns": [
+      "Question",
+      "Type",
+      "Key",
+      "Points",
+      "Standard",
+      "Domain",
+      "Subscore",
+      "Secondary"
+    ],
+    "standardsEra": "nextgen",
+    "releasedItems": 31,
+    "multipleChoice": 21,
+    "constructedResponse": 10,
+    "creditsReleased": 39,
+    "repairs": []
+  },
+  "items": [
+    {
+      "item": 2,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.SP.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and Probability",
+      "subscore": null,
+      "pValue": 0.82,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 139.2,
+        "raw": "2 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.SP.2 | Statistics | and | Probability | 0.82",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 4,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-7.G.3",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.62,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 152.3,
+        "raw": "4 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-7.G.3 | Geometry | Geometry | 0.62",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 7,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-8.G.7",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.47,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 165.3,
+        "raw": "7 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-8.G.7 | Geometry | Geometry | 0.47",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 8,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.EE.6",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.57,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 178.4,
+        "raw": "8 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.EE.6 | Expressions | and | Equations | Expressions | and | Equations | 0.57",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 12,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-8.G.9",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.59,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 191.5,
+        "raw": "12 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-8.G.9 | Geometry | Geometry | 0.59",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 14,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-8.EE.7b",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.49,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 204.6,
+        "raw": "14 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-8.EE.7b | Expressions | and | Equations | Expressions | and | Equations | 0.49",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 15,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.NS.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [
+        "NY-8.EE.2"
+      ],
+      "domainLabel": "Number Sense",
+      "subscore": null,
+      "pValue": 0.54,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 217.7,
+        "raw": "15 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.NS.1 | Number | Sense | NGLS.Math.Content.NY-8.EE.2 | 0.54",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 16,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-8.EE.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.6,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 230.7,
+        "raw": "16 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-8.EE.1 | Expressions | and | Equations | Expressions | and | Equations | 0.60",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 17,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-8.G.1c",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.68,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 243.8,
+        "raw": "17 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-8.G.1c | Geometry | Geometry | 0.68",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 19,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-8.G.3",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.42,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 256.9,
+        "raw": "19 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-8.G.3 | Geometry | Geometry | 0.42",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 27,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-8.G.9",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.53,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 270.0,
+        "raw": "27 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-8.G.9 | Geometry | Geometry | 0.53",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 28,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.G.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.55,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 283.1,
+        "raw": "28 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.G.4 | Geometry | Geometry | 0.55",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 30,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-8.EE.7a",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.42,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 296.1,
+        "raw": "30 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-8.EE.7a | Expressions | and | Equations | Expressions | and | Equations | 0.42",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 31,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-7.G.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.55,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 309.2,
+        "raw": "31 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-7.G.5 | Geometry | Geometry | 0.55",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 32,
+      "session": 1,
+      "type": "Multiple Choice",
+      "key": "B",
+      "credits": 1,
+      "standard": "NY-8.EE.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Session Expressions 2 and Equations",
+      "pValue": 0.46,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 322.3,
+        "raw": "32 | Multiple | Choice | B | 1 | NGLS.Math.Content.NY-8.EE.5 | Expressions | and | Equations | Session | Expressions | 2 | and | Equations | 0.46",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 33,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "D",
+      "credits": 1,
+      "standard": "NY-8.EE.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.68,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 344.9,
+        "raw": "33 | Multiple | Choice | D | 1 | NGLS.Math.Content.NY-8.EE.1 | Expressions | and | Equations | Expressions | and | Equations | 0.68",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 34,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.G.1a",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.81,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 357.9,
+        "raw": "34 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.G.1a | Geometry | Geometry | 0.81",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 35,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.EE.6",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.43,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 371.0,
+        "raw": "35 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.EE.6 | Expressions | and | Equations | Expressions | and | Equations | 0.43",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 36,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-8.F.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Functions",
+      "subscore": "Functions",
+      "pValue": 0.56,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 384.1,
+        "raw": "36 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-8.F.1 | Functions | Functions | 0.56",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 37,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "C",
+      "credits": 1,
+      "standard": "NY-8.NS.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Number Sense",
+      "subscore": null,
+      "pValue": 0.57,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 397.2,
+        "raw": "37 | Multiple | Choice | C | 1 | NGLS.Math.Content.NY-8.NS.2 | Number | Sense | 0.57",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 38,
+      "session": 2,
+      "type": "Multiple Choice",
+      "key": "A",
+      "credits": 1,
+      "standard": "NY-8.SP.1",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Statistics and Probability",
+      "subscore": null,
+      "pValue": 0.67,
+      "avgPointsEarned": null,
+      "extraction": {
+        "anchorY": 410.3,
+        "raw": "38 | Multiple | Choice | A | 1 | NGLS.Math.Content.NY-8.SP.1 | Statistics | and | Probability | 0.67",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 39,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-8.F.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Functions",
+      "subscore": "Functions",
+      "pValue": 0.29,
+      "avgPointsEarned": 0.29,
+      "extraction": {
+        "anchorY": 423.3,
+        "raw": "39 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-8.F.4 | Functions | Functions | 0.29 | 0.29",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 40,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-7.G.4",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.29,
+      "avgPointsEarned": 0.29,
+      "extraction": {
+        "anchorY": 436.4,
+        "raw": "40 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-7.G.4 | Geometry | Geometry | 0.29 | 0.29",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 41,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 1,
+      "standard": "NY-8.F.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Functions",
+      "subscore": "Functions",
+      "pValue": 0.23,
+      "avgPointsEarned": 0.23,
+      "extraction": {
+        "anchorY": 449.5,
+        "raw": "41 | Constructed | Response | n/a | 1 | NGLS.Math.Content.NY-8.F.2 | Functions | Functions | 0.23 | 0.23",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 42,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.EE.2",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [
+        "NY-8.NS.1"
+      ],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.43,
+      "avgPointsEarned": 0.86,
+      "extraction": {
+        "anchorY": 462.6,
+        "raw": "42 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.EE.2 | Expressions | and | Equations | Expressions | and | Equations | NGLS.Math.Content.NY-8.NS.1 | 0.86 | 0.43",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 43,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.F.3",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Functions",
+      "subscore": "Functions",
+      "pValue": 0.34,
+      "avgPointsEarned": 0.68,
+      "extraction": {
+        "anchorY": 475.7,
+        "raw": "43 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.F.3 | Functions | Functions | 0.68 | 0.34",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 44,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.F.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Functions",
+      "subscore": "Functions",
+      "pValue": 0.44,
+      "avgPointsEarned": 0.88,
+      "extraction": {
+        "anchorY": 488.7,
+        "raw": "44 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.F.5 | Functions | Functions | 0.88 | 0.44",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 45,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.EE.7b",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.44,
+      "avgPointsEarned": 0.88,
+      "extraction": {
+        "anchorY": 501.8,
+        "raw": "45 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.EE.7b | Expressions | and | Equations | Expressions | and | Equations | 0.88 | 0.44",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 46,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.G.3",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.34,
+      "avgPointsEarned": 0.68,
+      "extraction": {
+        "anchorY": 514.9,
+        "raw": "46 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.G.3 | Geometry | Geometry | 0.68 | 0.34",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 47,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 2,
+      "standard": "NY-8.G.6",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Geometry",
+      "subscore": "Geometry",
+      "pValue": 0.38,
+      "avgPointsEarned": 0.76,
+      "extraction": {
+        "anchorY": 528.0,
+        "raw": "47 | Constructed | Response | n/a | 2 | NGLS.Math.Content.NY-8.G.6 | Geometry | Geometry | 0.76 | 0.38",
+        "repairs": [],
+        "mapPage": 38
+      }
+    },
+    {
+      "item": 48,
+      "session": 2,
+      "type": "Constructed Response",
+      "key": null,
+      "credits": 3,
+      "standard": "NY-8.EE.5",
+      "standardsEra": "nextgen",
+      "secondaryStandards": [],
+      "domainLabel": "Expressions and Equations",
+      "subscore": "Expressions and Equations",
+      "pValue": 0.54,
+      "avgPointsEarned": 1.62,
+      "extraction": {
+        "anchorY": 541.1,
+        "raw": "48 | Constructed | Response | n/a | 3 | NGLS.Math.Content.NY-8.EE.5 | Expressions | and | Equations | Expressions | and | Equations | 1.62 | 0.54",
+        "repairs": [],
+        "mapPage": 38
+      }
+    }
+  ]
+}
