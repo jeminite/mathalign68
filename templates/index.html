@@ -33,6 +33,7 @@
       <button type="button" role="tab" data-view="blueprint"  aria-selected="false">Blueprint</button>
       <button type="button" role="tab" data-view="posttest"   aria-selected="false">Post-test standards</button>
       <button type="button" role="tab" data-view="items"      aria-selected="false">Items</button>
+      <button type="button" role="tab" data-view="about"      aria-selected="false">About &amp; corrections</button>
     </nav>
   </div>
 </header>
@@ -50,9 +51,74 @@
     page is the authority.
     The alignment data is also published as a plain data file at
     <a href="data.json">data.json</a>.
-    __FEEDBACK__
+    Spotted a mistake? <a href="?v=about" id="tofb">Tell me about it</a> — corrections and
+    disagreement are both welcome.
   </p>
 </main>
+
+
+<!-- The correction form.
+     It lives HERE, in static markup, and not in app.js, because Netlify finds
+     forms by scanning the deployed HTML at build time. Every tab on this site
+     is rendered by JavaScript into #view, so a form built at runtime would
+     never be detected and submissions would silently go nowhere. The About
+     view moves this node into itself; moving a node preserves it, so detection
+     still works.
+
+     It asks for a grade, a year and an item -- never anything about a class or
+     a student. Name and email are optional, and the form says where a
+     submission goes. This is the first thing in the project that collects
+     anything from anyone, and tools/preflight.py checks that no field here
+     invites student data. -->
+<form name="correction" method="POST" data-netlify="true"
+      data-netlify-honeypot="bot-field" id="fb" class="fb" hidden>
+  <input type="hidden" name="form-name" value="correction">
+  <p class="fb-hp" hidden>
+    <label>Leave this empty <input name="bot-field" tabindex="-1"></label>
+  </p>
+
+  <div class="fb-row">
+    <label>Grade
+      <select name="grade">
+        <option value="">—</option>
+        <option>6</option><option>7</option><option>8</option>
+      </select>
+    </label>
+    <label>Year
+      <select name="year">
+        <option value="">—</option>
+        <option>2026</option><option>2025</option>
+        <option>2024</option><option>2023</option>
+      </select>
+    </label>
+    <label>Item number
+      <input name="item" inputmode="numeric" placeholder="e.g. 40" size="6">
+    </label>
+  </div>
+
+  <label class="fb-block">What looks wrong?
+    <textarea name="message" rows="5" required
+      placeholder="What you expected, and what the site shows."></textarea>
+  </label>
+
+  <div class="fb-row">
+    <label>Your name <span class="fb-opt">optional</span>
+      <input name="name" autocomplete="name">
+    </label>
+    <label>Email, if you would like a reply <span class="fb-opt">optional</span>
+      <input name="email" type="email" autocomplete="email">
+    </label>
+  </div>
+
+  <p class="fb-note">
+    Submissions go to whoever runs this site, through Netlify. Please do not include
+    anything about individual students — a grade, a year and an item number are all
+    that is needed to find a problem.
+  </p>
+
+  <button type="submit" class="fb-send">Send</button>
+  <p class="fb-status" role="status" aria-live="polite"></p>
+</form>
 
 <script id="D" type="application/json">__DATA__</script>
 <script>

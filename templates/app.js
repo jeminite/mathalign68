@@ -10,6 +10,22 @@
   "use strict";
 
   var D = JSON.parse(document.getElementById("D").textContent);
+
+  /* The correction form's markup, captured once and then removed from the
+     document. Every tab is rendered by clearing #view, so MOVING the original
+     node into the About view worked exactly once: switching to another tab
+     destroyed it, and coming back found nothing. Injecting a fresh copy each
+     time is robust, and it costs nothing -- Netlify detects forms by scanning
+     the deployed HTML file at build time, so what the page does with the node
+     afterwards is irrelevant. */
+  var FORM_HTML = "";
+  (function () {
+    var original = document.getElementById("fb");
+    if (original) {
+      FORM_HTML = original.outerHTML;
+      original.parentNode.removeChild(original);
+    }
+  })();
   var STATE = { grade: 7, view: "questions" };
 
   /* ------------------------------------------------------------- utilities */
@@ -847,11 +863,180 @@
     return host;
   }
 
+
+  /* ----------------------------------------------------------------- about */
+
+  /* What this data is, how much of it there is, and what is already known to
+     be wrong with it -- then the form.
+
+     The known-issues list is the reason this view is worth building. A
+     colleague who notices item 40's stray dollar sign should be able to see
+     that it is already recorded, rather than spending their time writing it up.
+     Everything here is read from the payload, so none of it can go stale as
+     coverage grows. */
+
+  function viewAbout(grade) {
+    var host = frag();
+    var tc = D.meta.transcriptionCoverage || {};
+
+    var what = el("div", "card");
+    what.appendChild(el("h2", "", "About this data"));
+    what.appendChild(el("p", "lede",
+      "Two different things are on this site, and they are worth telling apart."));
+    var dl = el("div");
+    [["NYSED's own published data",
+      "Every item's type, answer key, credits, standard, cluster and statewide P-value comes " +
+      "from the Map to the Standards table that NYSED publishes with each year's released " +
+      "questions. So does the test design and the domain blueprint, from the Educator Guide. " +
+      "None of that is my judgement and none of it is retyped."],
+     ["One teacher's judgement",
+      "The curriculum alignment — which unit and lesson an item belongs to — is a judgement " +
+      "call, not official guidance from NYSED or Imagine Learning. Where a placement is " +
+      "uncertain the site says so."]
+    ].forEach(function (pair) {
+      var h = el("h3", "", pair[0]);
+      h.style.marginTop = "14px";
+      dl.appendChild(h);
+      dl.appendChild(el("p", "", pair[1]));
+    });
+    what.appendChild(dl);
+    host.appendChild(what);
+
+    var how = el("div", "card");
+    how.appendChild(el("h3", "", "How a question gets onto this site"));
+    how.appendChild(el("p", "",
+      "The questions in these PDFs cannot simply be copied: every numeral, variable and figure " +
+      "is drawn as vector artwork with no text behind it. The words, though, are real text. So " +
+      "a stem arrives as a sentence with holes exactly where its mathematics should be, and " +
+      "only the holes are reconstructed — each one decoded from the shapes of the drawn " +
+      "characters against a table built by hand."));
+    var n = el("p", "note");
+    n.innerHTML = "<b>What that buys you.</b> Because the wording is never retyped, it can be " +
+      "checked mechanically: before anything is published, the site strips the markup and the " +
+      "reconstructed mathematics out of every stem and requires what remains to match the " +
+      "PDF's own text character for character. A stem cannot drift from the original without " +
+      "the build failing.";
+    how.appendChild(n);
+    how.appendChild(el("p", "",
+      "Reconstructed mathematics can still be wrong, and a wrong number can look perfectly " +
+      "reasonable. So every item links to the exact page of the official PDF, and that page — " +
+      "not this site — is the authority. Answer keys are NYSED's own, and every " +
+      "constructed-response answer comes from NYSED's published exemplary response."));
+    host.appendChild(how);
+
+    var cov = el("div", "card");
+    cov.appendChild(el("h3", "", "How much is here"));
+    cov.appendChild(table([
+      { key: "grade", label: "Grade", num: true },
+      { key: "items", label: "Released items", num: true },
+      { key: "questions", label: "Questions shown", num: true,
+        render: function (r) { return r.questions || "none yet"; } },
+      { key: "note", label: "", wrap: true, sort: false }
+    ], D.meta.grades.map(function (g) {
+      var mine = D.items.filter(function (i) { return i.grade === g; });
+      var t = mine.filter(function (i) { return i.transcribed; }).length;
+      return {
+        grade: g, items: mine.length, questions: t,
+        note: t ? (t + " of " + mine.length + " transcribed so far")
+                : "every item still carries its standard, its statewide P-value and a link " +
+                  "to the official PDF"
+      };
+    }), { sortKey: "grade" }));
+    host.appendChild(cov);
+
+    var notes = tc.reviewNotes || {};
+    var keys = Object.keys(notes);
+    if (keys.length) {
+      var known = el("div", "card");
+      known.appendChild(el("h3", "", "Known problems — please don't spend time on these"));
+      known.appendChild(el("p", "lede",
+        "Found while checking the transcription, and left visible on purpose. Several could be " +
+        "tidied by hand, but editing a stem would break the check that keeps the wording honest, " +
+        "so they wait for a fix in the extraction instead."));
+      keys.forEach(function (testId) {
+        var list = el("ul");
+        list.style.margin = "0";
+        list.style.paddingLeft = "20px";
+        (notes[testId] || []).forEach(function (text) {
+          var li = el("li", "", text);
+          li.style.marginBottom = "7px";
+          li.style.fontSize = "13.5px";
+          list.appendChild(li);
+        });
+        known.appendChild(el("h3", "", testId.replace("g", "Grade ").replace("-", ", ")));
+        known.appendChild(list);
+      });
+      host.appendChild(known);
+    }
+
+    var sources = tc.keySources || {};
+    if (Object.keys(sources).length) {
+      var ks = el("div", "card");
+      ks.appendChild(el("h3", "", "How the answer keys were verified"));
+      Object.keys(sources).forEach(function (testId) {
+        ks.appendChild(el("h3", "", testId.replace("g", "Grade ").replace("-", ", ")));
+        var pr = el("p", "", sources[testId]);
+        pr.style.fontSize = "13px";
+        ks.appendChild(pr);
+      });
+      host.appendChild(ks);
+    }
+
+    var fbCard = el("div", "card");
+    fbCard.appendChild(el("h3", "", "Found something wrong?"));
+    fbCard.appendChild(el("p", "lede",
+      "Corrections and disagreement are both welcome — including about a curriculum placement " +
+      "you would have made differently. If you can, say which grade, year and item."));
+    if (FORM_HTML) {
+      var holder = el("div");
+      holder.innerHTML = FORM_HTML;
+      var form = holder.querySelector("form");
+      form.hidden = false;
+      fbCard.appendChild(form);
+      wireForm(form);
+    } else {
+      fbCard.appendChild(el("p", "empty", "The correction form is unavailable on this page."));
+    }
+    host.appendChild(fbCard);
+    return host;
+  }
+
+  /* Submit over fetch so the reader stays on the page. Netlify accepts a
+     urlencoded POST to the page path as long as form-name is included. On a
+     local preview there is no Netlify to answer, so the failure path has to say
+     something useful rather than look broken. */
+  function wireForm(form) {
+    if (form.dataset.wired) return;
+    form.dataset.wired = "1";
+    var status = form.querySelector(".fb-status");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var body = new URLSearchParams(new FormData(form)).toString();
+      status.textContent = "Sending…";
+      status.className = "fb-status";
+      fetch(form.getAttribute("action") || window.location.pathname, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body
+      }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        form.reset();
+        status.textContent = "Thank you — that has been sent.";
+        status.className = "fb-status ok";
+      }).catch(function () {
+        status.className = "fb-status err";
+        status.textContent = "That could not be sent from here. The form only works on the " +
+          "published site, so if you are looking at a local preview this is expected.";
+      });
+    });
+  }
+
   /* ------------------------------------------------------------------ shell */
 
   var VIEWS = {
     questions: viewQuestions, standards: viewStandards, difficulty: viewDifficulty,
-    blueprint: viewBlueprint, posttest: viewPostTest, items: viewItems
+    blueprint: viewBlueprint, posttest: viewPostTest, items: viewItems,
+    about: viewAbout
   };
 
   function render() {
@@ -862,7 +1047,9 @@
     Array.prototype.forEach.call(document.querySelectorAll(".tabs button"), function (b) {
       b.setAttribute("aria-selected", b.dataset.view === STATE.view ? "true" : "false");
     });
-    renderStats(STATE.grade);
+    var statsHost = document.getElementById("stats");
+    if (STATE.view === "about") statsHost.textContent = "";
+    else renderStats(STATE.grade);
     var host = document.getElementById("view");
     host.textContent = "";
     host.appendChild(VIEWS[STATE.view](STATE.grade));
@@ -903,6 +1090,16 @@
     STATE.view = b.dataset.view;
     writeUrl(); render();
   });
+
+  var footLink = document.getElementById("tofb");
+  if (footLink) {
+    footLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      STATE.view = "about";
+      writeUrl();
+      render();
+    });
+  }
 
   readUrl();
   render();

@@ -40,6 +40,10 @@ uploaded, and it compares your class to the state item by item.
 | **Curriculum alignment** | Unit, section and lesson in Imagine IM 6–8 *(Phase 3)* |
 | **Class analysis** | Your results vs. the state, in your browser, nothing uploaded *(Phase 2)* |
 
+**Corrections and disagreement are welcome.** There's a form on the *About & corrections* tab;
+submissions arrive through Netlify Forms. That tab also lists what is already known to be wrong,
+so nobody spends their time reporting a problem that's already recorded.
+
 ## What this is not
 
 **A shown question is a transcription, not a scan — and the PDF is the authority.** Every

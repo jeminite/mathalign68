@@ -166,6 +166,29 @@ input[type=search] { min-width:180px }
 .bp-row .val { font-variant-numeric:tabular-nums; color:var(--muted); font-size:12.5px }
 .bp-row.out .val { color:var(--hard); font-weight:600 }
 
+/* ------------------------------------------------------ correction form */
+.fb { margin:14px 0 0 }
+.fb-row { display:flex; flex-wrap:wrap; gap:12px 18px; margin:0 0 14px }
+.fb label { display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted) }
+.fb-block { display:flex; flex-direction:column; gap:4px; margin:0 0 14px }
+.fb input, .fb select, .fb textarea {
+  font:inherit; font-size:14px; color:var(--body); background:var(--card);
+  border:1px solid var(--line); border-radius:7px; padding:7px 9px;
+}
+.fb textarea { resize:vertical; min-height:90px; line-height:1.5 }
+.fb-opt { color:var(--muted); font-weight:400; font-style:italic }
+.fb-note { font-size:12.5px; color:var(--muted); max-width:72ch; margin:0 0 14px }
+.fb-send {
+  font:inherit; font-size:14px; font-weight:600; cursor:pointer;
+  padding:9px 20px; border:0; border-radius:7px;
+  background:var(--accent); color:#fff;
+}
+.fb-send:hover { background:var(--accent-d) }
+.fb-status { font-size:13px; margin:10px 0 0; min-height:1.2em }
+.fb-status.ok  { color:var(--easy); font-weight:600 }
+.fb-status.err { color:var(--mid) }
+.fb-hp { position:absolute; left:-9999px }
+
 .empty { color:var(--muted); font-size:13px; padding:16px 0 }
 .foot { margin:26px 0 0; font-size:12px; color:var(--muted); max-width:84ch }
 .foot a { color:var(--accent) }

@@ -28,17 +28,13 @@ def read(name):
         return fh.read()
 
 
-def render(payload, disclaimer, feedback_url, feedback_label):
+def render(payload, disclaimer):
     html = read("index.html")
     css = read("base.css")
     question_css = read("question.css")
     app = read("app.js")
 
     years = payload["meta"]["years"]
-    feedback = ""
-    if feedback_url:
-        feedback = ('<a href="%s" target="_blank" rel="noopener">%s</a>.'
-                    % (feedback_url, feedback_label))
 
     # The payload goes inside <script type="application/json">, so the only
     # sequence that can break out is "</script". Escaping the slash keeps the
@@ -51,7 +47,6 @@ def render(payload, disclaimer, feedback_url, feedback_label):
         ("/*__APP__*/", app),
         ("__DATA__", data),
         ("__DISCLAIMER__", disclaimer),
-        ("__FEEDBACK__", feedback),
         ("__BUILT__", payload["meta"]["built"].replace("T", " at ")),
         ("__YEARS__", "%d–%d" % (years[0], years[-1])),
     ]

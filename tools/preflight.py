@@ -651,6 +651,44 @@ def site_shape(payload):
         check("site/data.json states the P-value caveat",
               "pValueCaveat" in published["meta"])
 
+    feedback_form(html)
+
+
+def feedback_form(html):
+    """The correction form is the whole point of a public launch, so check it.
+
+    Netlify finds forms by scanning the deployed HTML, so the form must be in
+    the static markup -- not built by app.js, which renders every tab at
+    runtime and would leave submissions going nowhere with no visible sign.
+    """
+    check("the correction form is in the static HTML, where Netlify can find it",
+          'data-netlify="true"' in html and 'name="correction"' in html,
+          "a form built by app.js is never detected, and submissions vanish silently")
+    check("the form carries the form-name field Netlify requires",
+          'name="form-name"' in html and 'value="correction"' in html)
+    check("the form has a honeypot against spam",
+          'data-netlify-honeypot="bot-field"' in html and 'name="bot-field"' in html)
+    check("the form has a message field and a submit button",
+          'name="message"' in html and "fb-send" in html)
+    check("the About tab is wired up", 'data-view="about"' in html)
+
+    # This is the first thing in the project that collects anything from
+    # anyone, on a project whose whole posture is that student data lives in
+    # exactly one folder and never travels. A field inviting a class list or a
+    # student name would quietly undo that.
+    form = html[html.find('<form'):html.find("</form>") + 7] if "<form" in html else ""
+    banned = ("student", "students", "roster", "class list", "osis", "names",
+              "pupil", "child")
+    attr = r"(?:name|id|placeholder|aria-label)\s*=\s*['" + chr(34) + r"][^'" + chr(34) + r"]*"
+    hits = sorted({w for w in banned
+                   if re.search(attr + r"\b" + w + r"\b", form, re.I)})
+    check("no form field invites student data", not hits,
+          "field(s) mentioning %s -- this form asks for a grade, a year and an item, "
+          "never anything about a class" % ", ".join(hits))
+    check("the form says where a submission goes",
+          "Netlify" in form or "site" in form,
+          "a reader should be told before they type")
+
 
 # ------------------------------------------------------------ 12. the test suites
 

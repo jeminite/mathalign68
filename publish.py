@@ -49,20 +49,19 @@ DISCLAIMER = (
     "guidance. Corrections and disagreement are welcome."
 )
 
-# Leave empty and the feedback link is omitted entirely, so the page never shows
-# a dead link.
-FEEDBACK_URL = ""
-FEEDBACK_LABEL = "Send feedback or report an error"
+# Corrections come through the form on the About tab, which is part of the page
+# itself rather than a link to somewhere else -- see templates/index.html. There
+# is deliberately no FEEDBACK_URL any more: an empty one silently removed the
+# only route for feedback, on a site whose whole purpose is to collect it.
 
 
 def main():
     try:
-        payload = payload_mod.build(feedback_url=FEEDBACK_URL or None,
-                                    disclaimer=DISCLAIMER)
+        payload = payload_mod.build(feedback_url="#about", disclaimer=DISCLAIMER)
     except payload_mod.PayloadRefused as exc:
         sys.exit("publish.py: %s" % exc)
 
-    html = render_mod.render(payload, DISCLAIMER, FEEDBACK_URL, FEEDBACK_LABEL)
+    html = render_mod.render(payload, DISCLAIMER)
 
     # Copy only the figures the payload actually references, into a directory
     # cleared first. RegentsAlign learned both halves of that: a stale crop left
