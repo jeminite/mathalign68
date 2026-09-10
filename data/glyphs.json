@@ -3,7 +3,7 @@
     "generatedBy": "tools/label_glyphs.py",
     "note": "Vector glyph shapes from the released-items PDFs, mapped to the characters they draw. HAND-LABELLED: a script builds the clusters, a person (or a vision pass that is then spot-checked) supplies the `label`. An unlabelled cluster makes its item fail to decode rather than decode wrongly.",
     "clusters": 178,
-    "labelled": 23,
+    "labelled": 44,
     "instances": 2478,
     "tolerance": 0.04
   },
@@ -1449,7 +1449,7 @@
         "items": 16,
         "degenerate": false
       },
-      "label": null,
+      "label": "\u2022",
       "count": 64,
       "samples": [
         {
@@ -10075,7 +10075,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 11,
       "samples": [
         {
@@ -11337,7 +11337,7 @@
         "items": 12,
         "degenerate": false
       },
-      "label": null,
+      "label": "=",
       "count": 10,
       "samples": [
         {
@@ -13490,7 +13490,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 7,
       "samples": [
         {
@@ -15385,7 +15385,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 6,
       "samples": [
         {
@@ -15441,7 +15441,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 6,
       "samples": [
         {
@@ -15682,7 +15682,7 @@
         "items": 6,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 6,
       "samples": [
         {
@@ -16661,7 +16661,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 5,
       "samples": [
         {
@@ -17014,7 +17014,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 5,
       "samples": [
         {
@@ -18130,7 +18130,7 @@
         "items": 36,
         "degenerate": false
       },
-      "label": null,
+      "label": "g",
       "count": 5,
       "samples": [
         {
@@ -20949,7 +20949,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 3,
       "samples": [
         {
@@ -23769,7 +23769,7 @@
         "items": 23,
         "degenerate": false
       },
-      "label": null,
+      "label": "b",
       "count": 2,
       "samples": [
         {
@@ -24509,7 +24509,7 @@
         "items": 14,
         "degenerate": false
       },
-      "label": null,
+      "label": "\u00f7",
       "count": 2,
       "samples": [
         {
@@ -25723,7 +25723,7 @@
         "items": 6,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -26358,7 +26358,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -28882,7 +28882,7 @@
         "items": 16,
         "degenerate": false
       },
-      "label": null,
+      "label": "\u2264",
       "count": 1,
       "samples": [
         {
@@ -29037,7 +29037,7 @@
         "items": 10,
         "degenerate": false
       },
-      "label": null,
+      "label": "<",
       "count": 1,
       "samples": [
         {
@@ -29272,7 +29272,7 @@
         "items": 16,
         "degenerate": false
       },
-      "label": null,
+      "label": "\u2265",
       "count": 1,
       "samples": [
         {
@@ -29427,7 +29427,7 @@
         "items": 10,
         "degenerate": false
       },
-      "label": null,
+      "label": ">",
       "count": 1,
       "samples": [
         {
@@ -31179,7 +31179,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -32074,7 +32074,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {

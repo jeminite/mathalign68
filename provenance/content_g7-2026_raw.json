@@ -1,0 +1,2126 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-10",
+    "testId": "g7-2026",
+    "source": "sources/2026-released-items-math-g7.pdf",
+    "assetDir": "G7-2026",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2026.json.",
+    "items": 42,
+    "itemsWithUnresolved": 0,
+    "figures": 16,
+    "displayExpressions": 7
+  },
+  "items": [
+    {
+      "item": 1,
+      "page": 4,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Mr. Joseph paid a total of <span class=\"math\">$540.00</span> for a new gaming system and games. He paid <span class=\"math\">$300.00</span> for the gaming system and <span class=\"math\">$60.00</span> for each game. How many games did Mr. Joseph buy?",
+      "stemLines": [
+        "Mr. Joseph paid a total of <span class=\"math\">$540.00</span> for a new gaming system and games. He paid <span class=\"math\">$300.00</span> for",
+        "the gaming system and <span class=\"math\">$60.00</span> for each game. How many games did Mr. Joseph buy?"
+      ],
+      "prose": "Mr. Joseph paid a total of  for a new gaming system and games. He paid  for the gaming system and  for each game. How many games did Mr. Joseph buy?",
+      "proseAllLines": "Mr. Joseph paid a total of  for a new gaming system and games. He paid  for the gaming system and  for each game. How many games did Mr. Joseph buy?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.5,
+          "y": 103.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">4</span>",
+          "x": 76.1,
+          "y": 133.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">5</span>",
+          "x": 75.6,
+          "y": 163.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">9</span>",
+          "x": 75.1,
+          "y": 193.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 2,
+      "page": 4,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from <span class=\"math\">−10</span> to <span class=\"math\">10</span>. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. The two cards drawn by each student are shown below. Which students have a score of <span class=\"math\">0</span> ?",
+      "stemLines": [
+        "A group of four students is playing a game using a deck of cards. The cards in the deck are",
+        "labeled with an integer from <span class=\"math\">−10</span> to <span class=\"math\">10</span>. Each student draws two cards from the deck and",
+        "finds the sum of their two cards to determine their score. The two cards drawn by each",
+        "student are shown below.",
+        "Which students have a score of <span class=\"math\">0</span> ?"
+      ],
+      "prose": "A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from  to. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. The two cards drawn by each student are shown below. Which students have a score of  ?",
+      "proseAllLines": "A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from  to. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. The two cards drawn by each student are shown below. Which students have a score of  ? Alberto and Jenny Jenny and Lisako Alberto and Paul Jenny and Paul",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Alberto and Jenny",
+          "x": 75.5,
+          "y": 576.3
+        },
+        {
+          "label": "B",
+          "html": "Jenny and Lisako",
+          "x": 76.1,
+          "y": 606.3
+        },
+        {
+          "label": "C",
+          "html": "Alberto and Paul",
+          "x": 75.6,
+          "y": 636.3
+        },
+        {
+          "label": "D",
+          "html": "Jenny and Paul",
+          "x": 75.1,
+          "y": 665.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q02.png",
+          "rect": [
+            202.4,
+            337.74,
+            414.4,
+            523.06
+          ],
+          "paths": 43,
+          "decodedLabels": "������� ����� −� � −� � ������ ���� −� −� � −�",
+          "undecodedGlyphs": 30,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 3,
+      "page": 5,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A farm sells blueberries by the pound to customers. The table below shows the relationship between the price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold. Which statement describes a constant of proportionality for the relationship between the price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold?",
+      "stemLines": [
+        "A farm sells blueberries by the pound to customers. The table below shows the relationship",
+        "between the price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold.",
+        "Which statement describes a constant of proportionality for the relationship between the",
+        "price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold?"
+      ],
+      "prose": "A farm sells blueberries by the pound to customers. The table below shows the relationship between the price, , in dollars, and the number of pounds of blueberries, , sold. Which statement describes a constant of proportionality for the relationship between the price, , in dollars, and the number of pounds of blueberries, , sold?",
+      "proseAllLines": "A farm sells blueberries by the pound to customers. The table below shows the relationship between the price, , in dollars, and the number of pounds of blueberries, , sold. Which statement describes a constant of proportionality for the relationship between the price, , in dollars, and the number of pounds of blueberries, , sold? The price per pound is . The price per pound is . The price per pound is . The price per pound is .",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "The price per pound is <span class=\"math\">$0.17</span>.",
+          "x": 75.5,
+          "y": 293.6
+        },
+        {
+          "label": "B",
+          "html": "The price per pound is <span class=\"math\">$5.99</span>.",
+          "x": 76.1,
+          "y": 323.6
+        },
+        {
+          "label": "C",
+          "html": "The price per pound is <span class=\"math\">$9.98</span>.",
+          "x": 75.6,
+          "y": 353.6
+        },
+        {
+          "label": "D",
+          "html": "The price per pound is <span class=\"math\">$11.98</span>.",
+          "x": 75.1,
+          "y": 382.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q03.png",
+          "rect": [
+            219.17,
+            110.5,
+            404.25,
+            221.14
+          ],
+          "paths": 82,
+          "decodedLabels": "��� � ����� ������ �� � � � � � � � � � �� � �� � � � � � ����� ���������� � � � � � ��� � ��� ��� � ������",
+          "undecodedGlyphs": 73,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 4,
+      "page": 5,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression <span class=\"math\">− <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">÷</span> <span class=\"math\">− <span class=\"frac\"><span>1</span><span>3</span></span></span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">− <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">÷</span> <span class=\"math\">− <span class=\"frac\"><span>1</span><span>3</span></span></span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "What is the value of the expression  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.5,
+          "y": 497.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>5</span><span>18</span></span></span>",
+          "x": 76.1,
+          "y": 535.8
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>18</span></span></span>",
+          "x": 75.6,
+          "y": 574.0
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 613.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 5,
+      "page": 6,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A water hose is being used to fill a <span class=\"math\">3,000</span> gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> hours, how many gallons of water were added to the pool per hour?",
+      "stemLines": [
+        "A water hose is being used to fill a <span class=\"math\">3,000</span> gallon swimming pool. Water flows at a constant",
+        "rate through the hose. If the pool is completely filled in <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> hours, how many gallons of",
+        "water were added to the pool per hour?"
+      ],
+      "prose": "A water hose is being used to fill a gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in  hours, how many gallons of water were added to the pool per hour?",
+      "proseAllLines": "A water hose is being used to fill a gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in  hours, how many gallons of water were added to the pool per hour?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">300</span>",
+          "x": 75.5,
+          "y": 159.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">600</span>",
+          "x": 76.1,
+          "y": 189.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">1,200</span>",
+          "x": 75.6,
+          "y": 218.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">7,500</span>",
+          "x": 75.1,
+          "y": 248.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 6,
+      "page": 6,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Shameka is saving for a new scooter that costs <span class=\"math\">$248.00</span>. She has already saved <span class=\"math\">$100.00</span>. She wants to buy the scooter in <span class=\"math\">8</span> weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal?",
+      "stemLines": [
+        "Shameka is saving for a new scooter that costs <span class=\"math\">$248.00</span>. She has already saved <span class=\"math\">$100.00</span>. She",
+        "wants to buy the scooter in <span class=\"math\">8</span> weeks by saving the same amount of money each week.",
+        "What is the least amount of money, in dollars, Shameka can save each week to achieve",
+        "her goal?"
+      ],
+      "prose": "Shameka is saving for a new scooter that costs . She has already saved . She wants to buy the scooter in  weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal?",
+      "proseAllLines": "Shameka is saving for a new scooter that costs . She has already saved . She wants to buy the scooter in  weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$16.45</span>",
+          "x": 75.5,
+          "y": 388.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$18.50</span>",
+          "x": 76.1,
+          "y": 418.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$31.00</span>",
+          "x": 75.6,
+          "y": 448.5
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$43.50</span>",
+          "x": 75.1,
+          "y": 477.7
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 7,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The table below shows a proportional relationship between  and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
+      "stemLines": [
+        "The table below shows a proportional relationship between  and <span class=\"math\">x</span>.",
+        "Which equation represents the proportional relationship?"
+      ],
+      "prose": "The table below shows a proportional relationship between  and . Which equation represents the proportional relationship?",
+      "proseAllLines": "The table below shows a proportional relationship between  and . Which equation represents the proportional relationship?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">y = x + 0.3</span>",
+          "x": 75.5,
+          "y": 237.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">y = x + 3<span class=\"repeat\">.3</span></span>",
+          "x": 76.1,
+          "y": 267.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">y = 3<span class=\"repeat\">.3</span> x</span>",
+          "x": 75.6,
+          "y": 296.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">y = 0.3x</span>",
+          "x": 75.1,
+          "y": 326.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            384.15,
+            64.52,
+            390.03,
+            73.13
+          ],
+          "html": "<span class=\"math\">y</span>"
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q07.png",
+          "rect": [
+            133.73,
+            101.69,
+            181.1,
+            179.42
+          ],
+          "paths": 24,
+          "decodedLabels": "� � � ��� � ��� � � �� � � � �",
+          "undecodedGlyphs": 18,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 8,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A student can choose one food item and one type of juice for breakfast. The food items and types of juice available are listed below. <span class=\"math\">•</span> food item: egg, toast, pancakes, sausage <span class=\"math\">•</span> type of juice: apple, grape, orange How many different breakfast combinations of one food item and one type of juice are available for the student to choose from?",
+      "stemLines": [
+        "A student can choose one food item and one type of juice for breakfast. The food items",
+        "and types of juice available are listed below.",
+        "<span class=\"math\">•</span> food item: egg, toast, pancakes, sausage",
+        "<span class=\"math\">•</span> type of juice: apple, grape, orange",
+        "How many different breakfast combinations of one food item and one type of juice are",
+        "available for the student to choose from?"
+      ],
+      "prose": "A student can choose one food item and one type of juice for breakfast. The food items and types of juice available are listed below. food item: egg, toast, pancakes, sausage type of juice: apple, grape, orange How many different breakfast combinations of one food item and one type of juice are available for the student to choose from?",
+      "proseAllLines": "A student can choose one food item and one type of juice for breakfast. The food items and types of juice available are listed below. food item: egg, toast, pancakes, sausage type of juice: apple, grape, orange How many different breakfast combinations of one food item and one type of juice are available for the student to choose from?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.5,
+          "y": 518.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">4</span>",
+          "x": 76.1,
+          "y": 548.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">7</span>",
+          "x": 75.6,
+          "y": 577.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">12</span>",
+          "x": 75.1,
+          "y": 607.7
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 10,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Ms. Morgan earns <span class=\"math\">$15.50</span> per hour working in an office. On Tuesday she spends <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>3</span></span></span> hours filling out paperwork, <span class=\"math\">1</span> hour and <span class=\"math\">25</span> minutes sending emails, and <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>4</span></span></span> hours making appointments. How much money does Ms. Morgan earn on Tuesday?",
+      "stemLines": [
+        "Ms. Morgan earns <span class=\"math\">$15.50</span> per hour working in an office. On Tuesday she spends <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>3</span></span></span> hours",
+        "filling out paperwork, <span class=\"math\">1</span> hour and <span class=\"math\">25</span> minutes sending emails, and <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>4</span></span></span> hours making",
+        "appointments. How much money does Ms. Morgan earn on Tuesday?"
+      ],
+      "prose": "Ms. Morgan earnsper hour working in an office. On Tuesday she spendshours filling out paperwork,hour andminutes sending emails, andhours making appointments. How much money does Ms. Morgan earn on Tuesday?",
+      "proseAllLines": "Ms. Morgan earnsper hour working in an office. On Tuesday she spendshours filling out paperwork,hour andminutes sending emails, andhours making appointments. How much money does Ms. Morgan earn on Tuesday?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$77.50</span>",
+          "x": 75.5,
+          "y": 579.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$89.90</span>",
+          "x": 76.1,
+          "y": 609.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$93.00</span>",
+          "x": 75.6,
+          "y": 639.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$108.50</span>",
+          "x": 75.1,
+          "y": 669.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 11,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">3 (5x + 2) − 2 (6x − 7)</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">3 (5x + 2) − 2 (6x − 7)</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">23x</span>",
+          "x": 75.5,
+          "y": 88.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−11x</span>",
+          "x": 76.1,
+          "y": 118.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">3x − 5</span>",
+          "x": 75.6,
+          "y": 148.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">3x + 20</span>",
+          "x": 75.1,
+          "y": 178.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 12,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Jessica opened a savings account with a <span class=\"math\">$1,200.00</span> deposit. She did not make any additional deposits or withdrawals for <span class=\"math\">4</span> years and earned <span class=\"math\">$144.00</span> in simple interest. What was the annual interest rate that the bank used to calculate the simple interest?",
+      "stemLines": [
+        "Jessica opened a savings account with a <span class=\"math\">$1,200.00</span> deposit. She did not make any additional",
+        "deposits or withdrawals for <span class=\"math\">4</span> years and earned <span class=\"math\">$144.00</span> in simple interest. What was the",
+        "annual interest rate that the bank used to calculate the simple interest?"
+      ],
+      "prose": "Jessica opened a savings account with a  deposit. She did not make any additional deposits or withdrawals for  years and earned  in simple interest. What was the annual interest rate that the bank used to calculate the simple interest?",
+      "proseAllLines": "Jessica opened a savings account with a  deposit. She did not make any additional deposits or withdrawals for  years and earned  in simple interest. What was the annual interest rate that the bank used to calculate the simple interest?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">0.3%</span>",
+          "x": 75.5,
+          "y": 302.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">2.7%</span>",
+          "x": 76.1,
+          "y": 332.2
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">3.0%</span>",
+          "x": 75.6,
+          "y": 362.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">4.8%</span>",
+          "x": 75.1,
+          "y": 391.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 13,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The graph below shows the prices of gift bags at a store. Based on the graph, which statement is true?",
+      "stemLines": [
+        "The graph below shows the prices of gift bags at a store.",
+        "Based on the graph, which statement is true?"
+      ],
+      "prose": "The graph below shows the prices of gift bags at a store. Based on the graph, which statement is true?",
+      "proseAllLines": "The graph below shows the prices of gift bags at a store. Based on the graph, which statement is true? The unit rate is  per gift bag. The unit rate is  per gift bag. The unit rate is  per gift bag. The unit rate is  per gift bag.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "The unit rate is <span class=\"math\">$0.20</span> per gift bag.",
+          "x": 75.5,
+          "y": 397.9
+        },
+        {
+          "label": "B",
+          "html": "The unit rate is <span class=\"math\">$1.00</span> per gift bag.",
+          "x": 76.1,
+          "y": 427.9
+        },
+        {
+          "label": "C",
+          "html": "The unit rate is <span class=\"math\">$2.00</span> per gift bag.",
+          "x": 75.6,
+          "y": 457.1
+        },
+        {
+          "label": "D",
+          "html": "The unit rate is <span class=\"math\">$5.00</span> per gift bag.",
+          "x": 75.1,
+          "y": 487.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q13.png",
+          "rect": [
+            118.65,
+            95.64,
+            345.9,
+            345.11
+          ],
+          "paths": 95,
+          "decodedLabels": "�� �� ��� ������ � � �� �� � � � � �� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � ������ �� ���� ����",
+          "undecodedGlyphs": 70,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 14,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The number of goals scored by two soccer teams in each of <span class=\"math\">17</span> games during a tournament is shown in the table and dot plot below. Which team had a higher median number of goals scored in a game and what is that team’s median number of goals scored?",
+      "stemLines": [
+        "The number of goals scored by two soccer teams in each of <span class=\"math\">17</span> games during a tournament",
+        "is shown in the table and dot plot below.",
+        "Which team had a higher median number of goals scored in a game and what is that",
+        "team’s median number of goals scored?"
+      ],
+      "prose": "The number of goals scored by two soccer teams in each of  games during a tournament is shown in the table and dot plot below. Which team had a higher median number of goals scored in a game and what is that team’s median number of goals scored?",
+      "proseAllLines": "The number of goals scored by two soccer teams in each of  games during a tournament is shown in the table and dot plot below. Which team had a higher median number of goals scored in a game and what is that team’s median number of goals scored? Team A with a median of  goals scored in a game. Team A with a median of  goals scored in a game. Team B with a median of  goals scored in a game. Team B with a median of  goals scored in a game.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Team A with a median of <span class=\"math\">3</span> goals scored in a game.",
+          "x": 75.5,
+          "y": 328.9
+        },
+        {
+          "label": "B",
+          "html": "Team A with a median of <span class=\"math\">4</span> goals scored in a game.",
+          "x": 76.1,
+          "y": 358.9
+        },
+        {
+          "label": "C",
+          "html": "Team B with a median of <span class=\"math\">2</span> goals scored in a game.",
+          "x": 75.6,
+          "y": 388.9
+        },
+        {
+          "label": "D",
+          "html": "Team B with a median of <span class=\"math\">3</span> goals scored in a game.",
+          "x": 75.1,
+          "y": 418.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q14.png",
+          "rect": [
+            113.14,
+            110.67,
+            504.9,
+            261.34
+          ],
+          "paths": 92,
+          "decodedLabels": "���� � ���� � �� � � � � � � �� � �� ��������� • • • • • • • � � • • • • • • • • • • � � � � � � � � � � � ������ �� ����� � �",
+          "undecodedGlyphs": 60,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 15,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the product of <span class=\"math\">− <span class=\"frac\"><span>1</span><span>5</span></span></span> and <span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span> ?",
+      "stemLines": [
+        "What is the product of <span class=\"math\">− <span class=\"frac\"><span>1</span><span>5</span></span></span> and <span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span> ?"
+      ],
+      "prose": "What is the product of  and  ?",
+      "proseAllLines": "What is the product of  and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>8</span><span>15</span></span></span>",
+          "x": 75.5,
+          "y": 530.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>3</span><span>40</span></span></span>",
+          "x": 76.1,
+          "y": 568.8
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>40</span></span></span>",
+          "x": 75.6,
+          "y": 607.0
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>8</span><span>15</span></span></span>",
+          "x": 75.1,
+          "y": 646.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 17,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Joyce is buying a laptop. The original price of the laptop is <span class=\"math\">$279.00</span>. She uses a coupon for a <span class=\"math\">10%</span> discount off the original price. A sales tax of <span class=\"math\">8.875%</span> is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?",
+      "stemLines": [
+        "Joyce is buying a laptop. The original price of the laptop is <span class=\"math\">$279.00</span>. She uses a coupon for a",
+        "<span class=\"math\">10%</span> discount off the original price. A sales tax of <span class=\"math\">8.875%</span> is applied to the discounted price.",
+        "How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?"
+      ],
+      "prose": "Joyce is buying a laptop. The original price of the laptop is . She uses a coupon for a discount off the original price. A sales tax of  is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?",
+      "proseAllLines": "Joyce is buying a laptop. The original price of the laptop is . She uses a coupon for a discount off the original price. A sales tax of  is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$228.81</span>",
+          "x": 75.5,
+          "y": 334.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$260.13</span>",
+          "x": 76.1,
+          "y": 364.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$273.39</span>",
+          "x": 75.6,
+          "y": 394.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$334.14</span>",
+          "x": 75.1,
+          "y": 423.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 18,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in The heights of the plants in the shade were all greater than the heights of the The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+      "stemLines": [
+        "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the",
+        "shade. The heights of the plants were measured and recorded after several weeks. The",
+        "results are shown in the dot plots below.",
+        "Which statement best describes the data?",
+        "The heights of the plants in full sun varied more than the heights of the plants in",
+        "The heights of the plants in the shade were all greater than the heights of the",
+        "The average height of the plants in full sun was greater than the average height of",
+        "the plants in the shade.",
+        "The average height of the plants in the shade was greater than the average height",
+        "of the plants in full sun."
+      ],
+      "prose": "In a science class, students placed  tomato plants in full sun and  tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in The heights of the plants in the shade were all greater than the heights of the The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+      "proseAllLines": "In a science class, students placed  tomato plants in full sun and  tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in the shade. The heights of the plants in the shade were all greater than the heights of the plants in full sun. The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "the shade.",
+          "x": 75.5,
+          "y": 338.6
+        },
+        {
+          "label": "B",
+          "html": "plants in full sun.",
+          "x": 76.1,
+          "y": 376.9
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 75.6,
+          "y": 414.4
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 75.1,
+          "y": 452.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q18.png",
+          "rect": [
+            122.4,
+            124.85,
+            494.4,
+            318.0
+          ],
+          "paths": 119,
+          "decodedLabels": "� ��� ��� �� ������ • • • ••• • • ���� ��� � ��� � ��� � ��� � � � � � � � � �� • • • • • • •• ����� � ��� � ��� � ��� � � � � � � � � �� ������ ��������",
+          "undecodedGlyphs": 85,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 19,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which graph represents a proportional relationship?",
+      "stemLines": [
+        "Which graph represents a proportional relationship?"
+      ],
+      "prose": "Which graph represents a proportional relationship?",
+      "proseAllLines": "Which graph represents a proportional relationship?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 157.9
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 309.6,
+          "y": 157.9
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 327.4
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 309.1,
+          "y": 327.4
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q19.png",
+          "rect": [
+            75.48,
+            84.26,
+            480.9,
+            404.49
+          ],
+          "paths": 352,
+          "decodedLabels": "� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � ��� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� � � � � � � � � � ��� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
+          "undecodedGlyphs": 344,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 20,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An equation is shown below. What value of <span class=\"math\">x</span> makes the equation true?",
+      "stemLines": [
+        "An equation is shown below.",
+        "What value of <span class=\"math\">x</span> makes the equation true?"
+      ],
+      "prose": "An equation is shown below. What value of  makes the equation true?",
+      "proseAllLines": "An equation is shown below. What value of  makes the equation true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−12.5</span>",
+          "x": 75.5,
+          "y": 547.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−14</span>",
+          "x": 76.1,
+          "y": 576.7
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">−50</span>",
+          "x": 75.6,
+          "y": 606.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">−56</span>",
+          "x": 75.1,
+          "y": 636.7
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q20.png",
+          "rect": [
+            107.42,
+            482.99,
+            194.53,
+            506.73
+          ],
+          "paths": 15,
+          "decodedLabels": "12 4(x + 2) = −0.25",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 21,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An artist is paid <span class=\"math\">$20.00</span> to work at a birthday party, plus <span class=\"math\">$5.00</span> for each portrait painted during the party. The artist would like to earn at least <span class=\"math\">$200.00</span> at the party. Which inequality represents the number of portraits, <span class=\"math\">x</span>, the artist should paint to earn at least <span class=\"math\">$200.00</span> ?",
+      "stemLines": [
+        "An artist is paid <span class=\"math\">$20.00</span> to work at a birthday party, plus <span class=\"math\">$5.00</span> for each portrait painted",
+        "during the party. The artist would like to earn at least <span class=\"math\">$200.00</span> at the party. Which",
+        "inequality represents the number of portraits, <span class=\"math\">x</span>, the artist should paint to earn",
+        "at least <span class=\"math\">$200.00</span> ?"
+      ],
+      "prose": "An artist is paid  to work at a birthday party, plus  for each portrait painted during the party. The artist would like to earn at least  at the party. Which inequality represents the number of portraits, , the artist should paint to earn at least  ?",
+      "proseAllLines": "An artist is paid  to work at a birthday party, plus  for each portrait painted during the party. The artist would like to earn at least  at the party. Which inequality represents the number of portraits, , the artist should paint to earn at least  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">20x + 5 ≤ 200</span>",
+          "x": 75.5,
+          "y": 133.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">20x + 5 &lt; 200</span>",
+          "x": 76.1,
+          "y": 163.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">5x + 20 ≥ 200</span>",
+          "x": 75.6,
+          "y": 193.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">5x + 20 &gt; 200</span>",
+          "x": 75.1,
+          "y": 223.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 22,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Bianca created a scale drawing of her bedroom for a class project using a scale of <span class=\"math\">1</span> ft to <span class=\"math\">1.5</span> cm. On the drawing, Bianca’s rectangular bed is <span class=\"math\">10.5</span> cm long and <span class=\"math\">5.25</span> cm wide. What is the actual area, in square feet, of Bianca’s bed?",
+      "stemLines": [
+        "Bianca created a scale drawing of her bedroom for a class project using a scale of <span class=\"math\">1</span> ft to",
+        "<span class=\"math\">1.5</span> cm. On the drawing, Bianca’s rectangular bed is <span class=\"math\">10.5</span> cm long and <span class=\"math\">5.25</span> cm wide. What is",
+        "the actual area, in square feet, of Bianca’s bed?"
+      ],
+      "prose": "Bianca created a scale drawing of her bedroom for a class project using a scale of  ft to cm. On the drawing, Bianca’s rectangular bed is  cm long and  cm wide. What is the actual area, in square feet, of Bianca’s bed?",
+      "proseAllLines": "Bianca created a scale drawing of her bedroom for a class project using a scale of  ft to cm. On the drawing, Bianca’s rectangular bed is  cm long and  cm wide. What is the actual area, in square feet, of Bianca’s bed?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">24.5</span>",
+          "x": 75.5,
+          "y": 346.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">36.75</span>",
+          "x": 76.1,
+          "y": 376.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">55.125</span>",
+          "x": 75.6,
+          "y": 406.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">124.03</span>",
+          "x": 75.1,
+          "y": 435.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 23,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">7 − 2(3x + 6) − 4x</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">7 − 2(3x + 6) − 4x</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">11x + 6</span>",
+          "x": 75.5,
+          "y": 530.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">11x + 30</span>",
+          "x": 76.1,
+          "y": 560.2
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">−10x − 5</span>",
+          "x": 75.6,
+          "y": 589.5
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">−10x + 13</span>",
+          "x": 75.1,
+          "y": 619.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 25,
+      "page": 16,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Mateo has <span class=\"math\">$20.00</span> to spend at a store. He spends <span class=\"math\"><span class=\"frac\"><span>2</span><span>5</span></span></span> of his money on a shirt. Then he buys a pack of gum with <span class=\"math\">10%</span> of his remaining money. What is the total amount of money that Mateo spends at the store?",
+      "stemLines": [
+        "Mateo has <span class=\"math\">$20.00</span> to spend at a store. He spends <span class=\"math\"><span class=\"frac\"><span>2</span><span>5</span></span></span> of his money on a shirt. Then he buys a",
+        "pack of gum with <span class=\"math\">10%</span> of his remaining money. What is the total amount of money that",
+        "Mateo spends at the store?"
+      ],
+      "prose": "Mateo has  to spend at a store. He spends  of his money on a shirt. Then he buys a pack of gum with  of his remaining money. What is the total amount of money that Mateo spends at the store?",
+      "proseAllLines": "Mateo has  to spend at a store. He spends  of his money on a shirt. Then he buys a pack of gum with  of his remaining money. What is the total amount of money that Mateo spends at the store?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$8.80</span>",
+          "x": 75.5,
+          "y": 389.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$9.20</span>",
+          "x": 76.1,
+          "y": 419.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$10.80</span>",
+          "x": 75.6,
+          "y": 448.3
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$13.20</span>",
+          "x": 75.1,
+          "y": 478.3
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 26,
+      "page": 17,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">− <span class=\"frac\"><span>5</span><span>8</span></span></span> ?",
+      "stemLines": [
+        "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">− <span class=\"frac\"><span>5</span><span>8</span></span></span> ?"
+      ],
+      "prose": "What is the value of  ?",
+      "proseAllLines": "What is the value of  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>1</span><span>10</span></span></span>",
+          "x": 75.5,
+          "y": 107.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>3</span><span>8</span></span></span>",
+          "x": 76.1,
+          "y": 145.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>10</span></span></span>",
+          "x": 75.6,
+          "y": 184.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span>",
+          "x": 75.1,
+          "y": 223.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 27,
+      "page": 18,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The graph below shows the relationship between the amount of juice, , that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
+      "stemLines": [
+        "The graph below shows the relationship between the amount of juice, , that can be made",
+        "from <span class=\"math\">x</span> apples.",
+        "Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of",
+        "juice made from <span class=\"math\">1</span> apple?"
+      ],
+      "prose": "The graph below shows the relationship between the amount of juice, , that can be made fromapples. Which point on the graph has acoordinate that represents the number of fluid ounces of juice made fromapple?",
+      "proseAllLines": "The graph below shows the relationship between the amount of juice, , that can be made fromapples. Which point on the graph has acoordinate that represents the number of fluid ounces of juice made fromapple? point P point Q point R point S",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "point P",
+          "x": 75.5,
+          "y": 404.6
+        },
+        {
+          "label": "B",
+          "html": "point Q",
+          "x": 76.1,
+          "y": 434.6
+        },
+        {
+          "label": "C",
+          "html": "point R",
+          "x": 75.6,
+          "y": 464.6
+        },
+        {
+          "label": "D",
+          "html": "point S",
+          "x": 75.1,
+          "y": 493.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            438.9,
+            64.52,
+            444.78,
+            73.13
+          ],
+          "html": "<span class=\"math\">y</span>"
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q27.png",
+          "rect": [
+            203.4,
+            111.47,
+            413.4,
+            336.03
+          ],
+          "paths": 189,
+          "decodedLabels": "����� ���� ���� ������ � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � �� � � � � � � � � � � �• � � � � � � � � � � � � • � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� ��������������",
+          "undecodedGlyphs": 183,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 29,
+      "page": 19,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. <span class=\"math\">•</span> Ms. Strazullo’s class raised <span class=\"math\">$153.45</span>. <span class=\"math\">•</span> Mr. Fiorentino’s class raised <span class=\"math\">$123.23</span> more than Ms. Strazullo’s class. <span class=\"math\">•</span> Ms. Rubas’ class raised <span class=\"math\">$176.32</span> less than Mr. Fiorentino’s class. <span class=\"math\">•</span> Mr. Smith’s class raised <span class=\"math\">$234.89</span> more than Ms. Rubas’ class. If the total price of the field trip is <span class=\"math\">$800.00</span>, how much extra money did they raise?",
+      "stemLines": [
+        "Students in four middle school classes raised money for a field trip. The amount of money",
+        "each class raised is described below.",
+        "<span class=\"math\">•</span> Ms. Strazullo’s class raised <span class=\"math\">$153.45</span>.",
+        "<span class=\"math\">•</span> Mr. Fiorentino’s class raised <span class=\"math\">$123.23</span> more than Ms. Strazullo’s class.",
+        "<span class=\"math\">•</span> Ms. Rubas’ class raised <span class=\"math\">$176.32</span> less than Mr. Fiorentino’s class.",
+        "<span class=\"math\">•</span> Mr. Smith’s class raised <span class=\"math\">$234.89</span> more than Ms. Rubas’ class.",
+        "If the total price of the field trip is <span class=\"math\">$800.00</span>, how much extra money did they raise?"
+      ],
+      "prose": "Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. Ms. Strazullo’s class raised. Mr. Fiorentino’s class raisedmore than Ms. Strazullo’s class. Ms. Rubas’ class raisedless than Mr. Fiorentino’s class. Mr. Smith’s class raisedmore than Ms. Rubas’ class. If the total price of the field trip is, how much extra money did they raise?",
+      "proseAllLines": "Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. Ms. Strazullo’s class raised. Mr. Fiorentino’s class raisedmore than Ms. Strazullo’s class. Ms. Rubas’ class raisedless than Mr. Fiorentino’s class. Mr. Smith’s class raisedmore than Ms. Rubas’ class. If the total price of the field trip is, how much extra money did they raise?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$65.74</span>",
+          "x": 75.5,
+          "y": 495.3
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$1 12. 1 1</span>",
+          "x": 76.1,
+          "y": 524.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$687.89</span>",
+          "x": 75.6,
+          "y": 554.5
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$865.74</span>",
+          "x": 75.1,
+          "y": 584.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 30,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The weights of <span class=\"math\">9</span> adult cats are recorded on the dot plot shown below. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot?",
+      "stemLines": [
+        "The weights of <span class=\"math\">9</span> adult cats are recorded on the dot plot shown below.",
+        "Which label for the number line could be used to correctly identify the unit of",
+        "measurement for the data in the dot plot?"
+      ],
+      "prose": "The weights of  adult cats are recorded on the dot plot shown below. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot?",
+      "proseAllLines": "The weights of  adult cats are recorded on the dot plot shown below. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot? number of cats number of years number of inches number of pounds",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "number of cats",
+          "x": 75.5,
+          "y": 235.9
+        },
+        {
+          "label": "B",
+          "html": "number of years",
+          "x": 76.1,
+          "y": 265.9
+        },
+        {
+          "label": "C",
+          "html": "number of inches",
+          "x": 75.6,
+          "y": 295.9
+        },
+        {
+          "label": "D",
+          "html": "number of pounds",
+          "x": 75.1,
+          "y": 325.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q30.png",
+          "rect": [
+            198.92,
+            96.5,
+            417.88,
+            169.0
+          ],
+          "paths": 31,
+          "decodedLabels": "• • • • • • • • • � � � � � � � � � � �",
+          "undecodedGlyphs": 11,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 31,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An incomplete equation is shown below. Which expression completes the equation to make it true?",
+      "stemLines": [
+        "An incomplete equation is shown below.",
+        "Which expression completes the equation to make it true?"
+      ],
+      "prose": "An incomplete equation is shown below. Which expression completes the equation to make it true?",
+      "proseAllLines": "An incomplete equation is shown below. Which expression completes the equation to make it true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">5.2 + 1.6</span>",
+          "x": 75.5,
+          "y": 466.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">5.2 − 1.6</span>",
+          "x": 76.1,
+          "y": 496.7
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">−5.2 − 1.6</span>",
+          "x": 75.6,
+          "y": 526.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">−5.2 + 1.6</span>",
+          "x": 75.1,
+          "y": 556.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.79,
+            418.23,
+            230.73,
+            427.98
+          ],
+          "html": "<span class=\"math\">(5.2 − 1.6) + (−−−) = 0</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 32,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">− <span class=\"frac\"><span>1</span><span>4</span></span> (12x − 6)</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">− <span class=\"frac\"><span>1</span><span>4</span></span> (12x − 6)</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3x + 6</span>",
+          "x": 75.5,
+          "y": 103.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3x − 6</span>",
+          "x": 76.1,
+          "y": 132.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">−3x + 1 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.6,
+          "y": 166.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">−3x − 1 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 205.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 26,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The table below shows the number of gallons of gasoline customers put in their cars and the total price they paid. Which equation represents the relationship between the total price, <span class=\"math\">p</span>, and gallons of gasoline purchased, <span class=\"math\">g</span> ?",
+      "stemLines": [
+        "The table below shows the number of gallons of gasoline customers put in their cars and",
+        "the total price they paid.",
+        "Which equation represents the relationship between the total price, <span class=\"math\">p</span>, and gallons of",
+        "gasoline purchased, <span class=\"math\">g</span> ?"
+      ],
+      "prose": "The table below shows the number of gallons of gasoline customers put in their cars and the total price they paid. Which equation represents the relationship between the total price, , and gallons of gasoline purchased,  ?",
+      "proseAllLines": "The table below shows the number of gallons of gasoline customers put in their cars and the total price they paid. Which equation represents the relationship between the total price, , and gallons of gasoline purchased,  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">p = 0.31g</span>",
+          "x": 75.5,
+          "y": 277.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">p = 3.21g</span>",
+          "x": 76.1,
+          "y": 307.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">p = 6.42g</span>",
+          "x": 75.6,
+          "y": 337.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">p = 9.63g</span>",
+          "x": 75.1,
+          "y": 367.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q33.png",
+          "rect": [
+            203.14,
+            109.86,
+            413.66,
+            208.9
+          ],
+          "paths": 60,
+          "decodedLabels": "������ � � ������ �������� � ����� ������ � � ����� � � � ���� � ������",
+          "undecodedGlyphs": 55,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 26,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">−45 9</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">−45 9</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "x": 75.5,
+          "y": 483.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−45 9</span>",
+          "x": 76.1,
+          "y": 522.0
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">45 −9</span>",
+          "x": 75.6,
+          "y": 560.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "x": 75.1,
+          "y": 599.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 27,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Ms. Suarez buys <span class=\"math\">4</span> packages of pencils for <span class=\"math\">$4.48</span>. Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils?",
+      "stemLines": [
+        "Ms. Suarez buys <span class=\"math\">4</span> packages of pencils for <span class=\"math\">$4.48</span>. Each package of pencils is the same price.",
+        "What is the unit price, in dollars per package, of the pencils?"
+      ],
+      "prose": "Ms. Suarez buys  packages of pencils for . Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils?",
+      "proseAllLines": "Ms. Suarez buys  packages of pencils for . Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">$0.48</span>",
+          "x": 75.5,
+          "y": 103.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">$0.89</span>",
+          "x": 76.1,
+          "y": 133.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">$1. 12</span>",
+          "x": 75.6,
+          "y": 162.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">$4.00</span>",
+          "x": 75.1,
+          "y": 192.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 27,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x −</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stemLines": [
+        "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x −</span>",
+        "can be used to determine the final price of the book. Which expression can also be used to",
+        "determine the final price of the book?"
+      ],
+      "prose": "Ashley buys a book that is on sale for  off the original price, . The expression can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "proseAllLines": "Ashley buys a book that is on sale for  off the original price, . The expression can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">0.25x</span>",
+          "x": 75.5,
+          "y": 314.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">0.75x</span>",
+          "x": 76.1,
+          "y": 344.7
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">0.25x − x</span>",
+          "x": 75.6,
+          "y": 374.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">0.75x + x</span>",
+          "x": 75.1,
+          "y": 403.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            514.45,
+            259.46,
+            539.94,
+            267.51
+          ],
+          "html": "<span class=\"math\">0.25x</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 28,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Jayden made a scale drawing of the rectangular basketball court at his middle school. <span class=\"math\">•</span> The drawing has a scale of <span class=\"math\">1</span> inch to <span class=\"math\">24</span> feet. <span class=\"math\">•</span> The actual length of the basketball court is <span class=\"math\">76 <span class=\"frac\"><span>4</span><span>5</span></span></span> feet. What is the length, in inches, of the rectangular basketball court in Jayden’s drawing?",
+      "stemLines": [
+        "Jayden made a scale drawing of the rectangular basketball court at his middle school.",
+        "<span class=\"math\">•</span> The drawing has a scale of <span class=\"math\">1</span> inch to <span class=\"math\">24</span> feet.",
+        "<span class=\"math\">•</span> The actual length of the basketball court is <span class=\"math\">76 <span class=\"frac\"><span>4</span><span>5</span></span></span> feet.",
+        "What is the length, in inches, of the rectangular basketball court in Jayden’s drawing?"
+      ],
+      "prose": "Jayden made a scale drawing of the rectangular basketball court at his middle school. The drawing has a scale of  inch to  feet. The actual length of the basketball court is  feet. What is the length, in inches, of the rectangular basketball court in Jayden’s drawing?",
+      "proseAllLines": "Jayden made a scale drawing of the rectangular basketball court at his middle school. The drawing has a scale of  inch to  feet. The actual length of the basketball court is  feet. What is the length, in inches, of the rectangular basketball court in Jayden’s drawing?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>16</span></span></span>",
+          "x": 75.5,
+          "y": 178.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "x": 76.1,
+          "y": 217.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">24</span>",
+          "x": 75.6,
+          "y": 250.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">52 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "x": 75.1,
+          "y": 285.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 38,
+      "page": 28,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A box plot is shown below. Based on the box plot, what is true about the data value <span class=\"math\">23</span> ? It represents a data point that lies an unusual distance from other points in",
+      "stemLines": [
+        "A box plot is shown below.",
+        "Based on the box plot, what is true about the data value <span class=\"math\">23</span> ?",
+        "It represents a data point that lies an unusual distance from other points in"
+      ],
+      "prose": "A box plot is shown below. Based on the box plot, what is true about the data value  ? It represents a data point that lies an unusual distance from other points in",
+      "proseAllLines": "A box plot is shown below. Based on the box plot, what is true about the data value  ? It represents a data point that lies an unusual distance from other points in the data. It represents the data point that occurred the most number of times in the data. It represents the interquartile range of the data. It represents the median of the data.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "the data.",
+          "x": 75.5,
+          "y": 498.2
+        },
+        {
+          "label": "B",
+          "html": "It represents the data point that occurred the most number of times in the data.",
+          "x": 76.1,
+          "y": 532.0
+        },
+        {
+          "label": "C",
+          "html": "It represents the interquartile range of the data.",
+          "x": 75.6,
+          "y": 562.0
+        },
+        {
+          "label": "D",
+          "html": "It represents the median of the data.",
+          "x": 75.1,
+          "y": 591.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q38.png",
+          "rect": [
+            118.65,
+            392.89,
+            445.65,
+            477.62
+          ],
+          "paths": 49,
+          "decodedLabels": "• � � � � � � � � � � � � � � � � �� � � �� �� ��",
+          "undecodedGlyphs": 26,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive? <span class=\"math\">$</span>",
+      "stemLines": [
+        "Mr. Morgano goes to the grocery store. The prices of different items are shown in the",
+        "table below.",
+        "Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon",
+        "of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should",
+        "Mr. Morgano receive?",
+        "<span class=\"math\">$</span>"
+      ],
+      "prose": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys  pounds of grapes,  pound of turkey,  loaves of bread, and  gallon of chocolate milk. He pays with a  bill. How much change, in dollars, should Mr. Morgano receive?",
+      "proseAllLines": "This question is worth 1 credit. Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys  pounds of grapes,  pound of turkey,  loaves of bread, and  gallon of chocolate milk. He pays with a  bill. How much change, in dollars, should Mr. Morgano receive? Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q40.png",
+          "rect": [
+            134.9,
+            131.58,
+            481.9,
+            253.17
+          ],
+          "paths": 122,
+          "decodedLabels": "� ������ ��� � ������ ���� ����� ��� ��� �� �� � �� ��� � � � �� ��� ��� �� �� �� ���� ����� ��� ���� �� ����� � � ��� ��� �� � ��� �� ��������� � � � � �����",
+          "undecodedGlyphs": 116,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "Simplify the expression shown below completely.",
+      "stemLines": [
+        "Simplify the expression shown below completely."
+      ],
+      "prose": "Simplify the expression shown below completely.",
+      "proseAllLines": "This question is worth 1 credit. Simplify the expression shown below completely. Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.32,
+            104.7,
+            214.01,
+            128.24
+          ],
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>3</span><span>4</span></span> (4x − 8) + (x − 2)</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12</span> <span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10</span> <span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
+      "stemLines": [
+        "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a",
+        "restaurant. The prices for the pizzas and toppings are listed below.",
+        "<span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12</span>",
+        "<span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10</span>",
+        "<span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each",
+        "A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order,",
+        "excluding tax, after the discount?"
+      ],
+      "prose": "A customer orders a large pizza with  toppings and a medium pizza with  toppings at a restaurant. The prices for the pizzas and toppings are listed below. Large pizza without toppings: Medium pizza without toppings: Toppings:  each A  discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
+      "proseAllLines": "This question is worth 2 credits. A customer orders a large pizza with  toppings and a medium pizza with  toppings at a restaurant. The prices for the pizzas and toppings are listed below. Large pizza without toppings: Medium pizza without toppings: Toppings:  each A  discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            295.6,
+            124.4,
+            308.74,
+            132.46
+          ],
+          "html": "<span class=\"math\">.50</span>"
+        },
+        {
+          "rect": [
+            309.85,
+            144.65,
+            322.92,
+            152.71
+          ],
+          "html": "<span class=\"math\">.25</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Jim and Devin ride their bicycles to meet at a friend’s house. <span class=\"math\">•</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour. <span class=\"math\">•</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
+      "stemLines": [
+        "Jim and Devin ride their bicycles to meet at a friend’s house.",
+        "<span class=\"math\">•</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour.",
+        "<span class=\"math\">•</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour.",
+        "What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
+        "Explain how you determined your answer."
+      ],
+      "prose": "Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
+      "proseAllLines": "This question is worth 2 credits. Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
+      "instructions": [],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 33,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A group of sixth grade students recorded their favorite flavors of ice cream. The results are shown in the table below. Based on the results, what would be the predicted number of students in the entire sixth grade whose favorite ice cream flavor is chocolate, if there are a total of <span class=\"math\">120</span> students in the sixth grade? Answerstudents",
+      "stemLines": [
+        "A group of sixth grade students recorded their favorite flavors of ice cream. The results are",
+        "shown in the table below.",
+        "Based on the results, what would be the predicted number of students in the entire sixth",
+        "grade whose favorite ice cream flavor is chocolate, if there are a total of <span class=\"math\">120</span> students in",
+        "the sixth grade?",
+        "Answerstudents"
+      ],
+      "prose": "A group of sixth grade students recorded their favorite flavors of ice cream. The results are shown in the table below. Based on the results, what would be the predicted number of students in the entire sixth grade whose favorite ice cream flavor is chocolate, if there are a total of  students in the sixth grade? Answerstudents",
+      "proseAllLines": "This question is worth 2 credits. A group of sixth grade students recorded their favorite flavors of ice cream. The results are shown in the table below. Based on the results, what would be the predicted number of students in the entire sixth grade whose favorite ice cream flavor is chocolate, if there are a total of  students in the sixth grade? Show your work. Answerstudents",
+      "instructions": [
+        "Show your work."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q45.png",
+          "rect": [
+            199.65,
+            131.5,
+            417.9,
+            285.51
+          ],
+          "paths": 110,
+          "decodedLabels": "�������� ������� �� ��� ����� ������ �� ������ �� ��� ����� �������� �� � � � �� � � ��������� � ���������� � ������� �� � ����� �",
+          "undecodedGlyphs": 103,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 34,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
+      "stemLines": [
+        "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below.",
+        "For which person is the amount of earnings proportional to the number of hours worked?",
+        "Explain your answer."
+      ],
+      "prose": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
+      "proseAllLines": "This question is worth 2 credits. Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
+      "instructions": [],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q46.png",
+          "rect": [
+            100.65,
+            117.28,
+            515.65,
+            350.47
+          ],
+          "paths": 254,
+          "decodedLabels": "������ �������� ������� �������� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � �• � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � ��� � ��� � � � � � ��� � �� � � �",
+          "undecodedGlyphs": 243,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 47,
+      "page": 35,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "An expression is shown below. Evaluate the expression.",
+      "stemLines": [
+        "An expression is shown below.",
+        "Evaluate the expression."
+      ],
+      "prose": "An expression is shown below. Evaluate the expression.",
+      "proseAllLines": "This question is worth 2 credits. An expression is shown below. Evaluate the expression. Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G7-2026/q47.png",
+          "rect": [
+            108.99,
+            103.89,
+            200.31,
+            128.14
+          ],
+          "paths": 17,
+          "decodedLabels": "<span class=\"frac\"><span>1</span><span>2</span></span> (−0.4) ÷ <span class=\"frac\"><span>1</span><span>3</span></span>",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 48,
+      "page": 36,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of <span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on shoes and games. Answer    games",
+      "stemLines": [
+        "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of",
+        "<span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to",
+        "determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on",
+        "shoes and games.",
+        "Answer    games"
+      ],
+      "prose": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of to rent shoes and  for each game he played. Write and solve an equation to determine the number of games, , that Nicholas played if he spent a total of  on shoes and games. Answer    games",
+      "proseAllLines": "This question is worth 3 credits. Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of to rent shoes and  for each game he played. Write and solve an equation to determine the number of games, , that Nicholas played if he spent a total of  on shoes and games. Show your work. Answer    games",
+      "instructions": [
+        "Show your work."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    }
+  ]
+}

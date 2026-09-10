@@ -5,9 +5,11 @@
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
 gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
 
-**The glyph decode works.** All 69 inline maths holes in 2026 grade 7 decode from vector geometry
-with zero unknown glyphs, off 23 hand-labelled shapes. See "Showing the questions" below. Next
-increments there are display-maths regions and figure crops.
+**The site is deployed to a draft URL** (`netlify sites:create` done, project id
+`04752dc2-…`; production is still a separate decision). **And the questions extract.** All 42
+items of 2026 grade 7 come out with complete stems, answer choices, fractions, inequalities and
+repeating decimals, 16 figure crops, and **every stem character-identical to the PDF's own
+prose**. Next: the merge spec and review pass, then the Questions tab.
 
 Also outstanding: the class-results analyzer (the colleague-facing half, needs no curriculum data)
 and the curriculum index now that the Teacher Course Guides are in `sources/`.
@@ -120,18 +122,70 @@ transcriber.
   dot-plot marker, `g084`/`g085`/`g118`/`g122` arrows. Size filters alone do not separate artwork
   from type.
 
-### What is left
+### `tools/extract_items.py` — the first-pass extractor
 
-- **Display-maths regions** — items 41, 44 and 47 put their expressions on their own line, so
-  there is no prose line to intersect. The glyphs are present and the fraction resolver handles
-  them; the region just has to be passed as one group. A few more labels needed.
-- **Figures** — item 46 is a graph plus a table, hundreds of glyphs. Those get cropped as images,
-  not decoded. Transplant RegentsAlign's trick of growing the crop box to enclose every span
-  stripped as furniture, or axis titles get sliced out of both the stem and the picture.
-- The remaining 155 unlabelled clusters are mostly letters inside tables and graphs. They do not
-  block anything, and decoding them is a cheap way to write accurate `longDescription` text —
-  which is where RegentsAlign had a real error (its Aug 2025 Q22 description contradicted the
-  PDF's own vector data).
+42 items, 0 unresolved, 16 figures, 7 displayed expressions, 44 labelled glyphs.
+
+**The check that makes it trustworthy: prose fidelity, 42 of 42.** Strip the markup and the
+decoded values out of a published stem and what remains is character-identical to the PDF's own
+text layer. So no word was invented, dropped or reworded, and that is proven mechanically rather
+than asserted.
+
+**But that check alone is not enough, and finding out why was the most useful thing here.** A fix
+for one bug made nine items lose their inline maths entirely — `$3.75` back to nothing — and
+prose fidelity still passed 42/42, because it proves nothing was *invented*, not that nothing was
+*lost*. Preflight needs the complementary check: every located hole must be filled.
+
+### Traps found in the extractor, all fixed
+
+- **Occupancy must be tested per CHARACTER, not per span.** PyMuPDF reports
+  `'determine the number of games, , that Nicholas played if he spent a total of '` as ONE span
+  whose box straddles the gap where the italic `x` is drawn, so a span-level test discarded that
+  variable and published "the number of games, , that" — still a sentence.
+- **The item number is printed level with the item's SECOND line.** The anchor sits 5–6pt below
+  the first line of prose, so a region starting at the anchor lost every item's opening sentence.
+  Item 3 began "between the price, p," instead of "A farm sells blueberries…". Reach back 12pt.
+- **`page.get_drawings()` returns fresh dicts on every call.** Calling it twice and tracking
+  consumption by `id()` never matched, so every glyph already used as an inline hole reappeared
+  as leftover artwork — 42 items produced 173 phantom "displayed expressions".
+- **Maths too tall for one line was being silently dropped.** A stacked fraction exceeds the
+  inline height limit, and skipping it published "He spends  of his money" and "buys 3 pounds of
+  grapes,  pound of turkey". Silent loss is the one failure this whole approach exists to
+  prevent; anything too tall is now recorded, never discarded.
+- **A raw `<` in decoded output corrupts the HTML.** Item 21's choice B decoded correctly as
+  `20x + 5 < 200` and published as `20x + 5`, because the `<` opened a tag that swallowed the
+  rest — and that item's four choices differ ONLY by their inequality symbol.
+- **A horizontal rule has a third meaning: a repeating-decimal overbar.** Item 7's choices are
+  3.3-repeating; reading the bar as a minus published "− y = x + 3.3", a different number with a
+  leading minus that is not in the question. And the bar must be attached to the digits it covers,
+  since its own rect sits above the digit line and sorted ahead of everything.
+- **A figure zone needs structural paths, not just many glyphs.** Counting paths alone made an
+  item's three money values into a "figure" spanning the stem. A real figure contains axis lines,
+  table borders, plot marks — paths that are not letter shapes.
+- **An inline hole is bounded on the right only.** A graph's axis label can share a prose line's
+  y-band from far out to the right (item 27 published its y-axis label mid-sentence), but a value
+  that wraps to the next line sits to the LEFT of that line's text — bounding both sides cost
+  item 48 the `$3.75` that first demonstrated this approach works.
+- **A table row of numbers decodes perfectly cleanly**, so "decodes cleanly" alone promoted table
+  rows to displayed expressions while their header rows stayed in the figure. Anything inside a
+  figure zone belongs to the figure.
+- **The item frame is a single path enclosing the whole question**, 468 × 624 — RegentsAlign
+  excludes its equivalent with `width > 480 and height > 500`, so an absolute threshold tuned to
+  another document misses this one.
+- **Re-running left stale crops behind** — 200 files for 16 figures. The asset directory is
+  cleared first now; a stale crop that still matches a filename looks current.
+
+### Known remaining imperfections
+
+- Item 27's `y` variable in "the amount of juice, ␣, that can be made" sits inside the graph's
+  own bounding box, so the figure-zone exclusion takes it. One missing variable, flagged here
+  rather than papered over.
+- Item 7's overbar covers `.3` rather than just the `3`, so it renders as 3.[.3 repeating]
+  instead of 3.3̄.
+- The remaining ~134 unlabelled glyph clusters are letters inside tables and graphs. They block
+  nothing, and decoding them is a cheap way to write accurate `longDescription` text — which is
+  where RegentsAlign had a real error (its Aug 2025 Q22 description contradicted the PDF's own
+  vector data).
 
 ## Verified, and worth not re-deriving
 

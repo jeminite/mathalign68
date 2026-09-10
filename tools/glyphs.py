@@ -76,6 +76,18 @@ RULE = "@rule"
 NO_SPACE_BEFORE = set(".,)%")
 NO_SPACE_AFTER = set("($")
 
+# decode() returns HTML (it emits <span class="frac"> for fractions), so a
+# decoded character that is HTML-special has to be escaped or it corrupts the
+# markup. This was not theoretical: item 21's choice B decoded correctly as
+# "20x + 5 < 200" and published as "20x + 5", because the raw < opened a tag
+# that swallowed the rest of the choice -- and the four choices of that item
+# differ ONLY by their inequality symbol.
+HTML_ESCAPE = {"<": "&lt;", ">": "&gt;", "&": "&amp;"}
+
+
+def escape(label):
+    return HTML_ESCAPE.get(label, label)
+
 # Glyphs whose bounding box is tiny in one dimension carry almost no shape
 # information -- a decimal point, a minus sign, a fraction bar. They are
 # separated by aspect ratio and size instead, so the tolerance above does not
@@ -261,6 +273,7 @@ class GlyphTable:
         # ---- resolve rules before anything is emitted -------------------
         consumed = set()
         fractions = {}
+        overbars = {}
         for i, (rect, shape, label) in enumerate(glyphs):
             if label != RULE:
                 continue
@@ -278,12 +291,27 @@ class GlyphTable:
                     below.append(j)
             if above and below:
                 # A bar with content on both sides is a fraction. Either side
-                # empty means it is a minus sign or an answer blank, and
-                # treating it as a fraction is how a table of cell borders
+                # empty means it is a minus sign, an overbar or an answer blank,
+                # and treating it as a fraction is how a table of cell borders
                 # dissolves into nonsense.
                 fractions[i] = (above, below)
                 consumed.update(above)
                 consumed.update(below)
+            elif below and not above:
+                # Content below and nothing above, directly over the digits: a
+                # repeating-decimal overbar, not a minus sign. Item 7's choices
+                # are 3.3-repeating, and reading the bar as a minus published
+                # "- y = x + 3.3" -- a different number, and a leading minus
+                # that is not in the question at all.
+                #
+                # The bar is attached to the FIRST digit it covers rather than
+                # emitted at its own position: its rect sits above the digit
+                # line, so it forms a line of its own and sorted ahead of
+                # everything, giving ".3-repeating y = x + 3".
+                first = min(below, key=lambda j: glyphs[j][0].x0)
+                overbars[first] = sorted(below, key=lambda j: glyphs[j][0].x0)
+                consumed.add(i)
+                consumed.update(j for j in below if j != first)
 
         # ---- reading order ----------------------------------------------
         # Lines are found by VERTICAL OVERLAP, not by y0. A period sits on the
@@ -317,13 +345,13 @@ class GlyphTable:
             parts = []
             for j in sorted(indices, key=lambda j: glyphs[j][0].x0):
                 lab = glyphs[j][2]
-                parts.append("\ufffd" if lab is None or lab == RULE else lab)
+                parts.append("\ufffd" if lab is None or lab == RULE else escape(lab))
             return "".join(parts)
 
         out, unknown, prev = [], 0, None
         for i in order:
             rect, shape, label = glyphs[i]
-            if i in consumed:
+            if i in consumed and i not in overbars:
                 continue
             if prev is not None:
                 same_line = rect.y0 < prev.y1 - 0.5 and rect.y1 > prev.y0 + 0.5
@@ -338,12 +366,16 @@ class GlyphTable:
                 n, d = text_of(num), text_of(den)
                 unknown += n.count("\ufffd") + d.count("\ufffd")
                 out.append('<span class="frac"><span>%s</span><span>%s</span></span>' % (n, d))
+            elif i in overbars:
+                digits = text_of(overbars[i])
+                unknown += digits.count("\ufffd")
+                out.append('<span class="repeat">%s</span>' % digits)
             elif label == RULE:
                 out.append("\u2212")            # a bare rule is a minus sign
             elif label is None:
                 out.append("\ufffd")
                 unknown += 1
             else:
-                out.append(label)
+                out.append(escape(label))
             prev = rect
         return "".join(out).strip(), unknown
