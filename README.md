@@ -4,7 +4,7 @@
 Generation standards took effect — mapped to the standards, to statewide difficulty, and to the
 Imagine IM 6–8 curriculum.**
 
-Live at **<https://mathalign68.netlify.app/>** *(not deployed yet — Phase 1)*
+Live at **<https://mathalign68.netlify.app/>** *(built and gated, not yet deployed)*
 
 See `../RELATIONSHIPS.md` for how this fits with the sibling RegentsAlign, AlgebraTeaching and
 TeachingBrain projects. RegentsAlign does this for Algebra I; this is its middle-school
@@ -36,7 +36,7 @@ uploaded, and it compares your class to the state item by item.
 | **Blueprint** | Tested weight by domain against NYSED's own published percent ranges |
 | **Post-test standards** | Which prior-grade standards each test assesses, and where they sit in the curriculum |
 | **Curriculum alignment** | Unit, section and lesson in Imagine IM 6–8 *(Phase 3)* |
-| **Class analysis** | Your results vs. the state, in your browser, nothing uploaded |
+| **Class analysis** | Your results vs. the state, in your browser, nothing uploaded *(Phase 2)* |
 
 ## What this is not
 
@@ -108,6 +108,18 @@ python3 publish.py && python3 tools/preflight.py
 ```
 
 Everything except `alignment.json` is reproducible from `sources/` with no human step.
+
+`python3 tools/test_extractor.py` runs 169 checks over all fourteen extractions, and
+`python3 tools/preflight.py` runs 53 more against the built site. Two of them are worth knowing
+about because they are the reason the rest can be trusted:
+
+- **Every answer key is re-derived by a second, unrelated method.** Preflight re-reads each PDF
+  in plain reading order with no geometry at all and compares. 282 keys, two independent code
+  paths, no disagreement.
+- **The test suite proves it can fail.** The extractor assigns words to columns by centre x
+  because two columns are centre-aligned, and that is exactly the subtlety a later refactor
+  "simplifies" away. So the suite re-runs the extraction with left-edge x and asserts it breaks.
+  If that ever stops breaking, the suite has stopped testing column assignment.
 
 ## Three things to know before trusting the data
 
@@ -185,14 +197,17 @@ promise and is just the wrong denominator.
 
 | | 2023 | 2024 | 2025 | 2026 |
 |---|---|---|---|---|
-| Grade 6 | map | map | map | map |
-| Grade 7 | map | map | map | map |
-| Grade 8 | map | map | map | map |
+| Grade 6 | ✓ | ✓ | ✓ | ✓ |
+| Grade 7 | ✓ | ✓ | ✓ | ✓ |
+| Grade 8 | ✓ | ✓ | ✓ | ✓ |
 
-`map` = item map extracted and validated. Curriculum alignment is Phase 3.
+✓ = item map extracted, validated, and published to the site. Curriculum alignment is Phase 3.
 
-Phase 0 and the extractor half of Phase 1 are complete: sources fetched, standards registry
-built and cross-validated against all twelve item maps, test blueprint authored and its counts
-confirmed twice, and all twelve maps extracted — plus the two CCLS-era 2022 maps kept as
-regression coverage for the two-page layout. Next: the item-to-PDF-page map, `data/items.json`,
-the site, and preflight. See `RESUME.md`.
+**Phases 0 and 1 are complete.** Sources fetched with a hash manifest; standards registry built
+from the educator guide and cross-validated against all 420 standard citations in the twelve
+item maps; test blueprint authored with its counts confirmed twice; all twelve maps extracted,
+plus the two CCLS-era 2022 maps kept as regression coverage; 387 of 396 items deep-linked to
+their exact PDF page; the five-tab site built and passing a 53-check deploy gate.
+
+Next is Phase 2 — the class-results analyzer, which is the part your colleagues will actually
+use, and which needs no curriculum data. See `RESUME.md`.

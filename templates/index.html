@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-grade="7">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MathAlign68 — NYS Grades 6–8 Math Tests</title>
+<meta name="description" content="Every released question on the NYS grades 6-8 mathematics tests, 2023-2026, with the statewide difficulty of each, mapped to standards and the Imagine IM 6-8 curriculum.">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="title">
+      <h1>MathAlign68</h1>
+      <span class="sub">NYS Grades 6–8 Mathematics Tests · Next Generation standards · __YEARS__</span>
+    </div>
+    <p class="disclaimer">__DISCLAIMER__</p>
+
+    <div class="grades" role="group" aria-label="Grade">
+      <button type="button" data-grade="6" aria-pressed="false">Grade 6</button>
+      <button type="button" data-grade="7" aria-pressed="true">Grade 7</button>
+      <button type="button" data-grade="8" aria-pressed="false">Grade 8</button>
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="View">
+      <button type="button" role="tab" data-view="standards"  aria-selected="true">Standards</button>
+      <button type="button" role="tab" data-view="difficulty" aria-selected="false">Difficulty</button>
+      <button type="button" role="tab" data-view="blueprint"  aria-selected="false">Blueprint</button>
+      <button type="button" role="tab" data-view="posttest"   aria-selected="false">Post-test standards</button>
+      <button type="button" role="tab" data-view="items"      aria-selected="false">Items</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="stats" class="stats"></div>
+  <section id="view" aria-live="polite"></section>
+
+  <p class="foot">
+    Built __BUILT__ from NYSED's published <em>Map to the Standards</em> tables and the
+    <em>Educator Guide to the Grades 3–8 Mathematics Tests</em>.
+    This site does not reproduce question text or figures — every item links to the exact page of
+    the official released-items PDF instead.
+    The alignment data is also published as a plain data file at
+    <a href="data.json">data.json</a>.
+    __FEEDBACK__
+  </p>
+</main>
+
+<script id="D" type="application/json">__DATA__</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

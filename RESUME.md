@@ -2,16 +2,19 @@
 
 ## Status
 
-**Phase 0 complete. Phase 1 extraction complete** — 396 items across 12 tests, in
-`data/items.json`. Next in Phase 1: the site (`build/` + `templates/` + `publish.py`) and
-`tools/preflight.py`.
+**Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
+gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
+
+Phase 2 is next: the class-results analyzer. It is the colleague-facing half of the project and
+needs no curriculum data, so nothing blocks it.
 
 | Phase | State | Blocked by |
 |---|---|---|
 | 0 — foundations, sources, standards registry, blueprint | done | — |
 | 1a — item map + page map + data/items.json | done | — |
-| 1b — site, preflight, deploy | next | — |
-| 2 — class-results analyzer, item picker | after 1 | — |
+| 1b — site, preflight | done | — |
+| 1c — first Netlify deploy | ready | needs a Netlify site created |
+| 2 — class-results analyzer | next | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | waiting | the district course guides |
 | 3c — the per-standard judgement pass | after 3a/3b | — |
@@ -41,6 +44,32 @@ secondary-standard citation looks like an item row. Real counts: grade 6 = 29/29
 grades 7 and 8 = 31/31/31/42, total 396 items and 489 credits. Confirmed twice by independent
 methods (the geometry parser and a plain-text count of the type strings).
 
+## Done in Phase 1b
+
+- `build/payload.py` — canonical data to published rows, and it owns two refusals: any
+  student-derived field, and anything that would present item text. Both proven to fire.
+- `build/render.py` + `templates/` — real HTML, CSS and JS files on disk rather than Python
+  string constants, with a check that no placeholder survives into the built page.
+- `publish.py` — ~90 lines. Writes `site/index.html` (384 KB, payload embedded) and
+  `site/data.json` (481 KB, the public contract).
+- Five tabs — Standards, Difficulty, Blueprint, Post-test standards, Items — with a grade 6/7/8
+  switcher that carries its own accent colour, so a screenshot of one grade cannot be mistaken
+  for another. Verified in a browser on all three grades with no console errors.
+- `tools/preflight.py` — 53 checks, 13 sections, currently 53 passed / 0 failed / 3 skipped
+  (the skips are Phase 2 and Phase 3 suites and say so).
+- `tools/test_extractor.py` — 169 checks: goldens for all 14 extractions, property tests that
+  consult no golden, and a test that deliberately breaks column assignment and requires the
+  suite to notice.
+
+Two bugs the gate found in itself, both fixed and both worth remembering:
+
+- The regenerability check **rewrote** `data/standards.json` to compare it, which bumped its
+  mtime past the site build and tripped the freshness check one section earlier. A verification
+  step must not mutate what it verifies; `extract_standards.py --stdout` exists for that.
+- Section 5's checks were named for the defect rather than the property, so a passing run
+  printed `ok  multiple-choice key not in A-D`, which reads as though the defect were
+  acceptable. Name a check for what is true when it passes.
+
 ## Verified, and worth not re-deriving
 
 - **All 420 standard citations across the 12 item maps resolve** against `standards.json`, and
@@ -58,6 +87,17 @@ methods (the geometry parser and a plain-text count of the type strings).
   `NY-8.EE.8a`, `NY-8.EE.8b`) but no next-grade table, because there is no grade 9 State
   mathematics test. Their `assessedOnGrades` is empty rather than pointing at a grade 9. An item
   map citing one of these would be a genuine anomaly worth investigating.
+- **282 answer keys agree across two independent code paths** — the geometry parser and a
+  deliberately naive plain-reading-order re-read of the PDFs, which preflight runs on every
+  deploy. This is the single strongest reason to trust the extraction.
+- **Every domain's released credit share sits within 8 points of NYSED's published range**, on
+  all twelve tests. Independent corroboration of both the extraction and the hand-authored
+  blueprint.
+- **New York places probability clusters in both grade 6 and grade 7.** `NY-6.SP.6`, `.7` and
+  `.8a/8b` sit under "Investigate chance processes and develop, use, and evaluate probability
+  models" — the same cluster wording as grade 7's `NY-7.SP.8a`. Identical cluster text on a
+  grade 6 and a grade 7 standard is correct, not a mis-assignment. And since all of grade 6 SP
+  is post-test, New York teaches probability in grade 6 and tests it in grade 7.
 - **Real NYSED data defects found and handled**: 2024 grade 8 prints
   `NGLS.Math.Content.NY-NY-8.EE.6` (doubled prefix); some codes carry trailing whitespace
   (`NY-8.F.1 `). Both are in `blueprint.json.knownDataDefects` and both need regression tests in

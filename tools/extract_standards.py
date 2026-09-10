@@ -31,6 +31,7 @@ document, a separate source. `statement` is null on every entry and
 cluster text into `statement` -- a reader needs to know which one they have.
 """
 
+import argparse
 import datetime
 import json
 import os
@@ -319,6 +320,15 @@ def parse_post_test_tables(doc):
 
 
 def main():
+    ap = argparse.ArgumentParser(description="Build data/standards.json.")
+    # preflight verifies this file still rebuilds from its source. It must be
+    # able to do that WITHOUT writing: rewriting the file bumps its mtime past
+    # the site build and trips the freshness check, which is a bug the gate
+    # inflicted on itself once already.
+    ap.add_argument("--stdout", action="store_true",
+                    help="print the JSON and write nothing")
+    args = ap.parse_args()
+
     if not os.path.exists(GUIDE):
         sys.exit("missing %s -- run: python3 tools/fetch_sources.py"
                  % os.path.relpath(GUIDE, ROOT))
@@ -409,6 +419,11 @@ def main():
                            for k, v in sorted(tables.items())},
         "standards": dict(sorted(standards.items())),
     }
+    if args.stdout:
+        json.dump(payload, sys.stdout, indent=2)
+        print()
+        return
+
     with open(OUT, "w") as fh:
         json.dump(payload, fh, indent=2)
         fh.write("\n")
