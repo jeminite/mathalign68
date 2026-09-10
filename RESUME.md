@@ -5,11 +5,20 @@
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
 gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
 
-**2026 grade 7's questions are on the site.** All 42 items published behind a new Questions tab,
-with stems, answer choices, figures, and constructed-response answers taken from NYSED's own
-exemplary responses. Deployed to a draft URL; production is still a separate decision.
+**Live and public at <https://mathalign68.netlify.app>.** 396 items across grades 6-8, 42 of them
+(all of 2026 grade 7) showing the actual question, and an About & corrections tab with a working
+feedback form -- verified end to end by submitting a correction and watching it arrive.
 
 Next: the curriculum index from the Teacher Course Guides, then 2026 grades 6 and 8.
+
+### Two Netlify settings that were wrong at first
+
+Both are written up in README's publish section. A new project on this account inherits visitor
+SSO for *all* contexts, so production answered 401 to everyone; RegentsAlign uses
+`sso_login_context: non_production` and MathAlign68 now matches, which keeps draft URLs private
+while production is public. And form detection is off by default
+(`processing_settings.ignore_html_forms: true`), so the form deployed but collected nothing --
+and the HTML is only re-scanned on a deploy, so enabling it needs a redeploy to take effect.
 
 Also outstanding: the class-results analyzer (the colleague-facing half, needs no curriculum data)
 and the curriculum index now that the Teacher Course Guides are in `sources/`.

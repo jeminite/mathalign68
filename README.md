@@ -4,8 +4,7 @@
 Generation standards took effect — mapped to the standards, to statewide difficulty, and to the
 Imagine IM 6–8 curriculum.**
 
-Live at **<https://mathalign68.netlify.app/>** *(site created; first draft deployed, not yet
-published to production)*
+Live at **<https://mathalign68.netlify.app/>**
 
 See `../RELATIONSHIPS.md` for how this fits with the sibling RegentsAlign, AlgebraTeaching and
 TeachingBrain projects. RegentsAlign does this for Algebra I; this is its middle-school
@@ -83,6 +82,31 @@ teachers use. A deploy run from the wrong directory, or from a checkout that has
 |---|---|
 | mathalign68 | `04752dc2-50fa-4a6f-8482-6456070148c5` |
 | regentsalign | `bcda36e2-84e6-4c75-96f8-1525d569ab69` |
+
+### Two project settings that are not obvious, and were both wrong at first
+
+The Netlify account has visitor SSO on by default, so a newly created project
+gates **production** as well as previews and the live URL answers 401 to
+everyone. RegentsAlign does not, because its `sso_login_context` is
+`non_production`. MathAlign68 now matches it:
+
+```bash
+netlify api updateSite --data '{"site_id":"04752dc2-50fa-4a6f-8482-6456070148c5",
+  "body":{"sso_login_context":"non_production"}}'
+```
+
+That is the setting worth keeping: preview and draft URLs stay private to the
+account, which is what makes `netlify deploy` without `--prod` a safe way to
+look a change over, while production is public.
+
+Form detection is also off by default (`processing_settings.ignore_html_forms:
+true`), so the correction form was deployed but collected nothing. It is on now,
+and **the HTML is only re-scanned on a deploy** — so if the form ever stops
+appearing under Forms in the dashboard, check that flag and redeploy:
+
+```bash
+netlify api listSiteForms --data '{"site_id":"04752dc2-50fa-4a6f-8482-6456070148c5"}'
+```
 
 Then:
 
