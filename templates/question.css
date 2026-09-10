@@ -1,0 +1,87 @@
+/* How a question is drawn: mathematics, figures, answer choices.
+ *
+ * The vocabulary and the technique are lifted from RegentsAlign's QUESTION_CSS,
+ * which is worth transplanting whole because it renders fractions, radicals and
+ * exponents with no MathJax, no KaTeX and no web font: a fraction is a
+ * two-child column flexbox with a border-bottom on the first child, and a
+ * radical is a ::before glyph plus a border-top on the radicand, so the bar
+ * length follows the content automatically.
+ *
+ * Kept in its own file rather than inlined because two things will render
+ * questions -- this page and, from Phase 2, the class-results report -- and if
+ * they drift, a fraction in one of them shows numerator and denominator run
+ * together: 1/3 renders as "13", a different and entirely plausible number. */
+
+.math {
+  font-family: "Cambria Math", "STIX Two Math", Cambria, "Times New Roman", serif;
+}
+
+/* ------------------------------------------------------------- fractions */
+.frac {
+  display: inline-flex; flex-direction: column; vertical-align: middle;
+  text-align: center; line-height: 1.05; margin: 0 2px;
+}
+.frac > span:first-child { border-bottom: 1.2px solid currentColor; padding: 0 5px }
+.frac > span:last-child  { padding: 2px 5px 0 }
+
+/* ------------------------------------------------ repeating decimals */
+/* NYSED writes 3.3-repeating with a bar over the repeating digits. An overline
+ * is the whole notation, so it cannot be dropped: 3.3 and 3.3-repeating are
+ * different numbers, and item 7's answer choices include both. */
+.repeat { border-top: 1.3px solid currentColor; padding-top: 1px }
+
+/* ---------------------------------------------------------------- radicals */
+.radical { display: inline-flex; align-items: flex-start;
+           font-family: "Cambria Math", Cambria, serif }
+.radical::before { content: "\221A"; font-size: 1.35em; line-height: .9 }
+.radicand { display: inline-block; border-top: 1.5px solid currentColor;
+            padding: 1px 3px 0 2px; line-height: 1.05 }
+
+/* ----------------------------------------------------------- displayed maths */
+.eqblock { margin: 14px 0; text-align: center; line-height: 2.0; font-size: 17px }
+
+/* ------------------------------------------------------------------ figures */
+.qfig { margin: 14px 0; text-align: center }
+.qfig img {
+  max-width: 100%; border: 1px solid var(--line); border-radius: 8px;
+  background: #fff;                 /* the crops are black on white */
+}
+.qfig figcaption { font-size: 12px; color: var(--muted); margin-top: 5px }
+
+/* ------------------------------------------------------------------ choices */
+.choices { margin-top: 14px; display: flex; flex-direction: column; gap: 8px }
+.choice {
+  display: flex; gap: 12px; align-items: flex-start;
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 13px;
+  background: var(--card);
+}
+.choice .lab {
+  flex: 0 0 25px; height: 25px; border-radius: 50%; background: var(--accent-soft);
+  color: var(--accent-d); font-weight: 700; font-size: 12.5px;
+  display: flex; align-items: center; justify-content: center;
+}
+.choice.correct { background: var(--easy-soft); border-color: var(--easy) }
+.choice.correct .lab { background: var(--easy); color: #fff }
+
+/* --------------------------------------------------------------------- stem */
+.stem { font-size: 15.5px; line-height: 1.6 }
+.stem sup { font-size: .72em }
+.stem sub { font-size: .72em }
+.credit-line { font-size: 12.5px; color: var(--muted); font-weight: 600;
+               text-transform: uppercase; letter-spacing: .03em; margin-bottom: 6px }
+.instruction { font-style: italic; color: var(--body); margin-top: 10px; font-size: 14px }
+
+/* ------------------------------------------------------------------- answer */
+.answer {
+  margin-top: 14px; padding: 11px 14px; border-radius: 10px;
+  background: var(--easy-soft); border: 1px solid var(--easy);
+}
+.answer h4 { margin: 0 0 4px; font-size: 12px; text-transform: uppercase;
+             letter-spacing: .04em; color: var(--easy) }
+.answer .val { font-size: 16px; font-weight: 600; color: var(--ink) }
+.answer .src { margin-top: 6px; font-size: 11.5px; color: var(--muted) }
+
+@media print {
+  .qfig img { border-color: #ccc }
+  .choice { break-inside: avoid }
+}

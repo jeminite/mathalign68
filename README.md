@@ -36,19 +36,24 @@ uploaded, and it compares your class to the state item by item.
 | **Statewide difficulty** | NYSED's published P-value per item, and average points earned per constructed-response item |
 | **Blueprint** | Tested weight by domain against NYSED's own published percent ranges |
 | **Post-test standards** | Which prior-grade standards each test assesses, and where they sit in the curriculum |
+| **The questions** | Stem, answer choices, figures and constructed-response answers, where transcribed |
 | **Curriculum alignment** | Unit, section and lesson in Imagine IM 6–8 *(Phase 3)* |
 | **Class analysis** | Your results vs. the state, in your browser, nothing uploaded *(Phase 2)* |
 
 ## What this is not
 
-**It does not reproduce the questions.** Not an oversight, and not a licensing worry — a
-deliberate decision, because it cannot be done honestly from these files. Every number,
-variable, expression and figure in the NYSED released-items PDFs is vector artwork with no text
-layer: it does not extract at all. A transcription would be either hand-typed for ~420 items or
-silently wrong, and a *partly* wrong question is worse than no question. So each item links to
-the exact page of the official PDF instead, and the site is an index into NYSED's own documents
-rather than a copy of them. `tools/preflight.py` refuses to publish any field that looks like
-item text, so this cannot quietly change.
+**A shown question is a transcription, not a scan — and the PDF is the authority.** Every
+number, variable, expression and figure in the NYSED PDFs is vector artwork with no text layer.
+The prose, though, *is* text and extracts exactly, so a stem is a template with holes and only
+the holes need filling. That is what makes this checkable rather than merely plausible: strip
+the markup and the reconstructed mathematics out of a published stem and what remains is
+character-identical to the PDF's own text layer, which `tools/preflight.py` verifies on every
+deploy. The mathematics is decoded from vector glyph geometry against a hand-labelled table, so
+an unrecognised shape stops the build instead of guessing.
+
+Reconstructed mathematics can still be wrong. Every item therefore links to the exact page of
+the official PDF, and that page is the authority. Where an item has not been transcribed there
+is no question text at all — just the link.
 
 **Not official.** Every curriculum alignment is a judgement call by one teacher, not guidance
 from NYSED or Imagine Learning. Where a placement is genuinely uncertain, it says so.

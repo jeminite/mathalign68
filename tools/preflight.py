@@ -19,6 +19,7 @@ import os
 import re
 import subprocess
 import sys
+from html.parser import HTMLParser
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -305,39 +306,236 @@ def blueprint_sanity(payload):
 
 # ----------------------------------------------------------------- 8. no item text
 
-def no_item_text(payload):
-    section("8. No item text -- the central design decision, enforced")
-    banned_keys = {"stem", "stemHtml", "choices", "figure", "alt", "longDescription"}
-    found = set()
+def transcription(payload):
+    section("8. Transcription integrity")
+    rows = [r for r in payload["items"] if r.get("transcribed")]
+    if not rows:
+        skipped("published stems match the PDF's own prose", "nothing transcribed yet")
+        check("no item text reached the payload without a reviewed transcription",
+              not any(r.get("stem") for r in payload["items"]))
+        return
 
-    def walk(node, path=""):
-        if isinstance(node, dict):
-            for k, v in node.items():
-                if k in banned_keys:
-                    found.add("%s.%s" % (path, k))
-                walk(v, "%s.%s" % (path, k))
-        elif isinstance(node, list):
-            for n, v in enumerate(node):
-                walk(v, "%s[%d]" % (path, n))
+    print("        %d of %d items transcribed" % (len(rows), len(payload["items"])))
 
-    walk(payload)
-    check("no stem, choice, figure or alt-text field in the payload",
-          not found, ", ".join(sorted(found)))
+    # ---- the check that makes this trustworthy -------------------------
+    # Strip the markup and the decoded mathematics out of a published stem and
+    # what is left must be the PDF's own text layer, character for character.
+    # The prose is never retyped, so "nothing was invented, dropped or reworded"
+    # is proven rather than asserted.
+    # ---- the drafts, which hold the PDF's own prose --------------------
+    # Prose fidelity proves nothing was INVENTED. It does not prove nothing was
+    # LOST: during development a fix made nine items lose their inline
+    # mathematics entirely -- item 48 went back to "a one time fee of  to rent
+    # shoes" -- and prose fidelity still passed on all 42. Every hole the
+    # extractor located must therefore be accounted for.
+    drafts = {}
+    for path in glob.glob(os.path.join(PROV, "content_*_raw.json")):
+        doc = load(path)
+        for it in doc["items"]:
+            drafts["%s-%03d" % (doc["meta"]["testId"], it["item"])] = it
+    if not drafts:
+        skipped("published stems match the PDF's own prose", "no extractor drafts on disk")
+        skipped("every located hole is filled", "no extractor drafts on disk")
+    else:
+        bad_prose = []
+        for r in rows:
+            draft = drafts.get(r["id"])
+            if draft is None:
+                continue
+            if bare_prose(r["stem"]) != squash(draft["prose"]):
+                bad_prose.append(r["id"])
+        check("every published stem's prose is character-identical to the PDF's "
+              "text layer", not bad_prose,
+              "%d item(s): %s" % (len(bad_prose), ", ".join(bad_prose[:6])))
 
-    long_fields = []
-    allowed = {"clusterText", "notes", "domainLabel", "subscore", "basis",
-               "postTestNote", "note"}
-    for i in payload["items"] + list(payload["standards"].values()):
-        for k, v in i.items():
-            if isinstance(v, str) and k not in allowed and len(v) > 300:
-                long_fields.append("%s.%s (%d chars)" % (i.get("id", i.get("code")), k, len(v)))
-    check("no unexpected long string in an item or standard record",
-          not long_fields, ", ".join(long_fields[:5]))
+        unfilled, no_draft = [], []
+        for r in rows:
+            draft = drafts.get(r["id"])
+            if draft is None:
+                no_draft.append(r["id"])
+                continue
+            if draft["unresolved"]:
+                unfilled.append("%s (%d)" % (r["id"], len(draft["unresolved"])))
+        check("no published item still has an unresolved hole",
+              not unfilled, "%d item(s): %s" % (len(unfilled), ", ".join(unfilled[:6])))
+        check("every published transcription has an extractor draft behind it",
+              not no_draft, ", ".join(no_draft[:6]))
 
+    # ---- structure -----------------------------------------------------
+    problems = {
+        "every stem, stemAfter and choice has balanced tags": [],
+        "no multiple-choice item has fewer than 4 choices": [],
+        "exactly one choice is marked correct": [],
+        "no published choice is empty": [],
+        "every constructed-response item has an answer": [],
+        "no ligature or unmapped-glyph damage survives": [],
+        "no hair or thin space survives": [],
+        "no function name is kerned open, as in f (x)": [],
+    }
+    for r in rows:
+        tag = r["id"]
+        texts = [r.get("stem") or "", r.get("stemAfter") or ""]
+        texts += [c.get("text") or "" for c in (r.get("choiceList") or [])]
+        for t in texts:
+            if not balanced(t):
+                problems["every stem, stemAfter and choice has balanced tags"].append(tag)
+                break
+        blob = " ".join(texts)
+        if re.search(r"[\u0100\u0101\ufffd]", blob):
+            problems["no ligature or unmapped-glyph damage survives"].append(tag)
+        if re.search(r"[\u2009\u200a]", blob):
+            problems["no hair or thin space survives"].append(tag)
+        if KERN.search(strip_tags(blob)):
+            problems["no function name is kerned open, as in f (x)"].append(tag)
+
+        choices = r.get("choiceList") or []
+        if r["type"] == "Multiple Choice" and not r.get("choicesInImage"):
+            if len(choices) < 4:
+                problems["no multiple-choice item has fewer than 4 choices"].append(tag)
+            elif sum(1 for c in choices if c["isCorrect"]) != 1:
+                problems["exactly one choice is marked correct"].append(tag)
+            elif any(not strip_tags(c["text"]).strip() for c in choices):
+                problems["no published choice is empty"].append(tag)
+        if r["type"] != "Multiple Choice" and not r.get("cr", {}):
+            problems["every constructed-response item has an answer"].append(tag)
+
+    for name, offenders in problems.items():
+        check(name, not offenders,
+              "%d item(s): %s" % (len(offenders), ", ".join(offenders[:6])))
+
+    # ---- the key, and the answers --------------------------------------
+    imap_keys = {}
+    for path in glob.glob(os.path.join(PROV, "itemmap_*.json")):
+        doc = load(path)
+        for it in doc["items"]:
+            imap_keys["%s-%03d" % (doc["meta"]["testId"], it["item"])] = it["key"]
+    wrong_key = []
+    for r in rows:
+        choices = r.get("choiceList") or []
+        if not choices:
+            continue
+        published = next((c["label"] for c in choices if c["isCorrect"]), None)
+        official = imap_keys.get(r["id"])
+        if official and published and official != published:
+            wrong_key.append("%s: published %s, item map %s" % (r["id"], published, official))
+    check("every published correct choice matches NYSED's own item map",
+          not wrong_key, "; ".join(wrong_key[:4]))
+
+    # Closes the hole RegentsAlign's RESUME #64 still records: there, no
+    # constructed-response answer has ever been checked against an official
+    # source. Here every one cites its exemplary-response page.
+    no_source = [r["id"] for r in rows
+                 if r.get("cr") and not (r["cr"].get("source") or "").strip()]
+    check("every constructed-response answer cites an official source",
+          not no_source, ", ".join(no_source[:6]))
+
+    # ---- figures -------------------------------------------------------
+    missing, no_alt = [], []
+    used, alts = set(), {}
+    for r in rows:
+        for f in r.get("figures") or []:
+            used.add(f["file"])
+            if not os.path.exists(os.path.join(SITE, "assets", f["file"])):
+                missing.append(f["file"])
+            if not (f.get("alt") or "").strip():
+                no_alt.append(f["file"])
+            alts.setdefault((f.get("alt") or "").strip(), set()).add(f["file"])
+    check("every referenced figure is published", not missing, ", ".join(missing[:4]))
+    check("every figure has alt text", not no_alt, ", ".join(no_alt[:4]))
+    shared = {a: sorted(fs) for a, fs in alts.items() if len(fs) > 1}
+    check("no two figures share alt text", not shared, str(shared)[:200])
+
+    unref = []
+    adir = os.path.join(SITE, "assets")
+    for root, _, files in os.walk(adir):
+        for f in files:
+            rel = os.path.relpath(os.path.join(root, f), adir)
+            if rel not in used:
+                unref.append(rel)
+    warn("no unreferenced image in site/assets", not unref,
+         "%d file(s), e.g. %s" % (len(unref), unref[0] if unref else ""))
+
+    # ---- the page tells the reader what this is ------------------------
     html = open(os.path.join(SITE, "index.html")).read()
-    check("the built page states the no-item-text policy where a reader will see it",
-          "does not reproduce" in html or "reproduces no" in html,
-          "a reader clicking through to a PDF needs to be told why")
+    check("the built page explains where the question text comes from",
+          "text layer" in html or "reviewed transcription" in html,
+          "a reader needs to know the stem is a transcription, not the scan")
+
+
+def squash(text):
+    return re.sub(r"\s+", "", text)
+
+
+def strip_tags(html):
+    return re.sub(r"<[^>]+>", "", html or "")
+
+
+def bare_prose(html):
+    """A stem with all markup and all decoded mathematics removed.
+
+    The maths spans have to be removed by tracking depth, not by a regex: they
+    contain fraction spans, and a non-greedy regex stops at the inner </span>.
+    """
+    out, i = [], 0
+    html = html or ""
+    while i < len(html):
+        m = re.compile(r'<span class="math">').match(html, i)
+        if not m:
+            out.append(html[i])
+            i += 1
+            continue
+        depth, j = 1, m.end()
+        while j < len(html) and depth:
+            if html.startswith("<span", j):
+                depth += 1
+                j = html.index(">", j) + 1
+            elif html.startswith("</span>", j):
+                depth -= 1
+                j += 7
+            else:
+                j += 1
+        i = j
+    text = re.sub(r"<span[^>]*>|</span>|\u27e6\?\u27e7", "", "".join(out))
+    for ent, ch in (("&lt;", "<"), ("&gt;", ">"), ("&amp;", "&"), ("&nbsp;", " "),
+                    ("&minus;", "\u2212"), ("&divide;", "\u00f7"),
+                    ("&le;", "\u2264"), ("&ge;", "\u2265")):
+        text = text.replace(ent, ch)
+    return squash(text)
+
+
+class Balance(HTMLParser):
+    """Counts unclosed tags. Void elements need no closing."""
+
+    VOID = {"br", "img", "hr", "input", "meta", "link"}
+
+    def __init__(self):
+        super().__init__()
+        self.depth = 0
+        self.bad = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in self.VOID:
+            self.depth += 1
+
+    def handle_endtag(self, tag):
+        self.depth -= 1
+        if self.depth < 0:
+            self.bad = True
+
+
+def balanced(html):
+    p = Balance()
+    p.feed(html or "")
+    return p.depth == 0 and not p.bad
+
+
+# NYSED kerns a function name with a HAIR SPACE -- "f (x)" -- so the italic f
+# does not collide with the parenthesis. Collapsing that into an ordinary space
+# publishes "f (x)", which reads as a typo. RegentsAlign shipped it 25 times
+# across four exams before anyone noticed. The pattern is deliberately narrow: a
+# SINGLE-letter name, a space, then a parenthesised variable optionally plus or
+# minus an integer. A wider rule flags "Time (seconds)", where the space is real.
+KERN = re.compile(r"(?<![A-Za-z0-9])[A-Za-z] \([A-Za-z](?:\s*[-+\u2212]\s*\d+)?\)")
 
 
 # -------------------------------------------------------------------- 9. alignment
@@ -448,8 +646,8 @@ def site_shape(payload):
         check("site/data.json holds the same items as the embedded payload",
               len(published["items"]) == len(payload["items"]),
               "%d vs %d" % (len(published["items"]), len(payload["items"])))
-        check("site/data.json states the no-item-text contract",
-              "noItemText" in published["meta"])
+        check("site/data.json explains where its question text comes from",
+              "itemText" in published["meta"])
         check("site/data.json states the P-value caveat",
               "pValueCaveat" in published["meta"])
 
@@ -542,7 +740,7 @@ def main():
     item_structure(payload)
     page_links(payload)
     blueprint_sanity(payload)
-    no_item_text(payload)
+    transcription(payload)
     alignment(payload)
     privacy(payload)
     site_shape(payload)

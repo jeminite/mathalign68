@@ -19,14 +19,23 @@ extractor or fix `data/blueprint.json` — never the output.
 to it defeats its purpose: `preflight.py` reads its counts *instead of* holding literals, so
 anything wrong in there is wrong everywhere with no second opinion.
 
-## Do not publish item text
+## Do not publish unreviewed item text
 
-Not a style preference. The stems in these PDFs do not extract — every numeral and figure is
-vector artwork — so any "transcription" is either hand-typed or quietly wrong, and a subtly wrong
-question is worse than a link to the real one. `build/payload.py` refuses to write a payload
-containing `stem`, `stemHtml`, `choices`, `figure`, `alt` or `longDescription`, and
-`preflight.py` checks again. If a future phase ever wants extracted prose as a search aid, it
-goes in one field named `searchHintsNotItemText` and is never rendered as the question.
+This began as a rule against publishing item text at all, because the stems do not extract and
+anything automatic would be either hand-typed or quietly wrong. That reasoning was about
+publishing *extraction output* as if it were the question, and it still holds.
+
+Reviewed transcription is a different thing, and the replacement rule is stricter. Content
+reaches the site only from `data/content.json`, which `tools/merge_content.py` writes from a
+reviewed spec and stamps `reviewed: true`; `build/payload.py` refuses a payload containing a stem
+that arrived any other way. Then `preflight.py` checks the result three ways: every published
+stem's prose must be character-identical to the PDF's text layer, every hole the extractor
+located must be filled, and every answer must agree with an independent source — NYSED's item
+map for multiple choice, its exemplary-response page for constructed response.
+
+**Never hand-edit a stem to tidy it up.** The prose-fidelity check is what makes this data worth
+trusting, and editing the wording breaks it. If a stem is wrong, fix the extractor. If it is
+merely ugly, record it in the spec's `reviewNotes` and leave it visible.
 
 ## Adding a test
 

@@ -62,7 +62,10 @@ ASSETS = os.path.join(ROOT, "assets")
 PROSE_FONT = "Frutiger"
 LABEL_FONT = "LucidaSans"
 CREDIT_RE = re.compile(r"^This question is worth (\d) credits?\.$")
-INSTRUCTION_RE = re.compile(r"^(Show your work\.|Answer|Be sure to .*)$")
+# "Answer" is followed by the blank and its unit, so the line reads
+# "Answer   games" rather than "Answer" -- an exact match left it in the stem,
+# which then ended "...on shoes and games. Answer games".
+INSTRUCTION_RE = re.compile(r"^(Show your work\.|Explain .*|Answer\b.*|Be sure to .*)$")
 CHOICE_RE = re.compile(r"^[A-D]$")
 
 # NYSED's PDFs encode the fi and fl ligatures as U+0100 and U+0101, so the text
@@ -213,7 +216,15 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         # to rent shoes and  for each game". Worse, the prose-fidelity check
         # still passed: it proves nothing was invented, not that nothing was
         # lost.
-        structure = sum(1 for dr in blk if shape_of(dr) is None)
+        # A FRACTION BAR is type, not structure. It is a thin horizontal wider
+        # than the glyph limit, so counting every non-glyph path as structure
+        # turned clean displayed expressions into images: item 20's
+        # "4(x + 2) = 12/-0.25" and item 47's "(1/2)(-0.4) / (1/3)" both
+        # decoded perfectly and were published as pictures. A table border runs
+        # the width of the table; a fraction bar spans one expression.
+        structure = sum(1 for dr in blk
+                        if shape_of(dr) is None
+                        and not (dr["rect"].height < 2.0 and dr["rect"].width < 40))
         if structure >= 2 and len(blk) >= 6 and r.width * r.height >= FIGURE_MIN_AREA:
             figure_zones.append(r)
 
@@ -321,8 +332,7 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         })
 
     # ---- classify the lines -------------------------------------------
-    credit_line, stem, instructions, choice_html = None, [], [], {}
-    label_ys = {round(y, 1) for _, _, y in labels}
+    credit_line, stem, instructions, choice_lines = None, [], [], {}
 
     for ln in rendered_lines:
         text = ln["prose"]
@@ -333,18 +343,25 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         if INSTRUCTION_RE.match(text):
             instructions.append(text)
             continue
-        near_label = min((abs(ln["y"] - y) for y in label_ys), default=999)
-        if labels and near_label < 6:
-            choice_html.setdefault(round(ln["y"], 1), []).append(ln["html"])
-            continue
+        # A choice can run to several lines, and its LETTER IS VERTICALLY
+        # CENTRED on them: item 18's label A sits at y=338.6 between its own
+        # lines at 329.7 and 344.0. So neither "within a few points of a label"
+        # (which kept one line per choice and dropped the rest) nor "the nearest
+        # label at or above" (which shifted every choice by one line) is right.
+        # The line belongs to the nearest label in either direction, and a line
+        # further off than one choice's height belongs to the stem.
+        if labels:
+            nearest = min(range(len(labels)),
+                          key=lambda ci: abs(ln["y"] - labels[ci][2]))
+            if abs(ln["y"] - labels[nearest][2]) < 20:
+                choice_lines.setdefault(nearest, []).append(ln["html"])
+                continue
         stem.append(ln)
 
     choices = []
     for ci, (letter, lx, ly) in enumerate(labels):
-        key = min(choice_html, key=lambda k: abs(k - ly)) if choice_html else None
-        prose_html = (" ".join(choice_html.get(key, []))
-                      if key is not None and abs(key - ly) < 6 else "")
-        choices.append({"label": letter, "html": prose_html,
+        choices.append({"label": letter,
+                        "html": " ".join(choice_lines.get(ci, [])).strip(),
                         "x": round(lx, 1), "y": round(ly, 1), "_ci": ci})
 
     # ---- whatever vector content is left is display maths or a figure --
@@ -406,7 +423,10 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         if in_figure(r):
             figure_blocks.append(blk)
             continue
-        if r.height < 34 and r.width < 380 and glyphs and len(glyphs) == len(blk):
+        # One glyph on its own is a label, not an expression -- the y and x on
+        # a graph's axes were being published as displayed maths.
+        if (r.height < 34 and r.width < 380 and glyphs
+                and len(glyphs) == len(blk) and len(glyphs) >= 2):
             text, unknown = table.decode(blk)
             if not unknown:
                 display.append({

@@ -120,6 +120,9 @@ td.wrap-ok { white-space:normal; min-width:22ch }
 .tag.cr { background:var(--mid-soft); color:var(--mid) }
 .tag.post { background:var(--post-soft); color:var(--post) }
 .tag.never { background:var(--line-soft); color:var(--muted) }
+.tag.hard { background:var(--hard-soft); color:var(--hard) }
+.tag.mid  { background:var(--mid-soft);  color:var(--mid) }
+.tag.easy { background:var(--easy-soft); color:var(--easy) }
 
 .p { display:inline-flex; align-items:center; gap:7px; min-width:96px }
 .p .bar { flex:1; height:6px; border-radius:3px; background:var(--line-soft); overflow:hidden; min-width:44px }

@@ -2,9 +2,9 @@
   "meta": {
     "generatedBy": "tools/label_glyphs.py",
     "note": "Vector glyph shapes from the released-items PDFs, mapped to the characters they draw. HAND-LABELLED: a script builds the clusters, a person (or a vision pass that is then spot-checked) supplies the `label`. An unlabelled cluster makes its item fail to decode rather than decode wrongly.",
-    "clusters": 178,
-    "labelled": 44,
-    "instances": 2478,
+    "clusters": 181,
+    "labelled": 47,
+    "instances": 4960,
     "tolerance": 0.04
   },
   "clusters": [
@@ -29,7 +29,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 466,
+      "count": 932,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -230,7 +230,7 @@
         "degenerate": false
       },
       "label": "0",
-      "count": 137,
+      "count": 274,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -455,7 +455,7 @@
         "degenerate": false
       },
       "label": "1",
-      "count": 97,
+      "count": 194,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -511,7 +511,7 @@
         "degenerate": true
       },
       "label": ".",
-      "count": 94,
+      "count": 188,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -768,7 +768,7 @@
         "degenerate": false
       },
       "label": "2",
-      "count": 87,
+      "count": 174,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -1137,7 +1137,7 @@
         "degenerate": false
       },
       "label": "5",
-      "count": 75,
+      "count": 150,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -1450,7 +1450,7 @@
         "degenerate": false
       },
       "label": "\u2022",
-      "count": 64,
+      "count": 128,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -1843,7 +1843,7 @@
         "degenerate": false
       },
       "label": "3",
-      "count": 62,
+      "count": 124,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -2364,7 +2364,7 @@
         "degenerate": false
       },
       "label": "$",
-      "count": 61,
+      "count": 122,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -2477,7 +2477,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 52,
+      "count": 104,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -2766,7 +2766,7 @@
         "degenerate": false
       },
       "label": "4",
-      "count": 45,
+      "count": 90,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -2991,7 +2991,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 42,
+      "count": 84,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -3480,7 +3480,7 @@
         "degenerate": false
       },
       "label": "x",
-      "count": 42,
+      "count": 84,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -3665,7 +3665,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 38,
+      "count": 76,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -4010,7 +4010,7 @@
         "degenerate": false
       },
       "label": "8",
-      "count": 35,
+      "count": 70,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -4307,7 +4307,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 30,
+      "count": 60,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -4363,7 +4363,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 28,
+      "count": 56,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -4596,7 +4596,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 27,
+      "count": 54,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -4861,7 +4861,7 @@
         "degenerate": false
       },
       "label": "6",
-      "count": 26,
+      "count": 52,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5046,7 +5046,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 26,
+      "count": 52,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5223,7 +5223,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 25,
+      "count": 50,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5279,7 +5279,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 24,
+      "count": 48,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5488,7 +5488,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 23,
+      "count": 46,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5641,7 +5641,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 23,
+      "count": 46,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -5914,7 +5914,7 @@
         "degenerate": false
       },
       "label": "9",
-      "count": 22,
+      "count": 44,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -6179,7 +6179,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 22,
+      "count": 44,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -6500,7 +6500,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 22,
+      "count": 44,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -6765,7 +6765,7 @@
         "degenerate": false
       },
       "label": "7",
-      "count": 22,
+      "count": 44,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7014,7 +7014,7 @@
         "degenerate": false
       },
       "label": "+",
-      "count": 20,
+      "count": 40,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7191,7 +7191,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 19,
+      "count": 38,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7384,7 +7384,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 18,
+      "count": 36,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7577,7 +7577,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 17,
+      "count": 34,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7633,7 +7633,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 17,
+      "count": 34,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -7786,7 +7786,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 16,
+      "count": 32,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8051,7 +8051,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 16,
+      "count": 32,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8284,7 +8284,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 16,
+      "count": 32,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8397,7 +8397,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 16,
+      "count": 32,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8630,7 +8630,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 15,
+      "count": 30,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8686,7 +8686,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 13,
+      "count": 26,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -8903,7 +8903,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 13,
+      "count": 26,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -9248,7 +9248,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 13,
+      "count": 26,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -9401,7 +9401,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 13,
+      "count": 26,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -9586,7 +9586,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 13,
+      "count": 26,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -9771,7 +9771,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 12,
+      "count": 24,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10020,7 +10020,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 12,
+      "count": 24,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10076,7 +10076,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 11,
+      "count": 22,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10277,7 +10277,7 @@
         "degenerate": false
       },
       "label": "(",
-      "count": 11,
+      "count": 22,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10478,7 +10478,7 @@
         "degenerate": false
       },
       "label": ")",
-      "count": 11,
+      "count": 22,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10711,7 +10711,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 11,
+      "count": 22,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -10920,7 +10920,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 11,
+      "count": 22,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11121,7 +11121,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 10,
+      "count": 20,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11338,7 +11338,7 @@
         "degenerate": false
       },
       "label": "=",
-      "count": 10,
+      "count": 20,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11394,7 +11394,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 9,
+      "count": 18,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11739,7 +11739,7 @@
         "degenerate": false
       },
       "label": "%",
-      "count": 9,
+      "count": 18,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11795,7 +11795,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 9,
+      "count": 18,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -11932,7 +11932,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 9,
+      "count": 18,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -12245,7 +12245,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 9,
+      "count": 18,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -12334,7 +12334,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 8,
+      "count": 16,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -12423,7 +12423,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 8,
+      "count": 16,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -12544,7 +12544,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 8,
+      "count": 16,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -12785,7 +12785,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -13218,7 +13218,7 @@
         "degenerate": false
       },
       "label": "p",
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -13435,7 +13435,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -13491,7 +13491,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -13916,7 +13916,7 @@
         "degenerate": false
       },
       "label": "y",
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -14197,7 +14197,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -14582,7 +14582,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -14759,7 +14759,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 7,
+      "count": 14,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -14864,7 +14864,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15129,7 +15129,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15330,7 +15330,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15386,7 +15386,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15442,7 +15442,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15627,7 +15627,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15683,7 +15683,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -15876,7 +15876,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -16221,7 +16221,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -16606,7 +16606,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 6,
+      "count": 12,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -16662,7 +16662,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -16718,7 +16718,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -16959,7 +16959,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17015,7 +17015,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17104,7 +17104,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17160,7 +17160,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17345,7 +17345,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17498,7 +17498,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -17554,7 +17554,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18131,7 +18131,7 @@
         "degenerate": false
       },
       "label": "g",
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18316,7 +18316,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18533,7 +18533,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18589,7 +18589,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 5,
+      "count": 10,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18645,7 +18645,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18701,7 +18701,7 @@
         "degenerate": true
       },
       "label": ",",
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18757,7 +18757,7 @@
         "degenerate": true
       },
       "label": ".",
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18934,7 +18934,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -18990,7 +18990,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19046,7 +19046,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19279,7 +19279,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19472,7 +19472,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19665,7 +19665,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19866,7 +19866,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -19987,7 +19987,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20076,7 +20076,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 4,
+      "count": 8,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20229,7 +20229,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20259,6 +20259,16 @@
             117.45,
             383.15,
             127.38
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            355.24,
+            338.47,
+            359.4,
+            348.38
           ]
         }
       ]
@@ -20604,7 +20614,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20635,6 +20645,16 @@
             348.57,
             221.14
           ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            343.83,
+            171.57,
+            348.57,
+            182.21
+          ]
         }
       ]
     },
@@ -20650,7 +20670,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20680,6 +20700,16 @@
             135.78,
             369.62,
             144.39
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            265.79,
+            151.34,
+            267.35,
+            159.94
           ]
         }
       ]
@@ -20777,7 +20807,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20807,6 +20837,16 @@
             189.59,
             454.0,
             200.32
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            346.67,
+            144.11,
+            350.02,
+            154.57
           ]
         }
       ]
@@ -20904,7 +20944,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20935,6 +20975,16 @@
             495.54,
             200.32
           ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            387.17,
+            144.11,
+            390.52,
+            154.57
+          ]
         }
       ]
     },
@@ -20950,7 +21000,7 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -20980,6 +21030,16 @@
             120.8,
             182.51,
             121.49
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 6,
+          "rect": [
+            368.83,
+            102.8,
+            376.01,
+            103.49
           ]
         }
       ]
@@ -21237,7 +21297,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -21267,6 +21327,16 @@
             177.96,
             497.86,
             186.92
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            284.3,
+            336.16,
+            290.35,
+            345.11
           ]
         }
       ]
@@ -21476,7 +21546,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -21506,6 +21576,16 @@
             117.38,
             462.79,
             127.21
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            258.19,
+            95.74,
+            265.47,
+            105.55
           ]
         }
       ]
@@ -21667,7 +21747,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -21697,6 +21777,16 @@
             207.68,
             227.01,
             212.32
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            121.39,
+            243.68,
+            127.83,
+            248.32
           ]
         }
       ]
@@ -21866,7 +21956,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -21896,6 +21986,16 @@
             201.23,
             227.01,
             207.01
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            121.39,
+            237.22,
+            127.83,
+            243.01
           ]
         }
       ]
@@ -21993,7 +22093,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -22023,6 +22123,16 @@
             231.88,
             111.38,
             235.31
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            118.65,
+            229.56,
+            129.36,
+            232.99
           ]
         }
       ]
@@ -22224,7 +22334,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -22254,6 +22364,16 @@
             225.3,
             109.84,
             231.36
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            118.72,
+            223.0,
+            127.83,
+            229.05
           ]
         }
       ]
@@ -22559,7 +22679,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -22589,6 +22709,16 @@
             204.49,
             109.85,
             210.06
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            121.39,
+            202.22,
+            127.83,
+            207.78
           ]
         }
       ]
@@ -22686,7 +22816,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -22716,6 +22846,16 @@
             190.33,
             111.38,
             193.77
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            118.65,
+            188.09,
+            129.36,
+            191.52
           ]
         }
       ]
@@ -22917,7 +23057,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -22947,6 +23087,16 @@
             201.54,
             174.89,
             210.29
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            169.09,
+            181.6,
+            174.89,
+            190.35
           ]
         }
       ]
@@ -23148,7 +23298,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -23179,6 +23329,16 @@
             240.32,
             227.87
           ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            197.93,
+            178.87,
+            203.73,
+            187.98
+          ]
         }
       ]
     },
@@ -23194,7 +23354,7 @@
         "degenerate": true
       },
       "label": null,
-      "count": 3,
+      "count": 6,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -23225,6 +23385,16 @@
             273.88,
             220.65
           ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            263.13,
+            192.38,
+            264.23,
+            201.15
+          ]
         }
       ]
     },
@@ -23240,8 +23410,28 @@
         "degenerate": true
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            229.41,
+            337.74,
+            231.28,
+            348.21
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            385.01,
+            445.36,
+            386.88,
+            455.83
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 4,
@@ -23405,8 +23595,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            385.31,
+            341.02,
+            392.76,
+            351.31
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 11,
+          "rect": [
+            240.17,
+            146.34,
+            246.42,
+            154.95
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 4,
@@ -23770,8 +23980,28 @@
         "degenerate": false
       },
       "label": "b",
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            458.07,
+            75.9,
+            462.56,
+            84.36
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            389.82,
+            266.4,
+            394.31,
+            274.86
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -23919,8 +24149,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            264.01,
+            110.66,
+            271.78,
+            120.34
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            239.64,
+            111.64,
+            247.6,
+            121.55
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -24028,8 +24278,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            313.08,
+            110.66,
+            321.87,
+            120.18
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            288.5,
+            131.75,
+            297.51,
+            141.49
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -24265,8 +24535,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            397.19,
+            146.78,
+            404.25,
+            155.39
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 26,
+          "rect": [
+            388.38,
+            138.23,
+            395.45,
+            146.85
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -24510,8 +24800,28 @@
         "degenerate": false
       },
       "label": "\u00f7",
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            293.71,
+            460.72,
+            300.58,
+            466.87
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 35,
+          "rect": [
+            167.53,
+            113.57,
+            174.38,
+            119.72
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -25139,8 +25449,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 7,
+          "rect": [
+            133.73,
+            101.69,
+            141.47,
+            108.45
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            340.23,
+            306.6,
+            345.9,
+            311.56
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 7,
@@ -25688,8 +26018,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 7,
+          "rect": [
+            169.56,
+            101.69,
+            177.32,
+            110.87
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            152.04,
+            117.52,
+            157.73,
+            124.25
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 7,
@@ -25724,8 +26074,28 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 7,
+          "rect": [
+            150.5,
+            266.74,
+            156.15,
+            267.29
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 7,
+          "rect": [
+            131.31,
+            296.74,
+            136.97,
+            297.29
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 7,
@@ -25945,8 +26315,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            337.59,
+            327.22,
+            343.64,
+            336.03
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            344.9,
+            327.22,
+            350.95,
+            336.03
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -26110,8 +26500,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            252.42,
+            295.19,
+            257.74,
+            303.53
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            238.88,
+            251.49,
+            244.09,
+            259.65
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -26323,8 +26733,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            293.14,
+            182.87,
+            297.99,
+            191.5
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            238.46,
+            231.85,
+            243.21,
+            240.29
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -26359,8 +26789,28 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 20,
+          "rect": [
+            179.0,
+            426.88,
+            189.08,
+            427.63
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 20,
+          "rect": [
+            195.79,
+            426.88,
+            205.87,
+            427.63
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 20,
@@ -26644,8 +27094,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            223.86,
+            181.6,
+            229.66,
+            190.5
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            168.68,
+            241.43,
+            174.48,
+            250.32
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -26857,8 +27327,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            256.29,
+            181.6,
+            260.13,
+            187.98
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            248.07,
+            253.54,
+            251.82,
+            259.79
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -26982,8 +27472,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            240.88,
+            198.81,
+            246.35,
+            207.78
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            297.41,
+            238.7,
+            302.87,
+            247.67
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -27163,8 +27673,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            253.31,
+            201.68,
+            259.02,
+            210.44
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            291.96,
+            234.18,
+            297.53,
+            242.74
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -27384,8 +27914,28 @@
         "degenerate": false
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            209.65,
+            218.76,
+            215.45,
+            227.87
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            270.05,
+            231.38,
+            275.73,
+            240.29
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -27420,8 +27970,28 @@
         "degenerate": true
       },
       "label": null,
-      "count": 2,
+      "count": 4,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            245.42,
+            251.11,
+            246.66,
+            259.65
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            276.63,
+            251.11,
+            277.87,
+            259.65
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 33,
@@ -27456,8 +28026,18 @@
         "degenerate": true
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            230.57,
+            445.55,
+            232.44,
+            455.83
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 4,
@@ -27587,8 +28167,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 4,
+          "rect": [
+            248.4,
+            445.36,
+            255.07,
+            455.83
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 4,
@@ -27814,8 +28404,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 5,
+          "rect": [
+            286.61,
+            151.19,
+            293.14,
+            160.08
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 5,
@@ -27969,8 +28569,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 10,
+          "rect": [
+            119.34,
+            256.95,
+            127.69,
+            262.55
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 10,
@@ -28156,8 +28766,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 11,
+          "rect": [
+            173.46,
+            135.96,
+            177.68,
+            144.86
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 11,
@@ -28367,8 +28987,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 11,
+          "rect": [
+            207.34,
+            146.2,
+            213.25,
+            154.81
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 11,
@@ -28530,8 +29160,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 13,
+          "rect": [
+            138.89,
+            237.59,
+            144.55,
+            246.56
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 13,
@@ -28589,8 +29229,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 14,
+          "rect": [
+            211.72,
+            113.54,
+            222.1,
+            123.92
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 14,
@@ -28648,8 +29298,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 14,
+          "rect": [
+            431.44,
+            214.81,
+            441.81,
+            225.2
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 14,
@@ -28883,8 +29543,18 @@
         "degenerate": false
       },
       "label": "\u2264",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 15,
+          "rect": [
+            142.49,
+            136.41,
+            149.34,
+            144.77
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 15,
@@ -29038,8 +29708,18 @@
         "degenerate": false
       },
       "label": "<",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 15,
+          "rect": [
+            142.48,
+            166.34,
+            149.35,
+            173.45
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 15,
@@ -29273,8 +29953,18 @@
         "degenerate": false
       },
       "label": "\u2265",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 15,
+          "rect": [
+            142.49,
+            195.66,
+            149.34,
+            204.02
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 15,
@@ -29428,8 +30118,18 @@
         "degenerate": false
       },
       "label": ">",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 15,
+          "rect": [
+            142.48,
+            226.34,
+            149.35,
+            233.45
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 15,
@@ -29567,8 +30267,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            297.07,
+            111.64,
+            305.37,
+            121.38
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -29778,8 +30488,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            261.83,
+            238.69,
+            269.87,
+            248.72
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -29997,8 +30717,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            278.19,
+            210.92,
+            284.15,
+            219.27
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -30120,8 +30850,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            204.17,
+            267.03,
+            212.51,
+            275.45
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -30371,8 +31111,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            206.21,
+            257.08,
+            212.51,
+            266.12
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -30558,8 +31308,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            204.61,
+            229.88,
+            212.65,
+            234.19
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -30745,8 +31505,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            203.4,
+            214.53,
+            212.51,
+            218.85
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -30868,8 +31638,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            204.16,
+            207.27,
+            212.65,
+            210.83
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -31063,8 +31843,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 18,
+          "rect": [
+            217.75,
+            256.81,
+            226.86,
+            263.69
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 18,
@@ -31154,8 +31944,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 20,
+          "rect": [
+            357.81,
+            160.51,
+            360.92,
+            168.86
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 20,
@@ -31180,8 +31980,18 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 20,
+          "rect": [
+            189.08,
+            426.88,
+            195.79,
+            427.63
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 20,
@@ -31455,8 +32265,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 26,
+          "rect": [
+            275.97,
+            138.23,
+            282.98,
+            146.98
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 26,
@@ -31746,8 +32566,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            258.42,
+            241.43,
+            263.63,
+            247.81
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -31997,8 +32827,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            280.1,
+            241.43,
+            288.86,
+            247.67
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -32023,8 +32863,18 @@
         "degenerate": true
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            290.82,
+            238.94,
+            292.09,
+            247.67
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -32049,8 +32899,18 @@
         "degenerate": true
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 29,
+          "rect": [
+            209.84,
+            159.55,
+            211.51,
+            167.9
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 29,
@@ -32075,8 +32935,18 @@
         "degenerate": true
       },
       "label": "@rule",
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 32,
+          "rect": [
+            230.37,
+            120.8,
+            237.94,
+            121.49
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 32,
@@ -32101,8 +32971,18 @@
         "degenerate": true
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            242.07,
+            172.99,
+            243.71,
+            181.15
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 33,
@@ -32127,8 +33007,18 @@
         "degenerate": true
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            259.8,
+            192.61,
+            261.04,
+            201.15
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 33,
@@ -32298,8 +33188,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            238.53,
+            212.35,
+            244.7,
+            220.79
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 33,
@@ -32453,8 +33353,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 33,
+          "rect": [
+            259.51,
+            234.18,
+            268.97,
+            240.15
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 33,
@@ -32576,8 +33486,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 34,
+          "rect": [
+            423.75,
+            185.29,
+            431.36,
+            191.45
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 34,
@@ -32731,8 +33651,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 34,
+          "rect": [
+            502.08,
+            192.48,
+            509.91,
+            201.3
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 34,
@@ -32854,8 +33784,18 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 34,
+          "rect": [
+            101.35,
+            281.99,
+            109.7,
+            286.94
+          ]
+        },
         {
           "source": "sources/2026-released-items-math-g7.pdf",
           "page": 34,
@@ -33121,7 +34061,7 @@
         "degenerate": false
       },
       "label": null,
-      "count": 1,
+      "count": 2,
       "samples": [
         {
           "source": "sources/2026-released-items-math-g7.pdf",
@@ -33131,6 +34071,104 @@
             245.26,
             112.36,
             251.32
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 34,
+          "rect": [
+            103.39,
+            245.26,
+            112.36,
+            251.32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g180",
+      "bucket": "deg:1:21.4:0.7",
+      "shape": {
+        "bucket": "deg:1:21.4:0.7",
+        "points": [],
+        "width": 21.35,
+        "height": 0.68,
+        "items": 1,
+        "degenerate": true
+      },
+      "label": "@rule",
+      "count": 2,
+      "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 26,
+          "rect": [
+            256.85,
+            449.65,
+            278.2,
+            450.34
+          ]
+        },
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 26,
+          "rect": [
+            103.51,
+            527.65,
+            124.79,
+            528.34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g179",
+      "bucket": "deg:1:30.1:0.7",
+      "shape": {
+        "bucket": "deg:1:30.1:0.7",
+        "points": [],
+        "width": 30.08,
+        "height": 0.68,
+        "items": 1,
+        "degenerate": true
+      },
+      "label": "@rule",
+      "count": 1,
+      "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 14,
+          "rect": [
+            164.45,
+            495.4,
+            194.53,
+            496.09
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g181",
+      "bucket": "deg:1:15.3:0.7",
+      "shape": {
+        "bucket": "deg:1:15.3:0.7",
+        "points": [],
+        "width": 15.33,
+        "height": 0.68,
+        "items": 1,
+        "degenerate": true
+      },
+      "label": "@rule",
+      "count": 1,
+      "samples": [
+        {
+          "source": "sources/2026-released-items-math-g7.pdf",
+          "page": 26,
+          "rect": [
+            103.49,
+            565.91,
+            118.82,
+            566.59
           ]
         }
       ]

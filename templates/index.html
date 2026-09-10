@@ -7,6 +7,7 @@
 <meta name="description" content="Every released question on the NYS grades 6-8 mathematics tests, 2023-2026, with the statewide difficulty of each, mapped to standards and the Imagine IM 6-8 curriculum.">
 <style>
 /*__CSS__*/
+/*__QUESTION_CSS__*/
 </style>
 </head>
 <body>
@@ -26,7 +27,8 @@
     </div>
 
     <nav class="tabs" role="tablist" aria-label="View">
-      <button type="button" role="tab" data-view="standards"  aria-selected="true">Standards</button>
+      <button type="button" role="tab" data-view="questions"  aria-selected="true">Questions</button>
+      <button type="button" role="tab" data-view="standards"  aria-selected="false">Standards</button>
       <button type="button" role="tab" data-view="difficulty" aria-selected="false">Difficulty</button>
       <button type="button" role="tab" data-view="blueprint"  aria-selected="false">Blueprint</button>
       <button type="button" role="tab" data-view="posttest"   aria-selected="false">Post-test standards</button>
@@ -42,8 +44,10 @@
   <p class="foot">
     Built __BUILT__ from NYSED's published <em>Map to the Standards</em> tables and the
     <em>Educator Guide to the Grades 3–8 Mathematics Tests</em>.
-    This site does not reproduce question text or figures — every item links to the exact page of
-    the official released-items PDF instead.
+    Where a question is shown, its wording is NYSED's own — taken from the PDF's text layer
+    character for character, with only the mathematics reconstructed from the vector artwork it
+    is drawn as. Every item links to the exact page of the official released-items PDF, and that
+    page is the authority.
     The alignment data is also published as a plain data file at
     <a href="data.json">data.json</a>.
     __FEEDBACK__

@@ -2,11 +2,11 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-10T06:40:42",
+    "built": "2026-09-10T18:19:10",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
-    "noItemText": "This dataset deliberately contains no question text, answer-choice text or figures. Every numeral and figure in the NYSED released-items PDFs is vector artwork with no text layer, so a transcription would be hand-typed or wrong. Use sourceUrl, which points at the exact page.",
+    "itemText": "Where `transcribed` is true, the stem, answer choices and figures are a reviewed transcription of the official released item, not an automatic extraction: the prose comes from the PDF's own text layer character for character and only the mathematics is filled in, from vector glyph geometry. Where `transcribed` is false there is no question text at all -- use sourceUrl, which points at the exact page. Every item links to the official PDF either way.",
     "pValueCaveat": "pValue is NYSED's own published statewide figure. For a constructed-response item it is average points earned divided by total possible points, so it is not the same quantity as a multiple-choice percent-correct -- do not put them on one axis. NYSED does not publish the population it is computed over.",
     "releaseCaveat": "Never publish a '% of the test released' figure. NYSED's promise is 'at least 75 percent of the test questions that counted toward students' scores' -- the denominator is SCORED items, and designedItems above includes embedded field-test items that do not count and whose number NYSED does not publish. Dividing released items by designedItems gives 63-65% for 2023-2025, which looks like NYSED breaking its own promise and is simply the wrong denominator. Report released item counts, never a share of the test.",
     "standardsEra": "nextgen",
@@ -27,12 +27,29 @@
     "releasedCredits": 489,
     "itemsWithPageLink": 387,
     "postTestItems": 17,
+    "transcriptionCoverage": {
+      "transcribed": 42,
+      "total": 396,
+      "keySources": {
+        "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted."
+      },
+      "reviewNotes": {
+        "g7-2026": [
+          "Item 27's variable y in 'the amount of juice, y, that can be made' is missing from the stem: the glyph sits inside the graph's own bounding box, so the figure-zone exclusion takes it. Left as a known gap rather than hand-patched, because hand-patching the stem would break the prose-fidelity check that makes this data trustworthy.",
+          "Item 7's repeating-decimal overbar covers '.3' rather than just the '3', so 3.3-repeating renders with the bar one character too wide.",
+          "Item 47 is a displayed expression published as an image rather than as text. It reads correctly; it is simply less good than markup would be. Item 20 was in the same state until wide fraction bars were admitted to the glyph table, and now renders as text.",
+          "Item 31's displayed expression decodes as '(5.2 - 1.6) + (---) = 0', where the three rules are an answer box rather than minus signs.",
+          "Items 43's two stray '.50' and '.25' fragments are pieces of its pizza-price list that escaped the figure zone.",
+          "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification."
+        ]
+      }
+    },
     "alignmentCoverage": {
       "aligned": 0,
       "total": 396,
       "note": "Curriculum alignment is Phase 3. Until then alignmentBasis is 'unaligned' on every item and the lesson fields are null."
     },
-    "disclaimer": "A working analysis, shared in case it is useful. The item data is NYSED's own, published with each year's released questions; the curriculum alignment is a judgement call by one teacher rather than official guidance, and may contain mistakes. This site reproduces no question text -- every item links to the official PDF. Corrections and disagreement are welcome.",
+    "disclaimer": "A working analysis, shared in case it is useful. The item data and the statewide P-values are NYSED's own, published with each year's released questions. Where a question is shown, its wording comes from the PDF's own text layer character for character and only the mathematics is reconstructed -- but reconstructed maths can be wrong, so every item links to the official page and that page is the authority. Curriculum alignment is a judgement call by one teacher rather than official guidance. Corrections and disagreement are welcome.",
     "feedbackUrl": null
   },
   "blueprint": {
@@ -689,7 +706,7 @@
       "label": "Grade 7, 2026",
       "standardsEra": "nextgen",
       "releasedItemsUrl": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g7.pdf",
-      "scoringMaterialsUrl": null,
+      "scoringMaterialsUrl": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g7.pdf",
       "pdfPageCount": 38,
       "mapPages": [
         38
@@ -2960,7 +2977,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-003",
@@ -2995,7 +3013,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-007",
@@ -3030,7 +3049,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-012",
@@ -3065,7 +3085,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-013",
@@ -3100,7 +3121,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-014",
@@ -3135,7 +3157,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-015",
@@ -3170,7 +3193,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-017",
@@ -3207,7 +3231,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-018",
@@ -3242,7 +3267,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-021",
@@ -3277,7 +3303,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-022",
@@ -3312,7 +3339,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-024",
@@ -3347,7 +3375,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-030",
@@ -3382,7 +3411,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-031",
@@ -3417,7 +3447,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-032",
@@ -3452,7 +3483,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-033",
@@ -3487,7 +3519,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-034",
@@ -3524,7 +3557,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-035",
@@ -3559,7 +3593,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-036",
@@ -3594,7 +3629,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-037",
@@ -3629,7 +3665,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-038",
@@ -3664,7 +3701,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-039",
@@ -3699,7 +3737,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-040",
@@ -3736,7 +3775,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-041",
@@ -3771,7 +3811,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-042",
@@ -3806,7 +3847,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-043",
@@ -3841,7 +3883,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-044",
@@ -3876,7 +3919,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-045",
@@ -3911,7 +3955,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2023-046",
@@ -3948,7 +3993,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-002",
@@ -3983,7 +4029,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-003",
@@ -4018,7 +4065,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-004",
@@ -4053,7 +4101,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-011",
@@ -4088,7 +4137,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-014",
@@ -4123,7 +4173,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-015",
@@ -4158,7 +4209,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-018",
@@ -4193,7 +4245,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-020",
@@ -4228,7 +4281,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-022",
@@ -4263,7 +4317,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-023",
@@ -4298,7 +4353,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-026",
@@ -4333,7 +4389,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-028",
@@ -4368,7 +4425,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-029",
@@ -4403,7 +4461,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-031",
@@ -4438,7 +4497,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-032",
@@ -4473,7 +4533,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-033",
@@ -4508,7 +4569,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-034",
@@ -4543,7 +4605,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-035",
@@ -4578,7 +4641,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-036",
@@ -4615,7 +4679,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-037",
@@ -4650,7 +4715,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-038",
@@ -4685,7 +4751,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-039",
@@ -4722,7 +4789,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-040",
@@ -4757,7 +4825,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-041",
@@ -4792,7 +4861,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-042",
@@ -4827,7 +4897,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-043",
@@ -4862,7 +4933,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-044",
@@ -4897,7 +4969,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-045",
@@ -4932,7 +5005,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2024-046",
@@ -4967,7 +5041,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-001",
@@ -5002,7 +5077,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-003",
@@ -5037,7 +5113,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-005",
@@ -5072,7 +5149,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-006",
@@ -5107,7 +5185,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-013",
@@ -5142,7 +5221,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-016",
@@ -5177,7 +5257,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-017",
@@ -5212,7 +5293,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-019",
@@ -5247,7 +5329,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-021",
@@ -5282,7 +5365,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-023",
@@ -5317,7 +5401,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-027",
@@ -5352,7 +5437,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-028",
@@ -5387,7 +5473,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-030",
@@ -5422,7 +5509,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-031",
@@ -5457,7 +5545,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-032",
@@ -5492,7 +5581,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-033",
@@ -5527,7 +5617,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-034",
@@ -5562,7 +5653,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-035",
@@ -5597,7 +5689,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-036",
@@ -5632,7 +5725,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-037",
@@ -5667,7 +5761,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-038",
@@ -5702,7 +5797,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-039",
@@ -5737,7 +5833,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-040",
@@ -5772,7 +5869,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-041",
@@ -5807,7 +5905,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-042",
@@ -5842,7 +5941,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-043",
@@ -5877,7 +5977,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-044",
@@ -5912,7 +6013,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-045",
@@ -5947,7 +6049,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2025-046",
@@ -5982,7 +6085,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-001",
@@ -6017,7 +6121,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-002",
@@ -6052,7 +6157,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-003",
@@ -6087,7 +6193,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-004",
@@ -6122,7 +6229,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-005",
@@ -6157,7 +6265,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-006",
@@ -6192,7 +6301,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-008",
@@ -6227,7 +6337,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-009",
@@ -6262,7 +6373,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-010",
@@ -6299,7 +6411,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-011",
@@ -6334,7 +6447,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-012",
@@ -6369,7 +6483,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-014",
@@ -6404,7 +6519,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-015",
@@ -6439,7 +6555,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-016",
@@ -6474,7 +6591,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-017",
@@ -6509,7 +6627,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-019",
@@ -6544,7 +6663,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-020",
@@ -6579,7 +6699,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-021",
@@ -6614,7 +6735,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-022",
@@ -6649,7 +6771,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-023",
@@ -6684,7 +6807,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-024",
@@ -6719,7 +6843,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-026",
@@ -6754,7 +6879,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-027",
@@ -6789,7 +6915,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-028",
@@ -6824,7 +6951,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-029",
@@ -6859,7 +6987,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-030",
@@ -6894,7 +7023,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-031",
@@ -6929,7 +7059,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-032",
@@ -6964,7 +7095,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-033",
@@ -6999,7 +7131,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-034",
@@ -7034,7 +7167,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-035",
@@ -7069,7 +7203,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-038",
@@ -7104,7 +7239,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-039",
@@ -7139,7 +7275,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-041",
@@ -7174,7 +7311,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-042",
@@ -7209,7 +7347,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-043",
@@ -7244,7 +7383,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-044",
@@ -7279,7 +7419,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-045",
@@ -7314,7 +7455,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g6-2026-046",
@@ -7349,7 +7491,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-001",
@@ -7384,7 +7527,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-002",
@@ -7419,7 +7563,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-004",
@@ -7454,7 +7599,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-005",
@@ -7489,7 +7635,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-008",
@@ -7524,7 +7671,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-009",
@@ -7559,7 +7707,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-013",
@@ -7594,7 +7743,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-016",
@@ -7629,7 +7779,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-017",
@@ -7664,7 +7815,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-018",
@@ -7699,7 +7851,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-021",
@@ -7734,7 +7887,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-023",
@@ -7769,7 +7923,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-025",
@@ -7804,7 +7959,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-031",
@@ -7839,7 +7995,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-032",
@@ -7874,7 +8031,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-033",
@@ -7909,7 +8067,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-034",
@@ -7944,7 +8103,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-035",
@@ -7979,7 +8139,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-036",
@@ -8014,7 +8175,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-037",
@@ -8049,7 +8211,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-038",
@@ -8084,7 +8247,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-039",
@@ -8119,7 +8283,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-040",
@@ -8154,7 +8319,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-041",
@@ -8189,7 +8355,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-042",
@@ -8226,7 +8393,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-043",
@@ -8261,7 +8429,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-044",
@@ -8296,7 +8465,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-045",
@@ -8331,7 +8501,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-046",
@@ -8368,7 +8539,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-047",
@@ -8403,7 +8575,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2023-048",
@@ -8440,7 +8613,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-001",
@@ -8475,7 +8649,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-004",
@@ -8510,7 +8685,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-005",
@@ -8545,7 +8721,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-007",
@@ -8580,7 +8757,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-010",
@@ -8615,7 +8793,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-011",
@@ -8650,7 +8829,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-013",
@@ -8685,7 +8865,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-014",
@@ -8720,7 +8901,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-015",
@@ -8755,7 +8937,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-017",
@@ -8790,7 +8973,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-021",
@@ -8825,7 +9009,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-026",
@@ -8860,7 +9045,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-029",
@@ -8895,7 +9081,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-030",
@@ -8930,7 +9117,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-031",
@@ -8965,7 +9153,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-033",
@@ -9000,7 +9189,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-034",
@@ -9035,7 +9225,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-035",
@@ -9070,7 +9261,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-036",
@@ -9105,7 +9297,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-037",
@@ -9140,7 +9333,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-038",
@@ -9175,7 +9369,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-039",
@@ -9210,7 +9405,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-040",
@@ -9245,7 +9441,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-041",
@@ -9280,7 +9477,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-042",
@@ -9317,7 +9515,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-043",
@@ -9352,7 +9551,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-044",
@@ -9387,7 +9587,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-045",
@@ -9422,7 +9623,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-046",
@@ -9457,7 +9659,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-047",
@@ -9492,7 +9695,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2024-048",
@@ -9527,7 +9731,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-002",
@@ -9562,7 +9767,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-003",
@@ -9597,7 +9803,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-008",
@@ -9632,7 +9839,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-010",
@@ -9669,7 +9877,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-013",
@@ -9706,7 +9915,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-014",
@@ -9741,7 +9951,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-017",
@@ -9776,7 +9987,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-020",
@@ -9811,7 +10023,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-021",
@@ -9846,7 +10059,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-023",
@@ -9881,7 +10095,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-025",
@@ -9916,7 +10131,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-027",
@@ -9951,7 +10167,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-028",
@@ -9986,7 +10203,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-029",
@@ -10021,7 +10239,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-032",
@@ -10058,7 +10277,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-033",
@@ -10093,7 +10313,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-034",
@@ -10128,7 +10349,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-035",
@@ -10163,7 +10385,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-036",
@@ -10198,7 +10421,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-037",
@@ -10233,7 +10457,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-038",
@@ -10268,7 +10493,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-039",
@@ -10303,7 +10529,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-040",
@@ -10338,7 +10565,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-041",
@@ -10375,7 +10603,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-042",
@@ -10410,7 +10639,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-043",
@@ -10445,7 +10675,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-044",
@@ -10480,7 +10711,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-045",
@@ -10515,7 +10747,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-046",
@@ -10550,7 +10783,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-047",
@@ -10585,7 +10819,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2025-048",
@@ -10620,7 +10855,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g7-2026-001",
@@ -10655,7 +10891,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Mr. Joseph paid a total of <span class=\"math\">$540.00</span> for a new gaming system and games. He paid <span class=\"math\">$300.00</span> for the gaming system and <span class=\"math\">$60.00</span> for each game. How many games did Mr. Joseph buy?",
+      "stemPlain": "Mr. Joseph paid a total of $540.00 for a new gaming system and games. He paid $300.00 for the gaming system and $60.00 for each game. How many games did Mr. Joseph buy?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">9</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-002",
@@ -10690,7 +10959,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from <span class=\"math\">\u221210</span> to <span class=\"math\">10</span>. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. The two cards drawn by each student are shown below. Which students have a score of <span class=\"math\">0</span> ?",
+      "stemPlain": "A group of four students is playing a game using a deck of cards. The cards in the deck are labeled with an integer from \u221210 to 10. Each student draws two cards from the deck and finds the sum of their two cards to determine their score. The two cards drawn by each student are shown below. Which students have a score of 0 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Alberto and Jenny",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Jenny and Lisako",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Alberto and Paul",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Jenny and Paul",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q02.png",
+          "type": "Diagram",
+          "alt": "Four pairs of number cards, one pair for each of Alberto, Jenny, Lisako and Paul.",
+          "longDescription": "Alberto's cards read negative 4 and 3. Jenny's read negative 5 and 5. Lisako's read negative 2 and negative 2. Paul's read 1 and negative 1."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-003",
@@ -10725,7 +11034,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A farm sells blueberries by the pound to customers. The table below shows the relationship between the price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold. Which statement describes a constant of proportionality for the relationship between the price, <span class=\"math\">p</span>, in dollars, and the number of pounds of blueberries, <span class=\"math\">b</span>, sold?",
+      "stemPlain": "A farm sells blueberries by the pound to customers. The table below shows the relationship between the price, p, in dollars, and the number of pounds of blueberries, b, sold. Which statement describes a constant of proportionality for the relationship between the price, p, in dollars, and the number of pounds of blueberries, b, sold?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The price per pound is <span class=\"math\">$0.17</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The price per pound is <span class=\"math\">$5.99</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "The price per pound is <span class=\"math\">$9.98</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The price per pound is <span class=\"math\">$11.98</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q03.png",
+          "type": "Data Table",
+          "alt": "Table headed Blueberry Prices, relating pounds of blueberries to price.",
+          "longDescription": "Columns are Pounds of Blueberries, b, and Price (dollars), p. The rows read 2 and $11.98; 4 and $23.96; 6 and $35.94."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-004",
@@ -10760,7 +11109,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "What is the value of the expression <span class=\"math\">\u2212 <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">\u00f7</span> <span class=\"math\">\u2212 <span class=\"frac\"><span>1</span><span>3</span></span></span> ?",
+      "stemPlain": "What is the value of the expression \u2212 (5)/(6) \u00f7 \u2212 (1)/(3) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u22122 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>5</span><span>18</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>18</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-005",
@@ -10795,7 +11177,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A water hose is being used to fill a <span class=\"math\">3,000</span> gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> hours, how many gallons of water were added to the pool per hour?",
+      "stemPlain": "A water hose is being used to fill a 3,000 gallon swimming pool. Water flows at a constant rate through the hose. If the pool is completely filled in 2 (1)/(2) hours, how many gallons of water were added to the pool per hour?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">300</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">600</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">1,200</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">7,500</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-006",
@@ -10830,7 +11245,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Shameka is saving for a new scooter that costs <span class=\"math\">$248.00</span>. She has already saved <span class=\"math\">$100.00</span>. She wants to buy the scooter in <span class=\"math\">8</span> weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal?",
+      "stemPlain": "Shameka is saving for a new scooter that costs $248.00. She has already saved $100.00. She wants to buy the scooter in 8 weeks by saving the same amount of money each week. What is the least amount of money, in dollars, Shameka can save each week to achieve her goal?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$16.45</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$18.50</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$31.00</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$43.50</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-007",
@@ -10865,7 +11313,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The table below shows a proportional relationship between  and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
+      "stemPlain": "The table below shows a proportional relationship between and x. Which equation represents the proportional relationship?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = x + 0.3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = x + 3<span class=\"repeat\">.3</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = 3<span class=\"repeat\">.3</span> x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = 0.3x</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q07_2.png",
+          "type": "Data Table",
+          "alt": "Two-column table of x and y values.",
+          "longDescription": "Columns are x and y. The rows read 2 and 0.6; 3 and 0.9; 4 and 1.2; 5 and 1.5."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-008",
@@ -10900,7 +11388,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A student can choose one food item and one type of juice for breakfast. The food items and types of juice available are listed below. <span class=\"math\">\u2022</span> food item: egg, toast, pancakes, sausage <span class=\"math\">\u2022</span> type of juice: apple, grape, orange How many different breakfast combinations of one food item and one type of juice are available for the student to choose from?",
+      "stemPlain": "A student can choose one food item and one type of juice for breakfast. The food items and types of juice available are listed below. \u2022 food item: egg, toast, pancakes, sausage \u2022 type of juice: apple, grape, orange How many different breakfast combinations of one food item and one type of juice are available for the student to choose from?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">7</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">12</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-010",
@@ -10935,7 +11456,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Ms. Morgan earns <span class=\"math\">$15.50</span> per hour working in an office. On Tuesday she spends <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>3</span></span></span> hours filling out paperwork, <span class=\"math\">1</span> hour and <span class=\"math\">25</span> minutes sending emails, and <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>4</span></span></span> hours making appointments. How much money does Ms. Morgan earn on Tuesday?",
+      "stemPlain": "Ms. Morgan earns $15.50 per hour working in an office. On Tuesday she spends 1 (1)/(3) hours filling out paperwork, 1 hour and 25 minutes sending emails, and 3 (1)/(4) hours making appointments. How much money does Ms. Morgan earn on Tuesday?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$77.50</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$89.90</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$93.00</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$108.50</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-011",
@@ -10970,7 +11524,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Which expression is equivalent to <span class=\"math\">3 (5x + 2) \u2212 2 (6x \u2212 7)</span> ?",
+      "stemPlain": "Which expression is equivalent to 3 (5x + 2) \u2212 2 (6x \u2212 7) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">23x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u221211x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">3x \u2212 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">3x + 20</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-012",
@@ -11005,7 +11592,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Jessica opened a savings account with a <span class=\"math\">$1,200.00</span> deposit. She did not make any additional deposits or withdrawals for <span class=\"math\">4</span> years and earned <span class=\"math\">$144.00</span> in simple interest. What was the annual interest rate that the bank used to calculate the simple interest?",
+      "stemPlain": "Jessica opened a savings account with a $1,200.00 deposit. She did not make any additional deposits or withdrawals for 4 years and earned $144.00 in simple interest. What was the annual interest rate that the bank used to calculate the simple interest?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">0.3%</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">2.7%</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">3.0%</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4.8%</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-013",
@@ -11040,7 +11660,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The graph below shows the prices of gift bags at a store. Based on the graph, which statement is true?",
+      "stemPlain": "The graph below shows the prices of gift bags at a store. Based on the graph, which statement is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The unit rate is <span class=\"math\">$0.20</span> per gift bag.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The unit rate is <span class=\"math\">$1.00</span> per gift bag.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The unit rate is <span class=\"math\">$2.00</span> per gift bag.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The unit rate is <span class=\"math\">$5.00</span> per gift bag.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q13.png",
+          "type": "Scatter Plot",
+          "alt": "Scatter plot headed Gift Bag Prices, price against number of gift bags.",
+          "longDescription": "The horizontal axis is Number of Gift Bags, marked 0 to 6; the vertical axis is Price (dollars), marked 0 to 30 in fives. Points are plotted at (1, 5), (2, 10), (3, 15), (4, 20) and (5, 25), lying on a straight line through the origin."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-014",
@@ -11075,7 +11735,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The number of goals scored by two soccer teams in each of <span class=\"math\">17</span> games during a tournament is shown in the table and dot plot below. Which team had a higher median number of goals scored in a game and what is that team\u2019s median number of goals scored?",
+      "stemPlain": "The number of goals scored by two soccer teams in each of 17 games during a tournament is shown in the table and dot plot below. Which team had a higher median number of goals scored in a game and what is that team\u2019s median number of goals scored?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Team A with a median of <span class=\"math\">3</span> goals scored in a game.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "Team A with a median of <span class=\"math\">4</span> goals scored in a game.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Team B with a median of <span class=\"math\">2</span> goals scored in a game.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Team B with a median of <span class=\"math\">3</span> goals scored in a game.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q14.png",
+          "type": "Data Table and Dot Plot",
+          "alt": "Team A's goals as a frequency table beside Team B's goals as a dot plot.",
+          "longDescription": "Team A is a table with columns Number of Goals and Frequency, reading 0 and 2; 1 and 4; 2 and 2; 3 and 3; 4 and 6. Team B is a dot plot over the values 0 to 4 on a number line labelled Number of Goals."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-015",
@@ -11110,7 +11810,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "What is the product of <span class=\"math\">\u2212 <span class=\"frac\"><span>1</span><span>5</span></span></span> and <span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span> ?",
+      "stemPlain": "What is the product of \u2212 (1)/(5) and (3)/(8) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>8</span><span>15</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>3</span><span>40</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>40</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>8</span><span>15</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-017",
@@ -11145,7 +11878,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Joyce is buying a laptop. The original price of the laptop is <span class=\"math\">$279.00</span>. She uses a coupon for a <span class=\"math\">10%</span> discount off the original price. A sales tax of <span class=\"math\">8.875%</span> is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?",
+      "stemPlain": "Joyce is buying a laptop. The original price of the laptop is $279.00. She uses a coupon for a 10% discount off the original price. A sales tax of 8.875% is applied to the discounted price. How much does Joyce pay, in total, for the laptop, rounded to the nearest cent?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$228.81</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$260.13</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$273.39</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$334.14</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-018",
@@ -11180,7 +11946,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data?",
+      "stemPlain": "In a science class, students placed 8 tomato plants in full sun and 8 tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The heights of the plants in full sun varied more than the heights of the plants in the shade.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The heights of the plants in the shade were all greater than the heights of the plants in full sun.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The average height of the plants in full sun was greater than the average height of the plants in the shade.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q18.png",
+          "type": "Dot Plots",
+          "alt": "Two dot plots headed Heights of Plants, one for Full Sun and one for Shade.",
+          "longDescription": "Both number lines run from 10.7 to 11.2 inches. The Full Sun plot's dots cluster at the higher end, around 10.9 to 11.1. The Shade plot's dots cluster at the lower end, around 10.7 to 10.9."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-019",
@@ -11215,7 +12021,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Which graph represents a proportional relationship?",
+      "stemPlain": "Which graph represents a proportional relationship?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q19.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four coordinate graphs labelled A, B, C and D, offered as the answer choices.",
+          "longDescription": "This item's four answer choices are pictures, not text. A is a straight line rising from the origin through (1, 1). B is a horizontal line at y = 4. C is a straight line falling from (0, 8) to about (8, 0). D is a vertical line at x = 4. Only A passes through the origin with a constant rate, so only A shows a proportional relationship."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-020",
@@ -11250,7 +12096,42 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "An equation is shown below. What value of <span class=\"math\">x</span> makes the equation true?",
+      "stemPlain": "An equation is shown below. What value of x makes the equation true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">4(x + 2) = <span class=\"frac\"><span>12</span><span>\u22120.25</span></span></span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u221212.5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u221214</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u221250</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u221256</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-021",
@@ -11285,7 +12166,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "An artist is paid <span class=\"math\">$20.00</span> to work at a birthday party, plus <span class=\"math\">$5.00</span> for each portrait painted during the party. The artist would like to earn at least <span class=\"math\">$200.00</span> at the party. Which inequality represents the number of portraits, <span class=\"math\">x</span>, the artist should paint to earn at least <span class=\"math\">$200.00</span> ?",
+      "stemPlain": "An artist is paid $20.00 to work at a birthday party, plus $5.00 for each portrait painted during the party. The artist would like to earn at least $200.00 at the party. Which inequality represents the number of portraits, x, the artist should paint to earn at least $200.00 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">20x + 5 \u2264 200</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">20x + 5 &lt; 200</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5x + 20 \u2265 200</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5x + 20 &gt; 200</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-022",
@@ -11320,7 +12234,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Bianca created a scale drawing of her bedroom for a class project using a scale of <span class=\"math\">1</span> ft to <span class=\"math\">1.5</span> cm. On the drawing, Bianca\u2019s rectangular bed is <span class=\"math\">10.5</span> cm long and <span class=\"math\">5.25</span> cm wide. What is the actual area, in square feet, of Bianca\u2019s bed?",
+      "stemPlain": "Bianca created a scale drawing of her bedroom for a class project using a scale of 1 ft to 1.5 cm. On the drawing, Bianca\u2019s rectangular bed is 10.5 cm long and 5.25 cm wide. What is the actual area, in square feet, of Bianca\u2019s bed?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">24.5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">36.75</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">55.125</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">124.03</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-023",
@@ -11355,7 +12302,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Which expression is equivalent to <span class=\"math\">7 \u2212 2(3x + 6) \u2212 4x</span> ?",
+      "stemPlain": "Which expression is equivalent to 7 \u2212 2(3x + 6) \u2212 4x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">11x + 6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">11x + 30</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u221210x \u2212 5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u221210x + 13</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-025",
@@ -11390,7 +12370,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Mateo has <span class=\"math\">$20.00</span> to spend at a store. He spends <span class=\"math\"><span class=\"frac\"><span>2</span><span>5</span></span></span> of his money on a shirt. Then he buys a pack of gum with <span class=\"math\">10%</span> of his remaining money. What is the total amount of money that Mateo spends at the store?",
+      "stemPlain": "Mateo has $20.00 to spend at a store. He spends (2)/(5) of his money on a shirt. Then he buys a pack of gum with 10% of his remaining money. What is the total amount of money that Mateo spends at the store?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$8.80</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$9.20</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$10.80</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$13.20</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-026",
@@ -11425,7 +12438,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">\u2212 <span class=\"frac\"><span>5</span><span>8</span></span></span> ?",
+      "stemPlain": "What is the value of (4)/(5) (0.2) \u2212 (5)/(8) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>1</span><span>10</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>3</span><span>8</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>10</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-027",
@@ -11460,7 +12506,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The graph below shows the relationship between the amount of juice, , that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
+      "stemPlain": "The graph below shows the relationship between the amount of juice, , that can be made from x apples. Which point on the graph has a y coordinate that represents the number of fluid ounces of juice made from 1 apple?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "point P",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "point Q",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "point R",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "point S",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q27_2.png",
+          "type": "Line Graph",
+          "alt": "Graph headed Juice Made From Apples with four labelled points on a line.",
+          "longDescription": "The horizontal axis is Number of Apples, marked 0 to 5; the vertical axis is Amount of Juice (fluid ounces), marked 0 to 10. A straight line rises from the origin, and four points on or near it are labelled P at the origin, then Q, R and S in increasing order."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-029",
@@ -11495,7 +12581,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. <span class=\"math\">\u2022</span> Ms. Strazullo\u2019s class raised <span class=\"math\">$153.45</span>. <span class=\"math\">\u2022</span> Mr. Fiorentino\u2019s class raised <span class=\"math\">$123.23</span> more than Ms. Strazullo\u2019s class. <span class=\"math\">\u2022</span> Ms. Rubas\u2019 class raised <span class=\"math\">$176.32</span> less than Mr. Fiorentino\u2019s class. <span class=\"math\">\u2022</span> Mr. Smith\u2019s class raised <span class=\"math\">$234.89</span> more than Ms. Rubas\u2019 class. If the total price of the field trip is <span class=\"math\">$800.00</span>, how much extra money did they raise?",
+      "stemPlain": "Students in four middle school classes raised money for a field trip. The amount of money each class raised is described below. \u2022 Ms. Strazullo\u2019s class raised $153.45. \u2022 Mr. Fiorentino\u2019s class raised $123.23 more than Ms. Strazullo\u2019s class. \u2022 Ms. Rubas\u2019 class raised $176.32 less than Mr. Fiorentino\u2019s class. \u2022 Mr. Smith\u2019s class raised $234.89 more than Ms. Rubas\u2019 class. If the total price of the field trip is $800.00, how much extra money did they raise?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$65.74</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$112.11</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$687.89</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$865.74</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-030",
@@ -11530,7 +12649,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The weights of <span class=\"math\">9</span> adult cats are recorded on the dot plot shown below. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot?",
+      "stemPlain": "The weights of 9 adult cats are recorded on the dot plot shown below. Which label for the number line could be used to correctly identify the unit of measurement for the data in the dot plot?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "number of cats",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "number of years",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "number of inches",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "number of pounds",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q30.png",
+          "type": "Dot Plot",
+          "alt": "Dot plot of cat weights on a number line from 7 to 13.",
+          "longDescription": "The number line runs from 7 to 13. Dots are stacked above 8, 9, 10 and 12, with the tallest stacks at 9 and 12."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-031",
@@ -11565,7 +12724,42 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "An incomplete equation is shown below. Which expression completes the equation to make it true?",
+      "stemPlain": "An incomplete equation is shown below. Which expression completes the equation to make it true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">(5.2 \u2212 1.6) + (\u2212\u2212\u2212) = 0</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">5.2 + 1.6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">5.2 \u2212 1.6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u22125.2 \u2212 1.6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u22125.2 + 1.6</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-032",
@@ -11600,7 +12794,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Which expression is equivalent to <span class=\"math\">\u2212 <span class=\"frac\"><span>1</span><span>4</span></span> (12x \u2212 6)</span> ?",
+      "stemPlain": "Which expression is equivalent to \u2212 (1)/(4) (12x \u2212 6) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3x + 6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3x \u2212 6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u22123x + 1 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u22123x \u2212 1 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-033",
@@ -11635,7 +12862,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "The table below shows the number of gallons of gasoline customers put in their cars and the total price they paid. Which equation represents the relationship between the total price, <span class=\"math\">p</span>, and gallons of gasoline purchased, <span class=\"math\">g</span> ?",
+      "stemPlain": "The table below shows the number of gallons of gasoline customers put in their cars and the total price they paid. Which equation represents the relationship between the total price, p, and gallons of gasoline purchased, g ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">p = 0.31g</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">p = 3.21g</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">p = 6.42g</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">p = 9.63g</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q33.png",
+          "type": "Data Table",
+          "alt": "Table headed Gasoline Prices, relating gallons to total price.",
+          "longDescription": "Columns are Gallons, g, and Total Price, p. The rows read 3 and $9.63; 5 and $16.05; 9 and $28.89."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-034",
@@ -11670,7 +12937,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>\u221245</span><span>9</span></span></span> ?",
+      "stemPlain": "Which expression is equivalent to (\u221245)/(9) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>\u221245</span><span>9</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>45</span><span>\u22129</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-035",
@@ -11705,7 +13005,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Ms. Suarez buys <span class=\"math\">4</span> packages of pencils for <span class=\"math\">$4.48</span>. Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils?",
+      "stemPlain": "Ms. Suarez buys 4 packages of pencils for $4.48. Each package of pencils is the same price. What is the unit price, in dollars per package, of the pencils?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$0.48</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$0.89</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$1.12</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$4.00</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-036",
@@ -11740,7 +13073,42 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x \u2212</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stemPlain": "Ashley buys a book that is on sale for 25% off the original price, x. The expression x \u2212 can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">0.25x</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">0.25x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">0.75x</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">0.25x \u2212 x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">0.75x + x</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-037",
@@ -11775,7 +13143,40 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Jayden made a scale drawing of the rectangular basketball court at his middle school. <span class=\"math\">\u2022</span> The drawing has a scale of <span class=\"math\">1</span> inch to <span class=\"math\">24</span> feet. <span class=\"math\">\u2022</span> The actual length of the basketball court is <span class=\"math\">76 <span class=\"frac\"><span>4</span><span>5</span></span></span> feet. What is the length, in inches, of the rectangular basketball court in Jayden\u2019s drawing?",
+      "stemPlain": "Jayden made a scale drawing of the rectangular basketball court at his middle school. \u2022 The drawing has a scale of 1 inch to 24 feet. \u2022 The actual length of the basketball court is 76 (4)/(5) feet. What is the length, in inches, of the rectangular basketball court in Jayden\u2019s drawing?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>16</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">24</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">52 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-038",
@@ -11810,7 +13211,47 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A box plot is shown below. Based on the box plot, what is true about the data value <span class=\"math\">23</span> ?",
+      "stemPlain": "A box plot is shown below. Based on the box plot, what is true about the data value 23 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "It represents a data point that lies an unusual distance from other points in the data.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "It represents the data point that occurred the most number of times in the data.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "It represents the interquartile range of the data.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "It represents the median of the data.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2026/q38.png",
+          "type": "Box Plot",
+          "alt": "Box plot on a number line from 12 to 24, with one point plotted separately to the right.",
+          "longDescription": "The number line runs from 12 to 24. The box spans roughly 16 to 18 with a median line inside it, and whiskers reach out either side. A single point is plotted apart from the rest at about 23."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2026-040",
@@ -11845,7 +13286,33 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive? <span class=\"math\">$</span>",
+      "stemPlain": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys 3 pounds of grapes, (1)/(2) pound of turkey, 2 loaves of bread, and 1 gallon of chocolate milk. He pays with a $20.00 bill. How much change, in dollars, should Mr. Morgano receive? $",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G7-2026/q40.png",
+          "type": "Data Table",
+          "alt": "Table headed Grocery Item Prices listing four items and their prices.",
+          "longDescription": "Columns are Item and Price. One pound of grapes, $1.59. One pound of turkey, $8.24. One loaf of bread, $1.33. One gallon of chocolate milk, $2.78."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$5.67",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12",
+        "check": "3 x $1.59 + 1/2 x $8.24 + 2 x $1.33 + $2.78 = $14.33; $20.00 - $14.33 = $5.67. The prices used are the ones in this item's own extracted table, so the answer and the transcription corroborate each other."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-041",
@@ -11880,7 +13347,28 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Simplify the expression shown below completely.",
+      "stemPlain": "Simplify the expression shown below completely.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\">\u2212 <span class=\"frac\"><span>3</span><span>4</span></span> (4x \u2212 8) + (x \u2212 2)</span>"
+      ],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "&minus;2<i>x</i> + 4",
+        "note": "NYSED prints \"OR equivalent\".",
+        "source": "NYSED exemplary response, scoring materials page 17",
+        "check": "&minus;3/4(4x &minus; 8) + (x &minus; 2) = &minus;3x + 6 + x &minus; 2 = &minus;2x + 4, from the expression this item's extraction decoded."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-043",
@@ -11917,7 +13405,30 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">\u2022</span> Large pizza without toppings: <span class=\"math\">$12</span> <span class=\"math\">\u2022</span> Medium pizza without toppings: <span class=\"math\">$10</span> <span class=\"math\">\u2022</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer\u2019s order. What is the total price of the order, excluding tax, after the discount?",
+      "stemPlain": "A customer orders a large pizza with 2 toppings and a medium pizza with 2 toppings at a restaurant. The prices for the pizzas and toppings are listed below. \u2022 Large pizza without toppings: $12 \u2022 Medium pizza without toppings: $10 \u2022 Toppings: $1.25 each A 20% discount is applied to the customer\u2019s order. What is the total price of the order, excluding tax, after the discount?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\">.50</span>",
+        "<span class=\"math\">.25</span>"
+      ],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$22.20",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22",
+        "check": "12.50 + 2(1.25) = 15.00; 10.25 + 2(1.25) = 12.75; 0.80(15.00 + 12.75) = 0.80(27.75) = 22.20 -- NYSED's own working, and the three prices match this item's extracted list."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-044",
@@ -11952,7 +13463,26 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Jim and Devin ride their bicycles to meet at a friend\u2019s house. <span class=\"math\">\u2022</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour. <span class=\"math\">\u2022</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
+      "stemPlain": "Jim and Devin ride their bicycles to meet at a friend\u2019s house. \u2022 Jim rides 3 (1)/(3) miles in (1)/(2) hour. \u2022 Devin rides 1 (7)/(8) miles in (1)/(4) hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "<span class=\"frac\"><span>5</span><span>6</span></span> mile per hour",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32",
+        "check": "10/3 &divide; 1/2 = 20/3 for Jim and 15/8 &divide; 1/4 = 15/2 for Devin; 45/6 &minus; 40/6 = 5/6. The distances and times match this item's extracted list."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-045",
@@ -11987,7 +13517,33 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "A group of sixth grade students recorded their favorite flavors of ice cream. The results are shown in the table below. Based on the results, what would be the predicted number of students in the entire sixth grade whose favorite ice cream flavor is chocolate, if there are a total of <span class=\"math\">120</span> students in the sixth grade? Answerstudents",
+      "stemPlain": "A group of sixth grade students recorded their favorite flavors of ice cream. The results are shown in the table below. Based on the results, what would be the predicted number of students in the entire sixth grade whose favorite ice cream flavor is chocolate, if there are a total of 120 students in the sixth grade? Answerstudents",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G7-2026/q45.png",
+          "type": "Data Table",
+          "alt": "Table headed Favorite Flavors of Ice Cream with the number of students choosing each.",
+          "longDescription": "Columns are Flavor of Ice Cream and Number of Students. Vanilla, 12. Chocolate, 8. Strawberry, 5. Pistachio, 3. Other, 4. The five values total 32."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "30 students",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42",
+        "check": "8 &divide; 32 = 0.25 and 0.25 x 120 = 30. The 32 is the total of this item's extracted table (12 + 8 + 5 + 3 + 4) and the 120 is the value decoded from its stem, so table, stem and answer all agree."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-046",
@@ -12022,7 +13578,33 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Eric\u2019s and Jenna\u2019s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked?",
+      "stemPlain": "Eric\u2019s and Jenna\u2019s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G7-2026/q46.png",
+          "type": "Scatter Plot and Data Table",
+          "alt": "Eric's earnings as a scatter plot beside Jenna's earnings as a table.",
+          "longDescription": "Eric's Earnings is a scatter plot with Hours on the horizontal axis and Earnings (dollars) on the vertical axis, marked to 110; its three plotted points do not lie on a line through the origin. Jenna's Earnings is a table with columns Hours, x, and Earnings (dollars), y, reading 3 and 54; 6 and 108; 9 and 162; 12 and 216 -- a constant 18 dollars per hour."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "Jenna",
+        "note": "Jenna's earnings are proportional; Eric's are not.",
+        "source": "NYSED exemplary response, scoring materials page 52",
+        "check": "54/3 = 108/6 = 162/9 = 216/12 = 18, using the values in this item's extracted table."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-047",
@@ -12057,7 +13639,34 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "An expression is shown below. Evaluate the expression.",
+      "stemPlain": "An expression is shown below. Evaluate the expression.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G7-2026/q47.png",
+          "type": "Expression",
+          "alt": "The expression one half times negative 0.4, divided by one third.",
+          "longDescription": "Displayed as an image rather than as text. It reads open bracket one half close bracket times open bracket negative 0.4 close bracket, divided by open bracket one third close bracket, with the halves and thirds written as stacked fractions."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "&minus;<span class=\"frac\"><span>3</span><span>5</span></span>",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62",
+        "check": "1/2(&minus;4/10) = &minus;1/5; &minus;1/5 &divide; 1/3 = &minus;1/5 x 3 = &minus;3/5, from the expression this item's extraction decoded."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2026-048",
@@ -12092,7 +13701,27 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "stem": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of <span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on shoes and games.",
+      "stemPlain": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of $3.75 to rent shoes and $5.25 for each game he played. Write and solve an equation to determine the number of games, x, that Nicholas played if he spent a total of $30.00 on shoes and games.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    games"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "5 games",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82",
+        "check": "3.75 + 5.25x = 30; 5.25x = 26.25; x = 5. The three money values are the ones this item's extraction decoded, and this is the item that first demonstrated the glyph decode works."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2023-002",
@@ -12127,7 +13756,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-003",
@@ -12162,7 +13792,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-007",
@@ -12199,7 +13830,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-008",
@@ -12234,7 +13866,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-012",
@@ -12269,7 +13902,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-015",
@@ -12304,7 +13938,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-016",
@@ -12339,7 +13974,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-019",
@@ -12374,7 +14010,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-020",
@@ -12409,7 +14046,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-022",
@@ -12446,7 +14084,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-023",
@@ -12481,7 +14120,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-024",
@@ -12516,7 +14156,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-025",
@@ -12551,7 +14192,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-026",
@@ -12586,7 +14228,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-029",
@@ -12621,7 +14264,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-033",
@@ -12656,7 +14300,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-034",
@@ -12693,7 +14338,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-035",
@@ -12728,7 +14374,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-036",
@@ -12763,7 +14410,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-037",
@@ -12798,7 +14446,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-038",
@@ -12833,7 +14482,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-039",
@@ -12868,7 +14518,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-040",
@@ -12903,7 +14554,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-041",
@@ -12938,7 +14590,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-042",
@@ -12973,7 +14626,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-043",
@@ -13008,7 +14662,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-044",
@@ -13043,7 +14698,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-045",
@@ -13078,7 +14734,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-046",
@@ -13113,7 +14770,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-047",
@@ -13148,7 +14806,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2023-048",
@@ -13183,7 +14842,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-001",
@@ -13218,7 +14878,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-002",
@@ -13253,7 +14914,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-004",
@@ -13290,7 +14952,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-005",
@@ -13325,7 +14988,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-007",
@@ -13360,7 +15024,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-009",
@@ -13395,7 +15060,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-010",
@@ -13430,7 +15096,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-012",
@@ -13465,7 +15132,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-018",
@@ -13500,7 +15168,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-019",
@@ -13535,7 +15204,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-020",
@@ -13570,7 +15240,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-022",
@@ -13605,7 +15276,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-023",
@@ -13640,7 +15312,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-027",
@@ -13675,7 +15348,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-030",
@@ -13710,7 +15384,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-033",
@@ -13745,7 +15420,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-034",
@@ -13780,7 +15456,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-035",
@@ -13815,7 +15492,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-036",
@@ -13850,7 +15528,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-037",
@@ -13885,7 +15564,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-038",
@@ -13920,7 +15600,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-039",
@@ -13955,7 +15636,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-040",
@@ -13990,7 +15672,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-041",
@@ -14025,7 +15708,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-042",
@@ -14060,7 +15744,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-043",
@@ -14095,7 +15780,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-044",
@@ -14130,7 +15816,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-045",
@@ -14165,7 +15852,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-046",
@@ -14200,7 +15888,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-047",
@@ -14235,7 +15924,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2024-048",
@@ -14270,7 +15960,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-002",
@@ -14305,7 +15996,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-004",
@@ -14340,7 +16032,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-007",
@@ -14375,7 +16068,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-008",
@@ -14410,7 +16104,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-012",
@@ -14445,7 +16140,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-014",
@@ -14480,7 +16176,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-015",
@@ -14517,7 +16214,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-016",
@@ -14552,7 +16250,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-017",
@@ -14587,7 +16286,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-019",
@@ -14622,7 +16322,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-027",
@@ -14657,7 +16358,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-028",
@@ -14692,7 +16394,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-030",
@@ -14727,7 +16430,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-031",
@@ -14762,7 +16466,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-032",
@@ -14797,7 +16502,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-033",
@@ -14832,7 +16538,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-034",
@@ -14867,7 +16574,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-035",
@@ -14902,7 +16610,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-036",
@@ -14937,7 +16646,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-037",
@@ -14972,7 +16682,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-038",
@@ -15007,7 +16718,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-039",
@@ -15042,7 +16754,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-040",
@@ -15077,7 +16790,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-041",
@@ -15112,7 +16826,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-042",
@@ -15149,7 +16864,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-043",
@@ -15184,7 +16900,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-044",
@@ -15219,7 +16936,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-045",
@@ -15254,7 +16972,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-046",
@@ -15289,7 +17008,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-047",
@@ -15324,7 +17044,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2025-048",
@@ -15359,7 +17080,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-001",
@@ -15394,7 +17116,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-002",
@@ -15429,7 +17152,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-003",
@@ -15464,7 +17188,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-004",
@@ -15499,7 +17224,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-005",
@@ -15536,7 +17262,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-006",
@@ -15571,7 +17298,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-007",
@@ -15606,7 +17334,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-008",
@@ -15641,7 +17370,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-010",
@@ -15676,7 +17406,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-011",
@@ -15711,7 +17442,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-012",
@@ -15746,7 +17478,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-013",
@@ -15781,7 +17514,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-014",
@@ -15816,7 +17550,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-015",
@@ -15851,7 +17586,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-017",
@@ -15888,7 +17624,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-018",
@@ -15923,7 +17660,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-019",
@@ -15958,7 +17696,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-020",
@@ -15993,7 +17732,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-021",
@@ -16028,7 +17768,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-022",
@@ -16063,7 +17804,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-023",
@@ -16098,7 +17840,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-025",
@@ -16133,7 +17876,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-026",
@@ -16168,7 +17912,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-027",
@@ -16203,7 +17948,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-029",
@@ -16238,7 +17984,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-030",
@@ -16273,7 +18020,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-031",
@@ -16308,7 +18056,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-032",
@@ -16343,7 +18092,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-033",
@@ -16378,7 +18128,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-034",
@@ -16413,7 +18164,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-035",
@@ -16448,7 +18200,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-036",
@@ -16483,7 +18236,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-037",
@@ -16518,7 +18272,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-038",
@@ -16553,7 +18308,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-040",
@@ -16588,7 +18344,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-041",
@@ -16623,7 +18380,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-043",
@@ -16658,7 +18416,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-044",
@@ -16693,7 +18452,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-045",
@@ -16728,7 +18488,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-046",
@@ -16763,7 +18524,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-047",
@@ -16798,7 +18560,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     },
     {
       "id": "g8-2026-048",
@@ -16833,7 +18596,8 @@
       "lessonEdition": null,
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
-      "notes": null
+      "notes": null,
+      "transcribed": false
     }
   ],
   "unreleased": [

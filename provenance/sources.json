@@ -132,6 +132,17 @@
       "url": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g8.pdf",
       "year": 2026
     },
+    "2026-scoring-materials-math-g7.pdf": {
+      "bytes": 9620063,
+      "fetched": "2026-09-10",
+      "grade": 7,
+      "kind": "scoring",
+      "pages": 81,
+      "path": "sources/scoring/2026-scoring-materials-math-g7.pdf",
+      "sha256": "0839b4189b5d8a38a8444bdd8756468b9cf33369b306c76b0db21877b5ca39e3",
+      "url": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g7.pdf",
+      "year": 2026
+    },
     "3-8-educator-guide-math.pdf": {
       "bytes": 954910,
       "fetched": "2026-09-09",
@@ -168,6 +179,6 @@
   "meta": {
     "generatedBy": "tools/fetch_sources.py",
     "note": "Every source PDF, its URL and its sha256. preflight.py fails if a local file no longer matches its recorded hash.",
-    "updated": "2026-09-09"
+    "updated": "2026-09-10"
   }
 }

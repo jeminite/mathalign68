@@ -5,11 +5,11 @@
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
 gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
 
-**The site is deployed to a draft URL** (`netlify sites:create` done, project id
-`04752dc2-…`; production is still a separate decision). **And the questions extract.** All 42
-items of 2026 grade 7 come out with complete stems, answer choices, fractions, inequalities and
-repeating decimals, 16 figure crops, and **every stem character-identical to the PDF's own
-prose**. Next: the merge spec and review pass, then the Questions tab.
+**2026 grade 7's questions are on the site.** All 42 items published behind a new Questions tab,
+with stems, answer choices, figures, and constructed-response answers taken from NYSED's own
+exemplary responses. Deployed to a draft URL; production is still a separate decision.
+
+Next: the curriculum index from the Teacher Course Guides, then 2026 grades 6 and 8.
 
 Also outstanding: the class-results analyzer (the colleague-facing half, needs no curriculum data)
 and the curriculum index now that the Teacher Course Guides are in `sources/`.
@@ -19,8 +19,11 @@ and the curriculum index now that the Teacher Course Guides are in `sources/`.
 | 0 — foundations, sources, standards registry, blueprint | done | — |
 | 1a — item map + page map + data/items.json | done | — |
 | 1b — site, preflight | done | — |
-| 1c — first Netlify deploy | ready | needs a Netlify site created |
-| 2 — class-results analyzer | next | — |
+| 1c — first Netlify deploy | done | draft URL live |
+| 2 — questions for 2026 grade 7 | done | 42 items published |
+| 3 — curriculum index from the TCGs | next | — |
+| 4 — questions for 2026 grades 6 and 8 | after 3 | — |
+| 5 — class-results analyzer | later | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | waiting | the district course guides |
 | 3c — the per-standard judgement pass | after 3a/3b | — |
@@ -76,7 +79,45 @@ Two bugs the gate found in itself, both fixed and both worth remembering:
   printed `ok  multiple-choice key not in A-D`, which reads as though the defect were
   acceptable. Name a check for what is true when it passes.
 
-## Showing the questions — the glyph decode
+## Publishing the questions
+
+`tools/extract_items.py` -> `provenance/content_g7-2026_raw.json` (a first pass) ->
+`provenance/merge_g7-2026.json` (the reviewed spec) -> `tools/merge_content.py` ->
+`data/content.json` -> `build/payload.py` joins it to `data/items.json` on item id.
+
+**The ownership split is the load-bearing part.** `items.json` is script-owned and preflight
+re-runs the extractors and fails if it differs from the source PDFs. Transcription is judgement
+and cannot be regenerated, so it lives in `content.json` and nothing else. An item with no
+content entry publishes exactly as it did before, so coverage grows test by test with nothing
+half-broken in between.
+
+### The gate, re-pointed
+
+Phase 1 committed to publishing no item text. That was about never publishing *extraction
+output* as if it were the question, and the replacement is stricter, not looser. Section 8 of
+`preflight.py` is now 18 checks, of which two matter most and are complements:
+
+- **Prose fidelity** - strip the markup and the decoded mathematics from a published stem and
+  what remains must be character-identical to the PDF's own text layer. Proven to fail: changing
+  "bowling alley" to "bowling centre" in item 48 was caught and named.
+- **Hole completeness** - every hole the extractor located must be filled. Prose fidelity proves
+  nothing was *invented*; this proves nothing was *lost*, and during development a fix made nine
+  items lose their inline mathematics while fidelity still passed on all 42.
+
+Plus: tag balance, exactly-one-correct-choice, no empty choice, no surviving ligature or
+unmapped-glyph damage, no hair space, the `f (x)` kerning regex, every figure published with
+distinct alt text, and - closing the hole RegentsAlign's `RESUME.md` #64 still records - **every
+constructed-response answer cites an official source.**
+
+### Constructed-response answers come from NYSED
+
+The scoring-materials PDF has an `EXEMPLARY RESPONSE` page per CR item that renders the stem with
+all its numerals legible plus the worked solution. All eight corroborate the transcription
+independently: item 40's $5.67 uses the prices in its own extracted table, item 45's 30 students
+uses the 32 total from its table and the 120 decoded from its stem, item 48's 5 games uses the
+$3.75/$5.25/$30.00 the glyph decode produced.
+
+## The glyph decode
 
 The stems in these PDFs are a **template with holes**: the prose is real text and extracts
 exactly, and only the mathematics is missing. 2026 grade 7 yields 1,593 prose words verbatim with

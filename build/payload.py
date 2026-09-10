@@ -13,12 +13,18 @@ same behaviour -- raise rather than write. This project holds no student data at
 all, so the check should never fire; it exists because the day it does fire is
 the day it matters.
 
-REFUSAL TWO: ITEM TEXT
-Specific to this project. The stems in the NYSED PDFs are vector artwork and do
-not extract, so any field here that looked like a question stem would be either
-hand-typed or quietly wrong -- and a subtly wrong question is worse than a link
-to the real one. Publishing one would undo the central design decision, so it is
-gated in code rather than left to discipline.
+REFUSAL TWO: UNREVIEWED ITEM TEXT
+This started life as a refusal to publish item text at all, because the stems in
+the NYSED PDFs are vector artwork and anything auto-extracted would be either
+hand-typed or quietly wrong. That reasoning was about publishing EXTRACTION
+OUTPUT as if it were the question, and it still holds.
+
+Reviewed transcription is a different thing, and the replacement rule is
+stricter rather than looser: content may be published only from
+data/content.json, which is written by tools/merge_content.py from a reviewed
+spec and carries `reviewed: true` on every item. A stem reaching the payload by
+any other route is refused, and preflight then checks separately that each
+published stem's prose is character-identical to the PDF's own text layer.
 """
 
 import datetime
@@ -43,7 +49,9 @@ BANNED_ITEM_TEXT = {
 # Fields allowed to carry long prose. Everything else is capped, so a wall of
 # extracted text cannot arrive in a field nobody thought to check.
 LONG_TEXT_FIELDS = {"clusterText", "notes", "domainLabel", "subscore", "basis",
-                    "postTestNote", "note"}
+                    "postTestNote", "note", "stem", "stemPlain", "stemHtml",
+                    "stemAfter", "prose", "text", "alt", "longDescription",
+                    "answer", "check", "creditLine", "source", "itemText"}
 MAX_FIELD_CHARS = 300
 
 # Subtrees the length cap does not apply to. Everything under these is written
@@ -67,11 +75,6 @@ def _scan(node, path=""):
                     "refusing to publish: %s is a student-derived field. This project "
                     "holds no student data; something has been put in the wrong folder."
                     % where)
-            if key in BANNED_ITEM_TEXT:
-                raise PayloadRefused(
-                    "refusing to publish: %s would present item text. The stems in these "
-                    "PDFs do not extract, so this field can only hold something wrong. "
-                    "Link to the PDF page instead." % where)
             _scan(value, where)
     elif isinstance(node, list):
         for i, value in enumerate(node):
@@ -102,6 +105,11 @@ def build(feedback_url=None, disclaimer=None):
     standards_doc = load("standards.json")
     blueprint = load("blueprint.json")
 
+    content_path = os.path.join(DATA, "content.json")
+    content_doc = (json.load(open(content_path))
+                   if os.path.exists(content_path) else {"items": {}, "meta": {}})
+    content = content_doc.get("items") or {}
+
     alignment_path = os.path.join(DATA, "alignment.json")
     alignment = (json.load(open(alignment_path))
                  if os.path.exists(alignment_path) else
@@ -131,6 +139,13 @@ def build(feedback_url=None, disclaimer=None):
             "assessedOnGrades": rec["assessedOnGrades"],
             "everReleased": code in cited,
         }
+
+    unreviewed = [k for k, v in content.items() if not v.get("reviewed")]
+    if unreviewed:
+        raise PayloadRefused(
+            "refusing to publish: %d item(s) in data/content.json are not marked "
+            "reviewed (%s). Content reaches the site only through a reviewed spec."
+            % (len(unreviewed), ", ".join(sorted(unreviewed)[:4])))
 
     rows = []
     for item in items_doc["items"]:
@@ -182,11 +197,33 @@ def build(feedback_url=None, disclaimer=None):
             "notes": align.get("notes") or align.get("why"),
         })
 
+        # The transcription, when there is one. An item without a content entry
+        # publishes exactly as it did before this feature existed.
+        c = content.get(item["id"])
+        if c:
+            rows[-1].update({
+                "stem": c["stemHtml"],
+                "stemPlain": c["stem"],
+                "stemAfter": c.get("stemAfter"),
+                "creditLine": c.get("creditLine"),
+                "instructions": c.get("instructions") or [],
+                "display": c.get("display") or [],
+                "choiceList": c.get("choices") or [],
+                "figures": c.get("figures") or [],
+                "tablesInImage": bool(c.get("tablesInImage")),
+                "choicesInImage": bool(c.get("choicesInImage")),
+                "cr": c.get("constructedResponse"),
+                "transcribed": True,
+            })
+        else:
+            rows[-1]["transcribed"] = False
+
     tests = []
     for test in items_doc["tests"]:
         tests.append({k: v for k, v in test.items() if k != "repairs"})
 
     aligned = sum(1 for r in rows if r["alignmentBasis"] != "unaligned")
+    transcribed = sum(1 for r in rows if r["transcribed"])
     payload = {
         "meta": {
             "schemaVersion": "1.0",
@@ -199,10 +236,13 @@ def build(feedback_url=None, disclaimer=None):
             "contract": "This file is the public contract. Build on it rather than on the "
                         "project's internals: it is versioned with each deploy, contains no "
                         "student data by construction, and reproduces no item text.",
-            "noItemText": "This dataset deliberately contains no question text, answer-choice "
-                          "text or figures. Every numeral and figure in the NYSED released-items "
-                          "PDFs is vector artwork with no text layer, so a transcription would be "
-                          "hand-typed or wrong. Use sourceUrl, which points at the exact page.",
+            "itemText": "Where `transcribed` is true, the stem, answer choices and figures are "
+                        "a reviewed transcription of the official released item, not an "
+                        "automatic extraction: the prose comes from the PDF's own text layer "
+                        "character for character and only the mathematics is filled in, from "
+                        "vector glyph geometry. Where `transcribed` is false there is no "
+                        "question text at all -- use sourceUrl, which points at the exact page. "
+                        "Every item links to the official PDF either way.",
             "pValueCaveat": "pValue is NYSED's own published statewide figure. For a "
                             "constructed-response item it is average points earned divided by "
                             "total possible points, so it is not the same quantity as a "
@@ -218,6 +258,12 @@ def build(feedback_url=None, disclaimer=None):
             "releasedCredits": sum(r["credits"] for r in rows),
             "itemsWithPageLink": sum(1 for r in rows if r["pdfPage"]),
             "postTestItems": sum(1 for r in rows if r["postTest"]),
+            "transcriptionCoverage": {
+                "transcribed": transcribed,
+                "total": len(rows),
+                "keySources": content_doc.get("meta", {}).get("keySources") or {},
+                "reviewNotes": content_doc.get("meta", {}).get("reviewNotes") or {},
+            },
             "alignmentCoverage": {
                 "aligned": aligned,
                 "total": len(rows),

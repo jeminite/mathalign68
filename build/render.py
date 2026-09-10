@@ -31,6 +31,7 @@ def read(name):
 def render(payload, disclaimer, feedback_url, feedback_label):
     html = read("index.html")
     css = read("base.css")
+    question_css = read("question.css")
     app = read("app.js")
 
     years = payload["meta"]["years"]
@@ -46,6 +47,7 @@ def render(payload, disclaimer, feedback_url, feedback_label):
 
     subs = [
         ("/*__CSS__*/", css),
+        ("/*__QUESTION_CSS__*/", question_css),
         ("/*__APP__*/", app),
         ("__DATA__", data),
         ("__DISCLAIMER__", disclaimer),
@@ -54,7 +56,8 @@ def render(payload, disclaimer, feedback_url, feedback_label):
         ("__YEARS__", "%d–%d" % (years[0], years[-1])),
     ]
     for token, value in subs:
-        if token not in html and token not in css and token not in app:
+        if token not in html and token not in css and token not in app \
+                and token not in question_css:
             raise RuntimeError("placeholder %s is not in any template -- a rename "
                                "would silently drop content" % token)
         html = html.replace(token, value)

@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/build_items.py",
-    "generated": "2026-09-09",
+    "generated": "2026-09-10",
     "note": "GENERATED. Do not hand-edit -- preflight rebuilds this from provenance/ and fails if it differs. Fix the extractor or data/blueprint.json instead.",
     "standardsEra": "nextgen",
     "grades": [
@@ -413,7 +413,7 @@
       "label": "Grade 7, 2026",
       "standardsEra": "nextgen",
       "releasedItemsUrl": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g7.pdf",
-      "scoringMaterialsUrl": null,
+      "scoringMaterialsUrl": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g7.pdf",
       "pdfPageCount": 38,
       "mapPages": [
         38

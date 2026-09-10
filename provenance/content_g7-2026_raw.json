@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2026.json.",
     "items": 42,
     "itemsWithUnresolved": 0,
-    "figures": 16,
-    "displayExpressions": 7
+    "figures": 15,
+    "displayExpressions": 6
   },
   "items": [
     {
@@ -368,20 +368,10 @@
         }
       ],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            384.15,
-            64.52,
-            390.03,
-            73.13
-          ],
-          "html": "<span class=\"math\">y</span>"
-        }
-      ],
+      "display": [],
       "figures": [
         {
-          "file": "G7-2026/q07.png",
+          "file": "G7-2026/q07_2.png",
           "rect": [
             133.73,
             101.69,
@@ -809,44 +799,38 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in The heights of the plants in the shade were all greater than the heights of the The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+      "stemHtml": "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data?",
       "stemLines": [
         "In a science class, students placed <span class=\"math\">8</span> tomato plants in full sun and <span class=\"math\">8</span> tomato plants in the",
         "shade. The heights of the plants were measured and recorded after several weeks. The",
         "results are shown in the dot plots below.",
-        "Which statement best describes the data?",
-        "The heights of the plants in full sun varied more than the heights of the plants in",
-        "The heights of the plants in the shade were all greater than the heights of the",
-        "The average height of the plants in full sun was greater than the average height of",
-        "the plants in the shade.",
-        "The average height of the plants in the shade was greater than the average height",
-        "of the plants in full sun."
+        "Which statement best describes the data?"
       ],
-      "prose": "In a science class, students placed  tomato plants in full sun and  tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in The heights of the plants in the shade were all greater than the heights of the The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
+      "prose": "In a science class, students placed  tomato plants in full sun and  tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data?",
       "proseAllLines": "In a science class, students placed  tomato plants in full sun and  tomato plants in the shade. The heights of the plants were measured and recorded after several weeks. The results are shown in the dot plots below. Which statement best describes the data? The heights of the plants in full sun varied more than the heights of the plants in the shade. The heights of the plants in the shade were all greater than the heights of the plants in full sun. The average height of the plants in full sun was greater than the average height of the plants in the shade. The average height of the plants in the shade was greater than the average height of the plants in full sun.",
       "instructions": [],
       "choices": [
         {
           "label": "A",
-          "html": "the shade.",
+          "html": "The heights of the plants in full sun varied more than the heights of the plants in the shade.",
           "x": 75.5,
           "y": 338.6
         },
         {
           "label": "B",
-          "html": "plants in full sun.",
+          "html": "The heights of the plants in the shade were all greater than the heights of the plants in full sun.",
           "x": 76.1,
           "y": 376.9
         },
         {
           "label": "C",
-          "html": "",
+          "html": "The average height of the plants in full sun was greater than the average height of the plants in the shade.",
           "x": 75.6,
           "y": 414.4
         },
         {
           "label": "D",
-          "html": "",
+          "html": "The average height of the plants in the shade was greater than the average height of the plants in full sun.",
           "x": 75.1,
           "y": 452.6
         }
@@ -973,23 +957,18 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G7-2026/q20.png",
           "rect": [
             107.42,
             482.99,
             194.53,
             506.73
           ],
-          "paths": 15,
-          "decodedLabels": "12 4(x + 2) = −0.25",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\">4(x + 2) = <span class=\"frac\"><span>12</span><span>−0.25</span></span></span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {
@@ -1268,20 +1247,10 @@
         }
       ],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            438.9,
-            64.52,
-            444.78,
-            73.13
-          ],
-          "html": "<span class=\"math\">y</span>"
-        }
-      ],
+      "display": [],
       "figures": [
         {
-          "file": "G7-2026/q27.png",
+          "file": "G7-2026/q27_2.png",
           "rect": [
             203.4,
             111.47,
@@ -1326,7 +1295,7 @@
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">$1 12. 1 1</span>",
+          "html": "<span class=\"math\">$112.11</span>",
           "x": 76.1,
           "y": 524.5
         },
@@ -1581,9 +1550,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\">−45 9</span> ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span> ?",
       "stemLines": [
-        "Which expression is equivalent to <span class=\"math\">−45 9</span> ?"
+        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span> ?"
       ],
       "prose": "Which expression is equivalent to  ?",
       "proseAllLines": "Which expression is equivalent to  ?",
@@ -1597,13 +1566,13 @@
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">−45 9</span>",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span>",
           "x": 76.1,
           "y": 522.0
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">45 −9</span>",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>45</span><span>−9</span></span></span>",
           "x": 75.6,
           "y": 560.2
         },
@@ -1649,7 +1618,7 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">$1. 12</span>",
+          "html": "<span class=\"math\">$1.12</span>",
           "x": 75.6,
           "y": 162.4
         },
@@ -1777,19 +1746,18 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "A box plot is shown below. Based on the box plot, what is true about the data value <span class=\"math\">23</span> ? It represents a data point that lies an unusual distance from other points in",
+      "stemHtml": "A box plot is shown below. Based on the box plot, what is true about the data value <span class=\"math\">23</span> ?",
       "stemLines": [
         "A box plot is shown below.",
-        "Based on the box plot, what is true about the data value <span class=\"math\">23</span> ?",
-        "It represents a data point that lies an unusual distance from other points in"
+        "Based on the box plot, what is true about the data value <span class=\"math\">23</span> ?"
       ],
-      "prose": "A box plot is shown below. Based on the box plot, what is true about the data value  ? It represents a data point that lies an unusual distance from other points in",
+      "prose": "A box plot is shown below. Based on the box plot, what is true about the data value  ?",
       "proseAllLines": "A box plot is shown below. Based on the box plot, what is true about the data value  ? It represents a data point that lies an unusual distance from other points in the data. It represents the data point that occurred the most number of times in the data. It represents the interquartile range of the data. It represents the median of the data.",
       "instructions": [],
       "choices": [
         {
           "label": "A",
-          "html": "the data.",
+          "html": "It represents a data point that lies an unusual distance from other points in the data.",
           "x": 75.5,
           "y": 498.2
         },
@@ -1961,17 +1929,18 @@
       "credits": 2,
       "session": 2,
       "creditLine": "This question is worth 2 credits.",
-      "stemHtml": "Jim and Devin ride their bicycles to meet at a friend’s house. <span class=\"math\">•</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour. <span class=\"math\">•</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
+      "stemHtml": "Jim and Devin ride their bicycles to meet at a friend’s house. <span class=\"math\">•</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour. <span class=\"math\">•</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
       "stemLines": [
         "Jim and Devin ride their bicycles to meet at a friend’s house.",
         "<span class=\"math\">•</span> Jim rides <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> hour.",
         "<span class=\"math\">•</span> Devin rides <span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span> miles in <span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span></span> hour.",
-        "What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
+        "What is the difference, in miles per hour, between the average speeds of Jim and Devin?"
+      ],
+      "prose": "Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin?",
+      "proseAllLines": "This question is worth 2 credits. Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
+      "instructions": [
         "Explain how you determined your answer."
       ],
-      "prose": "Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
-      "proseAllLines": "This question is worth 2 credits. Jim and Devin ride their bicycles to meet at a friend’s house. Jim rides  miles in  hour. Devin rides  miles in  hour. What is the difference, in miles per hour, between the average speeds of Jim and Devin? Explain how you determined your answer.",
-      "instructions": [],
       "choices": [],
       "choicesInImage": false,
       "display": [],
@@ -2027,15 +1996,16 @@
       "credits": 2,
       "session": 2,
       "creditLine": "This question is worth 2 credits.",
-      "stemHtml": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
+      "stemHtml": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked?",
       "stemLines": [
         "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below.",
-        "For which person is the amount of earnings proportional to the number of hours worked?",
+        "For which person is the amount of earnings proportional to the number of hours worked?"
+      ],
+      "prose": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked?",
+      "proseAllLines": "This question is worth 2 credits. Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
+      "instructions": [
         "Explain your answer."
       ],
-      "prose": "Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
-      "proseAllLines": "This question is worth 2 credits. Eric’s and Jenna’s earnings at their jobs are shown in the graph and the table below. For which person is the amount of earnings proportional to the number of hours worked? Explain your answer.",
-      "instructions": [],
       "choices": [],
       "choicesInImage": false,
       "display": [],
@@ -2103,18 +2073,18 @@
       "credits": 3,
       "session": 2,
       "creditLine": "This question is worth 3 credits.",
-      "stemHtml": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of <span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on shoes and games. Answer    games",
+      "stemHtml": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of <span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on shoes and games.",
       "stemLines": [
         "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of",
         "<span class=\"math\">$3.75</span> to rent shoes and <span class=\"math\">$5.25</span> for each game he played. Write and solve an equation to",
         "determine the number of games, <span class=\"math\">x</span>, that Nicholas played if he spent a total of <span class=\"math\">$30.00</span> on",
-        "shoes and games.",
-        "Answer    games"
+        "shoes and games."
       ],
-      "prose": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of to rent shoes and  for each game he played. Write and solve an equation to determine the number of games, , that Nicholas played if he spent a total of  on shoes and games. Answer    games",
+      "prose": "Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of to rent shoes and  for each game he played. Write and solve an equation to determine the number of games, , that Nicholas played if he spent a total of  on shoes and games.",
       "proseAllLines": "This question is worth 3 credits. Nicholas went to a bowling alley. The bowling alley charged Nicholas a one time fee of to rent shoes and  for each game he played. Write and solve an equation to determine the number of games, , that Nicholas played if he spent a total of  on shoes and games. Show your work. Answer    games",
       "instructions": [
-        "Show your work."
+        "Show your work.",
+        "Answer    games"
       ],
       "choices": [],
       "choicesInImage": false,

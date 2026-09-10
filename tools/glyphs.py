@@ -56,6 +56,14 @@ TABLE = os.path.join(ROOT, "data", "glyphs.json")
 MIN_W, MAX_W = 0.5, 14.0
 MIN_H, MAX_H = 0.5, 16.0
 
+# A fraction bar is a glyph but not a letter shape, and it is as wide as
+# whatever it divides. Capping every candidate at MAX_W dropped the bar over
+# item 34's "-45" (about 17pt) before decoding, so three of that item's four
+# choices -- which differ only by where the minus sits -- collapsed into the
+# same text. Thin rules get their own, much wider allowance.
+RULE_MAX_W = 90.0
+RULE_MAX_H = 2.2
+
 # Points are normalised into the glyph's own bounding box, so distance is in
 # fractions of the glyph. 0.04 is four percent of a glyph's width.
 TOLERANCE = 0.04
@@ -75,6 +83,12 @@ RULE = "@rule"
 # after, regardless of the measured gap.
 NO_SPACE_BEFORE = set(".,)%")
 NO_SPACE_AFTER = set("($")
+
+# A space never belongs inside a number. The digit 1 is narrow but advances a
+# full tabular-figure width, so the measured gap after it exceeds the threshold
+# and item 29's choice B published as "$1 12. 1 1" instead of "$112.11" -- the
+# right digits, an unreadable number, and four choices no longer distinct.
+NUMERIC = set("0123456789.,")
 
 # decode() returns HTML (it emits <span class="frac"> for fractions), so a
 # decoded character that is HTML-special has to be escaped or it corrupts the
@@ -117,7 +131,10 @@ def shape_of(drawing):
     """
     rect = drawing["rect"]
     w, h = rect.width, rect.height
-    if not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
+    is_rule = h < RULE_MAX_H and w < RULE_MAX_W
+    if not is_rule and not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
+        return None
+    if is_rule and not (MIN_W < w and MIN_H < h):
         return None
     pts = _points(drawing)
     if not pts:
@@ -145,6 +162,25 @@ def shape_of(drawing):
         "items": len(drawing["items"]),
         "degenerate": degenerate,
     }
+
+
+def _is_overbar(rect, below, glyphs):
+    """Is this rule a repeating-decimal overbar rather than a minus sign?
+
+    An overbar sits almost on top of the digits it marks and spans them. A minus
+    sign in a fraction's numerator also has content below it -- the denominator,
+    a whole fraction bar away -- and reading that as an overbar turned item 34's
+    (-45)/9 and 45/(-9) into the same thing.
+    """
+    gap = min((glyphs[j][0].y0 - rect.y1) for j in below)
+    if not 0 <= gap < 5.0:
+        return False
+    span = max(glyphs[j][0].x1 for j in below) - min(glyphs[j][0].x0 for j in below)
+    if span <= 0:
+        return False
+    overlap = (min(rect.x1, max(glyphs[j][0].x1 for j in below))
+               - max(rect.x0, min(glyphs[j][0].x0 for j in below)))
+    return overlap / span > 0.6
 
 
 def _distance(a, b):
@@ -279,11 +315,19 @@ class GlyphTable:
                 continue
             above, below = [], []
             for j, (r2, s2, l2) in enumerate(glyphs):
-                if j == i or l2 == RULE:
+                if j == i:
                     continue
                 cx = (r2.x0 + r2.x1) / 2.0
                 if not (rect.x0 - 1.5 <= cx <= rect.x1 + 1.5):
                     continue
+                if l2 == RULE:
+                    # Another rule inside this bar's span, on a different line,
+                    # is a SIGN in the numerator or denominator -- item 34's
+                    # four choices are -(45/9), (-45)/9, 45/(-9) and 45/9, which
+                    # differ only by where the minus sits. Skipping every rule
+                    # here made three of them identical.
+                    if not (r2.x0 > rect.x0 - 0.5 and r2.x1 < rect.x1 + 0.5):
+                        continue
                 mid = (r2.y0 + r2.y1) / 2.0
                 if 0 < rect.y0 - mid < 14:
                     above.append(j)
@@ -297,7 +341,7 @@ class GlyphTable:
                 fractions[i] = (above, below)
                 consumed.update(above)
                 consumed.update(below)
-            elif below and not above:
+            elif below and not above and _is_overbar(rect, below, glyphs):
                 # Content below and nothing above, directly over the digits: a
                 # repeating-decimal overbar, not a minus sign. Item 7's choices
                 # are 3.3-repeating, and reading the bar as a minus published
@@ -345,7 +389,12 @@ class GlyphTable:
             parts = []
             for j in sorted(indices, key=lambda j: glyphs[j][0].x0):
                 lab = glyphs[j][2]
-                parts.append("\ufffd" if lab is None or lab == RULE else escape(lab))
+                if lab == RULE:
+                    parts.append("\u2212")      # a sign inside the fraction
+                elif lab is None:
+                    parts.append("\ufffd")
+                else:
+                    parts.append(escape(lab))
             return "".join(parts)
 
         out, unknown, prev = [], 0, None
@@ -359,7 +408,10 @@ class GlyphTable:
                     out.append(" ")
                 elif same_line and rect.x0 - prev.x1 > gap_threshold:
                     last = out[-1][-1] if out and out[-1] else ""
-                    if not (label in NO_SPACE_BEFORE or last in NO_SPACE_AFTER):
+                    numeric_run = last in NUMERIC and label in NUMERIC
+                    if not (numeric_run
+                            or label in NO_SPACE_BEFORE
+                            or last in NO_SPACE_AFTER):
                         out.append(" ")
             if i in fractions:
                 num, den = fractions[i]

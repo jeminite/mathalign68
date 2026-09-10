@@ -10,7 +10,7 @@
   "use strict";
 
   var D = JSON.parse(document.getElementById("D").textContent);
-  var STATE = { grade: 7, view: "standards" };
+  var STATE = { grade: 7, view: "questions" };
 
   /* ------------------------------------------------------------- utilities */
 
@@ -175,7 +175,8 @@
      [ps.length ? mean(ps).toFixed(2) : "—", "mean statewide P-value"],
      [hard.length, "standards hard every year"],
      [never.length, "standards never released"],
-     [items.filter(function (i) { return i.postTest; }).length, "prior-grade items"]
+     [items.filter(function (i) { return i.postTest; }).length, "prior-grade items"],
+     [items.filter(function (i) { return i.transcribed; }).length, "questions transcribed"]
     ].forEach(function (pair) {
       var s = el("div", "stat");
       s.appendChild(el("span", "n", pair[0]));
@@ -305,6 +306,180 @@
       ], s.items, { sortKey: "year" }));
       box.appendChild(det);
     }
+    return box;
+  }
+
+
+  /* ------------------------------------------------------------- questions */
+
+  /* The card browser. This is RegentsAlign's flagship view and the reason a
+     teacher opens either site: the question itself, next to what the state
+     asked and how hard everyone found it.
+
+     Only transcribed items appear here. An item without a transcription still
+     exists everywhere else in the site with its standard, its P-value and a
+     link to the PDF, so partial coverage looks partial rather than broken. */
+
+  function viewQuestions(grade) {
+    var host = frag();
+    var all = itemsFor(grade).filter(function (i) { return i.transcribed; });
+    var total = itemsFor(grade).length;
+
+    var card = el("div", "card");
+    card.appendChild(el("h2", "", "The questions"));
+    if (!all.length) {
+      card.appendChild(el("p", "lede",
+        "No grade " + grade + " questions are transcribed yet. Every item is still listed " +
+        "under Standards, Difficulty and Items, with its statewide P-value and a link to " +
+        "the exact page of the official PDF."));
+      host.appendChild(card);
+      return host;
+    }
+    card.appendChild(el("p", "lede",
+      all.length + " of " + total + " grade " + grade + " items are transcribed so far. " +
+      "The wording is NYSED's own, taken from the PDF's text layer character for character; " +
+      "only the mathematics is reconstructed, and every item links to the official page so " +
+      "you can check it."));
+    host.appendChild(card);
+
+    var controls = el("div", "controls");
+    var fYear = el("select");
+    var anyY = el("option", "", "All years"); anyY.value = ""; fYear.appendChild(anyY);
+    uniq(all.map(function (i) { return i.year; })).sort().forEach(function (y) {
+      var o = el("option", "", String(y)); o.value = y; fYear.appendChild(o);
+    });
+    var search = el("input");
+    search.type = "search";
+    search.placeholder = "Search the questions";
+    var showAns = el("input"); showAns.type = "checkbox"; showAns.checked = true;
+    var l1 = el("label"); l1.appendChild(el("span", "", "Year")); l1.appendChild(fYear);
+    var l2 = el("label"); l2.appendChild(search);
+    var l3 = el("label"); l3.appendChild(showAns); l3.appendChild(el("span", "", "Show answers"));
+    controls.appendChild(l1); controls.appendChild(l2); controls.appendChild(l3);
+    host.appendChild(controls);
+
+    var count = el("p", "lede");
+    host.appendChild(count);
+    var list = el("div");
+    host.appendChild(list);
+
+    function paint() {
+      var q = search.value.trim().toLowerCase();
+      var rows = all.filter(function (i) {
+        if (fYear.value && String(i.year) !== fYear.value) return false;
+        if (!q) return true;
+        var hay = (i.stemPlain || "") + " " + i.standard + " " + (i.domainLabel || "") +
+                  " " + (i.choiceList || []).map(function (c) { return c.text; }).join(" ");
+        return hay.toLowerCase().indexOf(q) !== -1;
+      });
+      count.textContent = rows.length + " question" + (rows.length === 1 ? "" : "s");
+      list.textContent = "";
+      if (!rows.length) {
+        list.appendChild(el("p", "empty", "Nothing matches that."));
+        return;
+      }
+      var f = frag();
+      rows.forEach(function (i) { f.appendChild(questionCard(i, showAns.checked)); });
+      list.appendChild(f);
+    }
+    fYear.addEventListener("change", paint);
+    search.addEventListener("input", paint);
+    showAns.addEventListener("change", paint);
+    paint();
+    return host;
+  }
+
+  function questionCard(i, answers) {
+    var box = el("div", "std");
+
+    var head = el("div", "std-head");
+    head.appendChild(el("span", "code", i.year + " \u00b7 item " + i.item));
+    head.appendChild(el("span", "dom", i.standard));
+    head.appendChild(typeTag(i));
+    if (i.postTest) {
+      var pt = el("span", "tag post", "grade " + i.postTestFromGrade + " standard");
+      pt.title = D.blueprint.postTestLegend;
+      head.appendChild(pt);
+    }
+    var p = el("span", "tag");
+    p.appendChild(document.createTextNode("statewide " + i.pValue.toFixed(2)));
+    p.className = "tag " + band(i.pValue);
+    p.title = "The proportion of students in New York State who earned credit on this item";
+    head.appendChild(p);
+    box.appendChild(head);
+
+    if (i.creditLine) box.appendChild(el("div", "credit-line", i.creditLine));
+
+    // The stem, the displayed mathematics and the figures carry this project's
+    // own markup and are inserted as HTML. Everything that came from a person
+    // -- alt text, captions, answers -- is set as text instead.
+    var stem = el("div", "stem");
+    stem.innerHTML = i.stem || "";
+    box.appendChild(stem);
+
+    (i.display || []).forEach(function (html) {
+      var d = el("div", "eqblock");
+      d.innerHTML = html;
+      box.appendChild(d);
+    });
+
+    (i.figures || []).forEach(function (fig) {
+      var f = el("figure", "qfig");
+      var img = el("img");
+      img.src = "assets/" + fig.file;
+      img.alt = fig.alt || "";
+      img.loading = "lazy";
+      f.appendChild(img);
+      if (fig.longDescription) {
+        var cap = el("figcaption", "", fig.longDescription);
+        f.appendChild(cap);
+      }
+      box.appendChild(f);
+    });
+
+    if (i.stemAfter) {
+      var after = el("div", "stem");
+      after.innerHTML = i.stemAfter;
+      box.appendChild(after);
+    }
+
+    (i.instructions || []).forEach(function (t) {
+      box.appendChild(el("div", "instruction", t));
+    });
+
+    if ((i.choiceList || []).length && !i.choicesInImage) {
+      var wrap = el("div", "choices");
+      i.choiceList.forEach(function (c) {
+        var row = el("div", "choice" + (answers && c.isCorrect ? " correct" : ""));
+        row.appendChild(el("span", "lab", c.label));
+        var body = el("span");
+        body.innerHTML = c.text || "";
+        row.appendChild(body);
+        wrap.appendChild(row);
+      });
+      box.appendChild(wrap);
+    } else if (i.choicesInImage) {
+      box.appendChild(el("p", "lede",
+        "The answer choices for this item are pictures, shown above."));
+    }
+
+    if (answers && i.cr) {
+      var ans = el("div", "answer");
+      ans.appendChild(el("h4", "", "Answer"));
+      var val = el("div", "val");
+      val.innerHTML = i.cr.answer;
+      ans.appendChild(val);
+      if (i.cr.note) ans.appendChild(el("div", "src", i.cr.note));
+      ans.appendChild(el("div", "src", i.cr.source));
+      box.appendChild(ans);
+    }
+
+    var foot = el("div", "row");
+    foot.style.marginTop = "12px";
+    var link = pdfLink(i, "Check this item in the official PDF"
+                          + (i.pdfPage ? " (page " + i.pdfPage + ")" : ""));
+    foot.appendChild(link);
+    box.appendChild(foot);
     return box;
   }
 
@@ -675,7 +850,7 @@
   /* ------------------------------------------------------------------ shell */
 
   var VIEWS = {
-    standards: viewStandards, difficulty: viewDifficulty,
+    questions: viewQuestions, standards: viewStandards, difficulty: viewDifficulty,
     blueprint: viewBlueprint, posttest: viewPostTest, items: viewItems
   };
 
@@ -708,6 +883,12 @@
     var g = /[?&]g=(\d)/.exec(q), v = /[?&]v=(\w+)/.exec(q);
     if (g && D.meta.grades.indexOf(Number(g[1])) !== -1) STATE.grade = Number(g[1]);
     if (v && VIEWS[v[1]]) STATE.view = v[1];
+    // Land on Standards rather than an empty Questions tab for a grade whose
+    // items are not transcribed yet.
+    if (STATE.view === "questions" &&
+        !D.items.some(function (i) { return i.grade === STATE.grade && i.transcribed; })) {
+      STATE.view = "standards";
+    }
   }
 
   document.querySelector(".grades").addEventListener("click", function (e) {
