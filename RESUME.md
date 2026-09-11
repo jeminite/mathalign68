@@ -9,7 +9,17 @@ gate that passes. Not yet deployed to Netlify — that needs a site created and 
 (all of 2026 grade 7) showing the actual question, and an About & corrections tab with a working
 feedback form -- verified end to end by submitting a correction and watching it arrive.
 
-Next: the curriculum index from the Teacher Course Guides, then 2026 grades 6 and 8.
+**The curriculum index is built and live** — a Curriculum tab per grade showing all 9 units, 427
+lessons with their standards, the guide's own pacing, and which units are taught after the test
+that could assess them. 71 gate checks plus a 23-check numbering gate of its own.
+
+**Search, filter and sort are in**, modelled on RegentsAlign's sidebar: a derived "Taught in unit"
+filter plus Standard, Question type, Year, four sort orders and a widened search on the Questions
+tab; the same unit filter and a "Taught in" column on Items; and shift-click multi-level sort in
+every table on the site.
+
+Next: 2026 grades 6 and 8 questions, then the per-item curriculum alignment (`data/alignment.json`,
+hand-owned) and the class-results analyzer.
 
 ### Two Netlify settings that were wrong at first
 
@@ -326,19 +336,150 @@ they generalise to the item-map extractor in Phase 1.
 - **An annotation belongs to the one code it follows.** Carrying `(Fluency)` from `4a` to `4b`
   published a claim the guide does not make.
 
+## Phase 3 — the curriculum index
+
+Three new scripts, all regenerable and all under the deploy gate:
+
+- **`tools/extract_im_ms_lessons.py`** → `data/im_ms_reference.json`. Units, sections, lesson
+  titles, and both of the guide's alignment tables, per grade. 152 / 143 / 132 lessons, 43 / 36 /
+  39 sections, nine units each, matching the guides exactly.
+- **`tools/extract_pacing.py`** → `data/im_ms_pacing.json`. Day ranges, optional lessons, mid-unit
+  assessments and start weeks from the 35-week table.
+- **`tools/validate_im_ms_lessons.py`**. The exit gate, 23 checks, run by `preflight.py`.
+
+### Two cross-checks that are stronger than anything they replaced
+
+**The pacing table is printed in full in all three guides.** So grade 7's pacing is read from the
+grade 6 guide, the grade 7 guide and the grade 8 guide independently, and the three readings must
+be identical. Three PDFs, three layouts, one answer — `extract_pacing.py` fails the build if they
+differ. This is a real check, not a restatement.
+
+**The day ranges are arithmetically predicted by the lesson counts.** For every one of the 27
+units: `days_max = lessons + 2 + (1 if mid-unit assessment)` and `days_min = days_max − optional`,
+with Unit 9 (wholly optional, no assessment days) running `[0, lessons]`. Three tables parsed from
+different pages by different code, agreeing to the day. The guide's own footnote states the
+formula; this confirms it holds and confirms both extractors at once.
+
+### Traps found, all fixed
+
+1. **Seven standards shipped with the wrong cluster description.** `NY-8.G.1a/1b/1c` are rigid
+   transformation standards and carried "Use functions to model relationships between quantities";
+   `NY-8.EE.1`, `NY-8.EE.4`, `NY-5.NBT.4` and `NY-6.EE.8` each had a neighbouring cluster's text.
+   `clusterText` is displayed on the site, so this was wrong data in front of readers. Cause: the
+   educator guide's chart uses merged cells and `owner_of()` assigned them by where the text sat.
+   Fix: **read the table's own drawn rules**. Every cell boundary is a horizontal rule, and a
+   merged cell is drawn by omitting the interior ones, so the rules recover NYSED's structure
+   instead of inferring it (`cells_by_rule`). A first attempt — forcing the cluster index to
+   advance at a domain change — fixed the four grade 8 cases and missed the other three; that is
+   why the rules are worth reading rather than reasoned around.
+2. **`NY-7.SP.1`'s cluster is wrong in the source, not in our parse.** The grade 7 chart merges one
+   ruled cell (y=406.0–455.0) across `NY-7.SP.1`, `7.SP.3` and `7.SP.4` and labels it with the
+   comparative-inferences cluster; NYSED omits the random-sampling cluster heading that `7.SP.1`
+   belongs to. Published as printed and recorded in `blueprint.json`'s `knownDataDefects`.
+3. **Forty lesson references were silently dropped by a line wrap.** *Lessons by Standard* prints
+   "Unit 1, Lesson 6" across a line break — "… Unit 1," then "Lesson 6, …" — so a per-line regex
+   lost every straddling pair, including eight of `NY-7.G.1`'s thirteen Unit 1 lessons. Nothing
+   looked wrong; the standard still had lessons, just fewer. Caught only because the validator
+   requires the guide's two tables to be exact inverses. Fix: join the cell before matching.
+4. **A cluster citation is not a standard.** Both tables cite whole clusters in the guide's own
+   literal form (`NY-7.EE.Cluster-1`). Mixed in with standards they join to nothing in
+   `standards.json` and look like missing standards. They now live in `clusterToLessons` /
+   `lessonToClusters`, and their numbers are **deliberately not resolved** to cluster wording:
+   `NY-7.SP.Cluster-2` is NGMLS's second SP cluster but NYSED's chart prints it first, and the
+   grade 7 guide cites `NY-6.SP.Cluster-5` although the grade 6 guide's own SP clusters stop at 2.
+5. **The guide's two alignment tables are not inverses of each other.** Six pairs differ in grade
+   7, all in or beside Unit 7 — and `NY-7.NS.2d` is placed at Unit 7 Lesson 16 by one table and
+   Unit 8 Lesson 16 by the other, the swapped-unit hazard appearing inside the guide itself.
+   Grades 6 and 8 are exact inverses, which is what makes six a fact about the guide rather than
+   about the parser. Both readings are published in `tableDisagreements`, and the gate requires
+   the disagreements to be **exactly** the ones recorded — a new one fails, and so does one that
+   quietly goes away.
+6. **17 lessons cite no standard at all, and that is correct.** IM opens most units with an
+   invitation to the mathematics that addresses no standard, and the guide's *Standards Addressed*
+   cell for it is blank (verified on "Unit 1, Lesson 1"). Recorded in `lessonsWithoutStandards` so
+   an empty row on the site reads as "the guide lists none" rather than "extraction failed".
+7. **Parent codes cost a whole unit its item count.** The guides cite `NY-7.EE.4`; every released
+   item cites `NY-7.EE.4a` or `4b`. Matching the literal string found nothing, and grade 7 Unit 8
+   showed **0 released items** — for the geometry unit. Expanding parents took it to 29. The same
+   bug rendered `NY-7.RP.2` struck through as "not a standard".
+8. **`postTest` alone was the wrong question.** It means "designated for May-to-June instruction in
+   the standard's own grade". Grade 7 Unit 7 teaches six grade 6 statistics standards, all flagged,
+   all assessed on the grade 7 test — reporting those as "taught after the test" said the opposite
+   of the truth. The test is whether the standard is assessed somewhere **other** than this grade.
+   Grade 8's post-test standards resolve to nowhere at all: there is no grade 9 State test, so they
+   are taught and then never assessed.
+9. **A zero needs an explanation or it becomes a claim.** Grade 6 Unit 5 teaches `NY-6.NS.2` and
+   `NY-6.NS.3` and neither has ever been released. Left bare that reads as "never tested", which
+   the data cannot support — a quarter of every test is withheld. The unit card now says "no
+   evidence either way".
+10. **Title case is not stable within a single guide.** The grade 6 guide prints its Unit 9 as
+    "Putting it All Together" in the Scope and Sequence box and "Putting It All Together" in the
+    pacing table. Since the project's rule is *resolve by title*, titles must be matched
+    case-insensitively. Grades 7 and 8 use only the capitalised form.
+11. **The payload's prose cap fired on legitimate hazard notes.** `CAP_EXEMPT_ROOTS` covers only
+    top-level `meta`, so `curriculum.meta` tripped it. Exempting the whole `curriculum` tree would
+    have stopped the cap watching 427 lesson titles — exactly the field extracted text could arrive
+    in — so the exemption is path-based (`CAP_EXEMPT_PATHS`).
+12. **The payload field is `secondary`, not `secondaryStandards`.** `items.json` uses the long
+    name, the payload renames it, and the new view used the wrong one — a `TypeError` that blanked
+    the whole tab. Worth checking the payload's own field names rather than `items.json`'s.
+
+## The unit filter is DERIVED, and that is the whole story
+
+`data/alignment.json` still does not exist, so no item carries a unit. The filter works by looking
+an item's standard up in the curriculum index and taking the units whose lessons teach it. "Unit 3"
+means *Unit 3 teaches the standard this item assesses*, not *this item belongs to Unit 3* --
+over-inclusive, never wrong, and the same join the Curriculum tab already publishes, so the two
+tabs cannot disagree. The caveat renders beside the dropdown and preflight refuses to ship without
+it.
+
+Why no Section or Lesson filter: a standard maps to a median of **6-10 lessons**, so a lesson-level
+filter would be noise. Unit is usable — grade 8 pins 99 of 135 items to exactly one unit — but
+grade 7 averages three units per item, which is why it is labelled and not presented as alignment.
+
+**Preflight section 7d** re-derives the whole mapping in Python and asserts two things: that every
+grade has unit options (an empty list would mean the parent-code join broke and the dropdown would
+render empty rather than fail), and that **no derived unit has been written onto an item**. That
+second check is the important one — section 9 asserts the same negative while `alignment.json` is
+absent, and 7d names the dependency so nobody later satisfies section 9 by populating the fields
+and quietly turns a derivation into a claim. Verified by writing a unit onto an item and watching
+the gate fail.
+
+### Traps found
+
+1. **Parent codes, in reverse.** `expandCode` was written to go parent -> children for the
+   Curriculum tab. The item -> unit direction needs the same bridge the other way: the index is
+   keyed on `NY-7.EE.4` and every item cites `NY-7.EE.4a`. Building the index by expanding each key
+   and filing the lessons under every sub-standard is what makes grade 7 Unit 8 find its 29 items
+   instead of none.
+2. **The sort readout scrolled away with the table.** It was inside the `.scroll` box, so on a
+   table wider than the viewport "Sorted by Year" rendered as "ted by Year". It now sits outside
+   the horizontally-scrolling container.
+3. **A bare zero is a claim.** Grade 7's Unit 8 shows few items because its standards are post-test,
+   and grade 6 has no Unit 5 or Unit 8 option at all because no released item touches them. Both are
+   real findings, already explained on the Curriculum tab, and the Items table's "Taught in" column
+   now makes them visible per row.
+4. **Unit 9 is a catch-all.** "Putting It All Together" cites standards from the whole year and so
+   matches 88 of grade 7's 135 items. Its option is labelled "(review unit -- matches broadly)",
+   driven off the `whollyOptional` flag rather than hardcoding unit 9.
+
 ## Open questions
 
 1. **P-value population is undefined.** The guide does not say whether the published P-values
    exclude embedded field-test takers, or what the denominator is. Read the guide again before
    writing the site copy, and if it stays unclear, say so on the page rather than implying a
    like-for-like comparison with one class.
-2. **`statement` is null for all 146 standards.** The educator guide gives cluster descriptions,
-   not per-standard wording. Sourcing the actual statements means a different NYSED document.
-   Until then the site shows `clusterText` and must label it as the cluster, not the standard.
+2. ~~**`statement` is null for all 146 standards.**~~ **Resolved.** The Teacher Course Guides
+   carry the full NYSNGMLS wording, and `extract_standards.py` now fills `statement` for 110 of
+   146. The 36 without are 34 grade 5 codes (not in any 6-8 guide, expected) plus `NY-6.G.5` and
+   `NY-7.SP.1`. `clusterText` is still labelled as the cluster wherever it is shown.
 3. **Which results export will colleagues actually have?** Unknown, which is why the analyzer is
    specified as a sniffing cascade with a fill-in template fallback. Worth simply asking a
    colleague before building Phase 2 rather than guessing at four layouts.
-4. **The Imagine IM New York 6–8 course guides have arrived** (`ImagineIM_NY_{6,7,8}__TCG_*.pdf`,
+4. ~~**The Imagine IM New York 6–8 course guides have arrived.**~~ **Phase 3 done** — the index is
+   built, validated and live; see the Phase 3 section above. All three hazards below are carried in
+   `data/im_ms_reference.json`'s `meta.hazards` and shown on the site's Curriculum tab. Original
+   note kept for the detail: **the Imagine IM New York 6-8 course guides have arrived** (`ImagineIM_NY_{6,7,8}__TCG_*.pdf`,
    130 pages each, clean text layer), along with three NYCPS pacing workbooks and — fetched from
    links inside them — the NYCPS *NYS Exam IM Alignment* sheets in `sources/nycps/`. Phase 3 is
    unblocked. Three hazards are recorded in `sources/nycps/PROVENANCE.md` and the plan: grades 7
@@ -347,8 +488,7 @@ they generalise to the item-map extractor in Phase 1.
    TCG contradicts itself on Unit 6 (11 lessons tabled, 9 everywhere else, because `8.SP.A.4` was
    removed under NGMLS and the table was not regenerated). Resolve lessons by title, never by
    number.
-5. **The TCGs contain the full text of every standard**, so `statement` need not stay null for all
-   146 entries in `data/standards.json`.
+5. ~~**The TCGs contain the full text of every standard.**~~ Done — see 2 above.
 6. **Withheld constructed-response credits are the one inferred field in the dataset.** Which
    withheld CR item carries which credit value is derived from the blueprint's credit mix minus
    the released items, assigned in item order. NYSED does not publish it. Every such record

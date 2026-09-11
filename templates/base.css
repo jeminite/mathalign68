@@ -209,3 +209,62 @@ input[type=search] { min-width:180px }
   a[href^="http"]::after { content:" (" attr(href) ")"; font-size:9px; color:#666 }
   details { display:block } details > summary { display:none } details[open] table, details table { display:table }
 }
+
+/* ------------------------------------------------- curriculum tab */
+
+.muted { color:var(--muted); font-size:12.5px }
+
+/* One lesson: number, title, badges, then its standards. Wraps on narrow
+   screens rather than forcing the page to scroll sideways. */
+.lesson {
+  display:flex; flex-wrap:wrap; gap:4px 9px; align-items:baseline;
+  padding:5px 0; border-bottom:1px solid var(--line-soft);
+}
+.lesson:last-child { border-bottom:0 }
+.lesson-no { color:var(--muted); font-size:12px; flex:0 0 auto; min-width:52px }
+.lesson-title { flex:1 1 220px; font-size:13.5px; color:var(--ink) }
+.lesson-codes { display:flex; flex-wrap:wrap; gap:4px; align-items:center; flex:0 1 auto }
+
+.chip {
+  font-size:11px; padding:1px 5px; border-radius:4px;
+  background:var(--line-soft); color:var(--muted); white-space:nowrap;
+}
+/* A standard some released item has actually assessed. This is the link
+   between what you teach next week and what the State has asked about it, so
+   it is the one thing on the row worth picking out. */
+.chip[data-tested] { background:var(--accent-soft); color:var(--accent-d); font-weight:600 }
+.chip-cluster { font-style:italic }
+/* Cited by the course guide but absent from NYSED's standards list -- struck
+   through so it does not read as a standard a teacher can look up. */
+.chip-unknown { text-decoration:line-through; opacity:.75 }
+
+.card h4 {
+  margin:14px 0 2px; font-size:12px; text-transform:uppercase;
+  letter-spacing:.04em; color:var(--muted);
+}
+.notes-list { margin:0; padding-left:18px; font-size:13px; color:var(--body) }
+.notes-list li { margin:0 0 7px }
+/* A post-test standard: taught in this unit, assessed the following year. */
+.chip[data-post] { box-shadow:inset 0 0 0 1px var(--post) }
+
+/* The search input takes the slack in a filter row rather than sitting at its
+   min-width while seven controls wrap around it. */
+.controls label.grow { flex:1 1 200px }
+.controls label.grow input[type=search] { width:100% }
+
+/* "Clear the filters" in an empty state -- a button that reads as a link. */
+.linkish {
+  border:0; background:none; padding:0; font:inherit; font-size:13px;
+  color:var(--accent); cursor:pointer; text-decoration:underline;
+}
+.linkish:hover { color:var(--accent-d) }
+
+/* Sort state readout above a sortable table, and the level markers in its
+   headings. The superscript number only appears once a second level exists. */
+.sortbar { margin:0 0 6px; font-size:12px }
+.sortmark {
+  font-size:9px; margin-left:4px; color:var(--accent); vertical-align:2px;
+  letter-spacing:.5px;
+}
+th { cursor:default }
+th:not(.plain) { cursor:pointer }

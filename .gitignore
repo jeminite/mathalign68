@@ -12,6 +12,15 @@
 # pulls them on demand for the Phase 4 exemplar harvest.
 sources/scoring/
 
+# Per-unit teacher guides: ~22MB each, nine of them, 203MB in total against a
+# 114MB repository -- and git never forgets a binary. Nothing in the build reads
+# them: the extractors read only the three course guides
+# (ImagineIM_NY_{6,7,8}__TCG_*.pdf), which ARE tracked. These hold the
+# lesson-by-lesson activity detail, kept on disk as reference for hand-aligning
+# items later.
+sources/ImagineIM_NY_?_?_TG_*.pdf
+sources/ImagineIM_?_?_TG_*.pdf
+
 # Housekeeping
 .DS_Store
 __pycache__/

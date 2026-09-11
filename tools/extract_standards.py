@@ -49,6 +49,17 @@ ROOT = os.path.dirname(HERE)
 GUIDE = os.path.join(ROOT, "sources", "3-8-educator-guide-math.pdf")
 OUT = os.path.join(ROOT, "data", "standards.json")
 
+# The Imagine IM New York Teacher Course Guides carry the full wording of every
+# standard, which the educator guide does not -- it gives cluster descriptions
+# only. Grades 6-8 are covered; grade 5's post-test standards are not, because
+# no grade 6-8 guide lists them.
+TCG = os.path.join(ROOT, "sources", "ImagineIM_NY_%d__TCG_NA_V2_EN_DIG.pdf")
+TCG_GRADES = (6, 7, 8)
+REFERENCE_HEADING = "NYSNGMLS for Mathematics Reference"
+TCG_CODE_RE = re.compile(
+    r"^(NY-\d\.[A-Z]{1,3}\.(?:Cluster-\d+|\d+(?:\.[a-z])?))$")
+DOMAIN_HEADER_RE = re.compile(r"^NY-\d\.[A-Z]{1,3}:\s")
+
 # Grades whose charts are parsed. 5 is here only to hold the post-test codes
 # that the grade 6 test cites; 3 and 4 are out of scope.
 CHART_GRADES = (5, 6, 7, 8)
@@ -87,6 +98,17 @@ ANNOTATION = re.compile(r"\(([^)]+)\)")
 # Within one merged cell, lines sit ~14.4pt apart; the next cell starts ~17-25pt
 # later. Those ranges overlap, so a gap alone cannot separate cells -- see
 # group_blocks.
+# A table rule is a filled rectangle wide enough to span a column and only a
+# point or two tall. 2.5pt clears the thickest rule in these charts (1.0) with
+# room to spare while excluding anything that is really a box.
+RULE_MAX_H = 2.5
+RULE_MIN_W = 40.0
+# A code line's recorded y is the top of its text, which can sit a fraction of a
+# point ABOVE its cell's top rule (grade 7 prints NY-7.SP.1 at y=405.9 under a
+# rule at y=406.0). Probing 2pt lower lands inside the cell without reaching the
+# next one, since consecutive code lines are 16.3pt apart.
+CELL_PROBE = 2.0
+
 SAME_CELL_GAP = 15.5
 SENTENCE_END_GAP = 13.5
 
@@ -178,6 +200,65 @@ def group_blocks(cells):
     return [(b[0], b[1], " ".join(b[2])) for b in blocks]
 
 
+def cells_by_rule(page, rows, band, below):
+    """The merged cells of one column, as (top, bottom, text), from the RULES.
+
+    This is the exact answer where `group_blocks` plus `owner_of` below is only
+    a good guess. These charts draw every cell boundary as a horizontal rule,
+    and a merged cell is drawn by simply omitting the interior ones: grade 7's
+    Standard(s) column has a rule every 16.3pt from 340.8 to 455.0, while its
+    Cluster column over the same span has rules at 357.1, 406.0 and 455.0 only
+    -- so the cell from 406.0 to 455.0 is one merged cell covering three codes.
+    Reading the rules therefore recovers NYSED's own cell structure instead of
+    inferring it from where the text happens to sit.
+
+    Inference was not good enough. Boundary-midpoint assignment put grade 8's
+    NY-8.G.1a/1b/1c (rigid transformations) under "Use functions to model
+    relationships between quantities" and gave NY-5.NBT.4, NY-6.EE.8 and
+    NY-8.EE.4 the neighbouring cluster's description -- seven wrong cluster
+    descriptions on a field the site displays.
+
+    Returns [] if the page draws no rules across this band, which is the signal
+    to fall back."""
+    lo, hi = band
+    edges = set()
+    for drawing in page.get_drawings():
+        rect = drawing["rect"]
+        if (rect.height <= RULE_MAX_H and rect.width >= RULE_MIN_W
+                and rect.x0 < hi - 10.0 and rect.x1 > lo + 10.0):
+            edges.add(round(rect.y0, 1))
+    edges = sorted(y for y in edges if y > below - 12.0)
+    if len(edges) < 2:
+        return []
+
+    lines = cells_in(rows, band, below)
+    cells = []
+    for top, bottom in zip(edges, edges[1:]):
+        text = " ".join(t for y, t in lines if top <= y + CELL_PROBE < bottom)
+        cells.append((top, bottom, text.strip() or None))
+    return cells
+
+
+def owner_by_rule(y, cells):
+    """The text of the rule-delimited cell a code at height y falls in."""
+    for top, bottom, text in cells:
+        if top <= y + CELL_PROBE < bottom:
+            return text
+    return None
+
+
+def owner_index_of(y, blocks):
+    """The index of the merged cell a code at height y belongs to."""
+    if not blocks:
+        return None
+    for i, (start, end, text) in enumerate(blocks):
+        if i + 1 == len(blocks):
+            return i
+        if y < (end + blocks[i + 1][0]) / 2.0:
+            return i
+    return len(blocks) - 1
+
+
 def owner_of(y, blocks):
     """The merged cell a code at height y belongs to.
 
@@ -254,6 +335,10 @@ def parse_chart(page, grade):
     if not bands:
         sys.exit("grade %d: could not locate the chart columns" % grade)
     y0 = bands["headerY"]
+    # Rules first, text-geometry only if a page draws none. Both columns hold
+    # merged cells, and both were mis-assigned by the geometric method.
+    domain_cells = cells_by_rule(page, rows, bands["domain"], y0)
+    cluster_cells = cells_by_rule(page, rows, bands["cluster"], y0)
     domains = group_blocks(cells_in(rows, bands["domain"], y0))
     clusters = group_blocks(cells_in(rows, bands["cluster"], y0))
     marks = [y for y, t in cells_in(rows, bands["posttest"], y0) if t.strip() == "X"]
@@ -276,6 +361,17 @@ def parse_chart(page, grade):
         codes, annot, annot_for = expand(line)
         if not codes:
             continue
+        if cluster_cells:
+            cluster_text = owner_by_rule(y, cluster_cells)
+            if cluster_text is None:
+                sys.exit("grade %d: %r at y=%.1f falls in no ruled cluster cell"
+                         % (grade, codes[0], y))
+        else:
+            cluster_text = owner_of(y, clusters)
+        if domain_cells:
+            guide_domain = owner_by_rule(y, domain_cells)
+        else:
+            guide_domain = owner_of(y, domains)
         marked = y in marked_ys
         for position, code in enumerate(codes):
             dm = re.match(r"NY-(\d)\.([A-Z]{1,3})\.", code)
@@ -288,8 +384,8 @@ def parse_chart(page, grade):
                 "grade": int(dm.group(1)),
                 "domain": dm.group(2),
                 "domainName": DOMAINS.get(dm.group(2)),
-                "domainNameInGuide": owner_of(y, domains),
-                "clusterText": owner_of(y, clusters),
+                "domainNameInGuide": guide_domain,
+                "clusterText": cluster_text,
                 "statement": None,
                 "note": annot if position == annot_for else None,
                 "postTest": False,
@@ -317,6 +413,61 @@ def parse_post_test_tables(doc):
         if codes:
             out[taught] = (tested, sorted(set(codes)))
     return out
+
+
+def statements_from_tcg():
+    """{code: full standard wording} from the Teacher Course Guides.
+
+    The table is one code per line followed by its statement, which may wrap
+    over several lines, until the next code. The guides print a sub-lettered
+    code with a dot -- NY-7.RP.2.a -- where NYSED's item maps write NY-7.RP.2a,
+    so the key is normalised to NYSED's form or nothing joins.
+    """
+    out = {}
+    for grade in TCG_GRADES:
+        path = TCG % grade
+        if not os.path.exists(path):
+            continue
+        doc = fitz.open(path)
+        pages = [i for i, p in enumerate(doc) if REFERENCE_HEADING in p.get_text()]
+        if not pages:
+            continue
+        # Drop the contents-page mention: keep the longest contiguous run.
+        runs, current = [], [pages[0]]
+        for i in pages[1:]:
+            if i - current[-1] <= 2:
+                current.append(i)
+            else:
+                runs.append(current)
+                current = [i]
+        runs.append(current)
+        pages = max(runs, key=len)
+
+        code, parts = None, []
+        for i in pages:
+            for raw in doc[i].get_text().split("\n"):
+                line = raw.strip()
+                if not line or line == REFERENCE_HEADING or DOMAIN_HEADER_RE.match(line):
+                    continue
+                if re.match(r"^(Grade \d Teacher Course Guide|\d+)$", line):
+                    continue          # running header and page number
+                m = TCG_CODE_RE.match(line)
+                if m:
+                    if code and parts:
+                        out.setdefault(normalise_tcg_code(code),
+                                       " ".join(parts).strip())
+                    code, parts = m.group(1), []
+                elif code:
+                    parts.append(line)
+        if code and parts:
+            out.setdefault(normalise_tcg_code(code), " ".join(parts).strip())
+    return out
+
+
+def normalise_tcg_code(printed):
+    if "Cluster" in printed:
+        return printed
+    return re.sub(r"\.(\d+)\.([a-z])$", r".\1\2", printed)
 
 
 def main():
@@ -386,6 +537,15 @@ def main():
         rec["postTestNote"] = ("taught May-to-June; no grades 3-8 test assesses it "
                                "(there is no grade 9 State mathematics test)")
 
+    # Fill in the full wording where a Teacher Course Guide supplies it.
+    wording = statements_from_tcg()
+    filled = 0
+    for code, rec in standards.items():
+        if wording.get(code):
+            rec["statement"] = wording[code]
+            rec["statementSource"] = "Imagine IM New York Teacher Course Guide"
+            filled += 1
+
     for rec in standards.values():
         if rec["postTest"]:
             rec["assessedOnGrades"] = [rec["testedInGrade"]] if rec["testedInGrade"] else []
@@ -432,6 +592,8 @@ def main():
     for rec in standards.values():
         by_grade[rec["grade"]] = by_grade.get(rec["grade"], 0) + 1
     print("wrote %s" % os.path.relpath(OUT, ROOT))
+    print("  %d with full wording from the course guides, %d without"
+          % (filled, len(standards) - filled))
     print("  %d standards -- %s" % (len(standards),
           ", ".join("grade %d: %d" % (g, n) for g, n in sorted(by_grade.items()))))
     print("  post-test flags agree across both sources (%d codes)" % len(table_post))

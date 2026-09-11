@@ -60,6 +60,12 @@ MAX_FIELD_CHARS = 300
 # checks still apply here; only the cap is lifted.
 CAP_EXEMPT_ROOTS = ("meta", "blueprint")
 
+# Prose-bearing subtrees that are not at the root. Exempting the whole
+# `curriculum` tree would stop the cap watching 427 lesson titles, which is
+# exactly the kind of field extracted text could arrive in; `curriculum.meta`
+# is hand-written caveats and hazard notes and nothing else.
+CAP_EXEMPT_PATHS = ("curriculum.meta",)
+
 
 class PayloadRefused(Exception):
     """Raised instead of writing. Never caught inside the build."""
@@ -83,6 +89,7 @@ def _scan(node, path=""):
         leaf = path.rsplit(".", 1)[-1].split("[")[0]
         root = path.split(".")[0].split("[")[0]
         if (root not in CAP_EXEMPT_ROOTS
+                and not path.startswith(CAP_EXEMPT_PATHS)
                 and leaf not in LONG_TEXT_FIELDS
                 and len(node) > MAX_FIELD_CHARS):
             raise PayloadRefused(
@@ -110,6 +117,13 @@ def build(feedback_url=None, disclaimer=None):
                    if os.path.exists(content_path) else {"items": {}, "meta": {}})
     content = content_doc.get("items") or {}
 
+    # The curriculum index. Optional so the site still builds before Phase 3's
+    # extractors have been run; the preflight gate is what requires it.
+    ref_path = os.path.join(DATA, "im_ms_reference.json")
+    pacing_path = os.path.join(DATA, "im_ms_pacing.json")
+    curriculum_doc = json.load(open(ref_path)) if os.path.exists(ref_path) else None
+    pacing_doc = json.load(open(pacing_path)) if os.path.exists(pacing_path) else None
+
     alignment_path = os.path.join(DATA, "alignment.json")
     alignment = (json.load(open(alignment_path))
                  if os.path.exists(alignment_path) else
@@ -122,6 +136,17 @@ def build(feedback_url=None, disclaimer=None):
     cited = {i["standard"] for i in items_doc["items"]}
     for i in items_doc["items"]:
         cited.update(i["secondaryStandards"])
+
+    # A standard the CURRICULUM cites has to be here too, or a lesson's standard
+    # list renders codes the reader cannot look up. Several standards are taught
+    # in the curriculum but have not yet appeared on a released item -- NY-8.EE.4
+    # and NY-8.EE.8a/8b among them -- and those are exactly the ones a teacher
+    # planning from this index would want to read.
+    if curriculum_doc:
+        for spec in curriculum_doc["grades"].values():
+            cited.update(spec["standardToLessons"])
+            for codes in spec["lessonToStandards"].values():
+                cited.update(codes)
 
     standards = {}
     for code, rec in standards_doc["standards"].items():
@@ -291,5 +316,74 @@ def build(feedback_url=None, disclaimer=None):
         "unreleased": items_doc["unreleased"],
     }
 
+    if curriculum_doc:
+        payload["curriculum"] = _curriculum(curriculum_doc, pacing_doc)
+
     _scan(payload)
     return payload
+
+
+def _curriculum(ref, pacing):
+    """The Imagine IM New York index, with pacing folded into each unit.
+
+    Folded here rather than joined in the browser so the page cannot get the
+    join wrong, and so the two files' unit keys are reconciled once, at build
+    time, where a mismatch is a build failure instead of a blank cell.
+
+    Titles are carried from the SCOPE AND SEQUENCE box, not the pacing table:
+    the grade 6 guide capitalises its Unit 9 differently in the two places and
+    the Scope and Sequence box is the one the lesson titles come from, so taking
+    both from the same table keeps a unit and its lessons consistent."""
+    out = {
+        "meta": {
+            "edition": ref["meta"]["edition"],
+            "numbering": ref["meta"]["numbering"] if "numbering" in ref["meta"] else "newYork",
+            "generated": ref["meta"]["generated"],
+            "lessonCodeFormat": ref["meta"]["lessonCodeFormat"],
+            "unitNumberingByTable": ref["meta"]["unitNumberingByTable"],
+            "hazards": ref["meta"]["hazards"],
+            "weeks": (pacing or {}).get("meta", {}).get("weeks"),
+            "pacingConventions": (pacing or {}).get("meta", {}).get("conventions"),
+            "pacingAgreement": (pacing or {}).get("meta", {}).get("agreement"),
+        },
+        "grades": {},
+    }
+    for grade, spec in sorted(ref["grades"].items()):
+        pace = ((pacing or {}).get("grades", {}) or {}).get(grade, {})
+        units = {}
+        for unit, u in sorted(spec["units"].items(), key=lambda kv: int(kv[0])):
+            block = pace.get(unit, {})
+            if block and block.get("title", u["title"]).lower() != u["title"].lower():
+                raise SystemExit(
+                    "payload: grade %s unit %s is %r in the scope and sequence but "
+                    "%r in the pacing table" % (grade, unit, u["title"], block["title"]))
+            lessons = {}
+            for n, lesson in sorted(u["lessons"].items(), key=lambda kv: int(kv[0])):
+                code = "%s.%s.%s" % (grade, unit, n)
+                lessons[n] = {
+                    "title": lesson["title"],
+                    "sectionLetter": lesson["sectionLetter"],
+                    "sectionTitle": lesson["sectionTitle"],
+                    "standards": spec["lessonToStandards"].get(code, []),
+                    "clusters": spec.get("lessonToClusters", {}).get(code, []),
+                    "optional": (block.get("optionalLessons") == "all"
+                                 or int(n) in (block.get("optionalLessons") or [])),
+                }
+            units[unit] = {
+                "title": u["title"],
+                "sections": u["sections"],
+                "lessons": lessons,
+                "days": block.get("days"),
+                "startWeek": block.get("startWeek"),
+                "midUnitAssessment": block.get("midUnitAssessment"),
+                "whollyOptional": block.get("optionalLessons") == "all",
+            }
+        out["grades"][grade] = {
+            "units": units,
+            "standardToLessons": {c: v["lessons"]
+                                  for c, v in spec["standardToLessons"].items()},
+            "tableDisagreements": spec.get("tableDisagreements", []),
+            "lessonsWithoutStandards": spec.get("lessonsWithoutStandards", []),
+            "counts": spec["counts"],
+        }
+    return out

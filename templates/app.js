@@ -55,6 +55,30 @@
     return w;
   }
 
+  /* One <select> in a .controls row. Lifted out of viewItems, which owned the
+     only copy while viewQuestions, viewStandards and viewCurriculum each
+     hand-rolled the same dozen lines. `host` is the .controls div to append to. */
+  function picker(host, label, values, render) {
+    var sel = el("select");
+    var any = el("option", "", "All"); any.value = ""; sel.appendChild(any);
+    values.forEach(function (v) {
+      var o = el("option", "", render ? render(v) : v); o.value = v; sel.appendChild(o);
+    });
+    var l = el("label"); l.appendChild(el("span", "", label)); l.appendChild(sel);
+    host.appendChild(l);
+    return sel;
+  }
+
+  function searchBox(host, placeholder) {
+    var input = el("input");
+    input.type = "search";
+    input.placeholder = placeholder;
+    var l = el("label", "grow");
+    l.appendChild(input);
+    host.appendChild(l);
+    return input;
+  }
+
   function itemsFor(grade) {
     return D.items.filter(function (i) { return i.grade === grade; });
   }
@@ -82,45 +106,132 @@
 
   /* Sortable table. Columns declare how to render and how to sort, so no view
      re-implements either. */
+  /* A sortable table.
+
+     SORT IS A STACK, not a single key. Click a heading to sort by it;
+     SHIFT-click to add it as a further level, or to flip a level already in the
+     stack. One standard can be tested across four years at three difficulties,
+     so "unit, then hardest first" is the question a teacher actually has, and a
+     single key cannot express it. Ties used to fall through to whatever order
+     `rows` happened to arrive in; now the tiebreak is the reader's to choose.
+
+     `opts.sortKey` stays a plain string, so all ten existing call sites keep
+     working untouched. */
   function table(cols, rows, opts) {
     opts = opts || {};
-    var wrapper = el("div", "scroll");
+    /* The sort readout sits OUTSIDE the horizontally-scrolling box. Inside it,
+       a table wider than the viewport scrolls the sentence out of view with the
+       columns, so "Sorted by Year" rendered as "ted by Year". */
+    var wrapper = el("div");
+    var scroll = el("div", "scroll");
+    var bar = el("p", "sortbar");
     var t = el("table"), thead = el("thead"), tr = el("tr");
-    var sort = { key: opts.sortKey || null, dir: opts.sortDir || 1 };
+    var sortable = cols.filter(function (c) { return c.sort !== false; }).length;
+    var sort = [];
+    if (opts.sortKey) sort.push({ key: opts.sortKey, dir: opts.sortDir || 1 });
+
+    function levelOf(key) {
+      for (var i = 0; i < sort.length; i++) if (sort[i].key === key) return i;
+      return -1;
+    }
 
     cols.forEach(function (c) {
-      var th = el("th", (c.num ? "num " : "") + (c.sort === false ? "plain" : ""), c.label);
+      var th = el("th", (c.num ? "num " : "") + (c.sort === false ? "plain" : ""));
+      th.appendChild(el("span", "", c.label));
+      var mark = el("span", "sortmark");
+      th.appendChild(mark);
       if (c.sort !== false) {
-        th.addEventListener("click", function () {
-          if (sort.key === c.key) sort.dir = -sort.dir;
-          else { sort.key = c.key; sort.dir = c.desc ? -1 : 1; }
+        th.title = (c.title ? c.title + " \u2014 " : "") +
+                   "Click to sort. Shift-click to add another level.";
+        th.addEventListener("click", function (e) {
+          var at = levelOf(c.key);
+          if (e.shiftKey) {
+            if (at >= 0) sort[at].dir = -sort[at].dir;
+            else sort.push({ key: c.key, dir: c.desc ? -1 : 1 });
+          } else if (sort.length === 1 && at === 0) {
+            sort = [{ key: c.key, dir: -sort[0].dir }];
+          } else {
+            sort = [{ key: c.key, dir: c.desc ? -1 : 1 }];
+          }
           draw();
         });
+      } else if (c.title) {
+        th.title = c.title;
       }
-      if (c.title) th.title = c.title;
       tr.appendChild(th);
     });
     thead.appendChild(tr);
     t.appendChild(thead);
     var tbody = el("tbody");
     t.appendChild(tbody);
-    wrapper.appendChild(t);
+    if (sortable) wrapper.appendChild(bar);
+    scroll.appendChild(t);
+    wrapper.appendChild(scroll);
+
+    function labelFor(key) {
+      var col = cols.filter(function (c) { return c.key === key; })[0];
+      return col ? col.label : key;
+    }
+
+    function readout() {
+      bar.textContent = "";
+      if (!sort.length) {
+        bar.appendChild(el("span", "muted", "Unsorted \u00b7 click a heading to sort, "
+                           + "shift-click to add a level"));
+        return;
+      }
+      var words = sort.map(function (s, i) {
+        return (i ? "then " : "Sorted by ") + labelFor(s.key) +
+               (s.dir > 0 ? "" : " (descending)");
+      }).join(", ");
+      bar.appendChild(el("span", "muted", words));
+      if (sort.length > 1 || !opts.sortKey || sort[0].key !== opts.sortKey
+          || sort[0].dir !== (opts.sortDir || 1)) {
+        var reset = el("button", "linkish", "reset");
+        reset.type = "button";
+        reset.addEventListener("click", function () {
+          sort = opts.sortKey ? [{ key: opts.sortKey, dir: opts.sortDir || 1 }] : [];
+          draw();
+        });
+        bar.appendChild(document.createTextNode(" \u00b7 "));
+        bar.appendChild(reset);
+      }
+    }
+
+    function compare(spec, a, b) {
+      var col = cols.filter(function (c) { return c.key === spec.key; })[0];
+      var x = col && col.value ? col.value(a) : a[spec.key];
+      var y = col && col.value ? col.value(b) : b[spec.key];
+      /* Missing values sink, whichever way the column is pointing -- a blank
+         is not "the smallest", it is absent. */
+      if (x === null || x === undefined) return (y === null || y === undefined) ? 0 : 1;
+      if (y === null || y === undefined) return -1;
+      if (x === y) return 0;
+      return (x > y ? 1 : -1) * spec.dir;
+    }
 
     function draw() {
       Array.prototype.forEach.call(thead.querySelectorAll("th"), function (th, i) {
-        if (cols[i].key === sort.key) th.setAttribute("aria-sort", sort.dir > 0 ? "ascending" : "descending");
-        else th.removeAttribute("aria-sort");
+        var at = levelOf(cols[i].key);
+        var mark = th.querySelector(".sortmark");
+        if (at < 0) {
+          th.removeAttribute("aria-sort");
+          mark.textContent = "";
+          return;
+        }
+        th.setAttribute("aria-sort", sort[at].dir > 0 ? "ascending" : "descending");
+        mark.textContent = (sort[at].dir > 0 ? "\u25b2" : "\u25bc") +
+                           (sort.length > 1 ? String(at + 1) : "");
       });
+      readout();
       var data = rows.slice();
-      if (sort.key) {
-        var col = cols.filter(function (c) { return c.key === sort.key; })[0];
+      if (sort.length) {
         data.sort(function (a, b) {
-          var x = col.value ? col.value(a) : a[sort.key];
-          var y = col.value ? col.value(b) : b[sort.key];
-          if (x === null || x === undefined) return 1;
-          if (y === null || y === undefined) return -1;
-          if (x === y) return 0;
-          return (x > y ? 1 : -1) * sort.dir;
+          for (var i = 0; i < sort.length; i++) {
+            var c = compare(sort[i], a, b);
+            if (c) return c;
+          }
+          return 0;
         });
       }
       tbody.textContent = "";
@@ -359,46 +470,111 @@
     host.appendChild(card);
 
     var controls = el("div", "controls");
-    var fYear = el("select");
-    var anyY = el("option", "", "All years"); anyY.value = ""; fYear.appendChild(anyY);
-    uniq(all.map(function (i) { return i.year; })).sort().forEach(function (y) {
-      var o = el("option", "", String(y)); o.value = y; fYear.appendChild(o);
+    var units = unitOptionsFor(grade, all);
+    var fYear = picker(controls, "Year",
+                       uniq(all.map(function (i) { return i.year; })).sort());
+    var fUnit = units.length
+      ? picker(controls, "Taught in unit", units, function (u) {
+          return unitOptionLabel(grade, u); })
+      : null;
+    var fStd = picker(controls, "Standard",
+                      uniq(all.map(function (i) { return i.standard; })).sort());
+    var fType = picker(controls, "Question type",
+                       uniq(all.map(function (i) { return i.type; })).sort());
+    var fSort = picker(controls, "Sort", ["year", "curriculum", "standard", "hardest"],
+                       function (k) {
+      return { year: "Year and item", curriculum: "Curriculum sequence",
+               standard: "Standard", hardest: "Hardest first" }[k];
     });
-    var search = el("input");
-    search.type = "search";
-    search.placeholder = "Search the questions";
+    /* Sort is not a filter, so it has no meaningful "All" -- drop the blank
+       option the picker adds and default to the natural reading order. */
+    fSort.removeChild(fSort.firstChild);
+    fSort.value = "year";
+    var search = searchBox(controls, "Search the questions");
     var showAns = el("input"); showAns.type = "checkbox"; showAns.checked = true;
-    var l1 = el("label"); l1.appendChild(el("span", "", "Year")); l1.appendChild(fYear);
-    var l2 = el("label"); l2.appendChild(search);
-    var l3 = el("label"); l3.appendChild(showAns); l3.appendChild(el("span", "", "Show answers"));
-    controls.appendChild(l1); controls.appendChild(l2); controls.appendChild(l3);
+    var lAns = el("label");
+    lAns.appendChild(showAns); lAns.appendChild(el("span", "", "Show answers"));
+    controls.appendChild(lAns);
     host.appendChild(controls);
+    if (fUnit) host.appendChild(derivedUnitNote());
 
     var count = el("p", "lede");
     host.appendChild(count);
     var list = el("div");
     host.appendChild(list);
 
+    /* Searching the unit and lesson titles as well as the question text is what
+       makes "circumference" find the items whose standards Measuring Circles
+       teaches, not just the ones that happen to print the word. */
+    function haystack(i) {
+      if (i._hay) return i._hay;
+      var spec = curriculumFor(grade);
+      var words = [i.stemPlain || "", i.standard, i.domainLabel || "",
+                   (i.choiceList || []).map(function (c) { return c.text; }).join(" ")];
+      unitsForItem(grade, i).forEach(function (u) {
+        var unit = spec && spec.units[u];
+        if (unit) words.push("unit " + u + " " + unit.title);
+      });
+      i._hay = words.join(" ").toLowerCase();
+      return i._hay;
+    }
+
+    function order(rows) {
+      var key = fSort.value;
+      return rows.slice().sort(function (a, b) {
+        if (key === "hardest" && a.pValue !== b.pValue) return a.pValue - b.pValue;
+        if (key === "standard" && a.standard !== b.standard) {
+          return a.standard < b.standard ? -1 : 1;
+        }
+        if (key === "curriculum") {
+          /* Lowest unit an item derives to, so an item taught in Units 2 and 5
+             sorts with Unit 2. Items with no unit are prior-grade content and
+             sort last rather than first. */
+          var ua = unitsForItem(grade, a)[0], ub = unitsForItem(grade, b)[0];
+          var na = ua === undefined ? 99 : Number(ua);
+          var nb = ub === undefined ? 99 : Number(ub);
+          if (na !== nb) return na - nb;
+        }
+        if (a.year !== b.year) return a.year - b.year;
+        return a.item - b.item;
+      });
+    }
+
     function paint() {
       var q = search.value.trim().toLowerCase();
       var rows = all.filter(function (i) {
         if (fYear.value && String(i.year) !== fYear.value) return false;
-        if (!q) return true;
-        var hay = (i.stemPlain || "") + " " + i.standard + " " + (i.domainLabel || "") +
-                  " " + (i.choiceList || []).map(function (c) { return c.text; }).join(" ");
-        return hay.toLowerCase().indexOf(q) !== -1;
+        if (fUnit && !matchesUnit(grade, i, fUnit.value)) return false;
+        if (fStd.value && i.standard !== fStd.value) return false;
+        if (fType.value && i.type !== fType.value) return false;
+        return !q || haystack(i).indexOf(q) !== -1;
       });
-      count.textContent = rows.length + " question" + (rows.length === 1 ? "" : "s");
+      rows = order(rows);
+      count.textContent = rows.length === all.length
+        ? all.length + " question" + (all.length === 1 ? "" : "s")
+        : "Showing " + rows.length + " of " + all.length + " questions";
       list.textContent = "";
       if (!rows.length) {
-        list.appendChild(el("p", "empty", "Nothing matches that."));
+        var none = el("div", "card");
+        none.appendChild(el("p", "empty", "No question matches those filters."));
+        var clear = el("button", "linkish", "Clear the filters");
+        clear.type = "button";
+        clear.addEventListener("click", function () {
+          [fYear, fUnit, fStd, fType].forEach(function (sel) { if (sel) sel.value = ""; });
+          search.value = "";
+          paint();
+        });
+        none.appendChild(clear);
+        list.appendChild(none);
         return;
       }
       var f = frag();
       rows.forEach(function (i) { f.appendChild(questionCard(i, showAns.checked)); });
       list.appendChild(f);
     }
-    fYear.addEventListener("change", paint);
+    [fYear, fUnit, fStd, fType, fSort].forEach(function (sel) {
+      if (sel) sel.addEventListener("change", paint);
+    });
     search.addEventListener("input", paint);
     showAns.addEventListener("change", paint);
     paint();
@@ -790,31 +966,24 @@
     host.appendChild(card);
 
     var controls = el("div", "controls");
-    function picker(label, values, render) {
-      var sel = el("select");
-      var any = el("option", "", "All"); any.value = ""; sel.appendChild(any);
-      values.forEach(function (v) {
-        var o = el("option", "", render ? render(v) : v); o.value = v; sel.appendChild(o);
-      });
-      var l = el("label"); l.appendChild(el("span", "", label)); l.appendChild(sel);
-      controls.appendChild(l);
-      return sel;
-    }
-    var fYear = picker("Year", uniq(all.map(function (i) { return i.year; })).sort());
-    var fDomain = picker("Domain", uniq(all.map(function (i) { return i.domain; })).sort(),
+    var units = unitOptionsFor(grade, all);
+    var fYear = picker(controls, "Year", uniq(all.map(function (i) { return i.year; })).sort());
+    var fUnit = units.length
+      ? picker(controls, "Taught in unit", units, function (u) {
+          return unitOptionLabel(grade, u); })
+      : null;
+    var fDomain = picker(controls, "Domain", uniq(all.map(function (i) { return i.domain; })).sort(),
                          function (d) { return D.blueprint.domains[d] || d; });
-    var fType = picker("Type", ["Multiple Choice", "Constructed Response"]);
-    var fHard = picker("Difficulty", ["hard", "mid", "easy"], function (b) {
+    var fType = picker(controls, "Type", ["Multiple Choice", "Constructed Response"]);
+    var fHard = picker(controls, "Difficulty", ["hard", "mid", "easy"], function (b) {
       return { hard: "Hard (under 0.50)", mid: "Middling (0.50–0.74)",
                easy: "Easier (0.75 and up)" }[b];
     });
-    var fPost = picker("Prior grade", ["yes", "no"], function (v) {
+    var fPost = picker(controls, "Prior grade", ["yes", "no"], function (v) {
       return v === "yes" ? "Prior-grade standards only" : "This grade only"; });
-    var search = el("input");
-    search.type = "search";
-    search.placeholder = "Standard code or domain";
-    var ls = el("label"); ls.appendChild(search); controls.appendChild(ls);
+    var search = searchBox(controls, "Standard code, domain or unit");
     host.appendChild(controls);
+    if (fUnit) host.appendChild(derivedUnitNote());
 
     var count = el("p", "lede");
     host.appendChild(count);
@@ -825,12 +994,14 @@
       var q = search.value.trim().toLowerCase();
       var rows = all.filter(function (i) {
         if (fYear.value && String(i.year) !== fYear.value) return false;
+        if (fUnit && !matchesUnit(grade, i, fUnit.value)) return false;
         if (fDomain.value && i.domain !== fDomain.value) return false;
         if (fType.value && i.type !== fType.value) return false;
         if (fHard.value && band(i.pValue) !== fHard.value) return false;
         if (fPost.value === "yes" && !i.postTest) return false;
         if (fPost.value === "no" && i.postTest) return false;
-        if (q && (i.standard + " " + (i.domainLabel || "")).toLowerCase().indexOf(q) === -1) return false;
+        if (q && (i.standard + " " + (i.domainLabel || "") + " " +
+                  unitText(grade, i)).toLowerCase().indexOf(q) === -1) return false;
         return true;
       });
       count.textContent = rows.length + " of " + all.length + " items · " +
@@ -849,6 +1020,21 @@
             if (i.postTest) { s.title = "grade " + i.postTestFromGrade + " standard"; }
             return s; } },
         { key: "domainLabel", label: "Domain", wrap: true },
+        { key: "units", label: "Taught in", wrap: true, sort: false,
+          title: "Units whose lessons teach this item's standard. Derived from the "
+               + "standard, not an alignment of the item itself.",
+          render: function (i) {
+            var us = unitsForItem(grade, i);
+            if (!us.length) return el("span", "muted", "—");
+            var box = el("span", "lesson-codes");
+            us.forEach(function (u) {
+              var spec = curriculumFor(grade);
+              var unit = spec && spec.units[u];
+              var chip = el("span", "chip", "U" + u);
+              chip.title = unit ? "Unit " + u + " \u00b7 " + unit.title : "Unit " + u;
+              box.appendChild(chip);
+            });
+            return box; } },
         { key: "secondary", label: "Also", sort: false, render: function (i) {
             return i.secondary && i.secondary.length ? i.secondary.join(", ") : "—"; } },
         { key: "pValue", label: "Statewide", render: function (i) { return pCell(i.pValue); } },
@@ -857,7 +1043,9 @@
         { key: "pdfPage", label: "Official PDF", sort: false, render: function (i) { return pdfLink(i); } }
       ], rows, { sortKey: "year" }));
     }
-    [fYear, fDomain, fType, fHard, fPost].forEach(function (s) { s.addEventListener("change", paint); });
+    [fYear, fUnit, fDomain, fType, fHard, fPost].forEach(function (s) {
+      if (s) s.addEventListener("change", paint);
+    });
     search.addEventListener("input", paint);
     paint();
     return host;
@@ -1033,10 +1221,489 @@
 
   /* ------------------------------------------------------------------ shell */
 
+  /* ------------------------------------------------------- curriculum tab */
+
+  /* The Imagine IM New York index: what each unit teaches, when the guide
+     paces it, and what the released tests have asked about the standards it
+     covers.
+
+     THE JOIN HERE IS BY STANDARD, NOT BY ITEM, and the view says so. A
+     per-item curriculum alignment is hand-owned judgement that lives in
+     data/alignment.json and is not written yet; what this can say without
+     inventing anything is "the standards this unit teaches have been assessed
+     by these released items", which is a weaker claim and a different one. Read
+     as a per-item alignment it would overcount, because one item's standard can
+     be taught in more than one unit. */
+
+  function curriculumFor(grade) {
+    return (D.curriculum && D.curriculum.grades) ? D.curriculum.grades[String(grade)] : null;
+  }
+
+  /* The course guides cite PARENT codes where NYSED's item maps cite the
+     sub-standards: a lesson says NY-7.EE.4 and every released item says
+     NY-7.EE.4a or NY-7.EE.4b. Matching the literal string finds nothing, and
+     "nothing" is indistinguishable from "never tested" on the page. Grade 7
+     Unit 8 went from 0 released items to 29 once the parents were expanded. */
+  var EXPANDED = {};
+  function expandCode(code) {
+    if (EXPANDED[code]) return EXPANDED[code];
+    var out = D.standards[code] ? [code] : [];
+    Object.keys(D.standards).forEach(function (c) {
+      if (c.length === code.length + 1 && c.indexOf(code) === 0 && /[a-z]$/.test(c)) out.push(c);
+    });
+    EXPANDED[code] = out.length ? out : [code];
+    return EXPANDED[code];
+  }
+
+  function unitStandards(unit) {
+    var codes = {};
+    Object.keys(unit.lessons).forEach(function (n) {
+      unit.lessons[n].standards.forEach(function (c) {
+        expandCode(c).forEach(function (x) { codes[x] = true; });
+      });
+    });
+    return Object.keys(codes);
+  }
+
+  function itemsForCodes(grade, codes) {
+    var want = {};
+    codes.forEach(function (c) { want[c] = true; });
+    return itemsFor(grade).filter(function (i) {
+      if (want[i.standard]) return true;
+      return (i.secondary || []).some(function (c) { return want[c]; });
+    });
+  }
+
+  function unitItems(grade, unit) {
+    return itemsForCodes(grade, unitStandards(unit));
+  }
+
+  /* ---- deriving a unit for an ITEM, which is the reverse of the above ----
+
+     There is no per-item curriculum alignment in this project: data/alignment.json
+     does not exist and every item's `unit` and `lesson` field is null. What the
+     site does have is the guide's standard-to-lesson index, so an item's unit is
+     DERIVED from the standard it assesses -- the units whose lessons teach that
+     standard.
+
+     That is weaker than an alignment and the page says so. "Unit 3" here means
+     "Unit 3 teaches the standard this item assesses", not "this item belongs to
+     Unit 3". It is over-inclusive, never wrong, and it is the same join the
+     Curriculum tab already publishes, so the two tabs cannot disagree.
+
+     PARENT CODES ARE THE HAZARD, in the opposite direction from expandCode's
+     usual use. standardToLessons can be keyed on NY-7.EE.4 while every item
+     cites NY-7.EE.4a, so the index is built by expanding each key and filing the
+     lessons under every sub-standard as well. Without that, grade 7 Unit 8 finds
+     none of its 29 items. */
+  var UNIT_INDEX = {};
+  function unitIndexFor(grade) {
+    if (UNIT_INDEX[grade]) return UNIT_INDEX[grade];
+    var index = {};
+    var spec = curriculumFor(grade);
+    if (spec) {
+      Object.keys(spec.standardToLessons).forEach(function (code) {
+        var units = {};
+        spec.standardToLessons[code].forEach(function (lessonCode) {
+          units[lessonCode.split(".")[1]] = true;
+        });
+        expandCode(code).forEach(function (c) {
+          index[c] = index[c] || {};
+          Object.keys(units).forEach(function (u) { index[c][u] = true; });
+        });
+      });
+    }
+    UNIT_INDEX[grade] = index;
+    return index;
+  }
+
+  /* The units that teach this item's standards, as sorted number-strings.
+     Empty means the item assesses a standard this grade's curriculum does not
+     teach -- prior-grade content, which is exactly the post-test set. */
+  function unitsForItem(grade, item) {
+    var index = unitIndexFor(grade), found = {};
+    var codes = [item.standard].concat(item.secondary || []);
+    codes.forEach(function (c) {
+      var hit = index[c];
+      if (hit) Object.keys(hit).forEach(function (u) { found[u] = true; });
+    });
+    return Object.keys(found).sort(function (a, b) { return a - b; });
+  }
+
+  var NO_UNIT = "none";
+
+  /* Every unit that at least one of this grade's items derives to, plus the
+     sentinel when some item derives to nothing. Built from the items rather
+     than from the curriculum so the dropdown never offers an empty result:
+     grade 6 has no released item on Units 5 or 8, and those units are absent. */
+  function unitOptionsFor(grade, items) {
+    var seen = {}, bare = false;
+    items.forEach(function (i) {
+      var units = unitsForItem(grade, i);
+      if (!units.length) { bare = true; return; }
+      units.forEach(function (u) { seen[u] = true; });
+    });
+    var out = Object.keys(seen).sort(function (a, b) { return a - b; });
+    if (bare) out.push(NO_UNIT);
+    return out;
+  }
+
+  function unitOptionLabel(grade, value) {
+    if (value === NO_UNIT) return "Not in this grade's units";
+    var spec = curriculumFor(grade);
+    var unit = spec && spec.units[value];
+    if (!unit) return "Unit " + value;
+    /* Unit 9 is "Putting It All Together" -- a wholly optional review unit that
+       cites standards from the whole year, so it matches 88 of grade 7's 135
+       items. Saying so stops that number reading as a finding. */
+    return "Unit " + value + " \u00b7 " + unit.title +
+           (unit.whollyOptional ? " (review unit \u2014 matches broadly)" : "");
+  }
+
+  /* "unit 3 measuring circles unit 5 rational number arithmetic" -- the searchable
+     form of an item's derived units. */
+  function unitText(grade, item) {
+    var spec = curriculumFor(grade), out = [];
+    unitsForItem(grade, item).forEach(function (u) {
+      var unit = spec && spec.units[u];
+      out.push("unit " + u + (unit ? " " + unit.title : ""));
+    });
+    return out.join(" ");
+  }
+
+  function matchesUnit(grade, item, value) {
+    if (!value) return true;
+    var units = unitsForItem(grade, item);
+    if (value === NO_UNIT) return !units.length;
+    return units.indexOf(value) !== -1;
+  }
+
+  /* The caveat, in one place, so the Questions and Items tabs cannot drift
+     apart on how they describe it. */
+  function derivedUnitNote() {
+    var n = el("p", "note");
+    n.innerHTML = "<b>Unit is derived from the standard, not assigned per item. </b>" +
+      "An item is counted against a unit when that unit teaches the standard the item " +
+      "assesses \u2014 which is not the same as saying the item belongs to the unit. One " +
+      "standard is often taught in several units, so an item can appear under more than " +
+      "one, and the filtered counts overlap.";
+    return n;
+  }
+
+  /* How much of a unit is taught AFTER its own grade's test. NYSED designates
+     some standards for May-to-June instruction and assesses them the following
+     year, and whole units can consist of them -- grade 7's Unit 8 (angles,
+     triangles and prisms) is entirely post-test, which is why no released grade
+     7 item touches it. A bare zero in the table reads as an error; this is the
+     explanation. */
+  function postTestShare(grade, unit) {
+    var codes = unitStandards(unit).filter(function (c) { return D.standards[c]; });
+    if (!codes.length) return null;
+    /* postTest alone is not the question. It means "designated for May-to-June
+       instruction in the standard's OWN grade", and a unit can teach a
+       prior-grade standard that carries the flag yet is assessed on the very
+       test this reader is preparing for -- grade 7 Unit 7 teaches six grade 6
+       statistics standards, all flagged, all assessed on the grade 7 test,
+       because New York moved probability down a grade. Reporting those as
+       "taught after the test" said the opposite of the truth. What matters here
+       is whether the standard is assessed somewhere OTHER than this grade. */
+    var post = codes.filter(function (c) {
+      var reg = D.standards[c];
+      return reg.postTest && (reg.assessedOnGrades || []).indexOf(grade) < 0;
+    });
+    return { total: codes.length, post: post.length,
+             to: uniq(post.reduce(function (a, c) {
+               return a.concat(D.standards[c].assessedOnGrades || []); }, [])).sort() };
+  }
+
+  function standardChip(code, grade) {
+    var reg = D.standards[code];
+    var family = expandCode(code).filter(function (c) { return D.standards[c]; });
+    /* A PARENT CODE IS STILL A STANDARD. The guides cite NY-7.RP.2; NYSED's
+       standards list holds only NY-7.RP.2a through 2d, so a lookup on the
+       parent misses and the chip was struck through as "not a standard" --
+       which is plainly wrong about a standard every teacher knows. Treat a
+       parent whose sub-standards exist as known, and count its whole family. */
+    var known = !!reg || family.length > 0;
+    var n = el("span", "mono chip" + (known ? "" : " chip-unknown"), code);
+    if (known) {
+      var hits = itemsForCodes(grade, family.length ? family : [code]).length;
+      var post = family.filter(function (c) { return D.standards[c].postTest; });
+      n.title = ((reg && (reg.clusterText || reg.domainName)) ||
+                 (family[0] && D.standards[family[0]].clusterText) || code) +
+        " \u2014 " + hits + " released grade " + grade + " item" + (hits === 1 ? "" : "s") +
+        (!reg && family.length
+          ? ". The course guide cites this parent code; NYSED's standards list and item "
+            + "maps use " + family.join(", ") + ", which is what the count covers."
+          : (family.length > 1 ? " across " + family.join(", ") : "")) +
+        (post.length
+          ? ". Designated for May-to-June instruction, so assessed on the grade "
+            + (uniq(post.reduce(function (a, c) {
+                return a.concat(D.standards[c].assessedOnGrades || []); }, [])).join(" and ")
+               || (grade + 1) + " test \u2014 except there is none")
+            + " test rather than grade " + grade + "."
+          : "");
+      if (hits) n.setAttribute("data-tested", "1");
+      if (post.length === family.length && post.length) n.setAttribute("data-post", "1");
+    } else {
+      /* NY-8.SP.4 is the clearest case: removed from the standards under
+         NGMLS but still named by the guide's alignment table. */
+      n.title = code + " is cited by the course guide but is not in NYSED's " +
+        "own standards list for the grades 3-8 tests, in any form.";
+    }
+    return n;
+  }
+
+  function viewCurriculum(grade) {
+    var host = frag();
+    var cur = curriculumFor(grade);
+    if (!cur) {
+      var none = el("div", "card");
+      none.appendChild(el("h2", "", "Curriculum index"));
+      none.appendChild(el("p", "empty", "Not built for this deploy."));
+      host.appendChild(none);
+      return host;
+    }
+    var meta = D.curriculum.meta;
+    var units = cur.units;
+    var order = Object.keys(units).sort(function (a, b) { return a - b; });
+
+    var intro = el("div", "card");
+    intro.appendChild(el("h2", "", meta.edition + " — grade " + grade));
+    intro.appendChild(el("p", "lede",
+      cur.counts.units + " units, " + cur.counts.sections + " sections and " +
+      cur.counts.lessonsTitled + " lessons, with the guide's own pacing across " +
+      meta.weeks + " weeks. Lesson numbers follow the " + meta.edition +
+      " edition — the one New York classrooms teach from, which is not the national " +
+      "sequence."));
+    var basis = el("p", "note");
+    basis.innerHTML = "<b>How the item counts below are worked out: </b>by standard, " +
+      "not by item. A released item is counted against a unit when the unit teaches " +
+      "the standard that item assesses. That is not the same as saying the item " +
+      "belongs to the unit — one standard can be taught in several units, so the " +
+      "counts overlap and do not sum to " + itemsFor(grade).length + ". A per-item " +
+      "curriculum alignment is a separate, hand-checked piece of work and is not " +
+      "published yet.";
+    intro.appendChild(basis);
+    host.appendChild(intro);
+
+    var summary = el("div", "card");
+    summary.appendChild(el("h3", "", "The year at a glance"));
+    summary.appendChild(table([
+      { key: "unit", label: "Unit", num: true },
+      { key: "title", label: "Title", wrap: true },
+      { key: "week", label: "Starts week", num: true },
+      { key: "days", label: "Days", sort: false, value: function (r) { return r.daysLo; } },
+      { key: "lessons", label: "Lessons", num: true },
+      { key: "optional", label: "Optional", num: true },
+      { key: "ma", label: "Mid-unit check", sort: false,
+        render: function (r) { return r.ma ? el("span", "tag", "yes") : "—"; } },
+      { key: "post", label: "Taught after the test", wrap: true, sort: false,
+        title: "Standards this unit teaches that NYSED designates for May-to-June "
+             + "instruction, and so assesses the following year" },
+      { key: "items", label: "Released items on its standards", num: true, desc: true }
+    ], order.map(function (u) {
+      var unit = units[u];
+      var lessons = Object.keys(unit.lessons);
+      var share = postTestShare(grade, unit);
+      return {
+        /* Grade 8's post-test standards go nowhere: there is no grade 9 State
+           mathematics test, so they are taught after the last test that could
+           assess them and then never assessed. Joining an empty list produced
+           "1 of 3 -> grade" with the number missing. */
+        post: !share || !share.post ? "\u2014"
+              : (share.post === share.total ? "all " : share.post + " of ") +
+                share.total + (share.to.length
+                  ? " \u2192 grade " + share.to.join("/")
+                  : " \u2192 not assessed"),
+        unit: Number(u), title: unit.title, week: unit.startWeek,
+        days: unit.days ? (unit.days[0] === unit.days[1] ? String(unit.days[0])
+                           : unit.days[0] + "\u2013" + unit.days[1]) : "—",
+        daysLo: unit.days ? unit.days[0] : null,
+        lessons: lessons.length,
+        optional: lessons.filter(function (n) { return unit.lessons[n].optional; }).length,
+        ma: unit.midUnitAssessment,
+        items: unitItems(grade, unit).length
+      };
+    }), { sortKey: "unit" }));
+    var conv = el("p", "note");
+    conv.textContent = meta.pacingConventions ? meta.pacingConventions.days : "";
+    summary.appendChild(conv);
+    host.appendChild(summary);
+
+    /* One card per unit, sections in order, lessons under their section. A
+       filter, because 427 lessons across the three grades is more than anyone
+       wants to scroll. */
+    var filterCard = el("div", "card");
+    filterCard.appendChild(el("h3", "", "Every lesson"));
+    var row = el("div", "controls");
+    var lab = el("label", "", "Filter by lesson title, section or standard ");
+    var box = el("input");
+    box.type = "search";
+    box.placeholder = "circumference, NY-7.G.4, \u2026";
+    lab.appendChild(box);
+    row.appendChild(lab);
+    var count = el("span", "muted");
+    row.appendChild(count);
+    filterCard.appendChild(row);
+    host.appendChild(filterCard);
+
+    var listHost = el("div");
+    host.appendChild(listHost);
+
+    function matches(q, unit, n, lesson) {
+      if (!q) return true;
+      var hay = [lesson.title, lesson.sectionTitle, unit.title,
+                 lesson.standards.join(" "), lesson.clusters.join(" ")]
+        .join(" ").toLowerCase();
+      return hay.indexOf(q) >= 0;
+    }
+
+    function draw() {
+      var q = box.value.trim().toLowerCase();
+      listHost.textContent = "";
+      var shown = 0;
+      order.forEach(function (u) {
+        var unit = units[u];
+        var keep = Object.keys(unit.lessons).sort(function (a, b) { return a - b; })
+          .filter(function (n) { return matches(q, unit, n, unit.lessons[n]); });
+        if (!keep.length) return;
+        shown += keep.length;
+
+        var card = el("div", "card");
+        var h = el("h3", "", "Unit " + u + " · " + unit.title);
+        card.appendChild(h);
+        var bits = [];
+        if (unit.days) bits.push(unit.days[0] === unit.days[1]
+          ? unit.days[0] + " days" : unit.days[0] + "\u2013" + unit.days[1] + " days");
+        if (unit.startWeek) bits.push("from week " + unit.startWeek);
+        if (unit.midUnitAssessment) bits.push("has a mid-unit assessment");
+        if (unit.whollyOptional) bits.push("optional in its entirety");
+        bits.push(unitItems(grade, unit).length + " released items on its standards");
+        card.appendChild(el("p", "lede", bits.join(" · ")));
+
+        /* A unit with no released items at all. Left bare it reads as "the
+           State never asks about this", which the data cannot support: about a
+           quarter of every test is withheld, and the guide aligns some lessons
+           to a whole cluster rather than a single standard, which cannot be
+           matched to an item at all. Grade 6 Unit 5 is the case in point -- it
+           teaches NY-6.NS.2 and NY-6.NS.3 and neither has ever been released. */
+        var share = postTestShare(grade, unit);
+        if (!unitItems(grade, unit).length && !(share && share.post)) {
+          var zn = el("p", "note");
+          zn.innerHTML = "<b>No released item assesses this unit's standards. </b>" +
+            "That is not the same as never tested: roughly a quarter of every test " +
+            "is withheld and never published, and some of this unit's lessons are " +
+            "aligned by the guide to a whole cluster rather than to a single " +
+            "standard, which cannot be matched to an item at all. Read this as " +
+            "\u201cno evidence either way\u201d.";
+          card.appendChild(zn);
+        }
+
+        /* Taught after the test that could assess it. Whole units can consist
+           of these -- grade 7's Unit 8 is entirely post-test -- so a low or
+           zero item count here has a specific, publishable explanation. */
+        if (share && share.post) {
+          var pn = el("p", "note");
+          pn.innerHTML = "<b>Taught after your own test: </b>" +
+            (share.post === share.total
+              ? "every one of this unit's " + share.total + " standards is"
+              : share.post + " of this unit's " + share.total + " standards are") +
+            " designated by NYSED for May-to-June instruction. " +
+            (share.to.length
+              ? (share.post === share.total ? "They are" : "Those are") +
+                " assessed on the grade " + share.to.join(" and ") + " test rather " +
+                "than grade " + grade + ", so a low released-item count here is expected."
+              : "There is no grade " + (grade + 1) + " State mathematics test, so " +
+                (share.post === share.total ? "they are" : "those are") +
+                " not assessed anywhere in this programme \u2014 taught, but never tested.");
+          card.appendChild(pn);
+        }
+
+        var section = null;
+        keep.forEach(function (n) {
+          var lesson = unit.lessons[n];
+          if (lesson.sectionLetter !== section) {
+            section = lesson.sectionLetter;
+            card.appendChild(el("h4", "", "Section " + section + " · " + lesson.sectionTitle));
+          }
+          var line = el("div", "lesson");
+          line.appendChild(el("span", "mono lesson-no", grade + "." + u + "." + n));
+          var name = el("span", "lesson-title", lesson.title);
+          line.appendChild(name);
+          if (lesson.optional) line.appendChild(el("span", "tag", "optional"));
+          var codes = el("span", "lesson-codes");
+          lesson.standards.forEach(function (c) { codes.appendChild(standardChip(c, grade)); });
+          lesson.clusters.forEach(function (c) {
+            /* "NY-7.G.Cluster-2" -> "G cluster 2". The full printed code is in
+               the tooltip; the row needs the domain and the number, not the
+               boilerplate. */
+            var parts = /^NY-(\d)\.([A-Z]{1,3})\.Cluster-(\d+)$/.exec(c);
+            var chip = el("span", "mono chip chip-cluster",
+              parts ? (parts[2] + " cluster " + parts[3] +
+                       (Number(parts[1]) !== grade ? " (grade " + parts[1] + ")" : "")) : c);
+            chip.title = c + " — the guide cites this whole cluster rather than one " +
+              "standard. Its number is the publisher's own and does not match NYSED's " +
+              "cluster order, so it is shown as printed.";
+            codes.appendChild(chip);
+          });
+          if (!lesson.standards.length && !lesson.clusters.length) {
+            var blank = el("span", "muted", "the guide lists no standard");
+            blank.title = "Not a gap in this site's data: the course guide's " +
+              "Standards Addressed cell for this lesson is empty. Most are a unit's " +
+              "opening lesson, which invites the mathematics rather than teaching a " +
+              "standard.";
+            codes.appendChild(blank);
+          }
+          line.appendChild(codes);
+          card.appendChild(line);
+        });
+        listHost.appendChild(card);
+      });
+      count.textContent = q ? shown + " of " + cur.counts.lessonsTitled + " lessons"
+                            : cur.counts.lessonsTitled + " lessons";
+      if (q && !shown) {
+        var empty = el("div", "card");
+        empty.appendChild(el("p", "empty", "No lesson matches \u201c" + box.value + "\u201d."));
+        listHost.appendChild(empty);
+      }
+    }
+    box.addEventListener("input", draw);
+    draw();
+
+    /* The caveats, last but published. Unit numbering is the thing most likely
+       to mislead someone comparing this against a national-edition document. */
+    var caveats = el("div", "card");
+    caveats.appendChild(el("h3", "", "Before comparing this against another document"));
+    var ul = el("ul", "notes-list");
+    meta.hazards.forEach(function (h) { ul.appendChild(el("li", "", h)); });
+    caveats.appendChild(ul);
+    if (cur.tableDisagreements && cur.tableDisagreements.length) {
+      caveats.appendChild(el("h4", "", "Where the guide's own two alignment tables disagree"));
+      caveats.appendChild(el("p", "lede",
+        "The guide lists standards by lesson in one table and lessons by standard in " +
+        "another. For grade " + grade + " they differ on " + cur.tableDisagreements.length +
+        " pairs. Neither is authoritative over the other, so both readings are kept."));
+      caveats.appendChild(table([
+        { key: "lesson", label: "Lesson", render: function (r) { return el("span", "mono", r.lesson); } },
+        { key: "standard", label: "Standard", render: function (r) { return el("span", "mono", r.standard); } },
+        { key: "citedBy", label: "Cited by", wrap: true }
+      ], cur.tableDisagreements, { sortKey: "lesson" }));
+    }
+    var src = el("p", "note");
+    src.innerHTML = "<b>Source: </b>the Imagine IM New York Teacher Course Guides, " +
+      "extracted and re-checked on every deploy. The pacing table is printed in all " +
+      "three guides; every figure here was read from all three independently and the " +
+      "three readings agree.";
+    caveats.appendChild(src);
+    host.appendChild(caveats);
+    return host;
+  }
+
   var VIEWS = {
     questions: viewQuestions, standards: viewStandards, difficulty: viewDifficulty,
     blueprint: viewBlueprint, posttest: viewPostTest, items: viewItems,
-    about: viewAbout
+    curriculum: viewCurriculum, about: viewAbout
   };
 
   function render() {

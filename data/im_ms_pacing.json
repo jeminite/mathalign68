@@ -1,0 +1,366 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_pacing.py",
+    "generated": "2026-09-10",
+    "edition": "Imagine IM New York, 6-8",
+    "numbering": "newYork",
+    "note": "GENERATED from the 35-week pacing table. Re-run the extractor rather than hand-editing.",
+    "weeks": 35,
+    "readFrom": {
+      "6": {
+        "file": "sources/ImagineIM_NY_6__TCG_NA_V2_EN_DIG.pdf",
+        "pdfPage": 88,
+        "printedPage": 87
+      },
+      "7": {
+        "file": "sources/ImagineIM_NY_7__TCG_NA_V2_EN_DIG.pdf",
+        "pdfPage": 87,
+        "printedPage": 86
+      },
+      "8": {
+        "file": "sources/ImagineIM_NY_8__TCG_NA_V2_EN_DIG.pdf",
+        "pdfPage": 85,
+        "printedPage": 84
+      }
+    },
+    "agreement": "All three Teacher Course Guides print this whole table for all three grades. Every figure here was read from all three independently and the three readings were identical; the build fails if they are not.",
+    "conventions": {
+      "days": "[minimum, maximum]. Equal when the guide prints a single number. The range includes two assessment days per unit; the upper bound includes the optional lessons.",
+      "midUnitAssessment": "The guide's (MA) mark -- 'Unit has Mid-Unit Assessment'.",
+      "optionalLessons": "Lesson numbers within the unit, or [] for the guide's 'none', or the string 'all' for Unit 9, which is optional in its entirety.",
+      "startWeek": "1-35, derived from the unit block's vertical position against the 35 week labels in the table's left margin. The guide does not print a start week per unit, so this is read off the layout, not quoted.",
+      "dayCountFormula": "The guide's own footnote: number of days for each course = Lessons + Assessments - Optional Lessons."
+    },
+    "notes": [
+      "grade 6 unit 9 title: pacing table 'Putting It All Together', scope and sequence 'Putting it All Together'"
+    ]
+  },
+  "grades": {
+    "6": {
+      "1": {
+        "title": "Area and Surface Area",
+        "days": [
+          20,
+          22
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          16,
+          19
+        ],
+        "startWeek": 1
+      },
+      "2": {
+        "title": "Introducing Ratios",
+        "days": [
+          19,
+          19
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [],
+        "startWeek": 6
+      },
+      "3": {
+        "title": "Unit Rates and Percentages",
+        "days": [
+          17,
+          19
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          9,
+          16
+        ],
+        "startWeek": 9
+      },
+      "4": {
+        "title": "Dividing Fractions",
+        "days": [
+          16,
+          20
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          3,
+          4,
+          9,
+          16
+        ],
+        "startWeek": 13
+      },
+      "5": {
+        "title": "Arithmetic in Base Ten",
+        "days": [
+          15,
+          18
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          2,
+          9,
+          15
+        ],
+        "startWeek": 17
+      },
+      "6": {
+        "title": "Expressions and Equations",
+        "days": [
+          20,
+          22
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          11,
+          18
+        ],
+        "startWeek": 21
+      },
+      "7": {
+        "title": "Rational Numbers",
+        "days": [
+          20,
+          21
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          19
+        ],
+        "startWeek": 25
+      },
+      "8": {
+        "title": "Data Sets and Distributions",
+        "days": [
+          20,
+          21
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          18
+        ],
+        "startWeek": 29
+      },
+      "9": {
+        "title": "Putting It All Together",
+        "days": [
+          0,
+          11
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": "all",
+        "startWeek": 33
+      }
+    },
+    "7": {
+      "1": {
+        "title": "Scale Drawings",
+        "days": [
+          12,
+          15
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          6,
+          8,
+          13
+        ],
+        "startWeek": 1
+      },
+      "2": {
+        "title": "Introducing Proportional Relationships",
+        "days": [
+          16,
+          17
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          14
+        ],
+        "startWeek": 4
+      },
+      "3": {
+        "title": "Measuring Circles",
+        "days": [
+          11,
+          13
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          5,
+          11
+        ],
+        "startWeek": 8
+      },
+      "4": {
+        "title": "Proportional Relationships and Percentages",
+        "days": [
+          17,
+          18
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          15
+        ],
+        "startWeek": 11
+      },
+      "5": {
+        "title": "Rational Number Arithmetic",
+        "days": [
+          18,
+          19
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          10
+        ],
+        "startWeek": 15
+      },
+      "6": {
+        "title": "Expressions, Equations, and Inequalities",
+        "days": [
+          25,
+          25
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [],
+        "startWeek": 20
+      },
+      "7": {
+        "title": "Probability and Sampling",
+        "days": [
+          21,
+          23
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          17,
+          20
+        ],
+        "startWeek": 24
+      },
+      "8": {
+        "title": "Angles, Triangles, and Prisms",
+        "days": [
+          18,
+          19
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          17
+        ],
+        "startWeek": 28
+      },
+      "9": {
+        "title": "Putting It All Together",
+        "days": [
+          0,
+          12
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": "all",
+        "startWeek": 32
+      }
+    },
+    "8": {
+      "1": {
+        "title": "Rigid Transformations and Congruence",
+        "days": [
+          20,
+          20
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [],
+        "startWeek": 1
+      },
+      "2": {
+        "title": "Dilations, Similarity, and Introducing Slope",
+        "days": [
+          15,
+          15
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [],
+        "startWeek": 5
+      },
+      "3": {
+        "title": "Linear Relationships",
+        "days": [
+          16,
+          17
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          11
+        ],
+        "startWeek": 8
+      },
+      "4": {
+        "title": "Linear Equations and Linear Systems",
+        "days": [
+          18,
+          18
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [],
+        "startWeek": 12
+      },
+      "5": {
+        "title": "Functions and Volume",
+        "days": [
+          23,
+          25
+        ],
+        "midUnitAssessment": true,
+        "optionalLessons": [
+          18,
+          22
+        ],
+        "startWeek": 17
+      },
+      "6": {
+        "title": "Associations in Data",
+        "days": [
+          10,
+          11
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          9
+        ],
+        "startWeek": 21
+      },
+      "7": {
+        "title": "Pythagorean Theorem and Irrational Numbers",
+        "days": [
+          20,
+          20
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [],
+        "startWeek": 24
+      },
+      "8": {
+        "title": "Exponents and Scientific Notation",
+        "days": [
+          17,
+          18
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": [
+          15
+        ],
+        "startWeek": 28
+      },
+      "9": {
+        "title": "Putting It All Together",
+        "days": [
+          0,
+          6
+        ],
+        "midUnitAssessment": false,
+        "optionalLessons": "all",
+        "startWeek": 32
+      }
+    }
+  }
+}

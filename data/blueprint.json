@@ -398,6 +398,11 @@
       "test": "any",
       "what": "Some standard cells carry trailing whitespace inside the code (e.g. 'NY-8.F.1 ').",
       "handling": "Stripped during normalisation."
+    },
+    {
+      "test": "educator guide, grade 7 chart",
+      "what": "The Cluster cell is merged across NY-7.SP.1, NY-7.SP.3 and NY-7.SP.4 (one ruled cell, y=406.0 to y=455.0) and labelled 'Draw informal comparative inferences about two populations.' NY-7.SP.1 belongs to a different cluster -- 'Use random sampling to draw inferences about a population' -- whose heading the guide omits entirely, along with NY-7.SP.2.",
+      "handling": "Published as the guide prints it. We do not substitute the cluster we believe NYSED meant, because clusterText is presented as the guide's own wording; NY-7.SP.1's cluster is therefore wrong in our data exactly as it is wrong in the source."
     }
   ]
 }

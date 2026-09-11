@@ -115,6 +115,29 @@ def regenerability():
           out.returncode == 0 and strip(current) == strip(out.stdout),
           (out.stderr or "the rebuilt file differs from the one on disk").strip())
 
+    # The curriculum index, under the same regime: a hand edit to either file
+    # cannot survive the gate.
+    for data_file, script, needs in (
+            ("im_ms_reference.json", "extract_im_ms_lessons.py",
+             ["ImagineIM_NY_%d__TCG_NA_V2_EN_DIG.pdf" % g for g in (6, 7, 8)]),
+            ("im_ms_pacing.json", "extract_pacing.py",
+             ["ImagineIM_NY_%d__TCG_NA_V2_EN_DIG.pdf" % g for g in (6, 7, 8)])):
+        label = "data/%s rebuilds byte-for-byte from the course guides" % data_file
+        missing = [n for n in needs
+                   if not os.path.exists(os.path.join(ROOT, "sources", n))]
+        if missing:
+            skipped(label, "%s not on disk" % ", ".join(missing))
+            continue
+        path = os.path.join(DATA, data_file)
+        if not os.path.exists(path):
+            skipped(label, "data/%s has not been built" % data_file)
+            continue
+        out = subprocess.run([sys.executable, os.path.join(HERE, script), "--stdout"],
+                             capture_output=True, text=True)
+        check(label,
+              out.returncode == 0 and strip(open(path).read()) == strip(out.stdout),
+              (out.stderr or "the rebuilt file differs from the one on disk").strip())
+
 
 # ------------------------------------------------------------------- 3. the payload
 
@@ -302,6 +325,240 @@ def blueprint_sanity(payload):
                            % (t["testId"], dom, share, rng[0], rng[1]))
     warn("every domain's released share is within 8 points of its published range",
          not out, "\n".join(out))
+
+
+# ------------------------------------------------- 7b. standards registry
+
+DOMAIN_WORDS = {
+    "NS":  ("rational", "irrational", "number", "fraction", "divide", "multiply",
+            "factor", "integer", "radical", "exponent"),
+    "EE":  ("exponent", "equation", "expression", "slope", "linear", "radical",
+            "inequalit", "variable", "arithmetic", "proportional"),
+    "F":   ("function",),
+    "RP":  ("ratio", "proportional", "rate", "percent", "unit"),
+    "G":   ("congruen", "transformation", "similar", "angle", "pythagor", "volume",
+            "rotation", "dilat", "area", "surface", "circle", "geometr",
+            "coordinate", "classify", "two-dimensional", "shapes", "perimeter",
+            "figures"),
+    "SP":  ("scatter", "bivariate", "associat", "pattern", "data", "frequenc",
+            "distribution", "variabilit", "probabilit", "chance", "random",
+            "sample", "inference", "population", "statistic"),
+    "OA":  ("expression", "pattern", "operation"),
+    "NBT": ("place value", "decimal", "multi-digit", "operations"),
+    "MD":  ("measure", "data", "volume", "angle", "convert"),
+    "NF":  ("fraction", "decimal"),
+}
+
+
+def standards_registry():
+    """Three invariants on data/standards.json's chart-derived fields.
+
+    All three exist because seven standards shipped with the WRONG cluster
+    description -- NY-8.G.1a/1b/1c (rigid transformations) described as "Use
+    functions to model relationships between quantities", plus NY-8.EE.1,
+    NY-8.EE.4, NY-5.NBT.4 and NY-6.EE.8. The educator guide's chart uses merged
+    cells, and assigning them by where the text sits rather than by the table's
+    own drawn rules put those seven under a neighbouring cluster. clusterText is
+    displayed on the site, so a teacher read it.
+
+    None of these three checks would have passed with that data, and none of
+    them depends on the extractor being right -- they test the output."""
+    section("7b. Standards registry -- chart-derived fields")
+    reg = load(os.path.join(ROOT, "data", "standards.json"))["standards"]
+
+    # A domain letter names exactly one domain. If a code took its neighbour's
+    # cell, the letter picks up two different printed names.
+    names = {}
+    for code, rec in reg.items():
+        if rec.get("domainNameInGuide"):
+            names.setdefault(rec["domain"], set()).add(rec["domainNameInGuide"])
+    split = ["%s: %s" % (d, sorted(v)) for d, v in sorted(names.items()) if len(v) > 1]
+    check("each domain letter maps to exactly one printed domain name",
+          not split, "\n".join(split))
+
+    # Cluster descriptions are complete sentences in the guide. A cell whose
+    # text was clipped or half-joined does not end in a full stop.
+    cut = ["%s: %r" % (c, r["clusterText"]) for c, r in sorted(reg.items())
+           if r.get("clusterText") and not r["clusterText"].rstrip().endswith(".")]
+    check("every cluster description is a complete sentence",
+          not cut, "\n".join(cut))
+
+    # The cluster description has to be about its own domain. This is the check
+    # that catches a cross-domain steal, which is the damaging kind.
+    #
+    # NY-7.SP.1 is a known DEFECT IN THE SOURCE, not a mis-read: the guide's own
+    # cluster cell is merged across NY-7.SP.1, 7.SP.3 and 7.SP.4 (one ruled cell
+    # from y=406.0 to y=455.0 on the grade 7 chart) and labelled with the
+    # comparative-inferences cluster, so NYSED omits the random-sampling cluster
+    # heading that 7.SP.1 belongs to. We publish what the guide says.
+    off = []
+    for code, rec in sorted(reg.items()):
+        text = (rec.get("clusterText") or "").lower()
+        if not text:
+            continue
+        if not any(w in text for w in DOMAIN_WORDS.get(rec["domain"], ())):
+            off.append("%s (%s): %s" % (code, rec["domain"], rec["clusterText"]))
+    check("every cluster description is about its own domain",
+          not off, "\n".join(off))
+
+
+# ------------------------------------------------- 7c. the curriculum index
+
+def curriculum_index(payload):
+    """The published index, checked against the files it was built from.
+
+    The deep checks on the numbering itself live in
+    tools/validate_im_ms_lessons.py, which this runs rather than duplicates.
+    What is checked HERE is the part that gate cannot see: that what reached
+    site/data.json is the same thing, and that every lesson in it can be joined
+    to a standard a reader can look up."""
+    section("7c. Curriculum index -- Imagine IM New York, 6-8")
+    if "curriculum" not in payload:
+        skipped("the curriculum index is published", "payload carries no curriculum block")
+        return
+
+    gate = os.path.join(HERE, "validate_im_ms_lessons.py")
+    if os.path.exists(gate):
+        out = subprocess.run([sys.executable, gate], capture_output=True, text=True,
+                             timeout=600)
+        body = out.stdout + out.stderr
+        check("the curriculum numbering passes its own validation gate",
+              out.returncode == 0 and "safe to build on" in body,
+              "\n".join(body.strip().split("\n")[-12:]))
+
+    cur = payload["curriculum"]["grades"]
+    check("the index covers grades 6, 7 and 8",
+          sorted(cur) == ["6", "7", "8"], "found %s" % sorted(cur))
+
+    # Every unit must carry pacing. A unit with days=None renders an empty cell,
+    # which reads as "no lessons scheduled" rather than "not extracted".
+    gaps = ["grade %s unit %s" % (g, u) for g, spec in sorted(cur.items())
+            for u, unit in sorted(spec["units"].items(), key=lambda kv: int(kv[0]))
+            if not unit.get("days") or unit.get("startWeek") is None]
+    check("every unit carries its day range and start week",
+          not gaps, ", ".join(gaps))
+
+    # Lesson-level standards must be resolvable against the payload's own
+    # standards table, allowing for parent codes whose sub-standards are there.
+    # Unresolvable ones are reported, not failed: the guides index every NGMLS
+    # standard while the payload holds only the tested ones.
+    known = set(payload["standards"])
+    unresolved, lessons, with_standards = set(), 0, 0
+    for g, spec in sorted(cur.items()):
+        for u, unit in spec["units"].items():
+            for n, lesson in unit["lessons"].items():
+                lessons += 1
+                if lesson["standards"]:
+                    with_standards += 1
+                for code in lesson["standards"]:
+                    kids = [c for c in known
+                            if c.startswith(code) and len(c) == len(code) + 1]
+                    if code not in known and not kids:
+                        unresolved.add(code)
+    # Not "every lesson cites a standard" -- 17 genuinely do not. IM opens most
+    # units with an invitation to the mathematics that addresses no standard,
+    # and the guide's Standards Addressed cell for it is blank. So the check is
+    # that the lessons with nothing cited are exactly the ones the data records,
+    # which fails on a new one (an extraction miss) and on a vanished one.
+    recorded = {lid for spec in cur.values()
+                for lid in spec.get("lessonsWithoutStandards", [])}
+    bare = {"%s.%s.%s" % (g, u, n) for g, spec in cur.items()
+            for u, unit in spec["units"].items()
+            for n, lesson in unit["lessons"].items()
+            if not lesson["standards"] and not lesson["clusters"]}
+    check("the lessons citing no standard are exactly the ones recorded as such",
+          bare == recorded,
+          "unrecorded: %s\nrecorded but now cited: %s"
+          % (", ".join(sorted(bare - recorded)) or "none",
+             ", ".join(sorted(recorded - bare)) or "none"))
+    print("        %d lessons across three grades; %d cite a standard directly, "
+          "%d cite only a cluster, %d none (the guide lists none)"
+          % (lessons, with_standards, lessons - with_standards - len(bare), len(bare)))
+    if unresolved:
+        print("  note  %d cited code(s) have no counterpart in the payload's "
+              "standards table: %s" % (len(unresolved), ", ".join(sorted(unresolved))))
+
+    # The hazards have to travel with the data. They are the reason the site can
+    # be trusted about unit numbering at all.
+    check("the unit-numbering hazards are published alongside the index",
+          len(payload["curriculum"]["meta"].get("hazards", [])) >= 5,
+          "%d recorded" % len(payload["curriculum"]["meta"].get("hazards", [])))
+
+
+# ------------------------------------------- 7d. the derived unit filter
+
+def derived_unit_filter(payload):
+    """The Questions and Items tabs filter by unit without any per-item alignment.
+
+    The unit is DERIVED in the browser: an item's standard is looked up in the
+    curriculum index, and the units whose lessons teach it are the answer. These
+    checks re-derive the same mapping here, in different code, and assert the
+    two properties that make the feature safe to publish.
+
+    The first is the important one. A derived unit is not an alignment, and the
+    moment it is written onto an item it starts reading like one. Section 9
+    already asserts the negative while data/alignment.json is absent; this names
+    the dependency so nobody satisfies that check later by populating the fields
+    and quietly turns a derivation into a claim."""
+    section("7d. Derived unit filter")
+    if "curriculum" not in payload:
+        skipped("the derived unit filter has options for every grade",
+                "payload carries no curriculum block")
+        return
+
+    leaked = [i["id"] for i in payload["items"]
+              if i.get("unit") is not None or i.get("lesson") is not None
+              or i.get("sectionLetter") is not None]
+    check("no derived unit has been written onto an item",
+          not leaked,
+          "%d item(s) carry a unit or lesson, e.g. %s -- the unit filter derives "
+          "these in the browser and they must stay null until a real per-item "
+          "alignment exists" % (len(leaked), ", ".join(leaked[:5])))
+
+    known = set(payload["standards"])
+
+    def expand(code):
+        if code in known:
+            return [code]
+        return sorted(c for c in known
+                      if c.startswith(code) and len(c) == len(code) + 1
+                      and c[-1].isalpha())
+
+    empty, coverage = [], []
+    for grade, spec in sorted(payload["curriculum"]["grades"].items()):
+        index = {}
+        for code, lessons in spec["standardToLessons"].items():
+            units = {l.split(".")[1] for l in lessons}
+            for c in (expand(code) or [code]):
+                index.setdefault(c, set()).update(units)
+        items = [i for i in payload["items"] if i["grade"] == int(grade)]
+        units, bare = set(), 0
+        for item in items:
+            hit = set(index.get(item["standard"], ()))
+            for c in item.get("secondary") or []:
+                hit |= set(index.get(c, ()))
+            if hit:
+                units |= hit
+            else:
+                bare += 1
+        if not units:
+            empty.append("grade %s" % grade)
+        coverage.append("grade %s: %d unit options over %d items, %d with no unit"
+                        % (grade, len(units), len(items), bare))
+
+    # An empty option list means the standard-to-lesson join silently broke --
+    # a parent-code regression would do it -- and the dropdown would render with
+    # nothing in it rather than failing.
+    check("the derived unit filter has options for every grade",
+          not empty, "no unit resolves for %s" % ", ".join(empty))
+
+    # The caveat has to ship with the filter. A unit dropdown with no note beside
+    # it reads as an alignment, which is exactly what this is not.
+    html = open(os.path.join(SITE, "index.html")).read()
+    check("the derived-unit caveat ships with the filter",
+          "derived from the standard, not assigned per item" in html)
+    for line in coverage:
+        print("        %s" % line)
 
 
 # ----------------------------------------------------------------- 8. no item text
@@ -778,6 +1035,9 @@ def main():
     item_structure(payload)
     page_links(payload)
     blueprint_sanity(payload)
+    standards_registry()
+    curriculum_index(payload)
+    derived_unit_filter(payload)
     transcription(payload)
     alignment(payload)
     privacy(payload)
