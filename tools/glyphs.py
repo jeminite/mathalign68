@@ -63,6 +63,12 @@ MIN_H, MAX_H = 0.5, 16.0
 # same text. Thin rules get their own, much wider allowance.
 RULE_MAX_W = 90.0
 RULE_MAX_H = 2.2
+# A rule gets its own floor. MIN_H is 0.5pt, and the minus of a SUPERSCRIPT is
+# drawn at about 70% of a full-size one: 0.48pt against 0.68pt. It failed the
+# general test by two hundredths of a point and was discarded, so grade 8's
+# (5^2)(7^-2)(5^4) published as (5^2)(7^2)(5^4) -- a different expression, and
+# the negative exponent is the whole point of the item.
+RULE_MIN_H = 0.2
 
 # Points are normalised into the glyph's own bounding box, so distance is in
 # fractions of the glyph. 0.04 is four percent of a glyph's width.
@@ -75,6 +81,19 @@ TOLERANCE = 0.04
 # it every stacked pair of glyphs becomes a fraction, or every fraction becomes
 # a subtraction.
 RULE = "@rule"
+
+# Characters that are SMALL AND RAISED BY DESIGN. A degree sign and a prime sit
+# high and short exactly like an exponent does, so the superscript test would
+# wrap them and publish 60<sup>deg</sup>F. They are already the character they
+# mean; nothing goes above the line.
+INTRINSICALLY_RAISED = set("\u00b0\u2032\u2033")
+
+# Operators are centred on the maths axis, not rested on the baseline, and the
+# thin ones are short. That is the same signature an exponent has, so "=" was
+# swept into the superscript and 9^2 + 12^2 = 15^2 published as
+# "9^2 + 12^(2 =) 15^2". An operator is never an exponent here; a superscript
+# MINUS is drawn as a rule and handled before this test is reached.
+CENTRED_OPERATORS = set("=+<>\u00d7\u00f7\u00b1\u2260\u2264\u2265\u2212")
 
 # Inferring spaces from horizontal gaps works for digits and letters but not
 # for narrow punctuation: a period is positioned with enough side bearing that
@@ -134,7 +153,7 @@ def shape_of(drawing):
     is_rule = h < RULE_MAX_H and w < RULE_MAX_W
     if not is_rule and not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
         return None
-    if is_rule and not (MIN_W < w and MIN_H < h):
+    if is_rule and not (MIN_W < w and RULE_MIN_H < h):
         return None
     pts = _points(drawing)
     if not pts:
@@ -378,6 +397,74 @@ class GlyphTable:
             if not placed:
                 lines.append({"y0": rect.y0, "y1": rect.y1, "idx": [i]})
 
+        # ---- exponents --------------------------------------------------
+        # A superscript overlaps its base vertically, so the line grouper above
+        # correctly puts them on one line -- and then the emitter ran them
+        # together: 9 squared came out as "92", and 9^2 + 12^2 = 15^2 as
+        # "92 + 122 = 152". Four of grade 8's answer choices differed only in
+        # where the exponents sat, so the reader got four identical options.
+        #
+        # A superscript is SHORTER than the line's body text and its foot sits
+        # clearly above the body's baseline. Both tests are needed: a comma is
+        # short but sits low, and a parenthesis is tall but rises high.
+        supers = set()
+        for line in lines:
+            rects = [glyphs[i][0] for i in line["idx"]]
+            if len(rects) < 2:
+                continue
+            # THE BASELINE IS THE FOOT OF THE TALLEST GLYPHS ON THE LINE.
+            #
+            # Two earlier rules both failed. A median over every glyph made the
+            # PARENTHESES the body in (5^2)(7^-2)(5^4) -- they are half again as
+            # tall as the digits -- so the digits looked short and raised and
+            # 5^2 came out as a bare superscript "52". Taking the most common
+            # foot instead broke 1^16, where the two superscript glyphs
+            # outnumber the single base and so became the "baseline", flattening
+            # it to "116".
+            #
+            # Height is the reliable signal. Superscripts are always drawn
+            # smaller than the text they sit on, so the tallest glyphs are body
+            # text by definition, and their feet are the baseline -- whether the
+            # line is mostly superscripts or mostly not.
+            sized = [glyphs[i][0] for i in line["idx"] if glyphs[i][2] != RULE]
+            if not sized:
+                continue
+            max_h = max(r.height for r in sized)
+            tall = sorted((r.y1, r.height) for r in sized if r.height >= 0.85 * max_h)
+            baseline = tall[len(tall) // 2][0]
+            body_h = sorted(h for _, h in tall)[len(tall) // 2]
+            if body_h <= 0:
+                continue
+
+            raised = []
+            for i in line["idx"]:
+                rect, _, label = glyphs[i]
+                if label in INTRINSICALLY_RAISED or label in CENTRED_OPERATORS:
+                    continue
+                # 0.35 of the body height separates a real exponent, raised by
+                # about half its own height, from an operator centred on the
+                # maths axis, raised by about a quarter.
+                if (rect.height < 0.78 * body_h
+                        and rect.y1 < baseline - 0.35 * body_h):
+                    if label == RULE:
+                        raised.append(i)
+                    else:
+                        supers.add(i)
+
+            # A RULE ONLY COUNTS AS AN EXPONENT'S MINUS IF IT PREFIXES ONE.
+            # The geometric test alone is not enough: a lowercase x has no
+            # ascender, so a line of "x -" measures its body at the x-height and
+            # an ordinary minus looks raised by half of it. Grade 7 already
+            # publishes "x -", and it briefly became "x ^-". A negative exponent
+            # is never a lone sign -- something superscript always follows it.
+            by_x = sorted(line["idx"], key=lambda j: glyphs[j][0].x0)
+            for i in raised:
+                at = by_x.index(i)
+                if at + 1 < len(by_x) and by_x[at + 1] in supers:
+                    supers.add(i)
+            if len(supers & set(line["idx"])) == len(line["idx"]):
+                supers -= set(line["idx"])
+
         order = []
         for line in sorted(lines, key=lambda l: l["y0"]):
             order.extend(sorted(line["idx"], key=lambda i: glyphs[i][0].x0))
@@ -386,22 +473,47 @@ class GlyphTable:
         gap_threshold = max(1.0, widths[len(widths) // 2] / 3.0)
 
         def text_of(indices):
-            parts = []
+            """A run of glyphs as text -- exponents included.
+
+            A numerator is a line of its own, so it has its own baseline and its
+            own exponents: grade 8 asks for 5^6 over 7^2, and without this the
+            fraction published as 56 over 72, which is a different number."""
+            parts, sup = [], False
             for j in sorted(indices, key=lambda j: glyphs[j][0].x0):
                 lab = glyphs[j][2]
+                if (j in supers) != sup:
+                    parts.append("<sup>" if j in supers else "</sup>")
+                    sup = j in supers
                 if lab == RULE:
                     parts.append("\u2212")      # a sign inside the fraction
                 elif lab is None:
                     parts.append("\ufffd")
                 else:
                     parts.append(escape(lab))
+            if sup:
+                parts.append("</sup>")
             return "".join(parts)
 
         out, unknown, prev = [], 0, None
+        in_sup = False
+
+        def close_sup():
+            if out and out[-1] == "<sup>":
+                out.pop()                       # nothing landed inside it
+            else:
+                out.append("</sup>")
+
         for i in order:
             rect, shape, label = glyphs[i]
             if i in consumed and i not in overbars:
                 continue
+            want_sup = i in supers and i not in fractions and i not in overbars
+            # Close before the spacing test and open after it, so a separating
+            # space lands outside the tag: "(9 + 12) <sup>2</sup>", never
+            # "(9 + 12)<sup> 2</sup>".
+            if in_sup and not want_sup:
+                close_sup()
+                in_sup = False
             if prev is not None:
                 same_line = rect.y0 < prev.y1 - 0.5 and rect.y1 > prev.y0 + 0.5
                 if not same_line and i not in fractions:
@@ -413,6 +525,9 @@ class GlyphTable:
                             or label in NO_SPACE_BEFORE
                             or last in NO_SPACE_AFTER):
                         out.append(" ")
+            if want_sup and not in_sup:
+                out.append("<sup>")
+                in_sup = True
             if i in fractions:
                 num, den = fractions[i]
                 n, d = text_of(num), text_of(den)
@@ -430,4 +545,6 @@ class GlyphTable:
             else:
                 out.append(escape(label))
             prev = rect
+        if in_sup:
+            close_sup()
         return "".join(out).strip(), unknown
