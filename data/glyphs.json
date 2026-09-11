@@ -3,7 +3,7 @@
     "generatedBy": "tools/label_glyphs.py",
     "note": "Vector glyph shapes from the released-items PDFs, mapped to the characters they draw. HAND-LABELLED: a script builds the clusters, a person (or a vision pass that is then spot-checked) supplies the `label`. An unlabelled cluster makes its item fail to decode rather than decode wrongly.",
     "clusters": 271,
-    "labelled": 83,
+    "labelled": 84,
     "instances": 10945,
     "tolerance": 0.04
   },
@@ -49322,7 +49322,7 @@
         "items": 8,
         "degenerate": false
       },
-      "label": null,
+      "label": "\u25cb",
       "count": 2,
       "samples": [
         {

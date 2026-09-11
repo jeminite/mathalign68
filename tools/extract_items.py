@@ -101,6 +101,11 @@ LINE_TOL = 2.0          # chars within this y are one line
 # like a sentence -- item 3 began "between the price, p," instead of "A farm
 # sells blueberries by the pound to customers."
 ANCHOR_LEAD = 12.0
+# How far above or below its bar a fraction's content can sit. This is
+# glyphs.py's own window, and it must stay the same: at 22pt the reach spanned
+# the gap between two bullets, and the minus of grade 8 item 41's "C (-9,3)" was
+# pulled up into "B (-3,8)".
+FRACTION_REACH = 14.0
 HOLE_GAP = 6.0          # vector paths closer than this are one hole
 INLINE_MAX_H = 20.0     # taller than this is not inline maths
 FIGURE_MIN_AREA = 2000.0
@@ -241,6 +246,11 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
     choice_extra = {}
     rendered_lines = []
 
+    # How wide this item's prose actually runs, used as the right bound for a
+    # line that carries no text of its own.
+    column_x1 = max([b[2] for row in lines.values() for b, c, _ in row if c.strip()]
+                    or [MARGIN_X + 400.0])
+
     for ly in sorted(lines):
         row = sorted(lines[ly], key=lambda t: t[0][0])
         occupied = [(b[0], b[2]) for b, _, _ in row]
@@ -255,12 +265,92 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         # value that wraps to the start of the next line sits to the LEFT of
         # that line's text. Constraining both sides cost item 48 its $3.75 --
         # which is the very hole that first showed this approach works.
-        line_x1 = max(hi for lo, hi in occupied)
+        # The right bound must come from REAL TEXT, not from whitespace. Each
+        # bullet of item 41's vertex list -- "A (6, -4)" -- is drawn entirely as
+        # artwork, and its whole text layer is one space character at x=130. The
+        # bound was therefore x=143, which cut each bullet in half: "A (6," was
+        # pulled into the sentence and "-4)" was left behind to be published as
+        # a stray displayed expression, so the stem read "A (6, . B (- . C (-".
+        # A line with no real text has no sentence to protect, so the bound
+        # falls back to the width of the item's own text column.
+        solid = [(b[0], b[2]) for b, c, _ in row if c.strip()]
+        line_x1 = max(hi for lo, hi in solid) if solid else column_x1
         free = [dr for dr in band
                 if not any(dr["rect"].x0 < hi - 0.4 and dr["rect"].x1 > lo + 0.4
                            for lo, hi in occupied)
                 and MARGIN_X - 6 <= dr["rect"].x0 <= line_x1 + 12
                 and not in_figure(dr["rect"])]
+
+        # A STACKED FRACTION CAN BE TALLER THAN THE LINE BAND, and one with
+        # exponents is taller still: grade 8's 12^20 over 12^4 spans 28pt where
+        # the band allows about 15. The numerator's exponent and the
+        # denominator's base fell outside it, so the fraction decoded as 12 over
+        # 4 -- a different number -- and the two missing pieces were published
+        # as stray expressions beside it. Whatever completes a bar already in
+        # the band is pulled in, however far above or below it sits.
+        # GROW EACH ACCEPTED RUN RIGHTWARDS. The bound above is deliberately
+        # tight, because a graph's axis label can share a prose line's y-band
+        # from far out in the margin -- items 27 and 33 gain a stray "y" and "p"
+        # the moment it is relaxed. But a tight bound also cuts a value in half:
+        # item 43's price list published "$1" where the page says "$12.50",
+        # leaving "2.50" to be shown as a stray expression beside it.
+        #
+        # Adjacency separates the two. A digit that continues a value sits hard
+        # against the run already accepted; an axis label sits alone in white
+        # space. So the bound decides what may START a run, and anything
+        # touching that run joins it however far right it reaches.
+        in_free = {id(dr) for dr in free}
+        growing = True
+        while growing:
+            growing = False
+            for dr in band:
+                if id(dr) in in_free or id(dr) in consumed or in_figure(dr["rect"]):
+                    continue
+                r = dr["rect"]
+                for other in free:
+                    o = other["rect"]
+                    if (r.y0 < o.y1 and r.y1 > o.y0
+                            and -1.0 <= r.x0 - o.x1 <= 6.0):
+                        free.append(dr)
+                        in_free.add(id(dr))
+                        growing = True
+                        break
+
+        # A BAR IS A RULE WITH CONTENT ON BOTH SIDES OF IT. Testing only "thin
+        # and not too wide" also matched every decimal point and every minus
+        # sign, and then this pulled a neighbour in through them: $5.00 gained a
+        # stray 0, $176.32 a stray full stop, and -45 over 9 became -45 over -9,
+        # which is a different number. That both-sides test is the same one
+        # glyphs.py uses to tell a fraction from a minus.
+        def is_bar(r):
+            if not (r.height < 2.2 and 3.0 < r.width < 90):
+                return False
+            above = below = False
+            for other in glyph_draws:
+                o = other["rect"]
+                if o is r:
+                    continue
+                cx, cy = (o.x0 + o.x1) / 2.0, (o.y0 + o.y1) / 2.0
+                if not (r.x0 - 1.5 <= cx <= r.x1 + 1.5):
+                    continue
+                if 0 < r.y0 - cy < FRACTION_REACH:
+                    above = True
+                elif 0 < cy - r.y1 < FRACTION_REACH:
+                    below = True
+            return above and below
+
+        bars = [dr["rect"] for dr in free if is_bar(dr["rect"])]
+        for dr in glyph_draws:
+            if id(dr) in in_free or id(dr) in consumed or in_figure(dr["rect"]):
+                continue
+            r = dr["rect"]
+            cx, cy = (r.x0 + r.x1) / 2.0, (r.y0 + r.y1) / 2.0
+            for bar in bars:
+                if (bar.x0 - 1.5 <= cx <= bar.x1 + 1.5
+                        and abs(cy - (bar.y0 + bar.y1) / 2.0) < FRACTION_REACH):
+                    free.append(dr)
+                    in_free.add(id(dr))
+                    break
 
         pieces = [(b[0], c) for b, c, f in row]
 

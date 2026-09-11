@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/merge_content.py",
-    "updated": "2026-09-10",
+    "updated": "2026-09-11",
     "note": "HAND-OWNED. The transcription: stems, choices, figures and constructed-response answers, merged from a reviewed spec in provenance/merge_<testId>.json. Not regenerable -- unlike data/items.json, which is. Do not hand-edit this file either; edit the spec and re-run tools/merge_content.py.",
     "tests": [
       "g7-2026"
@@ -17,8 +17,8 @@
         "Item 7's repeating-decimal overbar covers '.3' rather than just the '3', so 3.3-repeating renders with the bar one character too wide.",
         "Item 47 is a displayed expression published as an image rather than as text. It reads correctly; it is simply less good than markup would be. Item 20 was in the same state until wide fraction bars were admitted to the glyph table, and now renders as text.",
         "Item 31's displayed expression decodes as '(5.2 - 1.6) + (---) = 0', where the three rules are an answer box rather than minus signs.",
-        "Items 43's two stray '.50' and '.25' fragments are pieces of its pizza-price list that escaped the figure zone.",
-        "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification."
+        "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification.",
+        "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems."
       ]
     }
   },
@@ -1173,8 +1173,8 @@
     "g7-2026-034": {
       "id": "g7-2026-034",
       "item": 34,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span> ?",
-      "stem": "Which expression is equivalent to (−45)/(9) ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?",
+      "stem": "Which expression is equivalent to (−45)/(−9) ?",
       "prose": "Which expression is equivalent to  ?",
       "creditLine": null,
       "instructions": [],
@@ -1247,14 +1247,12 @@
     "g7-2026-036": {
       "id": "g7-2026-036",
       "item": 36,
-      "stemHtml": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x −</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
-      "stem": "Ashley buys a book that is on sale for 25% off the original price, x. The expression x − can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stemHtml": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x − 0.25x</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stem": "Ashley buys a book that is on sale for 25% off the original price, x. The expression x − 0.25x can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
       "prose": "Ashley buys a book that is on sale for  off the original price, . The expression can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
       "creditLine": null,
       "instructions": [],
-      "display": [
-        "<span class=\"math\">0.25x</span>"
-      ],
+      "display": [],
       "choices": [
         {
           "label": "A",
@@ -1424,18 +1422,15 @@
     "g7-2026-043": {
       "id": "g7-2026-043",
       "item": 43,
-      "stemHtml": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12</span> <span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10</span> <span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
-      "stem": "A customer orders a large pizza with 2 toppings and a medium pizza with 2 toppings at a restaurant. The prices for the pizzas and toppings are listed below. • Large pizza without toppings: $12 • Medium pizza without toppings: $10 • Toppings: $1.25 each A 20% discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
+      "stemHtml": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12.50</span> <span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10.25</span> <span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
+      "stem": "A customer orders a large pizza with 2 toppings and a medium pizza with 2 toppings at a restaurant. The prices for the pizzas and toppings are listed below. • Large pizza without toppings: $12.50 • Medium pizza without toppings: $10.25 • Toppings: $1.25 each A 20% discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
       "prose": "A customer orders a large pizza with  toppings and a medium pizza with  toppings at a restaurant. The prices for the pizzas and toppings are listed below. Large pizza without toppings: Medium pizza without toppings: Toppings:  each A  discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
       "creditLine": "This question is worth 2 credits.",
       "instructions": [
         "Show your work.",
         "Answer"
       ],
-      "display": [
-        "<span class=\"math\">.50</span>",
-        "<span class=\"math\">.25</span>"
-      ],
+      "display": [],
       "choices": [],
       "figures": [],
       "tablesInImage": false,

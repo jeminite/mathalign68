@@ -10,7 +10,7 @@
     "items": 42,
     "itemsWithUnresolved": 0,
     "figures": 15,
-    "displayExpressions": 6
+    "displayExpressions": 3
   },
   "items": [
     {
@@ -178,7 +178,7 @@
             221.14
           ],
           "paths": 82,
-          "decodedLabels": "��� � ����� ������ �� � � <sup>�</sup> � <sup>�</sup> � <sup>�</sup> � � �� <sup>�</sup> �� <sup>�</sup> � � � � ����� ���������� � � � � � ��� � ��� ��� � ������",
+          "decodedLabels": "��� � ����� ������ �� � �<sup>�</sup> �<sup>�</sup> �<sup>�</sup> � � ��<sup>�</sup> ��<sup>�</sup> � � � � ����� ���������� � � � � � ��� � ��� ��� � ������",
           "undecodedGlyphs": 73,
           "alt": "",
           "longDescription": ""
@@ -629,7 +629,7 @@
             345.11
           ],
           "paths": 95,
-          "decodedLabels": "�� �� ��� ������ � � �� �� � � <sup>�</sup> � �� � � � � � � � � � � � � <sup>�</sup> � � � � � � � � � � � � � � � � ������ �� ���� ����",
+          "decodedLabels": "�� �� ��� ������ � � �� �� � �<sup>�</sup> � �� � � � � � � � � � � � �<sup>�</sup> � � � � � � � � � � � � � � � � ������ �� ���� ����",
           "undecodedGlyphs": 70,
           "alt": "",
           "longDescription": ""
@@ -692,7 +692,7 @@
             261.34
           ],
           "paths": 92,
-          "decodedLabels": "���� � ���� � �<sup>�</sup> � <sup>�</sup> � � � <sup>�</sup> �� <sup>� �</sup>� ��������� <sup>•</sup> • • <sup>• •</sup> • • � � <sup>• • • • •</sup> • • • • • � � � � � � � � � � � ������ �� ����� � �",
+          "decodedLabels": "���� � ���� � �<sup>�</sup> �<sup>�</sup> � � �<sup>�</sup> ��<sup>� �</sup>� ���������<sup>•</sup> • •<sup>• •</sup> • • � �<sup>• • • • •</sup> • • • • • � � � � � � � � � � � ������ �� ����� � �",
           "undecodedGlyphs": 60,
           "alt": "",
           "longDescription": ""
@@ -907,7 +907,7 @@
             404.49
           ],
           "paths": 352,
-          "decodedLabels": "� � � � <sup>� �</sup> � <sup>�</sup> � � <sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � <sup>�</sup> ��� <sup>� �</sup> � <sup>�</sup> � � <sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� � � � ",
+          "decodedLabels": "� � � �<sup>� �</sup> �<sup>�</sup> � �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>�</sup> ���<sup>� �</sup> �<sup>�</sup> � �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� � � � � � � �",
           "undecodedGlyphs": 344,
           "alt": "",
           "longDescription": ""
@@ -965,7 +965,7 @@
             194.53,
             506.73
           ],
-          "html": "<span class=\"math\">4(<sup>x</sup> + 2) = <span class=\"frac\"><span>12</span><span>−0.25</span></span></span>"
+          "html": "<span class=\"math\">4(x + 2) = <span class=\"frac\"><span>12</span><span>−0.25</span></span></span>"
         }
       ],
       "figures": [],
@@ -1258,7 +1258,7 @@
             336.03
           ],
           "paths": 189,
-          "decodedLabels": "����� ���� ���� ������ � � <sup>� � �</sup> � <sup>� � �</sup> � <sup>�</sup> � <sup>� �</sup> � � � <sup>� �</sup> � <sup>� � � � � �</sup> � <sup>�</sup> � <sup>� �</sup> � <sup>� �</sup> � � <sup>� �</sup> � • � � � � � � � � � �� � � � � � � � � � � �• � � � � � � � � � � � <sup>� •</sup> � � � � � � � � � � <sup>� •</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
+          "decodedLabels": "����� ���� ���� ������ � �<sup>� � �</sup> �<sup>� � �</sup> �<sup>�</sup> �<sup>� �</sup> � � �<sup>� �</sup> �<sup>� � � � � �</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>� �</sup> � • � � � � � � � � � �� � � � � � � � � � � �• � � � � � � � � � � �<sup>� •</sup> � � � � � � � � � �<sup>� •</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
           "undecodedGlyphs": 183,
           "alt": "",
           "longDescription": ""
@@ -1550,9 +1550,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span> ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?",
       "stemLines": [
-        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>9</span></span></span> ?"
+        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?"
       ],
       "prose": "Which expression is equivalent to  ?",
       "proseAllLines": "Which expression is equivalent to  ?",
@@ -1641,9 +1641,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x −</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
+      "stemHtml": "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x − 0.25x</span> can be used to determine the final price of the book. Which expression can also be used to determine the final price of the book?",
       "stemLines": [
-        "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x −</span>",
+        "Ashley buys a book that is on sale for <span class=\"math\">25%</span> off the original price, <span class=\"math\">x</span>. The expression <span class=\"math\">x − 0.25x</span>",
         "can be used to determine the final price of the book. Which expression can also be used to",
         "determine the final price of the book?"
       ],
@@ -1677,17 +1677,7 @@
         }
       ],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            514.45,
-            259.46,
-            539.94,
-            267.51
-          ],
-          "html": "<span class=\"math\">0.25x</span>"
-        }
-      ],
+      "display": [],
       "figures": [],
       "unresolved": []
     },
@@ -1881,12 +1871,12 @@
       "credits": 2,
       "session": 2,
       "creditLine": "This question is worth 2 credits.",
-      "stemHtml": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12</span> <span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10</span> <span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
+      "stemHtml": "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a restaurant. The prices for the pizzas and toppings are listed below. <span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12.50</span> <span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10.25</span> <span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order, excluding tax, after the discount?",
       "stemLines": [
         "A customer orders a large pizza with <span class=\"math\">2</span> toppings and a medium pizza with <span class=\"math\">2</span> toppings at a",
         "restaurant. The prices for the pizzas and toppings are listed below.",
-        "<span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12</span>",
-        "<span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10</span>",
+        "<span class=\"math\">•</span> Large pizza without toppings: <span class=\"math\">$12.50</span>",
+        "<span class=\"math\">•</span> Medium pizza without toppings: <span class=\"math\">$10.25</span>",
         "<span class=\"math\">•</span> Toppings: <span class=\"math\">$1.25</span> each",
         "A <span class=\"math\">20%</span> discount is applied to the customer’s order. What is the total price of the order,",
         "excluding tax, after the discount?"
@@ -1899,26 +1889,7 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            295.6,
-            124.4,
-            308.74,
-            132.46
-          ],
-          "html": "<span class=\"math\">.50</span>"
-        },
-        {
-          "rect": [
-            309.85,
-            144.65,
-            322.92,
-            152.71
-          ],
-          "html": "<span class=\"math\">.25</span>"
-        }
-      ],
+      "display": [],
       "figures": [],
       "unresolved": []
     },
@@ -2019,7 +1990,7 @@
             350.47
           ],
           "paths": 254,
-          "decodedLabels": "����<sup>�</sup>� �������� �����<sup>�</sup>� �������� � � <sup>� � � � �</sup> � � <sup>�</sup> � <sup>� � � �</sup> � � � � <sup>� �</sup> � <sup>� � � �</sup> � � <sup>�</sup> � <sup>�</sup> � <sup>� � � � � �</sup> � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � � <sup>•</sup> � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup",
+          "decodedLabels": "����<sup>�</sup>� �������� �����<sup>�</sup>� �������� � �<sup>� � � � �</sup> � �<sup>�</sup> �<sup>� � � �</sup> � � � �<sup>� �</sup> �<sup>� � � �</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>� � � � � �</sup> � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � �",
           "undecodedGlyphs": 243,
           "alt": "",
           "longDescription": ""

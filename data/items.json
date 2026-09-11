@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/build_items.py",
-    "generated": "2026-09-10",
+    "generated": "2026-09-11",
     "note": "GENERATED. Do not hand-edit -- preflight rebuilds this from provenance/ and fails if it differs. Fix the extractor or data/blueprint.json instead.",
     "standardsEra": "nextgen",
     "grades": [
@@ -631,7 +631,7 @@
       "label": "Grade 8, 2026",
       "standardsEra": "nextgen",
       "releasedItemsUrl": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g8.pdf",
-      "scoringMaterialsUrl": null,
+      "scoringMaterialsUrl": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g8.pdf",
       "pdfPageCount": 42,
       "mapPages": [
         42

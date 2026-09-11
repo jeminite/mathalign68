@@ -407,38 +407,54 @@ class GlyphTable:
         # A superscript is SHORTER than the line's body text and its foot sits
         # clearly above the body's baseline. Both tests are needed: a comma is
         # short but sits low, and a parenthesis is tall but rises high.
-        supers = set()
-        for line in lines:
-            rects = [glyphs[i][0] for i in line["idx"]]
+        # ---- exponents --------------------------------------------------
+        # A superscript overlaps its base vertically, so the line grouper above
+        # correctly puts them on one line -- and then the emitter ran them
+        # together: 9 squared came out as "92", and 9^2 + 12^2 = 15^2 as
+        # "92 + 122 = 152". Four of grade 8's answer choices differed only in
+        # where the exponents sat, so the reader got four identical options.
+        #
+        # THE COMPARISON MUST BE WITHIN ONE RUN OF TEXT, not one "line". A
+        # stacked fraction overlaps its neighbours vertically, so 4(x + 2) = 12
+        # over 0.25 is all one line here, and the denominator's feet dragged the
+        # baseline down until the x in (x + 2) looked raised. A fraction's
+        # numerator and denominator each sit on their own baseline and are
+        # measured on their own.
+        supers, middots = set(), set()
+
+        def mark(indices):
+            rects = [glyphs[i][0] for i in indices]
             if len(rects) < 2:
-                continue
-            # THE BASELINE IS THE FOOT OF THE TALLEST GLYPHS ON THE LINE.
-            #
-            # Two earlier rules both failed. A median over every glyph made the
-            # PARENTHESES the body in (5^2)(7^-2)(5^4) -- they are half again as
-            # tall as the digits -- so the digits looked short and raised and
-            # 5^2 came out as a bare superscript "52". Taking the most common
-            # foot instead broke 1^16, where the two superscript glyphs
-            # outnumber the single base and so became the "baseline", flattening
-            # it to "116".
-            #
-            # Height is the reliable signal. Superscripts are always drawn
-            # smaller than the text they sit on, so the tallest glyphs are body
-            # text by definition, and their feet are the baseline -- whether the
-            # line is mostly superscripts or mostly not.
-            sized = [glyphs[i][0] for i in line["idx"] if glyphs[i][2] != RULE]
+                return
+            # The baseline is the foot of the TALLEST glyphs. A median over
+            # every glyph made the PARENTHESES the body in (5^2)(7^-2)(5^4) --
+            # they are half again as tall as the digits -- so the digits looked
+            # raised and 5^2 lost its base. The most common foot instead broke
+            # 1^16, where two superscript glyphs outnumber the single base.
+            # Superscripts are always drawn smaller than the text they sit on,
+            # so the tallest glyphs are body text by definition.
+            sized = [glyphs[i][0] for i in indices if glyphs[i][2] != RULE]
             if not sized:
-                continue
+                return
             max_h = max(r.height for r in sized)
             tall = sorted((r.y1, r.height) for r in sized if r.height >= 0.85 * max_h)
             baseline = tall[len(tall) // 2][0]
             body_h = sorted(h for _, h in tall)[len(tall) // 2]
             if body_h <= 0:
-                continue
+                return
 
+            # A '.' SITTING ABOVE THE BASELINE IS A MULTIPLICATION DOT. The
+            # shapes are identical -- a tiny filled square -- so only its height
+            # on the line tells them apart, exactly as a horizontal rule is told
+            # from a minus by what sits around it. Grade 8 writes 16^8 . 16^12
+            # for a product, and a full stop there reads as the end of a
+            # sentence in the middle of an expression.
             raised = []
-            for i in line["idx"]:
+            for i in indices:
                 rect, _, label = glyphs[i]
+                if label == "." and rect.y1 < baseline - 0.2 * body_h:
+                    middots.add(i)
+                    continue
                 if label in INTRINSICALLY_RAISED or label in CENTRED_OPERATORS:
                     continue
                 # 0.35 of the body height separates a real exponent, raised by
@@ -452,18 +468,29 @@ class GlyphTable:
                         supers.add(i)
 
             # A RULE ONLY COUNTS AS AN EXPONENT'S MINUS IF IT PREFIXES ONE.
-            # The geometric test alone is not enough: a lowercase x has no
-            # ascender, so a line of "x -" measures its body at the x-height and
-            # an ordinary minus looks raised by half of it. Grade 7 already
+            # The geometry alone is not enough: a lowercase x has no ascender,
+            # so a run of "x -" measures its body at the x-height and an
+            # ordinary minus looks raised by half of it. Grade 7 already
             # publishes "x -", and it briefly became "x ^-". A negative exponent
             # is never a lone sign -- something superscript always follows it.
-            by_x = sorted(line["idx"], key=lambda j: glyphs[j][0].x0)
+            by_x = sorted(indices, key=lambda j: glyphs[j][0].x0)
             for i in raised:
                 at = by_x.index(i)
                 if at + 1 < len(by_x) and by_x[at + 1] in supers:
                     supers.add(i)
-            if len(supers & set(line["idx"])) == len(line["idx"]):
-                supers -= set(line["idx"])
+
+            # If everything in the run looks raised, nothing is: the run is
+            # simply set in a smaller face than the test assumed.
+            if len(supers & set(indices)) == len(indices):
+                supers.difference_update(indices)
+
+        for num, den in fractions.values():
+            mark(num)
+            mark(den)
+        for group in overbars.values():
+            mark(group)
+        for line in lines:
+            mark([i for i in line["idx"] if i not in consumed])
 
         order = []
         for line in sorted(lines, key=lambda l: l["y0"]):
@@ -526,6 +553,11 @@ class GlyphTable:
                             or last in NO_SPACE_AFTER):
                         out.append(" ")
             if want_sup and not in_sup:
+                # An exponent binds tight to what it sits on. The gap test uses
+                # the median glyph width, and a superscript is narrower than
+                # that, so (16^5)^4 came out as "(16^5) ^4".
+                if out and out[-1] == " ":
+                    out.pop()
                 out.append("<sup>")
                 in_sup = True
             if i in fractions:
@@ -537,6 +569,8 @@ class GlyphTable:
                 digits = text_of(overbars[i])
                 unknown += digits.count("\ufffd")
                 out.append('<span class="repeat">%s</span>' % digits)
+            elif i in middots:
+                out.append("\u00b7")            # multiplication, not a full stop
             elif label == RULE:
                 out.append("\u2212")            # a bare rule is a minus sign
             elif label is None:

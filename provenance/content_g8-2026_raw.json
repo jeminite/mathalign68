@@ -10,7 +10,7 @@
     "items": 42,
     "itemsWithUnresolved": 0,
     "figures": 21,
-    "displayExpressions": 8
+    "displayExpressions": 4
   },
   "items": [
     {
@@ -67,7 +67,7 @@
             485.25
           ],
           "paths": 162,
-          "decodedLabels": "� � � � � � � <sup>�</sup> � • � � � • � � � � �� � �� �� �� �� �� �� �� �� �� � � � � � � � � � � � � � � �� <sup>�� •</sup>� �� �� �� �� �� �� �� �� � �",
+          "decodedLabels": "� � � � � � �<sup>�</sup> � • � � � • � � � � �� � �� �� �� �� �� �� �� �� �� � � � � � � � � � � � � � � ��<sup>�� •</sup>� �� �� �� �� �� �� �� �� � �",
           "undecodedGlyphs": 74,
           "alt": "",
           "longDescription": ""
@@ -132,7 +132,7 @@
             413.95
           ],
           "paths": 135,
-          "decodedLabels": "����� � ����� ������ � � <sup>� � � � �</sup> � � <sup>�</sup> � <sup>�</sup> � <sup>� �</sup> � <sup>� �</sup> � <sup>� �</sup> � <sup>� �</sup> � � <sup>�</sup> � <sup>�</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � <sup>•</sup> � � � � � � � � � � � � <sup>�</sup> � � � ������ �� ������ ��������",
+          "decodedLabels": "����� � ����� ������ � �<sup>� � � � �</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>�</sup> �<sup>�</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � �<sup>�</sup> � � � ������ �� ������ ��������",
           "undecodedGlyphs": 132,
           "alt": "",
           "longDescription": ""
@@ -147,9 +147,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12</span><span>4</span></span></span> ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12<sup>20</sup></span><span>12<sup>4</sup></span></span></span> ?",
       "stemLines": [
-        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12</span><span>4</span></span></span> ?"
+        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12<sup>20</sup></span><span>12<sup>4</sup></span></span></span> ?"
       ],
       "prose": "Which expression is equivalent to  ?",
       "proseAllLines": "Which expression is equivalent to  ?",
@@ -181,26 +181,7 @@
         }
       ],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            262.01,
-            60.96,
-            269.67,
-            66.67
-          ],
-          "html": "<span class=\"math\">20</span>"
-        },
-        {
-          "rect": [
-            253.15,
-            81.53,
-            263.52,
-            89.48
-          ],
-          "html": "<span class=\"math\">12</span>"
-        }
-      ],
+      "display": [],
       "figures": [],
       "unresolved": []
     },
@@ -260,7 +241,7 @@
             307.75
           ],
           "paths": 142,
-          "decodedLabels": "������ ����� � � <sup>� �</sup> � <sup>� � �</sup> � � <sup>� �</sup> � � <sup>�</sup> � <sup>� �</sup> � � <sup>� � � � �</sup> � � <sup>� �</sup> � � <sup>� �</sup> � � � � � � � � � <sup>•</sup> � � � � � � � � <sup>•</sup> � � � � � � � � <sup>•</sup> � � � � � � � � <sup>•</sup> � � � � � � � � • � � � � � � � � • � � � � � � � � � � � � � � � � • � � � � � � � � • � � � � � � � � �� �� ���",
+          "decodedLabels": "������ ����� � �<sup>� �</sup> �<sup>� � �</sup> � �<sup>� �</sup> � �<sup>�</sup> �<sup>� �</sup> � �<sup>� � � � �</sup> � �<sup>� �</sup> � �<sup>� �</sup> � � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � � • � � � � � � � � • � � � � � � � � � � � � � � � � • � � � � � � � � • � � � � � � � � �� �� ���",
           "undecodedGlyphs": 132,
           "alt": "",
           "longDescription": ""
@@ -404,7 +385,7 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">(9 + 12) <sup>2</sup> = 15<sup>2</sup></span>",
+          "html": "<span class=\"math\">(9 + 12)<sup>2</sup> = 15<sup>2</sup></span>",
           "x": 75.6,
           "y": 162.4
         },
@@ -438,13 +419,13 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span><sup>x</sup> − 3</span>",
+          "html": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 3</span>",
           "x": 75.5,
           "y": 412.9
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">y = 3<sup>x</sup> − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "html": "<span class=\"math\">y = 3x − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
           "x": 76.1,
           "y": 451.1
         },
@@ -456,7 +437,7 @@
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span><sup>x</sup> + 3</span>",
+          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>",
           "x": 75.1,
           "y": 519.4
         }
@@ -473,7 +454,7 @@
             355.75
           ],
           "paths": 113,
-          "decodedLabels": "� � � � � � � � <sup>�</sup> � � �� �� �� �� �� �� �� � � � � � � � � � � �� �� �� �� �� �� � �� �",
+          "decodedLabels": "� � � � � � � �<sup>�</sup> � � �� �� �� �� �� �� �� � � � � � � � � � � �� �� �� �� �� �� � �� �",
           "undecodedGlyphs": 51,
           "alt": "",
           "longDescription": ""
@@ -535,7 +516,7 @@
             422.5
           ],
           "paths": 174,
-          "decodedLabels": "� � � � � � � • • � � � � � <sup>� • • �</sup> � <sup>• •</sup> � � � � �� � �� �� �� �� �� � � <sup>•</sup> � �� � <sup>•</sup> � � �� <sup>�</sup> � � � � � � � � � � � � � � �� �� �� �� �� �� �� �� �� �� � �",
+          "decodedLabels": "� � � � � � � • • � � � � �<sup>� • • �</sup> �<sup>• •</sup> � � � � �� � �� �� �� �� �� � �<sup>•</sup> � �� �<sup>•</sup> � � ��<sup>�</sup> � � � � � � � � � � � � � � �� �� �� �� �� �� �� �� �� �� � �",
           "undecodedGlyphs": 79,
           "alt": "",
           "longDescription": ""
@@ -595,7 +576,7 @@
             394.0
           ],
           "paths": 273,
-          "decodedLabels": "<sup>�</sup> � <sup>�</sup> � � <sup>� �</sup> � <sup>� �</sup> �� � �� � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � �� • � � � � � � � � � � � � � � � �� � �� � �� � � � �� � <sup>� � � �</sup> � � � <sup>�</sup> � <sup>�</sup> � � � � �� � <sup>�</sup> � <sup>� �</sup> � <sup>�</sup> � � <sup>� �</sup> �• �� � �� � � � � • � � � � � � � � <sup>•</sup> � � � � � �",
+          "decodedLabels": "<sup>�</sup> �<sup>�</sup> � �<sup>� �</sup> �<sup>� �</sup> �� � �� � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � �� • � � � � � � � � � � � � � � � �� � �� � �� � � � �� �<sup>� � � �</sup> � � �<sup>�</sup> �<sup>�</sup> � � � � �� �<sup>�</sup> �<sup>� �</sup> �<sup>�</sup> � �<sup>� �</sup> �• �� � �� � � � � • � � � � � � � �<sup>•</sup> � � � � � � � � • � � ",
           "undecodedGlyphs": 192,
           "alt": "",
           "longDescription": ""
@@ -836,7 +817,7 @@
             360.98
           ],
           "paths": 46,
-          "decodedLabels": "� �� <sup>��</sup> ��<sup>�</sup> � �� �� ��<sup>�</sup> � � ��<sup>�</sup> � �� �� � �� �� � ��<sup>�</sup> �� � �� ��<sup>�</sup> �",
+          "decodedLabels": "� ��<sup>��</sup> ��<sup>�</sup> � �� �� ��<sup>�</sup> � � ��<sup>�</sup> � �� �� � �� �� � ��<sup>�</sup> �� � �� ��<sup>�</sup> �",
           "undecodedGlyphs": 44,
           "alt": "",
           "longDescription": ""
@@ -982,13 +963,13 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> <sup>x</sup> + 3</span>",
+          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
           "x": 75.6,
           "y": 152.6
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> <sup>x</sup> + 9</span>",
+          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>",
           "x": 75.1,
           "y": 191.6
         }
@@ -1107,7 +1088,7 @@
             328.48
           ],
           "paths": 128,
-          "decodedLabels": "� � � <sup>�</sup> • � � • � � � � �� �� �� � � <sup>•</sup> � �� �� �� �� <sup>�</sup> � � � � � • � � � � � � � �� �� • �� � �� • � �� �� �",
+          "decodedLabels": "� � �<sup>�</sup> • � � • � � � � �� �� �� � �<sup>•</sup> � �� �� �� ��<sup>�</sup> � � � � � • � � � � � � � �� �� • �� � �� • � �� �� �",
           "undecodedGlyphs": 55,
           "alt": "",
           "longDescription": ""
@@ -1168,7 +1149,7 @@
             280.0
           ],
           "paths": 21,
-          "decodedLabels": "� ��� <sup>�</sup> � ��<sup>�</sup> �� �� � � �<sup>�</sup> �",
+          "decodedLabels": "� ���<sup>�</sup> � ��<sup>�</sup> �� �� � � �<sup>�</sup> �",
           "undecodedGlyphs": 18,
           "alt": "",
           "longDescription": ""
@@ -1230,7 +1211,7 @@
             343.0
           ],
           "paths": 109,
-          "decodedLabels": "� � � � � • � • � � � • • � � �<sup>• •</sup>� <sup>�</sup> � �� �� �� �� �� �� � � � � � � � � � �� �� �� �� �� �� �",
+          "decodedLabels": "� � � � � • � • � � � • • � � �<sup>• •</sup>�<sup>�</sup> � �� �� �� �� �� �� � � � � � � � � � �� �� �� �� �� �� �",
           "undecodedGlyphs": 49,
           "alt": "",
           "longDescription": ""
@@ -1673,7 +1654,7 @@
             655.8
           ],
           "paths": 580,
-          "decodedLabels": "� � � � <sup>�</sup> � <sup>� �</sup> � <sup>� �</sup> � � <sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � <sup>• •</sup> � � � � � � � � � � � <sup>•</sup> • � � � � � � � � � � � <sup>•</sup> • � � � � � � � � � � � <sup>• •</sup> • � � � � � � � � � � � • • • � � � � � � � � � � � <sup>•</sup> • • � � � � � � � � � � � • • • � � � � � � � � � � � � • • � �� <sup",
+          "decodedLabels": "� � � �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>• •</sup> � � � � � � � � � � �<sup>•</sup> • � � � � � � � � � � �<sup>•</sup> • � � � � � � � � � � �<sup>• •</sup> • � � � � � � � � � � � • • • � � � � � � � � � � �<sup>•</sup> • • � � � � � � � � � � � • • • � � � � � � � � � � � � • • � ��<sup>�</sup> �",
           "undecodedGlyphs": 508,
           "alt": "",
           "longDescription": ""
@@ -1852,7 +1833,7 @@
             273.5
           ],
           "paths": 80,
-          "decodedLabels": "y <sup>x</sup> � � � � � � � � � � � � �� � �� � �� � �� � � �� � � � � � � � � � �� � � � � � � � � � � � � � � � � �",
+          "decodedLabels": "y<sup>x</sup> � � � � � � � � � � � � �� � �� � �� � �� � � �� � � � � � � � � � �� � � � � � � � � � � � � � � � � �",
           "undecodedGlyphs": 55,
           "alt": "",
           "longDescription": ""
@@ -1951,13 +1932,13 @@
       "credits": 1,
       "session": 2,
       "creditLine": "This question is worth 1 credit.",
-      "stemHtml": "Triangle <span class=\"math\">ABC</span> is graphed on a coordinate plane. The coordinates of the vertices are listed below. <span class=\"math\">•</span> <span class=\"math\">A (6,</span> <span class=\"math\">•</span> <span class=\"math\">B (−</span> <span class=\"math\">•</span> <span class=\"math\">C (−</span> Triangle <span class=\"math\">ABC</span> is dilated by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> with the center of dilation at the origin, resulting in Triangle <span class=\"math\">A′B′C′</span>. What are the coordinates of <span class=\"math\">C′</span> after the dilation?",
+      "stemHtml": "Triangle <span class=\"math\">ABC</span> is graphed on a coordinate plane. The coordinates of the vertices are listed below. <span class=\"math\">•</span> <span class=\"math\">A (6, −4)</span> <span class=\"math\">•</span> <span class=\"math\">B (−3,8)</span> <span class=\"math\">•</span> <span class=\"math\">C (−9,3)</span> Triangle <span class=\"math\">ABC</span> is dilated by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> with the center of dilation at the origin, resulting in Triangle <span class=\"math\">A′B′C′</span>. What are the coordinates of <span class=\"math\">C′</span> after the dilation?",
       "stemLines": [
         "Triangle <span class=\"math\">ABC</span> is graphed on a coordinate plane. The coordinates of the vertices are",
         "listed below.",
-        "<span class=\"math\">•</span> <span class=\"math\">A (6,</span>",
-        "<span class=\"math\">•</span> <span class=\"math\">B (−</span>",
-        "<span class=\"math\">•</span> <span class=\"math\">C (−</span>",
+        "<span class=\"math\">•</span> <span class=\"math\">A (6, −4)</span>",
+        "<span class=\"math\">•</span> <span class=\"math\">B (−3,8)</span>",
+        "<span class=\"math\">•</span> <span class=\"math\">C (−9,3)</span>",
         "Triangle <span class=\"math\">ABC</span> is dilated by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> with the center of dilation at the origin,",
         "resulting in Triangle <span class=\"math\">A′B′C′</span>. What are the coordinates of <span class=\"math\">C′</span> after the dilation?"
       ],
@@ -1968,35 +1949,7 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [
-        {
-          "rect": [
-            149.1,
-            124.35,
-            166.01,
-            134.1
-          ],
-          "html": "<span class=\"math\">−4)</span>"
-        },
-        {
-          "rect": [
-            144.33,
-            144.66,
-            163.76,
-            154.35
-          ],
-          "html": "<span class=\"math\">3,8)</span>"
-        },
-        {
-          "rect": [
-            145.88,
-            165.66,
-            165.26,
-            175.35
-          ],
-          "html": "<span class=\"math\">9,3)</span>"
-        }
-      ],
+      "display": [],
       "figures": [],
       "unresolved": []
     },
@@ -2020,7 +1973,17 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [],
+      "display": [
+        {
+          "rect": [
+            108.79,
+            104.42,
+            199.72,
+            119.15
+          ],
+          "html": "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> ○ 16<sup>8</sup> · 16<sup>12</sup></span>"
+        }
+      ],
       "figures": [],
       "unresolved": []
     },
@@ -2056,7 +2019,7 @@
             337.75
           ],
           "paths": 161,
-          "decodedLabels": "����<sup>�</sup>� ���� ���� � � <sup>� � � �</sup> � � � <sup>�</sup> � � <sup>�</sup> � <sup>�</sup> � � <sup>� � �</sup> � <sup>� �</sup> � � <sup>� �</sup> � � � <sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � <sup>�</sup> � � � � � � � � � � � � � � � � � � � <sup>�</sup>� � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
+          "decodedLabels": "����<sup>�</sup>� ���� ���� � �<sup>� � � �</sup> � � �<sup>�</sup> � �<sup>�</sup> �<sup>�</sup> � �<sup>� � �</sup> �<sup>� �</sup> � �<sup>� �</sup> � � �<sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>�</sup> � � � � � � � � � � � � � � � � � � �<sup>�</sup>� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� ������",
           "undecodedGlyphs": 159,
           "alt": "",
           "longDescription": ""
@@ -2174,7 +2137,7 @@
             390.13
           ],
           "paths": 203,
-          "decodedLabels": "������ ���� �� �� ��� � � � <sup>� � � � � ��</sup> � <sup>�</sup> � <sup>� � � � � � � � �</sup> � �� � <sup>�</sup> � � <sup>��</sup> � �� � <sup>�</sup> � � <sup>�</sup> � � � � � � <sup>� �</sup> � <sup>� �</sup> � � � � � � � � � � � � � � � � � � � �• � � � � � <sup>•</sup> � � � � � � <sup>�</sup> � �� <sup>�</sup> � <sup>��</sup> � <sup>�</sup> �� <sup>� � � �</sup> � <sup>� � �</sup> � � ",
+          "decodedLabels": "������ ���� �� �� ��� � � �<sup>� � � � � ��</sup> �<sup>�</sup> �<sup>� � � � � � � � �</sup> � �� �<sup>�</sup> � �<sup>��</sup> � �� �<sup>�</sup> � �<sup>�</sup> � � � � � �<sup>� �</sup> �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � �• � � � � �<sup>•</sup> � � � � � �<sup>�</sup> � ��<sup>�</sup> �<sup>��</sup> �<sup>�</sup> ��<sup>� � � �</sup> �<sup>� � �</sup> � �<sup>�</sup> �<su",
           "undecodedGlyphs": 191,
           "alt": "",
           "longDescription": ""
