@@ -577,7 +577,8 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         grown = grow_for_labels(r, page, y_lo, y_hi)
         name = ("q%02d.png" % number if len(merged) == 1
                 else "q%02d_%d.png" % (number, i))
-        save_crop(page, grown, os.path.join(adir, name), CROP_ZOOM, pad=CROP_PAD)
+        if not save_crop(page, grown, os.path.join(adir, name), CROP_ZOOM, pad=CROP_PAD):
+            continue
         decoded, unknown = table.decode(glyphs) if glyphs else ("", 0)
         figures.append({
             "file": "%s/%s" % (tag, name),
@@ -699,11 +700,20 @@ def grow_for_labels(rect, page, y_lo, y_hi):
 
 
 def save_crop(page, rect, path, zoom, pad=CROP_PAD):
+    """Write the crop. Returns False if it is blank, having written nothing."""
     clip = fitz.Rect(rect.x0 - pad, rect.y0 - pad, rect.x1 + pad, rect.y1 + pad)
     clip = clip & page.rect
     pix = page.get_pixmap(matrix=fitz.Matrix(zoom, zoom), clip=clip)
+    # A PICTURE OF NOTHING IS NOT A FIGURE. Grade 8 2023 item 3 has a single
+    # 61 x 294pt path hard against the right margin that renders entirely white;
+    # it is too narrow for the frame test in is_furniture, so it became a
+    # figure, and the item published a blank image beside a question that
+    # refers to no picture at all.
+    if not any(b != 255 for b in pix.samples):
+        return False
     os.makedirs(os.path.dirname(path), exist_ok=True)
     pix.save(path)
+    return True
 
 
 # ---------------------------------------------------------------------- main

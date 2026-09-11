@@ -1,0 +1,1277 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-11",
+    "testId": "g6-2024",
+    "source": "sources/2024-released-items-math-g6.pdf",
+    "assetDir": "G6-2024",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g6-2024.json.",
+    "items": 29,
+    "itemsWithUnresolved": 0,
+    "figures": 9,
+    "displayExpressions": 1
+  },
+  "items": [
+    {
+      "item": 2,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression represents <span class=\"math\">5</span> more than the product of <span class=\"math\">2</span> and <span class=\"math\">y</span> ?",
+      "stemLines": [
+        "Which expression represents <span class=\"math\">5</span> more than the product of <span class=\"math\">2</span> and <span class=\"math\">y</span> ?"
+      ],
+      "prose": "Which expression represents  more than the product of  and  ?",
+      "proseAllLines": "Which expression represents  more than the product of  and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">2 + y + 5</span>",
+          "x": 75.5,
+          "y": 513.0
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">2y + 5</span>",
+          "x": 76.1,
+          "y": 543.0
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">5 + <span class=\"frac\"><span>2</span><span>y</span></span></span>",
+          "x": 75.6,
+          "y": 576.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">5 + <span class=\"frac\"><span>y</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 615.7
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 3,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which value of <span class=\"math\">b</span> makes the inequality <span class=\"math\">3b &gt; 12</span> true?",
+      "stemLines": [
+        "Which value of <span class=\"math\">b</span> makes the inequality <span class=\"math\">3b &gt; 12</span> true?"
+      ],
+      "prose": "Which value of  makes the inequality  true?",
+      "proseAllLines": "Which value of  makes the inequality  true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">2</span>",
+          "x": 75.5,
+          "y": 88.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3</span>",
+          "x": 76.1,
+          "y": 118.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">4</span>",
+          "x": 75.6,
+          "y": 148.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">5</span>",
+          "x": 75.1,
+          "y": 178.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 4,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A coordinate plane can be used to show the distance, in units, between two locations. The location of Jack’s house and a store are listed below. <span class=\"math\">•</span> Jack’s house is located at <span class=\"math\">(−7, −8)</span>. <span class=\"math\">•</span> The store is located at <span class=\"math\">(−7,4)</span>. What is the distance, in units, between Jack’s house and the store?",
+      "stemLines": [
+        "A coordinate plane can be used to show the distance, in units, between two locations. The",
+        "location of Jack’s house and a store are listed below.",
+        "<span class=\"math\">•</span> Jack’s house is located at <span class=\"math\">(−7, −8)</span>.",
+        "<span class=\"math\">•</span> The store is located at <span class=\"math\">(−7,4)</span>.",
+        "What is the distance, in units, between Jack’s house and the store?"
+      ],
+      "prose": "A coordinate plane can be used to show the distance, in units, between two locations. The location of Jack’s house and a store are listed below. Jack’s house is located at . The store is located at . What is the distance, in units, between Jack’s house and the store?",
+      "proseAllLines": "A coordinate plane can be used to show the distance, in units, between two locations. The location of Jack’s house and a store are listed below. Jack’s house is located at . The store is located at . What is the distance, in units, between Jack’s house and the store?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">4</span>",
+          "x": 75.5,
+          "y": 360.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">8</span>",
+          "x": 76.1,
+          "y": 390.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">12</span>",
+          "x": 75.6,
+          "y": 420.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">14</span>",
+          "x": 75.1,
+          "y": 450.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 11,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which number line represents <span class=\"math\">x ≥ −3</span> ?",
+      "stemLines": [
+        "Which number line represents <span class=\"math\">x ≥ −3</span> ?"
+      ],
+      "prose": "Which number line represents  ?",
+      "proseAllLines": "Which number line represents  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 95.6
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 139.1
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 75.6,
+          "y": 181.9
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 75.1,
+          "y": 225.4
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q11.png",
+          "rect": [
+            75.14,
+            85.02,
+            480.9,
+            239.49
+          ],
+          "paths": 148,
+          "decodedLabels": "• �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � �",
+          "undecodedGlyphs": 76,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 14,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression <span class=\"math\">8<sup>2</sup> ÷ 4 × 2<sup>3</sup></span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">8<sup>2</sup> ÷ 4 × 2<sup>3</sup></span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "What is the value of the expression  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">16</span>",
+          "x": 75.5,
+          "y": 89.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">24</span>",
+          "x": 76.1,
+          "y": 119.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">96</span>",
+          "x": 75.6,
+          "y": 148.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">128</span>",
+          "x": 75.1,
+          "y": 178.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 15,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Ben purchases <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>4</span></span></span> pounds of nuts and puts them into bags. Each bag holds <span class=\"math\"><span class=\"frac\"><span>1</span><span>8</span></span></span> pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+      "stemLines": [
+        "Ben purchases <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>4</span></span></span> pounds of nuts and puts them into bags. Each bag holds <span class=\"math\"><span class=\"frac\"><span>1</span><span>8</span></span></span> pound",
+        "of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill",
+        "with nuts?"
+      ],
+      "prose": "Ben purchases  pounds of nuts and puts them into bags. Each bag holds  pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+      "proseAllLines": "Ben purchases  pounds of nuts and puts them into bags. Each bag holds  pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>32</span></span></span>",
+          "x": 75.5,
+          "y": 346.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">1 <span class=\"frac\"><span>1</span><span>8</span></span></span>",
+          "x": 76.1,
+          "y": 384.7
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">2</span>",
+          "x": 75.6,
+          "y": 419.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">10</span>",
+          "x": 75.1,
+          "y": 448.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 18,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression represents the opposite of the number <span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+      "stemLines": [
+        "Which expression represents the opposite of the number <span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?"
+      ],
+      "prose": "Which expression represents the opposite of the number  ?",
+      "proseAllLines": "Which expression represents the opposite of the number  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− 2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.5,
+          "y": 339.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− −2<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 76.1,
+          "y": 378.0
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.6,
+          "y": 416.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">2 − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 455.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 20,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+      "stemLines": [
+        "A diagram of a cube is shown below.",
+        "What is the volume, in cubic inches, of the cube?"
+      ],
+      "prose": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+      "proseAllLines": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span>",
+          "x": 75.5,
+          "y": 284.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">7<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 76.1,
+          "y": 322.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">15 <span class=\"frac\"><span>5</span><span>8</span></span></span>",
+          "x": 75.6,
+          "y": 361.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">20 <span class=\"frac\"><span>5</span><span>6</span></span></span>",
+          "x": 75.1,
+          "y": 400.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q20.png",
+          "rect": [
+            118.65,
+            89.37,
+            235.14,
+            231.13
+          ],
+          "paths": 14,
+          "decodedLabels": "� � � � � � � �",
+          "undecodedGlyphs": 8,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 22,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Tammy and Jacob collect stamps. Tammy has <span class=\"math\">s</span> stamps. Jacob has <span class=\"math\">4</span> fewer than <span class=\"math\">3</span> times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+      "stemLines": [
+        "Tammy and Jacob collect stamps. Tammy has <span class=\"math\">s</span> stamps. Jacob has <span class=\"math\">4</span> fewer than <span class=\"math\">3</span> times the",
+        "number of stamps Tammy has. Which expression can be used to represent the number of",
+        "stamps Jacob has?"
+      ],
+      "prose": "Tammy and Jacob collect stamps. Tammy has  stamps. Jacob has  fewer than  times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+      "proseAllLines": "Tammy and Jacob collect stamps. Tammy has  stamps. Jacob has  fewer than  times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3 − 4s</span>",
+          "x": 75.5,
+          "y": 117.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3s − 4</span>",
+          "x": 76.1,
+          "y": 147.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">4 − 3s</span>",
+          "x": 75.6,
+          "y": 177.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">4s − 3</span>",
+          "x": 75.1,
+          "y": 206.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 23,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?",
+      "stemLines": [
+        "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?"
+      ],
+      "prose": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?",
+      "proseAllLines": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold? 6 8 24 48",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "6",
+          "x": 75.5,
+          "y": 301.0
+        },
+        {
+          "label": "B",
+          "html": "8",
+          "x": 76.1,
+          "y": 331.0
+        },
+        {
+          "label": "C",
+          "html": "24",
+          "x": 75.6,
+          "y": 360.2
+        },
+        {
+          "label": "D",
+          "html": "48",
+          "x": 75.1,
+          "y": 390.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 26,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What ordered pair represents the location of a point that is the reflection of the point <span class=\"math\">(−4,6)</span> over the <span class=\"math\">x</span> -axis?",
+      "stemLines": [
+        "What ordered pair represents the location of a point that is the reflection of the",
+        "point <span class=\"math\">(−4,6)</span> over the <span class=\"math\">x</span> -axis?"
+      ],
+      "prose": "What ordered pair represents the location of a point that is the reflection of the point  over the -axis?",
+      "proseAllLines": "What ordered pair represents the location of a point that is the reflection of the point  over the -axis?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">(4,6)</span>",
+          "x": 75.5,
+          "y": 103.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">(−4, −6)</span>",
+          "x": 76.1,
+          "y": 133.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">(6, −4)</span>",
+          "x": 75.6,
+          "y": 162.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">(−6,4)</span>",
+          "x": 75.1,
+          "y": 192.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 28,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid?",
+      "stemLines": [
+        "An isosceles trapezoid is shown below.",
+        "What is the area, in square centimeters, of the isosceles trapezoid?"
+      ],
+      "prose": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid?",
+      "proseAllLines": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid? 120 150 195 240",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "120",
+          "x": 75.5,
+          "y": 262.9
+        },
+        {
+          "label": "B",
+          "html": "150",
+          "x": 76.1,
+          "y": 292.9
+        },
+        {
+          "label": "C",
+          "html": "195",
+          "x": 75.6,
+          "y": 322.1
+        },
+        {
+          "label": "D",
+          "html": "240",
+          "x": 75.1,
+          "y": 352.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q28.png",
+          "rect": [
+            118.68,
+            90.22,
+            221.37,
+            211.09
+          ],
+          "paths": 26,
+          "decodedLabels": "� � � �� � � � �� � � � � �� �",
+          "undecodedGlyphs": 17,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 29,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An inequality is shown below. Which statement about the locations of the numbers on a number line is true?",
+      "stemLines": [
+        "An inequality is shown below.",
+        "Which statement about the locations of the numbers on a number line is true?"
+      ],
+      "prose": "An inequality is shown below. Which statement about the locations of the numbers on a number line is true?",
+      "proseAllLines": "An inequality is shown below. Which statement about the locations of the numbers on a number line is true? is to the left of  and to the right of  on a number line. is to the right of  and to the left of  on a number line. is to the left of  and to the left of  on a number line. is to the right of  and to the right of  on a number line.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the left of <span class=\"math\">− <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the right of <span class=\"math\">0</span> on a number line.",
+          "x": 75.5,
+          "y": 507.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the right of <span class=\"math\">− <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the left of <span class=\"math\">0</span> on a number line.",
+          "x": 76.1,
+          "y": 546.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the left of <span class=\"math\">− <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the left of <span class=\"math\">0</span> on a number line.",
+          "x": 75.6,
+          "y": 585.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the right of <span class=\"math\">− <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the right of <span class=\"math\">0</span> on a number line.",
+          "x": 75.1,
+          "y": 623.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.32,
+            442.64,
+            169.77,
+            466.37
+          ],
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>9</span><span>20</span></span> &gt; − <span class=\"frac\"><span>21</span><span>24</span></span></span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 31,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda?",
+      "stemLines": [
+        "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce",
+        "of soda?"
+      ],
+      "prose": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda?",
+      "proseAllLines": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda? 13 26 52 96",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "13",
+          "x": 75.5,
+          "y": 102.4
+        },
+        {
+          "label": "B",
+          "html": "26",
+          "x": 76.1,
+          "y": 132.4
+        },
+        {
+          "label": "C",
+          "html": "52",
+          "x": 75.6,
+          "y": 161.6
+        },
+        {
+          "label": "D",
+          "html": "96",
+          "x": 75.1,
+          "y": 191.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 32,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp?",
+      "stemLines": [
+        "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below",
+        "shows the dimensions of each part of the ramp.",
+        "What is the surface area, in square feet, of the ramp?"
+      ],
+      "prose": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp?",
+      "proseAllLines": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp? 90 75 51 44",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "90",
+          "x": 75.5,
+          "y": 478.9
+        },
+        {
+          "label": "B",
+          "html": "75",
+          "x": 76.1,
+          "y": 508.9
+        },
+        {
+          "label": "C",
+          "html": "51",
+          "x": 75.6,
+          "y": 538.9
+        },
+        {
+          "label": "D",
+          "html": "44",
+          "x": 75.1,
+          "y": 568.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q32.png",
+          "rect": [
+            205.99,
+            307.54,
+            411.56,
+            423.38
+          ],
+          "paths": 64,
+          "decodedLabels": "� � � � �� �� � � � � �� � � � � � �� � � �� � � � � � � �� � � � � ��",
+          "undecodedGlyphs": 39,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The number 4 is 16% of what number?",
+      "stemLines": [
+        "The number 4 is 16% of what number?"
+      ],
+      "prose": "The number 4 is 16% of what number?",
+      "proseAllLines": "The number 4 is 16% of what number? 12 20 25 64",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "12",
+          "x": 75.5,
+          "y": 88.1
+        },
+        {
+          "label": "B",
+          "html": "20",
+          "x": 76.1,
+          "y": 118.1
+        },
+        {
+          "label": "C",
+          "html": "25",
+          "x": 75.6,
+          "y": 147.4
+        },
+        {
+          "label": "D",
+          "html": "64",
+          "x": 75.1,
+          "y": 177.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates?",
+      "stemLines": [
+        "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces",
+        "7 pounds of chocolates. How long, in minutes, will it take the machine to produce",
+        "9 pounds of chocolates?"
+      ],
+      "prose": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates?",
+      "proseAllLines": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates? 6 15 54 63",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "6",
+          "x": 75.5,
+          "y": 299.5
+        },
+        {
+          "label": "B",
+          "html": "15",
+          "x": 76.1,
+          "y": 329.5
+        },
+        {
+          "label": "C",
+          "html": "54",
+          "x": 75.6,
+          "y": 359.5
+        },
+        {
+          "label": "D",
+          "html": "63",
+          "x": 75.1,
+          "y": 388.8
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. <span class=\"math\">8 <span class=\"frac\"><span>1</span><span>10</span></span></span> inches by <span class=\"math\">4<span class=\"frac\"><span>4</span><span>5</span></span></span> inches by <span class=\"math\">12 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches What is the volume, in cubic inches, of the cereal box?",
+      "stemLines": [
+        "The dimensions of a cereal box in the shape of a right rectangular prism are shown below.",
+        "<span class=\"math\">8 <span class=\"frac\"><span>1</span><span>10</span></span></span> inches by <span class=\"math\">4<span class=\"frac\"><span>4</span><span>5</span></span></span> inches by <span class=\"math\">12 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches",
+        "What is the volume, in cubic inches, of the cereal box?"
+      ],
+      "prose": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. inches by  inches by  inches What is the volume, in cubic inches, of the cereal box?",
+      "proseAllLines": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. inches by  inches by  inches What is the volume, in cubic inches, of the cereal box?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">24</span>",
+          "x": 75.5,
+          "y": 542.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">25 <span class=\"frac\"><span>2</span><span>5</span></span></span>",
+          "x": 76.1,
+          "y": 576.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">384<span class=\"frac\"><span>1</span><span>25</span></span></span>",
+          "x": 75.6,
+          "y": 615.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">486</span>",
+          "x": 75.1,
+          "y": 648.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 22,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A tutoring company charges <span class=\"math\">$25.00</span> per hour to tutor a student. How many hours o f tutoring would cost <span class=\"math\">$62.50</span> ?",
+      "stemLines": [
+        "A tutoring company charges <span class=\"math\">$25.00</span> per hour to tutor a student. How many hours o f",
+        "tutoring would cost <span class=\"math\">$62.50</span> ?"
+      ],
+      "prose": "A tutoring company charges  per hour to tutor a student. How many hours o f tutoring would cost  ?",
+      "proseAllLines": "A tutoring company charges  per hour to tutor a student. How many hours o f tutoring would cost  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.5,
+          "y": 108.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 76.1,
+          "y": 146.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">37<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.6,
+          "y": 185.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">87<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 223.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 23,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ?",
+      "stemLines": [
+        "The four vertices of a parallelogram are plotted on the coordinate plane shown below.",
+        "What is the distance, in units, between vertices A and D ?"
+      ],
+      "prose": "The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ?",
+      "proseAllLines": "This question is worth 1 credit. The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ? Answer    units",
+      "instructions": [
+        "Answer    units"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q37.png",
+          "rect": [
+            172.24,
+            114.96,
+            444.55,
+            288.25
+          ],
+          "paths": 105,
+          "decodedLabels": "� � � • � • � � � �<sup>�</sup>� �<sup>�</sup>� �<sup>�</sup>�<sup>�</sup>�<sup>�</sup>�<sup>�</sup>� �� � � � � � � � � � �<sup>� �</sup> � � �<sup>•</sup> �<sup>•</sup> � �",
+          "undecodedGlyphs": 42,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 38,
+      "page": 24,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "What value of <span class=\"math\">n</span> makes the equation <span class=\"math\"><span class=\"frac\"><span>n</span><span>8</span></span></span> <span class=\"math\">= 17</span> true?",
+      "stemLines": [
+        "What value of <span class=\"math\">n</span> makes the equation <span class=\"math\"><span class=\"frac\"><span>n</span><span>8</span></span></span> <span class=\"math\">= 17</span> true?"
+      ],
+      "prose": "What value of  makes the equation  true?",
+      "proseAllLines": "This question is worth 1 credit. What value of  makes the equation  true? Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 39,
+      "page": 25,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use?",
+      "stemLines": [
+        "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist",
+        "uses 1 gallon of blue paint, how many gallons of orange paint will they use?"
+      ],
+      "prose": "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use?",
+      "proseAllLines": "This question is worth 1 credit. An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use? Answer    gallon(s)",
+      "instructions": [
+        "Answer    gallon(s)"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 26,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag?",
+      "stemLines": [
+        "A diagram of a rectangular flag, with a shaded section, is shown below.",
+        "What is the area, in square centimeters, of the shaded section of the flag?"
+      ],
+      "prose": "A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag?",
+      "proseAllLines": "This question is worth 2 credits. A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag? Show your work. Answer    square centimeters",
+      "instructions": [
+        "Show your work.",
+        "Answer    square centimeters"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q40.png",
+          "rect": [
+            167.15,
+            111.11,
+            453.54,
+            297.75
+          ],
+          "paths": 22,
+          "decodedLabels": "�<sup>�</sup> �<sup>��</sup> � � �� � ��",
+          "undecodedGlyphs": 12,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 27,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A student claims that the expression <span class=\"math\">6 + 8x</span> is equivalent to the expression <span class=\"math\">3 (3 + 5x)</span>. What is incorrect about the student’s claim? Be sure to include an equivalent expression to <span class=\"math\">3 (3 + 5x)</span> in your response.",
+      "stemLines": [
+        "A student claims that the expression <span class=\"math\">6 + 8x</span> is equivalent to the expression <span class=\"math\">3 (3 + 5x)</span>.",
+        "What is incorrect about the student’s claim? Be sure to include an equivalent expression to",
+        "<span class=\"math\">3 (3 + 5x)</span> in your response."
+      ],
+      "prose": "A student claims that the expression  is equivalent to the expression . What is incorrect about the student’s claim? Be sure to include an equivalent expression to in your response.",
+      "proseAllLines": "This question is worth 2 credits. A student claims that the expression  is equivalent to the expression . What is incorrect about the student’s claim? Be sure to include an equivalent expression to in your response. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 42,
+      "page": 28,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Mike needs a ticket every time he rides the bus. Given the equation <span class=\"math\">c = 2.75t</span>, what is the relationship between <span class=\"math\">t</span>, the number of tickets that Mike buys, and <span class=\"math\">c</span>, the total cost?  Be sure to identify which variable is independent and which variable is dependent in your answer.",
+      "stemLines": [
+        "Mike needs a ticket every time he rides the bus. Given the equation <span class=\"math\">c = 2.75t</span>, what is the",
+        "relationship between <span class=\"math\">t</span>, the number of tickets that Mike buys, and <span class=\"math\">c</span>, the total cost?  Be sure",
+        "to identify which variable is independent and which variable is dependent in your answer."
+      ],
+      "prose": "Mike needs a ticket every time he rides the bus. Given the equation , what is the relationship between , the number of tickets that Mike buys, and , the total cost?  Be sure to identify which variable is independent and which variable is dependent in your answer.",
+      "proseAllLines": "This question is worth 2 credits. Mike needs a ticket every time he rides the bus. Given the equation , what is the relationship between , the number of tickets that Mike buys, and , the total cost?  Be sure to identify which variable is independent and which variable is dependent in your answer. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A student claims that 4 is the greatest common factor of 24 and 40, because the two numbers are both multiples of 4. Is the student’s claim correct?",
+      "stemLines": [
+        "A student claims that 4 is the greatest common factor of 24 and 40, because the",
+        "two numbers are both multiples of 4. Is the student’s claim correct?"
+      ],
+      "prose": "A student claims that 4 is the greatest common factor of 24 and 40, because the two numbers are both multiples of 4. Is the student’s claim correct?",
+      "proseAllLines": "This question is worth 2 credits. A student claims that 4 is the greatest common factor of 24 and 40, because the two numbers are both multiples of 4. Is the student’s claim correct? Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+      "stemLines": [
+        "A prism made of unit cubes is shown below.",
+        "What perfect cube is represented by the volume of the prism? Be sure to include what you",
+        "know about volume and exponents in your answer."
+      ],
+      "prose": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+      "proseAllLines": "This question is worth 2 credits. A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q44.png",
+          "rect": [
+            269.24,
+            117.75,
+            347.56,
+            187.25
+          ],
+          "paths": 27,
+          "decodedLabels": "�� � �� � �� � �� �",
+          "undecodedGlyphs": 12,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The location of Jake’s school and house are represented on the coordinate plane shown below. What is the distance, in units, from Jake’s school to his house? Be sure to include the coordinates for both locations and how those coordinates can be used to determine your answer.",
+      "stemLines": [
+        "The location of Jake’s school and house are represented on the coordinate plane",
+        "shown below.",
+        "What is the distance, in units, from Jake’s school to his house? Be sure to include the",
+        "coordinates for both locations and how those coordinates can be used to determine",
+        "your answer."
+      ],
+      "prose": "The location of Jake’s school and house are represented on the coordinate plane shown below. What is the distance, in units, from Jake’s school to his house? Be sure to include the coordinates for both locations and how those coordinates can be used to determine your answer.",
+      "proseAllLines": "This question is worth 2 credits. The location of Jake’s school and house are represented on the coordinate plane shown below. What is the distance, in units, from Jake’s school to his house? Be sure to include the coordinates for both locations and how those coordinates can be used to determine your answer. Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q45.png",
+          "rect": [
+            243.76,
+            135.03,
+            373.96,
+            267.36
+          ],
+          "paths": 51,
+          "decodedLabels": "� � � � • � °��� � � � � • � ���°° � � � � � � � � � � �",
+          "undecodedGlyphs": 27,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex’s and Nero’s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved?",
+      "stemLines": [
+        "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a",
+        "constant rate for 16 months. The tables below show Rex’s and Nero’s total savings,",
+        "in dollars, at the end of different numbers of months.",
+        "At the end of 16 months, what is the difference between the amount of money Rex saved",
+        "and the amount of money Nero saved?"
+      ],
+      "prose": "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex’s and Nero’s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved?",
+      "proseAllLines": "This question is worth 3 credits. Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex’s and Nero’s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved? Show your work. Answer   $",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2024/q46.png",
+          "rect": [
+            77.82,
+            142.13,
+            536.93,
+            195.14
+          ],
+          "paths": 124,
+          "decodedLabels": "���<sup>�</sup>� ���� ��� � ���<sup>�</sup>� ���� ��� ������ �� ������ � � � � ������ �� ������ � � � � � ������� ��������� � � �� �� �� ������� ��������� �� �� � �� � ��",
+          "undecodedGlyphs": 112,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

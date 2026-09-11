@@ -7,13 +7,15 @@
     "tests": [
       "g6-2026",
       "g7-2026",
+      "g8-2023",
       "g8-2026"
     ],
-    "items": 123,
+    "items": 154,
     "keySources": {
       "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted.",
       "g8-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key in this spec cannot drift from the official table or be shifted by one released item. It was additionally checked against the transcribed choices: nine of the 34 are decided by reading the mathematics rather than the prose -- item 7's Pythagorean equation, item 15's product of powers, item 3's quotient of powers -- and in every case the keyed letter is the one the transcription makes true.",
-      "g6-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees. It was additionally checked against the transcribed content: item 8's key is P, and P is the point at negative four and a half on this item's own number line, which is the opposite of the four and a half in its stem; item 10's key is 27, and the three points in its graph -- 2 minutes at 18 gallons, 4 at 36, 6 at 54 -- give 9 gallons a minute, so 3 minutes is 27; item 20's key is the only choice whose two comparisons are both true of the transcribed absolute values."
+      "g6-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees. It was additionally checked against the transcribed content: item 8's key is P, and P is the point at negative four and a half on this item's own number line, which is the opposite of the four and a half in its stem; item 10's key is 27, and the three points in its graph -- 2 minutes at 18 gallons, 4 at 36, 6 at 54 -- give 9 gallons a minute, so 3 minutes is 27; item 20's key is the only choice whose two comparisons are both true of the transcribed absolute values.",
+      "g8-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item, so the two corroborate each other."
     },
     "reviewNotes": {
       "g7-2026": [
@@ -25,7 +27,8 @@
         "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems."
       ],
       "g8-2026": [],
-      "g6-2026": []
+      "g6-2026": [],
+      "g8-2023": []
     }
   },
   "items": {
@@ -3016,6 +3019,1108 @@
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 82",
         "check": "3.75 + 5.25x = 30; 5.25x = 26.25; x = 5. The three money values are the ones this item's extraction decoded, and this is the item that first demonstrated the glyph decode works."
+      }
+    },
+    "g8-2023-002": {
+      "id": "g8-2023-002",
+      "item": 2,
+      "stemHtml": "Which scatter plot best represents a linear association between <span class=\"math\">y</span> and <span class=\"math\">x</span> ?",
+      "stem": "Which scatter plot best represents a linear association between y and x ?",
+      "prose": "Which scatter plot best represents a linear association between  and  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q02.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+          "longDescription": "They differ in the direction and tightness of the trend the points follow."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 7,
+      "reviewed": true
+    },
+    "g8-2023-003": {
+      "id": "g8-2023-003",
+      "item": 3,
+      "stemHtml": "Quadrilateral <span class=\"math\">ABCD</span> is graphed on a coordinate plane. Vertex <span class=\"math\">A</span> is located at the point <span class=\"math\">(−2,3)</span>. The quadrilateral is dilated by a scale factor of <span class=\"math\">2</span>, with the center of dilation at the origin, to form quadrilateral <span class=\"math\">A′B′C′D′</span>. Which ordered pair represents the location of vertex <span class=\"math\">A′</span> ?",
+      "stem": "Quadrilateral ABCD is graphed on a coordinate plane. Vertex A is located at the point (−2,3). The quadrilateral is dilated by a scale factor of 2, with the center of dilation at the origin, to form quadrilateral A′B′C′D′. Which ordered pair represents the location of vertex A′ ?",
+      "prose": "Quadrilateral  is graphed on a coordinate plane. Vertex  is located at the point . The quadrilateral is dilated by a scale factor of , with the center of dilation at the origin, to form quadrilateral . Which ordered pair represents the location of vertex  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(−4,5)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(−4,6)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(0,5)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(6, −4)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 8,
+      "reviewed": true
+    },
+    "g8-2023-007": {
+      "id": "g8-2023-007",
+      "item": 7,
+      "stemHtml": "The equation and the table shown below each represent a different relationship between <span class=\"math\">x</span> and <span class=\"math\">y</span>. Which statement about the functions is true?",
+      "stem": "The equation and the table shown below each represent a different relationship between x and y. Which statement about the functions is true?",
+      "prose": "The equation and the table shown below each represent a different relationship between and . Which statement about the functions is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">− 1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">− 1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">1.25 &gt; 0.3</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">1.25 &lt; 0.3</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q07.png",
+          "type": "Equation and Data Table",
+          "alt": "Function A given as an equation and Function B given as a table of x and y values.",
+          "longDescription": "Function A is y equals five quarters x. Function B pairs 5 with 1.5, 10 with 3, and 15 with 4.5."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g8-2023-008": {
+      "id": "g8-2023-008",
+      "item": 8,
+      "stemHtml": "Two points are plotted on a coordinate plane. Point A is plotted at <span class=\"math\">(− 11,8)</span> and point B is plotted at <span class=\"math\">(−2, −4)</span>. What is the distance, in units, from point A to point B ?",
+      "stem": "Two points are plotted on a coordinate plane. Point A is plotted at (− 11,8) and point B is plotted at (−2, −4). What is the distance, in units, from point A to point B ?",
+      "prose": "Two points are plotted on a coordinate plane. Point A is plotted at  and point B is plotted at . What is the distance, in units, from point A to point B ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">13</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">15</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">4</span><span class=\"repeat\">5</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">8</span><span class=\"repeat\">5</span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g8-2023-012": {
+      "id": "g8-2023-012",
+      "item": 12,
+      "stemHtml": "The rule for a function of <span class=\"math\">x</span> is: multiply the input value by <span class=\"math\">2</span>, then subtract <span class=\"math\">6</span> The data set for the input values of the function, <span class=\"math\">x</span>, is <span class=\"math\">{ − 1,1,3,5}</span>. Which value is one of the output values, <span class=\"math\">y</span> ?",
+      "stem": "The rule for a function of x is: multiply the input value by 2, then subtract 6 The data set for the input values of the function, x, is { − 1,1,3,5}. Which value is one of the output values, y ?",
+      "prose": "The rule for a function of  is: multiply the input value by , then subtract The data set for the input values of the function, , is . Which value is one of the output values,  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 10,
+      "reviewed": true
+    },
+    "g8-2023-015": {
+      "id": "g8-2023-015",
+      "item": 15,
+      "stemHtml": "Which expression has a value of <span class=\"math\"><span class=\"frac\"><span>1</span><span>16</span></span></span> ?",
+      "stem": "Which expression has a value of (1)/(16) ?",
+      "prose": "Which expression has a value of  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(2<sup>−4</sup>)<sup>−1</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(2<sup>4</sup>)<sup>−1</sup></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(2<sup>8</sup>)<sup>−2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(2<sup>−8</sup>)<sup>−2</sup></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g8-2023-016": {
+      "id": "g8-2023-016",
+      "item": 16,
+      "stemHtml": "A cylinder has a radius of 4.8 feet and a height of 8.1 feet. What is the volume, to the nearest tenth of a cubic foot, of the cylinder?",
+      "stem": "A cylinder has a radius of 4.8 feet and a height of 8.1 feet. What is the volume, to the nearest tenth of a cubic foot, of the cylinder?",
+      "prose": "A cylinder has a radius of 4.8 feet and a height of 8.1 feet. What is the volume, to the nearest tenth of a cubic foot, of the cylinder?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "989.4",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "586.3",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "244.3",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "186.6",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g8-2023-019": {
+      "id": "g8-2023-019",
+      "item": 19,
+      "stemHtml": "Triangle <span class=\"math\">ABC</span> and its congruent image, triangle <span class=\"math\">A′B′C′</span>, are graphed on the coordinate plane shown below. Which sequence of transformations maps triangle <span class=\"math\">ABC</span> onto triangle <span class=\"math\">A′B′C′</span> ?",
+      "stem": "Triangle ABC and its congruent image, triangle A′B′C′, are graphed on the coordinate plane shown below. Which sequence of transformations maps triangle ABC onto triangle A′B′C′ ?",
+      "prose": "Triangle  and its congruent image, triangle , are graphed on the coordinate plane shown below. Which sequence of transformations maps triangle  onto triangle  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "a reflection over the <span class=\"math\">y</span> -axis and then a translation <span class=\"math\">2</span> units up",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "a reflection over the <span class=\"math\">y</span> -axis and then a translation <span class=\"math\">2</span> units down",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "a reflection over the <span class=\"math\">x</span> -axis and then a translation <span class=\"math\">8</span> units left",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "a reflection over the <span class=\"math\">x</span> -axis and then a translation <span class=\"math\">8</span> units right",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q19.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC and its image triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+          "longDescription": "Triangle ABC sits to the right of the y-axis and its image lies to the left, reflected across it."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g8-2023-020": {
+      "id": "g8-2023-020",
+      "item": 20,
+      "stemHtml": "Which equation represents the graph of a line on a coordinate plane that passes through the <span class=\"math\">x</span> -intercept at <span class=\"math\">(9,0)</span> and the <span class=\"math\">y</span> -intercept at <span class=\"math\">(0, −5)</span> ?",
+      "stem": "Which equation represents the graph of a line on a coordinate plane that passes through the x -intercept at (9,0) and the y -intercept at (0, −5) ?",
+      "prose": "Which equation represents the graph of a line on a coordinate plane that passes through the -intercept at  and the -intercept at  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = −<span class=\"frac\"><span>9</span><span>5</span></span>x − 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>9</span><span>5</span></span>x − 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = −<span class=\"frac\"><span>5</span><span>9</span></span>x − 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g8-2023-022": {
+      "id": "g8-2023-022",
+      "item": 22,
+      "stemHtml": "Trent draws a triangle with one interior angle measuring <span class=\"math\">34<sup>○</sup></span>. Which angle measures could be the measures of the other two interior angles in Trent’s triangle?",
+      "stem": "Trent draws a triangle with one interior angle measuring 34^○. Which angle measures could be the measures of the other two interior angles in Trent’s triangle?",
+      "prose": "Trent draws a triangle with one interior angle measuring . Which angle measures could be the measures of the other two interior angles in Trent’s triangle?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">46<sup>○</sup></span> and <span class=\"math\">90<sup>○</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">53<sup>○</sup></span> and <span class=\"math\">127<sup>○</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">66<sup>○</sup></span> and <span class=\"math\">80<sup>○</sup></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">68<sup>○</sup></span> and <span class=\"math\">68<sup>○</sup></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 13,
+      "reviewed": true
+    },
+    "g8-2023-023": {
+      "id": "g8-2023-023",
+      "item": 23,
+      "stemHtml": "Nathan observes the growth of sunflower plants for a science project. He collects data on the relationship between the height, in centimeters, of each sunflower plant during a thirty-day period and the amount of fertilizer, in grams, used on each plant. The equation for the line of best fit for these data is <span class=\"math\">y = 0.35x + 2</span>, where <span class=\"math\">y</span> is the height of the plant in centimeters and <span class=\"math\">x</span> is the number of grams of fertilizer used. Based on the model, what does the slope of the line represent?",
+      "stem": "Nathan observes the growth of sunflower plants for a science project. He collects data on the relationship between the height, in centimeters, of each sunflower plant during a thirty-day period and the amount of fertilizer, in grams, used on each plant. The equation for the line of best fit for these data is y = 0.35x + 2, where y is the height of the plant in centimeters and x is the number of grams of fertilizer used. Based on the model, what does the slope of the line represent?",
+      "prose": "Nathan observes the growth of sunflower plants for a science project. He collects data on the relationship between the height, in centimeters, of each sunflower plant during a thirty-day period and the amount of fertilizer, in grams, used on each plant. The equation for the line of best fit for these data is , where  is the height of the plant in centimeters and  is the number of grams of fertilizer used. Based on the model, what does the slope of the line represent?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "the height of the plant",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "the amount of fertilizer used",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "the average growth of the plant per gram of fertilizer used",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "the average amount of fertilizer used per centimeter the plant grew",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g8-2023-024": {
+      "id": "g8-2023-024",
+      "item": 24,
+      "stemHtml": "Line segment <span class=\"math\">CD</span> is graphed on a coordinate plane. The line segment is reflected over the <span class=\"math\">x</span> -axis and then rotated <span class=\"math\">90°</span> clockwise about the origin to create line segment <span class=\"math\">EF</span>. Which statement is always true about line segment <span class=\"math\">EF</span> ?",
+      "stem": "Line segment CD is graphed on a coordinate plane. The line segment is reflected over the x -axis and then rotated 90° clockwise about the origin to create line segment EF. Which statement is always true about line segment EF ?",
+      "prose": "Line segment  is graphed on a coordinate plane. The line segment is reflected over the -axis and then rotated  clockwise about the origin to create line segment . Which statement is always true about line segment  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Line segment <span class=\"math\">EF</span> is congruent to line segment <span class=\"math\">CD</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "Line segment <span class=\"math\">EF</span> is perpendicular to line segment <span class=\"math\">CD</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Line segment <span class=\"math\">EF</span> is twice the length of line segment <span class=\"math\">CD</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Line segment <span class=\"math\">EF</span> is one-half the length of line segment <span class=\"math\">CD</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g8-2023-025": {
+      "id": "g8-2023-025",
+      "item": 25,
+      "stemHtml": "In the figure shown below, lines <span class=\"math\">a</span> and <span class=\"math\">b</span> are parallel, and line <span class=\"math\">c</span> is a transversal. What is the value of <span class=\"math\">x</span> ?",
+      "stem": "In the figure shown below, lines a and b are parallel, and line c is a transversal. What is the value of x ?",
+      "prose": "In the figure shown below, lines  and  are parallel, and line  is a transversal. What is the value of  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "9",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "12",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "18",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q25.png",
+          "type": "Diagram",
+          "alt": "Two parallel lines a and b cut by a transversal c, with two angles labelled in terms of x.",
+          "longDescription": "One angle is 13x plus 6 degrees and the other is 11x plus 30 degrees."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g8-2023-026": {
+      "id": "g8-2023-026",
+      "item": 26,
+      "stemHtml": "Two functions are described below. <span class=\"math\">•</span> Function A: A taxi driver charges customers a base amount of <span class=\"math\">$3.00</span> and also a n amount of <span class=\"math\">$2.00</span> per mile, <span class=\"math\">x</span>, for a total charge, <span class=\"math\">y</span>, to a customer. <span class=\"math\">•</span> Function B: The equation <span class=\"math\">y = 3x + 2</span> represents the relationship between the number of miles, <span class=\"math\">x</span>, a taxi travels and the total charge, <span class=\"math\">y</span>, to a customer. Which statement correctly compares the relationship between Function A and Function B ?",
+      "stem": "Two functions are described below. • Function A: A taxi driver charges customers a base amount of $3.00 and also a n amount of $2.00 per mile, x, for a total charge, y, to a customer. • Function B: The equation y = 3x + 2 represents the relationship between the number of miles, x, a taxi travels and the total charge, y, to a customer. Which statement correctly compares the relationship between Function A and Function B ?",
+      "prose": "Two functions are described below. Function A: A taxi driver charges customers a base amount of  and also a n amount of  per mile, , for a total charge, , to a customer. Function B: The equation  represents the relationship between the number of miles, , a taxi travels and the total charge, , to a customer. Which statement correctly compares the relationship between Function A and Function B ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Function A has both a greater rate of change and a greater initial value.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Function B has both a greater rate of change and a greater initial value.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Function A has a greater rate of change than Function B, but the initial value for Function A is less than the initial value for Function B.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Function B has a greater rate of change than Function A, but the initial value for Function B is less than the initial value for Function A.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g8-2023-029": {
+      "id": "g8-2023-029",
+      "item": 29,
+      "stemHtml": "On a coordinate plane, <span class=\"math\">△ABC</span> undergoes a sequence of transformations to create <span class=\"math\">△A′B′C′</span>. Which sequence of transformations could have been used to take <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span> ?",
+      "stem": "On a coordinate plane, △ABC undergoes a sequence of transformations to create △A′B′C′. Which sequence of transformations could have been used to take △ABC to △A′B′C′ ?",
+      "prose": "On a coordinate plane,  undergoes a sequence of transformations to create . Which sequence of transformations could have been used to take  to  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "a dilation by a scale factor of  <span class=\"math\">2</span> centered at the origin and then a reflection over the <span class=\"math\">x</span> -axis",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "a dilation by a scale factor of  <span class=\"math\">2</span> centered at the origin and then a reflection over the <span class=\"math\">y</span> -axis",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin and then a reflection over the <span class=\"math\">x</span> -axis",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin and then a reflection over the <span class=\"math\">y</span> -axis",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q29.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC and triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+          "longDescription": "Triangle ABC is above the x-axis and its image is below it, smaller and turned."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 16,
+      "reviewed": true
+    },
+    "g8-2023-033": {
+      "id": "g8-2023-033",
+      "item": 33,
+      "stemHtml": "The graph of a line is shown on the coordinate plane below. Which equation represents the graph of the line?",
+      "stem": "The graph of a line is shown on the coordinate plane below. Which equation represents the graph of the line?",
+      "prose": "The graph of a line is shown on the coordinate plane below. Which equation represents the graph of the line?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x + 1</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = 2x + 1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = 2x − 2</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q33.png",
+          "type": "Coordinate Plane",
+          "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+          "longDescription": "The line rises from lower left to upper right, crossing the y-axis just above the origin."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 21,
+      "reviewed": true
+    },
+    "g8-2023-034": {
+      "id": "g8-2023-034",
+      "item": 34,
+      "stemHtml": "Function A and Function B are represented by the table and graph shown below. Which statement about Function A and Function B is true?",
+      "stem": "Function A and Function B are represented by the table and graph shown below. Which statement about Function A and Function B is true?",
+      "prose": "Function A and Function B are represented by the table and graph shown below. Which statement about Function A and Function B is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "The rate of change for Function A is less than the rate of change for Function B.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The rate of change for Function A is greater than the rate of change for Function B.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function is linear.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The rate of change for Function A is equal to the rate of change for Function B because the graph of the line for each function passes through the origin.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q34.png",
+          "type": "Data Table and Coordinate Plane",
+          "alt": "Function A as a table of x and y values and Function B as a line graphed on a coordinate plane.",
+          "longDescription": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin rising steeply."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 22,
+      "reviewed": true
+    },
+    "g8-2023-035": {
+      "id": "g8-2023-035",
+      "item": 35,
+      "stemHtml": "Which statement about the value of <span class=\"math\">√<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?",
+      "stem": "Which statement about the value of √5-repeating0-repeating is true?",
+      "prose": "Which statement about the value of  is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "It is irrational because the decimal equivalent eventually repeats.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "It is rational because the decimal equivalent eventually terminates.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "It is rational because the value as a decimal is equivalent to a fraction.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "It is irrational because the decimal equivalent is non-repeating and does not terminate.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 22,
+      "reviewed": true
+    },
+    "g8-2023-036": {
+      "id": "g8-2023-036",
+      "item": 36,
+      "stemHtml": "Which graph represents <span class=\"math\">y</span> as a function of <span class=\"math\">x</span> ?",
+      "stem": "Which graph represents y as a function of x ?",
+      "prose": "Which graph represents  as a function of  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2023/q36.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four graphs labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "Two show closed curves and two show straight lines; only one passes the vertical line test for a function."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g8-2023-037": {
+      "id": "g8-2023-037",
+      "item": 37,
+      "stemHtml": "A cylindrical container has a height of <span class=\"math\">56</span> centimeters and a diameter of <span class=\"math\">22</span> centimeters. What is the volume, in cubic centimeters, of the container in terms of <span class=\"math\">π</span> ?",
+      "stem": "A cylindrical container has a height of 56 centimeters and a diameter of 22 centimeters. What is the volume, in cubic centimeters, of the container in terms of π ?",
+      "prose": "A cylindrical container has a height of  centimeters and a diameter of  centimeters. What is the volume, in cubic centimeters, of the container in terms of  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">1,232π</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3,388π</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">6,776π</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">27,104π</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g8-2023-038": {
+      "id": "g8-2023-038",
+      "item": 38,
+      "stemHtml": "Quadrilateral <span class=\"math\">ABCD</span> is graphed on a coordinate plane, with point <span class=\"math\">C</span> plotted at <span class=\"math\">(−4,3)</span>. Quadrilateral <span class=\"math\">ABCD</span> is then reflected over the <span class=\"math\">y</span> -axis to create its image <span class=\"math\">A′B′C′D′</span>. After the reflection, what are the coordinates of point <span class=\"math\">C′</span> ?",
+      "stem": "Quadrilateral ABCD is graphed on a coordinate plane, with point C plotted at (−4,3). Quadrilateral ABCD is then reflected over the y -axis to create its image A′B′C′D′. After the reflection, what are the coordinates of point C′ ?",
+      "prose": "Quadrilateral  is graphed on a coordinate plane, with point  plotted at . Quadrilateral  is then reflected over the -axis to create its image . After the reflection, what are the coordinates of point  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(4,3)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(4, −3)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(−4,3)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(−4, −3)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 24,
+      "reviewed": true
+    },
+    "g8-2023-039": {
+      "id": "g8-2023-039",
+      "item": 39,
+      "stemHtml": "What is the solution for <span class=\"math\">x</span> in the equation <span class=\"math\">x<sup>3</sup> = 125</span> ?",
+      "stem": "What is the solution for x in the equation x^3 = 125 ?",
+      "prose": "What is the solution for  in the equation  ?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "5",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "x cubed = 125 gives x = 5, since 5 cubed is 125. The equation is this item's own transcribed stem."
+      }
+    },
+    "g8-2023-040": {
+      "id": "g8-2023-040",
+      "item": 40,
+      "stemHtml": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\">− <span class=\"repeat\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\">− <span class=\"repeat\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\">− <span class=\"repeat\">DE</span></span> ?",
+      "stem": "Triangle DEF is a right triangle with a right angle at vertex F. Side − DF-repeating has a length of 9 inches and side − FE-repeating has a length of 12 inches. What is the length, in inches, of side − DE-repeating ?",
+      "prose": "Triangle  is a right triangle with a right angle at vertex . Side  has a length of inches and side  has a length of  inches. What is the length, in inches, of side  ?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer     inches"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 26,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "15",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "A right angle at F with legs DF = 9 and FE = 12 gives DE = 15, the 3-4-5 triple scaled by three. All three labels are in this item's own stem."
+      }
+    },
+    "g8-2023-041": {
+      "id": "g8-2023-041",
+      "item": 41,
+      "stemHtml": "An equation is shown below. What is the value of <span class=\"math\">x</span> ?",
+      "stem": "An equation is shown below. What is the value of x ?",
+      "prose": "An equation is shown below. What is the value of  ?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\">−8 − 5x = 20</span>"
+      ],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 27,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "−5.6",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "Minus 8 minus 5x = 20 gives minus 5x = 28 and x = minus 5.6, or minus 28 fifths. The equation is this item's own transcribed stem."
+      }
+    },
+    "g8-2023-042": {
+      "id": "g8-2023-042",
+      "item": 42,
+      "stemHtml": "Triangle XYZ and its congruent image triangle X’Y’Z’ are shown on the coordinate plane below. Describe a sequence of transformations that maps triangle XYZ onto triangle X’Y’Z’.",
+      "stem": "Triangle XYZ and its congruent image triangle X’Y’Z’ are shown on the coordinate plane below. Describe a sequence of transformations that maps triangle XYZ onto triangle X’Y’Z’.",
+      "prose": "Triangle XYZ and its congruent image triangle X’Y’Z’ are shown on the coordinate plane below. Describe a sequence of transformations that maps triangle XYZ onto triangle X’Y’Z’.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2023/q42.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle XYZ and its congruent image triangle X prime Y prime Z prime on a coordinate plane ruled from negative 12 to 12.",
+          "longDescription": "Triangle XYZ is above the x-axis with X at negative 5, 2, Y at negative 2, 5 and Z at negative 2, 2. Its image is below the x-axis and shifted right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 28,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Reflect triangle XYZ over the x-axis, then translate it 3 units right and 2 units down",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "The exemplary response gives this and two equivalent orderings. The vertices it depends on are in this item's figure, described in its long description."
+      }
+    },
+    "g8-2023-043": {
+      "id": "g8-2023-043",
+      "item": 43,
+      "stemHtml": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+      "stem": "What value of x makes the equation shown below true?",
+      "prose": "What value of  makes the equation shown below true?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\">24x + 33 = 3 (5x + 21) − 9</span>",
+        "<span class=\"math\">x =</span>"
+      ],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 29,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "x = 7/3",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "24x + 33 = 3(5x + 21) minus 9 gives 24x + 33 = 15x + 54, so 9x = 21 and x = 7/3. The equation is this item's own displayed expression."
+      }
+    },
+    "g8-2023-044": {
+      "id": "g8-2023-044",
+      "item": 44,
+      "stemHtml": "Triangle RST has side lengths of 8 centimeters, 10 centimeters, and 13 centimeters. Is triangle RST a right triangle? Be sure to include what you know about the Pythagorean theorem in your answer.",
+      "stem": "Triangle RST has side lengths of 8 centimeters, 10 centimeters, and 13 centimeters. Is triangle RST a right triangle? Be sure to include what you know about the Pythagorean theorem in your answer.",
+      "prose": "Triangle RST has side lengths of 8 centimeters, 10 centimeters, and 13 centimeters. Is triangle RST a right triangle? Be sure to include what you know about the Pythagorean theorem in your answer.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 30,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "No — 13 squared is 169 but 8 squared plus 10 squared is 164, so the Pythagorean relationship does not hold",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "169 is not 164, so the triangle is not right-angled. All three side lengths are in this item's own transcribed stem."
+      }
+    },
+    "g8-2023-045": {
+      "id": "g8-2023-045",
+      "item": 45,
+      "stemHtml": "Function A and Function B are shown below. Which function has a greater rate of change? Be sure to include the rate of change for each function in your answer.",
+      "stem": "Function A and Function B are shown below. Which function has a greater rate of change? Be sure to include the rate of change for each function in your answer.",
+      "prose": "Function A and Function B are shown below. Which function has a greater rate of change? Be sure to include the rate of change for each function in your answer.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2023/q45.png",
+          "type": "Data Table and Coordinate Plane",
+          "alt": "Function A as a four-row table of values and Function B as a line rising gently across a first-quadrant grid.",
+          "longDescription": "Function A pairs negative 5 with negative 30, negative 3 with negative 18, 2 with 12, and 4 with 24 -- a rate of 6. Function B is a line rising 3 units over 6."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 31,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Function A, whose rate of change is 6 against Function B's one half",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "Function A's table goes up 12 for every 2, and Function B's graph rises 3 over 6. Both are in this item's figure and named in its long description."
+      }
+    },
+    "g8-2023-046": {
+      "id": "g8-2023-046",
+      "item": 46,
+      "stemHtml": "The top surface of a trampoline is in the shape of a circle with a diameter of 12 feet. What is the area, in square feet, of the top circular surface of the trampoline? Round your answer to the nearest whole number.",
+      "stem": "The top surface of a trampoline is in the shape of a circle with a diameter of 12 feet. What is the area, in square feet, of the top circular surface of the trampoline? Round your answer to the nearest whole number.",
+      "prose": "The top surface of a trampoline is in the shape of a circle with a diameter of 12 feet. What is the area, in square feet, of the top circular surface of the trampoline? Round your answer to the nearest whole number.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer     square feet"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 32,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "113 square feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "A diameter of 12 feet gives a radius of 6, and pi times 6 squared is 113.097..., which rounds to 113. The diameter is in this item's own stem."
+      }
+    },
+    "g8-2023-047": {
+      "id": "g8-2023-047",
+      "item": 47,
+      "stemHtml": "A student claims the expressions <span class=\"math\"><span class=\"frac\"><span>5<sup>7</sup></span><span>5<sup>3</sup></span></span></span> and <span class=\"math\">5<sup>6</sup> × 5<sup>−2</sup></span> are equivalent. Is the student correct? expression in simplest form in your answer.",
+      "stem": "A student claims the expressions (5^7)/(5^3) and 5^6 × 5^−2 are equivalent. Is the student correct? expression in simplest form in your answer.",
+      "prose": "A student claims the expressions  and  are equivalent. Is the student correct? expression in simplest form in your answer.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Be sure to include what you know about properties of exponents and the value of each",
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 33,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Yes — both expressions equal 5 to the fourth, which is 625",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "5^7 over 5^3 is 5^4 and 5^6 times 5^-2 is 5^4. Both expressions are in this item's own transcribed stem, and they depend entirely on the superscripts being read."
+      }
+    },
+    "g8-2023-048": {
+      "id": "g8-2023-048",
+      "item": 48,
+      "stemHtml": "Three different functions are represented by the equation, table, and graph shown below. Determine whether each function is linear or nonlinear. Be sure to include what you know about the properties of all three functions in your answer.",
+      "stem": "Three different functions are represented by the equation, table, and graph shown below. Determine whether each function is linear or nonlinear. Be sure to include what you know about the properties of all three functions in your answer.",
+      "prose": "Three different functions are represented by the equation, table, and graph shown below. Determine whether each function is linear or nonlinear. Be sure to include what you know about the properties of all three functions in your answer.",
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2023/q48.png",
+          "type": "Equation, Data Table and Coordinate Plane",
+          "alt": "Three functions shown three ways: Function A as an equation, Function B as a table, Function C as a graph.",
+          "longDescription": "Function A is y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a steep straight line through the origin."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 34,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Function A is linear, Function B is nonlinear, Function C is linear",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "A is y = 2x + 3, in slope-intercept form; B's table has no constant rate of change; C is a straight line. All three are in this item's figure."
       }
     },
     "g8-2026-001": {

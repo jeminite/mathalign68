@@ -1,0 +1,1650 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-11",
+    "testId": "g8-2025",
+    "source": "sources/2025-released-items-math-g8.pdf",
+    "assetDir": "G8-2025",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g8-2025.json.",
+    "items": 31,
+    "itemsWithUnresolved": 0,
+    "figures": 24,
+    "displayExpressions": 5
+  },
+  "items": [
+    {
+      "item": 2,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "stemLines": [
+        "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that",
+        "could be used to best model the relationship of the data?"
+      ],
+      "prose": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "proseAllLines": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 401.1
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 309.6,
+          "y": 401.1
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 567.6
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 309.1,
+          "y": 567.6
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q02.png",
+          "rect": [
+            75.48,
+            328.2,
+            505.57,
+            643.95
+          ],
+          "paths": 452,
+          "decodedLabels": "� � � � �<sup>�</sup> �<sup>�</sup> � �<sup>� �</sup> � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � �<sup>•</sup> • � � � � � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � • � � � � � � � � � • � � � � � � � � � • � � � � � � � � � • ���� �<sup>�</sup> �<sup>�</sup> � �<sup>� �</sup> � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � �<sup>•</sup> • � �",
+          "undecodedGlyphs": 412,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 4,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+      "stemLines": [
+        "A vertical plane intersects a right rectangular pyramid as shown below.",
+        "What is the resulting two-dimensional shape formed by the intersection of the plane and",
+        "the pyramid?"
+      ],
+      "prose": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+      "proseAllLines": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid? parallelogram rectangle trapezoid triangle",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "parallelogram",
+          "x": 75.5,
+          "y": 298.9
+        },
+        {
+          "label": "B",
+          "html": "rectangle",
+          "x": 76.1,
+          "y": 328.9
+        },
+        {
+          "label": "C",
+          "html": "trapezoid",
+          "x": 75.6,
+          "y": 358.9
+        },
+        {
+          "label": "D",
+          "html": "triangle",
+          "x": 75.1,
+          "y": 388.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q04_1.png",
+          "rect": [
+            119.14,
+            96.36,
+            205.16,
+            231.14
+          ],
+          "paths": 9,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        },
+        {
+          "file": "G8-2025/q04_2.png",
+          "rect": [
+            443.78,
+            452.38,
+            542.4,
+            614.85
+          ],
+          "paths": 1,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 7,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The diagram below shows a person flying a kite. They let out <span class=\"math\">20</span> feet of string and are holding the end of the string <span class=\"math\">4</span> feet above the ground. The kite is directly above a spot on the ground that is <span class=\"math\">15</span> feet away from where they are standing. Which equation can be used to determine the value of  <span class=\"math\">x</span> ?",
+      "stemLines": [
+        "The diagram below shows a person flying a kite. They let out <span class=\"math\">20</span> feet of string and are",
+        "holding the end of the string <span class=\"math\">4</span> feet above the ground. The kite is directly above a spot",
+        "on the ground that is <span class=\"math\">15</span> feet away from where they are standing.",
+        "Which equation can be used to determine the value of  <span class=\"math\">x</span> ?"
+      ],
+      "prose": "The diagram below shows a person flying a kite. They let out  feet of string and are holding the end of the string  feet above the ground. The kite is directly above a spot on the ground that is  feet away from where they are standing. Which equation can be used to determine the value of   ?",
+      "proseAllLines": "The diagram below shows a person flying a kite. They let out  feet of string and are holding the end of the string  feet above the ground. The kite is directly above a spot on the ground that is  feet away from where they are standing. Which equation can be used to determine the value of   ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">x<sup>2</sup> = 20<sup>2</sup> + 15<sup>2</sup></span>",
+          "x": 75.5,
+          "y": 353.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">24<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>",
+          "x": 76.1,
+          "y": 383.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">20<sup>2</sup> = 19<sup>2</sup> + x<sup>2</sup></span>",
+          "x": 75.6,
+          "y": 413.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">20<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>",
+          "x": 75.1,
+          "y": 442.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q07.png",
+          "rect": [
+            211.92,
+            126.25,
+            405.56,
+            300.25
+          ],
+          "paths": 28,
+          "decodedLabels": "�� �� � � � �� � �� � � � �� �",
+          "undecodedGlyphs": 18,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 8,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The graph of a line is shown below. What is the equation of the line?",
+      "stemLines": [
+        "The graph of a line is shown below.",
+        "What is the equation of the line?",
+        ""
+      ],
+      "prose": "The graph of a line is shown below. What is the equation of the line?",
+      "proseAllLines": "The graph of a line is shown below. What is the equation of the line?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">y = −2x + 3</span>",
+          "x": 75.5,
+          "y": 293.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">y = −2x + 6</span>",
+          "x": 76.1,
+          "y": 323.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>",
+          "x": 75.6,
+          "y": 357.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 6</span>",
+          "x": 75.1,
+          "y": 396.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q08_1.png",
+          "rect": [
+            120.05,
+            95.67,
+            318.9,
+            240.83
+          ],
+          "paths": 77,
+          "decodedLabels": "� � � � � � � � � �� �� �� �� � � � � � � �� �<sup>�</sup> �� �",
+          "undecodedGlyphs": 30,
+          "alt": "",
+          "longDescription": ""
+        },
+        {
+          "file": "G8-2025/q08_2.png",
+          "rect": [
+            496.15,
+            468.0,
+            542.4,
+            633.5
+          ],
+          "paths": 1,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 12,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball?",
+      "stemLines": [
+        "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic",
+        "centimeter, of the soccer ball?"
+      ],
+      "prose": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball?",
+      "proseAllLines": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball? 1,593 6,371 12,741 50,965",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "1,593",
+          "x": 75.5,
+          "y": 102.4
+        },
+        {
+          "label": "B",
+          "html": "6,371",
+          "x": 76.1,
+          "y": 132.4
+        },
+        {
+          "label": "C",
+          "html": "12,741",
+          "x": 75.6,
+          "y": 161.6
+        },
+        {
+          "label": "D",
+          "html": "50,965",
+          "x": 75.1,
+          "y": 191.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q12.png",
+          "rect": [
+            387.49,
+            257.4,
+            542.4,
+            400.7
+          ],
+          "paths": 1,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 14,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An equation is shown below. Which value of <span class=\"math\">x</span> makes the equation true?",
+      "stemLines": [
+        "An equation is shown below.",
+        "Which value of <span class=\"math\">x</span> makes the equation true?"
+      ],
+      "prose": "An equation is shown below. Which value of  makes the equation true?",
+      "proseAllLines": "An equation is shown below. Which value of  makes the equation true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−3</span>",
+          "x": 75.5,
+          "y": 526.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−2.4</span>",
+          "x": 76.1,
+          "y": 555.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">0.5</span>",
+          "x": 75.6,
+          "y": 585.5
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.1,
+          "y": 615.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.36,
+            474.7,
+            216.66,
+            484.45
+          ],
+          "html": "<span class=\"math\">−6(x − 4) + 5x = −9x</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 15,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "stemLines": [
+        "A set of numbers is shown below.",
+        "What number would need to be removed from the set so that the set contains only",
+        "rational numbers?"
+      ],
+      "prose": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "proseAllLines": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "x": 75.5,
+          "y": 165.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">1.1<span class=\"repeat\">3</span></span>",
+          "x": 76.1,
+          "y": 199.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">√<span class=\"repeat\">5</span></span>",
+          "x": 75.6,
+          "y": 229.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>2</span></span></span>",
+          "x": 75.1,
+          "y": 262.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q15.png",
+          "rect": [
+            108.46,
+            82.89,
+            197.84,
+            107.2
+          ],
+          "paths": 19,
+          "decodedLabels": "<span class=\"frac\"><span>1</span><span>3</span></span> ,1·1<span class=\"repeat\">3,</span> √<span class=\"repeat\">5,</span> <span class=\"frac\"><span>5</span><span>2</span></span>",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 16,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 372.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">(3<sup>2</sup>)<sup>2 ·</sup> 3</span>",
+          "x": 76.1,
+          "y": 408.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">(3<sup>3</sup>)<sup>2</sup></span>",
+          "x": 75.6,
+          "y": 438.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3<sup>15</sup></span><span>3<sup>3</sup></span></span></span>",
+          "x": 75.1,
+          "y": 474.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 17,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Rectangle <span class=\"math\">JKLM</span> is graphed on the coordinate plane shown below. Rectangle <span class=\"math\">JKLM</span> will be translated <span class=\"math\">5</span> units right and <span class=\"math\">2</span> units up to produce rectangle <span class=\"math\">J′K′L′M′</span>. Which statement about the line segments of rectangle <span class=\"math\">J′K′L′M′</span> is true?",
+      "stemLines": [
+        "Rectangle <span class=\"math\">JKLM</span> is graphed on the coordinate plane shown below. Rectangle <span class=\"math\">JKLM</span> will be",
+        "translated <span class=\"math\">5</span> units right and <span class=\"math\">2</span> units up to produce rectangle <span class=\"math\">J′K′L′M′</span>.",
+        "Which statement about the line segments of rectangle <span class=\"math\">J′K′L′M′</span> is true?"
+      ],
+      "prose": "Rectangle  is graphed on the coordinate plane shown below. Rectangle  will be translated  units right and  units up to produce rectangle . Which statement about the line segments of rectangle  is true?",
+      "proseAllLines": "Rectangle  is graphed on the coordinate plane shown below. Rectangle  will be translated  units right and  units up to produce rectangle . Which statement about the line segments of rectangle  is true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">J′M′</span></span>",
+          "x": 75.5,
+          "y": 508.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "x": 76.1,
+          "y": 538.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">J′K′</span></span>",
+          "x": 75.6,
+          "y": 568.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "x": 75.1,
+          "y": 598.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q17.png",
+          "rect": [
+            136.69,
+            111.25,
+            480.1,
+            492.75
+          ],
+          "paths": 164,
+          "decodedLabels": "� � � � � � � �<sup>�</sup> � � � • • � �<sup>�</sup> �<sup>• •</sup>� � �� � �� �� �� �� �� �� �� �� �� � � � � � � � � � � � � � � �� �� �� �� �� �� �� �� �� �� � �",
+          "undecodedGlyphs": 75,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 19,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Figure <span class=\"math\">ABCD</span> is shown on the coordinate plane below. The figure will be dilated by a scale factor of <span class=\"math\">2</span>, with the center of the dilation at the origin. The resulting image will be figure <span class=\"math\">A′B′C′D′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span> ?",
+      "stemLines": [
+        "Figure <span class=\"math\">ABCD</span> is shown on the coordinate plane below. The figure will be dilated by a",
+        "scale factor of <span class=\"math\">2</span>, with the center of the dilation at the origin. The resulting image will be",
+        "figure <span class=\"math\">A′B′C′D′</span>.",
+        "What will be the coordinates of vertex <span class=\"math\">A′</span> ?"
+      ],
+      "prose": "Figure  is shown on the coordinate plane below. The figure will be dilated by a scale factor of , with the center of the dilation at the origin. The resulting image will be figure . What will be the coordinates of vertex  ?",
+      "proseAllLines": "Figure  is shown on the coordinate plane below. The figure will be dilated by a scale factor of , with the center of the dilation at the origin. The resulting image will be figure . What will be the coordinates of vertex  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">(−5,6)</span>",
+          "x": 75.5,
+          "y": 523.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">(−3,6)</span>",
+          "x": 76.1,
+          "y": 553.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">(−3,8)</span>",
+          "x": 75.6,
+          "y": 583.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">(−6,8)</span>",
+          "x": 75.1,
+          "y": 613.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q19.png",
+          "rect": [
+            136.69,
+            126.25,
+            480.1,
+            507.75
+          ],
+          "paths": 165,
+          "decodedLabels": "� � � � � � � � �<sup>� •</sup> �<sup>�</sup> • � • � � �� � �� �� �� �� �� �� � �<sup>•</sup> � �� � � �<sup>�</sup> � � � � � � � � � � � � � � �� �� �� �� �� �� �� �� �� �� � �",
+          "undecodedGlyphs": 75,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 27,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "stemLines": [
+        "A diagram of a right cone is shown below.",
+        "What is the volume, in cubic yards, of the cone?"
+      ],
+      "prose": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "proseAllLines": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">14π</span>",
+          "x": 75.5,
+          "y": 352.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">24π</span>",
+          "x": 76.1,
+          "y": 382.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">72π</span>",
+          "x": 75.6,
+          "y": 411.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">96π</span>",
+          "x": 75.1,
+          "y": 441.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q27.png",
+          "rect": [
+            119.32,
+            95.99,
+            259.73,
+            298.91
+          ],
+          "paths": 18,
+          "decodedLabels": "� �� � � ��",
+          "undecodedGlyphs": 7,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 28,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A transformation maps <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span>. If <span class=\"math\">△A′B′C′</span> is similar but not congruent to <span class=\"math\">△ABC</span>, which transformation occurred?",
+      "stemLines": [
+        "A transformation maps <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span>. If <span class=\"math\">△A′B′C′</span> is similar but not congruent to",
+        "<span class=\"math\">△ABC</span>, which transformation occurred?"
+      ],
+      "prose": "A transformation maps  to . If  is similar but not congruent to , which transformation occurred?",
+      "proseAllLines": "A transformation maps  to . If  is similar but not congruent to , which transformation occurred? a rotation about the origin a reflection over the -axis a dilation with a scale factor not equal to 1 a translation of 1 unit in both the  and  directions",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "a rotation about the origin",
+          "x": 75.5,
+          "y": 549.6
+        },
+        {
+          "label": "B",
+          "html": "a reflection over the <span class=\"math\">y</span> -axis",
+          "x": 76.1,
+          "y": 579.6
+        },
+        {
+          "label": "C",
+          "html": "a dilation with a scale factor not equal to 1",
+          "x": 75.6,
+          "y": 608.8
+        },
+        {
+          "label": "D",
+          "html": "a translation of 1 unit in both the <span class=\"math\">x</span> and <span class=\"math\">y</span> directions",
+          "x": 75.1,
+          "y": 638.8
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 30,
+      "page": 16,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An equation is shown below. For which value of <span class=\"math\">h</span> will this equation have no solutions?",
+      "stemLines": [
+        "An equation is shown below.",
+        "For which value of <span class=\"math\">h</span> will this equation have no solutions?"
+      ],
+      "prose": "An equation is shown below. For which value of  will this equation have no solutions?",
+      "proseAllLines": "An equation is shown below. For which value of  will this equation have no solutions?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−4</span>",
+          "x": 75.5,
+          "y": 320.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−2</span>",
+          "x": 76.1,
+          "y": 350.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.6,
+          "y": 379.8
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">4</span>",
+          "x": 75.1,
+          "y": 409.8
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.75,
+            268.55,
+            204.27,
+            278.75
+          ],
+          "html": "<span class=\"math\">8 − 12x = h(3x − 4)</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 31,
+      "page": 17,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The diagram below shows three intersecting lines. What is the value of  <span class=\"math\">x</span> ?",
+      "stemLines": [
+        "The diagram below shows three intersecting lines.",
+        "What is the value of  <span class=\"math\">x</span> ?"
+      ],
+      "prose": "The diagram below shows three intersecting lines. What is the value of   ?",
+      "proseAllLines": "The diagram below shows three intersecting lines. What is the value of   ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">6</span>",
+          "x": 75.5,
+          "y": 333.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">10.2</span>",
+          "x": 76.1,
+          "y": 363.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">17</span>",
+          "x": 75.6,
+          "y": 392.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">19.2</span>",
+          "x": 75.1,
+          "y": 422.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q31.png",
+          "rect": [
+            118.7,
+            95.5,
+            333.85,
+            280.0
+          ],
+          "paths": 25,
+          "decodedLabels": "� � ���<sup>�</sup> ���<sup>�</sup> � � ��� � � � �<sup>�</sup> � �",
+          "undecodedGlyphs": 22,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 32,
+      "page": 18,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Alex and Taylor are comparing the costs of their gym memberships. <span class=\"math\">•</span> The total cost, <span class=\"math\">y</span>, in dollars, of Alex’s gym membership for <span class=\"math\">x</span> months is represented by the equation <span class=\"math\">y = 15x</span>. <span class=\"math\">•</span> The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month?",
+      "stemLines": [
+        "Alex and Taylor are comparing the costs of their gym memberships.",
+        "<span class=\"math\">•</span> The total cost, <span class=\"math\">y</span>, in dollars, of Alex’s gym membership for <span class=\"math\">x</span> months is represented",
+        "by the equation <span class=\"math\">y = 15x</span>.",
+        "<span class=\"math\">•</span> The total cost of Taylor’s gym membership is represented by the graph",
+        "shown below.",
+        "Which statement identifies the gym membership with the lower cost per month?"
+      ],
+      "prose": "Alex and Taylor are comparing the costs of their gym memberships. The total cost, , in dollars, of Alex’s gym membership for  months is represented by the equation . The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month?",
+      "proseAllLines": "Alex and Taylor are comparing the costs of their gym memberships. The total cost, , in dollars, of Alex’s gym membership for  months is represented by the equation . The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month? Alex’s gym membership at a cost of  per month Alex’s gym membership at a cost of  per month Taylor’s gym membership at a cost of  per month Taylor’s gym membership at a cost of  per month",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Alex’s gym membership at a cost of <span class=\"math\">$10.00</span> per month",
+          "x": 75.5,
+          "y": 438.4
+        },
+        {
+          "label": "B",
+          "html": "Alex’s gym membership at a cost of <span class=\"math\">$15.00</span> per month",
+          "x": 76.1,
+          "y": 468.4
+        },
+        {
+          "label": "C",
+          "html": "Taylor’s gym membership at a cost of <span class=\"math\">$15.00</span> per month",
+          "x": 75.6,
+          "y": 498.4
+        },
+        {
+          "label": "D",
+          "html": "Taylor’s gym membership at a cost of <span class=\"math\">$25.00</span> per month",
+          "x": 75.1,
+          "y": 527.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q32.png",
+          "rect": [
+            194.68,
+            171.25,
+            410.32,
+            422.25
+          ],
+          "paths": 194,
+          "decodedLabels": "������<sup>�</sup>� ��� ���������� � �<sup>� � � � �</sup> � �<sup>� �</sup> �<sup>� �</sup> �<sup>� � � � � �</sup> �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> �<sup>� � �</sup> � � �<sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
+          "undecodedGlyphs": 191,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 23,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression <span class=\"math\">2<sup>5</sup> · 10<sup>0</sup> · 3<sup>−2</sup></span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">2<sup>5</sup> · 10<sup>0</sup> · 3<sup>−2</sup></span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "What is the value of the expression  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−288</span>",
+          "x": 75.5,
+          "y": 89.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−90</span>",
+          "x": 76.1,
+          "y": 119.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>0</span><span>9</span></span></span>",
+          "x": 75.6,
+          "y": 153.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>32</span><span>9</span></span></span>",
+          "x": 75.1,
+          "y": 192.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 23,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+      "stemLines": [
+        "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as",
+        "shown below.",
+        "Which statement about the trapezoids is true?"
+      ],
+      "prose": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+      "proseAllLines": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true? Angle A is congruent to angle S. Angle C is congruent to angle Q. Side BC is congruent to side QR. Side DC is congruent to side RQ.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Angle A is congruent to angle S.",
+          "x": 75.5,
+          "y": 541.3
+        },
+        {
+          "label": "B",
+          "html": "Angle C is congruent to angle Q.",
+          "x": 76.1,
+          "y": 571.3
+        },
+        {
+          "label": "C",
+          "html": "Side BC is congruent to side QR.",
+          "x": 75.6,
+          "y": 601.3
+        },
+        {
+          "label": "D",
+          "html": "Side DC is congruent to side RQ.",
+          "x": 75.1,
+          "y": 630.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q34.png",
+          "rect": [
+            154.65,
+            315.66,
+            462.9,
+            488.49
+          ],
+          "paths": 130,
+          "decodedLabels": "� � � � � • • � � � �� �� �� �� �� �� �� �� ��<sup>�</sup> � � � �<sup>•</sup> � � �<sup>•</sup> � � � � � � � �<sup>• •</sup> �<sup>��</sup> �� �<sup>• •</sup>�<sup>��</sup> �� �",
+          "undecodedGlyphs": 54,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 24,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and Hannah calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>4</span><span>6</span></span></span>. Their work is shown below. Which statement is true?",
+      "stemLines": [
+        "Brayden and Hannah were asked to calculate the slope of the same line. Brayden",
+        "calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and Hannah calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>4</span><span>6</span></span></span>. Their work is",
+        "shown below.",
+        "Which statement is true?"
+      ],
+      "prose": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be  and Hannah calculated the slope to be . Their work is shown below. Which statement is true?",
+      "proseAllLines": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be  and Hannah calculated the slope to be . Their work is shown below. Which statement is true? Only Brayden calculated the slope correctly. Only Hannah calculated the slope correctly. Both Brayden and Hannah calculated the slope correctly. Neither Brayden nor Hannah calculated the slope correctly.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Only Brayden calculated the slope correctly.",
+          "x": 75.5,
+          "y": 399.4
+        },
+        {
+          "label": "B",
+          "html": "Only Hannah calculated the slope correctly.",
+          "x": 76.1,
+          "y": 429.4
+        },
+        {
+          "label": "C",
+          "html": "Both Brayden and Hannah calculated the slope correctly.",
+          "x": 75.6,
+          "y": 458.6
+        },
+        {
+          "label": "D",
+          "html": "Neither Brayden nor Hannah calculated the slope correctly.",
+          "x": 75.1,
+          "y": 488.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q35.png",
+          "rect": [
+            100.73,
+            165.25,
+            516.07,
+            346.75
+          ],
+          "paths": 162,
+          "decodedLabels": "����� � �<sup>�</sup>� �� �� ��� ���<sup>�</sup>� �� �� � � � � �<sup>�</sup> �<sup>�</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>�</sup> � � � �<sup>�� �� �� ��</sup> �<sup>�</sup> �<sup>� � � � � �</sup> �<sup>�</sup> �<sup>�� �� �� ��</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup>�<sup>� �</sup> �<sup>�</sup> �� �� � �",
+          "undecodedGlyphs": 91,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The table of values shown below represents a relation. Which statement describes the relation?",
+      "stemLines": [
+        "The table of values shown below represents a relation.",
+        "Which statement describes the relation?"
+      ],
+      "prose": "The table of values shown below represents a relation. Which statement describes the relation?",
+      "proseAllLines": "The table of values shown below represents a relation. Which statement describes the relation? The table represents a function because each input has only one output. The table represents a function because each output has only one input. The table does not represent a function because each input has only one output. The table does not represent a function because each output has only one input.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "The table represents a function because each input has only one output.",
+          "x": 75.5,
+          "y": 255.4
+        },
+        {
+          "label": "B",
+          "html": "The table represents a function because each output has only one input.",
+          "x": 76.1,
+          "y": 285.4
+        },
+        {
+          "label": "C",
+          "html": "The table does not represent a function because each input has only one output.",
+          "x": 75.6,
+          "y": 314.6
+        },
+        {
+          "label": "D",
+          "html": "The table does not represent a function because each output has only one input.",
+          "x": 75.1,
+          "y": 344.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q36.png",
+          "rect": [
+            131.12,
+            100.87,
+            178.81,
+            196.27
+          ],
+          "paths": 23,
+          "decodedLabels": "� � �� �� � �� �� � �� � � � �",
+          "undecodedGlyphs": 18,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+      "stemLines": [
+        "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?"
+      ],
+      "prose": "On which number line does point P represent the value of the expression ?",
+      "proseAllLines": "On which number line does point P represent the value of the expression ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 458.4
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 512.4
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 75.6,
+          "y": 567.1
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 75.1,
+          "y": 621.9
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q37.png",
+          "rect": [
+            75.14,
+            441.75,
+            359.01,
+            641.25
+          ],
+          "paths": 104,
+          "decodedLabels": "� • �� � � � � � � � � � � • �� � � � � � � � � � � • �� � � � � � � � � � � • �� � � � � � � � � �",
+          "undecodedGlyphs": 48,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 38,
+      "page": 26,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A scatter plot is shown below. Which statement best describes the association between <span class=\"math\">x</span> and  <span class=\"math\">y</span> ?",
+      "stemLines": [
+        "A scatter plot is shown below.",
+        "Which statement best describes the association between <span class=\"math\">x</span> and  <span class=\"math\">y</span> ?"
+      ],
+      "prose": "A scatter plot is shown below. Which statement best describes the association between  and   ?",
+      "proseAllLines": "A scatter plot is shown below. Which statement best describes the association between  and   ? There is a positive, linear association. There is a negative, linear association. There is a positive, nonlinear association. There is a negative, nonlinear association.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "There is a positive, linear association.",
+          "x": 75.5,
+          "y": 350.6
+        },
+        {
+          "label": "B",
+          "html": "There is a negative, linear association.",
+          "x": 76.1,
+          "y": 380.6
+        },
+        {
+          "label": "C",
+          "html": "There is a positive, nonlinear association.",
+          "x": 75.6,
+          "y": 409.9
+        },
+        {
+          "label": "D",
+          "html": "There is a negative, nonlinear association.",
+          "x": 75.1,
+          "y": 439.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q38.png",
+          "rect": [
+            118.65,
+            95.71,
+            325.65,
+            334.5
+          ],
+          "paths": 226,
+          "decodedLabels": "� �<sup>� �</sup> � �<sup>� � � � �</sup> � �<sup>� � � �</sup> � � �<sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � • • • • � � � � � � � � � � � � � • � • • � • � � � � � � � � � � � �<sup>•</sup> � • • � � � � � � � � � � � � � � •<sup>•</sup> � � � � � � � � � � � � �<sup>•</sup> �<sup>• •</sup> �<sup>• •</sup> � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � ",
+          "undecodedGlyphs": 194,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 39,
+      "page": 27,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+      "stemLines": [
+        "A table of values for a linear function is shown below.",
+        "What is the rate of change for this function?"
+      ],
+      "prose": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+      "proseAllLines": "This question is worth 1 credit. A table of values for a linear function is shown below. What is the rate of change for this function? Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q39.png",
+          "rect": [
+            125.28,
+            122.82,
+            177.32,
+            218.03
+          ],
+          "paths": 22,
+          "decodedLabels": "� � �� � �� �� �� � � � � � �",
+          "undecodedGlyphs": 17,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 28,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "A circular dart board has a circumference of <span class=\"math\">17.75π</span> inches. What is the radius, in inches, of the dart board?",
+      "stemLines": [
+        "A circular dart board has a circumference of <span class=\"math\">17.75π</span> inches. What is the radius, in inches, of",
+        "the dart board?"
+      ],
+      "prose": "A circular dart board has a circumference of  inches. What is the radius, in inches, of the dart board?",
+      "proseAllLines": "This question is worth 1 credit. A circular dart board has a circumference of  inches. What is the radius, in inches, of the dart board? Answer    inches",
+      "instructions": [
+        "Answer    inches"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, <span class=\"math\">y</span>, in dollars, for Lisa mowing the lawn for <span class=\"math\">x</span> hours is represented by the equation <span class=\"math\">y = 6x + 12.</span> What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+      "stemLines": [
+        "David and Lisa each earn money by mowing lawns. They both charge a one time",
+        "maintenance fee and an hourly rate. David’s total charges, based on the number of hours",
+        "he mows a lawn, are shown in the table below. The total charges, <span class=\"math\">y</span>, in dollars, for Lisa",
+        "mowing the lawn for <span class=\"math\">x</span> hours is represented by the equation <span class=\"math\">y = 6x + 12.</span>",
+        "What is the difference, in dollars, between the one time maintenance fee David charges",
+        "and the one time maintenance fee Lisa charges?"
+      ],
+      "prose": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, , in dollars, for Lisa mowing the lawn for  hours is represented by the equation What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+      "proseAllLines": "This question is worth 1 credit. David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, , in dollars, for Lisa mowing the lawn for  hours is represented by the equation What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges? Answer   $",
+      "instructions": [
+        "Answer   $"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q41.png",
+          "rect": [
+            188.36,
+            162.25,
+            428.44,
+            278.75
+          ],
+          "paths": 76,
+          "decodedLabels": "���� �<sup>�</sup>� ����� �� ���� ����� ����� ������� ������� ��������� �� � � �� �� � ����� � �����",
+          "undecodedGlyphs": 71,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 42,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
+      "stemLines": [
+        "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational."
+      ],
+      "prose": "Classify  as being rational or irrational.",
+      "proseAllLines": "This question is worth 2 credits. Classify  as being rational or irrational. Explain how you know your answer is correct.",
+      "instructions": [
+        "Explain how you know your answer is correct."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The equations of two functions are shown below. Function A: <span class=\"math\">y = 3x + 8</span> Function B: <span class=\"math\">y = x<sup>2</sup> + 2</span> Classify each function as linear or nonlinear.",
+      "stemLines": [
+        "The equations of two functions are shown below.",
+        "Function A: <span class=\"math\">y = 3x + 8</span>",
+        "Function B: <span class=\"math\">y = x<sup>2</sup> + 2</span>",
+        "Classify each function as linear or nonlinear."
+      ],
+      "prose": "The equations of two functions are shown below. Function A: Function B: Classify each function as linear or nonlinear.",
+      "proseAllLines": "This question is worth 2 credits. The equations of two functions are shown below. Function A: Function B: Classify each function as linear or nonlinear. Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer.",
+      "stemLines": [
+        "The graph shown below represents the time and speed of a roller coaster over the course",
+        "of the entire ride.",
+        "Based on the graph, during what interval of time, in seconds, is the speed, in miles per",
+        "hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles",
+        "per hour, for that interval in your answer."
+      ],
+      "prose": "The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer.",
+      "proseAllLines": "This question is worth 2 credits. The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q44.png",
+          "rect": [
+            218.4,
+            131.69,
+            398.4,
+            334.56
+          ],
+          "paths": 164,
+          "decodedLabels": "������ ������� ����� � �<sup>� �</sup> �<sup>�</sup> �<sup>� �</sup> � � � �<sup>� � �</sup> � �<sup>� �</sup> �<sup>� � � � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � ����� �������������",
+          "undecodedGlyphs": 162,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 33,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "An equation is shown below. What value of <span class=\"math\">x</span> will make the equation true?",
+      "stemLines": [
+        "An equation is shown below.",
+        "What value of <span class=\"math\">x</span> will make the equation true?"
+      ],
+      "prose": "An equation is shown below. What value of  will make the equation true?",
+      "proseAllLines": "This question is worth 2 credits. An equation is shown below. What value of  will make the equation true? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.79,
+            104.43,
+            208.3,
+            124.56
+          ],
+          "html": "<span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span> (3x + 9) = x − 4</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 34,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be reflected over the <span class=\"math\">y</span> axis to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span>?",
+      "stemLines": [
+        "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be",
+        "reflected over the <span class=\"math\">y</span> axis to create triangle <span class=\"math\">A′B′C′</span>.",
+        "What will be the coordinates of vertex <span class=\"math\">A′</span>?"
+      ],
+      "prose": "Triangleis graphed on the coordinate plane shown below. Trianglewill be reflected over theaxis to create triangle. What will be the coordinates of vertex?",
+      "proseAllLines": "This question is worth 2 credits. Triangleis graphed on the coordinate plane shown below. Trianglewill be reflected over theaxis to create triangle. What will be the coordinates of vertex? Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q46.png",
+          "rect": [
+            181.68,
+            133.0,
+            435.12,
+            424.5
+          ],
+          "paths": 115,
+          "decodedLabels": "� � � � � � • � � � • � � � �� �� �� �� �� �� �� � � � � � � � � � � �<sup>• ��</sup> �� �� �� �� �� �� �",
+          "undecodedGlyphs": 52,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 47,
+      "page": 35,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+      "stemLines": [
+        "A student used the diagram shown below to support their work in representing the",
+        "relationship among the lengths of the sides, in units, of a right triangle.",
+        "The student then showed how the diagram relates to the Pythagorean theorem, but made",
+        "an error as shown below.",
+        "What is the error that the student made and what are the correct steps needed to show",
+        "how the Pythagorean theorem shows the relationship among the lengths of the sides, in",
+        "units, of the right triangle?"
+      ],
+      "prose": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+      "proseAllLines": "This question is worth 2 credits. A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle? Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.47,
+            352.08,
+            165.23,
+            362.3
+          ],
+          "html": "<span class=\"math\">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>"
+        },
+        {
+          "rect": [
+            107.55,
+            376.92,
+            167.5,
+            387.8
+          ],
+          "html": "<span class=\"math\">5<sup>2</sup> + 4<sup>2</sup> = 3<sup>2</sup></span>"
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q47_1.png",
+          "rect": [
+            236.4,
+            132.51,
+            380.47,
+            290.92
+          ],
+          "paths": 66,
+          "decodedLabels": "� � � ��� ����� �<sup>�</sup> ���� �<sup>�</sup> ����<sup>�</sup>� � � � � � � �<sup>�</sup> ���� �",
+          "undecodedGlyphs": 38,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 48,
+      "page": 36,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night.",
+      "stemLines": [
+        "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science",
+        "project and determined that their total hours of sleep is proportional to the total number",
+        "of nights. The graph and the table shown below represent the sleep times for Kaley",
+        "and Mark.",
+        "Based on the graph and the table, determine who gets more sleep per night."
+      ],
+      "prose": "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night.",
+      "proseAllLines": "This question is worth 3 credits. Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night. Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2025/q48.png",
+          "rect": [
+            108.9,
+            160.77,
+            507.41,
+            325.25
+          ],
+          "paths": 183,
+          "decodedLabels": "�����<sup>�</sup>� ����� ��� � ����<sup>�</sup>� ����� ��� � � � �<sup>�</sup> �<sup>�</sup> � � � � �<sup>�</sup> �<sup>� �</sup> �<sup>� � � � � �</sup> ��<sup>�</sup> � �<sup>� � �</sup> � � � � � �• � � � � � � � • � � � � � � �<sup>•</sup> � � � � � � �<sup>•</sup> � � � � � � �<sup>•</sup> � � � � � � � � � �<sup>�� � �� � � � �</sup> �<sup>�</sup> �<sup>�� �� �� � � �� �� � � � � �</sup> � ",
+          "undecodedGlyphs": 171,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

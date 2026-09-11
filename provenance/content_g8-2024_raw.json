@@ -1,0 +1,1471 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-11",
+    "testId": "g8-2024",
+    "source": "sources/2024-released-items-math-g8.pdf",
+    "assetDir": "G8-2024",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g8-2024.json.",
+    "items": 31,
+    "itemsWithUnresolved": 0,
+    "figures": 13,
+    "displayExpressions": 4
+  },
+  "items": [
+    {
+      "item": 1,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A group of friends went to a movie theater and paid <span class=\"math\">$15.00</span> for each movie ticket. The group of friends shared one container of popcorn that cost <span class=\"math\">$8.99</span>. Which equation can b e used to determine the total cost, <span class=\"math\">c,</span> for <span class=\"math\">n</span> tickets and the container of popcorn?",
+      "stemLines": [
+        "A group of friends went to a movie theater and paid <span class=\"math\">$15.00</span> for each movie ticket. The",
+        "group of friends shared one container of popcorn that cost <span class=\"math\">$8.99</span>. Which equation can b e",
+        "used to determine the total cost, <span class=\"math\">c,</span> for <span class=\"math\">n</span> tickets and the container of popcorn?"
+      ],
+      "prose": "A group of friends went to a movie theater and paid  for each movie ticket. The group of friends shared one container of popcorn that cost . Which equation can b e used to determine the total cost,  for  tickets and the container of popcorn?",
+      "proseAllLines": "A group of friends went to a movie theater and paid  for each movie ticket. The group of friends shared one container of popcorn that cost . Which equation can b e used to determine the total cost,  for  tickets and the container of popcorn?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">c = 15n + 8.99</span>",
+          "x": 75.5,
+          "y": 118.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">c = 8.99n + 15</span>",
+          "x": 76.1,
+          "y": 148.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">c = 15 (n + 8.99)</span>",
+          "x": 75.6,
+          "y": 178.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">c = 8.99 (n + 15)</span>",
+          "x": 75.1,
+          "y": 208.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 2,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data?",
+      "stemLines": [
+        "A scatter plot is shown below.",
+        "Which pair of points could be used to draw a line that best represents the relationship of",
+        "the data?"
+      ],
+      "prose": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data?",
+      "proseAllLines": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data? and and and and",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">(4,7)</span> and <span class=\"math\">(8,4)</span>",
+          "x": 75.5,
+          "y": 574.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">(3,3)</span> and <span class=\"math\">(9,7)</span>",
+          "x": 76.1,
+          "y": 604.7
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">(2,4)</span> and <span class=\"math\">(6,4)</span>",
+          "x": 75.6,
+          "y": 634.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">(3,2)</span> and <span class=\"math\">(3,4)</span>",
+          "x": 75.1,
+          "y": 664.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q02.png",
+          "rect": [
+            206.09,
+            305.19,
+            412.45,
+            509.47
+          ],
+          "paths": 81,
+          "decodedLabels": "� � � � � � � � � • � • • � • • • � • • • • � • � • • • • • � • � • • � • • � � � � � � � � � � � � � � � � � �",
+          "undecodedGlyphs": 35,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 4,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90<sup>○</sup></span> about the origin and then reflected over the <span class=\"math\">y</span> axis to form triangle <span class=\"math\">A′B′C′</span>. One of the angles in triangle <span class=\"math\">ABC</span> has a measure of <span class=\"math\">115<sup>○</sup></span>. One of the angles in triangle <span class=\"math\">A′B′C′</span> has a measure of <span class=\"math\">40<sup>○</sup></span>. Which is the measure of an angle in triangle <span class=\"math\">ABC</span>?",
+      "stemLines": [
+        "Triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90<sup>○</sup></span> about the origin and then reflected over the <span class=\"math\">y</span> axis to form",
+        "triangle <span class=\"math\">A′B′C′</span>. One of the angles in triangle <span class=\"math\">ABC</span> has a measure of <span class=\"math\">115<sup>○</sup></span>. One of the",
+        "angles in triangle <span class=\"math\">A′B′C′</span> has a measure of <span class=\"math\">40<sup>○</sup></span>. Which is the measure of an angle in",
+        "triangle <span class=\"math\">ABC</span>?"
+      ],
+      "prose": "Triangleis rotatedabout the origin and then reflected over theaxis to form triangle. One of the angles in trianglehas a measure of. One of the angles in trianglehas a measure of. Which is the measure of an angle in triangle?",
+      "proseAllLines": "Triangleis rotatedabout the origin and then reflected over theaxis to form triangle. One of the angles in trianglehas a measure of. One of the angles in trianglehas a measure of. Which is the measure of an angle in triangle?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">25<sup>○</sup></span>",
+          "x": 75.5,
+          "y": 319.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">75<sup>○</sup></span>",
+          "x": 76.1,
+          "y": 349.2
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">155<sup>○</sup></span>",
+          "x": 75.6,
+          "y": 379.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">180<sup>○</sup></span>",
+          "x": 75.1,
+          "y": 408.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 5,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of <span class=\"math\">x</span> in the equation <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span>x − 7 = 5 − <span class=\"frac\"><span>3</span><span>5</span></span>x</span> ?",
+      "stemLines": [
+        "What is the value of <span class=\"math\">x</span> in the equation <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span>x − 7 = 5 − <span class=\"frac\"><span>3</span><span>5</span></span>x</span> ?"
+      ],
+      "prose": "What is the value of  in the equation  ?",
+      "proseAllLines": "What is the value of  in the equation  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3 <span class=\"frac\"><span>18</span><span>19</span></span></span>",
+          "x": 75.5,
+          "y": 522.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">9 <span class=\"frac\"><span>9</span><span>19</span></span></span>",
+          "x": 76.1,
+          "y": 560.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">15 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "x": 75.6,
+          "y": 599.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">19 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "x": 75.1,
+          "y": 638.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 7,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true?",
+      "stemLines": [
+        "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each",
+        "electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach",
+        "electrician are represented by the equation and the table shown below.",
+        "Which statement comparing the charges for each electrician is true?"
+      ],
+      "prose": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true?",
+      "proseAllLines": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true? Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B. Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B. Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B. Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B.",
+          "x": 75.5,
+          "y": 504.2
+        },
+        {
+          "label": "B",
+          "html": "Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B.",
+          "x": 76.1,
+          "y": 542.5
+        },
+        {
+          "label": "C",
+          "html": "Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B.",
+          "x": 75.6,
+          "y": 580.0
+        },
+        {
+          "label": "D",
+          "html": "Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B.",
+          "x": 75.1,
+          "y": 618.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q07.png",
+          "rect": [
+            131.81,
+            319.52,
+            485.64,
+            449.28
+          ],
+          "paths": 80,
+          "decodedLabels": "� ���������� � � ���������� � �<sup>�</sup> ��<sup>� �</sup> ��<sup>�</sup>�<sup>��</sup> ��<sup>����</sup>�<sup>��</sup> �<sup>�</sup> �<sup>�</sup> � � � ��� � �<sup>�</sup> �<sup>�</sup> � �<sup>�</sup> � � �� � � �� � � ��",
+          "undecodedGlyphs": 75,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 9,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the slope of the line on a coordinate plane that passes through the points <span class=\"math\">(2,2)</span> and <span class=\"math\">(− 1, −2)</span> ?",
+      "stemLines": [
+        "What is the slope of the line on a coordinate plane that passes through the points <span class=\"math\">(2,2)</span>",
+        "and <span class=\"math\">(− 1, −2)</span> ?"
+      ],
+      "prose": "What is the slope of the line on a coordinate plane that passes through the points and  ?",
+      "proseAllLines": "What is the slope of the line on a coordinate plane that passes through the points and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>4</span><span>3</span></span></span>",
+          "x": 75.5,
+          "y": 420.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">− <span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "x": 76.1,
+          "y": 459.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "x": 75.6,
+          "y": 498.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>4</span><span>3</span></span></span>",
+          "x": 75.1,
+          "y": 536.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 10,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A sphere has a radius of <span class=\"math\">4</span> inches. A cone has a radius of <span class=\"math\">3</span> inches and a height of <span class=\"math\">8</span> inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+      "stemLines": [
+        "A sphere has a radius of <span class=\"math\">4</span> inches. A cone has a radius of <span class=\"math\">3</span> inches and a height of <span class=\"math\">8</span> inches.",
+        "Which expression represents the difference in volume, in cubic inches, between the sphere",
+        "and the cone?"
+      ],
+      "prose": "A sphere has a radius of  inches. A cone has a radius of  inches and a height of  inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+      "proseAllLines": "A sphere has a radius of  inches. A cone has a radius of  inches and a height of  inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "x": 75.5,
+          "y": 121.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "x": 76.1,
+          "y": 160.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "x": 75.6,
+          "y": 199.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "x": 75.1,
+          "y": 237.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 12,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which value of <span class=\"math\">x</span> makes the equation <span class=\"math\">x<sup>3</sup> = 64</span> true?",
+      "stemLines": [
+        "Which value of <span class=\"math\">x</span> makes the equation <span class=\"math\">x<sup>3</sup> = 64</span> true?"
+      ],
+      "prose": "Which value of  makes the equation  true?",
+      "proseAllLines": "Which value of  makes the equation  true?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">4</span>",
+          "x": 75.5,
+          "y": 593.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">8</span>",
+          "x": 76.1,
+          "y": 623.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">16</span>",
+          "x": 75.6,
+          "y": 652.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">32</span>",
+          "x": 75.1,
+          "y": 682.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 18,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line <span class=\"math\">y = 0.3x + 5.8</span> has been drawn to best represent the relationship between the alligator’s weight and growth time. Which statement best describes what the number <span class=\"math\">0·3</span> in the equation represents in this situation?",
+      "stemLines": [
+        "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo.",
+        "The line <span class=\"math\">y = 0.3x + 5.8</span> has been drawn to best represent the relationship between the",
+        "alligator’s weight and growth time.",
+        "Which statement best describes what the number <span class=\"math\">0·3</span> in the equation represents in",
+        "this situation?"
+      ],
+      "prose": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line  has been drawn to best represent the relationship between the alligator’s weight and growth time. Which statement best describes what the number  in the equation represents in this situation?",
+      "proseAllLines": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line  has been drawn to best represent the relationship between the alligator’s weight and growth time. Which statement best describes what the number  in the equation represents in this situation? The starting weight, in pounds, of the alligator. The approximate number of pounds the alligator gains each week. The maximum number of pounds the alligator gains each week. The average number of pounds of food the alligator is fed each week.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "The starting weight, in pounds, of the alligator.",
+          "x": 75.5,
+          "y": 585.7
+        },
+        {
+          "label": "B",
+          "html": "The approximate number of pounds the alligator gains each week.",
+          "x": 76.1,
+          "y": 615.7
+        },
+        {
+          "label": "C",
+          "html": "The maximum number of pounds the alligator gains each week.",
+          "x": 75.6,
+          "y": 645.7
+        },
+        {
+          "label": "D",
+          "html": "The average number of pounds of food the alligator is fed each week.",
+          "x": 75.1,
+          "y": 675.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q18.png",
+          "rect": [
+            238.65,
+            368.97,
+            378.15,
+            517.98
+          ],
+          "paths": 117,
+          "decodedLabels": "���������<sup>�</sup>� ������ �<sup>�</sup> �<sup>�</sup> � � � �<sup>�</sup> � � �<sup>� � � � �</sup> � �<sup>�</sup> � �<sup>�</sup> � �<sup>�</sup> • �� � � � � � • � �� � � � � � � • � �� � � � � � � • � �� � � � � � � • � ���� �� �� �� �� �� � • �<sup>•</sup> �� � ���� �������",
+          "undecodedGlyphs": 108,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 19,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Trapezoid ABCD and its image A’B’C’D’ are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A’B’C’D’ ?",
+      "stemLines": [
+        "Trapezoid ABCD and its image A’B’C’D’ are shown on the coordinate plane below.",
+        "Which series of transformations could be applied to map trapezoid ABCD onto",
+        "trapezoid A’B’C’D’ ?"
+      ],
+      "prose": "Trapezoid ABCD and its image A’B’C’D’ are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A’B’C’D’ ?",
+      "proseAllLines": "Trapezoid ABCD and its image A’B’C’D’ are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A’B’C’D’ ? reflection over the x axis and then a rotation of 180˚ about the origin reflection over the x axis and then a rotation of 90˚ about the origin reflection over the y axis and then a rotation of 180˚ about the origin reflection over the y axis and then a rotation of 90˚ about the origin",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "reflection over the x axis and then a rotation of 180˚ about the origin",
+          "x": 75.5,
+          "y": 410.6
+        },
+        {
+          "label": "B",
+          "html": "reflection over the x axis and then a rotation of 90˚ about the origin",
+          "x": 76.1,
+          "y": 440.6
+        },
+        {
+          "label": "C",
+          "html": "reflection over the y axis and then a rotation of 180˚ about the origin",
+          "x": 75.6,
+          "y": 470.6
+        },
+        {
+          "label": "D",
+          "html": "reflection over the y axis and then a rotation of 90˚ about the origin",
+          "x": 75.1,
+          "y": 499.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q19.png",
+          "rect": [
+            186.15,
+            99.82,
+            430.65,
+            343.61
+          ],
+          "paths": 131,
+          "decodedLabels": "� � � � � � � � � � � ��� � � �� � � � � � � � � � � � � � � � �<sup>�</sup> �<sup>�</sup> • •<sup>�</sup>� • •<sup>�</sup> � • •<sup>�</sup>� • • � � � � � �<sup>�</sup> �<sup>�</sup> �",
+          "undecodedGlyphs": 53,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 20,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which equation represents a linear function?",
+      "stemLines": [
+        "Which equation represents a linear function?"
+      ],
+      "prose": "Which equation represents a linear function?",
+      "proseAllLines": "Which equation represents a linear function?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 3</span>",
+          "x": 75.5,
+          "y": 597.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">y = x<sup>2</sup> + 5</span>",
+          "x": 76.1,
+          "y": 630.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">y = x<sup>2</sup> + 2x</span>",
+          "x": 75.6,
+          "y": 660.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">y = 1 x<sup>3</sup></span>",
+          "x": 75.1,
+          "y": 695.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 22,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "On a coordinate plane, triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90</span> degrees clockwise about the origin and then dilated with a scale factor of <span class=\"math\">2</span> centered at the origin to form triangle <span class=\"math\">A′B′C′</span>. Which statement describes the relationship between triangle <span class=\"math\">ABC</span> and triangle <span class=\"math\">A′B′C′</span> ?",
+      "stemLines": [
+        "On a coordinate plane, triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90</span> degrees clockwise about the origin and",
+        "then dilated with a scale factor of <span class=\"math\">2</span> centered at the origin to form triangle <span class=\"math\">A′B′C′</span>. Which",
+        "statement describes the relationship between triangle <span class=\"math\">ABC</span> and triangle <span class=\"math\">A′B′C′</span> ?"
+      ],
+      "prose": "On a coordinate plane, triangle  is rotated  degrees clockwise about the origin and then dilated with a scale factor of  centered at the origin to form triangle . Which statement describes the relationship between triangle  and triangle  ?",
+      "proseAllLines": "On a coordinate plane, triangle  is rotated  degrees clockwise about the origin and then dilated with a scale factor of  centered at the origin to form triangle . Which statement describes the relationship between triangle  and triangle  ? They are similar and congruent. They are similar but not congruent. They are congruent but not similar. They are neither congruent nor similar.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "They are similar and congruent.",
+          "x": 75.5,
+          "y": 118.9
+        },
+        {
+          "label": "B",
+          "html": "They are similar but not congruent.",
+          "x": 76.1,
+          "y": 148.9
+        },
+        {
+          "label": "C",
+          "html": "They are congruent but not similar.",
+          "x": 75.6,
+          "y": 178.9
+        },
+        {
+          "label": "D",
+          "html": "They are neither congruent nor similar.",
+          "x": 75.1,
+          "y": 208.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 23,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "One of the angles in a triangle measures <span class=\"math\">x</span> degrees. Another angle in the triangle measures <span class=\"math\">y</span> degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+      "stemLines": [
+        "One of the angles in a triangle measures <span class=\"math\">x</span> degrees. Another angle in the triangle measures",
+        "<span class=\"math\">y</span> degrees. Which expression represents the measurement, in degrees, o f the third angle of",
+        "the triangle?"
+      ],
+      "prose": "One of the angles in a triangle measures  degrees. Another angle in the triangle measures degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+      "proseAllLines": "One of the angles in a triangle measures  degrees. Another angle in the triangle measures degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">180 − (x + y)</span>",
+          "x": 75.5,
+          "y": 331.0
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">180 − x + y</span>",
+          "x": 76.1,
+          "y": 361.0
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">x + y − 180</span>",
+          "x": 75.6,
+          "y": 391.0
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">x + y + 180</span>",
+          "x": 75.1,
+          "y": 420.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 27,
+      "page": 16,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3<sup>10</sup></span><span>3<sup>5</sup></span></span></span>",
+          "x": 75.5,
+          "y": 95.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>3<sup>15</sup></span><span>3<sup>3</sup></span></span></span>",
+          "x": 76.1,
+          "y": 136.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>9<sup>10</sup></span><span>3<sup>5</sup></span></span></span>",
+          "x": 75.6,
+          "y": 177.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>9<sup>3</sup></span><span>9<sup>5</sup></span></span></span>",
+          "x": 75.1,
+          "y": 218.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 30,
+      "page": 17,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which list of numbers could represent the side lengths of a right triangle?",
+      "stemLines": [
+        "Which list of numbers could represent the side lengths of a right triangle?"
+      ],
+      "prose": "Which list of numbers could represent the side lengths of a right triangle?",
+      "proseAllLines": "Which list of numbers could represent the side lengths of a right triangle? 5, 10, 13 5, 12, 17 10, 24, 26 10, 24, 68",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "5, 10, 13",
+          "x": 75.5,
+          "y": 88.1
+        },
+        {
+          "label": "B",
+          "html": "5, 12, 17",
+          "x": 76.1,
+          "y": 118.1
+        },
+        {
+          "label": "C",
+          "html": "10, 24, 26",
+          "x": 75.6,
+          "y": 147.4
+        },
+        {
+          "label": "D",
+          "html": "10, 24, 68",
+          "x": 75.1,
+          "y": 177.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 22,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The table below represents a function. Which statement describes the function?",
+      "stemLines": [
+        "The table below represents a function.",
+        "Which statement describes the function?"
+      ],
+      "prose": "The table below represents a function. Which statement describes the function?",
+      "proseAllLines": "The table below represents a function. Which statement describes the function? The function is nonlinear because the intercept is 0. The function is linear because the rate of change is constant. The function is linear because the intercept is a constant value. The function is nonlinear because the rate of change is not constant.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "The function is nonlinear because the <span class=\"math\">y</span> intercept is 0.",
+          "x": 75.5,
+          "y": 267.4
+        },
+        {
+          "label": "B",
+          "html": "The function is linear because the rate of change is constant.",
+          "x": 76.1,
+          "y": 297.4
+        },
+        {
+          "label": "C",
+          "html": "The function is linear because the <span class=\"math\">y</span> intercept is a constant value.",
+          "x": 75.6,
+          "y": 326.6
+        },
+        {
+          "label": "D",
+          "html": "The function is nonlinear because the rate of change is not constant.",
+          "x": 75.1,
+          "y": 356.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q33.png",
+          "rect": [
+            120.92,
+            91.0,
+            210.11,
+            215.87
+          ],
+          "paths": 32,
+          "decodedLabels": "� � � � � � � � � � � � �� � �� � � � � � � � � � �� �",
+          "undecodedGlyphs": 29,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 23,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Quadrilateral <span class=\"math\">FGHJ</span> is rotated about the origin to form quadrilateral <span class=\"math\">F′ G′ H′ J′</span>. Which two sides are equal in length?",
+      "stemLines": [
+        "Quadrilateral <span class=\"math\">FGHJ</span> is rotated about the origin to form quadrilateral <span class=\"math\">F′ G′ H′ J′</span>.",
+        "Which two sides are equal in length?"
+      ],
+      "prose": "Quadrilateral  is rotated about the origin to form quadrilateral . Which two sides are equal in length?",
+      "proseAllLines": "Quadrilateral  is rotated about the origin to form quadrilateral . Which two sides are equal in length? and and and and",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\"><span class=\"repeat\">FG</span></span> and <span class=\"math\"><span class=\"repeat\">F′J′</span></span>",
+          "x": 75.5,
+          "y": 377.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\"><span class=\"repeat\">JF</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "x": 76.1,
+          "y": 407.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\"><span class=\"repeat\">GH</span></span> and <span class=\"math\"><span class=\"repeat\">H′G′</span></span>",
+          "x": 75.6,
+          "y": 437.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"repeat\">HG</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "x": 75.1,
+          "y": 466.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q34.png",
+          "rect": [
+            129.44,
+            90.43,
+            487.23,
+            328.75
+          ],
+          "paths": 92,
+          "decodedLabels": "� � � �<sup>�</sup> � � � � � �<sup>�</sup> � � �<sup>�</sup> � � �� �� �� �� �� �� �� �<sup>�</sup> � � � � � � � � � �<sup>�</sup> �� �",
+          "undecodedGlyphs": 48,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 24,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of <span class=\"math\">π</span> ?",
+      "stemLines": [
+        "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown",
+        "in the diagram below.",
+        "What is the difference between the volumes, in cubic centimeters, of the large can and the",
+        "small can in terms of <span class=\"math\">π</span> ?"
+      ],
+      "prose": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of  ?",
+      "proseAllLines": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">4π</span>",
+          "x": 75.5,
+          "y": 359.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">49π</span>",
+          "x": 76.1,
+          "y": 389.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">73.5π</span>",
+          "x": 75.6,
+          "y": 419.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">155.5π</span>",
+          "x": 75.1,
+          "y": 448.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q35.png",
+          "rect": [
+            174.12,
+            104.13,
+            442.73,
+            295.13
+          ],
+          "paths": 60,
+          "decodedLabels": "����� ��� ����� ��� ��� �� •<sup>�</sup> � �� � � � �� � ��",
+          "undecodedGlyphs": 33,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 24,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "An equation is shown below. Which statement about the equation is true?",
+      "stemLines": [
+        "An equation is shown below.",
+        "Which statement about the equation is true?"
+      ],
+      "prose": "An equation is shown below. Which statement about the equation is true?",
+      "proseAllLines": "An equation is shown below. Which statement about the equation is true? It has no solutions. It has exactly one solution. It has exactly two solutions. It has an infinite number of solutions.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "It has no solutions.",
+          "x": 75.5,
+          "y": 586.6
+        },
+        {
+          "label": "B",
+          "html": "It has exactly one solution.",
+          "x": 76.1,
+          "y": 616.6
+        },
+        {
+          "label": "C",
+          "html": "It has exactly two solutions.",
+          "x": 75.6,
+          "y": 646.6
+        },
+        {
+          "label": "D",
+          "html": "It has an infinite number of solutions.",
+          "x": 75.1,
+          "y": 675.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.63,
+            539.6,
+            218.91,
+            549.35
+          ],
+          "html": "<span class=\"math\">2(3x + 1) = x + 1 + 5x</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?",
+      "stemLines": [
+        "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?"
+      ],
+      "prose": "Which statement best describes the value of  ?",
+      "proseAllLines": "Which statement best describes the value of  ? between  and between  and between  and  but closer to between  and  but closer to",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "between <span class=\"math\">0.5</span> and <span class=\"math\">1.0</span>",
+          "x": 75.5,
+          "y": 90.4
+        },
+        {
+          "label": "B",
+          "html": "between <span class=\"math\">1.5</span> and <span class=\"math\">2.0</span>",
+          "x": 76.1,
+          "y": 120.4
+        },
+        {
+          "label": "C",
+          "html": "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.0</span>",
+          "x": 75.6,
+          "y": 149.6
+        },
+        {
+          "label": "D",
+          "html": "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.5</span>",
+          "x": 75.1,
+          "y": 179.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 38,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function?",
+      "stemLines": [
+        "A set of ordered pairs is shown below.",
+        "Which ordered pair should be removed to make the set a function?"
+      ],
+      "prose": "A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function?",
+      "proseAllLines": "A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">(−3,3)</span>",
+          "x": 75.5,
+          "y": 321.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">(4,2)</span>",
+          "x": 76.1,
+          "y": 351.2
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">(−2, − 1)</span>",
+          "x": 75.6,
+          "y": 381.2
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">(3,1)</span>",
+          "x": 75.1,
+          "y": 410.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.44,
+            272.73,
+            396.6,
+            282.54
+          ],
+          "html": "<span class=\"math\">{ (− 3,3), (1,1), (4,2), (− 1, − 1), (− 2, − 1), (3,1), (− 2,3) }</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 39,
+      "page": 26,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth.",
+      "stemLines": [
+        "A movie theater sells popcorn in cone shaped containers as shown below.",
+        "What is the volume, in cubic inches, of the popcorn container? Round your answer to the",
+        "nearest tenth."
+      ],
+      "prose": "A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth.",
+      "proseAllLines": "This question is worth 1 credit. A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth. Answer    cubic inches",
+      "instructions": [
+        "Answer    cubic inches"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q39.png",
+          "rect": [
+            235.65,
+            110.59,
+            381.9,
+            321.41
+          ],
+          "paths": 37,
+          "decodedLabels": "������� ��������� � ��� •<sup>�</sup> � ���",
+          "undecodedGlyphs": 25,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 27,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden?",
+      "stemLines": [
+        "The area of a square shaped garden is 324 square feet. What is the length, in feet, of each",
+        "side of the garden?"
+      ],
+      "prose": "The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden?",
+      "proseAllLines": "This question is worth 1 credit. The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden? Answer    feet",
+      "instructions": [
+        "Answer    feet"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 28,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ?",
+      "stemLines": [
+        "Line segment AB is graphed on the coordinate plane shown below.",
+        "What is the length, in units, of line segment AB ?"
+      ],
+      "prose": "Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ?",
+      "proseAllLines": "This question is worth 1 credit. Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ? Answer    units",
+      "instructions": [
+        "Answer    units"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q41.png",
+          "rect": [
+            123.9,
+            110.79,
+            492.9,
+            479.21
+          ],
+          "paths": 205,
+          "decodedLabels": "� � � � � � • � � � � � � � � � � � ��� � � �� � � � � �� �� � � � � �� � � � � � � � � � � � � � �<sup>�</sup> �<sup>�</sup> �<sup>�</sup>� • �<sup>�</sup> �<sup>�</sup> �<sup>�</sup>�<sup>�</sup> �<sup>�</sup> �<sup>�</sup> � � �",
+          "undecodedGlyphs": 73,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 42,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "In the figure below, line p is parallel to line q and lines <span class=\"math\">AD</span> and <span class=\"math\">AF</span> are transversals. What is the measure, in degrees, of <span class=\"math\">∠BAC</span>? Answerdegrees",
+      "stemLines": [
+        "In the figure below, line p is parallel to line q and lines <span class=\"math\">AD</span> and <span class=\"math\">AF</span> are transversals.",
+        "What is the measure, in degrees, of <span class=\"math\">∠BAC</span>?",
+        "Answerdegrees"
+      ],
+      "prose": "In the figure below, line p is parallel to line q and linesandare transversals. What is the measure, in degrees, of? Answerdegrees",
+      "proseAllLines": "This question is worth 2 credits. In the figure below, line p is parallel to line q and linesandare transversals. What is the measure, in degrees, of? Show your work. Answerdegrees",
+      "instructions": [
+        "Show your work."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q42.png",
+          "rect": [
+            191.59,
+            113.37,
+            426.13,
+            345.75
+          ],
+          "paths": 32,
+          "decodedLabels": "�� •� � � � • • � � � � � � �<sup>�</sup> � ��<sup>�</sup> � �• • � � �",
+          "undecodedGlyphs": 23,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The equation <span class=\"math\">y = 1.5x + 29</span> is used to model the yearly salary, <span class=\"math\">y</span>, of an employee, in thousands of dollars, where <span class=\"math\">x</span> is the number of years the employee has worked for the company. What does the slope of the line represent in this situation?",
+      "stemLines": [
+        "The equation <span class=\"math\">y = 1.5x + 29</span> is used to model the yearly salary, <span class=\"math\">y</span>, of an employee, in",
+        "thousands of dollars, where <span class=\"math\">x</span> is the number of years the employee has worked for the",
+        "company. What does the slope of the line represent in this situation?"
+      ],
+      "prose": "The equation  is used to model the yearly salary, , of an employee, in thousands of dollars, where  is the number of years the employee has worked for the company. What does the slope of the line represent in this situation?",
+      "proseAllLines": "This question is worth 2 credits. The equation  is used to model the yearly salary, , of an employee, in thousands of dollars, where  is the number of years the employee has worked for the company. What does the slope of the line represent in this situation? Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs?",
+      "stemLines": [
+        "A dog owner collected data to see which of his two dogs runs at the greater speed. The",
+        "graph and the table below show the relationship between the time, in seconds, and the",
+        "distance, in feet, each dog ran.",
+        "What is the difference, in feet per second, between the speeds of the two dogs?"
+      ],
+      "prose": "A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs?",
+      "proseAllLines": "This question is worth 2 credits. A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs? Show your work. Answer    feet per second",
+      "instructions": [
+        "Show your work.",
+        "Answer    feet per second"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q44.png",
+          "rect": [
+            100.39,
+            139.09,
+            516.9,
+            405.16
+          ],
+          "paths": 143,
+          "decodedLabels": "��� � ��� � � ����� � ��������� � � ��������� ������ ��� • � �� � �� � � � � � � �� � � � �� �<sup>� �</sup> � �� � � � �� � ���<sup>�</sup> � � � �� � � �<sup>�</sup> �� �� �� �� � � � � � � � � � � � � �<sup>�</sup> ���� ���������",
+          "undecodedGlyphs": 123,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+      "stemLines": [
+        "Two ordered pairs of a linear function are shown below.",
+        "What is the rate of change for the function?"
+      ],
+      "prose": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+      "proseAllLines": "This question is worth 2 credits. Two ordered pairs of a linear function are shown below. What is the rate of change for the function? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 33,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+      "stemLines": [
+        "What value of <span class=\"math\">x</span> makes the equation shown below true?"
+      ],
+      "prose": "What value of  makes the equation shown below true?",
+      "proseAllLines": "This question is worth 2 credits. What value of  makes the equation shown below true? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            108.77,
+            104.64,
+            231.27,
+            128.24
+          ],
+          "html": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span> (3x − 8) + 4 = 2(x − 4)</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 47,
+      "page": 34,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational.",
+      "stemLines": [
+        "A list of numbers is shown below.",
+        "Classify each number as either rational or irrational. Be sure to include how you know a",
+        "number is rational."
+      ],
+      "prose": "A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational.",
+      "proseAllLines": "This question is worth 2 credits. A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            110.4,
+            209.85,
+            146.07,
+            217.96
+          ],
+          "html": "<span class=\"math\">• 1.234</span>"
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q47.png",
+          "rect": [
+            110.4,
+            108.64,
+            140.4,
+            197.93
+          ],
+          "paths": 21,
+          "decodedLabels": "• √<span class=\"repeat\">49</span> � − − • 13 • √<span class=\"frac\"><span>.</span><span>32</span></span> • <span class=\"frac\"><span>7</span><span>2</span></span>",
+          "undecodedGlyphs": 1,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 48,
+      "page": 35,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "Store A and Store B sell fabric for different prices. The equation <span class=\"math\">y = 3.5x</span> represents the price, <span class=\"math\">y</span>, in dollars, for <span class=\"math\">x</span> yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A   $  per yard of fabric Store B   $  per yard of fabric How much more would the price of <span class=\"math\">9</span> yards of fabric be at Store A than at Store B ?",
+      "stemLines": [
+        "Store A and Store B sell fabric for different prices. The equation <span class=\"math\">y = 3.5x</span> represents the",
+        "price, <span class=\"math\">y</span>, in dollars, for <span class=\"math\">x</span> yards of fabric at Store A. The graph below represents the price for",
+        "the same type of fabric at Store B.",
+        "What is the unit rate for the price of fabric, per yard, at each store?",
+        "Store A   $  per yard of fabric",
+        "Store B   $  per yard of fabric",
+        "How much more would the price of <span class=\"math\">9</span> yards of fabric be at Store A than at Store B ?"
+      ],
+      "prose": "Store A and Store B sell fabric for different prices. The equation  represents the price, , in dollars, for  yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A   $  per yard of fabric Store B   $  per yard of fabric How much more would the price of  yards of fabric be at Store A than at Store B ?",
+      "proseAllLines": "This question is worth 3 credits. Store A and Store B sell fabric for different prices. The equation  represents the price, , in dollars, for  yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A   $  per yard of fabric Store B   $  per yard of fabric How much more would the price of  yards of fabric be at Store A than at Store B ? Show your work. Answer   $",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G8-2024/q48.png",
+          "rect": [
+            208.05,
+            149.67,
+            409.64,
+            394.41
+          ],
+          "paths": 121,
+          "decodedLabels": "����� � � � �� � �� � � � �<sup>� �</sup> � �� �<sup>�</sup> � � � �<sup>•</sup> ��� � �� �� � � �<sup>�</sup> � � � � �<sup>�</sup> �<sup>•</sup> ��� �� �� � � � � � � � � � � � � �<sup>�</sup> ������ ������ �������",
+          "undecodedGlyphs": 87,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

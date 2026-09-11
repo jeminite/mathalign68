@@ -1,0 +1,149 @@
+{
+  "testId": "g8-2023",
+  "status": "reviewed",
+  "answerKey": "DBCBDBBADCCACDAABDDCA",
+  "answerKeyItems": [
+    2,
+    3,
+    7,
+    8,
+    12,
+    15,
+    16,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    29,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item, so the two corroborate each other.",
+  "constructedResponse": {
+    "39": {
+      "answer": "5",
+      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+      "check": "x cubed = 125 gives x = 5, since 5 cubed is 125. The equation is this item's own transcribed stem."
+    },
+    "40": {
+      "answer": "15",
+      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+      "check": "A right angle at F with legs DF = 9 and FE = 12 gives DE = 15, the 3-4-5 triple scaled by three. All three labels are in this item's own stem."
+    },
+    "41": {
+      "answer": "−5.6",
+      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+      "check": "Minus 8 minus 5x = 20 gives minus 5x = 28 and x = minus 5.6, or minus 28 fifths. The equation is this item's own transcribed stem."
+    },
+    "42": {
+      "answer": "Reflect triangle XYZ over the x-axis, then translate it 3 units right and 2 units down",
+      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+      "check": "The exemplary response gives this and two equivalent orderings. The vertices it depends on are in this item's figure, described in its long description."
+    },
+    "43": {
+      "answer": "x = 7/3",
+      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+      "check": "24x + 33 = 3(5x + 21) minus 9 gives 24x + 33 = 15x + 54, so 9x = 21 and x = 7/3. The equation is this item's own displayed expression."
+    },
+    "44": {
+      "answer": "No — 13 squared is 169 but 8 squared plus 10 squared is 164, so the Pythagorean relationship does not hold",
+      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+      "check": "169 is not 164, so the triangle is not right-angled. All three side lengths are in this item's own transcribed stem."
+    },
+    "45": {
+      "answer": "Function A, whose rate of change is 6 against Function B's one half",
+      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+      "check": "Function A's table goes up 12 for every 2, and Function B's graph rises 3 over 6. Both are in this item's figure and named in its long description."
+    },
+    "46": {
+      "answer": "113 square feet",
+      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+      "check": "A diameter of 12 feet gives a radius of 6, and pi times 6 squared is 113.097..., which rounds to 113. The diameter is in this item's own stem."
+    },
+    "47": {
+      "answer": "Yes — both expressions equal 5 to the fourth, which is 625",
+      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+      "check": "5^7 over 5^3 is 5^4 and 5^6 times 5^-2 is 5^4. Both expressions are in this item's own transcribed stem, and they depend entirely on the superscripts being read."
+    },
+    "48": {
+      "answer": "Function A is linear, Function B is nonlinear, Function C is linear",
+      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+      "check": "A is y = 2x + 3, in slope-intercept form; B's table has no constant rate of change; C is a straight line. All three are in this item's figure."
+    }
+  },
+  "visuals": {
+    "G8-2023/q02.png": {
+      "type": "Graphs as Answer Choices",
+      "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+      "long": "They differ in the direction and tightness of the trend the points follow."
+    },
+    "G8-2023/q07.png": {
+      "type": "Equation and Data Table",
+      "alt": "Function A given as an equation and Function B given as a table of x and y values.",
+      "long": "Function A is y equals five quarters x. Function B pairs 5 with 1.5, 10 with 3, and 15 with 4.5."
+    },
+    "G8-2023/q19.png": {
+      "type": "Coordinate Plane",
+      "alt": "Triangle ABC and its image triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+      "long": "Triangle ABC sits to the right of the y-axis and its image lies to the left, reflected across it."
+    },
+    "G8-2023/q25.png": {
+      "type": "Diagram",
+      "alt": "Two parallel lines a and b cut by a transversal c, with two angles labelled in terms of x.",
+      "long": "One angle is 13x plus 6 degrees and the other is 11x plus 30 degrees."
+    },
+    "G8-2023/q29.png": {
+      "type": "Coordinate Plane",
+      "alt": "Triangle ABC and triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+      "long": "Triangle ABC is above the x-axis and its image is below it, smaller and turned."
+    },
+    "G8-2023/q33.png": {
+      "type": "Coordinate Plane",
+      "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+      "long": "The line rises from lower left to upper right, crossing the y-axis just above the origin."
+    },
+    "G8-2023/q34.png": {
+      "type": "Data Table and Coordinate Plane",
+      "alt": "Function A as a table of x and y values and Function B as a line graphed on a coordinate plane.",
+      "long": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin rising steeply."
+    },
+    "G8-2023/q36.png": {
+      "type": "Graphs as Answer Choices",
+      "alt": "Four graphs labelled A, B, C and D, which are this item's answer choices.",
+      "long": "Two show closed curves and two show straight lines; only one passes the vertical line test for a function."
+    },
+    "G8-2023/q42.png": {
+      "type": "Coordinate Plane",
+      "alt": "Triangle XYZ and its congruent image triangle X prime Y prime Z prime on a coordinate plane ruled from negative 12 to 12.",
+      "long": "Triangle XYZ is above the x-axis with X at negative 5, 2, Y at negative 2, 5 and Z at negative 2, 2. Its image is below the x-axis and shifted right."
+    },
+    "G8-2023/q45.png": {
+      "type": "Data Table and Coordinate Plane",
+      "alt": "Function A as a four-row table of values and Function B as a line rising gently across a first-quadrant grid.",
+      "long": "Function A pairs negative 5 with negative 30, negative 3 with negative 18, 2 with 12, and 4 with 24 -- a rate of 6. Function B is a line rising 3 units over 6."
+    },
+    "G8-2023/q48.png": {
+      "type": "Equation, Data Table and Coordinate Plane",
+      "alt": "Three functions shown three ways: Function A as an equation, Function B as a table, Function C as a graph.",
+      "long": "Function A is y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a steep straight line through the origin."
+    }
+  },
+  "choicesInImage": [
+    2,
+    36
+  ],
+  "tablesInImage": [
+    7,
+    34,
+    45,
+    48
+  ],
+  "reviewNotes": []
+}

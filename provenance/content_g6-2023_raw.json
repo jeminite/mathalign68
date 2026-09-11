@@ -1,0 +1,1200 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-11",
+    "testId": "g6-2023",
+    "source": "sources/2023-released-items-math-g6.pdf",
+    "assetDir": "G6-2023",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g6-2023.json.",
+    "items": 27,
+    "itemsWithUnresolved": 0,
+    "figures": 10,
+    "displayExpressions": 1
+  },
+  "items": [
+    {
+      "item": 2,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Points P, Q, R, and S are plotted on the number line shown below. What point represents the location of the value <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>3</span></span></span> ?",
+      "stemLines": [
+        "Points P, Q, R, and S are plotted on the number line shown below.",
+        "What point represents the location of the value <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>3</span></span></span> ?"
+      ],
+      "prose": "Points P, Q, R, and S are plotted on the number line shown below. What point represents the location of the value  ?",
+      "proseAllLines": "Points P, Q, R, and S are plotted on the number line shown below. What point represents the location of the value  ? point P point Q point R point S",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "point P",
+          "x": 75.5,
+          "y": 415.0
+        },
+        {
+          "label": "B",
+          "html": "point Q",
+          "x": 76.1,
+          "y": 444.2
+        },
+        {
+          "label": "C",
+          "html": "point R",
+          "x": 75.6,
+          "y": 474.2
+        },
+        {
+          "label": "D",
+          "html": "point S",
+          "x": 75.1,
+          "y": 504.2
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q02.png",
+          "rect": [
+            212.4,
+            313.72,
+            405.15,
+            391.37
+          ],
+          "paths": 31,
+          "decodedLabels": "� � � � • • • •<sup>�</sup> �<sup>�</sup> � � � �",
+          "undecodedGlyphs": 11,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 3,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A bakery owner bakes <span class=\"math\">450</span> cookies each day. Which equation can be used to determine the number of cookies, <span class=\"math\">c</span>, the owner bakes for any number of days, <span class=\"math\">d</span> ?",
+      "stemLines": [
+        "A bakery owner bakes <span class=\"math\">450</span> cookies each day. Which equation can be used to determine the",
+        "number of cookies, <span class=\"math\">c</span>, the owner bakes for any number of days, <span class=\"math\">d</span> ?"
+      ],
+      "prose": "A bakery owner bakes  cookies each day. Which equation can be used to determine the number of cookies, , the owner bakes for any number of days,  ?",
+      "proseAllLines": "A bakery owner bakes  cookies each day. Which equation can be used to determine the number of cookies, , the owner bakes for any number of days,  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">c = d + 450</span>",
+          "x": 75.5,
+          "y": 612.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">d = c + 450</span>",
+          "x": 76.1,
+          "y": 642.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">450d = c</span>",
+          "x": 75.6,
+          "y": 671.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 7,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The net of a right square pyramid is shown below. What is the surface area, in square inches, of the square pyramid?",
+      "stemLines": [
+        "The net of a right square pyramid is shown below.",
+        "What is the surface area, in square inches, of the square pyramid?"
+      ],
+      "prose": "The net of a right square pyramid is shown below. What is the surface area, in square inches, of the square pyramid?",
+      "proseAllLines": "The net of a right square pyramid is shown below. What is the surface area, in square inches, of the square pyramid? 64 80 224 384",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "64",
+          "x": 75.5,
+          "y": 439.1
+        },
+        {
+          "label": "B",
+          "html": "80",
+          "x": 76.1,
+          "y": 469.1
+        },
+        {
+          "label": "C",
+          "html": "224",
+          "x": 75.6,
+          "y": 498.4
+        },
+        {
+          "label": "D",
+          "html": "384",
+          "x": 75.1,
+          "y": 528.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q07.png",
+          "rect": [
+            158.15,
+            89.25,
+            459.4,
+            390.5
+          ],
+          "paths": 39,
+          "decodedLabels": "� � � � � � � � � � � � � � �",
+          "undecodedGlyphs": 15,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 12,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">14</span> less than the product of <span class=\"math\">8</span> and <span class=\"math\">y</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">14</span> less than the product of <span class=\"math\">8</span> and <span class=\"math\">y</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  less than the product of  and  ?",
+      "proseAllLines": "Which expression is equivalent to  less than the product of  and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">14 − 8y</span>",
+          "x": 75.5,
+          "y": 471.2
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">14 −<span class=\"frac\"><span>y</span><span>8</span></span></span>",
+          "x": 76.1,
+          "y": 506.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">8y − 14</span>",
+          "x": 75.6,
+          "y": 541.0
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\"><span class=\"frac\"><span>y</span><span>8</span></span> − 14</span>",
+          "x": 75.1,
+          "y": 575.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 13,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the least common multiple of 9 and 12 ?",
+      "stemLines": [
+        "What is the least common multiple of 9 and 12 ?"
+      ],
+      "prose": "What is the least common multiple of 9 and 12 ?",
+      "proseAllLines": "What is the least common multiple of 9 and 12 ? 3 36 72 108",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "3",
+          "x": 75.5,
+          "y": 87.4
+        },
+        {
+          "label": "B",
+          "html": "36",
+          "x": 76.1,
+          "y": 117.4
+        },
+        {
+          "label": "C",
+          "html": "72",
+          "x": 75.6,
+          "y": 146.6
+        },
+        {
+          "label": "D",
+          "html": "108",
+          "x": 75.1,
+          "y": 176.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 14,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression <span class=\"math\"><span class=\"frac\"><span>3(7−2)+5<sup>3</sup></span><span>2</span></span></span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\"><span class=\"frac\"><span>3(7−2)+5<sup>3</sup></span><span>2</span></span></span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "What is the value of the expression  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">15</span>",
+          "x": 75.5,
+          "y": 288.7
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">17</span>",
+          "x": 76.1,
+          "y": 318.0
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">70</span>",
+          "x": 75.6,
+          "y": 348.0
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">72</span>",
+          "x": 75.1,
+          "y": 378.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 17,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Lukas recorded the elevations, in feet, of four activities while on vacation. The table below shows the elevation of each activity, relative to sea level. Which activity has an elevation closest to sea level?",
+      "stemLines": [
+        "Lukas recorded the elevations, in feet, of four activities while on vacation. The table below",
+        "shows the elevation of each activity, relative to sea level.",
+        "Which activity has an elevation closest to sea level?"
+      ],
+      "prose": "Lukas recorded the elevations, in feet, of four activities while on vacation. The table below shows the elevation of each activity, relative to sea level. Which activity has an elevation closest to sea level?",
+      "proseAllLines": "Lukas recorded the elevations, in feet, of four activities while on vacation. The table below shows the elevation of each activity, relative to sea level. Which activity has an elevation closest to sea level? biking diving hiking swimming",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "biking",
+          "x": 75.5,
+          "y": 273.4
+        },
+        {
+          "label": "B",
+          "html": "diving",
+          "x": 76.1,
+          "y": 303.4
+        },
+        {
+          "label": "C",
+          "html": "hiking",
+          "x": 75.6,
+          "y": 332.6
+        },
+        {
+          "label": "D",
+          "html": "swimming",
+          "x": 75.1,
+          "y": 362.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q17.png",
+          "rect": [
+            238.82,
+            103.17,
+            376.8,
+            222.09
+          ],
+          "paths": 89,
+          "decodedLabels": "�������� � �������� �������� ��������� � � �� �� �� �� ���� ��<sup>�</sup> � �� �� � � �� �� ��� �� ��� � � � ��<sup>�</sup> � � ��",
+          "undecodedGlyphs": 80,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 18,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An expression is shown below. What is the coefficient of the variable in this expression?",
+      "stemLines": [
+        "An expression is shown below.",
+        "What is the coefficient of the variable in this expression?"
+      ],
+      "prose": "An expression is shown below. What is the coefficient of the variable in this expression?",
+      "proseAllLines": "An expression is shown below. What is the coefficient of the variable in this expression?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">5</span>",
+          "x": 75.5,
+          "y": 497.5
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">z</span>",
+          "x": 76.1,
+          "y": 527.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">9</span>",
+          "x": 75.6,
+          "y": 556.7
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.1,
+          "y": 586.7
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.55,
+            451.27,
+            163.83,
+            461.0
+          ],
+          "html": "<span class=\"math\">5z + (9 ÷ 3)</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 21,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A quadrilateral is drawn on a coordinate plane with the points A <span class=\"math\">(−4,8)</span>, B <span class=\"math\">(6,8)</span>, C <span class=\"math\">(6,4)</span>, and D <span class=\"math\">(−4,4)</span>. What is the length, in units, of side AB ?",
+      "stemLines": [
+        "A quadrilateral is drawn on a coordinate plane with the points A <span class=\"math\">(−4,8)</span>, B <span class=\"math\">(6,8)</span>, C <span class=\"math\">(6,4)</span>,",
+        "and D <span class=\"math\">(−4,4)</span>. What is the length, in units, of side AB ?"
+      ],
+      "prose": "A quadrilateral is drawn on a coordinate plane with the points A, B, C, and D. What is the length, in units, of side AB ?",
+      "proseAllLines": "A quadrilateral is drawn on a coordinate plane with the points A, B, C, and D. What is the length, in units, of side AB ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">2</span>",
+          "x": 75.5,
+          "y": 580.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">6</span>",
+          "x": 76.1,
+          "y": 610.4
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">10</span>",
+          "x": 75.6,
+          "y": 639.6
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">16</span>",
+          "x": 75.1,
+          "y": 669.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 22,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression <span class=\"math\">5b + c<sup>3</sup></span> when <span class=\"math\">b = 7</span> and <span class=\"math\">c = 4</span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">5b + c<sup>3</sup></span> when <span class=\"math\">b = 7</span> and <span class=\"math\">c = 4</span> ?"
+      ],
+      "prose": "What is the value of the expression  when  and  ?",
+      "proseAllLines": "What is the value of the expression  when  and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">24</span>",
+          "x": 75.5,
+          "y": 89.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">47</span>",
+          "x": 76.1,
+          "y": 118.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">76</span>",
+          "x": 75.6,
+          "y": 148.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">99</span>",
+          "x": 75.1,
+          "y": 178.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 24,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">8 (2a + 3b) − 2b</span> ?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">8 (2a + 3b) − 2b</span> ?"
+      ],
+      "prose": "Which expression is equivalent to  ?",
+      "proseAllLines": "Which expression is equivalent to  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">16a + b</span>",
+          "x": 75.5,
+          "y": 465.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">16a + 8b</span>",
+          "x": 76.1,
+          "y": 495.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">16a + 22b</span>",
+          "x": 75.6,
+          "y": 525.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">16a + 24b</span>",
+          "x": 75.1,
+          "y": 555.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 31,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The number 60 is 75% of what number?",
+      "stemLines": [
+        "The number 60 is 75% of what number?"
+      ],
+      "prose": "The number 60 is 75% of what number?",
+      "proseAllLines": "The number 60 is 75% of what number? 45 80 120 125",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "45",
+          "x": 75.5,
+          "y": 87.4
+        },
+        {
+          "label": "B",
+          "html": "80",
+          "x": 76.1,
+          "y": 117.4
+        },
+        {
+          "label": "C",
+          "html": "120",
+          "x": 75.6,
+          "y": 146.6
+        },
+        {
+          "label": "D",
+          "html": "125",
+          "x": 75.1,
+          "y": 176.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 32,
+      "page": 20,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The table below shows the ratio of the number of teachers to the number of students at a school. The ratio of teachers to students is constant. Three numbers are missing from the table. Which table shows the correct missing numbers in the table above?",
+      "stemLines": [
+        "The table below shows the ratio of the number of teachers to the number of students at a",
+        "school. The ratio of teachers to students is constant. Three numbers are missing from the",
+        "table.",
+        "Which table shows the correct missing numbers in the table above?"
+      ],
+      "prose": "The table below shows the ratio of the number of teachers to the number of students at a school. The ratio of teachers to students is constant. Three numbers are missing from the table. Which table shows the correct missing numbers in the table above?",
+      "proseAllLines": "The table below shows the ratio of the number of teachers to the number of students at a school. The ratio of teachers to students is constant. Three numbers are missing from the table. Which table shows the correct missing numbers in the table above?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 460.5
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 309.6,
+          "y": 460.5
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 559.5
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 309.1,
+          "y": 559.5
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q32_1.png",
+          "rect": [
+            214.27,
+            300.4,
+            403.28,
+            377.43
+          ],
+          "paths": 73,
+          "decodedLabels": "����� ��� �� � ��� ����� ������ �� �������� � � � � � � ������ �� �������� � � � � �� ��",
+          "undecodedGlyphs": 65,
+          "alt": "",
+          "longDescription": ""
+        },
+        {
+          "file": "G6-2023/q32_2.png",
+          "rect": [
+            75.48,
+            423.07,
+            527.77,
+            600.49
+          ],
+          "paths": 299,
+          "decodedLabels": "����� ��� �� � ��� ����� ����� ��� �� � ��� ����� � � �<sup>�</sup> �<sup>�</sup> � � �<sup>�</sup> ��<sup>�</sup> ��� � � � � � �� � � �<sup>�</sup> �<sup>�</sup> � � �<sup>�</sup> ��<sup>�</sup> ��� � � � � � � �� ������ ������ �� �������� � � � � � �� �� �� �������� � � � � � �� �� ����� ��� �� � ��� ����� ����� ��� �� � ��� ����� ������ ������ �� �������� � � � � � �� �� �������� � � � � � �� ",
+          "undecodedGlyphs": 269,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+      "stemLines": [
+        "A diagram of a right rectangular prism is shown below.",
+        "What is the volume, in cubic inches, of the right rectangular prism?"
+      ],
+      "prose": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+      "proseAllLines": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">6<span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "x": 75.5,
+          "y": 207.4
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">8<span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "x": 76.1,
+          "y": 242.6
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">10 <span class=\"frac\"><span>3</span><span>8</span></span></span>",
+          "x": 75.6,
+          "y": 277.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">14 <span class=\"frac\"><span>5</span><span>8</span></span></span>",
+          "x": 75.1,
+          "y": 311.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q33.png",
+          "rect": [
+            171.93,
+            97.24,
+            444.49,
+            155.11
+          ],
+          "paths": 27,
+          "decodedLabels": "<sup>�</sup> � � � � � � � � � � � � � � � �<sup>� �</sup>",
+          "undecodedGlyphs": 19,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 21,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The ratio of number of yards to number of miles is 3,520 : 2. How many yards are in 5 miles?",
+      "stemLines": [
+        "The ratio of number of yards to number of miles is 3,520 : 2. How many yards are in",
+        "5 miles?"
+      ],
+      "prose": "The ratio of number of yards to number of miles is 3,520 : 2. How many yards are in 5 miles?",
+      "proseAllLines": "The ratio of number of yards to number of miles is 3,520 : 2. How many yards are in 5 miles? 1,760 5,280 7,040 8,800",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "1,760",
+          "x": 75.5,
+          "y": 426.6
+        },
+        {
+          "label": "B",
+          "html": "5,280",
+          "x": 76.1,
+          "y": 456.6
+        },
+        {
+          "label": "C",
+          "html": "7,040",
+          "x": 75.6,
+          "y": 485.8
+        },
+        {
+          "label": "D",
+          "html": "8,800",
+          "x": 75.1,
+          "y": 515.8
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 22,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">4(3m + 1)</span>?",
+      "stemLines": [
+        "Which expression is equivalent to <span class=\"math\">4(3m + 1)</span>?"
+      ],
+      "prose": "Which expression is equivalent to ?",
+      "proseAllLines": "Which expression is equivalent to ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">7m + 1</span>",
+          "x": 75.5,
+          "y": 88.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">7m + 5</span>",
+          "x": 76.1,
+          "y": 118.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">12m + 1</span>",
+          "x": 75.6,
+          "y": 147.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">12m + 4</span>",
+          "x": 75.1,
+          "y": 177.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 22,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Mark ran 8 miles in 60 minutes. If Mark continues to run at that same rate, how many minutes will it take him to run 12 miles?",
+      "stemLines": [
+        "Mark ran 8 miles in 60 minutes. If Mark continues to run at that same rate, how many",
+        "minutes will it take him to run 12 miles?"
+      ],
+      "prose": "Mark ran 8 miles in 60 minutes. If Mark continues to run at that same rate, how many minutes will it take him to run 12 miles?",
+      "proseAllLines": "Mark ran 8 miles in 60 minutes. If Mark continues to run at that same rate, how many minutes will it take him to run 12 miles? 48 72 90 96",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "48",
+          "x": 75.5,
+          "y": 286.2
+        },
+        {
+          "label": "B",
+          "html": "72",
+          "x": 76.1,
+          "y": 316.2
+        },
+        {
+          "label": "C",
+          "html": "90",
+          "x": 75.6,
+          "y": 345.4
+        },
+        {
+          "label": "D",
+          "html": "96",
+          "x": 75.1,
+          "y": 375.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 23,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "A right triangle is shown below. What is the area, in square feet, of the right triangle?",
+      "stemLines": [
+        "A right triangle is shown below.",
+        "What is the area, in square feet, of the right triangle?"
+      ],
+      "prose": "A right triangle is shown below. What is the area, in square feet, of the right triangle?",
+      "proseAllLines": "This question is worth 1 credit. A right triangle is shown below. What is the area, in square feet, of the right triangle? Answer     square feet",
+      "instructions": [
+        "Answer     square feet"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q37.png",
+          "rect": [
+            119.26,
+            109.5,
+            296.65,
+            251.62
+          ],
+          "paths": 16,
+          "decodedLabels": "�� �� � � � ��",
+          "undecodedGlyphs": 9,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 38,
+      "page": 24,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "The lowest recorded temperatures for each of two states are listed below. <span class=\"math\">−27°</span> F and <span class=\"math\">−35°</span> F Write a statement using <span class=\"math\">&lt;</span>, <span class=\"math\">&gt;</span>, <span class=\"math\">≤</span>, or <span class=\"math\">≥</span> to compare the recorded temperatures of the two states.",
+      "stemLines": [
+        "The lowest recorded temperatures for each of two states are listed below.",
+        "<span class=\"math\">−27°</span> F and <span class=\"math\">−35°</span> F",
+        "Write a statement using <span class=\"math\">&lt;</span>, <span class=\"math\">&gt;</span>, <span class=\"math\">≤</span>, or <span class=\"math\">≥</span> to compare the recorded temperatures of the",
+        "two states."
+      ],
+      "prose": "The lowest recorded temperatures for each of two states are listed below. F and F Write a statement using , , , or  to compare the recorded temperatures of the two states.",
+      "proseAllLines": "This question is worth 1 credit. The lowest recorded temperatures for each of two states are listed below. F and F Write a statement using , , , or  to compare the recorded temperatures of the two states. Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 39,
+      "page": 25,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "A set of shapes is shown below. What is the ratio of the number of circles to the total number of shapes?",
+      "stemLines": [
+        "A set of shapes is shown below.",
+        "What is the ratio of the number of circles to the total number of shapes?"
+      ],
+      "prose": "A set of shapes is shown below. What is the ratio of the number of circles to the total number of shapes?",
+      "proseAllLines": "This question is worth 1 credit. A set of shapes is shown below. What is the ratio of the number of circles to the total number of shapes? Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q39.png",
+          "rect": [
+            164.15,
+            110.3,
+            451.94,
+            153.41
+          ],
+          "paths": 5,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 26,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Lee makes a rectangular-shaped tile pattern by placing three tiles side by side, with no space between the tiles. The list below describes the shape of each tile and the order in which they are placed. <span class=\"math\">•</span> The first tile is in the shape of a square with side lengths of x inches. <span class=\"math\">•</span> The middle tile is shaped like a rectangle with a width of x inches and a length of 3x inches. <span class=\"math\">•</span> The third tile is shaped like a square with side lengths of x inches. The perimeter of the tile pattern is 60 inches. What is the value of x in the tile pattern?",
+      "stemLines": [
+        "Lee makes a rectangular-shaped tile pattern by placing three tiles side by side, with no",
+        "space between the tiles. The list below describes the shape of each tile and the order in",
+        "which they are placed.",
+        "<span class=\"math\">•</span> The first tile is in the shape of a square with side lengths of x inches.",
+        "<span class=\"math\">•</span> The middle tile is shaped like a rectangle with a width of x inches and a length",
+        "of 3x inches.",
+        "<span class=\"math\">•</span> The third tile is shaped like a square with side lengths of x inches.",
+        "The perimeter of the tile pattern is 60 inches. What is the value of x in the tile pattern?"
+      ],
+      "prose": "Lee makes a rectangular-shaped tile pattern by placing three tiles side by side, with no space between the tiles. The list below describes the shape of each tile and the order in which they are placed. The first tile is in the shape of a square with side lengths of x inches. The middle tile is shaped like a rectangle with a width of x inches and a length of 3x inches. The third tile is shaped like a square with side lengths of x inches. The perimeter of the tile pattern is 60 inches. What is the value of x in the tile pattern?",
+      "proseAllLines": "This question is worth 2 credits. Lee makes a rectangular-shaped tile pattern by placing three tiles side by side, with no space between the tiles. The list below describes the shape of each tile and the order in which they are placed. The first tile is in the shape of a square with side lengths of x inches. The middle tile is shaped like a rectangle with a width of x inches and a length of 3x inches. The third tile is shaped like a square with side lengths of x inches. The perimeter of the tile pattern is 60 inches. What is the value of x in the tile pattern? Show your work. Answer     inches",
+      "instructions": [
+        "Show your work.",
+        "Answer     inches"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 27,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The list below shows the cost of the same candle at two different stores. <span class=\"math\">•</span> Store ABC sells 6 of these candles for $12.00. <span class=\"math\">•</span> Store XYZ sells 8 of these candles for $14.00. Which store sells the candle for a lower unit rate?",
+      "stemLines": [
+        "The list below shows the cost of the same candle at two different stores.",
+        "<span class=\"math\">•</span> Store ABC sells 6 of these candles for $12.00.",
+        "<span class=\"math\">•</span> Store XYZ sells 8 of these candles for $14.00.",
+        "Which store sells the candle for a lower unit rate?"
+      ],
+      "prose": "The list below shows the cost of the same candle at two different stores. Store ABC sells 6 of these candles for $12.00. Store XYZ sells 8 of these candles for $14.00. Which store sells the candle for a lower unit rate?",
+      "proseAllLines": "This question is worth 2 credits. The list below shows the cost of the same candle at two different stores. Store ABC sells 6 of these candles for $12.00. Store XYZ sells 8 of these candles for $14.00. Which store sells the candle for a lower unit rate? Explain how you determined your answer.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 42,
+      "page": 28,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A box contains <span class=\"math\">8<span class=\"frac\"><span>1</span><span>4</span></span></span> cups of cereal. One serving of cereal is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. How many servings of cereal are in the box?",
+      "stemLines": [
+        "A box contains <span class=\"math\">8<span class=\"frac\"><span>1</span><span>4</span></span></span> cups of cereal. One serving of cereal is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. How many servings of",
+        "cereal are in the box?"
+      ],
+      "prose": "A box contains  cups of cereal. One serving of cereal is  cup. How many servings of cereal are in the box?",
+      "proseAllLines": "This question is worth 2 credits. A box contains  cups of cereal. One serving of cereal is  cup. How many servings of cereal are in the box? Show your work. Answer     servings",
+      "instructions": [
+        "Show your work.",
+        "Answer     servings"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "What is the value of the expression <span class=\"math\">7 × (5 − 3)<sup>3</sup> − 20 ÷ 4</span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">7 × (5 − 3)<sup>3</sup> − 20 ÷ 4</span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "This question is worth 2 credits. What is the value of the expression  ? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The tables below show the ratios of distance to time traveled by Car A and Car B. If both cars maintain their rates of speed, what is the difference between the distances, in miles, traveled by Car A and by Car B after 8 hours?",
+      "stemLines": [
+        "The tables below show the ratios of distance to time traveled by Car A and Car B.",
+        "If both cars maintain their rates of speed, what is the difference between the distances, in",
+        "miles, traveled by Car A and by Car B after 8 hours?"
+      ],
+      "prose": "The tables below show the ratios of distance to time traveled by Car A and Car B. If both cars maintain their rates of speed, what is the difference between the distances, in miles, traveled by Car A and by Car B after 8 hours?",
+      "proseAllLines": "This question is worth 2 credits. The tables below show the ratios of distance to time traveled by Car A and Car B. If both cars maintain their rates of speed, what is the difference between the distances, in miles, traveled by Car A and by Car B after 8 hours? Show your work. Answer     miles",
+      "instructions": [
+        "Show your work.",
+        "Answer     miles"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q44.png",
+          "rect": [
+            161.62,
+            109.0,
+            459.21,
+            219.52
+          ],
+          "paths": 100,
+          "decodedLabels": "��� � ��� � ���� �������� ���� �������� ������� ������� ������� ������� � � �� � � �� � ��� � � � � � ��� � ���",
+          "undecodedGlyphs": 84,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A shipping container in the shape of a right rectangular prism has a base with an area of <span class=\"math\">42</span> square feet. The height of the container is <span class=\"math\">5<span class=\"frac\"><span>3</span><span>4</span></span></span> feet. What is the volume, in cubic feet, of the shipping container?",
+      "stemLines": [
+        "A shipping container in the shape of a right rectangular prism has a base with an area of",
+        "<span class=\"math\">42</span> square feet. The height of the container is <span class=\"math\">5<span class=\"frac\"><span>3</span><span>4</span></span></span> feet. What is the volume, in cubic feet,",
+        "of the shipping container?"
+      ],
+      "prose": "A shipping container in the shape of a right rectangular prism has a base with an area of square feet. The height of the container is  feet. What is the volume, in cubic feet, of the shipping container?",
+      "proseAllLines": "This question is worth 2 credits. A shipping container in the shape of a right rectangular prism has a base with an area of square feet. The height of the container is  feet. What is the volume, in cubic feet, of the shipping container? Show your work. Answer     cubic feet",
+      "instructions": [
+        "Show your work.",
+        "Answer     cubic feet"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "Logan earns money for completing chores. The graph shown below represents the relationship between the number of chores, x, he completes, and the amount o f money, y, he earns. Based on the graph, explain the relationship between the number of chores Logan completes and the amount of money he earns. Be sure to identify the dependent and the independent variables in your answer. Determine the total amount of money Logan will earn after completing 9 chores.",
+      "stemLines": [
+        "Logan earns money for completing chores. The graph shown below represents the",
+        "relationship between the number of chores, x, he completes, and the amount o f money, y,",
+        "he earns.",
+        "Based on the graph, explain the relationship between the number of chores Logan",
+        "completes and the amount of money he earns. Be sure to identify the dependent and",
+        "the independent variables in your answer.",
+        "Determine the total amount of money Logan will earn after completing 9 chores."
+      ],
+      "prose": "Logan earns money for completing chores. The graph shown below represents the relationship between the number of chores, x, he completes, and the amount o f money, y, he earns. Based on the graph, explain the relationship between the number of chores Logan completes and the amount of money he earns. Be sure to identify the dependent and the independent variables in your answer. Determine the total amount of money Logan will earn after completing 9 chores.",
+      "proseAllLines": "This question is worth 3 credits. Logan earns money for completing chores. The graph shown below represents the relationship between the number of chores, x, he completes, and the amount o f money, y, he earns. Based on the graph, explain the relationship between the number of chores Logan completes and the amount of money he earns. Be sure to identify the dependent and the independent variables in your answer. Explain your answer. Determine the total amount of money Logan will earn after completing 9 chores. Answer    $",
+      "instructions": [
+        "Explain your answer.",
+        "Answer    $"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2023/q46.png",
+          "rect": [
+            232.84,
+            137.5,
+            384.76,
+            393.7
+          ],
+          "paths": 109,
+          "decodedLabels": "����� ����� ��� � � � � • � � � � � � �<sup>�</sup> � � �<sup>�</sup> � � � �<sup>�</sup> � • � � �<sup>�</sup> � � �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> � �<sup>•</sup> � � � �<sup>�</sup> �•� � � � � � � � � � � ������ �� ������",
+          "undecodedGlyphs": 81,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

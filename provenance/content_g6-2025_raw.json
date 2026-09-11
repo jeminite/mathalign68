@@ -1,0 +1,1322 @@
+{
+  "meta": {
+    "schemaVersion": "1.0",
+    "generatedBy": "tools/extract_items.py",
+    "generated": "2026-09-11",
+    "testId": "g6-2025",
+    "source": "sources/2025-released-items-math-g6.pdf",
+    "assetDir": "G6-2025",
+    "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g6-2025.json.",
+    "items": 28,
+    "itemsWithUnresolved": 0,
+    "figures": 12,
+    "displayExpressions": 2
+  },
+  "items": [
+    {
+      "item": 1,
+      "page": 7,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "stemLines": [
+        "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents",
+        "the ratio of cheese to noodles for this recipe?"
+      ],
+      "prose": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "proseAllLines": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 164.6
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 309.6,
+          "y": 164.6
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 317.6
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 309.1,
+          "y": 317.6
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q01.png",
+          "rect": [
+            75.48,
+            98.5,
+            445.88,
+            386.76
+          ],
+          "paths": 198,
+          "decodedLabels": "���� �� ���� �� ������ ������� ������ ������� ������ �������� ������ �������� � � � � � � � � � � � � � � � � � � � � ���� �� ���� �� ������ ������� ������ ������� ������ �������� ������ �������� � � � � � � � � � � � �� �� � � �� �� �",
+          "undecodedGlyphs": 174,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 3,
+      "page": 8,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at <span class=\"math\">(−2,3)</span> ?",
+      "stemLines": [
+        "Points W, X, Y, and Z are plotted on the coordinate plane shown below.",
+        "Which point is located at <span class=\"math\">(−2,3)</span> ?"
+      ],
+      "prose": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at  ?",
+      "proseAllLines": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at  ? point W point X point Y point Z",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "point W",
+          "x": 75.5,
+          "y": 383.6
+        },
+        {
+          "label": "B",
+          "html": "point X",
+          "x": 76.1,
+          "y": 413.6
+        },
+        {
+          "label": "C",
+          "html": "point Y",
+          "x": 75.6,
+          "y": 442.9
+        },
+        {
+          "label": "D",
+          "html": "point Z",
+          "x": 75.1,
+          "y": 472.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q03.png",
+          "rect": [
+            189.49,
+            95.5,
+            427.31,
+            367.5
+          ],
+          "paths": 111,
+          "decodedLabels": "� � � � � • � � • � � � � �� �� �� �� �� �� � � � � � � � � � �� �� • � �� • � �� �� �� �",
+          "undecodedGlyphs": 47,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 5,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression shown below when <span class=\"math\">c = 2</span> and <span class=\"math\">h = 3</span> ?",
+      "stemLines": [
+        "What is the value of the expression shown below when <span class=\"math\">c = 2</span> and <span class=\"math\">h = 3</span> ?"
+      ],
+      "prose": "What is the value of the expression shown below when  and  ?",
+      "proseAllLines": "What is the value of the expression shown below when  and  ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">11</span>",
+          "x": 75.5,
+          "y": 113.6
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">13</span>",
+          "x": 76.1,
+          "y": 142.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">42</span>",
+          "x": 75.6,
+          "y": 172.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">44</span>",
+          "x": 75.1,
+          "y": 202.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.71,
+            82.83,
+            162.09,
+            93.05
+          ],
+          "html": "<span class=\"math\">c<sup>3</sup> + 4h − 7</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 6,
+      "page": 9,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A carton contains <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> cups of ice cream. One full serving is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. What is the total number of full servings of ice cream in the carton?",
+      "stemLines": [
+        "A carton contains <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> cups of ice cream. One full serving is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. What is the total number",
+        "of full servings of ice cream in the carton?"
+      ],
+      "prose": "A carton contains  cups of ice cream. One full serving is  cup. What is the total number of full servings of ice cream in the carton?",
+      "proseAllLines": "A carton contains  cups of ice cream. One full serving is  cup. What is the total number of full servings of ice cream in the carton?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3 <span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "x": 75.5,
+          "y": 345.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>",
+          "x": 76.1,
+          "y": 384.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">6</span>",
+          "x": 75.6,
+          "y": 417.9
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">12</span>",
+          "x": 75.1,
+          "y": 447.9
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 13,
+      "page": 10,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+      "stemLines": [
+        "The net of a right rectangular prism is shown below.",
+        "What is the surface area, in square centimeters, of this prism?"
+      ],
+      "prose": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+      "proseAllLines": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism? 20 34 40 48",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "20",
+          "x": 75.5,
+          "y": 351.4
+        },
+        {
+          "label": "B",
+          "html": "34",
+          "x": 76.1,
+          "y": 381.4
+        },
+        {
+          "label": "C",
+          "html": "40",
+          "x": 75.6,
+          "y": 410.6
+        },
+        {
+          "label": "D",
+          "html": "48",
+          "x": 75.1,
+          "y": 440.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q13.png",
+          "rect": [
+            210.64,
+            95.56,
+            406.65,
+            298.21
+          ],
+          "paths": 39,
+          "decodedLabels": "� � �� � � � �� � � � � �� � �",
+          "undecodedGlyphs": 17,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 16,
+      "page": 11,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+      "stemLines": [
+        "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints",
+        "210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than",
+        "Copier A ?"
+      ],
+      "prose": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+      "proseAllLines": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ? 20 35 50 70",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "20",
+          "x": 75.5,
+          "y": 324.7
+        },
+        {
+          "label": "B",
+          "html": "35",
+          "x": 76.1,
+          "y": 354.7
+        },
+        {
+          "label": "C",
+          "html": "50",
+          "x": 75.6,
+          "y": 384.7
+        },
+        {
+          "label": "D",
+          "html": "70",
+          "x": 75.1,
+          "y": 414.0
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 17,
+      "page": 12,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+      "stemLines": [
+        "A regular hexagon is made of equilateral triangles, as shown below.",
+        "What is the area, in square centimeters, of the regular hexagon?"
+      ],
+      "prose": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+      "proseAllLines": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon? 10.75 21.5 34.3 64.5",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "10.75",
+          "x": 75.5,
+          "y": 294.4
+        },
+        {
+          "label": "B",
+          "html": "21.5",
+          "x": 76.1,
+          "y": 324.4
+        },
+        {
+          "label": "C",
+          "html": "34.3",
+          "x": 75.6,
+          "y": 353.6
+        },
+        {
+          "label": "D",
+          "html": "64.5",
+          "x": 75.1,
+          "y": 383.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q17.png",
+          "rect": [
+            118.85,
+            95.5,
+            282.8,
+            241.75
+          ],
+          "paths": 59,
+          "decodedLabels": "� � �� � � �� � �� • � �� ��� � �� �� �� � � �� �",
+          "undecodedGlyphs": 29,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 19,
+      "page": 13,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the value of the expression shown below?",
+      "stemLines": [
+        "What is the value of the expression shown below?"
+      ],
+      "prose": "What is the value of the expression shown below?",
+      "proseAllLines": "What is the value of the expression shown below?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.5,
+          "y": 130.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "x": 76.1,
+          "y": 163.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">4</span>",
+          "x": 75.6,
+          "y": 198.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>",
+          "x": 75.1,
+          "y": 232.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q19_2.png",
+          "rect": [
+            408.81,
+            304.8,
+            542.4,
+            443.28
+          ],
+          "paths": 1,
+          "decodedLabels": "",
+          "undecodedGlyphs": 0,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 21,
+      "page": 14,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+      "stemLines": [
+        "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below",
+        "shows the results.",
+        "What percent of the students voted for either playing a musical instrument or reading as",
+        "their favorite hobby?"
+      ],
+      "prose": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+      "proseAllLines": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby? 12% 23% 46% 54%",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "12%",
+          "x": 75.5,
+          "y": 300.4
+        },
+        {
+          "label": "B",
+          "html": "23%",
+          "x": 76.1,
+          "y": 330.4
+        },
+        {
+          "label": "C",
+          "html": "46%",
+          "x": 75.6,
+          "y": 360.4
+        },
+        {
+          "label": "D",
+          "html": "54%",
+          "x": 75.1,
+          "y": 389.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q21.png",
+          "rect": [
+            163.4,
+            111.45,
+            453.4,
+            232.97
+          ],
+          "paths": 108,
+          "decodedLabels": "�������� ����� �� ����� ������ �� �������� ���� � �� � � ����� �� � � ����� � � ����� ���� � � ����� � �� �°���� � ����� �� ��°��� � �",
+          "undecodedGlyphs": 100,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 23,
+      "page": 15,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "What is the coefficient in the expression <span class=\"math\">2x<sup>3</sup></span>?",
+      "stemLines": [
+        "What is the coefficient in the expression <span class=\"math\">2x<sup>3</sup></span>?"
+      ],
+      "prose": "What is the coefficient in the expression?",
+      "proseAllLines": "What is the coefficient in the expression?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">2</span>",
+          "x": 75.5,
+          "y": 88.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">3</span>",
+          "x": 76.1,
+          "y": 118.9
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">x</span>",
+          "x": 75.6,
+          "y": 148.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">2x</span>",
+          "x": 75.1,
+          "y": 178.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 27,
+      "page": 16,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which number is not a solution to the inequality shown below?",
+      "stemLines": [
+        "Which number is not a solution to the inequality shown below?"
+      ],
+      "prose": "Which number is not a solution to the inequality shown below?",
+      "proseAllLines": "Which number is not a solution to the inequality shown below?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">3</span>",
+          "x": 75.5,
+          "y": 510.3
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">4</span>",
+          "x": 76.1,
+          "y": 539.5
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">5</span>",
+          "x": 75.6,
+          "y": 569.5
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">8</span>",
+          "x": 75.1,
+          "y": 599.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [
+        {
+          "rect": [
+            107.59,
+            481.28,
+            147.51,
+            490.45
+          ],
+          "html": "<span class=\"math\">3w ≥ 12</span>"
+        }
+      ],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 28,
+      "page": 17,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. <span class=\"math\">•</span> 12 students from Grade 5 <span class=\"math\">•</span> 6 students from Grade 6 <span class=\"math\">•</span> 2 students from Grade 7 <span class=\"math\">•</span> 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+      "stemLines": [
+        "A school club includes students from four grade levels. The number of students from each",
+        "grade level is shown in the list below.",
+        "<span class=\"math\">•</span> 12 students from Grade 5",
+        "<span class=\"math\">•</span> 6 students from Grade 6",
+        "<span class=\"math\">•</span> 2 students from Grade 7",
+        "<span class=\"math\">•</span> 8 students from Grade 8",
+        "What is the ratio of the total number of students in the club from Grades 5 and 6 to the",
+        "total number of students in the club from Grades 7 and 8 ?"
+      ],
+      "prose": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. 12 students from Grade 5 6 students from Grade 6 2 students from Grade 7 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+      "proseAllLines": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. 12 students from Grade 5 6 students from Grade 6 2 students from Grade 7 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ? 2 : 1 3 : 1 5 : 9 9 : 5",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "2 : 1",
+          "x": 75.5,
+          "y": 226.9
+        },
+        {
+          "label": "B",
+          "html": "3 : 1",
+          "x": 76.1,
+          "y": 256.1
+        },
+        {
+          "label": "C",
+          "html": "5 : 9",
+          "x": 75.6,
+          "y": 286.1
+        },
+        {
+          "label": "D",
+          "html": "9 : 5",
+          "x": 75.1,
+          "y": 316.1
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 30,
+      "page": 18,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 1,
+      "creditLine": null,
+      "stemHtml": "Which expression represents the phrase “the sum of fifteen and five less than twice a number, <span class=\"math\">n</span> ” ?",
+      "stemLines": [
+        "Which expression represents the phrase “the sum of fifteen and five less than",
+        "twice a number, <span class=\"math\">n</span> ” ?"
+      ],
+      "prose": "Which expression represents the phrase “the sum of fifteen and five less than twice a number,” ?",
+      "proseAllLines": "Which expression represents the phrase “the sum of fifteen and five less than twice a number,” ?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">15 (5 − 2n)</span>",
+          "x": 75.5,
+          "y": 103.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">15 (2n − 5)</span>",
+          "x": 76.1,
+          "y": 133.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">15 + (5 − 2n)</span>",
+          "x": 75.6,
+          "y": 162.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">15 + (2n − 5)</span>",
+          "x": 75.1,
+          "y": 192.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 31,
+      "page": 23,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Tyrone deposits <span class=\"math\">$65</span> into his bank account. The next day he withdraws <span class=\"math\">$20</span>. Which two integers represent the activity in Tyrone’s bank account?",
+      "stemLines": [
+        "Tyrone deposits <span class=\"math\">$65</span> into his bank account. The next day he withdraws <span class=\"math\">$20</span>. Which two",
+        "integers represent the activity in Tyrone’s bank account?"
+      ],
+      "prose": "Tyrone deposits  into his bank account. The next day he withdraws . Which two integers represent the activity in Tyrone’s bank account?",
+      "proseAllLines": "Tyrone deposits  into his bank account. The next day he withdraws . Which two integers represent the activity in Tyrone’s bank account? and and and and",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">−65</span> and <span class=\"math\">−20</span>",
+          "x": 75.5,
+          "y": 103.1
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">−65</span> and <span class=\"math\">20</span>",
+          "x": 76.1,
+          "y": 133.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">65</span> and <span class=\"math\">−20</span>",
+          "x": 75.6,
+          "y": 162.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">65</span> and <span class=\"math\">20</span>",
+          "x": 75.1,
+          "y": 192.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 32,
+      "page": 23,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+      "stemLines": [
+        "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how",
+        "many feet does Mary ride in 1 minute?"
+      ],
+      "prose": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+      "proseAllLines": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute? 1,056 26,400 63,360 3,801,600",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "1,056",
+          "x": 75.5,
+          "y": 303.2
+        },
+        {
+          "label": "B",
+          "html": "26,400",
+          "x": 76.1,
+          "y": 333.2
+        },
+        {
+          "label": "C",
+          "html": "63,360",
+          "x": 75.6,
+          "y": 362.5
+        },
+        {
+          "label": "D",
+          "html": "3,801,600",
+          "x": 75.1,
+          "y": 392.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 33,
+      "page": 24,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The two rules shown below are used to generate sets of ordered pairs. The starting point is <span class=\"math\">(1,1)</span>. The ordered pairs are then graphed on a coordinate plane. <span class=\"math\">•</span> Rule for <span class=\"math\">x</span> coordinate: Each value is <span class=\"math\">3</span> more than the one before it. <span class=\"math\">•</span> Rule for <span class=\"math\">y</span> coordinate: Each value is <span class=\"math\">2</span> more than the one before it. Which graph shows the set of ordered pairs?",
+      "stemLines": [
+        "The two rules shown below are used to generate sets of ordered pairs. The starting point",
+        "is <span class=\"math\">(1,1)</span>. The ordered pairs are then graphed on a coordinate plane.",
+        "<span class=\"math\">•</span> Rule for <span class=\"math\">x</span> coordinate: Each value is <span class=\"math\">3</span> more than the one before it.",
+        "<span class=\"math\">•</span> Rule for <span class=\"math\">y</span> coordinate: Each value is <span class=\"math\">2</span> more than the one before it.",
+        "Which graph shows the set of ordered pairs?"
+      ],
+      "prose": "The two rules shown below are used to generate sets of ordered pairs. The starting point is . The ordered pairs are then graphed on a coordinate plane. Rule for coordinate: Each value is  more than the one before it. Rule for coordinate: Each value is  more than the one before it. Which graph shows the set of ordered pairs?",
+      "proseAllLines": "The two rules shown below are used to generate sets of ordered pairs. The starting point is . The ordered pairs are then graphed on a coordinate plane. Rule for coordinate: Each value is  more than the one before it. Rule for coordinate: Each value is  more than the one before it. Which graph shows the set of ordered pairs?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "",
+          "x": 75.5,
+          "y": 256.1
+        },
+        {
+          "label": "C",
+          "html": "",
+          "x": 309.6,
+          "y": 256.1
+        },
+        {
+          "label": "B",
+          "html": "",
+          "x": 76.1,
+          "y": 448.1
+        },
+        {
+          "label": "D",
+          "html": "",
+          "x": 309.1,
+          "y": 448.1
+        }
+      ],
+      "choicesInImage": true,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q33.png",
+          "rect": [
+            75.48,
+            171.25,
+            511.49,
+            536.5
+          ],
+          "paths": 549,
+          "decodedLabels": "� � � �<sup>�</sup> � � � �<sup>� � � � �</sup> � � � � � � � � � � � �• � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� � � � � • � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> ���<sup>�</sup> � � � �<sup>� � � � �</sup> � � � � � � � � � � � �• � � � � � � � � � � � �",
+          "undecodedGlyphs": 528,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 34,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "A gift box is in the shape of a right rectangular prism. The gift box is <span class=\"math\">7<span class=\"frac\"><span>3</span><span>5</span></span></span> centimeters long, <span class=\"math\">5 <span class=\"frac\"><span>4</span><span>5</span></span></span> centimeters wide, and <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "stemLines": [
+        "A gift box is in the shape of a right rectangular prism. The gift box is <span class=\"math\">7<span class=\"frac\"><span>3</span><span>5</span></span></span> centimeters long,",
+        "<span class=\"math\">5 <span class=\"frac\"><span>4</span><span>5</span></span></span> centimeters wide, and <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> centimeters high. What is the volume, in cubic centimeters,",
+        "of the gift box?"
+      ],
+      "prose": "A gift box is in the shape of a right rectangular prism. The gift box is  centimeters long, centimeters wide, and  centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "proseAllLines": "A gift box is in the shape of a right rectangular prism. The gift box is  centimeters long, centimeters wide, and  centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "<span class=\"math\">15 <span class=\"frac\"><span>9</span><span>10</span></span></span>",
+          "x": 75.5,
+          "y": 163.9
+        },
+        {
+          "label": "B",
+          "html": "<span class=\"math\">70 <span class=\"frac\"><span>6</span><span>25</span></span></span>",
+          "x": 76.1,
+          "y": 202.1
+        },
+        {
+          "label": "C",
+          "html": "<span class=\"math\">110 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "x": 75.6,
+          "y": 241.1
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">155 <span class=\"frac\"><span>8</span><span>50</span></span></span>",
+          "x": 75.1,
+          "y": 279.4
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 35,
+      "page": 25,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+      "stemLines": [
+        "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of",
+        "oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?"
+      ],
+      "prose": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+      "proseAllLines": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true? Apples have the greater unit price at $1.15. Apples have the greater unit price at $1.25. Oranges have the greater unit price at $1.15. Oranges have the greater unit price at $1.25.",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "Apples have the greater unit price at $1.15.",
+          "x": 75.5,
+          "y": 396.3
+        },
+        {
+          "label": "B",
+          "html": "Apples have the greater unit price at $1.25.",
+          "x": 76.1,
+          "y": 426.3
+        },
+        {
+          "label": "C",
+          "html": "Oranges have the greater unit price at $1.15.",
+          "x": 75.6,
+          "y": 455.5
+        },
+        {
+          "label": "D",
+          "html": "Oranges have the greater unit price at $1.25.",
+          "x": 75.1,
+          "y": 485.5
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 36,
+      "page": 26,
+      "type": "Multiple Choice",
+      "credits": 1,
+      "session": 2,
+      "creditLine": null,
+      "stemHtml": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+      "stemLines": [
+        "The figure below shows a parallelogram with part of it shaded.",
+        "What is the area, in square centimeters, of the part of the parallelogram that is shaded?"
+      ],
+      "prose": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+      "proseAllLines": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded? 3.6 5.4 4.32 8.64",
+      "instructions": [],
+      "choices": [
+        {
+          "label": "A",
+          "html": "3.6",
+          "x": 75.5,
+          "y": 243.4
+        },
+        {
+          "label": "B",
+          "html": "5.4",
+          "x": 76.1,
+          "y": 273.4
+        },
+        {
+          "label": "C",
+          "html": "4.32",
+          "x": 75.6,
+          "y": 302.6
+        },
+        {
+          "label": "D",
+          "html": "8.64",
+          "x": 75.1,
+          "y": 332.6
+        }
+      ],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q36.png",
+          "rect": [
+            248.4,
+            95.52,
+            368.4,
+            190.73
+          ],
+          "paths": 30,
+          "decodedLabels": "� � �� �� � � � �� � � � � � � ��",
+          "undecodedGlyphs": 19,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 37,
+      "page": 27,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+      "stemLines": [
+        "Mr. Kamski has 6 students in his class who play an instrument. These students represent",
+        "24% of the total number of students in his class. What is the total number of students in",
+        "his class?"
+      ],
+      "prose": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+      "proseAllLines": "This question is worth 1 credit. Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class? Answer    students",
+      "instructions": [
+        "Answer    students"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 39,
+      "page": 29,
+      "type": "Constructed Response",
+      "credits": 1,
+      "session": 2,
+      "creditLine": "This question is worth 1 credit.",
+      "stemHtml": "What is the greatest common factor of 72 and 96 ?",
+      "stemLines": [
+        "What is the greatest common factor of 72 and 96 ?"
+      ],
+      "prose": "What is the greatest common factor of 72 and 96 ?",
+      "proseAllLines": "This question is worth 1 credit. What is the greatest common factor of 72 and 96 ? Answer",
+      "instructions": [
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 40,
+      "page": 30,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "What is the value of the expression <span class=\"math\">4 (3 + 5<sup>2</sup>) − 6</span> ?",
+      "stemLines": [
+        "What is the value of the expression <span class=\"math\">4 (3 + 5<sup>2</sup>) − 6</span> ?"
+      ],
+      "prose": "What is the value of the expression  ?",
+      "proseAllLines": "This question is worth 2 credits. What is the value of the expression  ? Show your work. Answer",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 41,
+      "page": 31,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+      "stemLines": [
+        "A restaurant buys cheese in large blocks. The table below shows the relationship between",
+        "the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars.",
+        "Based on the data in the table, write an equation to represent the total price, t, in terms of",
+        "the number of blocks of cheese bought, b. Be sure to identify the independent and",
+        "dependent variables in your explanation."
+      ],
+      "prose": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+      "proseAllLines": "This question is worth 2 credits. A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation. Explain your answer.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q41.png",
+          "rect": [
+            191.14,
+            131.54,
+            426.41,
+            265.23
+          ],
+          "paths": 80,
+          "decodedLabels": "�� � ��� ������ ������ �� ������� ����� ������ � �������� � ��������� � � � � � ��� � ��� � ���",
+          "undecodedGlyphs": 73,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 42,
+      "page": 32,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+      "stemLines": [
+        "The net of a right square pyramid is shown below.",
+        "What is the surface area, in square centimeters, of the pyramid?"
+      ],
+      "prose": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+      "proseAllLines": "This question is worth 2 credits. The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid? Show your work. Answer    square centimeters",
+      "instructions": [
+        "Show your work.",
+        "Answer    square centimeters"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q42.png",
+          "rect": [
+            119.08,
+            117.25,
+            259.22,
+            257.89
+          ],
+          "paths": 24,
+          "decodedLabels": "� � � � �� � � � � � � �� � � �",
+          "undecodedGlyphs": 17,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 43,
+      "page": 33,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "The top of a rectangular table has a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> feet and an area of <span class=\"math\">21 <span class=\"frac\"><span>2</span><span>3</span></span></span> square feet. What is the length, in feet, of the top of the table?",
+      "stemLines": [
+        "The top of a rectangular table has a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> feet and an area of <span class=\"math\">21 <span class=\"frac\"><span>2</span><span>3</span></span></span> square feet.",
+        "What is the length, in feet, of the top of the table?"
+      ],
+      "prose": "The top of a rectangular table has a width of  feet and an area of  square feet. What is the length, in feet, of the top of the table?",
+      "proseAllLines": "This question is worth 2 credits. The top of a rectangular table has a width of  feet and an area of  square feet. What is the length, in feet, of the top of the table? Show your work. Answer    feet",
+      "instructions": [
+        "Show your work.",
+        "Answer    feet"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 44,
+      "page": 34,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? in your answer.",
+      "stemLines": [
+        "Paige uses the coordinate plane shown below to represent the locations of the vegetable",
+        "patches in her garden. Each unit on the coordinate plane represents 1 foot.",
+        "What is the shortest distance, in feet, from the cabbage patch to the broccoli patch?",
+        "in your answer."
+      ],
+      "prose": "Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? in your answer.",
+      "proseAllLines": "This question is worth 2 credits. Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? Be sure to include the coordinates that represent the locations of both vegetable patches in your answer. Explain how you determined your answer.",
+      "instructions": [
+        "Be sure to include the coordinates that represent the locations of both vegetable patches",
+        "Explain how you determined your answer."
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q44.png",
+          "rect": [
+            208.65,
+            131.64,
+            408.15,
+            312.85
+          ],
+          "paths": 109,
+          "decodedLabels": "��� � �<sup>�</sup>� ���� � � � � � � � � �� �� �� �� � � � � � � � � � �� �� � �°��°� � • �� �� ����� • �� �",
+          "undecodedGlyphs": 58,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "item": 45,
+      "page": 35,
+      "type": "Constructed Response",
+      "credits": 2,
+      "session": 2,
+      "creditLine": "This question is worth 2 credits.",
+      "stemHtml": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+      "stemLines": [
+        "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio,",
+        "how many cups of pretzels are needed when 3 cups of sesame seeds are used?"
+      ],
+      "prose": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+      "proseAllLines": "This question is worth 2 credits. A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used? Show your work. Answer    cups of pretzels",
+      "instructions": [
+        "Show your work.",
+        "Answer    cups of pretzels"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [],
+      "unresolved": []
+    },
+    {
+      "item": 46,
+      "page": 36,
+      "type": "Constructed Response",
+      "credits": 3,
+      "session": 2,
+      "creditLine": "This question is worth 3 credits.",
+      "stemHtml": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+      "stemLines": [
+        "The figure below shows the dimensions of a rug shaped like a rectangle.",
+        "The area of the rug is 54 square feet. Write and solve an equation to determine the value",
+        "of x. Be sure to use the unknown, x, in your equation.",
+        "Answerx =",
+        "A company buys 7 of these rugs for $784. Write and solve an equation to determine the",
+        "price, p, of each rug. Be sure to use the unknown, p, in your equation."
+      ],
+      "prose": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+      "proseAllLines": "This question is worth 3 credits. The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Show your work. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation. Show your work. Answer$",
+      "instructions": [
+        "Show your work.",
+        "Show your work.",
+        "Answer$"
+      ],
+      "choices": [],
+      "choicesInImage": false,
+      "display": [],
+      "figures": [
+        {
+          "file": "G6-2025/q46.png",
+          "rect": [
+            235.0,
+            117.25,
+            382.55,
+            202.0
+          ],
+          "paths": 20,
+          "decodedLabels": "� �� ���� � � � ���� �",
+          "undecodedGlyphs": 15,
+          "alt": "",
+          "longDescription": ""
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

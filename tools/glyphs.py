@@ -331,6 +331,35 @@ class GlyphTable:
         if not glyphs:
             return "", 0
 
+        # ---- a bar can be drawn as several abutting pieces ---------------
+        # Grade 8 2025 item 17 draws the overbar of segment J'K' as THREE rules
+        # tiled end to end at one height -- 101.57-103.48, 103.48-118.49,
+        # 118.49-120.40 -- and each piece then hunted separately for something
+        # to sit over, so the choice decoded as "- - J'K' ' || ...". Pieces that
+        # share a height and touch are one bar, and resolving them as one is
+        # what makes segment notation and any wide vinculum work.
+        rules = sorted((i for i, g in enumerate(glyphs) if g[2] == RULE),
+                       key=lambda i: (round(glyphs[i][0].y0, 1), glyphs[i][0].x0))
+        absorbed = set()
+        head = None
+        for i in rules:
+            r = glyphs[i][0]
+            if head is not None:
+                h = glyphs[head][0]
+                # ABUTTING, not merely "not far to the right". Bounding one
+                # side only merged the vinculum of a radical with another
+                # radical's vinculum further LEFT on the same line, and grade 8
+                # 2026 item 7 lost the bar over the 9 in its square root of 9.
+                if (abs(r.y0 - h.y0) < 0.35 and abs(r.y1 - h.y1) < 0.35
+                        and -0.6 <= r.x0 - h.x1 <= 0.6):
+                    glyphs[head][0] = fitz.Rect(h.x0, min(h.y0, r.y0),
+                                                max(h.x1, r.x1), max(h.y1, r.y1))
+                    absorbed.add(i)
+                    continue
+            head = i
+        if absorbed:
+            glyphs = [g for j, g in enumerate(glyphs) if j not in absorbed]
+
         # ---- resolve rules before anything is emitted -------------------
         consumed = set()
         fractions = {}

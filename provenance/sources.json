@@ -33,6 +33,39 @@
       "url": "https://www.nysedregents.org/ei/math/2023/2023-released-items-math-g8.pdf",
       "year": 2023
     },
+    "2023-scoring-materials-math-g6.pdf": {
+      "bytes": 9673797,
+      "fetched": "2026-09-11",
+      "grade": 6,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2023-scoring-materials-math-g6.pdf",
+      "sha256": "62bc0ae8bd7114e9751fff5584a73c440b8fa1db9f7a7e08469158a11e213568",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-scoring-materials-math-g6.pdf",
+      "year": 2023
+    },
+    "2023-scoring-materials-math-g7.pdf": {
+      "bytes": 11208006,
+      "fetched": "2026-09-11",
+      "grade": 7,
+      "kind": "scoring",
+      "pages": 98,
+      "path": "sources/scoring/2023-scoring-materials-math-g7.pdf",
+      "sha256": "82c9d27eccad157325e095bfaa3a1dcecaf1412c46b35e2e10eca440e8d3506c",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-scoring-materials-math-g7.pdf",
+      "year": 2023
+    },
+    "2023-scoring-materials-math-g8.pdf": {
+      "bytes": 8853802,
+      "fetched": "2026-09-11",
+      "grade": 8,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2023-scoring-materials-math-g8.pdf",
+      "sha256": "6ece581e31e42fcdf3e85c0087bc351b7eb47a1732f227c5e7c53d01d51b50d5",
+      "url": "https://www.nysedregents.org/ei/math/2023/2023-scoring-materials-math-g8.pdf",
+      "year": 2023
+    },
     "2024-released-items-math-g6.pdf": {
       "bytes": 2290731,
       "fetched": "2026-09-09",
@@ -66,6 +99,39 @@
       "url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
       "year": 2024
     },
+    "2024-scoring-materials-math-g6.pdf": {
+      "bytes": 25907908,
+      "fetched": "2026-09-11",
+      "grade": 6,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2024-scoring-materials-math-g6.pdf",
+      "sha256": "82a05987edc3fca3fdedd6cc6d4d0bd0d3576ab357fcbe3a5424291987e70e67",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-scoring-materials-math-g6.pdf",
+      "year": 2024
+    },
+    "2024-scoring-materials-math-g7.pdf": {
+      "bytes": 15183142,
+      "fetched": "2026-09-11",
+      "grade": 7,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2024-scoring-materials-math-g7.pdf",
+      "sha256": "11f2a26fca9087062a497d592f5b0c6ab33048219bab3434990ec87240cad281",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-scoring-materials-math-g7.pdf",
+      "year": 2024
+    },
+    "2024-scoring-materials-math-g8.pdf": {
+      "bytes": 21905839,
+      "fetched": "2026-09-11",
+      "grade": 8,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2024-scoring-materials-math-g8.pdf",
+      "sha256": "fee782846b293f30fb4eae7798c872afcdc8b3551aa9fbc2408da10351ea8ef4",
+      "url": "https://www.nysedregents.org/ei/math/2024/2024-scoring-materials-math-g8.pdf",
+      "year": 2024
+    },
     "2025-released-items-math-g6.pdf": {
       "bytes": 2056136,
       "fetched": "2026-09-09",
@@ -97,6 +163,39 @@
       "path": "sources/2025-released-items-math-g8.pdf",
       "sha256": "090b09d8f1b40a59251c0e87a21459941e806778214e9cc9c3bf56f265a8b2c6",
       "url": "https://www.nysedregents.org/ei/math/2025/2025-released-items-math-g8.pdf",
+      "year": 2025
+    },
+    "2025-scoring-materials-math-g6.pdf": {
+      "bytes": 10192983,
+      "fetched": "2026-09-11",
+      "grade": 6,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2025-scoring-materials-math-g6.pdf",
+      "sha256": "b7bd36a9b075807f0e0b003d75e3cda51b5e73ceb103b0fa36f41f616c079594",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-scoring-materials-math-g6.pdf",
+      "year": 2025
+    },
+    "2025-scoring-materials-math-g7.pdf": {
+      "bytes": 13173761,
+      "fetched": "2026-09-11",
+      "grade": 7,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2025-scoring-materials-math-g7.pdf",
+      "sha256": "a1b79a58e15510d9d130b5eda236d72890c9e0349c535c53e65c50fee570f3f0",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-scoring-materials-math-g7.pdf",
+      "year": 2025
+    },
+    "2025-scoring-materials-math-g8.pdf": {
+      "bytes": 13443256,
+      "fetched": "2026-09-11",
+      "grade": 8,
+      "kind": "scoring",
+      "pages": 100,
+      "path": "sources/scoring/2025-scoring-materials-math-g8.pdf",
+      "sha256": "62c79ad9fcd7a289e283773c57fb25e04307bc4636268a18fedbe3cf1398132a",
+      "url": "https://www.nysedregents.org/ei/math/2025/2025-scoring-materials-math-g8.pdf",
       "year": 2025
     },
     "2026-released-items-math-g6.pdf": {
