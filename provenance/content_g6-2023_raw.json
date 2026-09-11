@@ -107,6 +107,12 @@
           "html": "<span class=\"math\">450d = c</span>",
           "x": 75.6,
           "y": 671.4
+        },
+        {
+          "label": "D",
+          "html": "<span class=\"math\">450c = d</span>",
+          "x": 75.1,
+          "y": 701.4
         }
       ],
       "choicesInImage": false,

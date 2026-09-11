@@ -92,7 +92,13 @@ def repair(text):
 
 MARGIN_X = 70.0         # prose and vector content start right of this
 TOP = 55.0              # above: the running header
-FOOT = 700.0            # below: "Page N / GO ON / Session N"
+# The last answer choice can sit at y=701.4 -- grade 6 2023 item 3's choice D
+# does -- while the lowest in-column footer across all twelve PDFs is "STOP" at
+# y=702.6. A boundary at 700 silently dropped that choice and published a
+# three-choice multiple-choice item. The band is widened and the footer is
+# excluded by what it SAYS instead, which does not depend on a 1pt margin.
+FOOT = 704.0            # below: "Page N / GO ON / STOP / Session N"
+FOOTER_RE = re.compile(r"^(GO ON|STOP|Session \d+|Page \d+)\s*$")
 LINE_TOL = 2.0          # chars within this y are one line
 # NYSED prints the item number level with the item's SECOND line, so the anchor
 # sits 5-6pt below the first line of prose (the first item on a page anchors at
@@ -194,8 +200,15 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
     # it twice and tracking consumption by id() never matches: every glyph
     # already used as an inline hole reappeared as leftover artwork, which is
     # how 42 items produced 173 phantom "displayed expressions".
+    # The LAST item on a page may have maths hanging below the text bound. Grade
+    # 6 2023 item 3's choice D is drawn at y=704 to 713 where the bound is 704,
+    # so the choice was found but came out empty and the item published with
+    # three options. The footer is text, never vector art, so the drawing bound
+    # can reach past it -- but only for the last item on the page, or this would
+    # pull the next item's first line up into this one.
+    draw_hi = y_hi + 14.0 if y_hi >= FOOT else y_hi
     drawings = [dr for dr in page.get_drawings()
-                if y_lo - 2 <= dr["rect"].y0 < y_hi and dr["rect"].x0 > MARGIN_X - 25]
+                if y_lo - 2 <= dr["rect"].y0 < draw_hi and dr["rect"].x0 > MARGIN_X - 25]
     glyph_draws = [dr for dr in drawings
                    if dr["rect"].x0 > MARGIN_X - 20 and shape_of(dr) is not None]
     all_draws = drawings
@@ -456,6 +469,8 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         m = CREDIT_RE.match(text)
         if m:
             credit_line = text
+            continue
+        if FOOTER_RE.match(text):
             continue
         if INSTRUCTION_RE.match(text):
             instructions.append(text)

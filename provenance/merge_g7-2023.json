@@ -1,0 +1,136 @@
+{
+  "testId": "g7-2023",
+  "status": "reviewed",
+  "answerKey": "BDABBDBCCBCDBCBDAABAB",
+  "answerKeyItems": [
+    1,
+    2,
+    4,
+    5,
+    8,
+    9,
+    13,
+    16,
+    17,
+    18,
+    21,
+    23,
+    25,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+  "constructedResponse": {
+    "39": {
+      "answer": "16 cookies per cup of flour",
+      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+      "check": "Every row of this item's own table divides to 16: 24 over one and a half, 48 over 3, 120 over seven and a half."
+    },
+    "40": {
+      "answer": "3/5 mile, or 0.6",
+      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+      "check": "Four days at three quarters is 3 miles and four at three fifths is 2.4, a difference of 0.6. Both daily distances are in this item's own transcribed stem."
+    },
+    "41": {
+      "answer": "8y + 5",
+      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+      "check": "Half of 18y minus 2y plus 10 is 9y minus y plus 5, which is 8y + 5. The expression is this item's own transcribed stem."
+    },
+    "42": {
+      "answer": "22 seconds",
+      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+      "check": "The table gives d = t over 2, so 11 feet takes 22 seconds. Every pair in this item's own table fits that rule."
+    },
+    "43": {
+      "answer": "5 guests",
+      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+      "check": "8g + 55 < 100 gives g < 5.625, and guests are whole people. The fee and the per-guest cost are in this item's own stem."
+    },
+    "44": {
+      "answer": "12 possible outcomes",
+      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+      "check": "Two coin faces times six cube faces is 12; the exemplary response lists the sample space H1 to T6. Both are in this item's own stem."
+    },
+    "45": {
+      "answer": "588 square feet",
+      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+      "check": "At 1 inch to 14 feet the 1.5 by 2 inch drawing is 21 by 28 feet, which is 588 square feet. The scale is in the stem and the dimensions are in this item's figure."
+    },
+    "46": {
+      "answer": "32 feet",
+      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+      "check": "Minus 24 plus 10 minus 18 is minus 32, so the diver is 32 feet down. All three distances are in this item's own transcribed stem."
+    },
+    "47": {
+      "answer": "16 rides",
+      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+      "check": "Admission is 2 times 11 plus 2 times 5, which is 32; 52 minus 32 is 20, and 20 over 1.25 is 16. All four prices are in this item's own stem."
+    },
+    "48": {
+      "answer": "Airline A, at $112.50 against Airline B's $120.00",
+      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+      "check": "25% off 150 is 112.50 and a third off 180 is 120. Both original prices and both discounts are in this item's own stem."
+    }
+  },
+  "visuals": {
+    "G7-2023/q04.png": {
+      "type": "Data Table",
+      "alt": "A table titled Number of Pages Read, pairing a number of days with a total number of pages.",
+      "long": "2 days with 32 pages, 4 with 64, 5 with 80, and 7 with 112."
+    },
+    "G7-2023/q05.png": {
+      "type": "Expression",
+      "alt": "A displayed sum of four signed numbers, with answer choice A shown beneath it.",
+      "long": "The sum is negative 1.5 plus two fifths plus negative 7 plus 2.6. Choice A regroups it as negative 5.5 plus 2.6, then plus two fifths."
+    },
+    "G7-2023/q13.png": {
+      "type": "Data Table",
+      "alt": "A table titled Babysitting Earnings, pairing hours worked with dollars earned.",
+      "long": "4 hours with 50 dollars, 5 with 62.50, 6 with 75, and 9 with 112.50."
+    },
+    "G7-2023/q16.png": {
+      "type": "Box Plots",
+      "alt": "Two box plots titled Test Scores, one for Class A and one for Class B, on a scale from 60 to 100.",
+      "long": "Both plots run on one scale from 60 to 100. Class B's box and median sit further right than Class A's, and Class B's whiskers reach further right as well, so Class B scored higher overall."
+    },
+    "G7-2023/q25.png": {
+      "type": "Line Graph",
+      "alt": "A graph titled Joseph's Earnings, dollars earned against hours worked.",
+      "long": "A straight line rises from the origin through about 2 hours at 30 dollars and 6 hours at 90 dollars."
+    },
+    "G7-2023/q31.png": {
+      "type": "Dot Plot",
+      "alt": "A dot plot titled Hits at Baseball Tournament, counting players against number of hits, from 0 to 7.",
+      "long": "Counting the crosses: 3 players with 0 hits, 7 with 1, none with 2, 5 with 3, 4 with 4, 2 with 5, 5 with 6, and 1 with 7 -- 27 players in all."
+    },
+    "G7-2023/q39.png": {
+      "type": "Data Table",
+      "alt": "A table titled Amount of Flour for Cookies, pairing cups of flour with number of cookies.",
+      "long": "One and a half cups with 24 cookies, 3 with 48, four and a half with 72, 6 with 96, and seven and a half with 120."
+    },
+    "G7-2023/q42.png": {
+      "type": "Data Table",
+      "alt": "A table titled Distance Robot Traveled, pairing time in seconds with distance in feet.",
+      "long": "2 seconds with 1 foot, 4 with 2, 10 with 5, and 16 with 8."
+    },
+    "G7-2023/q45.png": {
+      "type": "Diagram",
+      "alt": "A scale drawing titled Diagram of Classroom Floor, a rectangle with its two dimensions marked in inches.",
+      "long": "The rectangle is 1.5 inches wide and 2 inches tall."
+    }
+  },
+  "choicesInImage": [],
+  "tablesInImage": [
+    4,
+    13,
+    39,
+    42
+  ],
+  "reviewNotes": []
+}

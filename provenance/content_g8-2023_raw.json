@@ -466,7 +466,7 @@
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">5</span>",
+          "html": "<span class=\"math\">y = <span class=\"frac\"><span>5</span><span>9</span></span>x − 5</span>",
           "x": 75.1,
           "y": 697.0
         }
