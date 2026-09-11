@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-11T15:53:49",
+    "built": "2026-09-11T17:50:46",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -28,7 +28,7 @@
     "itemsWithPageLink": 387,
     "postTestItems": 17,
     "transcriptionCoverage": {
-      "transcribed": 208,
+      "transcribed": 297,
       "total": 396,
       "keySources": {
         "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted.",
@@ -36,7 +36,10 @@
         "g6-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees. It was additionally checked against the transcribed content: item 8's key is P, and P is the point at negative four and a half on this item's own number line, which is the opposite of the four and a half in its stem; item 10's key is 27, and the three points in its graph -- 2 minutes at 18 gallons, 4 at 36, 6 at 54 -- give 9 gallons a minute, so 3 minutes is 27; item 20's key is the only choice whose two comparisons are both true of the transcribed absolute values.",
         "g8-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item, so the two corroborate each other.",
         "g7-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-        "g6-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item."
+        "g6-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+        "g6-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+        "g7-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+        "g8-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item."
       },
       "reviewNotes": {
         "g7-2026": [
@@ -51,7 +54,10 @@
         "g6-2026": [],
         "g8-2023": [],
         "g7-2023": [],
-        "g6-2023": []
+        "g6-2023": [],
+        "g6-2024": [],
+        "g7-2024": [],
+        "g8-2024": []
       }
     },
     "alignmentCoverage": {
@@ -4889,7 +4895,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression represents <span class=\"math\">5</span> more than the product of <span class=\"math\">2</span> and <span class=\"math\">y</span> ?",
+      "stemPlain": "Which expression represents 5 more than the product of 2 and y ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2 + y + 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">2y + 5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5 + <span class=\"frac\"><span>2</span><span>y</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5 + <span class=\"frac\"><span>y</span><span>2</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-003",
@@ -4925,7 +4963,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which value of <span class=\"math\">b</span> makes the inequality <span class=\"math\">3b &gt; 12</span> true?",
+      "stemPlain": "Which value of b makes the inequality 3b > 12 true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-004",
@@ -4961,7 +5031,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A coordinate plane can be used to show the distance, in units, between two locations. The location of Jack\u2019s house and a store are listed below. <span class=\"math\">\u2022</span> Jack\u2019s house is located at <span class=\"math\">(\u22127, \u22128)</span>. <span class=\"math\">\u2022</span> The store is located at <span class=\"math\">(\u22127,4)</span>. What is the distance, in units, between Jack\u2019s house and the store?",
+      "stemPlain": "A coordinate plane can be used to show the distance, in units, between two locations. The location of Jack\u2019s house and a store are listed below. \u2022 Jack\u2019s house is located at (\u22127, \u22128). \u2022 The store is located at (\u22127,4). What is the distance, in units, between Jack\u2019s house and the store?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">8</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">12</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">14</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-011",
@@ -4997,7 +5099,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which number line represents <span class=\"math\">x \u2265 \u22123</span> ?",
+      "stemPlain": "Which number line represents x \u2265 \u22123 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2024/q11.png",
+          "type": "Number Lines as Answer Choices",
+          "alt": "Four number lines labelled A to D, this item's answer choices, each running from negative 6 to 6 with a mark at negative 3.",
+          "longDescription": "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-014",
@@ -5033,7 +5174,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the value of the expression <span class=\"math\">8<sup>2</sup> \u00f7 4 \u00d7 2<sup>3</sup></span> ?",
+      "stemPlain": "What is the value of the expression 8^2 \u00f7 4 \u00d7 2^3 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">16</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">24</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">96</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">128</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-015",
@@ -5069,7 +5242,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Ben purchases <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>4</span></span></span> pounds of nuts and puts them into bags. Each bag holds <span class=\"math\"><span class=\"frac\"><span>1</span><span>8</span></span></span> pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+      "stemPlain": "Ben purchases 1 (1)/(4) pounds of nuts and puts them into bags. Each bag holds (1)/(8) pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>32</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">1 <span class=\"frac\"><span>1</span><span>8</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">10</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-018",
@@ -5105,7 +5310,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression represents the opposite of the number <span class=\"math\">\u22122 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+      "stemPlain": "Which expression represents the opposite of the number \u22122 (1)/(2) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 \u22122<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u22122 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2 \u2212 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-020",
@@ -5141,7 +5378,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+      "stemPlain": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">7<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">15 <span class=\"frac\"><span>5</span><span>8</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">20 <span class=\"frac\"><span>5</span><span>6</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2024/q20.png",
+          "type": "Diagram",
+          "alt": "A cube with one edge length labelled in inches.",
+          "longDescription": "Each edge is 2 and a half inches."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-022",
@@ -5177,7 +5453,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Tammy and Jacob collect stamps. Tammy has <span class=\"math\">s</span> stamps. Jacob has <span class=\"math\">4</span> fewer than <span class=\"math\">3</span> times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+      "stemPlain": "Tammy and Jacob collect stamps. Tammy has s stamps. Jacob has 4 fewer than 3 times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3 \u2212 4s</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3s \u2212 4</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">4 \u2212 3s</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4s \u2212 3</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-023",
@@ -5213,7 +5521,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?",
+      "stemPlain": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "8",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "24",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "48",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-026",
@@ -5249,7 +5589,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What ordered pair represents the location of a point that is the reflection of the point <span class=\"math\">(\u22124,6)</span> over the <span class=\"math\">x</span> -axis?",
+      "stemPlain": "What ordered pair represents the location of a point that is the reflection of the point (\u22124,6) over the x -axis?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(4,6)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(\u22124, \u22126)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(6, \u22124)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(\u22126,4)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-028",
@@ -5285,7 +5657,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid?",
+      "stemPlain": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "120",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "150",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "195",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "240",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2024/q28.png",
+          "type": "Diagram",
+          "alt": "A trapezoid with its two parallel sides and its height labelled in centimetres.",
+          "longDescription": "The top is 10 centimetres, the bottom is 16, and the height between them is 15."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-029",
@@ -5321,7 +5732,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An inequality is shown below. Which statement about the locations of the numbers on a number line is true?",
+      "stemPlain": "An inequality is shown below. Which statement about the locations of the numbers on a number line is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">\u2212 <span class=\"frac\"><span>9</span><span>20</span></span> &gt; \u2212 <span class=\"frac\"><span>21</span><span>24</span></span></span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the left of <span class=\"math\">\u2212 <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the right of <span class=\"math\">0</span> on a number line.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the right of <span class=\"math\">\u2212 <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the left of <span class=\"math\">0</span> on a number line.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the left of <span class=\"math\">\u2212 <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the left of <span class=\"math\">0</span> on a number line.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>9</span><span>20</span></span></span> is to the right of <span class=\"math\">\u2212 <span class=\"frac\"><span>21</span><span>24</span></span></span> and to the right of <span class=\"math\">0</span> on a number line.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-031",
@@ -5357,7 +5802,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda?",
+      "stemPlain": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "13",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "26",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "52",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "96",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-032",
@@ -5393,7 +5870,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp?",
+      "stemPlain": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "90",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "75",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "51",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "44",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2024/q32.png",
+          "type": "Diagram",
+          "alt": "The net of a triangular prism with its dimensions labelled in feet.",
+          "longDescription": "The central rectangle is 6 feet by 4 feet, the two triangles have a height of 2.5 feet, and the slanted faces are 6.5 feet."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-033",
@@ -5429,7 +5945,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The number 4 is 16% of what number?",
+      "stemPlain": "The number 4 is 16% of what number?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "12",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "20",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "25",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "64",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-034",
@@ -5465,7 +6013,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates?",
+      "stemPlain": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "15",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "54",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "63",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-035",
@@ -5501,7 +6081,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. <span class=\"math\">8 <span class=\"frac\"><span>1</span><span>10</span></span></span> inches by <span class=\"math\">4<span class=\"frac\"><span>4</span><span>5</span></span></span> inches by <span class=\"math\">12 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches What is the volume, in cubic inches, of the cereal box?",
+      "stemPlain": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. 8 (1)/(10) inches by 4(4)/(5) inches by 12 (1)/(2) inches What is the volume, in cubic inches, of the cereal box?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">24</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">25 <span class=\"frac\"><span>2</span><span>5</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">384<span class=\"frac\"><span>1</span><span>25</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">486</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-036",
@@ -5539,7 +6151,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A tutoring company charges <span class=\"math\">$25.00</span> per hour to tutor a student. How many hours o f tutoring would cost <span class=\"math\">$62.50</span> ?",
+      "stemPlain": "A tutoring company charges $25.00 per hour to tutor a student. How many hours o f tutoring would cost $62.50 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">37<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">87<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2024-037",
@@ -5575,7 +6219,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ?",
+      "stemPlain": "The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    units"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2024/q37.png",
+          "type": "Coordinate Plane",
+          "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
+          "longDescription": "A is at negative 6, 6; D is at 4, 6; B is at negative 2, negative 4; C is at 12, negative 4."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "10 units",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "A is at negative 6, 6 and D is at 4, 6, so they are 10 apart along the same horizontal line. Both vertices are in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-038",
@@ -5611,7 +6280,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What value of <span class=\"math\">n</span> makes the equation <span class=\"math\"><span class=\"frac\"><span>n</span><span>8</span></span></span> <span class=\"math\">= 17</span> true?",
+      "stemPlain": "What value of n makes the equation (n)/(8) = 17 true?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "136",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "n over 8 equals 17 gives n = 136. The equation is this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-039",
@@ -5649,7 +6336,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use?",
+      "stemPlain": "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    gallon(s)"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "0.75 gallon, or six eighths",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "Six gallons of orange to eight of blue is 0.75 of orange for each gallon of blue. Both quantities are in this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-040",
@@ -5685,7 +6390,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag?",
+      "stemPlain": "A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    square centimeters"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2024/q40.png",
+          "type": "Diagram",
+          "alt": "A rectangular flag with a white triangular notch cut into one side, the rest shaded, dimensions in centimetres.",
+          "longDescription": "The flag is 9 centimetres by 5 centimetres, and the notch is 4.5 centimetres deep across the full 5 centimetre height."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "33.75 square centimeters",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "The whole flag is 9 by 5, which is 45, and the white triangle is 4.5 by 5 halved, which is 11.25. All three dimensions are in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-041",
@@ -5721,7 +6452,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A student claims that the expression <span class=\"math\">6 + 8x</span> is equivalent to the expression <span class=\"math\">3 (3 + 5x)</span>. What is incorrect about the student\u2019s claim? Be sure to include an equivalent expression to <span class=\"math\">3 (3 + 5x)</span> in your response.",
+      "stemPlain": "A student claims that the expression 6 + 8x is equivalent to the expression 3 (3 + 5x). What is incorrect about the student\u2019s claim? Be sure to include an equivalent expression to 3 (3 + 5x) in your response.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "Not equivalent: 3 times 3 plus 5x is 9 + 15x, not 6 + 8x",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "Distributing the 3 gives 9 + 15x. Both expressions are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-042",
@@ -5757,7 +6506,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Mike needs a ticket every time he rides the bus. Given the equation <span class=\"math\">c = 2.75t</span>, what is the relationship between <span class=\"math\">t</span>, the number of tickets that Mike buys, and <span class=\"math\">c</span>, the total cost?  Be sure to identify which variable is independent and which variable is dependent in your answer.",
+      "stemPlain": "Mike needs a ticket every time he rides the bus. Given the equation c = 2.75t, what is the relationship between t, the number of tickets that Mike buys, and c, the total cost? Be sure to identify which variable is independent and which variable is dependent in your answer.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "The total cost c depends on the number of tickets t, so c is the dependent variable and t the independent one; the cost rises $2.75 a ticket",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "The equation c = 2.75t is this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-043",
@@ -5793,7 +6560,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A student claims that 4 is the greatest common factor of 24 and 40, because the two numbers are both multiples of 4. Is the student\u2019s claim correct?",
+      "stemPlain": "A student claims that 4 is the greatest common factor of 24 and 40, because the two numbers are both multiples of 4. Is the student\u2019s claim correct?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "No \u2014 8 is a common factor of 24 and 40 and is greater than 4",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "24 and 40 are both multiples of 8. Both numbers are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-044",
@@ -5829,7 +6614,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+      "stemPlain": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2024/q44.png",
+          "type": "Diagram",
+          "alt": "A cube built from smaller unit cubes.",
+          "longDescription": "It is 4 unit cubes along each edge."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "64, which is 4 cubed",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "The prism is 4 unit cubes along each edge, so its volume is 4 times 4 times 4. The prism is shown in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-045",
@@ -5865,7 +6675,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The location of Jake\u2019s school and house are represented on the coordinate plane shown below. What is the distance, in units, from Jake\u2019s school to his house? Be sure to include the coordinates for both locations and how those coordinates can be used to determine your answer.",
+      "stemPlain": "The location of Jake\u2019s school and house are represented on the coordinate plane shown below. What is the distance, in units, from Jake\u2019s school to his house? Be sure to include the coordinates for both locations and how those coordinates can be used to determine your answer.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2024/q45.png",
+          "type": "Coordinate Plane",
+          "alt": "A first-quadrant grid with two labelled points, House and School.",
+          "longDescription": "The house is at 3, 6 and the school is at 3, 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "4 units",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "The school is at 3, 2 and the house at 3, 6, so they differ by 4 in the y direction alone. Both points are labelled in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2024-046",
@@ -5901,7 +6736,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex\u2019s and Nero\u2019s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved?",
+      "stemPlain": "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex\u2019s and Nero\u2019s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2024/q46.png",
+          "type": "Data Tables",
+          "alt": "Two tables, Rex's Savings and Nero's Savings, each pairing months with dollars saved.",
+          "longDescription": "Rex: 2 months 18 dollars, 4 months 36, 6 months 54, 8 months 72. Nero: 3 months 36 dollars, 6 months 72, 9 months 108, 12 months 144."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$48",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "Rex saves $9 a month and Nero $12, so over 16 months they save $144 and $192. Both tables are in this item's figure and named in its long description."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2025-001",
@@ -11522,7 +12383,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A store sells packages of butter. The table below shows the cost, in dollars, for different numbers of packages of butter. What is the cost, per package, of the butter?",
+      "stemPlain": "A store sells packages of butter. The table below shows the cost, in dollars, for different numbers of packages of butter. What is the cost, per package, of the butter?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "$0.31",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$3.25",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "$6.75",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "$9.75",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q01_1.png",
+          "type": "Data Table",
+          "alt": "A table titled Cost of Butter pairing a number of packages with a cost in dollars.",
+          "longDescription": "3 packages for 9.75, 4 for 13.00, 7 for 22.75, and 11 for 35.75 -- 3.25 a package."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-004",
@@ -11558,7 +12458,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A farmer plants 4 rows of seedlings. The first 3 rows are equal in length. The length of the fourth row is 19 yards. The total length of the 4 rows is 61 yards. What is the length, in yards, of each of the first 3 rows the farmer plants?",
+      "stemPlain": "A farmer plants 4 rows of seedlings. The first 3 rows are equal in length. The length of the fourth row is 19 yards. The total length of the 4 rows is 61 yards. What is the length, in yards, of each of the first 3 rows the farmer plants?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "14",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "22",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "39",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "42",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-005",
@@ -11594,7 +12526,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "On average, ocean temperatures around the world range from <span class=\"math\">\u22122<sup>\u25cb</sup>C</span> to <span class=\"math\">32<sup>\u25cb</sup> C</span>. What is the difference between the two ocean temperatures?",
+      "stemPlain": "On average, ocean temperatures around the world range from \u22122^\u25cbC to 32^\u25cb C. What is the difference between the two ocean temperatures?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u221234<sup>\u25cb</sup> C</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">34<sup>\u25cb</sup> C</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u221230<sup>\u25cb</sup> C</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">30<sup>\u25cb</sup> C</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-007",
@@ -11630,7 +12594,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Mr. Moore collected data from his sixth grade class on how many minutes they studied for a test. The dot plot below shows the number of minutes each student studied. Which statement about the distribution of the data is true?",
+      "stemPlain": "Mr. Moore collected data from his sixth grade class on how many minutes they studied for a test. The dot plot below shows the number of minutes each student studied. Which statement about the distribution of the data is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The distribution is symmetrical.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The distribution has a range of 25.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The distribution appears to have an outlier.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "The distribution has a cluster from 25 to 35 minutes.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q07.png",
+          "type": "Dot Plot",
+          "alt": "A dot plot titled Student Study Times, counting students against minutes studied from 5 to 50.",
+          "longDescription": "One student studied 5 minutes; the rest cluster between 20 and 45 minutes, with the tallest stack at 30."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-010",
@@ -11666,7 +12669,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Victoria has a movie subscription. She pays an annual membership fee of <span class=\"math\">$24.00</span> and also a fee of <span class=\"math\">$4.00</span> for each movie she watches. Which inequality can be used to determine the total number of movies, <span class=\"math\">m</span>, Victoria can watch if she wants to spend less than <span class=\"math\">$100.00</span> per year?",
+      "stemPlain": "Victoria has a movie subscription. She pays an annual membership fee of $24.00 and also a fee of $4.00 for each movie she watches. Which inequality can be used to determine the total number of movies, m, Victoria can watch if she wants to spend less than $100.00 per year?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">24m + 4 &lt; 100</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4m + 24 &lt; 100</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">4m + 24 \u2264 100</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4m + 24 \u2265 100</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-011",
@@ -11702,7 +12737,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The regular price of a shirt is <span class=\"math\">n</span> dollars. During a sale, the shirt is discounted by <span class=\"math\">15</span> %. Which pair of expressions includes two correct ways to represent the price, in dollars, of the shirt after the discount?",
+      "stemPlain": "The regular price of a shirt is n dollars. During a sale, the shirt is discounted by 15 %. Which pair of expressions includes two correct ways to represent the price, in dollars, of the shirt after the discount?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">n \u2212 0.15</span> and <span class=\"math\">0.85</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">n \u2212 0.15n</span> and <span class=\"math\">0.85</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">n \u2212 15.00</span> and <span class=\"math\">85.00</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">n \u2212 0.15n</span> and <span class=\"math\">0.85n</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-013",
@@ -11738,7 +12805,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\">3.6 (x \u2212 5) + 2.5 (x + 4)</span> ?",
+      "stemPlain": "Which expression is equivalent to 3.6 (x \u2212 5) + 2.5 (x + 4) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">6.1x \u2212 1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">6.1x \u2212 8</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">1.1x \u2212 1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">1.1x \u2212 8</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-014",
@@ -11774,7 +12873,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A teacher records the test scores for the students in her class. The results are shown in the box plot below. Based on these data, what is the interquartile range?",
+      "stemPlain": "A teacher records the test scores for the students in her class. The results are shown in the box plot below. Based on these data, what is the interquartile range?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "8",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "11",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "21",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q14.png",
+          "type": "Box Plot",
+          "alt": "A box plot titled Students' Test Scores on a scale from 60 to 85.",
+          "longDescription": "The whiskers run from about 61 to 82, the box from about 67 to 78, and the median line sits at about 75."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-015",
@@ -11810,7 +12948,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the value of the expression shown below?",
+      "stemPlain": "What is the value of the expression shown below?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>1</span><span>15</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>11</span><span>15</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u22121 <span class=\"frac\"><span>16</span><span>105</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u22123 <span class=\"frac\"><span>26</span><span>105</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q15_1.png",
+          "type": "Expression",
+          "alt": "A displayed expression with answer choice A shown beneath it.",
+          "longDescription": "The expression is a third minus, in brackets, two thirds plus five sevenths, minus two and a fifth. Choice A is negative one fifteenth."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-017",
@@ -11846,7 +13023,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "There were two movies shown at a theater. A total of 150 tickets were sold for the first movie, and 40% more tickets were sold for the second movie than for the first movie. If each ticket sold for $13.50, what was the total amount of ticket sales, in dollars, for both movies?",
+      "stemPlain": "There were two movies shown at a theater. A total of 150 tickets were sold for the first movie, and 40% more tickets were sold for the second movie than for the first movie. If each ticket sold for $13.50, what was the total amount of ticket sales, in dollars, for both movies?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "$2,565.00",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$2,835.00",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$4,590.00",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "$4,860.00",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-021",
@@ -11882,7 +13091,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The table shown below represents a proportional relationship between <span class=\"math\">x</span> and <span class=\"math\">y</span>. Which equation represents this proportional relationship?",
+      "stemPlain": "The table shown below represents a proportional relationship between x and y. Which equation represents this proportional relationship?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = 4x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>4</span></span>x</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>9</span><span>4</span></span>x</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q21.png",
+          "type": "Data Table",
+          "alt": "A two-column table of x and y values whose y column runs in quarters.",
+          "longDescription": "9 with 2.25, 13 with 3.25, 17 with 4.25, and 21 with 5.25."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-026",
@@ -11918,7 +13166,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Pat uses <span class=\"math\">2 <span class=\"frac\"><span>5</span><span>8</span></span></span> cups of sugar for <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span> batches of cookies. She uses the same amount of sugar for each batch of cookies baked. How much sugar, in cups per batch, does Pat use to bake cookies?",
+      "stemPlain": "Pat uses 2 (5)/(8) cups of sugar for 3 (1)/(2) batches of cookies. She uses the same amount of sugar for each batch of cookies baked. How much sugar, in cups per batch, does Pat use to bake cookies?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>7</span><span>8</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">1 <span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">6 <span class=\"frac\"><span>1</span><span>8</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-029",
@@ -11954,7 +13234,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A seventh grade class sells gift cards as a fundraiser for the school library. Each gift card sells for $15.00. The library gets 35% of the money earned for each gift card sold. How much money does the library get if the class sells 500 gift cards?",
+      "stemPlain": "A seventh grade class sells gift cards as a fundraiser for the school library. Each gift card sells for $15.00. The library gets 35% of the money earned for each gift card sold. How much money does the library get if the class sells 500 gift cards?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "$1,167.00",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$1,429.00",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$2,625.00",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "$4,875.00",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-030",
@@ -12062,7 +13374,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which situation results in a final value of zero?",
+      "stemPlain": "Which situation results in a final value of zero?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The total number of pencils Aaron has if he had 12 pencils and bought 12 more pencils.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The total number of blocks Tom walks after walking 6 blocks north and walking 6 blocks west.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The total distance Nicole hikes from a depth of 10 feet below sea level to a height of 10 feet above sea level.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The total number of cookies Tiffany has if she bought 4 batches of cookies and sold the 4 batches of cookies.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-034",
@@ -12098,7 +13442,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Cheryl earns <span class=\"math\">$23.75</span> babysitting for <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> hours. At that rate, how much does Cheryl earn when babysitting for <span class=\"math\">5 <span class=\"frac\"><span>3</span><span>4</span></span></span> hours?",
+      "stemPlain": "Cheryl earns $23.75 babysitting for 2 (1)/(2) hours. At that rate, how much does Cheryl earn when babysitting for 5 (3)/(4) hours?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">$50.73</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">$54.63</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">$68.31</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">$78.38</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-035",
@@ -12134,7 +13510,52 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Two line plots are shown below. The first one represents the average cell phone usage per day, in minutes, of 20 teenagers. The second one represents the average cell phone usage per day, in minutes, of 20 adults. Which statement about the two data sets is true?",
+      "stemPlain": "Two line plots are shown below. The first one represents the average cell phone usage per day, in minutes, of 20 teenagers. The second one represents the average cell phone usage per day, in minutes, of 20 adults. Which statement about the two data sets is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The mean of the data for the adults is greater than the mean of the data for the teenagers because the data points for the adults are more spread out.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The mean of the data for the teenagers is greater than the mean of the data for the adults because the scale for the teenagers has greater numbers than the scale for the adults.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "The range of the data for the teenagers is greater than the range of the data for the adults because the data points for the teenagers are clustered.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The range of the data for the teenagers is greater than the range of the data for the adults because the scale for the teenagers has greater numbers than the scale for the adults.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q35_1.png",
+          "type": "Dot Plot",
+          "alt": "A dot plot titled Teenagers' Cell Phone Usage, counting teenagers against minutes from 380 to 700.",
+          "longDescription": "The points cluster around 520 to 560 minutes, with the tallest stack at 540."
+        },
+        {
+          "file": "G7-2024/q35_2.png",
+          "type": "Dot Plot",
+          "alt": "A dot plot titled Adults' Cell Phone Usage, counting adults against minutes from 80 to 400.",
+          "longDescription": "The points cluster around 220 to 280 minutes, with the tallest stack at 240 and one outlier near 360."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-036",
@@ -12170,7 +13591,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "There are <span class=\"math\">140</span> students enrolled at a school. <span class=\"math\">\u2022</span> Of the students that are enrolled at the school, <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> play sports. <span class=\"math\">\u2022</span> Of the students that play sports, <span class=\"math\"><span class=\"frac\"><span>1</span><span>7</span></span></span> are in an art club. How many students enrolled at the school both play sports and are in an art club?",
+      "stemPlain": "There are 140 students enrolled at a school. \u2022 Of the students that are enrolled at the school, (3)/(4) play sports. \u2022 Of the students that play sports, (1)/(7) are in an art club. How many students enrolled at the school both play sports and are in an art club?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">15</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">60</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">125</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-037",
@@ -12206,7 +13659,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to  <span class=\"math\">17</span> <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> <span class=\"math\">x \u2212 <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?",
+      "stemPlain": "Which expression is equivalent to 17 (1)/(3) x \u2212 (7)/(2)x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>83x</span><span>6</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>55x</span><span>6</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>13x</span><span>6</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>10x</span><span>6</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-038",
@@ -12242,7 +13727,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A store buys candy by the pound. The graph shown below represents the relationship between the weight, in pounds, and the total cost, in dollars, of the candy. What is the cost of one pound of candy?",
+      "stemPlain": "A store buys candy by the pound. The graph shown below represents the relationship between the weight, in pounds, and the total cost, in dollars, of the candy. What is the cost of one pound of candy?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "$0.29",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$3.33",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$3.50",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "$5.00",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2024/q38.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Cost of Candy, total cost in dollars against weight in pounds, with one point labelled.",
+          "longDescription": "The line rises from the origin through 6 pounds at 21 dollars -- 3.50 a pound."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g7-2024-039",
@@ -12278,7 +13802,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Marty types at an average rate of <span class=\"math\">25</span> words per minute. Write an equation that could be used to determine the average number of words, <span class=\"math\">w</span>, Marty types in <span class=\"math\">t</span> minutes.",
+      "stemPlain": "Marty types at an average rate of 25 words per minute. Write an equation that could be used to determine the average number of words, w, Marty types in t minutes.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer   Equation"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "w = 25t",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "25 words a minute over t minutes is 25t words. The rate is in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-040",
@@ -12314,7 +13856,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the value of the expression <span class=\"math\">\u22122 (\u22123) (4)</span> ?",
+      "stemPlain": "What is the value of the expression \u22122 (\u22123) (4) ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "24",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "Minus 2 times minus 3 is 6, times 4 is 24. The expression is this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-041",
@@ -12350,7 +13910,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Kenneth bought a shirt that was originally priced at $55.00. After a discount, he paid $38.50. What was the percent discount of the original price of the shirt?",
+      "stemPlain": "Kenneth bought a shirt that was originally priced at $55.00. After a discount, he paid $38.50. What was the percent discount of the original price of the shirt?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    %"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "30%",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "55 minus 38.50 is 16.50, and 16.50 over 55 is 0.30. Both prices are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-042",
@@ -12388,7 +13966,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Frank and his friends are playing a game with the spinner shown below. Each player spins the arrow <span class=\"math\">5</span> times and adds all the numbers the spinner lands on to get their score. Frank\u2019s first three spins are listed below. <span class=\"math\">\u22121.5</span>, <span class=\"math\">2</span>, and <span class=\"math\">\u22123.5</span> Frank has two more spins. What two numbers would the spinner need to land on for Frank\u2019s final score to equal <span class=\"math\">0</span> ?",
+      "stemPlain": "Frank and his friends are playing a game with the spinner shown below. Each player spins the arrow 5 times and adds all the numbers the spinner lands on to get their score. Frank\u2019s first three spins are listed below. \u22121.5, 2, and \u22123.5 Frank has two more spins. What two numbers would the spinner need to land on for Frank\u2019s final score to equal 0 ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G7-2024/q42.png",
+          "type": "Diagram",
+          "alt": "A spinner divided into eight equal sectors, each labelled with a number, with the arrow pointing between two of them.",
+          "longDescription": "Going round, the sectors read 1, 2, 3, 4, negative 3.5, negative 2.5, negative 1.5 and 0."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "1 and 2, or 0 and 3",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "The first three spins total minus 3, so the last two must total 3. Every value on the spinner is in this item's figure and named in its long description."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-043",
@@ -12424,7 +14027,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Joann went for a hike. The trail she hiked was <span class=\"math\">5 <span class=\"frac\"><span>1</span><span>2</span></span></span> miles and it took her <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>5</span></span></span> hours to complete. If Joann hiked at an average unit rate, how fast, in miles per hour, did Joann hike?",
+      "stemPlain": "Joann went for a hike. The trail she hiked was 5 (1)/(2) miles and it took her 2 (1)/(5) hours to complete. If Joann hiked at an average unit rate, how fast, in miles per hour, did Joann hike?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    miles per hour"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "2.5 miles per hour",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "Five and a half miles over two and a fifth hours is 5.5 over 2.2, which is 2.5. Both quantities are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-044",
@@ -12460,7 +14082,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A map has a scale of 1 centimeter = 50 miles. The actual distance between New York City and Washington, D.C., is 225 miles. What is the distance, in centimeters, between the two cities on the map?",
+      "stemPlain": "A map has a scale of 1 centimeter = 50 miles. The actual distance between New York City and Washington, D.C., is 225 miles. What is the distance, in centimeters, between the two cities on the map?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    centimeters"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "4.5 centimeters",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "225 miles at 50 miles to the centimetre is 4.5 centimetres. The scale and the distance are in this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-045",
@@ -12496,7 +14137,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "During lunch, a sandwich shop owner sold 2 types of sandwiches: turkey and roast beef. Each sandwich cost $4.99 and the total sales from all of the sandwiches sold was $219.56. There were 25 turkey sandwiches sold. How many roast beef sandwiches were sold?",
+      "stemPlain": "During lunch, a sandwich shop owner sold 2 types of sandwiches: turkey and roast beef. Each sandwich cost $4.99 and the total sales from all of the sandwiches sold was $219.56. There were 25 turkey sandwiches sold. How many roast beef sandwiches were sold?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    roast beef sandwiches"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "19 roast beef sandwiches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "25 turkey at 4.99 is 124.75, and 219.56 minus that is 94.81, which is 19 more sandwiches. All three figures are in this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-046",
@@ -12532,7 +14192,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Write the expression <span class=\"math\">\u22128(4 \u2212 x) + 20</span> as the sum of two unlike terms. Be sure to show the use of the properties of operations in your answer.",
+      "stemPlain": "Write the expression \u22128(4 \u2212 x) + 20 as the sum of two unlike terms. Be sure to show the use of the properties of operations in your answer.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "\u221212 + 8x",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "Minus 8 times 4 minus x is minus 32 plus 8x, and plus 20 gives minus 12 plus 8x. The expression is this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-047",
@@ -12568,7 +14247,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Jonah received a gift card to a movie theater. The gift card allows him to choose one type of movie, one snack, and one drink. His options are shown in the list below. <span class=\"math\">\u2022</span> Movies: drama, action, comedy <span class=\"math\">\u2022</span> Snacks: popcorn, chips, candy <span class=\"math\">\u2022</span> Drinks: water, juice He chooses one movie, one snack, and one drink at random. What is the probability that Jonah chooses a comedy, chips, and juice? Write your answer as a fraction.",
+      "stemPlain": "Jonah received a gift card to a movie theater. The gift card allows him to choose one type of movie, one snack, and one drink. His options are shown in the list below. \u2022 Movies: drama, action, comedy \u2022 Snacks: popcorn, chips, candy \u2022 Drinks: water, juice He chooses one movie, one snack, and one drink at random. What is the probability that Jonah chooses a comedy, chips, and juice? Write your answer as a fraction.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "1/18",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "A third for the comedy, a third for the chips and a half for the juice multiply to one eighteenth. All three option lists are in this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2024-048",
@@ -12604,7 +14302,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A furniture store is advertising a 20% discount on the price of sofas. Scott chooses a sofa with a discounted price of $460.00. He must also pay an 8% sales tax. How much money will Scott save on the discounted sofa, including tax, compared to the originally priced sofa, including tax?",
+      "stemPlain": "A furniture store is advertising a 20% discount on the price of sofas. Scott chooses a sofa with a discounted price of $460.00. He must also pay an 8% sales tax. How much money will Scott save on the discounted sofa, including tax, compared to the originally priced sofa, including tax?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$124.20",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "460 discounted by 20% implies an original 575; with 8% tax that is 621 against 496.80. Both the discounted price and the tax rate are in this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2025-002",
@@ -18683,7 +20400,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A group of friends went to a movie theater and paid <span class=\"math\">$15.00</span> for each movie ticket. The group of friends shared one container of popcorn that cost <span class=\"math\">$8.99</span>. Which equation can b e used to determine the total cost, <span class=\"math\">c,</span> for <span class=\"math\">n</span> tickets and the container of popcorn?",
+      "stemPlain": "A group of friends went to a movie theater and paid $15.00 for each movie ticket. The group of friends shared one container of popcorn that cost $8.99. Which equation can b e used to determine the total cost, c, for n tickets and the container of popcorn?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">c = 15n + 8.99</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">c = 8.99n + 15</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">c = 15 (n + 8.99)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">c = 8.99 (n + 15)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-002",
@@ -18719,7 +20468,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data?",
+      "stemPlain": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(4,7)</span> and <span class=\"math\">(8,4)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(3,3)</span> and <span class=\"math\">(9,7)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(2,4)</span> and <span class=\"math\">(6,4)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(3,2)</span> and <span class=\"math\">(3,4)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q02.png",
+          "type": "Scatter Plot",
+          "alt": "A scatter plot of about twenty points on a grid running from 0 to 12 on both axes.",
+          "longDescription": "The points drift upward from left to right but scatter widely about that trend."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-004",
@@ -18757,7 +20545,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90<sup>\u25cb</sup></span> about the origin and then reflected over the <span class=\"math\">y</span> axis to form triangle <span class=\"math\">A\u2032B\u2032C\u2032</span>. One of the angles in triangle <span class=\"math\">ABC</span> has a measure of <span class=\"math\">115<sup>\u25cb</sup></span>. One of the angles in triangle <span class=\"math\">A\u2032B\u2032C\u2032</span> has a measure of <span class=\"math\">40<sup>\u25cb</sup></span>. Which is the measure of an angle in triangle <span class=\"math\">ABC</span>?",
+      "stemPlain": "Triangle ABC is rotated 90^\u25cb about the origin and then reflected over the y axis to form triangle A\u2032B\u2032C\u2032. One of the angles in triangle ABC has a measure of 115^\u25cb. One of the angles in triangle A\u2032B\u2032C\u2032 has a measure of 40^\u25cb. Which is the measure of an angle in triangle ABC?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">25<sup>\u25cb</sup></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">75<sup>\u25cb</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">155<sup>\u25cb</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">180<sup>\u25cb</sup></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-005",
@@ -18793,7 +20613,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the value of <span class=\"math\">x</span> in the equation <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span>x \u2212 7 = 5 \u2212 <span class=\"frac\"><span>3</span><span>5</span></span>x</span> ?",
+      "stemPlain": "What is the value of x in the equation (2)/(3)x \u2212 7 = 5 \u2212 (3)/(5)x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3 <span class=\"frac\"><span>18</span><span>19</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">9 <span class=\"frac\"><span>9</span><span>19</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">15 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">19 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-007",
@@ -18829,7 +20681,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true?",
+      "stemPlain": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q07.png",
+          "type": "Equation and Data Table",
+          "alt": "Electrician A's charge given as an equation and Electrician B's given as a table.",
+          "longDescription": "Electrician A charges C equals 25x plus 50. Electrician B charges 130 dollars for 3 hours, 150 for 4, and 170 for 5."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-009",
@@ -18865,7 +20756,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the slope of the line on a coordinate plane that passes through the points <span class=\"math\">(2,2)</span> and <span class=\"math\">(\u2212 1, \u22122)</span> ?",
+      "stemPlain": "What is the slope of the line on a coordinate plane that passes through the points (2,2) and (\u2212 1, \u22122) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>4</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>4</span><span>3</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-010",
@@ -18901,7 +20824,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A sphere has a radius of <span class=\"math\">4</span> inches. A cone has a radius of <span class=\"math\">3</span> inches and a height of <span class=\"math\">8</span> inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+      "stemPlain": "A sphere has a radius of 4 inches. A cone has a radius of 3 inches and a height of 8 inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u03c0 <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u03c0 <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u03c0 <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u03c0 <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-012",
@@ -18937,7 +20892,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which value of <span class=\"math\">x</span> makes the equation <span class=\"math\">x<sup>3</sup> = 64</span> true?",
+      "stemPlain": "Which value of x makes the equation x^3 = 64 true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">8</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">16</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">32</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-018",
@@ -18973,7 +20960,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line <span class=\"math\">y = 0.3x + 5.8</span> has been drawn to best represent the relationship between the alligator\u2019s weight and growth time. Which statement best describes what the number <span class=\"math\">0\u00b73</span> in the equation represents in this situation?",
+      "stemPlain": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line y = 0.3x + 5.8 has been drawn to best represent the relationship between the alligator\u2019s weight and growth time. Which statement best describes what the number 0\u00b73 in the equation represents in this situation?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The starting weight, in pounds, of the alligator.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The approximate number of pounds the alligator gains each week.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "The maximum number of pounds the alligator gains each week.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The average number of pounds of food the alligator is fed each week.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q18.png",
+          "type": "Scatter Plot",
+          "alt": "A scatter plot titled Alligator's Weight with a line of best fit, weight in pounds against time in weeks.",
+          "longDescription": "Seven points rise from about 6 pounds at week 0 to about 20 pounds at week 50, with a straight line drawn through them."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-019",
@@ -19009,7 +21035,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Trapezoid ABCD and its image A\u2019B\u2019C\u2019D\u2019 are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A\u2019B\u2019C\u2019D\u2019 ?",
+      "stemPlain": "Trapezoid ABCD and its image A\u2019B\u2019C\u2019D\u2019 are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A\u2019B\u2019C\u2019D\u2019 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "reflection over the x axis and then a rotation of 180\u02da about the origin",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "reflection over the x axis and then a rotation of 90\u02da about the origin",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "reflection over the y axis and then a rotation of 180\u02da about the origin",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "reflection over the y axis and then a rotation of 90\u02da about the origin",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q19.png",
+          "type": "Coordinate Plane",
+          "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
+          "longDescription": "ABCD lies left of the y-axis and its image lies right of it, mirrored across the y-axis."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-020",
@@ -19045,7 +21110,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which equation represents a linear function?",
+      "stemPlain": "Which equation represents a linear function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x \u2212 3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = x<sup>2</sup> + 5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = x<sup>2</sup> + 2x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>5</span></span>x<sup>3</sup></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-022",
@@ -19081,7 +21178,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "On a coordinate plane, triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90</span> degrees clockwise about the origin and then dilated with a scale factor of <span class=\"math\">2</span> centered at the origin to form triangle <span class=\"math\">A\u2032B\u2032C\u2032</span>. Which statement describes the relationship between triangle <span class=\"math\">ABC</span> and triangle <span class=\"math\">A\u2032B\u2032C\u2032</span> ?",
+      "stemPlain": "On a coordinate plane, triangle ABC is rotated 90 degrees clockwise about the origin and then dilated with a scale factor of 2 centered at the origin to form triangle A\u2032B\u2032C\u2032. Which statement describes the relationship between triangle ABC and triangle A\u2032B\u2032C\u2032 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "They are similar and congruent.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "They are similar but not congruent.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "They are congruent but not similar.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "They are neither congruent nor similar.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-023",
@@ -19117,7 +21246,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "One of the angles in a triangle measures <span class=\"math\">x</span> degrees. Another angle in the triangle measures <span class=\"math\">y</span> degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+      "stemPlain": "One of the angles in a triangle measures x degrees. Another angle in the triangle measures y degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">180 \u2212 (x + y)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">180 \u2212 x + y</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">x + y \u2212 180</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">x + y + 180</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-027",
@@ -19153,7 +21314,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?",
+      "stemPlain": "Which expression is equivalent to 3^5 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3<sup>10</sup></span><span>3<sup>5</sup></span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3<sup>15</sup></span><span>3<sup>3</sup></span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>9<sup>10</sup></span><span>3<sup>5</sup></span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>9<sup>3</sup></span><span>9<sup>5</sup></span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-030",
@@ -19189,7 +21382,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which list of numbers could represent the side lengths of a right triangle?",
+      "stemPlain": "Which list of numbers could represent the side lengths of a right triangle?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "5, 10, 13",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "5, 12, 17",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "10, 24, 26",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "10, 24, 68",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-033",
@@ -19225,7 +21450,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The table below represents a function. Which statement describes the function?",
+      "stemPlain": "The table below represents a function. Which statement describes the function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The function is nonlinear because the <span class=\"math\">y</span> intercept is 0.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The function is linear because the rate of change is constant.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "The function is linear because the <span class=\"math\">y</span> intercept is a constant value.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The function is nonlinear because the rate of change is not constant.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q33.png",
+          "type": "Data Table",
+          "alt": "A two-column table of x and y values with four rows.",
+          "longDescription": "2.5 with 7.5, 3.5 with 10.5, 4.5 with 13.5, and 5.5 with 16.5 -- y is three times x each time."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-034",
@@ -19261,7 +21525,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Quadrilateral <span class=\"math\">FGHJ</span> is rotated about the origin to form quadrilateral <span class=\"math\">F\u2032 G\u2032 H\u2032 J\u2032</span>. Which two sides are equal in length?",
+      "stemPlain": "Quadrilateral FGHJ is rotated about the origin to form quadrilateral F\u2032 G\u2032 H\u2032 J\u2032. Which two sides are equal in length?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"repeat\">FG</span></span> and <span class=\"math\"><span class=\"repeat\">F\u2032J\u2032</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"repeat\">JF</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032J\u2032</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"repeat\">GH</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032G\u2032</span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"repeat\">HG</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032J\u2032</span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q34.png",
+          "type": "Coordinate Plane",
+          "alt": "Quadrilateral FGHJ and its larger image F prime G prime H prime J prime on a coordinate plane.",
+          "longDescription": "FGHJ sits right of the y-axis with F at the origin, and the image is the same shape enlarged and reflected to the left."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-035",
@@ -19297,7 +21600,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of <span class=\"math\">\u03c0</span> ?",
+      "stemPlain": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of \u03c0 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">4\u03c0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">49\u03c0</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">73.5\u03c0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">155.5\u03c0</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2024/q35.png",
+          "type": "Diagram",
+          "alt": "Two cylinders side by side, a large can and a small can, with their dimensions labelled in centimetres.",
+          "longDescription": "The large can has a radius of 3.5 centimetres and a height of 10. The small can has a diameter of 7 centimetres and a height of 6."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-036",
@@ -19333,7 +21675,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An equation is shown below. Which statement about the equation is true?",
+      "stemPlain": "An equation is shown below. Which statement about the equation is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">2(3x + 1) = x + 1 + 5x</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "It has no solutions.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "It has exactly one solution.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "It has exactly two solutions.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "It has an infinite number of solutions.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-037",
@@ -19369,7 +21745,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which statement best describes the value of <span class=\"math\">\u221a<span class=\"repeat\">2</span></span> ?",
+      "stemPlain": "Which statement best describes the value of \u221a2-repeating ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "between <span class=\"math\">0.5</span> and <span class=\"math\">1.0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "between <span class=\"math\">1.5</span> and <span class=\"math\">2.0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.5</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-038",
@@ -19405,7 +21813,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function?",
+      "stemPlain": "A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">{ (\u2212 3,3), (1,1), (4,2), (\u2212 1, \u2212 1), (\u2212 2, \u2212 1), (3,1), (\u2212 2,3) }</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(\u22123,3)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(4,2)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(\u22122, \u2212 1)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(3,1)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2024-039",
@@ -19441,7 +21883,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth.",
+      "stemPlain": "A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    cubic inches"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q39.png",
+          "type": "Diagram",
+          "alt": "A cone titled Popcorn Container with its radius and height labelled in inches.",
+          "longDescription": "The radius is 3 inches and the height is 5 inches."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "47.1 cubic inches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "A cone of radius 3 and height 5 has volume a third of pi times 9 times 5, which is 47.12. Both dimensions are in this item's figure and named in its long description."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-040",
@@ -19477,7 +21944,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden?",
+      "stemPlain": "The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    feet"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "18 feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "The square root of 324 is 18. The area is in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-041",
@@ -19513,7 +21998,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ?",
+      "stemPlain": "Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    units"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q41.png",
+          "type": "Coordinate Plane",
+          "alt": "Line segment AB drawn on a coordinate plane ruled from negative 10 to 10.",
+          "longDescription": "A is at negative 1, negative 4 and B is at 4, 8."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "13 units",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "From A at negative 1, negative 4 to B at 4, 8 is 5 across and 12 up, and 5-12-13 is a Pythagorean triple. The endpoints are in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-042",
@@ -19549,7 +22059,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "In the figure below, line p is parallel to line q and lines <span class=\"math\">AD</span> and <span class=\"math\">AF</span> are transversals. What is the measure, in degrees, of <span class=\"math\">\u2220BAC</span>? Answerdegrees",
+      "stemPlain": "In the figure below, line p is parallel to line q and lines AD and AF are transversals. What is the measure, in degrees, of \u2220BAC? Answerdegrees",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q42.png",
+          "type": "Diagram",
+          "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
+          "longDescription": "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "35 degrees",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "Angle ABC is 180 minus 110, which is 70, and angle ACB is 180 minus 105, which is 75, leaving 35 for angle BAC. Both marked angles are in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-043",
@@ -19585,7 +22120,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The equation <span class=\"math\">y = 1.5x + 29</span> is used to model the yearly salary, <span class=\"math\">y</span>, of an employee, in thousands of dollars, where <span class=\"math\">x</span> is the number of years the employee has worked for the company. What does the slope of the line represent in this situation?",
+      "stemPlain": "The equation y = 1.5x + 29 is used to model the yearly salary, y, of an employee, in thousands of dollars, where x is the number of years the employee has worked for the company. What does the slope of the line represent in this situation?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "For every year worked the salary rises by $1,500",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "The slope is 1.5 and the salary is in thousands of dollars. The equation is this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-044",
@@ -19621,7 +22174,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs?",
+      "stemPlain": "A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    feet per second"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q44.png",
+          "type": "Data Table and Line Graph",
+          "alt": "Dog A's run given as a table and Dog B's given as a graph.",
+          "longDescription": "Dog A covers 56 feet in 2 seconds, 112 in 4, 168 in 6 and 224 in 8. Dog B's line passes through 200 feet at 8 seconds."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "3 feet per second",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "Dog A does 28 feet per second from its table and Dog B does 25 from its graph. Both are in this item's figure and named in its long description."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-045",
@@ -19657,7 +22236,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+      "stemPlain": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "0.75",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "From 2 and a quarter to 3 and a half is three quarters over one. Both ordered pairs are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-046",
@@ -19693,7 +22291,28 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+      "stemPlain": "What value of x makes the equation shown below true?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>1</span><span>4</span></span> (3x \u2212 8) + 4 = 2(x \u2212 4)</span>"
+      ],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "x = 8",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "Three quarters of 3x minus 8, plus 4, equals 2x minus 8 gives x = 8. The equation is this item's own displayed expression."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-047",
@@ -19729,7 +22348,34 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational.",
+      "stemPlain": "A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [
+        "<span class=\"math\">\u2022 1.234</span>"
+      ],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q47.png",
+          "type": "Expression",
+          "alt": "A bulleted list of five numbers to classify as rational or irrational.",
+          "longDescription": "The square root of 49, 1.3 repeating, the square root of 32, seven halves, and 1.234."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "The square root of 49, 1.3 repeating, seven halves and 1.234 are rational; the square root of 32 is irrational",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is in this item's figure."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2024-048",
@@ -19765,7 +22411,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Store A and Store B sell fabric for different prices. The equation <span class=\"math\">y = 3.5x</span> represents the price, <span class=\"math\">y</span>, in dollars, for <span class=\"math\">x</span> yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A   $  per yard of fabric Store B   $  per yard of fabric How much more would the price of <span class=\"math\">9</span> yards of fabric be at Store A than at Store B ?",
+      "stemPlain": "Store A and Store B sell fabric for different prices. The equation y = 3.5x represents the price, y, in dollars, for x yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A $ per yard of fabric Store B $ per yard of fabric How much more would the price of 9 yards of fabric be at Store A than at Store B ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2024/q48.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Store B, total price in dollars against fabric length in yards, with two points labelled.",
+          "longDescription": "The line passes through 2 yards at 5.50 dollars and 6 yards at 16.50 dollars."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$6.75",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "Store A charges $3.50 a yard and Store B $2.75, so nine yards cost $31.50 and $24.75. Store A's equation is in the stem and Store B's rate is read from its graph."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2025-002",

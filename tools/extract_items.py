@@ -99,6 +99,10 @@ TOP = 55.0              # above: the running header
 # excluded by what it SAYS instead, which does not depend on a 1pt margin.
 FOOT = 704.0            # below: "Page N / GO ON / STOP / Session N"
 FOOTER_RE = re.compile(r"^(GO ON|STOP|Session \d+|Page \d+)\s*$")
+# Figures keep the OLD bound. Widening the band was for answer choices, which
+# are text on a line; a figure that reached into the footer only ever caught the
+# footer, and the crop's padding puts "GO ON" back inside even a clamp at 704.
+FIGURE_FOOT = 698.0
 LINE_TOL = 2.0          # chars within this y are one line
 # NYSED prints the item number level with the item's SECOND line, so the anchor
 # sits 5-6pt below the first line of prose (the first item on a page anchors at
@@ -589,7 +593,17 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         if r.width * r.height < FIGURE_MIN_AREA:
             continue
         glyphs = [dr for dr in blk if shape_of(dr) is not None]
+        # A FIGURE STOPS WHERE THE ITEM DOES. The drawing band reaches past the
+        # text bound to catch a last answer choice, and grade 7 2024 item 11 has
+        # a single 67 by 227pt path in the right margin that runs from mid-page
+        # down to y=728 -- so it became a figure whose crop was the page footer,
+        # "GO ON / Page 7". Clipping to the item's own boundary leaves nothing
+        # but margin, and the blank-crop test then drops it.
         grown = grow_for_labels(r, page, y_lo, y_hi)
+        grown = fitz.Rect(grown.x0, grown.y0, grown.x1,
+                          min(grown.y1, y_hi, FIGURE_FOOT))
+        if grown.height <= 0:
+            continue
         name = ("q%02d.png" % number if len(merged) == 1
                 else "q%02d_%d.png" % (number, i))
         if not save_crop(page, grown, os.path.join(adir, name), CROP_ZOOM, pad=CROP_PAD):

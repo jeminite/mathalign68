@@ -9,7 +9,7 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2024.json.",
     "items": 29,
     "itemsWithUnresolved": 0,
-    "figures": 10,
+    "figures": 9,
     "displayExpressions": 0
   },
   "items": [
@@ -322,22 +322,7 @@
       ],
       "choicesInImage": false,
       "display": [],
-      "figures": [
-        {
-          "file": "G7-2024/q11.png",
-          "rect": [
-            501.78,
-            500.88,
-            569.01,
-            728.37
-          ],
-          "paths": 1,
-          "decodedLabels": "",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
-        }
-      ],
+      "figures": [],
       "unresolved": []
     },
     {
