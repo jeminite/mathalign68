@@ -102,6 +102,12 @@ CENTRED_OPERATORS = set("=+<>\u00d7\u00f7\u00b1\u2260\u2264\u2265\u2212")
 # after, regardless of the measured gap.
 NO_SPACE_BEFORE = set(".,)%")
 NO_SPACE_AFTER = set("($")
+# An absolute-value bar is the same character opening and closing, so which
+# side it hugs depends on how many have come before it. "|-5| < |-15|" needs no
+# space after the opening bars and none before the closing ones, but a space on
+# the outside of both -- putting "|" in either set flatly gave "| -5| < | -15|"
+# or "|-5|<|-15|".
+BAR = "|"
 
 # A space never belongs inside a number. The digit 1 is narrow but advances a
 # full tabular-figure width, so the measured gap after it exceeds the threshold
@@ -523,6 +529,7 @@ class GlyphTable:
 
         out, unknown, prev = [], 0, None
         in_sup = False
+        bars_seen, prev_opening_bar = 0, False
 
         def close_sup():
             if out and out[-1] == "<sup>":
@@ -548,9 +555,10 @@ class GlyphTable:
                 elif same_line and rect.x0 - prev.x1 > gap_threshold:
                     last = out[-1][-1] if out and out[-1] else ""
                     numeric_run = last in NUMERIC and label in NUMERIC
+                    closing_bar = label == BAR and bars_seen % 2 == 1
                     if not (numeric_run
-                            or label in NO_SPACE_BEFORE
-                            or last in NO_SPACE_AFTER):
+                            or label in NO_SPACE_BEFORE or closing_bar
+                            or last in NO_SPACE_AFTER or prev_opening_bar):
                         out.append(" ")
             if want_sup and not in_sup:
                 # An exponent binds tight to what it sits on. The gap test uses
@@ -579,6 +587,9 @@ class GlyphTable:
             else:
                 out.append(escape(label))
             prev = rect
+            prev_opening_bar = (label == BAR and bars_seen % 2 == 0)
+            if label == BAR:
+                bars_seen += 1
         if in_sup:
             close_sup()
         return "".join(out).strip(), unknown

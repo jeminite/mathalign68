@@ -238,9 +238,17 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         return any(z.x0 - 4 <= cx <= z.x1 + 4 and z.y0 - 4 <= cy <= z.y1 + 4
                    for z in figure_zones)
 
+    # LINE_TOL EXISTS FOR THIS, and was not being applied. A line's key is the
+    # top of its text span rounded to a tenth of a point, and a span set in a
+    # different face sits a hair off its neighbours: the italic c in grade 6
+    # item 41's "how many baseball cards, c, Dan has" is at y=109.3 where the
+    # prose either side of it is at 109.2. An exact key made it a line of its
+    # own, and it was published at the END of the stem -- "baseball cards, ,
+    # Dan has. c" -- which reads as a typo rather than as a missing variable.
     lines = {}
     for bbox, ch, ly, font in chars:
-        lines.setdefault(ly, []).append((bbox, ch, font))
+        key = next((k for k in lines if abs(k - ly) <= LINE_TOL), ly)
+        lines.setdefault(key, []).append((bbox, ch, font))
 
     consumed, unresolved = set(), []
     choice_extra = {}

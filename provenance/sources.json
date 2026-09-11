@@ -132,6 +132,17 @@
       "url": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g8.pdf",
       "year": 2026
     },
+    "2026-scoring-materials-math-g6.pdf": {
+      "bytes": 2982154,
+      "fetched": "2026-09-11",
+      "grade": 6,
+      "kind": "scoring",
+      "pages": 81,
+      "path": "sources/scoring/2026-scoring-materials-math-g6.pdf",
+      "sha256": "22e0e5b998b920b13300f523965b602f0eee9dd8265f381e210205cf93327ade",
+      "url": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g6.pdf",
+      "year": 2026
+    },
     "2026-scoring-materials-math-g7.pdf": {
       "bytes": 9620063,
       "fetched": "2026-09-10",

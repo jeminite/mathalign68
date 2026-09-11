@@ -1797,14 +1797,13 @@
       "credits": 1,
       "session": 2,
       "creditLine": "This question is worth 1 credit.",
-      "stemHtml": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive? <span class=\"math\">$</span>",
+      "stemHtml": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive?",
       "stemLines": [
         "Mr. Morgano goes to the grocery store. The prices of different items are shown in the",
         "table below.",
         "Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon",
         "of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should",
-        "Mr. Morgano receive?",
-        "<span class=\"math\">$</span>"
+        "Mr. Morgano receive?"
       ],
       "prose": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys  pounds of grapes,  pound of turkey,  loaves of bread, and  gallon of chocolate milk. He pays with a  bill. How much change, in dollars, should Mr. Morgano receive?",
       "proseAllLines": "This question is worth 1 credit. Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys  pounds of grapes,  pound of turkey,  loaves of bread, and  gallon of chocolate milk. He pays with a  bill. How much change, in dollars, should Mr. Morgano receive? Answer",

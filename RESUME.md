@@ -18,11 +18,11 @@ filter plus Standard, Question type, Year, four sort orders and a widened search
 tab; the same unit filter and a "Taught in" column on Items; and shift-click multi-level sort in
 every table on the site.
 
-**2026 grade 8 is published** — all 42 items, so the Questions tab is now real for two grades out
-of three. 84 of 396 items carry the actual question.
+**The whole of 2026 is published** — grade 6's 39 items, grade 7's 42 and grade 8's 42. 123 of 396
+items carry the actual question, and the Questions tab is real for every grade.
 
-Next: 2026 grade 6's 39 items, then the per-item curriculum alignment (`data/alignment.json`,
-hand-owned) and the class-results analyzer.
+Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned), the class-results
+analyzer, and then the 2023–2025 tests.
 
 ### Two Netlify settings that were wrong at first
 
@@ -549,6 +549,26 @@ arbitrary.
   30's braces did the same to its set of ordered pairs.
 - **A raised full stop is a multiplication dot.** The shapes are identical; only height on the line
   tells `16⁸ · 16¹²` from a sentence ending mid-expression.
+
+## 2026 grade 6
+
+39 items, 11 figures, 8 constructed-response answers. It needed only **eight** new glyph labels --
+`×`, `D`, `m`, `n`, `|` and three fraction bars -- against grade 8's 39, because by then the
+decoder had learnt most of what these PDFs draw. Nine items had something undecodable on the first
+pass; after labelling, none did.
+
+**An absolute-value bar is the same character opening and closing**, so which side it hugs depends
+on how many have come before it. `|−5| < |−15|` needs no space inside the bars and a space outside
+them; putting `|` in either spacing set flatly gave `| −5| < | −15|` or `|−5|<|−15|`. Parity
+decides it.
+
+**`LINE_TOL` existed for this and was not being applied.** A line's key is the top of its text span
+rounded to a tenth of a point, and a span set in a different face sits a hair off its neighbours:
+the italic `c` in item 41's *"how many baseball cards, c, Dan has"* is at y=109.3 where the prose
+either side of it is at 109.2. An exact key made it a line of its own and it was published at the
+END of the stem -- *"baseball cards, , Dan has. c"* -- which reads as a typo rather than as a
+missing variable. Snapping keys within `LINE_TOL` also closed grade 7 item 40's trailing `$`, the
+first half of a documented review note.
 
 ## Open questions
 

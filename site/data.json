@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-11T05:37:51",
+    "built": "2026-09-11T09:29:08",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -28,11 +28,12 @@
     "itemsWithPageLink": 387,
     "postTestItems": 17,
     "transcriptionCoverage": {
-      "transcribed": 84,
+      "transcribed": 123,
       "total": 396,
       "keySources": {
         "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted.",
-        "g8-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key in this spec cannot drift from the official table or be shifted by one released item. It was additionally checked against the transcribed choices: nine of the 34 are decided by reading the mathematics rather than the prose -- item 7's Pythagorean equation, item 15's product of powers, item 3's quotient of powers -- and in every case the keyed letter is the one the transcription makes true."
+        "g8-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key in this spec cannot drift from the official table or be shifted by one released item. It was additionally checked against the transcribed choices: nine of the 34 are decided by reading the mathematics rather than the prose -- item 7's Pythagorean equation, item 15's product of powers, item 3's quotient of powers -- and in every case the keyed letter is the one the transcription makes true.",
+        "g6-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees. It was additionally checked against the transcribed content: item 8's key is P, and P is the point at negative four and a half on this item's own number line, which is the opposite of the four and a half in its stem; item 10's key is 27, and the three points in its graph -- 2 minutes at 18 gallons, 4 at 36, 6 at 54 -- give 9 gallons a minute, so 3 minutes is 27; item 20's key is the only choice whose two comparisons are both true of the transcribed absolute values."
       },
       "reviewNotes": {
         "g7-2026": [
@@ -43,7 +44,8 @@
           "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification.",
           "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems."
         ],
-        "g8-2026": []
+        "g8-2026": [],
+        "g6-2026": []
       }
     },
     "alignmentCoverage": {
@@ -498,7 +500,7 @@
       "label": "Grade 6, 2026",
       "standardsEra": "nextgen",
       "releasedItemsUrl": "https://www.nysedregents.org/ei/math/2026/2026-released-items-math-g6.pdf",
-      "scoringMaterialsUrl": null,
+      "scoringMaterialsUrl": "https://www.nysedregents.org/ei/math/2026/2026-scoring-materials-math-g6.pdf",
       "pdfPageCount": 34,
       "mapPages": [
         34
@@ -6172,7 +6174,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "It takes approximately 2 seconds for sound to travel 686 meters through air. Based on this rate, what is the speed of sound in meters per second?",
+      "stemPlain": "It takes approximately 2 seconds for sound to travel 686 meters through air. Based on this rate, what is the speed of sound in meters per second?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "343",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "684",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "688",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "1,372",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-002",
@@ -6208,7 +6242,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The elevations, in meters, of three cities as measured from sea level are marked on the number line shown below. Based on the number line, which statement is true?",
+      "stemPlain": "The elevations, in meters, of three cities as measured from sea level are marked on the number line shown below. Based on the number line, which statement is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "City A and City B are both above sea level.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "City B is at sea level and City C is above sea level.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "City A is above sea level and City C is below sea level.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "City B is below sea level and City C is above sea level.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q02.png",
+          "type": "Number Line",
+          "alt": "A number line labelled Elevation (meters) from negative 5 to 5, with three cities marked.",
+          "longDescription": "City A is at negative 5, City B is at negative 2, and City C is at 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-003",
@@ -6244,7 +6317,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Lacy needs to buy <span class=\"math\">72</span> ounces of beef for a recipe. Which expression can be used to determine how many pounds of beef Lacy needs for the recipe?",
+      "stemPlain": "Lacy needs to buy 72 ounces of beef for a recipe. Which expression can be used to determine how many pounds of beef Lacy needs for the recipe?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">72 \u00f7 16</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">72 \u00d7 16</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">72 \u2212 16</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">72 + 16</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-004",
@@ -6280,7 +6385,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An expression is shown below. What is the value of the expression when <span class=\"math\">x = 7</span> and <span class=\"math\">y = 3</span> ?",
+      "stemPlain": "An expression is shown below. What is the value of the expression when x = 7 and y = 3 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">2 (12 \u2212 x) + y<sup>2</sup></span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">16</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">19</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">23</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">26</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-005",
@@ -6316,7 +6455,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A rectangle is drawn on a coordinate plane with vertices located at <span class=\"math\">A(\u22122,3)</span>, <span class=\"math\">B (4,3)</span>, <span class=\"math\">C (4, \u22127)</span>, and <span class=\"math\">D(\u22122, \u22127)</span>. What is the length, in units, of side <span class=\"math\">BC</span> ?",
+      "stemPlain": "A rectangle is drawn on a coordinate plane with vertices located at A(\u22122,3), B (4,3), C (4, \u22127), and D(\u22122, \u22127). What is the length, in units, of side BC ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">8</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">10</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">14</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-006",
@@ -6352,7 +6523,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression represents the perimeter, in units, of the figure shown below?",
+      "stemPlain": "Which expression represents the perimeter, in units, of the figure shown below?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">x + 15</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">x + 18</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">2x + 15</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2x + 18</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q06.png",
+          "type": "Diagram",
+          "alt": "An L-shaped figure with its side lengths labelled, some numerically and some with the variable x.",
+          "longDescription": "Going round the figure the sides are 2, x, 5, 2, x plus 3, and 6."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-008",
@@ -6388,7 +6598,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Four points are plotted on the number line shown below. Which point represents the opposite of <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+      "stemPlain": "Four points are plotted on the number line shown below. Which point represents the opposite of 4(1)/(2) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "P",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "Q",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "R",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "S",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q08.png",
+          "type": "Number Line",
+          "alt": "A number line from negative 5 to 5 with four points marked P, Q, R and S.",
+          "longDescription": "P is at negative four and a half, Q at negative three and a half, R at three and a half, and S at four and a half."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-009",
@@ -6424,7 +6673,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A teacher has <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> vanilla cakes. A serving size is <span class=\"math\"><span class=\"frac\"><span>1</span><span>12</span></span></span> of a cake. How many total servings of vanilla cake does the teacher have?",
+      "stemPlain": "A teacher has 2 (1)/(2) vanilla cakes. A serving size is (1)/(12) of a cake. How many total servings of vanilla cake does the teacher have?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">12</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">24</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">30</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">60</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-010",
@@ -6462,7 +6743,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A gardener is filling a pool with water from a garden hose at a constant rate. He plots points showing the number of gallons of water in the pool at different times on the coordinate plane shown below. Based on the graph, what is the total amount of water, in gallons, in the pool at 3 minutes?",
+      "stemPlain": "A gardener is filling a pool with water from a garden hose at a constant rate. He plots points showing the number of gallons of water in the pool at different times on the coordinate plane shown below. Based on the graph, what is the total amount of water, in gallons, in the pool at 3 minutes?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "9",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "18",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "27",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q10.png",
+          "type": "Scatter Plot",
+          "alt": "A graph titled Water in the Pool, amount of water in gallons against time in minutes, with three points plotted.",
+          "longDescription": "The points are at 2 minutes and 18 gallons, 4 minutes and 36 gallons, and 6 minutes and 54 gallons -- a constant 9 gallons a minute."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-011",
@@ -6498,7 +6818,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An art teacher orders boxes to organize her supplies. Each box is a right rectangular prism with a length of <span class=\"math\">3 <span class=\"frac\"><span>2</span><span>3</span></span></span> inches, a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches, and a height of <span class=\"math\">6</span> inches. What is the volume, in cubic inches, of each box?",
+      "stemPlain": "An art teacher orders boxes to organize her supplies. Each box is a right rectangular prism with a length of 3 (2)/(3) inches, a width of 3 (1)/(2) inches, and a height of 6 inches. What is the volume, in cubic inches, of each box?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">54<span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">54<span class=\"frac\"><span>3</span><span>5</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">77</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">96</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-012",
@@ -6534,7 +6886,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A flower garden has three different types of flowers. There are 12 daisies, 20 roses, and 13 tulips. What is the ratio of the number of roses to the total number of flowers?",
+      "stemPlain": "A flower garden has three different types of flowers. There are 12 daisies, 20 roses, and 13 tulips. What is the ratio of the number of roses to the total number of flowers?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "20 : 25",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "20 : 45",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "25 : 20",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "45 : 20",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-014",
@@ -6570,7 +6954,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A pizza shop charges <span class=\"math\">$15.00</span> for each large pizza. There is a one time charge of <span class=\"math\">$5.00</span> to deliver any number of pizzas. Which equation could be used to determine the total charge, <span class=\"math\">c</span>, in dollars, of a delivery order of <span class=\"math\">p</span> large pizzas?",
+      "stemPlain": "A pizza shop charges $15.00 for each large pizza. There is a one time charge of $5.00 to deliver any number of pizzas. Which equation could be used to determine the total charge, c, in dollars, of a delivery order of p large pizzas?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">c = 15 + 5p</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">c = 15p + 5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">c = 15 + 5 + p</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">c = 15 \u00d7 5 + p</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-015",
@@ -6606,7 +7022,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Marty needs to measure <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup of cooking oil, but he can only find a tablespoon. He knows that <span class=\"math\">1</span> cup is the same as <span class=\"math\">16</span> tablespoons. How many tablespoons of oil will Marty need to measure <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup of oil?",
+      "stemPlain": "Marty needs to measure (3)/(4) cup of cooking oil, but he can only find a tablespoon. He knows that 1 cup is the same as 16 tablespoons. How many tablespoons of oil will Marty need to measure (3)/(4) cup of oil?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">8</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">12</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">20</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-016",
@@ -6642,7 +7090,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A net of a right triangular prism is shown below. What is the surface area, in square feet, of the triangular prism?",
+      "stemPlain": "A net of a right triangular prism is shown below. What is the surface area, in square feet, of the triangular prism?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "240",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "288",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "336",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "384",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q16.png",
+          "type": "Diagram",
+          "alt": "The net of a right triangular prism, with its dimensions labelled in feet.",
+          "longDescription": "The net is a row of three rectangles 10 feet, 12 feet and 10 feet wide, all 6 feet tall, with a triangle above and below the middle rectangle. Each triangle has a base of 12 feet and a height of 8 feet."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-017",
@@ -6678,7 +7165,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A student has both basketball practice and choir practice today. Practices can occur any day of the week and follow the schedules shown below. <span class=\"math\">\u2022</span> basketball practice: every 6 days <span class=\"math\">\u2022</span> choir practice: every 8 days What is the fewest number of days until the student has both basketball and choir practice on the same day again?",
+      "stemPlain": "A student has both basketball practice and choir practice today. Practices can occur any day of the week and follow the schedules shown below. \u2022 basketball practice: every 6 days \u2022 choir practice: every 8 days What is the fewest number of days until the student has both basketball and choir practice on the same day again?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "14",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "24",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "36",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "48",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-019",
@@ -6714,7 +7233,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\">5 (6m + 3) + 4m</span> ?",
+      "stemPlain": "Which expression is equivalent to 5 (6m + 3) + 4m ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">37m</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">49m</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">34m + 3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">34m + 15</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-020",
@@ -6750,7 +7301,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which statement is true for the values of <span class=\"math\">\u221215</span> and <span class=\"math\">\u22125</span> ?",
+      "stemPlain": "Which statement is true for the values of \u221215 and \u22125 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u22125 &lt; \u221215</span> and <span class=\"math\">|\u22125| &lt; |\u221215|</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u22125 &gt; \u221215</span> and <span class=\"math\">|\u22125| &gt; |\u221215|</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u221215 &lt; \u22125</span> and <span class=\"math\">|\u221215| &gt; |\u22125|</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u221215 &gt; \u22125</span> and <span class=\"math\">|\u221215| &lt; |\u22125|</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-021",
@@ -6786,7 +7369,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Tina makes 6 paper decorations in 39 minutes. At this rate, how many minutes will it take Tina to make 14 paper decorations?",
+      "stemPlain": "Tina makes 6 paper decorations in 39 minutes. At this rate, how many minutes will it take Tina to make 14 paper decorations?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "47",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "59",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "84",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "91",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-022",
@@ -6822,7 +7437,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A model is built to represent a perfect cube using unit cubes. The model has 5 layers. Each layer consists of 5 rows of 5 unit cubes. What perfect cube is represented by the model?",
+      "stemPlain": "A model is built to represent a perfect cube using unit cubes. The model has 5 layers. Each layer consists of 5 rows of 5 unit cubes. What perfect cube is represented by the model?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "125",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "25",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "15",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "10",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-023",
@@ -6858,7 +7505,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "At an amusement park, a rider must be at least 48 inches tall to ride a roller coaster. Which number line represents how tall, in inches, a rider must be to ride the roller coaster?",
+      "stemPlain": "At an amusement park, a rider must be at least 48 inches tall to ride a roller coaster. Which number line represents how tall, in inches, a rider must be to ride the roller coaster?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q23.png",
+          "type": "Number Lines as Answer Choices",
+          "alt": "Four number lines labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "Each runs from 45 to 55. They differ in whether the circle at 48 is filled or open and in whether the ray shaded runs to the left or to the right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-024",
@@ -6894,7 +7580,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A soccer player scored 30% of the total goals scored by a team in a tournament. If the player scored 6 goals, how many total goals did the team score in the tournament?",
+      "stemPlain": "A soccer player scored 30% of the total goals scored by a team in a tournament. If the player scored 6 goals, how many total goals did the team score in the tournament?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "14",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "18",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "20",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "24",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-026",
@@ -6930,7 +7648,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An inequality is shown below. Which value of <span class=\"math\">k</span> makes the inequality true?",
+      "stemPlain": "An inequality is shown below. Which value of k makes the inequality true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">k \u2212 16 &gt; 29</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">30</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">35</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">45</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">58</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-027",
@@ -6966,7 +7718,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A bakery sells boxes of cookies. The list below shows information for one month of sales. <span class=\"math\">\u2022</span> The bakery sold a total of <span class=\"math\">324</span> boxes of cookies. <span class=\"math\">\u2022</span> Of the boxes sold, <span class=\"math\">250</span> of the boxes contained just chocolate chip cookies. <span class=\"math\">\u2022</span> The rest of the boxes sold contained just sugar cookies. Which equation can be used to determine the total number of boxes, <span class=\"math\">x</span>, of sugar cookies sold by the bakery that month?",
+      "stemPlain": "A bakery sells boxes of cookies. The list below shows information for one month of sales. \u2022 The bakery sold a total of 324 boxes of cookies. \u2022 Of the boxes sold, 250 of the boxes contained just chocolate chip cookies. \u2022 The rest of the boxes sold contained just sugar cookies. Which equation can be used to determine the total number of boxes, x, of sugar cookies sold by the bakery that month?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>324</span><span>x</span></span> = 250</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">324x = 250</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">x \u2212 250 = 324</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">x + 250 = 324</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-028",
@@ -7002,7 +7786,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A cake recipe requires 6 eggs for every 4 cups of flour. Which statement is true about the relationship between flour and eggs for the recipe?",
+      "stemPlain": "A cake recipe requires 6 eggs for every 4 cups of flour. Which statement is true about the relationship between flour and eggs for the recipe?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "For every 2 cups of flour, 3 eggs are used.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "For every 2 cups of flour, 5 eggs are used.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "For every 3 cups of flour, 2 eggs are used.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "For every 3 cups of flour, 5 eggs are used.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-029",
@@ -7038,7 +7854,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A piece of fabric in the shape of a parallelogram is used to create two sails for a sailboat. A diagram of the fabric is shown below. What is the area, in square meters, of the shaded region?",
+      "stemPlain": "A piece of fabric in the shape of a parallelogram is used to create two sails for a sailboat. A diagram of the fabric is shown below. What is the area, in square meters, of the shaded region?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "24",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "30",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "48",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "60",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q29.png",
+          "type": "Diagram",
+          "alt": "A parallelogram divided into two triangles, with its dimensions labelled in metres.",
+          "longDescription": "The slanted side is 10 metres, the top is 8 metres, and the height is 6 metres, with a right angle marked at the foot of the height. One of the two triangles is shaded."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-030",
@@ -7074,7 +7929,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\">55</span> less than the sum of <span class=\"math\">4</span> and twice a number, <span class=\"math\">c</span> ?",
+      "stemPlain": "Which expression is equivalent to 55 less than the sum of 4 and twice a number, c ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">55 \u2212 2 (4 + c)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">55 \u2212 (4 + 2c)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(4 + 2c) \u2212 55</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2 (4 + c) \u2212 55</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-031",
@@ -7110,7 +7997,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A teacher surveyed all of the students in the art club to determine their favorite ice cream flavor. Each student chose one flavor. The results of the survey are shown in the table below. What percent of the students in the art club chose vanilla ice cream as their favorite flavor?",
+      "stemPlain": "A teacher surveyed all of the students in the art club to determine their favorite ice cream flavor. Each student chose one flavor. The results of the survey are shown in the table below. What percent of the students in the art club chose vanilla ice cream as their favorite flavor?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "21%",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "42%",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "58%",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "72%",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q31.png",
+          "type": "Data Table",
+          "alt": "A table titled Survey Results giving the number of students choosing each favourite ice cream flavour.",
+          "longDescription": "Chocolate 18, vanilla 21, strawberry 11."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-032",
@@ -7146,7 +8072,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An expression is shown below. Which expression is equivalent to the expression shown?",
+      "stemPlain": "An expression is shown below. Which expression is equivalent to the expression shown?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">24x + 18y</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">42xy</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4x + 3y</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">6(4x + 3y)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">6 (4x + 18y)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-033",
@@ -7182,7 +8142,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Points A and B are located <span class=\"math\">5</span> units away from each other on a coordinate plane. Which two ordered pairs could be the coordinates of points A and B ?",
+      "stemPlain": "Points A and B are located 5 units away from each other on a coordinate plane. Which two ordered pairs could be the coordinates of points A and B ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(\u22124,1)</span> and <span class=\"math\">(\u22124,</span> <span class=\"math\">\u22126)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(1, \u22122)</span> and <span class=\"math\">(1,3)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(\u2212 1,2)</span> and <span class=\"math\">(\u22124,2)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(3, \u2212 1)</span> and <span class=\"math\">(2,</span> <span class=\"math\">\u2212 1)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-034",
@@ -7218,7 +8210,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A store has a sale on one type of notebook. The price of 3 of these notebooks is $6. Which table shows the same relationship for each given number of notebooks of this type and the total price for those notebooks?",
+      "stemPlain": "A store has a sale on one type of notebook. The price of 3 of these notebooks is $6. Which table shows the same relationship for each given number of notebooks of this type and the total price for those notebooks?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q34.png",
+          "type": "Tables as Answer Choices",
+          "alt": "Four tables titled Notebook Prices labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "Each pairs a number of notebooks with a price in dollars. They differ in which row holds which values and in whether the prices double the notebook counts or the other way round."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-035",
@@ -7254,7 +8285,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+      "stemPlain": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">17<span class=\"frac\"><span>1</span><span>12</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">23 <span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">120 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">122 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2026/q35.png",
+          "type": "Diagram",
+          "alt": "A right rectangular prism with its three dimensions labelled in inches, each a mixed number.",
+          "longDescription": "It is 9 and one third inches long, 2 and a half inches deep, and 5 and a quarter inches tall."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g6-2026-038",
@@ -7290,7 +8360,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "What is the coefficient in the expression <span class=\"math\">6n<sup>5</sup></span>?",
+      "stemPlain": "What is the coefficient in the expression 6n^5?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "6",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 8)",
+        "check": "The coefficient is the numeral multiplying the variable, and this item's own transcribed stem reads 6n^5. The exponent was one of the things grade 6 needed the superscript work for -- flattened it would have read 6n5."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-039",
@@ -7326,7 +8414,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Write a numerical statement using >, <, or = that compares the two temperatures <span class=\"math\">\u22125\u00b0</span> Fahrenheit and <span class=\"math\">\u22129\u00b0</span> Fahrenheit.",
+      "stemPlain": "Write a numerical statement using >, <, or = that compares the two temperatures \u22125\u00b0 Fahrenheit and \u22129\u00b0 Fahrenheit.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "\u22129\u00b0 < \u22125\u00b0 OR \u22125\u00b0 > \u22129\u00b0",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 13)",
+        "check": "Negative 9 is further from zero on the negative side, so it is the smaller. Both temperatures come from this item's own transcribed stem, degree signs included."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-041",
@@ -7362,7 +8468,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Bella has a collection of 150 baseball cards. Dan has 43 fewer baseball cards in his collection than Bella has. Write and solve an equation to determine how many baseball cards, c, Dan has.",
+      "stemPlain": "Bella has a collection of 150 baseball cards. Dan has 43 fewer baseball cards in his collection than Bella has. Write and solve an equation to determine how many baseball cards, c, Dan has.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    cards"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "c = 107",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 18)",
+        "check": "43 + c = 150 gives c = 107. The 150 and the 43 are in this item's own stem, and so is the variable c -- which was landing at the END of the sentence until line grouping was fixed."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-042",
@@ -7398,7 +8523,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The rules for creating two number patterns are shown below. <span class=\"math\">x</span>: Start at <span class=\"math\">2</span>, add <span class=\"math\">2</span> <span class=\"math\">y</span>: Start at <span class=\"math\">4</span>, add <span class=\"math\">4</span> How do the corresponding values of <span class=\"math\">x</span> and <span class=\"math\">y</span> relate to each other? Be sure to include the first <span class=\"math\">5</span> numbers in both numerical patterns. <span class=\"math\">y</span>",
+      "stemPlain": "The rules for creating two number patterns are shown below. x: Start at 2, add 2 y: Start at 4, add 4 How do the corresponding values of x and y relate to each other? Be sure to include the first 5 numbers in both numerical patterns. y",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "Each value of y is twice the corresponding value of x. x: 2, 4, 6, 8, 10 and y: 4, 8, 12, 16, 20",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 28)",
+        "check": "Starting at 2 adding 2 gives 2, 4, 6, 8, 10; starting at 4 adding 4 gives 4, 8, 12, 16, 20. Both rules are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-043",
@@ -7434,7 +8577,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A diagram of a trapezoid with dimensions in centimeters is shown below. What is the area, in square centimeters, of the trapezoid?",
+      "stemPlain": "A diagram of a trapezoid with dimensions in centimeters is shown below. What is the area, in square centimeters, of the trapezoid?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    square centimeters"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G6-2026/q43.png",
+          "type": "Diagram",
+          "alt": "A trapezoid with its dimensions labelled in centimetres and two right angles marked.",
+          "longDescription": "The top is 8.8 centimetres, the right side is 11.5 centimetres, and the left side is 15.2 centimetres."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "117.48 square centimeters",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 38)",
+        "check": "Splitting the trapezoid gives a rectangle 11.5 by 8.8 = 101.2 and a triangle (15.2 - 11.5) by 8.8 halved = 16.28, totalling 117.48. All three dimensions are legible in this item's figure and named in its long description."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-044",
@@ -7470,7 +8639,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Two stores sell the same size rolls of paper towels in different packages. <span class=\"math\">\u2022</span> Store A sells 6 rolls for $12.24 <span class=\"math\">\u2022</span> Store B sells 9 rolls for $19.62 Which store has the lower price per roll of paper towels? Be sure to include the unit rate for each store in your answer.",
+      "stemPlain": "Two stores sell the same size rolls of paper towels in different packages. \u2022 Store A sells 6 rolls for $12.24 \u2022 Store B sells 9 rolls for $19.62 Which store has the lower price per roll of paper towels? Be sure to include the unit rate for each store in your answer.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "Store A, at $2.04 a roll against Store B's $2.18",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 48)",
+        "check": "12.24 divided by 6 is 2.04 and 19.62 divided by 9 is 2.18. Both prices and both pack sizes are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-045",
@@ -7506,7 +8693,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Evaluate the expression <span class=\"math\">3 (4<sup>3</sup> \u2212 6<sup>2</sup>)</span> <span class=\"math\">+ 7(2 + 1)<sup>3</sup></span>.",
+      "stemPlain": "Evaluate the expression 3 (4^3 \u2212 6^2) + 7(2 + 1)^3.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "273",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 58)",
+        "check": "3(64 - 36) + 7(27) = 84 + 189 = 273. The expression is this item's own transcribed stem, and it is carried entirely by the superscripts: read flat as 3(43 - 62) + 7(2 + 1)3 it is a different calculation."
+      },
+      "transcribed": true
     },
     {
       "id": "g6-2026-046",
@@ -7542,7 +8748,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Jackie is making batches of trail mix based on the information listed below. <span class=\"math\">\u2022</span> She has <span class=\"math\">4<span class=\"frac\"><span>3</span><span>4</span></span></span> cups of dried bananas. <span class=\"math\">\u2022</span> She uses <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> cup of dried bananas in each full batch of trail mix. What is the maximum number of full batches of trail mix Jackie can make with the dried bananas she has?",
+      "stemPlain": "Jackie is making batches of trail mix based on the information listed below. \u2022 She has 4(3)/(4) cups of dried bananas. \u2022 She uses (1)/(3) cup of dried bananas in each full batch of trail mix. What is the maximum number of full batches of trail mix Jackie can make with the dried bananas she has?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "14 full batches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 68)",
+        "check": "4 and 3/4 divided by 1/3 is 19/4 times 3, which is 57/4 = 14 and 1/4, and a part batch does not count. Both mixed numbers are in this item's own transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g7-2023-001",
@@ -13335,8 +14559,8 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "stem": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive? <span class=\"math\">$</span>",
-      "stemPlain": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys 3 pounds of grapes, (1)/(2) pound of turkey, 2 loaves of bread, and 1 gallon of chocolate milk. He pays with a $20.00 bill. How much change, in dollars, should Mr. Morgano receive? $",
+      "stem": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys <span class=\"math\">3</span> pounds of grapes, <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> pound of turkey, <span class=\"math\">2</span> loaves of bread, and <span class=\"math\">1</span> gallon of chocolate milk. He pays with a <span class=\"math\">$20.00</span> bill. How much change, in dollars, should Mr. Morgano receive?",
+      "stemPlain": "Mr. Morgano goes to the grocery store. The prices of different items are shown in the table below. Mr. Morgano buys 3 pounds of grapes, (1)/(2) pound of turkey, 2 loaves of bread, and 1 gallon of chocolate milk. He pays with a $20.00 bill. How much change, in dollars, should Mr. Morgano receive?",
       "stemAfter": null,
       "creditLine": "This question is worth 1 credit.",
       "instructions": [
