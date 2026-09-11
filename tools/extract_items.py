@@ -253,7 +253,16 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
 
     for ly in sorted(lines):
         row = sorted(lines[ly], key=lambda t: t[0][0])
-        occupied = [(b[0], b[2]) for b, _, _ in row]
+        # WHITESPACE DOES NOT OCCUPY THE LINE. Where maths was lifted out of a
+        # sentence the text layer leaves a space, and that space's box is as
+        # wide as the value that is missing -- so treating it as occupied hid
+        # the very glyph that belongs there. Grade 8 item 31 published "line a
+        # is parallel to line , and lines q and t", and grade 7 item 27 lost the
+        # y in "the amount of juice, y, that can be made" and had been carrying
+        # it as a known gap since launch. The other three variables on item 31's
+        # line fell in gaps BETWEEN spans and were found all along, which is
+        # what made the one missing letter look arbitrary.
+        occupied = [(b[0], b[2]) for b, c, _ in row if c.strip()]
         band = [dr for dr in glyph_draws
                 if dr["rect"].y0 < ly + 11 and dr["rect"].y1 > ly - LINE_TOL]
         # Only the RIGHT edge needs bounding. A graph's axis label can share a
@@ -273,13 +282,23 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         # a stray displayed expression, so the stem read "A (6, . B (- . C (-".
         # A line with no real text has no sentence to protect, so the bound
         # falls back to the width of the item's own text column.
-        solid = [(b[0], b[2]) for b, c, _ in row if c.strip()]
-        line_x1 = max(hi for lo, hi in solid) if solid else column_x1
+        line_x1 = max(hi for lo, hi in occupied) if occupied else column_x1
+        # A GLYPH WITH PROSE ON BOTH SIDES OF IT IS PART OF THE SENTENCE, even
+        # when it falls inside a figure's bounding box. A variable set in the
+        # middle of a line -- "line a is parallel to line b", "represents y as a
+        # linear function of x" -- is drawn as artwork like any other maths, and
+        # the figure-zone exclusion was swallowing it, so those sentences
+        # published with a hole in them. An axis label sitting in the same
+        # y-band has prose only to its left, which is what keeps it out.
+        def bracketed(r):
+            return (any(hi <= r.x0 + 0.4 for lo, hi in occupied)
+                    and any(lo >= r.x1 - 0.4 for lo, hi in occupied))
+
         free = [dr for dr in band
                 if not any(dr["rect"].x0 < hi - 0.4 and dr["rect"].x1 > lo + 0.4
                            for lo, hi in occupied)
                 and MARGIN_X - 6 <= dr["rect"].x0 <= line_x1 + 12
-                and not in_figure(dr["rect"])]
+                and (not in_figure(dr["rect"]) or bracketed(dr["rect"]))]
 
         # A STACKED FRACTION CAN BE TALLER THAN THE LINE BAND, and one with
         # exponents is taller still: grade 8's 12^20 over 12^4 spans 28pt where

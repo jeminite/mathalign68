@@ -94,7 +94,7 @@
       "alt": "Table headed Blueberry Prices, relating pounds of blueberries to price.",
       "long": "Columns are Pounds of Blueberries, b, and Price (dollars), p. The rows read 2 and $11.98; 4 and $23.96; 6 and $35.94."
     },
-    "G7-2026/q07_2.png": {
+    "G7-2026/q07.png": {
       "type": "Data Table",
       "alt": "Two-column table of x and y values.",
       "long": "Columns are x and y. The rows read 2 and 0.6; 3 and 0.9; 4 and 1.2; 5 and 1.5."
@@ -119,7 +119,7 @@
       "alt": "Four coordinate graphs labelled A, B, C and D, offered as the answer choices.",
       "long": "This item's four answer choices are pictures, not text. A is a straight line rising from the origin through (1, 1). B is a horizontal line at y = 4. C is a straight line falling from (0, 8) to about (8, 0). D is a vertical line at x = 4. Only A passes through the origin with a constant rate, so only A shows a proportional relationship."
     },
-    "G7-2026/q27_2.png": {
+    "G7-2026/q27.png": {
       "type": "Line Graph",
       "alt": "Graph headed Juice Made From Apples with four labelled points on a line.",
       "long": "The horizontal axis is Number of Apples, marked 0 to 5; the vertical axis is Amount of Juice (fluid ounces), marked 0 to 10. A straight line rises from the origin, and four points on or near it are labelled P at the origin, then Q, R and S in increasing order."
@@ -173,7 +173,7 @@
     46
   ],
   "reviewNotes": [
-    "Item 27's variable y in 'the amount of juice, y, that can be made' is missing from the stem: the glyph sits inside the graph's own bounding box, so the figure-zone exclusion takes it. Left as a known gap rather than hand-patched, because hand-patching the stem would break the prose-fidelity check that makes this data trustworthy.",
+    "Item 27's missing y -- 'the amount of juice, , that can be made' -- and the same gap in item 7's 'a proportional relationship between  and x' are both CLOSED. The cause was that where maths is lifted out of a sentence the PDF's text layer leaves a space, and that space's box is as wide as the value that is missing, so the reader treated it as occupied and hid the very glyph belonging there. Whitespace no longer occupies a line.",
     "Item 7's repeating-decimal overbar covers '.3' rather than just the '3', so 3.3-repeating renders with the bar one character too wide.",
     "Item 47 is a displayed expression published as an image rather than as text. It reads correctly; it is simply less good than markup would be. Item 20 was in the same state until wide fraction bars were admitted to the glyph table, and now renders as text.",
     "Item 31's displayed expression decodes as '(5.2 - 1.6) + (---) = 0', where the three rules are an answer box rather than minus signs.",

@@ -18,7 +18,10 @@ filter plus Standard, Question type, Year, four sort orders and a widened search
 tab; the same unit filter and a "Taught in" column on Items; and shift-click multi-level sort in
 every table on the site.
 
-Next: 2026 grades 6 and 8 questions, then the per-item curriculum alignment (`data/alignment.json`,
+**2026 grade 8 is published** — all 42 items, so the Questions tab is now real for two grades out
+of three. 84 of 396 items carry the actual question.
+
+Next: 2026 grade 6's 39 items, then the per-item curriculum alignment (`data/alignment.json`,
 hand-owned) and the class-results analyzer.
 
 ### Two Netlify settings that were wrong at first
@@ -462,6 +465,90 @@ the gate fail.
 4. **Unit 9 is a catch-all.** "Putting It All Together" cites standards from the whole year and so
    matches 88 of grade 7's 135 items. Its option is labelled "(review unit -- matches broadly)",
    driven off the `whollyOptional` flag rather than hardcoding unit 9.
+
+## 2026 grade 8, and what it taught the decoder
+
+42 items, 21 figures, 8 constructed-response answers from NYSED's own exemplary responses. It
+needed 39 new glyph labels grade 7 never used -- radical, angle, congruence, pi, primes, degree,
+braces, the comparison circle, and the serif capitals that name triangles.
+
+**Two labels were nearly wrong, and reading the crops rather than the shapes caught both.** `g150`
+is a DEGREE sign, not a capital O -- it decodes `60°F` in item 46. `g185` is a PRIME, not a slash,
+which is what makes triangle `A′B′C′` the image of `ABC`.
+
+### Exponents
+
+`9² + 12² = 15²` was publishing as `92 + 122 = 152`, and all four of item 7's choices differ only
+in where the exponents sit -- so a reader saw four identical options. Grade 8's Unit 8 is exponents
+and scientific notation, so this was not a corner case. Four passes, each fixing what the last
+broke:
+
+1. *Shorter than the body and raised above its baseline.* Swept in `=`, which is short and centred
+   on the maths axis, giving `12^(2 =) 15^2`.
+2. *Excluding centred operators.* Fixed that, but the baseline came from a median over every glyph,
+   and the PARENTHESES in `(5²)(7⁻²)(5⁴)` are half again as tall as the digits, so the digits looked
+   raised and `5²` lost its base.
+3. *Most common foot.* Fixed the parentheses, broke `1¹⁶` -- two superscript glyphs outnumber the
+   single base and became the "baseline".
+4. **The foot of the tallest glyphs.** Superscripts are drawn smaller than the text they sit on, so
+   the tallest glyphs are body text by definition. This one holds.
+
+And the comparison must be **within one run**, not one line: a stacked fraction overlaps its
+neighbours vertically, so `4(x + 2) = 12/0.25` is all one "line" and the denominator's feet dragged
+the baseline down until the `x` looked raised. Numerator and denominator are now measured
+separately -- which also fixed `5⁶/7²` publishing as `56/72`.
+
+The minus of a negative exponent was discarded **by two hundredths of a point**: `MIN_H` is 0.5pt
+and a superscript minus is drawn at 70% of a full-size one, 0.48 against 0.68. So `(5²)(7⁻²)(5⁴)`
+read as `(5²)(7²)(5⁴)` with the negative exponent -- the whole point of the item -- silently gone.
+
+A rule only counts as an exponent's minus if it PREFIXES one. Geometry alone is not enough: a
+lowercase `x` has no ascender, so a run of `x −` measures its body at the x-height and an ordinary
+minus looks raised by half of it.
+
+### Three values were wrong in the PUBLISHED grade 7 questions
+
+Extracting grade 8 exposed a line-reading bound that had already corrupted live data:
+
+| item | published | should be |
+|---|---|---|
+| 34 | `−45/9` | `−45/−9` |
+| 43 | `$1` and `$1` | `$12.50` and `$10.25` |
+| 36 | `x −` | `x − 0.25x` |
+
+One cause: maths on a prose line was admitted only to the end of that line's text plus 12pt, which
+cut a value in half and published the remainder as a stray expression beside the sentence. Item
+43's `.50` and `.25` had even been written up in the merge spec as a known oddity -- they were the
+back half of its prices. The bound now decides only what may START a run; anything touching that
+run joins it however far right it reaches, while an axis label alone in white space stays out.
+
+### Whitespace does not occupy a line
+
+Where maths is lifted out of a sentence the text layer leaves a space, and that space's box is as
+wide as the missing value -- so treating it as occupied hid the very glyph belonging there. This
+closed grade 7 item 27's missing `y` (a documented gap since launch), item 7's, and grade 8 item
+31's `line a is parallel to line ,`. The other three variables on item 31's line fell in gaps
+BETWEEN text spans and had been found all along, which is what made the one missing letter look
+arbitrary.
+
+### Other traps
+
+- **A stacked fraction can be taller than its line band.** `12²⁰/12⁴` spans 28pt where the band
+  allows 15, so it decoded as `12/4`. Whatever completes a bar already in the band is pulled in --
+  but only a real bar, meaning a rule with content on **both** sides. "Thin and not too wide" alone
+  also matched every decimal point and minus sign and pulled neighbours in through them. The reach
+  is 14pt, the same window `glyphs.py` uses; at 22pt it spanned the gap between two bullets and
+  lifted the minus of `C (−9,3)` into `B (−3,8)`.
+- **A line whose only text is a space has no sentence to protect.** Item 41's vertex list is drawn
+  entirely as artwork with one space character in the text layer, so the bound landed
+  mid-coordinate and the stem read `A (6, . B (− . C (−`.
+- **A glyph with prose on both sides is part of the sentence**, even inside a figure's bounding box.
+- **An unlabelled glyph can delete a whole expression.** Item 43's comparison circle was unlabelled,
+  so `(16⁵)⁴ ○ 16⁸ · 16¹²` failed to decode, was demoted to artwork, and was then dropped for being
+  under the minimum figure area -- the item published without the expression it asks about. Item
+  30's braces did the same to its set of ordered pairs.
+- **A raised full stop is a multiplication dot.** The shapes are identical; only height on the line
+  tells `16⁸ · 16¹²` from a sentence ending mid-expression.
 
 ## Open questions
 

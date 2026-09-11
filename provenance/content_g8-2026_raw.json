@@ -10,7 +10,7 @@
     "items": 42,
     "itemsWithUnresolved": 0,
     "figures": 21,
-    "displayExpressions": 4
+    "displayExpressions": 5
   },
   "items": [
     {
@@ -893,10 +893,10 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "Myla sells hot chocolate at a fundraising event. The function <span class=\"math\">y = 3x + 30</span> represents the total amount of money, , she raises and includes the profit made by selling <span class=\"math\">x</span> cups of hot chocolate and a one time donation at the event. Which statement is true about the situation?",
+      "stemHtml": "Myla sells hot chocolate at a fundraising event. The function <span class=\"math\">y = 3x + 30</span> represents the total amount of money, <span class=\"math\">y</span>, she raises and includes the profit made by selling <span class=\"math\">x</span> cups of hot chocolate and a one time donation at the event. Which statement is true about the situation?",
       "stemLines": [
         "Myla sells hot chocolate at a fundraising event. The function <span class=\"math\">y = 3x + 30</span> represents the",
-        "total amount of money, , she raises and includes the profit made by selling <span class=\"math\">x</span> cups of",
+        "total amount of money, <span class=\"math\">y</span>, she raises and includes the profit made by selling <span class=\"math\">x</span> cups of",
         "hot chocolate and a one time donation at the event. Which statement is true about",
         "the situation?"
       ],
@@ -1435,7 +1435,17 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
+      "display": [
+        {
+          "rect": [
+            108.4,
+            82.47,
+            242.89,
+            93.82
+          ],
+          "html": "<span class=\"math\">{ (1,4), (2,5), (3,4), (k,6) }</span>"
+        }
+      ],
       "figures": [],
       "unresolved": []
     },
@@ -1446,9 +1456,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "In the figure shown below, line <span class=\"math\">a</span> is parallel to line , and lines <span class=\"math\">q</span> and <span class=\"math\">t</span> are transversals. In the figure, the measure of angle <span class=\"math\">1</span> is <span class=\"math\">79°</span> and the measure of angle <span class=\"math\">3</span> is <span class=\"math\">128°</span>. What is the measure, in degrees, of angle <span class=\"math\">2</span>?",
+      "stemHtml": "In the figure shown below, line <span class=\"math\">a</span> is parallel to line <span class=\"math\">b</span>, and lines <span class=\"math\">q</span> and <span class=\"math\">t</span> are transversals. In the figure, the measure of angle <span class=\"math\">1</span> is <span class=\"math\">79°</span> and the measure of angle <span class=\"math\">3</span> is <span class=\"math\">128°</span>. What is the measure, in degrees, of angle <span class=\"math\">2</span>?",
       "stemLines": [
-        "In the figure shown below, line <span class=\"math\">a</span> is parallel to line , and lines <span class=\"math\">q</span> and <span class=\"math\">t</span> are transversals.",
+        "In the figure shown below, line <span class=\"math\">a</span> is parallel to line <span class=\"math\">b</span>, and lines <span class=\"math\">q</span> and <span class=\"math\">t</span> are transversals.",
         "In the figure, the measure of angle <span class=\"math\">1</span> is <span class=\"math\">79°</span> and the measure of angle <span class=\"math\">3</span> is <span class=\"math\">128°</span>. What is the",
         "measure, in degrees, of angle <span class=\"math\">2</span>?"
       ],
@@ -1488,12 +1498,12 @@
           "file": "G8-2026/q31.png",
           "rect": [
             212.71,
-            291.82,
+            328.35,
             446.17,
             541.1
           ],
-          "paths": 19,
-          "decodedLabels": "b � � � � � � � � � � � � � � �",
+          "paths": 18,
+          "decodedLabels": "� � � � � � � � � � � � � � �",
           "undecodedGlyphs": 15,
           "alt": "",
           "longDescription": ""
@@ -1788,9 +1798,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which table of values represents  as a linear function of  ?",
+      "stemHtml": "Which table of values represents <span class=\"math\">y</span> as a linear function of <span class=\"math\">x</span> ?",
       "stemLines": [
-        "Which table of values represents  as a linear function of  ?"
+        "Which table of values represents <span class=\"math\">y</span> as a linear function of <span class=\"math\">x</span> ?"
       ],
       "prose": "Which table of values represents  as a linear function of  ?",
       "proseAllLines": "Which table of values represents  as a linear function of  ?",
@@ -1828,12 +1838,12 @@
           "file": "G8-2026/q37.png",
           "rect": [
             121.22,
-            64.52,
+            90.58,
             413.52,
             273.5
           ],
-          "paths": 80,
-          "decodedLabels": "y<sup>x</sup> � � � � � � � � � � � � �� � �� � �� � �� � � �� � � � � � � � � � �� � � � � � � � � � � � � � � � � �",
+          "paths": 78,
+          "decodedLabels": "� � � � � � � � � � � � �� � �� � �� � �� � � �� � � � � � � � � � �� � � � � � � � � � � � � � � � � �",
           "undecodedGlyphs": 55,
           "alt": "",
           "longDescription": ""

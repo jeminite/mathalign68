@@ -333,9 +333,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "The table below shows a proportional relationship between  and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
+      "stemHtml": "The table below shows a proportional relationship between <span class=\"math\">y</span> and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
       "stemLines": [
-        "The table below shows a proportional relationship between  and <span class=\"math\">x</span>.",
+        "The table below shows a proportional relationship between <span class=\"math\">y</span> and <span class=\"math\">x</span>.",
         "Which equation represents the proportional relationship?"
       ],
       "prose": "The table below shows a proportional relationship between  and . Which equation represents the proportional relationship?",
@@ -371,7 +371,7 @@
       "display": [],
       "figures": [
         {
-          "file": "G7-2026/q07_2.png",
+          "file": "G7-2026/q07.png",
           "rect": [
             133.73,
             101.69,
@@ -1210,9 +1210,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "The graph below shows the relationship between the amount of juice, , that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
+      "stemHtml": "The graph below shows the relationship between the amount of juice, <span class=\"math\">y</span>, that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
       "stemLines": [
-        "The graph below shows the relationship between the amount of juice, , that can be made",
+        "The graph below shows the relationship between the amount of juice, <span class=\"math\">y</span>, that can be made",
         "from <span class=\"math\">x</span> apples.",
         "Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of",
         "juice made from <span class=\"math\">1</span> apple?"
@@ -1250,7 +1250,7 @@
       "display": [],
       "figures": [
         {
-          "file": "G7-2026/q27_2.png",
+          "file": "G7-2026/q27.png",
           "rect": [
             203.4,
             111.47,

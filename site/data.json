@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-11T05:29:07",
+    "built": "2026-09-11T05:37:51",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -28,20 +28,22 @@
     "itemsWithPageLink": 387,
     "postTestItems": 17,
     "transcriptionCoverage": {
-      "transcribed": 42,
+      "transcribed": 84,
       "total": 396,
       "keySources": {
-        "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted."
+        "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted.",
+        "g8-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key in this spec cannot drift from the official table or be shifted by one released item. It was additionally checked against the transcribed choices: nine of the 34 are decided by reading the mathematics rather than the prose -- item 7's Pythagorean equation, item 15's product of powers, item 3's quotient of powers -- and in every case the keyed letter is the one the transcription makes true."
       },
       "reviewNotes": {
         "g7-2026": [
-          "Item 27's variable y in 'the amount of juice, y, that can be made' is missing from the stem: the glyph sits inside the graph's own bounding box, so the figure-zone exclusion takes it. Left as a known gap rather than hand-patched, because hand-patching the stem would break the prose-fidelity check that makes this data trustworthy.",
+          "Item 27's missing y -- 'the amount of juice, , that can be made' -- and the same gap in item 7's 'a proportional relationship between  and x' are both CLOSED. The cause was that where maths is lifted out of a sentence the PDF's text layer leaves a space, and that space's box is as wide as the value that is missing, so the reader treated it as occupied and hid the very glyph belonging there. Whitespace no longer occupies a line.",
           "Item 7's repeating-decimal overbar covers '.3' rather than just the '3', so 3.3-repeating renders with the bar one character too wide.",
           "Item 47 is a displayed expression published as an image rather than as text. It reads correctly; it is simply less good than markup would be. Item 20 was in the same state until wide fraction bars were admitted to the glyph table, and now renders as text.",
           "Item 31's displayed expression decodes as '(5.2 - 1.6) + (---) = 0', where the three rules are an answer box rather than minus signs.",
           "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification.",
           "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems."
-        ]
+        ],
+        "g8-2026": []
       }
     },
     "alignmentCoverage": {
@@ -11362,8 +11364,8 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "stem": "The table below shows a proportional relationship between  and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
-      "stemPlain": "The table below shows a proportional relationship between and x. Which equation represents the proportional relationship?",
+      "stem": "The table below shows a proportional relationship between <span class=\"math\">y</span> and <span class=\"math\">x</span>. Which equation represents the proportional relationship?",
+      "stemPlain": "The table below shows a proportional relationship between y and x. Which equation represents the proportional relationship?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],
@@ -11392,7 +11394,7 @@
       ],
       "figures": [
         {
-          "file": "G7-2026/q07_2.png",
+          "file": "G7-2026/q07.png",
           "type": "Data Table",
           "alt": "Two-column table of x and y values.",
           "longDescription": "Columns are x and y. The rows read 2 and 0.6; 3 and 0.9; 4 and 1.2; 5 and 1.5."
@@ -12555,8 +12557,8 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "stem": "The graph below shows the relationship between the amount of juice, , that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
-      "stemPlain": "The graph below shows the relationship between the amount of juice, , that can be made from x apples. Which point on the graph has a y coordinate that represents the number of fluid ounces of juice made from 1 apple?",
+      "stem": "The graph below shows the relationship between the amount of juice, <span class=\"math\">y</span>, that can be made from <span class=\"math\">x</span> apples. Which point on the graph has a <span class=\"math\">y</span> coordinate that represents the number of fluid ounces of juice made from <span class=\"math\">1</span> apple?",
+      "stemPlain": "The graph below shows the relationship between the amount of juice, y, that can be made from x apples. Which point on the graph has a y coordinate that represents the number of fluid ounces of juice made from 1 apple?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],
@@ -12585,7 +12587,7 @@
       ],
       "figures": [
         {
-          "file": "G7-2026/q27_2.png",
+          "file": "G7-2026/q27.png",
           "type": "Line Graph",
           "alt": "Graph headed Juice Made From Apples with four labelled points on a line.",
           "longDescription": "The horizontal axis is Number of Apples, marked 0 to 5; the vertical axis is Amount of Juice (fluid ounces), marked 0 to 10. A straight line rises from the origin, and four points on or near it are labelled P at the origin, then Q, R and S in increasing order."
@@ -17160,7 +17162,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be translated <span class=\"math\">4</span> units to the left and <span class=\"math\">2</span> units up to create triangle <span class=\"math\">A\u2032B\u2032C\u2032</span>. What will be the coordinates of vertex <span class=\"math\">A\u2032</span> ?",
+      "stemPlain": "Triangle ABC is graphed on the coordinate plane shown below. Triangle ABC will be translated 4 units to the left and 2 units up to create triangle A\u2032B\u2032C\u2032. What will be the coordinates of vertex A\u2032 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(0, \u2212 1)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(2,1)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(\u2212 1,7)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(\u22126,5)</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q01.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 10 to 10 on both axes.",
+          "longDescription": "Vertex A is at negative 3, 3. Vertex B is at 0, negative 1. Vertex C is at 2, 5."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-002",
@@ -17196,7 +17237,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Ms. Whitley is comparing the prices of apples, sold by the pound, at two different stores. <span class=\"math\">\u2022</span> The price, <span class=\"math\">y</span>, in dollars, of <span class=\"math\">x</span> pounds of apples sold at Store A is represented by the equation <span class=\"math\">y y = 1.50x</span>. <span class=\"math\">\u2022</span> The price for a number of pounds of apples sold at Store B is represented by the graph shown below. Which statement is true based on the information given?",
+      "stemPlain": "Ms. Whitley is comparing the prices of apples, sold by the pound, at two different stores. \u2022 The price, y, in dollars, of x pounds of apples sold at Store A is represented by the equation y y = 1.50x. \u2022 The price for a number of pounds of apples sold at Store B is represented by the graph shown below. Which statement is true based on the information given?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Store A charges <span class=\"math\">$0.75</span> more per pound.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Store B charges <span class=\"math\">$0.75</span> more per pound.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "Store A charges <span class=\"math\">$3.00</span> more per pound.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Store B charges <span class=\"math\">$3.00</span> more per pound.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q02.png",
+          "type": "Line Graph",
+          "alt": "A line graph titled Store B Apple Prices, price in dollars against weight of apples in pounds.",
+          "longDescription": "The line starts at the origin and rises steadily, passing through 4 pounds at 9 dollars, so the price is 2 dollars 25 cents per pound."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-003",
@@ -17232,7 +17312,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12<sup>20</sup></span><span>12<sup>4</sup></span></span></span> ?",
+      "stemPlain": "Which expression is equivalent to (12^20)/(12^4) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">1<sup>5</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">1<sup>16</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">12<sup>5</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">12<sup>16</sup></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-004",
@@ -17268,7 +17380,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A school sells tickets to a play. The data on the graph below shows the number of tickets sold, <span class=\"math\">y</span>, per day, <span class=\"math\">x</span>. The equation of the line <span class=\"math\">y = \u22122x + 29</span> was drawn to best represent the relationship between the data. Based on the equation of the line, which statement describes a valid prediction of ticket sales?",
+      "stemPlain": "A school sells tickets to a play. The data on the graph below shows the number of tickets sold, y, per day, x. The equation of the line y = \u22122x + 29 was drawn to best represent the relationship between the data. Based on the equation of the line, which statement describes a valid prediction of ticket sales?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Since the number of tickets approximately decreases by <span class=\"math\">29</span> a day, it can be predicted that <span class=\"math\">9</span> tickets will be sold on day <span class=\"math\">12</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Since the number of tickets approximately decreases by <span class=\"math\">29</span> a day, it can be predicted that <span class=\"math\">5</span> tickets will be sold on day <span class=\"math\">12</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Since the number of tickets approximately decreases by <span class=\"math\">2</span> a day, it can be predicted that <span class=\"math\">9</span> tickets will be sold on day <span class=\"math\">12</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Since the number of tickets approximately decreases by <span class=\"math\">2</span> a day, it can be predicted that <span class=\"math\">5</span> tickets will be sold on day <span class=\"math\">12</span>.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q04.png",
+          "type": "Scatter Plot",
+          "alt": "A scatter plot titled Ticket Sales with a line of best fit, number of tickets sold against day.",
+          "longDescription": "Eight points fall from about 30 tickets on day 1 to about 11 tickets on day 9. The line of best fit slopes downward across them."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-005",
@@ -17306,7 +17457,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which value is irrational?",
+      "stemPlain": "Which value is irrational?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">0</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u03c0</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-006",
@@ -17342,7 +17525,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The dimensions of a can of tomatoes are shown in the diagram below. What is the volume, to the nearest cubic centimeter, of the can?",
+      "stemPlain": "The dimensions of a can of tomatoes are shown in the diagram below. What is the volume, to the nearest cubic centimeter, of the can?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">110</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">220</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">385</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">1,539</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q06.png",
+          "type": "Diagram",
+          "alt": "A cylindrical can of tomatoes with its width and height labelled.",
+          "longDescription": "The can is 7 centimetres across and 10 centimetres tall."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-007",
@@ -17378,7 +17600,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> has side lengths of <span class=\"math\">9</span> in., <span class=\"math\">12</span> in., and <span class=\"math\">15</span> in. Which equation proves that the triangle is a right triangle?",
+      "stemPlain": "Triangle ABC has side lengths of 9 in., 12 in., and 15 in. Which equation proves that the triangle is a right triangle?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span> + \u221a<span class=\"repeat\">12</span> = 15</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span> + \u221a<span class=\"repeat\">12</span> = \u221a<span class=\"repeat\">15</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(9 + 12)<sup>2</sup> = 15<sup>2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">9<sup>2</sup> + 12<sup>2</sup> = 15<sup>2</sup></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-008",
@@ -17414,7 +17668,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A line is graphed on the coordinate plane shown below. Which equation represents the line shown on the coordinate plane?",
+      "stemPlain": "A line is graphed on the coordinate plane shown below. Which equation represents the line shown on the coordinate plane?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x \u2212 3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = 3x \u2212 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = \u22123x + 6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = \u2212 <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q08.png",
+          "type": "Coordinate Plane",
+          "alt": "A straight line graphed on a coordinate plane ruled from negative 7 to 7 on both axes.",
+          "longDescription": "The line rises from left to right, crossing the y-axis at negative 3 and passing through 2, negative 2 and 6, 0."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-010",
@@ -17450,7 +17743,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Rectangles <span class=\"math\">JKLM</span> and <span class=\"math\">PQRS</span> are shown on the coordinate plane below. Which sequence of transformations can be used to show rectangle <span class=\"math\">JKLM</span> is similar but not congruent to rectangle <span class=\"math\">PQRS</span> ?",
+      "stemPlain": "Rectangles JKLM and PQRS are shown on the coordinate plane below. Which sequence of transformations can be used to show rectangle JKLM is similar but not congruent to rectangle PQRS ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "A reflection of rectangle <span class=\"math\">JKLM</span> over the <span class=\"math\">y</span> axis, followed by a dilation by a scale factor of <span class=\"math\">2</span> centered at the origin.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "A reflection of rectangle <span class=\"math\">JKLM</span> over the <span class=\"math\">y</span> axis, followed by a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "A <span class=\"math\">90\u00b0</span> counterclockwise rotation of rectangle <span class=\"math\">JKLM</span> about the origin, followed by a dilation by a scale factor of <span class=\"math\">2</span> centered at the origin.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "A <span class=\"math\">90\u00b0</span> counterclockwise rotation of rectangle <span class=\"math\">JKLM</span> about the origin, followed by a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q10.png",
+          "type": "Coordinate Plane",
+          "alt": "Rectangles JKLM and PQRS plotted on a coordinate plane ruled from negative 10 to 10.",
+          "longDescription": "Rectangle JKLM has corners J at 1, 8, M at 7, 8, K at 1, 4 and L at 7, 4. The smaller rectangle PQRS lies to the left of the y-axis with S at negative 4, 5, R at negative 2, 5, P at negative 4, 1 and Q at negative 2, 1."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-011",
@@ -17486,7 +17818,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which relation is not a function?",
+      "stemPlain": "Which relation is not a function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q11.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four small coordinate graphs labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "A is a row of points all at height 2. B is a set of points rising from left to right. C is a U-shaped curve opening upward. D is a V shape made of two rays meeting on the x-axis."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-012",
@@ -17522,7 +17893,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which equation has an infinite number of solutions?",
+      "stemPlain": "Which equation has an infinite number of solutions?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2x \u2212 1 = 2 (x \u2212 1)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">2x \u2212 2 = 2 (x \u2212 1)</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">2x \u2212 3 = 3 (x \u2212 1)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2x + 3 = 3 (x \u2212 1)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-013",
@@ -17558,7 +17961,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which side lengths, in inches, will form a triangle?",
+      "stemPlain": "Which side lengths, in inches, will form a triangle?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3</span>, <span class=\"math\">5</span>, <span class=\"math\">10</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4</span>, <span class=\"math\">9</span>, <span class=\"math\">14</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5</span>, <span class=\"math\">7</span>, <span class=\"math\">10</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">6</span>, <span class=\"math\">7</span>, <span class=\"math\">14</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-014",
@@ -17594,7 +18029,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which equation represents a linear function?",
+      "stemPlain": "Which equation represents a linear function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = 2x</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = 2x<sup>3</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = x<sup>2</sup> \u2212 2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = x<sup>2</sup> \u2212 x</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-015",
@@ -17630,7 +18097,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which expression is equivalent to <span class=\"math\">(5<sup>2</sup>) (7<sup>\u22122</sup>) (5<sup>4</sup>)</span> ?",
+      "stemPlain": "Which expression is equivalent to (5^2) (7^\u22122) (5^4) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>5<sup>6</sup></span><span>7<sup>2</sup></span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>25<sup>6</sup></span><span>7<sup>2</sup></span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">17<sup>4</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">175<sup>4</sup></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-017",
@@ -17668,7 +18167,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle ABC and triangle EFG are shown below. Which statement describes the measurements of angle F and side FG for triangle EFG ?",
+      "stemPlain": "Triangle ABC and triangle EFG are shown below. Which statement describes the measurements of angle F and side FG for triangle EFG ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Angle F is <span class=\"math\">39\u00b0</span> and side FG is <span class=\"math\">201</span> cm.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Angle F is <span class=\"math\">19.5\u00b0</span> and side FG is <span class=\"math\">201</span> cm.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Angle F is <span class=\"math\">19.5\u00b0</span> and side FG is <span class=\"math\">100.5</span> cm.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Angle F is <span class=\"math\">39\u00b0</span> and side FG is <span class=\"math\">100.5</span> cm.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q17.png",
+          "type": "Diagram",
+          "alt": "Two triangles, EFG and ABC, with their side lengths and angle measures labelled.",
+          "longDescription": "In the smaller triangle, EF is 94 centimetres, EG is 66 centimetres, angle E is 76 degrees and angle G is 65 degrees. In the larger triangle, AB is 188 centimetres, AC is 132 centimetres, BC is 201 centimetres, angle A is 76 degrees, angle B is 39 degrees and angle C is 65 degrees."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-018",
@@ -17704,7 +18242,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The graph of a function is shown below. Which statement is true about the function?",
+      "stemPlain": "The graph of a function is shown below. Which statement is true about the function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The function is constant when <span class=\"math\">x</span> is less than <span class=\"math\">\u22126</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The function is decreasing when <span class=\"math\">x</span> is greater than <span class=\"math\">2</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The function is increasing when <span class=\"math\">x</span> is greater than <span class=\"math\">2</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "The function is decreasing when <span class=\"math\">x</span> is between the values of <span class=\"math\">\u22126</span> and <span class=\"math\">2</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q18.png",
+          "type": "Coordinate Plane",
+          "alt": "The graph of a function on a coordinate plane ruled from negative 8 to 8.",
+          "longDescription": "The graph falls steeply from the upper left to the point negative 6, 5, runs flat at a height of 5 from x equals negative 6 to x equals 2, then rises steadily to the upper right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-019",
@@ -17740,7 +18317,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Myla sells hot chocolate at a fundraising event. The function <span class=\"math\">y = 3x + 30</span> represents the total amount of money, <span class=\"math\">y</span>, she raises and includes the profit made by selling <span class=\"math\">x</span> cups of hot chocolate and a one time donation at the event. Which statement is true about the situation?",
+      "stemPlain": "Myla sells hot chocolate at a fundraising event. The function y = 3x + 30 represents the total amount of money, y, she raises and includes the profit made by selling x cups of hot chocolate and a one time donation at the event. Which statement is true about the situation?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The profit per cup is <span class=\"math\">$3.00</span> and the number of cups she sells is <span class=\"math\">30</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The number of cups she sells is <span class=\"math\">3</span> and the profit per cup is <span class=\"math\">$30.00</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The profit per cup is <span class=\"math\">$3.00</span> and the amount of the donation is <span class=\"math\">$30.00</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "The amount of the donation is <span class=\"math\">$3.00</span> and the profit per cup is <span class=\"math\">$30.00</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-020",
@@ -17776,7 +18385,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which equation represents the line that passes through the points <span class=\"math\">(0,9)</span> and <span class=\"math\">(3,0)</span> ?",
+      "stemPlain": "Which equation represents the line that passes through the points (0,9) and (3,0) ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = \u22123x + 3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = \u22123x + 9</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = \u2212 <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-021",
@@ -17812,7 +18453,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An equation is shown below. What is the value of <span class=\"math\">x</span> ?",
+      "stemPlain": "An equation is shown below. What is the value of x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">3x \u2212 2 = 7(x + 5)</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>37</span><span>4</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2212 <span class=\"frac\"><span>7</span><span>4</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3</span><span>10</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>33</span><span>10</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-022",
@@ -17848,7 +18523,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle ABC and triangle DEF shown on the coordinate plane below are congruent. Which sequence of transformations will map triangle ABC onto triangle DEF ?",
+      "stemPlain": "Triangle ABC and triangle DEF shown on the coordinate plane below are congruent. Which sequence of transformations will map triangle ABC onto triangle DEF ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "a reflection over the <span class=\"math\">x</span> axis and then a translation <span class=\"math\">1</span> unit right and <span class=\"math\">5</span> units down",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "a reflection over the <span class=\"math\">x</span> axis and then a translation <span class=\"math\">5</span> units right and <span class=\"math\">1</span> unit down",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "a reflection over the <span class=\"math\">y</span> axis and then a translation <span class=\"math\">5</span> units right and <span class=\"math\">1</span> unit down",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "a reflection over the <span class=\"math\">y</span> axis and then a translation <span class=\"math\">1</span> unit right and <span class=\"math\">5</span> units down",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q22.png",
+          "type": "Coordinate Plane",
+          "alt": "Two congruent triangles, ABC and DEF, plotted on a coordinate plane.",
+          "longDescription": "Triangle ABC has A at negative 3, 5, B at negative 6, 1 and C at negative 2, 3. Triangle DEF has D at 4, 0, E at 5, negative 4 and F at 2, negative 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-023",
@@ -17884,7 +18598,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Two intersecting lines create the angles shown in the diagram below. What is the value of <span class=\"math\">x</span> ?",
+      "stemPlain": "Two intersecting lines create the angles shown in the diagram below. What is the value of x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">20</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">26.25</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">32.5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">48.75</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q23_1.png",
+          "type": "Diagram",
+          "alt": "Two intersecting lines with two of the angles they form labelled.",
+          "longDescription": "One angle is labelled 4x minus 15 degrees and the angle below it is labelled 115 degrees."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-025",
@@ -17920,7 +18673,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> is rotated clockwise about the origin to create triangle <span class=\"math\">XYZ</span> as shown on the coordinate plane below. Which statement is correct?",
+      "stemPlain": "Triangle ABC is rotated clockwise about the origin to create triangle XYZ as shown on the coordinate plane below. Which statement is correct?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">\u2220A \u2245 \u2220Y</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">\u2220B \u2245 \u2220Y</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">\u2220B \u2245 \u2220Z</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">\u2220C \u2245 \u2220X</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q25.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC and triangle XYZ plotted on a coordinate plane ruled from negative 6 to 6.",
+          "longDescription": "Triangle ABC has A at negative 2, 4, B at negative 6, 2 and C at negative 2, 2. Triangle XYZ has X at 3, 2, Y at 1, 5 and Z at 1, 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-026",
@@ -17956,7 +18748,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A linear function is graphed on the coordinate plane shown below. Which statement is true about the function?",
+      "stemPlain": "A linear function is graphed on the coordinate plane shown below. Which statement is true about the function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The rate of change is <span class=\"math\">\u2212<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "The rate of change is <span class=\"math\">\u2212<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q26.png",
+          "type": "Coordinate Plane",
+          "alt": "A straight line with a negative slope graphed on a coordinate plane.",
+          "longDescription": "The line crosses the y-axis at 4 and the x-axis at 8, falling one unit for every two it runs to the right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-027",
@@ -17992,7 +18823,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Miguel is comparing the costs of renting a photobooth for an event. The costs of two companies are described below. <span class=\"math\">\u2022</span> The cost at Company A includes a <span class=\"math\">$180.00</span> set up fee plus an additional <span class=\"math\">$49.00</span> per hour. <span class=\"math\">\u2022</span> The cost at Company B is represented by the equation <span class=\"math\">c = 99h + 150</span>, where <span class=\"math\">c</span> is the cost, in dollars, for <span class=\"math\">h</span> hours. Which statement correctly compares the costs for renting a photobooth?",
+      "stemPlain": "Miguel is comparing the costs of renting a photobooth for an event. The costs of two companies are described below. \u2022 The cost at Company A includes a $180.00 set up fee plus an additional $49.00 per hour. \u2022 The cost at Company B is represented by the equation c = 99h + 150, where c is the cost, in dollars, for h hours. Which statement correctly compares the costs for renting a photobooth?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "Company A charges <span class=\"math\">$30.00</span> more per hour than Company B.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Company B charges <span class=\"math\">$50.00</span> more per hour than Company A.",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "Company A charges <span class=\"math\">$50.00</span> more per hour than Company B.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Company B charges <span class=\"math\">$30.00</span> more per hour than Company A.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-029",
@@ -18028,7 +18891,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> is translated <span class=\"math\">4</span> units left and <span class=\"math\">3</span> units up to create triangle <span class=\"math\">A\u2032B\u2032C\u2032</span>. What is the length, in units, of side <span class=\"math\">A\u2032B\u2032</span> ?",
+      "stemPlain": "Triangle ABC is graphed on the coordinate plane shown below. Triangle ABC is translated 4 units left and 3 units up to create triangle A\u2032B\u2032C\u2032. What is the length, in units, of side A\u2032B\u2032 ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">6</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">7</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">9</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q29.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 9 to 9.",
+          "longDescription": "Vertex A is at negative 4, 3. Vertex B is at negative 4, negative 2. Vertex C is at 3, negative 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-030",
@@ -18064,7 +18966,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A set of ordered pairs is shown below. Which value of <span class=\"math\">k</span> makes the set of ordered pairs a function?",
+      "stemPlain": "A set of ordered pairs is shown below. Which value of k makes the set of ordered pairs a function?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">{ (1,4), (2,5), (3,4), (k,6) }</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-031",
@@ -18100,7 +19036,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "In the figure shown below, line <span class=\"math\">a</span> is parallel to line <span class=\"math\">b</span>, and lines <span class=\"math\">q</span> and <span class=\"math\">t</span> are transversals. In the figure, the measure of angle <span class=\"math\">1</span> is <span class=\"math\">79\u00b0</span> and the measure of angle <span class=\"math\">3</span> is <span class=\"math\">128\u00b0</span>. What is the measure, in degrees, of angle <span class=\"math\">2</span>?",
+      "stemPlain": "In the figure shown below, line a is parallel to line b, and lines q and t are transversals. In the figure, the measure of angle 1 is 79\u00b0 and the measure of angle 3 is 128\u00b0. What is the measure, in degrees, of angle 2?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">49</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">52</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">101</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">128</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q31.png",
+          "type": "Diagram",
+          "alt": "Two parallel lines a and b cut by two transversals q and t, with three angles numbered.",
+          "longDescription": "Angle 1 and angle 2 sit where the transversals meet line a, and angle 3 sits where transversal t meets line b."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-032",
@@ -18136,7 +19111,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An equation is shown below. What value of <span class=\"math\">x</span> makes the equation true?",
+      "stemPlain": "An equation is shown below. What value of x makes the equation true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span> (14 + 4x) = 5 (x \u2212 2) + 2</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>7</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">6 <span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">7</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-033",
@@ -18172,7 +19181,39 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which value of <span class=\"math\">x</span> makes the equation <span class=\"math\">x<sup>3</sup> = 8</span> true?",
+      "stemPlain": "Which value of x makes the equation x^3 = 8 true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">11</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">24</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-034",
@@ -18208,7 +19249,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which scatter plot represents data with a positive linear association?",
+      "stemPlain": "Which scatter plot represents data with a positive linear association?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q34.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four scatter plots labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "Each plot shows about twenty points on axes running from 0 to 10. They differ in how strongly and in which direction the points trend."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-035",
@@ -18244,7 +19324,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "The diagram below shows a map of a store, a home, and a gas station. Directly north of the home is a store that is <span class=\"math\">12</span> miles away. Directly east of the home is a gas station that is <span class=\"math\">16</span> miles away. What is the distance, in miles, between the store and the gas station?",
+      "stemPlain": "The diagram below shows a map of a store, a home, and a gas station. Directly north of the home is a store that is 12 miles away. Directly east of the home is a gas station that is 16 miles away. What is the distance, in miles, between the store and the gas station?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">14</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">20</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">28</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">56</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q35.png",
+          "type": "Diagram",
+          "alt": "A right triangle joining Home, Store and Gas Station, drawn with dashed lines.",
+          "longDescription": "The right angle is at Home. It is 12 miles from Home to the Store and 16 miles from Home to the Gas Station, with the third side joining the Store to the Gas Station."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-036",
@@ -18280,7 +19399,41 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "An equation is shown below. Which statement about the equation is true?",
+      "stemPlain": "An equation is shown below. Which statement about the equation is true?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">2 (4x + 5) = 5 (2x + 1) \u2212 2x</span>"
+      ],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "The equation has no solution.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "The equation has one solution, <span class=\"math\">x = <span class=\"frac\"><span>5</span><span>2</span></span></span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The equation has one solution, <span class=\"math\">x = <span class=\"frac\"><span>5</span><span>4</span></span></span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The equation has an infinite number of solutions.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-037",
@@ -18316,7 +19469,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Which table of values represents <span class=\"math\">y</span> as a linear function of <span class=\"math\">x</span> ?",
+      "stemPlain": "Which table of values represents y as a linear function of x ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q37.png",
+          "type": "Tables as Answer Choices",
+          "alt": "Four tables of x and y values labelled A, B, C and D, which are this item's answer choices.",
+          "longDescription": "A pairs 2 with 4, 4 with 16, 6 with 36 and 8 with 64. B pairs 2 with 8, 4 with 64, 6 with 216 and 8 with 512. C pairs 2 with 8, 4 with 32, 6 with 72 and 8 with 128. D pairs 2 with 6, 4 with 10, 6 with 14 and 8 with 18."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": true,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-038",
@@ -18352,7 +19544,46 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\">\u221a<span class=\"repeat\">10</span></span> ?",
+      "stemPlain": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of \u221a10-repeating ?",
+      "stemAfter": null,
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choiceList": [
+        {
+          "label": "A",
+          "text": "point A",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "point B",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "point C",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "point D",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2026/q38.png",
+          "type": "Number Line",
+          "alt": "A number line from 0 to 5 with four points marked A, B, C and D.",
+          "longDescription": "A is a little past 2, B is just before 3, C is just after 3, and D is a little before 5."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": null,
+      "transcribed": true
     },
     {
       "id": "g8-2026-040",
@@ -18388,7 +19619,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A cone has a height of <span class=\"math\">12</span> inches and a radius of <span class=\"math\">3.2</span> inches. What is the volume, in cubic inches, of the cone to the nearest tenth of a cubic inch?",
+      "stemPlain": "A cone has a height of 12 inches and a radius of 3.2 inches. What is the volume, in cubic inches, of the cone to the nearest tenth of a cubic inch?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    cubic inches"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "128.7 cubic inches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 8)",
+        "check": "One third times pi times 3.2 squared times 12 = 128.68..., which rounds to 128.7. The radius and height are the ones in this item's own transcribed stem, so the answer and the transcription corroborate each other."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-041",
@@ -18424,7 +19673,25 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Triangle <span class=\"math\">ABC</span> is graphed on a coordinate plane. The coordinates of the vertices are listed below. <span class=\"math\">\u2022</span> <span class=\"math\">A (6, \u22124)</span> <span class=\"math\">\u2022</span> <span class=\"math\">B (\u22123,8)</span> <span class=\"math\">\u2022</span> <span class=\"math\">C (\u22129,3)</span> Triangle <span class=\"math\">ABC</span> is dilated by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> with the center of dilation at the origin, resulting in Triangle <span class=\"math\">A\u2032B\u2032C\u2032</span>. What are the coordinates of <span class=\"math\">C\u2032</span> after the dilation?",
+      "stemPlain": "Triangle ABC is graphed on a coordinate plane. The coordinates of the vertices are listed below. \u2022 A (6, \u22124) \u2022 B (\u22123,8) \u2022 C (\u22129,3) Triangle ABC is dilated by a scale factor of (1)/(3) with the center of dilation at the origin, resulting in Triangle A\u2032B\u2032C\u2032. What are the coordinates of C\u2032 after the dilation?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "(-3, 1)",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 13)",
+        "check": "C is (-9,3) in the transcribed vertex list and the scale factor is one third about the origin, so C' is (-3,1). The vertex list is the part of this stem that was being cut in half before the extractor's right-hand bound was fixed, so the exemplary response is what confirms the repair."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-043",
@@ -18460,7 +19727,27 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A student wrote an incomplete comparison statement for two expressions as shown below. Use the properties of exponents to explain which symbol, <span class=\"math\">&gt;</span>, <span class=\"math\">&lt;</span>, or <span class=\"math\">=</span>, should be placed in the circle to make the comparison statement true.",
+      "stemPlain": "A student wrote an incomplete comparison statement for two expressions as shown below. Use the properties of exponents to explain which symbol, >, <, or =, should be placed in the circle to make the comparison statement true.",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [
+        "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> \u25cb 16<sup>8</sup> \u00b7 16<sup>12</sup></span>"
+      ],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "=",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 18)",
+        "check": "(16^5)^4 is 16^20 and 16^8 times 16^12 is also 16^20, so the two sides are equal. Both exponents come from this item's own displayed expression, which decodes as (16^5)^4 O 16^8 . 16^12 -- an expression that was dropped entirely until the comparison circle was labelled."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-044",
@@ -18496,7 +19783,32 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Sean is riding his bike along a trail. His distance from the start of the trail is a function of time, as shown in the graph below. Which segments of the graph show a period of time, if any, where Sean was resting and not riding his bike along the trail?",
+      "stemPlain": "Sean is riding his bike along a trail. His distance from the start of the trail is a function of time, as shown in the graph below. Which segments of the graph show a period of time, if any, where Sean was resting and not riding his bike along the trail?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2026/q44.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Sean's Bike Trip, distance in miles against time in hours, with five segments labelled A to E.",
+          "longDescription": "Segment A rises from the origin to 15 miles at 1 hour. Segment B is flat at 15 miles until 2 hours. Segment C rises to 40 miles at 3 hours. Segment D is flat at 40 miles until 4 hours. Segment E falls to 0 miles at 5 hours."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "Segments B and D",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 28)",
+        "check": "B and D are the horizontal segments of the graph: distance is not changing while time is, so Sean is resting. The segment letters are read from this item's own figure, which is published as an image with a long description naming them."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-045",
@@ -18532,7 +19844,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Jacqueline builds a box in the shape of a right rectangular prism with dimensions that measure <span class=\"math\">20.5</span> inches in length, <span class=\"math\">13.5</span> inches in width, and <span class=\"math\">10</span> inches in height. What is the volume, in cubic inches, of this box?",
+      "stemPlain": "Jacqueline builds a box in the shape of a right rectangular prism with dimensions that measure 20.5 inches in length, 13.5 inches in width, and 10 inches in height. What is the volume, in cubic inches, of this box?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    cubic inches"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "2,767.5 cubic inches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 38)",
+        "check": "20.5 times 13.5 is 276.75, times 10 is 2,767.5. All three dimensions are in this item's transcribed stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-046",
@@ -18568,7 +19899,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A coffee shop manager tracks the daily high temperature and the number of cups of coffee sold daily in October to predict sales in November. The manager uses this data to model the relationship between the number of cups of coffee sold daily in October, <span class=\"math\">y</span>, and the daily temperature, <span class=\"math\">x</span>, in degrees Fahrenheit with the equation <span class=\"math\">y = \u22122.3x + 187</span>. Based on the model, how many cups of coffee can the manager predict to be sold in one day in November if the high temperature for that day is <span class=\"math\">60\u00b0F</span> ?",
+      "stemPlain": "A coffee shop manager tracks the daily high temperature and the number of cups of coffee sold daily in October to predict sales in November. The manager uses this data to model the relationship between the number of cups of coffee sold daily in October, y, and the daily temperature, x, in degrees Fahrenheit with the equation y = \u22122.3x + 187. Based on the model, how many cups of coffee can the manager predict to be sold in one day in November if the high temperature for that day is 60\u00b0F ?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    cups"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "49 cups",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 48)",
+        "check": "y = -2.3(60) + 187 = -138 + 187 = 49. Both the equation and the 60 degrees F come from this item's own transcribed stem -- and the degree sign is one of the glyphs this test needed labelled, so the answer confirms the reading."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-047",
@@ -18604,7 +19954,26 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "Jack buys a circular rug with a circumference of <span class=\"math\">5.5\u03c0</span> feet. What is the area, to the nearest square foot, of the rug?",
+      "stemPlain": "Jack buys a circular rug with a circumference of 5.5\u03c0 feet. What is the area, to the nearest square foot, of the rug?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    square feet"
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "24 square feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 58)",
+        "check": "A circumference of 5.5 pi gives a diameter of 5.5 and a radius of 2.75, so the area is pi times 2.75 squared = 23.758..., which rounds to 24. The 5.5 pi is from this item's own stem."
+      },
+      "transcribed": true
     },
     {
       "id": "g8-2026-048",
@@ -18640,7 +20009,33 @@
       "alignmentStatus": null,
       "alignmentBasis": "unaligned",
       "notes": null,
-      "transcribed": false
+      "stem": "A group of friends is comparing the cost to go water tubing. The cost is proportional to the number of people in the group for two companies, Splash Zone and Tube Time, as shown in the table and the graph below. What is the difference in the cost, between the two companies, for <span class=\"math\">8</span> friends to go tubing?",
+      "stemPlain": "A group of friends is comparing the cost to go water tubing. The cost is proportional to the number of people in the group for two companies, Splash Zone and Tube Time, as shown in the table and the graph below. What is the difference in the cost, between the two companies, for 8 friends to go tubing?",
+      "stemAfter": null,
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Be sure to include how the values in the table and in the graph were used in your answer.",
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choiceList": [],
+      "figures": [
+        {
+          "file": "G8-2026/q48.png",
+          "type": "Data Table and Scatter Plot",
+          "alt": "A table titled Splash Zone and a scatter plot titled Tube Time, both giving cost against number of people.",
+          "longDescription": "The Splash Zone table pairs 3 people with 33 dollars 75, 4 with 45 dollars, 5 with 56 dollars 25 and 6 with 67 dollars 50. The Tube Time plot shows points at 2 people and 24 dollars, 3 and 36, 4 and 48, and 5 and 60."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "cr": {
+        "answer": "$6.00",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 68)",
+        "check": "Splash Zone charges 33.75 / 3 = $11.25 per person and Tube Time's graph has slope 12, so eight friends cost $90.00 and $96.00 -- a difference of $6.00. The $33.75 and the 3 are read from this item's own table image, described in its long description."
+      },
+      "transcribed": true
     }
   ],
   "unreleased": [
