@@ -819,6 +819,14 @@ KERN = re.compile(r"(?<![A-Za-z0-9])[A-Za-z] \([A-Za-z](?:\s*[-+\u2212]\s*\d+)?\
 
 # -------------------------------------------------------------------- 9. alignment
 
+def _squash(t):
+    """Compare quotes on words alone: apostrophes and dashes differ between the
+    PDF's typography and anything retyped from it."""
+    t = (t or "").lower().replace("\u2019", "'").replace("\u2018", "'")
+    t = t.replace("\u2013", "-").replace("\u2014", "-")
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
 def _norm_title(t):
     t = (t or "").lower().replace("\u2019", "'").replace("\u2018", "'")
     t = t.replace("\u2013", "-").replace("\u2014", "-")
@@ -884,7 +892,28 @@ def alignment(payload):
         m = re.search(r"Grade\s+([678])", entry.get("course") or "")
         return m.group(1) if m else (item_id[1] if item_id.startswith("g") else None)
 
+    # The lesson-detail index is gitignored (it reproduces licensed task text),
+    # so quote fidelity can only be checked on a machine that has rebuilt it.
+    detail_path = os.path.join(DATA, "im_ms_lessons_detail.json")
+    detail = load(detail_path) if os.path.exists(detail_path) else None
+
+    def activity_text(course_grade, unit, num, activity):
+        try:
+            rec = detail["grades"][str(course_grade)]["units"][str(unit)]["lessons"][str(num)]
+        except (KeyError, TypeError):
+            return None
+        for a in rec.get("activities", []):
+            if _norm_title(a.get("name")) == _norm_title(activity):
+                return " ".join(filter(None, [a.get("studentTaskStatement"),
+                                              a.get("activityNarrative"),
+                                              a.get("studentTaskAnswer")]))
+        for pp in rec.get("practiceProblems", []):
+            if _norm_title(pp.get("problem")) == _norm_title(activity):
+                return pp.get("prompt")
+        return ""
+
     missing, mistitled, wrong_unit, thin, longquote = [], [], [], [], []
+    noactivity, unquoted = [], []
     for item_id, entry in sorted(by_item.items()):
         g = grade_of(entry, item_id)
         for ev in entry.get("evidence") or []:
@@ -905,6 +934,25 @@ def alignment(payload):
             words = len((ev.get("quote") or "").split())
             if words > 15:
                 longquote.append("%s: %d words" % (where, words))
+            # A quote nobody can find is not evidence. This is the check that
+            # makes the published citation worth anything: the words must appear
+            # in the activity the entry names, in the text extracted from the
+            # teacher guide itself.
+            if detail is not None and ev.get("activity"):
+                hay = activity_text(g, entry.get("unit"), ev.get("lesson"),
+                                    ev["activity"])
+                if hay is None:
+                    continue
+                if not hay:
+                    noactivity.append("%s: no activity named %r in %s"
+                                      % (item_id, ev["activity"], where))
+                elif ev.get("quote"):
+                    a = _squash(ev["quote"])
+                    b = _squash(hay)
+                    if a not in b:
+                        unquoted.append("%s %r not found in %r"
+                                        % (item_id, ev["quote"][:60],
+                                           ev["activity"]))
         prim = entry.get("primaryLesson")
         if prim is not None:
             rec = lesson_record(g, entry.get("unit"), prim)
@@ -928,6 +976,15 @@ def alignment(payload):
           not thin, "\n".join(thin[:8]))
     check("no evidence quote exceeds 15 words",
           not longquote, "\n".join(longquote[:8]))
+    if detail is None:
+        skipped("every evidence quote appears in the activity it cites",
+                "data/im_ms_lessons_detail.json is not on this machine -- rebuild "
+                "it with tools/extract_im_ms_lesson_detail.py")
+    else:
+        check("every cited activity exists in the lesson",
+              not noactivity, "\n".join(noactivity[:8]))
+        check("every evidence quote appears in the activity it cites",
+              not unquoted, "\n".join(unquoted[:8]))
 
     # Reported, never failed. RegentsAlign's audit found 25 standards whose
     # questions had drifted to different lessons and judged 9 of them legitimate

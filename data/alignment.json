@@ -97,7 +97,7 @@
           "role": "practises",
           "activity": "Using π",
           "page": 72,
-          "quote": "One measurement for each object is listed in the table. Complete the table"
+          "quote": "One measurement for each object is listed in the table"
         },
         {
           "lesson": 8,
@@ -105,7 +105,7 @@
           "role": "assessed",
           "activity": "A Circumference of 44",
           "page": 141,
-          "quote": "A circle's circumference is approximately 44 cm. The circle's radius is approximately"
+          "quote": "The circle's radius is approximately"
         }
       ],
       "why": "The item gives a circumference and asks for the radius. Lesson 4 Activity 1 has students complete a table of radius, diameter and circumference in whichever direction the given measurement requires. The cool-down of Lesson 8 asks for the radius from a given circumference, which is the item's task exactly."
@@ -139,7 +139,7 @@
           "role": "assessed",
           "activity": "A Circumference of 44",
           "page": 141,
-          "quote": "A circle's circumference is approximately 44 cm. The circle's area is approximately"
+          "quote": "The circle's area is approximately"
         },
         {
           "lesson": 10,

@@ -36,6 +36,7 @@ Font size separates the layers cleanly, which is the whole reason this is tracta
   mixing the answer into it would make every similarity judgement read better than
   it is.
 """
+import collections
 import fitz, json, os, re, sys, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -108,8 +109,59 @@ def clean(t):
     # Titles and prose carry zero-width joiners around inline maths; left in,
     # they make "Translating to y = mx + b" compare unequal to itself.
     t = t.translate(ZERO_WIDTH)
-    t = t.replace("\u2005", " ").replace("\u2009", " ").replace("\u00a0", " ")
+    for ch in ("\u2005", "\u2009", "\u202f", "\u00a0", "\u2007", "\u2008"):
+        t = t.replace(ch, " ")
     return re.sub(r"\s+", " ", t).strip()
+
+
+BAR_RE = re.compile(r"^_+$")
+
+
+def fold_fractions(spans, floor=BODY_MIN):
+    """Rebuild fractions, which are typeset as three separate runs.
+
+    A fraction is a '_' rule at about 0.88x the body size with the numerator
+    raised above it and the denominator dropped below, both at about 0.75x. All
+    three sit under the 10pt body floor, so without this they vanish and
+    "Lin ran 2 3/5 of an hour" comes out as "Lin ran 2 of an hour" -- text that
+    reads as fluent English while having lost the number the task turns on. That
+    is the worst possible failure for evidence meant to be quoted.
+
+    Returns the body spans with a synthetic "num/den" span in the fraction's
+    place, and the fraction's own runs removed."""
+    body = [s for s in spans if floor <= s["size"] <= BODY_MAX]
+    if not body:
+        return body
+    dom = max(collections.Counter(round(s["size"], 1) for s in body).items(),
+              key=lambda kv: kv[1])[0]
+    small = [s for s in spans if 0.55 * dom <= s["size"] < floor]
+    bars = [s for s in small if BAR_RE.match(s["text"].strip())
+            and 0.75 * dom <= s["size"] <= 0.98 * dom]
+    used, out = set(), list(body)
+    for bar in bars:
+        bx0, bx1 = bar["x"] - 1.0, bar["x1"] + 1.0
+        num, den = [], []
+        for sp in small:
+            if sp is bar or id(sp) in used:
+                continue
+            if BAR_RE.match(sp["text"].strip()):
+                continue
+            if sp["x1"] < bx0 or sp["x"] > bx1:
+                continue
+            if abs(sp["y"] - bar["y"]) > 14.0:
+                continue
+            (num if sp["y"] <= bar["y"] + 0.5 else den).append(sp)
+        if not num or not den:
+            continue
+        def joined(g):
+            return clean("".join(x["text"] for x in sorted(g, key=lambda x: x["x"])))
+        text = "%s/%s" % (joined(num), joined(den))
+        for sp in num + den:
+            used.add(id(sp))
+        used.add(id(bar))
+        out.append({"x": bar["x"], "x1": bar["x1"], "y": bar["y"] + 1.5,
+                    "size": dom, "font": bar["font"], "text": text})
+    return out
 
 
 def render(spans):
@@ -216,7 +268,9 @@ def split_answer(sel):
     handwriting face is always answer and never changes the state."""
     prompt, answer = [], []
     in_answer = False
-    for s in sorted(sel, key=lambda s: (s["y"], s["x"])):
+    folded = fold_fractions([s for s in sel if ANSWER_FONT not in s["font"]])
+    folded += [s for s in sel if ANSWER_FONT in s["font"]]
+    for s in sorted(folded, key=lambda s: (s["y"], s["x"])):
         if not (BODY_MIN <= s["size"] <= BODY_MAX):
             continue
         if ANSWER_FONT in s["font"]:
@@ -348,8 +402,8 @@ def parse_lesson(doc, ent):
                 continue
             sel, _ = region(p["spans"], p["heads"], h)
             if h["kind"] == "kind":
-                name = render([s for s in sel if BODY_MIN <= s["size"] <= BODY_MAX
-                               and ANSWER_FONT not in s["font"]])
+                name = render(fold_fractions(
+                [s for s in sel if ANSWER_FONT not in s["font"]]))
                 kind = h["text"]
                 optional = ":" in kind
                 cur = {"kind": kind.split(":")[0].strip(),
