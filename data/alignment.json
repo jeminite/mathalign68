@@ -11880,6 +11880,567 @@
         }
       ],
       "why": "A line crossing the y-axis at -3 and passing through (6, 0), asking its equation. The distractors swap the slope with the intercept and flip the sign, so the item is about reading both parameters off the graph -- Lesson 7's cool-down asks for the slope and the vertical intercept of a filling tank."
+    },
+    "g8-2023-003": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "A",
+      "sectionTitle": "Dilations",
+      "primaryLesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "practises",
+          "activity": "Card Sort: Matching Dilations on a Coordinate Grid",
+          "page": 64,
+          "quote": "descriptions of dilations and graphs"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "assessed",
+          "activity": "A Dilated Image",
+          "page": 68,
+          "quote": "Draw the image of rectangle ABCD after a dilation using point P"
+        }
+      ],
+      "why": "Vertex A at (-2, 3), dilated by 2 about the origin, asking for A'. Lesson 4 is dilation on a coordinate grid. The distractors add 2 rather than multiplying, which is the error the lesson's card sort is built to separate."
+    },
+    "g8-2025-019": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "A",
+      "sectionTitle": "Dilations",
+      "primaryLesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "practises",
+          "activity": "Card Sort: Matching Dilations on a Coordinate Grid",
+          "page": 64,
+          "quote": "descriptions of dilations and graphs"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "assessed",
+          "activity": "A Dilated Image",
+          "page": 68,
+          "quote": "Draw the image of rectangle ABCD after a dilation using point P"
+        }
+      ],
+      "why": "The same dilation by 2 about the origin, with the vertex to be read off the graph rather than given. That reading costs it: p = 0.42 against g8-2023-003's 0.71."
+    },
+    "g8-2026-041": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "A",
+      "sectionTitle": "Dilations",
+      "primaryLesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "practises",
+          "activity": "Card Sort: Matching Dilations on a Coordinate Grid",
+          "page": 64,
+          "quote": "descriptions of dilations and graphs"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "assessed",
+          "activity": "A Dilated Image",
+          "page": 68,
+          "quote": "Draw the image of rectangle ABCD after a dilation using point P"
+        }
+      ],
+      "why": "A dilation by one third about the origin, coordinates given. A fractional scale factor shrinks rather than grows, which Lesson 4's cool-down uses and which the circular-grid lesson introduces with a scale factor of a third."
+    },
+    "g8-2023-038": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "C",
+      "sectionTitle": "Slope",
+      "primaryLesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "practises",
+          "activity": "Dilations and Slope Triangles",
+          "page": 171,
+          "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "assessed",
+          "activity": "Is the Point on the Line?",
+          "page": 178,
+          "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+        }
+      ],
+      "why": "A reflection over the y-axis, asking the image of a point. Unit 2 teaches transformations on coordinates but its reflections belong to Unit 1; NY-8.G.3 is tabled here, and Lesson 12 is the lesson that works transformations against coordinates generally. Worth knowing: the distractors offer all four sign combinations, so a student who knows a reflection negates ONE coordinate still has to pick which."
+    },
+    "g8-2025-046": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "C",
+      "sectionTitle": "Slope",
+      "primaryLesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "practises",
+          "activity": "Dilations and Slope Triangles",
+          "page": 171,
+          "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "assessed",
+          "activity": "Is the Point on the Line?",
+          "page": 178,
+          "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+        }
+      ],
+      "why": "A reflection over the y-axis with the vertex read off a graph, asked as a constructed response. Same reading as g8-2023-038."
+    },
+    "g8-2026-001": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "C",
+      "sectionTitle": "Slope",
+      "primaryLesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Dilations on a Square Grid",
+          "role": "introduces",
+          "activity": "Dilations on a Grid",
+          "page": 62,
+          "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "practises",
+          "activity": "Dilations and Slope Triangles",
+          "page": 171,
+          "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Using Equations for Lines",
+          "role": "assessed",
+          "activity": "Is the Point on the Line?",
+          "page": 178,
+          "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+        }
+      ],
+      "why": "A translation 4 left and 2 up, asking the image of a vertex read off the graph. At p = 0.81 the easiest of the six NY-8.G.3 items, and the contrast is the point: a translation adds where a dilation multiplies, and the adding is the one students find straightforward."
+    },
+    "g8-2024-022": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "B",
+      "sectionTitle": "Similarity",
+      "primaryLesson": 6,
+      "lessonTitle": "Similarity",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Similarity",
+          "role": "introduces",
+          "activity": "Similarity Transformations (Part 1)",
+          "page": 90,
+          "quote": "Find a sequence of translations, rotations, reflections"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "practises",
+          "activity": "Are They Similar?",
+          "page": 105,
+          "quote": "These polygons are similar because their side lengths"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "assessed",
+          "activity": "How Do You Know?",
+          "page": 112,
+          "quote": "Are these 2 figures similar? Explain how you know."
+        }
+      ],
+      "why": "A rotation followed by a dilation by 2, asking how the two triangles relate. The answer is similar but not congruent, which is what a dilation by anything other than 1 produces. Lesson 6 is where similarity is defined as a sequence including a dilation."
+    },
+    "g8-2025-028": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "B",
+      "sectionTitle": "Similarity",
+      "primaryLesson": 6,
+      "lessonTitle": "Similarity",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Similarity",
+          "role": "introduces",
+          "activity": "Similarity Transformations (Part 1)",
+          "page": 90,
+          "quote": "Find a sequence of translations, rotations, reflections"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "practises",
+          "activity": "Are They Similar?",
+          "page": 105,
+          "quote": "These polygons are similar because their side lengths"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "assessed",
+          "activity": "How Do You Know?",
+          "page": 112,
+          "quote": "Are these 2 figures similar? Explain how you know."
+        }
+      ],
+      "why": "Which transformation makes a figure similar BUT NOT congruent -- the answer is a dilation with scale factor not 1, and the three distractors are the three rigid motions. This is the definition of similarity stated as a multiple-choice question, which is Lesson 6's subject reduced to one line."
+    },
+    "g8-2023-029": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "B",
+      "sectionTitle": "Similarity",
+      "primaryLesson": 6,
+      "lessonTitle": "Similarity",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Similarity",
+          "role": "introduces",
+          "activity": "Similarity Transformations (Part 1)",
+          "page": 90,
+          "quote": "Find a sequence of translations, rotations, reflections"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "practises",
+          "activity": "Are They Similar?",
+          "page": 105,
+          "quote": "These polygons are similar because their side lengths"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "assessed",
+          "activity": "How Do You Know?",
+          "page": 112,
+          "quote": "Are these 2 figures similar? Explain how you know."
+        }
+      ],
+      "why": "A triangle and a smaller turned image, asking which SEQUENCE produced it. The choices pair a scale factor of 2 or a half with a rotation, so the student must read the direction of the size change as well as the turn. Lesson 6's first activity asks for exactly such a sequence."
+    },
+    "g8-2026-010": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "B",
+      "sectionTitle": "Similarity",
+      "primaryLesson": 6,
+      "lessonTitle": "Similarity",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Similarity",
+          "role": "introduces",
+          "activity": "Similarity Transformations (Part 1)",
+          "page": 90,
+          "quote": "Find a sequence of translations, rotations, reflections"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "practises",
+          "activity": "Are They Similar?",
+          "page": 105,
+          "quote": "These polygons are similar because their side lengths"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Similar Polygons",
+          "role": "assessed",
+          "activity": "How Do You Know?",
+          "page": 112,
+          "quote": "Are these 2 figures similar? Explain how you know."
+        }
+      ],
+      "why": "Two rectangles, asking which sequence shows them similar but not congruent. At p = 0.34 the hardest of the five, and the reason is in the choices: they vary the rigid motion AND the scale factor independently, so both halves of the sequence must be right."
+    },
+    "g8-2026-017": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 2,
+      "unitTitle": "Dilations, Similarity, and Introducing Slope",
+      "sectionLetter": "B",
+      "sectionTitle": "Similarity",
+      "primaryLesson": 9,
+      "lessonTitle": "Side Length Quotients in Similar Triangles",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 2 is where dilation and similarity are taught. NY-8.G.3 is tabled at lessons 4, 5 and 12 and NY-8.G.4 at 6, 7 and 9",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Side Length Quotients in Similar Triangles",
+          "role": "introduces",
+          "activity": "Quotients of Sides Within Similar Triangles",
+          "page": 131,
+          "quote": "Triangle ABC is similar to triangles DEF, GHI, and JKL."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Side Length Quotients in Similar Triangles",
+          "role": "practises",
+          "activity": "Using Side Quotients to Find Side Lengths of Similar Triangles",
+          "page": 133,
+          "quote": "The side lengths of the triangles all have the same"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Side Length Quotients in Similar Triangles",
+          "role": "assessed",
+          "activity": "Similar Sides",
+          "page": 136,
+          "quote": "The 2 triangles shown are similar."
+        }
+      ],
+      "why": "Two similar triangles with measurements given, asking for an angle and a side in the image. This is the only NY-8.G.4 item that COMPUTES with similarity rather than recognising it, so it sits at Lesson 9, which is about side-length quotients, and not with the four at Lesson 6. The distractors halve the angle as well as the side, which is the error the lesson exists to prevent: a dilation scales lengths and leaves angles alone."
     }
   }
 }
