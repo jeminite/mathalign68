@@ -160,7 +160,6 @@ python3 tools/extract_standards.py        # -> data/standards.json
 python3 tools/extract_item_map.py <pdf>   # -> provenance/itemmap_<testId>.json
 python3 tools/build_pagemap.py <pdf>      # -> provenance/pagemap_<testId>.json
 python3 tools/build_items.py              # -> data/items.json
-python3 tools/compute_alignment.py        # applies data/alignment.json          [Phase 3]
 python3 publish.py && python3 tools/preflight.py
 ```
 
@@ -264,7 +263,7 @@ promise and is just the wrong denominator.
 from the educator guide and cross-validated against all 420 standard citations in the twelve
 item maps; test blueprint authored with its counts confirmed twice; all twelve maps extracted,
 plus the two CCLS-era 2022 maps kept as regression coverage; 387 of 396 items deep-linked to
-their exact PDF page; the five-tab site built and passing a 53-check deploy gate.
+their exact PDF page; the site built and passing a 108-check deploy gate.
 
 **Phase 2, the class-results analyzer, is built** — the part your colleagues will actually use.
 Drop a NYSED *Item Student Analysis* export on `/analyze/` and it identifies the test from its
@@ -272,5 +271,6 @@ own headers, scores it against NYSED's answer key, and puts each item beside the
 P-value. `provenance/isa_format.md` documents the format and what it can be trusted for.
 
 Next is the per-item curriculum alignment (`data/alignment.json`), which is what fills the
-analyser's "Imagine IM" column — every grade 6 entry is still draft, so it currently reads
-"not yet placed". See `RESUME.md`.
+analyser's "Imagine IM" column. Grade 7 is placed and published; grades 8 and 6 are not
+started, so for a grade 6 export — which is the only real ISA in hand — that column still
+reads "not yet placed" for every item. See `RESUME.md`.

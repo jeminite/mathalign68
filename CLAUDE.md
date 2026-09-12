@@ -2,9 +2,13 @@
 
 Read `README.md` first for what this project is. This file is about how to work in it.
 
-`../RELATIONSHIPS.md` (via the Desktop symlink) is the authoritative description of how this
+`~/Desktop/ClaudeProjects/RELATIONSHIPS.md` is the authoritative description of how this
 project relates to RegentsAlign, AlgebraTeaching and TeachingBrain. If a relationship changes,
 fix it there first, then update the pointer here.
+
+The path is absolute on purpose. This repository actually lives at
+`~/Developer/ClaudeProjects/MathAlign68` and is symlinked into the Desktop hub, so a relative
+`../RELATIONSHIPS.md` resolves to `~/Developer/ClaudeProjects/`, where the file does not exist.
 
 ## The one rule that matters most
 

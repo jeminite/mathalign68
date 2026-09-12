@@ -2,8 +2,8 @@
 
 ## Status
 
-**Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a 53-check deploy
-gate that passes. Not yet deployed to Netlify — that needs a site created and linked.
+**Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a deploy gate
+that passes — 108 checks, 0 skipped.
 
 **Live and public at <https://mathalign68.netlify.app>.** 396 items across grades 6-8, 42 of them
 (all of 2026 grade 7) showing the actual question, and an About & corrections tab with a working
@@ -52,8 +52,9 @@ and the HTML is only re-scanned on a deploy, so enabling it needs a redeploy to 
 The class-results analyzer is now built and gated (`site/analyze/`, sources in
 `templates/analyze/`). It reads a NYSED ISA export entirely in the browser, identifies the test
 from the file's own headers, and compares each item to NYSED's statewide P-value; see
-`provenance/isa_format.md`. Its "Imagine IM" column is the one part still empty, because grade 6
-alignment entries are all draft.
+`provenance/isa_format.md`. Its "Imagine IM" column fills from the per-item alignment, which
+exists for grade 7 only — so a grade 6 export, the one real ISA in hand, still reads "not yet
+placed" for every item until grade 6 is swept.
 
 | Phase | State | Blocked by |
 |---|---|---|
@@ -105,8 +106,8 @@ methods (the geometry parser and a plain-text count of the type strings).
 - Five tabs — Standards, Difficulty, Blueprint, Post-test standards, Items — with a grade 6/7/8
   switcher that carries its own accent colour, so a screenshot of one grade cannot be mistaken
   for another. Verified in a browser on all three grades with no console errors.
-- `tools/preflight.py` — 53 checks, 13 sections, currently 53 passed / 0 failed / 3 skipped
-  (the skips are Phase 2 and Phase 3 suites and say so).
+- `tools/preflight.py` — now 108 checks and 0 skipped; it was 53 with 3 skips when Phase 1
+  closed, and the skips were the Phase 2 and Phase 3 suites, which now run.
 - `tools/test_extractor.py` — 169 checks: goldens for all 14 extractions, property tests that
   consult no golden, and a test that deliberately breaks column assignment and requires the
   suite to notice.
