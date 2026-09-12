@@ -1,0 +1,109 @@
+/* The analyse page only. base.css and question.css are inlined ahead of this,
+ * so the page inherits the site's colour tokens, typography and dark mode; this
+ * file holds nothing but what the report itself needs. */
+
+.wrap-a { max-width:1100px; margin:0 auto; padding:22px 18px 60px }
+.back { display:inline-block; margin-bottom:14px; color:var(--accent); text-decoration:none; font-weight:600 }
+.back:hover { text-decoration:underline }
+
+.drop {
+  border:2px dashed var(--line); border-radius:12px; background:var(--card);
+  padding:38px 22px; text-align:center; box-shadow:var(--shadow);
+}
+.drop.over { border-color:var(--accent); background:var(--accent-soft) }
+.drop h2 { margin:0 0 8px; color:var(--ink) }
+.drop p { margin:6px auto; max-width:62ch; color:var(--body) }
+.drop input { display:none }
+.drop label {
+  display:inline-block; margin-top:14px; background:var(--accent); color:#fff;
+  padding:10px 18px; border-radius:8px; font-weight:600; cursor:pointer;
+}
+.drop label:hover { background:var(--accent-d) }
+
+.privacy {
+  margin:18px auto 0; max-width:70ch; font-size:13.5px; color:var(--muted);
+  border-left:3px solid var(--easy); padding-left:12px; text-align:left;
+}
+
+.ident { margin-bottom:14px }
+.ident h2 { margin:0 0 4px; color:var(--ink) }
+
+.caution {
+  background:var(--mid-soft); border-left:4px solid var(--mid); color:var(--body);
+  padding:12px 14px; border-radius:0 8px 8px 0; margin:14px 0;
+}
+.warn {
+  background:var(--hard-soft); border-left:4px solid var(--hard); color:var(--body);
+  padding:12px 14px; border-radius:0 8px 8px 0; margin:14px 0;
+}
+.err {
+  background:var(--hard-soft); border:1px solid var(--hard); color:var(--body);
+  padding:16px; border-radius:8px; margin:14px 0;
+}
+.note { font-size:13.5px; color:var(--muted); max-width:78ch }
+.muted { color:var(--muted) }
+
+.overall {
+  display:flex; gap:14px; flex-wrap:wrap; margin:16px 0 6px;
+}
+.overall > div {
+  flex:1 1 160px; background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:12px 14px; box-shadow:var(--shadow);
+}
+.overall .lbl { display:block; font-size:12.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em }
+.overall .big { display:block; font-size:26px; font-weight:700; color:var(--ink) }
+
+h3 { margin:28px 0 8px; color:var(--ink); font-size:18px }
+
+.dom {
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; margin:10px 0; box-shadow:var(--shadow);
+}
+.dom-h { display:flex; align-items:center; gap:8px; font-weight:600; color:var(--ink); flex-wrap:wrap }
+.dom-h .spacer { flex:1 }
+.dom-h .std { font-weight:500; color:var(--muted) }
+.dom .stem { margin:8px 0; color:var(--body) }
+.dom .pick { margin:8px 0 4px; color:var(--body) }
+.tally { margin:4px 0 0 }
+.t {
+  display:inline-block; padding:2px 8px; margin-right:4px; border-radius:6px;
+  background:var(--line-soft); color:var(--body); font-size:13px;
+}
+.t-ok { background:var(--easy-soft); color:var(--easy); font-weight:700 }
+
+table.grid { width:100%; border-collapse:collapse; margin:10px 0; font-size:14px }
+table.grid th, table.grid td {
+  border-bottom:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top;
+}
+table.grid th { color:var(--muted); font-size:12.5px; text-transform:uppercase; letter-spacing:.03em }
+table.grid tbody tr:hover { background:var(--line-soft) }
+table.grid a { color:var(--accent); text-decoration:none; font-weight:600 }
+table.grid a:hover { text-decoration:underline }
+
+.g-bad  { color:var(--hard); font-weight:700 }
+.g-low  { color:var(--mid);  font-weight:600 }
+.g-good { color:var(--easy); font-weight:600 }
+.g-flat { color:var(--muted) }
+.post {
+  background:var(--post-soft); color:var(--post); border-radius:5px;
+  padding:1px 6px; font-size:11.5px; font-weight:600;
+}
+
+.actions { margin:26px 0 0; display:flex; gap:10px; flex-wrap:wrap }
+.actions button {
+  background:var(--accent); color:#fff; border:0; border-radius:8px;
+  padding:10px 16px; font:inherit; font-weight:600; cursor:pointer;
+}
+.actions button:hover { background:var(--accent-d) }
+
+/* A printed report is the thing that gets taken to a meeting, so it is laid
+ * out rather than left to the browser: no controls, no drop zone, and tables
+ * that do not break across a page mid-row. */
+@media print {
+  .drop, .actions, .back { display:none !important }
+  body { background:#fff }
+  .wrap-a { max-width:none; padding:0 }
+  table.grid { font-size:11px }
+  table.grid tr, .dom { page-break-inside:avoid }
+  .caution, .warn { border-left-width:3px }
+}

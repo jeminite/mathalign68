@@ -1054,7 +1054,10 @@ def privacy(payload):
     # Scan the built files for identifier-shaped text. Comments are stripped
     # first, or prose *about* privacy counts as evidence of a breach -- a
     # false positive RegentsAlign hit and fixed the same way.
-    for name in ("index.html", "data.json"):
+    # Every page site/ uploads, not just the top-level two. The analyse page
+    # was outside this loop at first, which is the one page whose whole job is
+    # handling a file that might have names in it.
+    for name in ("index.html", "data.json", os.path.join("analyze", "index.html")):
         path = os.path.join(SITE, name)
         if not os.path.exists(path):
             continue
@@ -1082,6 +1085,35 @@ def privacy(payload):
                    and "nysedregents.org" not in u and "nysed.gov" not in u]
         check("the analyze page loads nothing from a third-party origin",
               not outside, str(sorted(set(outside))))
+
+        # No <script src> at all, to any origin. The origin check above tests
+        # where a script comes from; this tests that there is no such tag to
+        # point anywhere in the first place, so the page cannot acquire a
+        # third-party dependency by someone editing a URL. It is also why
+        # templates/analyze/xlsx.js exists rather than a vendored SheetJS.
+        check("the analyze page has no external script tag",
+              not re.search(r"<script[^>]+\bsrc\s*=", blob),
+              str(re.findall(r"<script[^>]+src\s*=[^>]*>", blob)[:2]))
+
+        # One request, and it is the published data. A second fetch would be a
+        # second thing a colleague's file could conceivably be sent to.
+        fetched = re.findall(r"""fetch\s*\(\s*["']([^"']+)""", blob)
+        check("the analyze page fetches nothing but ../data.json",
+              fetched == ["../data.json"], str(fetched))
+
+        # The in-browser guard has to be in the page that ships, not only in
+        # the template the suite imports -- and it has to be CALLED. Checking
+        # for the bare name passes on a comment that merely mentions it, and
+        # passed on a deliberately renamed function during this check's own
+        # sabotage test, because the new name contained the old one.
+        check("the analyze page calls assertNoIdentity on the finished report",
+              re.search(r"\bassertNoIdentity\s*\(\s*report\s*\)", blob) is not None)
+
+        # The promise the page makes to the teacher reading it. If the copy
+        # goes, the page is claiming less than it does -- and a colleague
+        # deciding whether to drop a file has nothing to go on.
+        check("the analyze page states that the file is not uploaded",
+              "does not leave this computer" in blob)
 
 
 # ----------------------------------------------------------------- 11. the site
@@ -1128,6 +1160,26 @@ def feedback_form(html):
     the static markup -- not built by app.js, which renders every tab at
     runtime and would leave submissions going nowhere with no visible sign.
     """
+    # The analyse page is generated from templates/analyze/ like everything else
+    # in site/. Rebuilding and comparing catches a direct edit to site/, which
+    # would be lost on the next publish and is the house rule this project
+    # states first: everything in site/ is generated.
+    analyze_path = os.path.join(SITE, "analyze", "index.html")
+    check("site/analyze/index.html exists", os.path.exists(analyze_path))
+    # The analyser is the colleague-facing half of the project and lives on its
+    # own page, so the only way anyone reaches it is this link. It was missing
+    # from the first build of it: the page shipped, worked, and was unreachable.
+    check("the main page links to the analyser", 'href="analyze/"' in html)
+    if os.path.exists(analyze_path):
+        sys.path.insert(0, ROOT)
+        from build import render as _render
+        import publish as _publish
+        rebuilt = _render.render_analyze(_publish.DISCLAIMER)
+        check("site/analyze/index.html matches templates/analyze/",
+              open(analyze_path).read() == rebuilt,
+              "the built page differs from a fresh render -- site/ was hand-edited, "
+              "or publish.py was not re-run")
+
     check("the correction form is in the static HTML, where Netlify can find it",
           'data-netlify="true"' in html and 'name="correction"' in html,
           "a form built by app.js is never detected, and submissions vanish silently")
@@ -1173,10 +1225,25 @@ def suites():
               out.returncode == 0 and sentinel in body,
               "\n".join(body.strip().split("\n")[-8:]))
 
-    for name, script in (("engine", "test_engine.js"), ("render", "test_render.js")):
+    # The analyser's two suites. Until Phase 2 these only had a skip branch and
+    # no branch that ran them, so writing the files made the skips disappear
+    # and looked like the checks had started passing. A skip and a pass are
+    # different outcomes and the gate has to be able to tell them apart.
+    for name, script, sentinel in (("engine", "test_engine.js", "all checks passed"),
+                                   ("render", "test_render.js", "all render checks passed")):
         path = os.path.join(HERE, script)
         if not os.path.exists(path):
             skipped("%s suite" % name, "%s does not exist yet (Phase 2)" % script)
+            continue
+        if not os.path.isdir(os.path.join(ROOT, "node_modules")):
+            skipped("%s suite" % name, "node_modules is absent -- run npm install")
+            continue
+        out = subprocess.run(["node", path], capture_output=True, text=True,
+                             timeout=600, cwd=ROOT)
+        body = out.stdout + out.stderr
+        check("%s suite passes" % name,
+              out.returncode == 0 and sentinel in body,
+              "\n".join(body.strip().split("\n")[-8:]))
 
 
 # --------------------------------------------------- 13. keys, by a second method

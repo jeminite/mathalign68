@@ -23,8 +23,8 @@ and 118 constructed-response answers taken from NYSED's own exemplary responses.
 remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
 their standard, their statewide P-value and a link to the official page.
 
-Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned) and the class-results
-analyzer.
+Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned). The class-results
+analyzer is done.
 
 ### Two Netlify settings that were wrong at first
 
@@ -35,8 +35,11 @@ while production is public. And form detection is off by default
 (`processing_settings.ignore_html_forms: true`), so the form deployed but collected nothing --
 and the HTML is only re-scanned on a deploy, so enabling it needs a redeploy to take effect.
 
-Also outstanding: the class-results analyzer (the colleague-facing half, needs no curriculum data)
-and the curriculum index now that the Teacher Course Guides are in `sources/`.
+The class-results analyzer is now built and gated (`site/analyze/`, sources in
+`templates/analyze/`). It reads a NYSED ISA export entirely in the browser, identifies the test
+from the file's own headers, and compares each item to NYSED's statewide P-value; see
+`provenance/isa_format.md`. Its "Imagine IM" column is the one part still empty, because grade 6
+alignment entries are all draft.
 
 | Phase | State | Blocked by |
 |---|---|---|
@@ -47,7 +50,7 @@ and the curriculum index now that the Teacher Course Guides are in `sources/`.
 | 2 — questions for 2026 grade 7 | done | 42 items published |
 | 3 — curriculum index from the TCGs | next | — |
 | 4 — questions for 2026 grades 6 and 8 | after 3 | — |
-| 5 — class-results analyzer | later | — |
+| 5 — class-results analyzer | done | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | waiting | the district course guides |
 | 3c — the per-standard judgement pass | after 3a/3b | — |
@@ -102,6 +105,53 @@ Two bugs the gate found in itself, both fixed and both worth remembering:
 - Section 5's checks were named for the defect rather than the property, so a passing run
   printed `ok  multiple-choice key not in A-D`, which reads as though the defect were
   acceptable. Name a check for what is true when it passes.
+
+## Done in Phase 2 — the class-results analyzer
+
+The colleague-facing half. A teacher drops their school's NYSED **ISA** export on `/analyze/`
+and gets their class beside the state, item by item. Everything happens in the browser.
+
+- `provenance/isa_format.md` — the spec, written before the code. What an ISA export is, how it
+  differs from the REDS export RegentsAlign reads, the fingerprint evidence, and the three
+  figures a change must not move (Q43 0.09/0.29, Q23 0.46/0.64, Q9 0.46/0.60).
+- `templates/analyze/xlsx.js` — ~230 lines, no dependencies. Unzips via the native
+  `DecompressionStream` and parses SpreadsheetML. It exists because the page may load nothing
+  from a third-party origin and the alternative was vendoring ~950 KB of SheetJS.
+- `templates/analyze/engine.js` — parse, identify, analyse, and `assertNoIdentity`. No DOM, no
+  network, runs in Node and the browser.
+- `templates/analyze/app.js` + `index.html` + `analyze.css` — the page. Built into one
+  self-contained `site/analyze/index.html` by `render_analyze()`, with no `<script src>` at all.
+- `tools/make_isa_fixture.js` — generates the two synthetic fixtures, deterministically.
+- `tools/test_engine.js` (44 checks) and `tools/test_render.js` (23) — `npm test`.
+
+**What made this buildable was getting a real file.** Open question 3 had said not to guess at
+four layouts, and it was right: the ISA turned out to carry no answer key at all, so
+`findKeyRow` — the function the port was supposed to reuse — could never have worked. What it
+carries instead is the standard in every header, which identifies the test outright.
+
+Five things worth remembering:
+
+- **The header standards are a better fingerprint than an answer key.** 39 of 39 against grade 6
+  2026, at most 2 against any of the other eleven tests. The analyser demands a decisive winner
+  and refuses rather than joining against the nearest neighbour.
+- **The ISA records every choice, not just the wrong ones.** REDS writes a dash when the student
+  was right, so RegentsAlign's `chose` map holds wrong answers only; here the correct letter has
+  to be excluded deliberately. Getting that backwards puts the *right* answer at the top of the
+  most-chosen-wrong column, which is the mirror of a bug RegentsAlign actually shipped.
+- **A warning that cries wolf is worse than none.** The first version counted name-shaped cells
+  and so warned on every load of the real file, whose name column holds the literal word "name"
+  78 times. Counting *distinct* values fixes it. A teacher who learns to click past the warning
+  has lost the one case it exists for.
+- **`domainLabel` is a subscore, not a domain.** The grade 5 post-test item carries "Expressions
+  and Equations", which put that name on two rows of the domain table; the item maps also yield
+  "Number Sense", "Number Systems" and "The Number Session System 2" for NS. The domain rollup
+  reads `standards[code].domainName` instead.
+- **A skip and a pass are different outcomes.** Preflight's engine/render block had only a
+  "skip if missing" branch and no branch that ran anything, so writing the files made the skips
+  vanish and looked like two checks had started passing. They now run, and the same lesson
+  applies to the guard check: testing for the string `assertNoIdentity` passed on a function
+  deliberately renamed to `guardXyz`... until the rename was thorough, because the first
+  sabotage name still contained the original as a substring. It now requires the call.
 
 ## Publishing the questions
 
@@ -615,9 +665,15 @@ Found by listing every unlabelled cluster with a rule's shape, not by any item c
    carry the full NYSNGMLS wording, and `extract_standards.py` now fills `statement` for 110 of
    146. The 36 without are 34 grade 5 codes (not in any 6-8 guide, expected) plus `NY-6.G.5` and
    `NY-7.SP.1`. `clusterText` is still labelled as the cluster wherever it is shown.
-3. **Which results export will colleagues actually have?** Unknown, which is why the analyzer is
-   specified as a sniffing cascade with a fill-in template fallback. Worth simply asking a
-   colleague before building Phase 2 rather than guessing at four layouts.
+3. ~~**Which results export will colleagues actually have?**~~ **Resolved 2026-09-12.** A real one
+   arrived: the NYSED **ISA** (*Item Student Analysis*) export, one sheet, one row per student,
+   headers reading `Q1 (6.RP.2)`. No sniffing cascade and no fill-in template were needed --
+   those headers identify the test outright, scoring 39 of 39 against grade 6 2026 and at most 2
+   against any other test, so the analyser never asks the teacher which test it is. The full
+   layout, the evidence, and the three figures a change must not move are in
+   `provenance/isa_format.md`. The one thing the ISA does **not** carry is an answer key, so
+   scoring depends entirely on the published payload -- the opposite of the REDS export
+   RegentsAlign reads, and the reason its `findKeyRow` did not survive the port.
 4. ~~**The Imagine IM New York 6–8 course guides have arrived.**~~ **Phase 3 done** — the index is
    built, validated and live; see the Phase 3 section above. All three hazards below are carried in
    `data/im_ms_reference.json`'s `meta.hazards` and shown on the site's Curriculum tab. Original

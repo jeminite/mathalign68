@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-grade="6">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Class results — MathAlign68</title>
+<meta name="description" content="Compare your class's NYS grades 6-8 mathematics results to the statewide figure, item by item. Runs entirely in your browser; your file is never uploaded.">
+<style>
+/*__CSS__*/
+/*__QUESTION_CSS__*/
+/*__ANALYZE_CSS__*/
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="title">
+      <h1>Class results</h1>
+      <span class="sub">Your class against New York State, question by question</span>
+    </div>
+    <p class="disclaimer">__DISCLAIMER__</p>
+  </div>
+</header>
+
+<main class="wrap-a">
+  <a class="back" href="../">&larr; Back to MathAlign68</a>
+
+  <div id="drop" class="drop">
+    <h2>Drop your ISA export here</h2>
+    <p>The <em>Item Student Analysis</em> workbook your school downloads from NYSED — the
+       one whose headings read like <code>Q1 (6.RP.2)</code>, with one row per student.</p>
+    <p class="muted">Grades 6, 7 and 8; 2023 through 2026. The file tells the page which
+       test it is, so there is nothing to choose.</p>
+    <input type="file" id="file" accept=".xlsx">
+    <label for="file">Choose a file</label>
+
+    <div class="privacy">
+      <strong>Your file does not leave this computer.</strong> It is read in the browser
+      and nothing is uploaded — this page makes one network request, for the published
+      item data, and none at all once the report is on screen. The question grid is
+      located first and the student-name column is never read, so a name cannot reach
+      the report even if you forget to delete it. Only a column headed exactly
+      <em>Class</em> is read alongside the answers, and only when its values look like
+      section codes rather than anything identifying.
+    </div>
+  </div>
+
+  <section id="out" aria-live="polite"></section>
+</main>
+
+<script>
+/*__XLSX__*/
+</script>
+<script>
+/*__ENGINE__*/
+</script>
+<script>
+/*__ANALYZE_APP__*/
+</script>
+</body>
+</html>

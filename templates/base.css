@@ -72,6 +72,13 @@ code, .mono { font-family:ui-monospace, SFMono-Regular, Menlo, monospace }
 }
 .tabs button:hover { color:var(--ink) }
 .tabs button[aria-selected="true"] { color:var(--accent); border-bottom-color:var(--accent) }
+/* The one link among the tabs. Styled to match them but marked out as going
+   somewhere, because it leaves the single-page app for the analyse page. */
+.tabs .tab-link {
+  margin-left:auto; align-self:center; color:var(--accent); font-weight:600;
+  text-decoration:none; padding:8px 12px; border-radius:7px; background:var(--accent-soft);
+}
+.tabs .tab-link:hover { background:var(--accent); color:#fff }
 
 /* ------------------------------------------------------------------- cards */
 .card {

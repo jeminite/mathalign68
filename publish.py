@@ -9,6 +9,7 @@ Reads  : data/items.json, data/standards.json, data/blueprint.json
          templates/
 Writes : site/index.html   self-contained, payload embedded
          site/data.json    the public contract -- byte-identical payload
+         site/analyze/     the class-results analyser, self-contained
 
 This is the file you deploy. Everything in site/ is generated: direct edits
 there are lost on the next build.
@@ -37,6 +38,7 @@ from build import render as render_mod            # noqa: E402
 SITE = os.path.join(HERE, "site")
 ASSETS = os.path.join(HERE, "assets")
 SITE_ASSETS = os.path.join(SITE, "assets")
+SITE_ANALYZE = os.path.join(SITE, "analyze")
 
 # Shown under the title on every page. Edit this string to change the wording.
 DISCLAIMER = (
@@ -83,9 +85,22 @@ def main():
         sys.exit("publish.py: refusing to publish, %d referenced image(s) are missing: %s"
                  % (len(missing), ", ".join(missing[:4])))
 
+    analyze_html = render_mod.render_analyze(DISCLAIMER)
+
     os.makedirs(SITE, exist_ok=True)
     with open(os.path.join(SITE, "index.html"), "w") as fh:
         fh.write(html)
+
+    # Cleared first, for the same reason the figures are: a file left behind
+    # from a previous build still matches its filename and therefore looks
+    # current. The analyser is one self-contained page, so anything else in
+    # here is a leftover -- including, once, a working doc that was being
+    # served publicly because site/ is uploaded wholesale.
+    if os.path.isdir(SITE_ANALYZE):
+        shutil.rmtree(SITE_ANALYZE)
+    os.makedirs(SITE_ANALYZE)
+    with open(os.path.join(SITE_ANALYZE, "index.html"), "w") as fh:
+        fh.write(analyze_html)
     with open(os.path.join(SITE, "data.json"), "w") as fh:
         json.dump(payload, fh, indent=2)
         fh.write("\n")
@@ -95,6 +110,8 @@ def main():
           % (len(html.encode("utf-8")) / 1024.0))
     print("wrote site/data.json   (%.0f KB)"
           % (os.path.getsize(os.path.join(SITE, "data.json")) / 1024.0))
+    print("wrote site/analyze/index.html  (%.0f KB)"
+          % (len(analyze_html.encode("utf-8")) / 1024.0))
     print("  grades %s, %d-%d, %d tests, %d released items, %d credits"
           % (m["grades"], m["years"][0], m["years"][-1], m["tests"],
              m["releasedItems"], m["releasedCredits"]))

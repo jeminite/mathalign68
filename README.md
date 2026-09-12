@@ -24,8 +24,9 @@ Every item carries NYSED's own statewide P-value. You can tell "my class struggl
 "New York State struggled", which changes what you do next.
 
 **"How did my class actually do, standard by standard?"**
-Drop your results file on the analyse page. It runs entirely in your browser, your file is never
-uploaded, and it compares your class to the state item by item.
+Drop your school's ISA export on the analyse page. It works out which test it is from the file
+itself, runs entirely in your browser, and compares your class to the state item by item. Your
+file is never uploaded, and the student-name column is never read.
 
 ## What you get
 
@@ -37,7 +38,7 @@ uploaded, and it compares your class to the state item by item.
 | **Post-test standards** | Which prior-grade standards each test assesses, and where they sit in the curriculum |
 | **The questions** | Stem, answer choices, figures and constructed-response answers, where transcribed |
 | **Curriculum alignment** | Unit, section and lesson in Imagine IM 6–8 *(Phase 3)* |
-| **Class analysis** | Your results vs. the state, in your browser, nothing uploaded *(Phase 2)* |
+| **Class analysis** | Your results vs. the state, in your browser, nothing uploaded |
 
 **Corrections and disagreement are welcome.** There's a form on the *About & corrections* tab;
 submissions arrive through Netlify Forms. That tab also lists what is already known to be wrong,
@@ -265,5 +266,11 @@ item maps; test blueprint authored with its counts confirmed twice; all twelve m
 plus the two CCLS-era 2022 maps kept as regression coverage; 387 of 396 items deep-linked to
 their exact PDF page; the five-tab site built and passing a 53-check deploy gate.
 
-Next is Phase 2 — the class-results analyzer, which is the part your colleagues will actually
-use, and which needs no curriculum data. See `RESUME.md`.
+**Phase 2, the class-results analyzer, is built** — the part your colleagues will actually use.
+Drop a NYSED *Item Student Analysis* export on `/analyze/` and it identifies the test from its
+own headers, scores it against NYSED's answer key, and puts each item beside the statewide
+P-value. `provenance/isa_format.md` documents the format and what it can be trusted for.
+
+Next is the per-item curriculum alignment (`data/alignment.json`), which is what fills the
+analyser's "Imagine IM" column — every grade 6 entry is still draft, so it currently reads
+"not yet placed". See `RESUME.md`.
