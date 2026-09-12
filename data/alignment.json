@@ -7067,6 +7067,1381 @@
         }
       ],
       "why": "A right rectangular prism 20.5 by 13.5 by 10 inches, asking its volume. Lesson 12 is the volume-of-a-prism lesson and its cool-down asks for a volume from a base and a height. The item needs no base decomposition -- its base is a rectangle -- so Lesson 13, which decomposes irregular bases, is a step past what it asks."
+    },
+    "g8-2023-012": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "A",
+      "sectionTitle": "Inputs and Outputs",
+      "primaryLesson": 1,
+      "lessonTitle": "Inputs and Outputs",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Inputs and Outputs",
+          "role": "introduces",
+          "activity": "Guess My Rule",
+          "page": 27,
+          "quote": "Player 1 picks up a card and silently reads the rule"
+        },
+        {
+          "lesson": 1,
+          "lessonTitle": "Inputs and Outputs",
+          "role": "practises",
+          "activity": "Making Tables",
+          "page": 29,
+          "quote": "For each input-output rule, fill in the table with the outputs"
+        },
+        {
+          "lesson": 1,
+          "lessonTitle": "Inputs and Outputs",
+          "role": "assessed",
+          "activity": "What’s the Rule?",
+          "page": 33,
+          "quote": "the output should be one more than half of the input"
+        }
+      ],
+      "why": "A rule stated in words -- multiply the input by 2, then subtract 6 -- and a set of inputs, asking which value is an output. Lesson 1 is the input-output lesson and nothing more: its activities apply a stated rule to given inputs, which is the whole task. The word 'function' is not needed to answer it, and Lesson 1 does not use it either."
+    },
+    "g8-2024-038": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "A",
+      "sectionTitle": "Inputs and Outputs",
+      "primaryLesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "introduces",
+          "activity": "You Know This, Do You Know That?",
+          "page": 38,
+          "quote": "give examples of two different outputs that are possible for the same input"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "practises",
+          "activity": "Using Function Language",
+          "page": 41,
+          "quote": "write a statement like “The height a rubber ball bounces to depends"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "assessed",
+          "activity": "Wait Time",
+          "page": 45,
+          "quote": "You are in line to watch the volleyball championship."
+        }
+      ],
+      "why": "A set of ordered pairs with one pair to remove so the set becomes a function. The removed pair is the one sharing an input with another, so the test is one output per input -- Lesson 2's Activity 1 asks for exactly that counter-example."
+    },
+    "g8-2026-030": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "A",
+      "sectionTitle": "Inputs and Outputs",
+      "primaryLesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "introduces",
+          "activity": "You Know This, Do You Know That?",
+          "page": 38,
+          "quote": "give examples of two different outputs that are possible for the same input"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "practises",
+          "activity": "Using Function Language",
+          "page": 41,
+          "quote": "write a statement like “The height a rubber ball bounces to depends"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "assessed",
+          "activity": "Wait Time",
+          "page": 45,
+          "quote": "You are in line to watch the volleyball championship."
+        }
+      ],
+      "why": "The same one-output-per-input test as g8-2024-038, run forwards: choose the value of k that AVOIDS a repeated input rather than the pair that creates one."
+    },
+    "g8-2025-036": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "A",
+      "sectionTitle": "Inputs and Outputs",
+      "primaryLesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "introduces",
+          "activity": "You Know This, Do You Know That?",
+          "page": 38,
+          "quote": "give examples of two different outputs that are possible for the same input"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "practises",
+          "activity": "Using Function Language",
+          "page": 41,
+          "quote": "write a statement like “The height a rubber ball bounces to depends"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "assessed",
+          "activity": "Wait Time",
+          "page": 45,
+          "quote": "You are in line to watch the volleyball championship."
+        }
+      ],
+      "why": "A table of values with four statements, of which the key is 'a function because each input has only one output'. The item tests the definition in words, which is what Lesson 2's second activity asks students to produce."
+    },
+    "g8-2026-011": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "A",
+      "sectionTitle": "Inputs and Outputs",
+      "primaryLesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "introduces",
+          "activity": "You Know This, Do You Know That?",
+          "page": 38,
+          "quote": "give examples of two different outputs that are possible for the same input"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "practises",
+          "activity": "Using Function Language",
+          "page": 41,
+          "quote": "write a statement like “The height a rubber ball bounces to depends"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "assessed",
+          "activity": "Wait Time",
+          "page": 45,
+          "quote": "You are in line to watch the volleyball championship."
+        }
+      ],
+      "why": "Which relation is NOT a function -- the same definition as the other three, asked as a negation."
+    },
+    "g8-2023-036": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 4,
+      "lessonTitle": "Tables, Equations, and Graphs of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introduction to Functions",
+          "role": "introduces",
+          "activity": "You Know This, Do You Know That?",
+          "page": 38,
+          "quote": "give examples of two different outputs that are possible for the same input"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Tables, Equations, and Graphs of Functions",
+          "role": "practises",
+          "activity": "Equations and Graphs of Functions",
+          "page": 67,
+          "quote": "The graphs of three functions are shown."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Tables, Equations, and Graphs of Functions",
+          "role": "assessed",
+          "activity": "Subway Fare Card",
+          "page": 74,
+          "quote": "What is the output of the function when the input is"
+        }
+      ],
+      "why": "Four GRAPHS as the answer choices, asking which represents y as a function of x. It is the same definition the other NY-8.F.1 items use, but read off a graph rather than a table or a list, which is Lesson 4's subject. Worth a teacher knowing: Imagine IM never states a vertical line test, so a student meeting this item has the idea but not the shortcut."
+    },
+    "g8-2023-026": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Which Are the Same? Which Are Different?",
+          "page": 102,
+          "quote": "Here are three different ways of representing functions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "practises",
+          "activity": "Comparing Temperatures",
+          "page": 103,
+          "quote": "The graph shows the temperature between noon and midnight in City A"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "assessed",
+          "activity": "Comparing Different Areas",
+          "page": 110,
+          "quote": "The area A of a circle with radius r"
+        }
+      ],
+      "why": "A taxi described in words against a taxi given as y = 3x + 2, compared on rate of change and initial value. Lesson 7 is the lesson for comparing functions presented DIFFERENTLY, and its warm-up puts an equation, a table and a graph side by side."
+    },
+    "g8-2024-007": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Which Are the Same? Which Are Different?",
+          "page": 102,
+          "quote": "Here are three different ways of representing functions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "practises",
+          "activity": "Comparing Temperatures",
+          "page": 103,
+          "quote": "The graph shows the temperature between noon and midnight in City A"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "assessed",
+          "activity": "Beginning to See Daylight",
+          "page": 128,
+          "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+        }
+      ],
+      "why": "An equation against a table, compared on initial fee and hourly rate. Same reading as g8-2023-026 with the second representation a table rather than prose."
+    },
+    "g8-2026-027": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Which Are the Same? Which Are Different?",
+          "page": 102,
+          "quote": "Here are three different ways of representing functions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "practises",
+          "activity": "Comparing Temperatures",
+          "page": 103,
+          "quote": "The graph shows the temperature between noon and midnight in City A"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "assessed",
+          "activity": "Beginning to See Daylight",
+          "page": 128,
+          "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+        }
+      ],
+      "why": "Prose against an equation again, but the item asks only for the DIFFERENCE in hourly rate -- $99 against $49 -- so the initial values are distractor material. The comparison is still Lesson 7's."
+    },
+    "g8-2025-041": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Which Are the Same? Which Are Different?",
+          "page": 102,
+          "quote": "Here are three different ways of representing functions."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "assessed",
+          "activity": "Beginning to See Daylight",
+          "page": 128,
+          "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+        }
+      ],
+      "why": "A table against y = 6x + 12, asking the difference between the two one-time fees -- so the student must read an initial value out of a table by extrapolating back to zero hours, then subtract. At p = 0.23 this is the hardest item in the sweep, and that back-to-zero step is why: Lesson 8's tanks give the initial value in the equation rather than hiding it in a table."
+    },
+    "g8-2024-020": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 8,
+      "lessonTitle": "Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Comparing Volumes",
+          "page": 105,
+          "quote": "The volume of a sphere is a function of its radius"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "assessed",
+          "activity": "Comparing Different Areas",
+          "page": 110,
+          "quote": "The table shows the area of a square for specific side lengths."
+        }
+      ],
+      "why": "Four equations, one linear -- the distractors are x squared and x cubed. Lesson 8 is where linear functions are defined against things that are not, and Lesson 7's Comparing Volumes sets a cube's volume beside a sphere's for the same contrast."
+    },
+    "g8-2026-014": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 8,
+      "lessonTitle": "Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Comparing Volumes",
+          "page": 105,
+          "quote": "The volume of a sphere is a function of its radius"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "assessed",
+          "activity": "Comparing Different Areas",
+          "page": 110,
+          "quote": "The table shows the area of a square for specific side lengths."
+        }
+      ],
+      "why": "The same four-equation form as g8-2024-020, distractors again quadratic and cubic."
+    },
+    "g8-2025-043": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 8,
+      "lessonTitle": "Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Comparing Volumes",
+          "page": 105,
+          "quote": "The volume of a sphere is a function of its radius"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "assessed",
+          "activity": "Comparing Different Areas",
+          "page": 110,
+          "quote": "The table shows the area of a square for specific side lengths."
+        }
+      ],
+      "why": "Two equations, y = 3x + 8 and y = x squared + 2, to classify. Same reading as the two multiple-choice items, asked as a constructed response."
+    },
+    "g8-2024-033": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 8,
+      "lessonTitle": "Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "introduces",
+          "activity": "Proportional Relationships Define Linear Functions",
+          "page": 119,
+          "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "assessed",
+          "activity": "Beginning to See Daylight",
+          "page": 128,
+          "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+        }
+      ],
+      "why": "A table, with the key 'linear because the rate of change is constant'. This is the only NY-8.F.3 item that asks for the REASON rather than the classification, and constant rate of change is what Lesson 8 establishes as the defining property."
+    },
+    "g8-2023-048": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Which Are the Same? Which Are Different?",
+          "page": 102,
+          "quote": "Here are three different ways of representing functions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "practises",
+          "activity": "Comparing Volumes",
+          "page": 105,
+          "quote": "The volume of a sphere is a function of its radius"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "assessed",
+          "activity": "Beginning to See Daylight",
+          "page": 128,
+          "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+        }
+      ],
+      "why": "Three functions given as an equation, a table and a graph, each to be classified linear or nonlinear. It needs both Lesson 7's skill -- read a function in any representation -- and Lesson 8's definition, and it is placed at 7 because the three representations are the item's difficulty. At p = 0.34 it is among the harder items here."
+    },
+    "g8-2026-037": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 8,
+      "lessonTitle": "Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "introduces",
+          "activity": "Comparing Volumes",
+          "page": 105,
+          "quote": "The volume of a sphere is a function of its radius"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "practises",
+          "activity": "Is It Filling Up or Draining Out?",
+          "page": 122,
+          "quote": "There are four tanks of water."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Connecting Representations of Functions",
+          "role": "assessed",
+          "activity": "Comparing Different Areas",
+          "page": 110,
+          "quote": "The table shows the area of a square for specific side lengths."
+        }
+      ],
+      "why": "Classifying linear against nonlinear, the fifth item on this standard to do so."
+    },
+    "g8-2024-045": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 9,
+      "lessonTitle": "Linear Models",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "introduces",
+          "activity": "Proportional Relationships Define Linear Functions",
+          "page": 119,
+          "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "practises",
+          "activity": "An Illuminated Moon",
+          "page": 133,
+          "quote": "On the second day, 6% is illuminated."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "assessed",
+          "activity": "Board Game Sales",
+          "page": 139,
+          "quote": "After 12 months, they sold 4 thousand games."
+        }
+      ],
+      "why": "Two ordered pairs of a linear function, asking the rate of change. Lesson 9 models a linear function from two observations -- a candle at two times, the moon on two days -- which is exactly two points and a rate. At p = 0.27 it is the second hardest in the sweep."
+    },
+    "g8-2025-039": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 9,
+      "lessonTitle": "Linear Models",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "introduces",
+          "activity": "Proportional Relationships Define Linear Functions",
+          "page": 119,
+          "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "practises",
+          "activity": "An Illuminated Moon",
+          "page": 133,
+          "quote": "On the second day, 6% is illuminated."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "assessed",
+          "activity": "Board Game Sales",
+          "page": 139,
+          "quote": "After 12 months, they sold 4 thousand games."
+        }
+      ],
+      "why": "A table of values for a linear function, asking the rate of change. Same reading as g8-2024-045 with five rows instead of two points; at p = 0.29 it is barely easier."
+    },
+    "g8-2023-045": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 9,
+      "lessonTitle": "Linear Models",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "introduces",
+          "activity": "Proportional Relationships Define Linear Functions",
+          "page": 119,
+          "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "practises",
+          "activity": "An Illuminated Moon",
+          "page": 133,
+          "quote": "On the second day, 6% is illuminated."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "assessed",
+          "activity": "Board Game Sales",
+          "page": 139,
+          "quote": "After 12 months, they sold 4 thousand games."
+        }
+      ],
+      "why": "A table against a graph, asking which function has the greater rate of change and for both rates. It is a rate-of-change item like the other two, with the comparison of Lesson 7 layered on."
+    },
+    "g8-2024-001": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 3,
+      "lessonTitle": "Equations for Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Equations for Functions",
+          "role": "introduces",
+          "activity": "Diagrams, Equations, and Descriptions",
+          "page": 56,
+          "quote": "Match each of these descriptions with a diagram"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Equations for Functions",
+          "role": "practises",
+          "activity": "Dimes and Quarters",
+          "page": 59,
+          "quote": "Jada had some dimes and quarters that had a total value of $12.50."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Equations for Functions",
+          "role": "assessed",
+          "activity": "The Value of Some Quarters",
+          "page": 62,
+          "quote": "The value v of your quarters (in cents) is a function of n"
+        }
+      ],
+      "why": "Tickets at $15.00 each plus one $8.99 popcorn, asking which equation gives the total. The item never computes a rate -- it writes the equation -- so it belongs at Lesson 3, where a situation becomes an equation, rather than with the rate-of-change items. The distractors swap the coefficient and the constant, which is what Lesson 3's matching activity drills."
+    },
+    "g8-2026-019": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 9,
+      "lessonTitle": "Linear Models",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Equations for Functions",
+          "role": "introduces",
+          "activity": "Diagrams, Equations, and Descriptions",
+          "page": 56,
+          "quote": "Match each of these descriptions with a diagram"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "practises",
+          "activity": "An Illuminated Moon",
+          "page": 133,
+          "quote": "On the second day, 6% is illuminated."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "assessed",
+          "activity": "Board Game Sales",
+          "page": 139,
+          "quote": "After 12 months, they sold 4 thousand games."
+        }
+      ],
+      "why": "y = 3x + 30 for hot chocolate, asking what the 3 and the 30 MEAN -- profit per cup and a one-time donation. Interpreting the two parameters of a linear model in context is Lesson 9's subject; Lesson 3 is cited for where the equation form itself arrives."
+    },
+    "g8-2026-026": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 9,
+      "lessonTitle": "Linear Models",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Linear Functions",
+          "role": "introduces",
+          "activity": "Proportional Relationships Define Linear Functions",
+          "page": 119,
+          "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "practises",
+          "activity": "Recycling",
+          "page": 137,
+          "quote": "the percentage of all garbage collected between 1991 and 2013"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Linear Models",
+          "role": "assessed",
+          "activity": "Board Game Sales",
+          "page": 139,
+          "quote": "After 12 months, they sold 4 thousand games."
+        }
+      ],
+      "why": "A line on a coordinate plane, asking for the rate of change and the y-intercept together. The negative slope is what the distractors turn on -- two offer +2/3. Reading both parameters off a graph is Lesson 9's modelling work."
+    },
+    "g8-2026-018": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing and Interpreting Functions",
+      "primaryLesson": 5,
+      "lessonTitle": "More Graphs of Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "More Graphs of Functions",
+          "role": "introduces",
+          "activity": "Time and Temperature",
+          "page": 79,
+          "quote": "Approximately when is the temperature highest"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "practises",
+          "activity": "Dog Bath",
+          "page": 147,
+          "quote": "The graph shows the amount of water in the tub, in gallons"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "assessed",
+          "activity": "Lin’s Phone Charge",
+          "page": 153,
+          "quote": "When did she start using her phone?"
+        }
+      ],
+      "why": "A graph with four statements about where the function increases, decreases or is constant. Lesson 5 is where a graph is read for that qualitative behaviour, and its cool-down asks where a runner was fastest and slowest."
+    },
+    "g8-2025-044": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 10,
+      "lessonTitle": "Piecewise Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "More Graphs of Functions",
+          "role": "introduces",
+          "activity": "Time and Temperature",
+          "page": 79,
+          "quote": "Approximately when is the temperature highest"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "practises",
+          "activity": "Dog Bath",
+          "page": 147,
+          "quote": "The graph shows the amount of water in the tub, in gallons"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "assessed",
+          "activity": "Lin’s Phone Charge",
+          "page": 153,
+          "quote": "When did she start using her phone?"
+        }
+      ],
+      "why": "A roller coaster's speed against time, asking for the interval where speed is CONSTANT and what it is. A flat segment inside an otherwise varying graph is a piecewise reading, which is Lesson 10's subject -- its Dog Bath graph fills, holds and drains."
+    },
+    "g8-2026-044": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "C",
+      "sectionTitle": "Linear Functions and Rates of Change",
+      "primaryLesson": 10,
+      "lessonTitle": "Piecewise Linear Functions",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17,
+        18
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 is where functions are introduced and interpreted",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "More Graphs of Functions",
+          "role": "introduces",
+          "activity": "Time and Temperature",
+          "page": 79,
+          "quote": "Approximately when is the temperature highest"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "practises",
+          "activity": "Dog Bath",
+          "page": 147,
+          "quote": "The graph shows the amount of water in the tub, in gallons"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Piecewise Linear Functions",
+          "role": "assessed",
+          "activity": "Lin’s Phone Charge",
+          "page": 153,
+          "quote": "When did she start using her phone?"
+        }
+      ],
+      "why": "Distance against time with four labelled segments, asking which show Sean resting. Resting is the flat segment, so this is g8-2025-044's reading with the segments named for the student. At p = 0.35 it is harder than its twin, which is worth noticing: naming the segments did not make it easier."
     }
   }
 }
