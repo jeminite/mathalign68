@@ -12441,6 +12441,506 @@
         }
       ],
       "why": "Two similar triangles with measurements given, asking for an angle and a side in the image. This is the only NY-8.G.4 item that COMPUTES with similarity rather than recognising it, so it sits at Lesson 9, which is about side-length quotients, and not with the four at Lesson 6. The distractors halve the angle as well as the side, which is the error the lesson exists to prevent: a dilation scales lengths and leaves angles alone."
+    },
+    "g8-2023-002": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 7,
+      "lessonTitle": "Observing More Patterns in Scatter Plots",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Describing Linear Associations",
+          "page": 95,
+          "quote": "decide if there is an association between the 2 variables"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Observing More Patterns in Scatter Plots",
+          "role": "practises",
+          "activity": "Scatter Plot City",
+          "page": 112,
+          "quote": "Sort the cards into ca"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Observing More Patterns in Scatter Plots",
+          "role": "assessed",
+          "activity": "Make Your Own Scatter Plot",
+          "page": 117,
+          "quote": "Draw a scatter plot that shows a positive linear association and clustering."
+        }
+      ],
+      "why": "Four scatter plots, asking which best shows a LINEAR association. Lesson 7's card sort is that task -- sort scatter plots into categories -- and its cool-down asks students to draw one with a named association."
+    },
+    "g8-2026-034": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 7,
+      "lessonTitle": "Observing More Patterns in Scatter Plots",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Describing Linear Associations",
+          "page": 95,
+          "quote": "decide if there is an association between the 2 variables"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Observing More Patterns in Scatter Plots",
+          "role": "practises",
+          "activity": "Scatter Plot City",
+          "page": 112,
+          "quote": "Sort the cards into ca"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Observing More Patterns in Scatter Plots",
+          "role": "assessed",
+          "activity": "Make Your Own Scatter Plot",
+          "page": 117,
+          "quote": "Draw a scatter plot that shows a positive linear association and clustering."
+        }
+      ],
+      "why": "Four scatter plots, asking which shows a POSITIVE linear association. The same sorting as g8-2023-002 with direction added. NOTE: this item was briefly misfiled into the linear-equations unit during sweep 5, from reading a truncated listing; preflight now carries a check that would have caught it."
+    },
+    "g8-2025-038": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Describing Linear Associations",
+          "page": 95,
+          "quote": "decide if there is an association between the 2 variables"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "practises",
+          "activity": "Positive or Negative?",
+          "page": 101,
+          "quote": "decide whether it makes sense to fit a linear model to the data"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Observing More Patterns in Scatter Plots",
+          "role": "assessed",
+          "activity": "Make Your Own Scatter Plot",
+          "page": 117,
+          "quote": "Draw a scatter plot that shows a positive linear association and clustering."
+        }
+      ],
+      "why": "One scatter plot and four statements pairing direction with linearity. Unlike the other two NY-8.SP.1 items the student is not choosing among plots but DESCRIBING one, which is what Lesson 6's first activity asks for each plot in turn."
+    },
+    "g8-2024-002": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 5,
+      "lessonTitle": "Describing Trends in Scatter Plots",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "introduces",
+          "activity": "Fitting Lines",
+          "page": 80,
+          "quote": "Here are two copies of the same s"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "practises",
+          "activity": "Practice Fitting Lines",
+          "page": 85,
+          "quote": "Is this line a good fit for the data? Explain your reasoning."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "assessed",
+          "activity": "This is One Way to Do It",
+          "page": 90,
+          "quote": "I think this line is a good fit because half of the points"
+        }
+      ],
+      "why": "A scatter plot and four candidate PAIRS of points, asking which pair would draw a line best representing the data. Lesson 5 is the fitting-a-line lesson; two distractors give a horizontal and a vertical pair, which is why its cool-down argues about what makes a fit good rather than just eyeballing it."
+    },
+    "g8-2025-002": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 5,
+      "lessonTitle": "Describing Trends in Scatter Plots",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "introduces",
+          "activity": "Fitting Lines",
+          "page": 80,
+          "quote": "Here are two copies of the same s"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "practises",
+          "activity": "Practice Fitting Lines",
+          "page": 85,
+          "quote": "Is this line a good fit for the data? Explain your reasoning."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Describing Trends in Scatter Plots",
+          "role": "assessed",
+          "activity": "This is One Way to Do It",
+          "page": 90,
+          "quote": "I think this line is a good fit because half of the points"
+        }
+      ],
+      "why": "Four scatter plots each with a line drawn, asking which line best models the data. Same judgement as g8-2024-002 from the other side -- given the lines, pick the fit. At p = 0.82 the easiest item in the sweep."
+    },
+    "g8-2023-023": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Estimating Slope",
+          "page": 94,
+          "quote": "Estimate the slope of the line. Be prepared to explain your reasoning."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "practises",
+          "activity": "Interpreting Slopes",
+          "page": 97,
+          "quote": "a linear model for some data is shown"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "assessed",
+          "activity": "Trends in the Price of Used Cars",
+          "page": 106,
+          "quote": "shows the years when some used cars were made and their prices"
+        }
+      ],
+      "why": "y = 0.35x + 2 for sunflower height against fertiliser, asking what x represents. It is the only item of the five that asks about a VARIABLE rather than the slope, and it sits here because Lesson 6's Interpreting Slopes walks each model's quantities before its rate."
+    },
+    "g8-2024-018": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Estimating Slope",
+          "page": 94,
+          "quote": "Estimate the slope of the line. Be prepared to explain your reasoning."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "practises",
+          "activity": "Interpreting Slopes",
+          "page": 97,
+          "quote": "a linear model for some data is shown"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "assessed",
+          "activity": "Trends in the Price of Used Cars",
+          "page": 106,
+          "quote": "shows the years when some used cars were made and their prices"
+        }
+      ],
+      "why": "y = 0.3x + 5.8 for an alligator's weight, asking what 0.3 represents. Lesson 6's second activity is exactly this, run over several models."
+    },
+    "g8-2024-043": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Estimating Slope",
+          "page": 94,
+          "quote": "Estimate the slope of the line. Be prepared to explain your reasoning."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "practises",
+          "activity": "Interpreting Slopes",
+          "page": 97,
+          "quote": "a linear model for some data is shown"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "assessed",
+          "activity": "Trends in the Price of Used Cars",
+          "page": 106,
+          "quote": "shows the years when some used cars were made and their prices"
+        }
+      ],
+      "why": "y = 1.5x + 29 for a salary in thousands, asking what the SLOPE represents, as a constructed response. At p = 0.11 this is the hardest item in the whole of grade 8 -- and the difference from g8-2024-018, which asks the same thing at p = 0.59, is that nothing here is graphed and the units are thousands of dollars per year. Worth a teacher knowing: Lesson 6's models all come with a scatter plot attached, so the bare-equation version is never practised."
+    },
+    "g8-2026-004": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Estimating Slope",
+          "page": 94,
+          "quote": "Estimate the slope of the line. Be prepared to explain your reasoning."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "practises",
+          "activity": "Interpreting Slopes",
+          "page": 97,
+          "quote": "a linear model for some data is shown"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "assessed",
+          "activity": "Trends in the Price of Used Cars",
+          "page": 106,
+          "quote": "shows the years when some used cars were made and their prices"
+        }
+      ],
+      "why": "y = -2x + 29 for ticket sales, asking which prediction the model supports. A NEGATIVE slope in context, and the distractors confuse the 2 with the 29, which is the intercept."
+    },
+    "g8-2026-046": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 6,
+      "unitTitle": "Associations in Data",
+      "sectionLetter": "B",
+      "sectionTitle": "",
+      "primaryLesson": 8,
+      "lessonTitle": "Analyzing Bivariate Data",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 6 is Associations in Data. Its Standards by Lesson table lists 11 lessons where every other reading stops at 9, because NY-8.SP.4 was removed under NGMLS -- see blueprint.json. No item here is affected: all ten sit at lessons 1 to 8",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "The Slope of a Fitted Line",
+          "role": "introduces",
+          "activity": "Interpreting Slopes",
+          "page": 97,
+          "quote": "a linear model for some data is shown"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Analyzing Bivariate Data",
+          "role": "practises",
+          "activity": "Animal Brains",
+          "page": 122,
+          "quote": "Is there an association between the weight of an animal’s body"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Analyzing Bivariate Data",
+          "role": "assessed",
+          "activity": "Drawing a Line",
+          "page": 127,
+          "quote": "A new point will be added to the scat"
+        }
+      ],
+      "why": "y = -2.3x + 187 for coffee sales against temperature, asking students to PREDICT a value from the model rather than interpret a coefficient. Lesson 8 is where a fitted model is used on new data, which is the step past Lesson 6's interpretation."
     }
   }
 }
