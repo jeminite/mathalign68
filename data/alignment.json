@@ -6432,10 +6432,10 @@
       "course": "Imagine IM New York, Grade 6",
       "unit": 8,
       "unitTitle": "Data Sets and Distributions",
-      "sectionLetter": "D",
-      "sectionTitle": "Median and IQR",
-      "primaryLesson": 13,
-      "lessonTitle": "Median",
+      "sectionLetter": "C",
+      "sectionTitle": "Measures of Center and Variability",
+      "primaryLesson": 9,
+      "lessonTitle": "Mean and Mode",
       "candidateLessons": [
         1,
         3,
@@ -6457,6 +6457,14 @@
       "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
       "evidence": [
         {
+          "lesson": 9,
+          "lessonTitle": "Mean and Mode",
+          "role": "introduces",
+          "activity": "Mode",
+          "page": 148,
+          "quote": "The item that occurs most often in a data set is called the mode."
+        },
+        {
           "lesson": 13,
           "lessonTitle": "Median",
           "role": "practises",
@@ -6473,7 +6481,7 @@
           "quote": "Find the median height in centimeters. Show your reasoning."
         }
       ],
-      "why": "Ten science scores, asked for the mode and how it compares to the median. Lesson 13 is the median lesson and its activity is ten values of the same shape. The mode is Lesson 9's subject, but see the caveat: the lesson-detail index holds only one activity for Lesson 9 and two for Lesson 13, which is thin for ordinary lessons, so the evidence here is weaker than elsewhere in this batch and the placement should be re-read once the index is rebuilt. A second pass placed this at Lesson 9, Mean and Mode, which is where the mode is taught. It cannot be cited yet: Lesson 9 is one of the lessons whose activity boundaries the index lost, so it stores a single entry and any citation into it would name an activity that is not where the mode actually sits. Held at Lesson 13 until tools/extract_im_ms_lesson_detail.py is fixed, then re-read."
+      "why": "Ten science scores, asked for the mode and how it compares to the median. Lesson 9 is where the mode is defined and computed -- its third activity is titled 'Mode' and opens by defining it -- so the item's first question is asked there; Lesson 13 supplies the median of a ten-value set and Lesson 14 is where the curriculum tests a median. This entry was held at Lesson 13 for one reason only: the index had lost Lesson 9's activity boundaries, so its whole lesson sat in a single entry and the mode activity could not be named. The extractor is fixed, 40 headings came back, and the second pass's reading -- Lesson 9 -- is now citable and taken. Worth a teacher knowing that NO lesson in the unit compares the mode against the median, which is exactly what this item asks."
     },
     "g7-2024-014": {
       "course": "Imagine IM New York, Grade 6",

@@ -62,6 +62,38 @@ FIELD_HEADS = set(LESSON_FIELDS) | set(ACTIVITY_FIELDS) | {"Lesson Timeline",
 # The national CCSS edition writes "Activity 1: Optional" where New York writes
 # "Activity 1". Matching only the bare form lost every activity in grade 7 unit 9.
 KIND_RE = re.compile(r"^(Warm-up|Activity\s+\d+|Cool-down)(:\s*Optional)?$")
+# The text layer bakes a REAL space inside the word: page 143 of the grade 6 unit 8
+# guide carries one bold span reading "Ac tivity 1", a kerning-pair artefact. The
+# literal pattern missed it, so the parser never opened a new activity and every
+# following Student Task Statement was appended to the PREVIOUS one -- which is why
+# an affected lesson shows one oversized entry and loses its tail. 40 headings went
+# this way, across 24 lessons in 4 unit guides, and validate's
+# fewer-than-3-activities heuristic saw only 10 of them.
+#
+# Matching on the whitespace-squashed form is safe because the pattern is anchored:
+# tested against everything that currently falls through to kind="bold" -- "1 minute",
+# "1.", "pi", "Activity Narrative", "Cool-down time" -- it claims none of them.
+KIND_SQUASHED_RE = re.compile(r"^(Warm-up|Activity\d+|Cool-down)(:Optional)?$")
+
+
+def squash(t):
+    return re.sub(r"\s+", "", t or "")
+
+
+RECOVERED = []
+
+
+def canonical_kind(t):
+    """"Ac tivity 1" -> "Activity 1". Restores the one space the word needs and
+    drops the ones the typesetter put inside it."""
+    m = KIND_SQUASHED_RE.match(squash(t))
+    if not m:
+        return t
+    if not KIND_RE.match(t):
+        RECOVERED.append(t)
+    base = m.group(1)
+    base = re.sub(r"^Activity(\d+)$", r"Activity \1", base)
+    return base + (": Optional" if m.group(2) else "")
 # Lessons long enough to break across pages repeat their heading as
 # "Lesson Narrative (continued)"; without stripping that the continuation is
 # orphaned and belongs to no field.
@@ -222,7 +254,7 @@ def headings(spans):
         y, x = min(v["y"] for v in g), min(v["x"] for v in g)
         if t in FIELD_HEADS:
             kind = "field"
-        elif KIND_RE.match(t):
+        elif KIND_RE.match(t) or KIND_SQUASHED_RE.match(squash(t)):
             kind = "kind"
         elif PROBLEM_RE.match(t):
             kind = "problem"
@@ -429,6 +461,14 @@ def parse_lesson(doc, ent):
                                and BODY_MIN <= s["size"] <= BODY_MAX])
                 kind = h["text"]
                 optional = ":" in kind
+                # CANONICALISE the kind. The heading may have arrived with a
+                # space baked inside the word ("Cool-do wn"), and downstream
+                # code matches on it literally: alignment_packet.py marks an
+                # activity [ASSESSED] when its kind contains "cool-down", which
+                # "cool-do wn" does not. Storing the raw text would leave every
+                # recovered cool-down looking like an ordinary activity, so the
+                # reader would not know where the curriculum tests the skill.
+                kind = canonical_kind(kind)
                 cur = {"kind": kind.split(":")[0].strip(),
                        "optional": optional,
                        "name": name.split("  ")[0].strip(),
@@ -460,7 +500,10 @@ def parse_lesson(doc, ent):
 
 
 def main(argv):
-    grades = [int(a) for a in argv[1:]] or [6, 7]
+    # ALL THREE by default. This used to default to [6, 7], so running it with
+    # no arguments silently rebuilt the index without grade 8 and dropped 132
+    # lessons -- which looks exactly like a successful run.
+    grades = [int(a) for a in argv[1:]] or [6, 7, 8]
     out = {"meta": {"schemaVersion": 1,
                     "generatedBy": "tools/extract_im_ms_lesson_detail.py",
                     "generated": datetime.date.today().isoformat(),
@@ -468,6 +511,10 @@ def main(argv):
                     "note": "Derived from the per-unit Teacher Guides, which are "
                             "gitignored. Not published to site/data.json: see the "
                             "quoting limits in the alignment plan.",
+                    # Headings whose text layer split the word ("Ac tivity 1").
+                    # Recorded so a jump is visible: it was 0 while 40 headings
+                    # were being silently dropped, because nothing counted them.
+                    "headingsRecovered": 0,
                     "sources": {}},
            "grades": {}}
     for g in grades:
@@ -495,6 +542,9 @@ def main(argv):
             sys.stderr.write("  grade %d unit %d: %d lessons, %d pages\n"
                              % (g, u, len(lessons), doc.page_count))
             doc.close()
+    out["meta"]["headingsRecovered"] = len(RECOVERED)
+    sys.stderr.write("  recovered %d heading(s) whose text layer split the word\n"
+                     % len(RECOVERED))
     with open(OUT, "w") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
     sys.stderr.write("wrote %s (%.1f MB)\n" % (OUT, os.path.getsize(OUT) / 1e6))

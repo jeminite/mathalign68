@@ -47,6 +47,15 @@ KNOWN_TITLE_VARIANTS = {
                "Interpreting Points on a Coordinate Plane"),
 }
 
+# 6.3.2's lesson opener is a page of ilclass.com station links carrying its own
+# bold "Activity 1" heading, so the lesson parses two. Pre-existing, unrelated to
+# the split-word bug, and harmless: the phantom holds no task statement.
+KNOWN_ACTIVITY_NUMBERING = {"6.3.2"}
+
+# The three forms the guides print, and the only ones the extractor should
+# ever store. Anything else means a heading arrived damaged.
+CANON_KIND = re.compile(r"^(Warm-up|Activity \d+|Cool-down)(: Optional)?$")
+
 # The unit guide titles grade 6 lesson 3.2 "(Optional)"; the pacing table lists
 # only lessons 9 and 16 as optional in that unit. Verified in both PDFs. It has
 # a real consequence -- the unit's minimum day count would be 16, not the 17 the
@@ -144,6 +153,7 @@ def main():
     print("\n3. Every lesson carries what an alignment judgement needs")
     no_act, no_task, no_std, no_narr = [], [], [], []
     thin = []
+    noncanon, gappy = [], []
     for g, gd in sorted(detail["grades"].items()):
         for u, ud in sorted(gd["units"].items(), key=lambda kv: int(kv[0])):
             for n, rec in sorted(ud["lessons"].items(), key=lambda kv: int(kv[0])):
@@ -161,6 +171,25 @@ def main():
                 # rather than the bar being lowered for everyone.
                 if len(acts) < 3 and u != "9":
                     thin.append("%s (%d)" % (code, len(acts)))
+                # THE CHECK THAT WOULD HAVE CAUGHT THE MERGE BUG.
+                # The text layer bakes a space inside the word ("Ac tivity 1"),
+                # the heading was not recognised, no new activity opened, and
+                # every following field was appended to the PREVIOUS activity.
+                # 40 headings went that way across 24 lessons and the validator
+                # passed clean, because "fewer than 3 activities" is a symptom
+                # and saw only 10 of them. These two assert the STRUCTURE
+                # instead: a lesson's activities are numbered 1..N with no gap,
+                # and every kind is one of the three canonical forms.
+                for a in acts:
+                    k = (a.get("kind") or "").strip()
+                    if not CANON_KIND.match(k):
+                        noncanon.append("%s: %r" % (code, k))
+                nums = [int(m.group(1)) for a in acts
+                        for m in [re.match(r"^Activity\s*(\d+)$",
+                                           (a.get("kind") or "").strip())] if m]
+                if nums and sorted(nums) != list(range(1, max(nums) + 1)):
+                    if code not in KNOWN_ACTIVITY_NUMBERING:
+                        gappy.append("%s: %s" % (code, nums))
                 if not any((a.get("studentTaskStatement") or "").strip() for a in acts):
                     no_task.append(code)
                 if not rec.get("standards"):
@@ -180,6 +209,12 @@ def main():
     # Reported, not failed: a genuinely short lesson is possible and the fix is
     # in the extractor, not here. But a reader placing an item at one of these
     # is working from less than the lesson contains and should know it.
+    check("every activity's kind is one of the three canonical forms",
+          not noncanon, "\n".join(noncanon[:10]))
+    check("every lesson's activities are numbered 1..N with no gap",
+          not gappy, "\n".join(gappy[:10]))
+    note("%d heading(s) were recovered from a split word by the extractor"
+         % (detail.get("meta", {}).get("headingsRecovered", 0)))
     if thin:
         note("%d non-project lessons carry fewer than 3 activities -- an item "
              "aligned to one of these was judged against part of the lesson: %s"
