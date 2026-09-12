@@ -59,6 +59,12 @@ def skipped(name, why):
     print("  SKIP  %s -- %s" % (name, why))
 
 
+def note(msg):
+    """Informational, never fails the deploy. For facts a reader should see --
+    a drift worth looking at, a count worth knowing -- that are not defects."""
+    print("  note  %s" % msg)
+
+
 def load(path):
     with open(path) as fh:
         return json.load(fh)
@@ -506,14 +512,30 @@ def derived_unit_filter(payload):
                 "payload carries no curriculum block")
         return
 
-    leaked = [i["id"] for i in payload["items"]
-              if i.get("unit") is not None or i.get("lesson") is not None
-              or i.get("sectionLetter") is not None]
-    check("no derived unit has been written onto an item",
-          not leaked,
-          "%d item(s) carry a unit or lesson, e.g. %s -- the unit filter derives "
-          "these in the browser and they must stay null until a real per-item "
-          "alignment exists" % (len(leaked), ", ".join(leaked[:5])))
+    # A derived unit is not an alignment, and the moment it is written onto an
+    # item it starts reading like one. Before data/alignment.json existed this
+    # asserted the flat negative. Now that a real per-item alignment exists the
+    # claim has to be stronger, not weaker: a populated unit must trace to an
+    # alignment ENTRY, never to the browser's derivation.
+    align_path = os.path.join(DATA, "alignment.json")
+    populated = [i for i in payload["items"]
+                 if i.get("unit") is not None or i.get("lesson") is not None
+                 or i.get("sectionLetter") is not None]
+    if not os.path.exists(align_path):
+        check("no derived unit has been written onto an item",
+              not populated,
+              "%d item(s) carry a unit or lesson, e.g. %s -- the unit filter "
+              "derives these in the browser and they must stay null until a real "
+              "per-item alignment exists"
+              % (len(populated), ", ".join(i["id"] for i in populated[:5])))
+    else:
+        untraceable = [i["id"] for i in populated if i["alignmentBasis"] == "unaligned"]
+        check("every populated unit traces to an alignment entry, not a derivation",
+              not untraceable,
+              "%d item(s) carry a unit or lesson while alignmentBasis is "
+              "'unaligned', e.g. %s -- that is the browser's derivation leaking "
+              "into the payload as though it were a judgement"
+              % (len(untraceable), ", ".join(untraceable[:5])))
 
     known = set(payload["standards"])
 
@@ -797,6 +819,12 @@ KERN = re.compile(r"(?<![A-Za-z0-9])[A-Za-z] \([A-Za-z](?:\s*[-+\u2212]\s*\d+)?\
 
 # -------------------------------------------------------------------- 9. alignment
 
+def _norm_title(t):
+    t = (t or "").lower().replace("\u2019", "'").replace("\u2018", "'")
+    t = t.replace("\u2013", "-").replace("\u2014", "-")
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
 def alignment(payload):
     section("9. Curriculum alignment integrity")
     path = os.path.join(DATA, "alignment.json")
@@ -810,14 +838,112 @@ def alignment(payload):
               % cov["aligned"])
         return
     align = load(path)
-    drafts = [c for c, e in align.get("byStandard", {}).items() if e.get("draft")]
-    published = {i["standard"] for i in payload["items"] if i["alignmentBasis"] != "unaligned"}
-    check("no draft alignment entry reached the payload",
-          not (set(drafts) & published), str(sorted(set(drafts) & published)))
+    by_std = align.get("byStandard", {})
+    by_item = align.get("byItem", {})
+
+    # Drafts are dropped by build/payload.py, so this asserts that the drop
+    # actually happened rather than trusting it. byItem is checked as well as
+    # byStandard: the original check looked only at byStandard, and a drafted
+    # per-item entry -- which is what this project now writes -- was invisible.
+    drafted_std = {c for c, e in by_std.items() if e.get("draft")}
+    drafted_item = {i for i, e in by_item.items() if e.get("draft")}
+    published_std = {i["standard"] for i in payload["items"]
+                     if i["alignmentBasis"] != "unaligned"}
+    published_item = {i["id"] for i in payload["items"]
+                      if i["alignmentBasis"] != "unaligned"}
+    leaked = sorted((drafted_std & published_std) | (drafted_item & published_item))
+    check("no draft alignment entry reached the payload", not leaked, str(leaked[:8]))
+    note("%d of %d entries are still in draft and are not published"
+         % (len(drafted_std) + len(drafted_item), len(by_std) + len(by_item)))
+
+    # An entry may legitimately stop at the unit -- a grade whose per-unit
+    # teacher guides are not on disk cannot produce lesson-level evidence -- so
+    # the demand is keyed off the entry's own status rather than applied flatly.
+    UNIT_ONLY = ("candidates-only", "no-lesson-found")
     unresolved = [i["id"] for i in payload["items"]
-                  if i["alignmentBasis"] != "unaligned" and not i["lessonTitle"]]
-    check("every aligned item carries a lesson title",
+                  if i["alignmentBasis"] != "unaligned" and not i["lessonTitle"]
+                  and i.get("alignmentStatus") not in UNIT_ONLY]
+    check("every aligned item carries a lesson title, unless its status says otherwise",
           not unresolved, str(unresolved[:5]))
+
+    # Everything below checks the ENTRIES, published or not, because a drafted
+    # entry with a wrong citation should be caught while it is being written and
+    # not on the day someone clears its draft flag.
+    ref_path = os.path.join(DATA, "im_ms_reference.json")
+    ref = load(ref_path)["grades"] if os.path.exists(ref_path) else {}
+
+    def lesson_record(course_grade, unit, num):
+        try:
+            return ref[str(course_grade)]["units"][str(unit)]["lessons"][str(num)]
+        except (KeyError, TypeError):
+            return None
+
+    def grade_of(entry, item_id):
+        # The grade whose curriculum teaches it, which for a prior-grade standard
+        # is not the grade of the test the item sits on.
+        m = re.search(r"Grade\s+([678])", entry.get("course") or "")
+        return m.group(1) if m else (item_id[1] if item_id.startswith("g") else None)
+
+    missing, mistitled, wrong_unit, thin, longquote = [], [], [], [], []
+    for item_id, entry in sorted(by_item.items()):
+        g = grade_of(entry, item_id)
+        for ev in entry.get("evidence") or []:
+            where = "%s -> %s.%s.%s" % (item_id, g, entry.get("unit"), ev.get("lesson"))
+            rec = lesson_record(g, entry.get("unit"), ev.get("lesson"))
+            if rec is None:
+                missing.append(where)
+                continue
+            # RESOLVE BY TITLE, NEVER BY NUMBER. A citation that names a lesson
+            # number and a title that do not belong together is the exact shape
+            # of the error an edition renumbering produces, and the only way to
+            # see it is to check the pair.
+            if _norm_title(rec["title"]) != _norm_title(ev.get("lessonTitle")):
+                mistitled.append("%s: index %r, entry %r"
+                                 % (where, rec["title"], ev.get("lessonTitle")))
+            if not ev.get("activity") or not ev.get("page"):
+                thin.append(where)
+            words = len((ev.get("quote") or "").split())
+            if words > 15:
+                longquote.append("%s: %d words" % (where, words))
+        prim = entry.get("primaryLesson")
+        if prim is not None:
+            rec = lesson_record(g, entry.get("unit"), prim)
+            if rec is None:
+                missing.append("%s primaryLesson %s" % (item_id, prim))
+            elif _norm_title(rec["title"]) != _norm_title(entry.get("lessonTitle")):
+                mistitled.append("%s primaryLesson: index %r, entry %r"
+                                 % (item_id, rec["title"], entry.get("lessonTitle")))
+            elif entry.get("evidence") and prim not in [e.get("lesson") for e
+                                                        in entry["evidence"]]:
+                wrong_unit.append("%s: primaryLesson %s has no evidence entry"
+                                  % (item_id, prim))
+
+    check("every cited lesson exists in the curriculum index",
+          not missing, "\n".join(missing[:8]))
+    check("every cited lesson's title matches the index",
+          not mistitled, "\n".join(mistitled[:8]))
+    check("every primary lesson is one the evidence actually supports",
+          not wrong_unit, "\n".join(wrong_unit[:8]))
+    check("every piece of evidence names an activity and a page",
+          not thin, "\n".join(thin[:8]))
+    check("no evidence quote exceeds 15 words",
+          not longquote, "\n".join(longquote[:8]))
+
+    # Reported, never failed. RegentsAlign's audit found 25 standards whose
+    # questions had drifted to different lessons and judged 9 of them legitimate
+    # content variation, so a drift is a prompt to look, not a defect.
+    drift = {}
+    for item_id, entry in by_item.items():
+        std = next((i["standard"] for i in payload["items"] if i["id"] == item_id), None)
+        if std and entry.get("primaryLesson") is not None:
+            drift.setdefault(std, set()).add((entry.get("unit"), entry["primaryLesson"]))
+    spread = {k: v for k, v in drift.items() if len(v) > 1}
+    if spread:
+        note("%d standard(s) place their items at more than one lesson -- check "
+             "each is a real difference in what the items ask, not drift"
+             % len(spread))
+        for k in sorted(spread)[:8]:
+            note("  %s: %s" % (k, sorted(spread[k])))
 
 
 # --------------------------------------------------------------------- 10. privacy

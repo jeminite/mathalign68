@@ -46,6 +46,20 @@ below above shown following table figure figures""".split())
 
 WORD = re.compile(r"[a-z][a-z0-9']+")
 TAG = re.compile(r"<[^>]+>")
+GRADE_IN_CODE = re.compile(r"^NY-([1-8])\.")
+
+
+def home_grade(standard, item_grade):
+    """The grade whose curriculum teaches this standard, which is not always the
+    grade of the test it appears on. Every NYS test carries post-test standards
+    from the year below -- grade 8 items citing NY-7.G.2 through NY-7.G.6, for
+    instance -- and searching grade 8's lessons for those returns nothing at all,
+    because grade 8 does not teach them. Twenty items across the three grades are
+    in this position."""
+    m = GRADE_IN_CODE.match(standard or "")
+    if m and m.group(1) in ("6", "7", "8"):
+        return m.group(1)
+    return str(item_grade)
 
 
 def toks(text):

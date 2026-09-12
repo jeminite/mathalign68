@@ -198,23 +198,37 @@ def region(spans, hs, h):
     return sel, bottom > FOOT_Y
 
 
+LIST_MARKER_RE = re.compile(r"^\d+\.$|^[a-h]\.$")
+
+
 def split_answer(sel):
-    """Prompt, answer. The answer starts at the first Hellix-SemiBold 'Sample...'
-    run, or at the handwriting face, whichever comes first."""
-    cut = None
+    """Prompt, answer.
+
+    Not a single cut point. In a multi-part task the sample answer to part 1 sits
+    BETWEEN parts 1 and 2, so cutting at the first answer marker threw away every
+    part after the first -- and for one grade 8 item the discarded part 2 ("A
+    beaded medallion has a diameter of 6 centimeters. What is the area?") was a
+    closer match to the item than the part that survived.
+
+    So it is a state machine over the spans in reading order. A SemiBold
+    "Sample.../Possible..." run opens an answer; the next numbered or lettered
+    list marker, which is set in bold at the prompt's own indent, closes it. The
+    handwriting face is always answer and never changes the state."""
+    prompt, answer = [], []
+    in_answer = False
     for s in sorted(sel, key=lambda s: (s["y"], s["x"])):
-        if ANSWER_FONT in s["font"] or (
-                s["font"].startswith("Hellix-SemiBold") and ANSWER_RE.match(s["text"].strip())):
-            cut = (s["y"], s["x"])
-            break
-    def body(ss):
-        return [s for s in ss if BODY_MIN <= s["size"] <= BODY_MAX
-                and ANSWER_FONT not in s["font"]]
-    if cut is None:
-        return render(body(sel)), ""
-    before = [s for s in sel if (s["y"], s["x"]) < cut]
-    after = [s for s in sel if (s["y"], s["x"]) >= cut]
-    return render(body(before)), render(body(after))
+        if not (BODY_MIN <= s["size"] <= BODY_MAX):
+            continue
+        if ANSWER_FONT in s["font"]:
+            answer.append(s)
+            continue
+        t = s["text"].strip()
+        if s["font"].startswith("Hellix-SemiBold") and ANSWER_RE.match(t):
+            in_answer = True
+        elif s["font"] == "Hellix-Bold" and LIST_MARKER_RE.match(t):
+            in_answer = False
+        (answer if in_answer else prompt).append(s)
+    return render(prompt), render(answer)
 
 
 def page_standards(spans):

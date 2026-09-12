@@ -54,20 +54,47 @@ PDF**, because that number is what every later count check is measured against. 
 from a count you did not verify: an early rough count of these maps came out 3–4 items high per
 test because secondary-standard citations look like item rows.
 
-## Aligning a standard to the curriculum
+## Aligning an item to the curriculum
 
-Use the `mathalign-align-standard` skill. Alignment is **per standard, not per item** — with no
-item stem there is no item-specific evidence to judge on. Item-level overrides exist in
-`alignment.json.byItem`, and each must name which signal justified it (credits, session, or a
-secondary standard). Read `alignment.json.conventions` before writing an entry; it is the
-project's alignment prompt and it takes precedence over your own instinct about a placement.
+Use `tools/alignment_packet.py <standard>`, which assembles the items on a
+standard beside the lessons worth reading. `data/alignment.json` is the only file
+in `data/` a person edits, and `alignment.json.conventions` is the project's
+alignment prompt: read it before writing an entry, and let it take precedence
+over your own instinct about a placement.
 
-Resolve lessons **by title, never by number**. Editions renumber; titles do not. This is
-RegentsAlign's hardest-won rule — it lost a week to a Unit 6 numbering offset — and it applies
-here from the first entry rather than after the first mistake.
+**Alignment is per item, not per standard.** This reverses what this file used to
+say. The old rule existed because there were no stems -- "with no item stem there
+is no item-specific evidence to judge on" -- and that stopped being true when 387
+of 396 items became reviewed transcriptions. Two items on one standard routinely
+ask different things: of the three grade 8 items citing `NY-7.G.4`, one asks for
+an area from a diameter and another for a radius from a circumference, and they
+belong at different lessons.
 
-Have a second pass **re-derive** the placement from the standard-to-lesson table rather than
-review the first pass's prose. Reviewing prose finds typos; re-deriving finds wrong answers.
+**Evidence or nothing.** A lesson is recorded only when a specific activity can
+be named, paged and quoted. Topical similarity is not evidence, and `preflight.py`
+refuses an evidence entry without an activity and a page. If nothing in the
+searched lessons asks what the item asks, the entry is `no-lesson-found` -- a
+finding about the curriculum, not a failure.
+
+**Do not treat the standard-to-lesson table as the search space.**
+`provenance/alignment_baseline_measurement.md` measures it against NYCPS's
+independent citations: it names the right unit 96.3% of the time and the right
+lesson only 77.4%. Use it to pick the unit, then read the lessons. Deferring to
+that table against your own reading is the documented cause of RegentsAlign's 26
+placement errors.
+
+Resolve lessons **by title, never by number**. Editions renumber; titles do not.
+Preflight checks the number and the title as a pair, because a citation whose
+number and title disagree is the exact shape an edition renumbering leaves behind.
+
+Every entry is written `draft: true`. `build/payload.py` drops drafted entries
+before they reach the site, so an unreviewed judgement cannot claim anything.
+Clearing the flag is the act of review and is done by a person against the cited
+activity.
+
+Have a second pass **re-derive** the placement from the lessons rather than
+review the first pass's prose. Reviewing prose finds typos; re-deriving finds
+wrong answers.
 
 ## Privacy
 
@@ -87,6 +114,11 @@ something has been put in the wrong folder. Move it.
 
 ## Tooling notes
 
+- `data/im_ms_lessons_detail.json` holds the 427 lessons' actual task statements,
+  rebuilt by `tools/extract_im_ms_lesson_detail.py` from the per-unit teacher
+  guides. Both are gitignored -- the guides for their size, the index because it
+  reproduces licensed text -- so neither survives a fresh clone, and the build
+  never reads either. Run `tools/validate_im_ms_lesson_detail.py` after a rebuild.
 - **poppler is not installed on this machine.** No `pdftotext`, `pdfinfo` or `pdftoppm`, which
   also means the Read tool cannot render a PDF page here. Use PyMuPDF (`import fitz`), which is
   available to system python3.9.

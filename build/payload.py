@@ -129,8 +129,17 @@ def build(feedback_url=None, disclaimer=None):
                  if os.path.exists(alignment_path) else
                  {"byStandard": {}, "byItem": {}, "unaligned": {}})
 
-    by_standard = alignment.get("byStandard", {})
-    by_item = alignment.get("byItem", {})
+    # A drafted entry is unreviewed and must not reach the site at all. Dropping
+    # it here rather than in preflight is deliberate: preflight can only refuse a
+    # deploy, and an entry that silently populated an item's unit would already
+    # have turned a judgement-in-progress into a published claim by then.
+    def _published(entries):
+        return {k: v for k, v in (entries or {}).items() if not v.get("draft")}
+
+    by_standard = _published(alignment.get("byStandard", {}))
+    by_item = _published(alignment.get("byItem", {}))
+    drafted = (len(alignment.get("byStandard", {})) - len(by_standard)
+               + len(alignment.get("byItem", {})) - len(by_item))
 
     # Only the standards actually cited, plus the ones each grade could cite.
     cited = {i["standard"] for i in items_doc["items"]}
@@ -219,6 +228,16 @@ def build(feedback_url=None, disclaimer=None):
             "lessonEdition": align.get("edition"),
             "alignmentStatus": align.get("status"),
             "alignmentBasis": basis,
+            # An item can be taught in one lesson, practised in another and
+            # assessed in a third, so the range is published alongside the single
+            # primary lesson rather than instead of it. Each entry names the
+            # activity and page a reader can check it against.
+            "lessons": [
+                {k: e.get(k) for k in
+                 ("lesson", "lessonTitle", "role", "activity", "page", "quote")}
+                for e in (align.get("evidence") or [])
+            ],
+            "candidateLessons": align.get("candidateLessons") or [],
             "notes": align.get("notes") or align.get("why"),
         })
 
@@ -292,8 +311,15 @@ def build(feedback_url=None, disclaimer=None):
             "alignmentCoverage": {
                 "aligned": aligned,
                 "total": len(rows),
-                "note": "Curriculum alignment is Phase 3. Until then alignmentBasis is "
-                        "'unaligned' on every item and the lesson fields are null.",
+                "drafted": drafted,
+                "note": ("Curriculum alignment is a judgement, made against the "
+                         "activity each lesson actually asks students to do and "
+                         "published with that activity named so it can be checked. "
+                         "Items with alignmentBasis 'unaligned' have not been "
+                         "judged yet; entries still in draft are not published at "
+                         "all." if (aligned or drafted) else
+                         "Curriculum alignment is Phase 3. Until then alignmentBasis "
+                         "is 'unaligned' on every item and the lesson fields are null."),
             },
             "disclaimer": disclaimer,
             "feedbackUrl": feedback_url,

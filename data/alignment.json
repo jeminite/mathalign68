@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "conventions": {
+    "_": "This file is the project's alignment prompt. Read it before writing an entry; it takes precedence over instinct about a placement. No script writes this file.",
+    "evidenceOrNothing": "A lesson is recorded only when a specific ACTIVITY can be named and quoted. Topical similarity is not evidence. If no activity in the searched lessons asks students to do what the item asks, the honest entry is status 'no-lesson-found' with an empty evidence list -- that is a finding about the curriculum, not a failure of the process.",
+    "notATableLookup": "Imagine Learning's Lessons by Standard table names the right UNIT 96.3% of the time but the right LESSON only 77.4% of the time, measured in provenance/alignment_baseline_measurement.md. Use it to choose the unit, then read every lesson the shortlist offers. Do not place an item at a lesson merely because the table lists it: that is the failure RegentsAlign's consistency audit traced to 'deferring to the official list'.",
+    "resolveByTitle": "Resolve a lesson BY TITLE, never by number. Editions renumber; titles do not. Grades 7 and 8 swap Units 7 and 8 between the national and New York editions, and NYCPS's sheets use the national numbers.",
+    "homeGrade": "A standard is searched in the grade that TEACHES it, not the grade of the test it appears on. Grade 8 items citing NY-7.G.2-G.6 are taught in the grade 7 curriculum; 20 items across the three grades are in this position.",
+    "severalLessonsIsNormal": "An item may be taught in one lesson, practised in another and assessed in a third. Record each, with its own evidence and role. Forcing a single lesson destroys the answer to the question this project exists to answer.",
+    "roles": {
+      "introduces": "the activity where the idea or method first appears",
+      "practises": "an activity or practice problem applying it",
+      "assessed": "a Cool-down, section Checkpoint or End-of-Unit Assessment -- where the curriculum itself tests the skill"
+    },
+    "quoteLimit": "Evidence quotes are at most 15 words. The teacher guides are licensed material; a citation plus a short quote is enough for a reader to find and check the activity, and preflight refuses to deploy a longer one.",
+    "draftMeansUnreviewed": "Every entry is written with draft: true and is invisible to the site. build/payload.py skips drafted entries entirely, so a drafted entry cannot claim anything. Clearing the flag is the act of review, and is done by a person against the cited activity.",
+    "secondPass": "A second pass RE-DERIVES the placement from the lessons rather than reviewing the first pass's prose. Reviewing prose finds typos; re-deriving finds wrong answers."
+  },
+  "byStandard": {},
+  "byItem": {
+    "g8-2023-046": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 3,
+      "unitTitle": "Measuring Circles",
+      "sectionLetter": "B",
+      "sectionTitle": "Area of a Circle",
+      "primaryLesson": 8,
+      "lessonTitle": "Relating Area to Circumference",
+      "candidateLessons": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; taught in grade 7, item sits on the grade 8 test",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Relating Area to Circumference",
+          "role": "introduces",
+          "activity": "Making a Polygon out of a Circle",
+          "page": 133,
+          "quote": "Follow these instructions to create a visual display"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Relating Area to Circumference",
+          "role": "practises",
+          "activity": "Objects for a Powwow",
+          "page": 138,
+          "quote": "A beaded medallion has a diameter of 6 centimeters. What is the area"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Exploring the Area of a Circle",
+          "role": "assessed",
+          "activity": "Areas of Two Circles",
+          "page": 126,
+          "quote": "a diameter of approximately 60 inches. Which of these could be the area"
+        }
+      ],
+      "why": "The item gives a diameter and asks for the area of a circular object. Lesson 8 Activity 3 asks exactly that, for a medallion given its diameter; Lesson 8 Activity 1 is where the area formula is derived. The cool-down of Lesson 7 is where the curriculum tests reasoning from a diameter to an area."
+    },
+    "g8-2025-040": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 3,
+      "unitTitle": "Measuring Circles",
+      "sectionLetter": "A",
+      "sectionTitle": "Circumference of a Circle",
+      "primaryLesson": 4,
+      "lessonTitle": "Applying Circumference",
+      "candidateLessons": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; taught in grade 7, item sits on the grade 8 test",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Applying Circumference",
+          "role": "practises",
+          "activity": "Using π",
+          "page": 72,
+          "quote": "One measurement for each object is listed in the table. Complete the table"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Relating Area to Circumference",
+          "role": "assessed",
+          "activity": "A Circumference of 44",
+          "page": 141,
+          "quote": "A circle's circumference is approximately 44 cm. The circle's radius is approximately"
+        }
+      ],
+      "why": "The item gives a circumference and asks for the radius. Lesson 4 Activity 1 has students complete a table of radius, diameter and circumference in whichever direction the given measurement requires. The cool-down of Lesson 8 asks for the radius from a given circumference, which is the item's task exactly."
+    },
+    "g8-2026-047": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 3,
+      "unitTitle": "Measuring Circles",
+      "sectionLetter": "B",
+      "sectionTitle": "Area of a Circle",
+      "primaryLesson": 8,
+      "lessonTitle": "Relating Area to Circumference",
+      "candidateLessons": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; taught in grade 7, item sits on the grade 8 test",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Relating Area to Circumference",
+          "role": "assessed",
+          "activity": "A Circumference of 44",
+          "page": 141,
+          "quote": "A circle's circumference is approximately 44 cm. The circle's area is approximately"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Distinguishing Circumference and Area",
+          "role": "practises",
+          "activity": "Card Sort: Circle Problems",
+          "page": 163,
+          "quote": "sort the cards into two groups based on whether you would use the circumference"
+        }
+      ],
+      "why": "The item gives a circumference and asks for the area, which is the two-step the cool-down of Lesson 8 asks for in the same order: circumference, then diameter, then radius, then area. Lesson 10's card sort is where students practise deciding which of the two a question needs. Neither is reachable from the standard's lesson list by itself."
+    }
+  }
+}
