@@ -879,6 +879,50 @@ def alignment(payload):
     # actually happened rather than trusting it. byItem is checked as well as
     # byStandard: the original check looked only at byStandard, and a drafted
     # per-item entry -- which is what this project now writes -- was invisible.
+    # AN ENTRY MUST NAME AN ITEM THAT EXISTS, AND CARRY THAT ITEM'S STANDARD.
+    # Neither was checked. A batch written from a truncated listing produced an
+    # entry for "g8-2026-016", which is not an item at all, and placed
+    # g8-2026-034 -- a scatter-plot association item -- in the linear-equations
+    # unit because it sat next to the equation items in the output being read.
+    # Both survived every existing check: a drafted entry for a nonexistent item
+    # never reaches the payload, so the leak test passes trivially, and the
+    # lesson, activity, page and quote were all real.
+    real = {i["id"]: i for i in load(os.path.join(DATA, "items.json"))["items"]}
+    ghosts = sorted(i for i in by_item if i not in real)
+    check("every alignment entry names an item that exists", not ghosts,
+          "no such item(s): %s" % ", ".join(ghosts[:8]))
+
+    # The entry does not store the standard, but the unit it claims has to be a
+    # unit that teaches it. A misfiled item lands in a unit whose lessons have
+    # nothing to do with its standard, which is exactly what happened above.
+    ref_check = os.path.join(DATA, "im_ms_reference.json")
+    if os.path.exists(ref_check) and not ghosts:
+        gref = load(ref_check)["grades"]
+        misfiled = []
+        for iid, entry in sorted(by_item.items()):
+            std = real[iid]["standard"]
+            m = re.search(r"Grade\s+([678])", entry.get("course") or "")
+            g = m.group(1) if m else iid[1]
+            s2l = gref.get(g, {}).get("standardToLessons", {})
+            units = set()
+            for code, val in s2l.items():
+                if code == std \
+                        or (code.startswith(std) and code[len(std):].isalpha()) \
+                        or (std.startswith(code) and std[len(code):].isalpha()):
+                    units |= {c.split(".")[1] for c in val["lessons"]}
+            if units and str(entry.get("unit")) not in units:
+                misfiled.append("%s (%s) placed in %s unit %s; the guide teaches it in %s"
+                                % (iid, std, g, entry.get("unit"),
+                                   ", ".join(sorted(units, key=int))))
+        # Reported, not failed: a placement may legitimately leave the tabled
+        # units -- grade 7's NY-7.EE.2 items did, with the reasoning recorded --
+        # but it should never happen by accident.
+        if misfiled:
+            note("%d entr(y/ies) sit outside every unit the guide tables for their "
+                 "standard -- check each is deliberate" % len(misfiled))
+            for line in misfiled[:8]:
+                note("  %s" % line)
+
     drafted_std = {c for c, e in by_std.items() if e.get("draft")}
     drafted_item = {i for i, e in by_item.items() if e.get("draft")}
     published_std = {i["standard"] for i in payload["items"]
