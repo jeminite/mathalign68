@@ -73,9 +73,18 @@ it: the expression is `(4/5)(0.2)(-5/8) = -1/10`, published as a subtraction who
 matches no choice. Two independent readings of the same page agree, which is the strongest
 evidence available that the stem is wrong and the extractor needs the fix.
 
-## Still open
+## All 44 were settled
 
-**44 of the 129 comparisons are unsettled** — 27 same-unit and 17 cross-unit. They are listed
-by `tools/measure_second_pass.py`. Grade 7's entries stay `draft: true` until they are worked
-through: publishing a placement that an equally careful reading puts elsewhere would claim a
-precision the evidence does not support.
+Every disagreement was re-read and decided. **16 placements changed and 28 were held**, and
+each held entry now carries the other reading in its `why` so a reader can see what was
+considered and why it lost. Agreement on the primary lesson went **65.9% -> 78.3%**; the
+remaining 28 differences are decisions on the record, not drift.
+
+The settlements are described in `alignment_disagreements.md` and in the commit that made
+them. Grade 7's 129 evidenced entries are published. The 6 whose PDF page is undetermined
+stay drafted, because there is no stem to judge a lesson against.
+
+**What the 78.3% does not mean.** It is not a claim that 78% of placements are right and 22%
+wrong. It is the rate at which two readings, one of which has now been revised toward the
+other, still differ. The honest summary is the one at the top of this file: the unit is
+solid, the lesson is an opinion, and the evidence range is what a teacher should read.

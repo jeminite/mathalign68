@@ -23,8 +23,22 @@ and 118 constructed-response answers taken from NYSED's own exemplary responses.
 remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
 their standard, their statewide P-value and a link to the official page.
 
-Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned). The class-results
-analyzer is done.
+**Grade 7's curriculum alignment is done and published** -- 129 of its 135 items carry a
+judged placement with named, paged, quoted evidence, rendered on each question card. The
+other 6 are the items whose PDF page `build_pagemap.py` leaves undetermined: no stem, so no
+lesson is guessed. Grades 8 and 6 are not started. The class-results analyzer is done.
+
+Before trusting any single lesson number, read `provenance/alignment_second_pass_g7.md`.
+Four independent readers re-derived grade 7 blind to the first pass, and the two readings
+picked the same lesson 65.9% of the time. Every one of the 44 disagreements was then settled
+-- 16 placements changed, 28 held with the losing reading recorded -- which brought it to
+78.3%. The lasting finding is that only 17 of the 44 crossed a UNIT: the unit is solid, the
+lesson is an opinion, and the published evidence range is what a teacher should read.
+
+Next: grade 8, then grade 6. Fix `tools/extract_im_ms_lesson_detail.py` before grade 6 --
+grade 6 Unit 8 Lessons 8, 9 and 13 lost their activity boundaries, merging several activities
+into the first entry, and those are the lessons grade 6's own statistics items will be judged
+against. `validate_im_ms_lesson_detail.py` reports the symptom.
 
 ### Two Netlify settings that were wrong at first
 
@@ -48,12 +62,12 @@ alignment entries are all draft.
 | 1b — site, preflight | done | — |
 | 1c — first Netlify deploy | done | draft URL live |
 | 2 — questions for 2026 grade 7 | done | 42 items published |
-| 3 — curriculum index from the TCGs | next | — |
-| 4 — questions for 2026 grades 6 and 8 | after 3 | — |
+| 3 — curriculum index from the TCGs | done | — |
+| 4 — questions for 2026 grades 6 and 8 | done | — |
 | 5 — class-results analyzer | done | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
-| 3b — Imagine IM New York 6–8 alignment | waiting | the district course guides |
-| 3c — the per-standard judgement pass | after 3a/3b | — |
+| 3b — Imagine IM New York 6–8 alignment | done | — |
+| 3c — the per-ITEM judgement pass | grade 7 published; 8 and 6 next | — |
 | 4 — scoring-materials exemplars, CCLS-era archive | later | — |
 
 ## Done in Phase 0
