@@ -143,6 +143,7 @@ def main():
 
     print("\n3. Every lesson carries what an alignment judgement needs")
     no_act, no_task, no_std, no_narr = [], [], [], []
+    thin = []
     for g, gd in sorted(detail["grades"].items()):
         for u, ud in sorted(gd["units"].items(), key=lambda kv: int(kv[0])):
             for n, rec in sorted(ud["lessons"].items(), key=lambda kv: int(kv[0])):
@@ -151,6 +152,15 @@ def main():
                 if not acts:
                     no_act.append(code)
                     continue
+                # "At least one" was too weak a bar. Aligning grade 7 found
+                # grade 6 Unit 8's Lessons 9 and 13 carrying one and two
+                # activities where the teacher guide has four or five, so an
+                # item was being judged against a fraction of its lesson --
+                # and this validator passed. Unit 9 lessons really are one or
+                # two activities (they are projects), so they are excluded
+                # rather than the bar being lowered for everyone.
+                if len(acts) < 3 and u != "9":
+                    thin.append("%s (%d)" % (code, len(acts)))
                 if not any((a.get("studentTaskStatement") or "").strip() for a in acts):
                     no_task.append(code)
                 if not rec.get("standards"):
@@ -167,6 +177,13 @@ def main():
     if no_narr:
         note("%d lessons carry no Lesson Narrative: %s"
              % (len(no_narr), ", ".join(no_narr[:10])))
+    # Reported, not failed: a genuinely short lesson is possible and the fix is
+    # in the extractor, not here. But a reader placing an item at one of these
+    # is working from less than the lesson contains and should know it.
+    if thin:
+        note("%d non-project lessons carry fewer than 3 activities -- an item "
+             "aligned to one of these was judged against part of the lesson: %s"
+             % (len(thin), ", ".join(thin[:20])))
 
     print("\n4. Standards: a third reading, reported not reconciled")
     agree = disagree = 0
