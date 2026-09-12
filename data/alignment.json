@@ -506,10 +506,10 @@
       "course": "Imagine IM New York, Grade 7",
       "unit": 4,
       "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "C",
-      "sectionTitle": "Applying Percentages",
-      "primaryLesson": 11,
-      "lessonTitle": "Percentage Contexts",
+      "sectionLetter": "B",
+      "sectionTitle": "Percent Increase and Decrease",
+      "primaryLesson": 6,
+      "lessonTitle": "Increasing and Decreasing",
       "candidateLessons": [
         3,
         6,
@@ -530,35 +530,35 @@
           "role": "introduces",
           "activity": "More Shampoo and a Discounted Shirt",
           "page": 88,
-          "quote": "A shampoo bottle says that now it contains 20% more"
+          "quote": "A shampoo bottle says that now it contains 20% more."
         },
         {
-          "lesson": 11,
-          "lessonTitle": "Percentage Contexts",
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
           "role": "practises",
-          "activity": "Card Sort: Percentage Situations",
-          "page": 148,
-          "quote": "Take turns with your partner to match a situation to a category"
+          "activity": "Using Tape Diagrams",
+          "page": 90,
+          "quote": "Match each situation to a diagram. Be prepared to explain your reasoning."
         },
         {
-          "lesson": 12,
-          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
           "role": "assessed",
-          "activity": "Shoes on Sale",
-          "page": 163,
-          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+          "activity": "Fish Population",
+          "page": 93,
+          "quote": "The number of fish in a lake decreased by 25% between last year"
         }
       ],
-      "why": "Each item applies one or more percentage discounts to listed prices. Lesson 6 Activity 1 is where a discount is introduced alongside a percentage increase; Lesson 11 sorts discount, markup and tax situations apart; Lesson 12 assesses a discount applied to a normal price."
+      "why": "Two airlines, one discounting 25% and one discounting a third, and the item asks which leaves the lower price. The operation is a percent decrease applied twice in parallel, which is Lesson 6 -- its cool-down is a population decreasing by 25% and its first activity pairs a percentage change with a discounted shirt. First placed at Lesson 11, Percentage Contexts, whose subject is markup, commission and tip vocabulary that this item never uses; re-derived to Lesson 6 by an independent second pass and confirmed here. One of the two discounts is a FRACTION rather than a percentage, which is why the lesson that handles both forms is the right home."
     },
     "g7-2025-048": {
       "course": "Imagine IM New York, Grade 7",
       "unit": 4,
       "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "C",
-      "sectionTitle": "Applying Percentages",
-      "primaryLesson": 11,
-      "lessonTitle": "Percentage Contexts",
+      "sectionLetter": "B",
+      "sectionTitle": "Percent Increase and Decrease",
+      "primaryLesson": 6,
+      "lessonTitle": "Increasing and Decreasing",
       "candidateLessons": [
         3,
         6,
@@ -579,26 +579,26 @@
           "role": "introduces",
           "activity": "More Shampoo and a Discounted Shirt",
           "page": 88,
-          "quote": "A shampoo bottle says that now it contains 20% more"
+          "quote": "A shampoo bottle says that now it contains 20% more."
         },
         {
-          "lesson": 11,
-          "lessonTitle": "Percentage Contexts",
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
           "role": "practises",
-          "activity": "Card Sort: Percentage Situations",
-          "page": 148,
-          "quote": "Take turns with your partner to match a situation to a category"
+          "activity": "Using Tape Diagrams",
+          "page": 90,
+          "quote": "Match each situation to a diagram. Be prepared to explain your reasoning."
         },
         {
-          "lesson": 12,
-          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
           "role": "assessed",
-          "activity": "Shoes on Sale",
-          "page": 163,
-          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+          "activity": "Fish Population",
+          "page": 93,
+          "quote": "The number of fish in a lake decreased by 25% between last year"
         }
       ],
-      "why": "Each item applies one or more percentage discounts to listed prices. Lesson 6 Activity 1 is where a discount is introduced alongside a percentage increase; Lesson 11 sorts discount, markup and tax situations apart; Lesson 12 assesses a discount applied to a normal price."
+      "why": "A 10% discount on one shirt and a 25% discount on another, asking the total spent. It is g7-2023-048's twin -- two independent percent decreases -- differing only in summing the results where that item compares them, so the two share a lesson. First placed at Lesson 11. The second pass moved it to Lesson 12, Solving Multi-step Percentage Problems, and this pass diverges from it: Lesson 12's multi-step means operations CHAINED on one quantity, as in its cool-down where a discount is taken and then tax is added to the result. Two parallel decreases are not that, and placing this item apart from its twin would assert a distinction the items do not make."
     },
     "g7-2024-048": {
       "course": "Imagine IM New York, Grade 7",
@@ -622,6 +622,14 @@
       "draft": true,
       "unitBasis": "course guide table and unit guide tag",
       "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "One Hundred Percent",
+          "role": "introduces",
+          "activity": "Double Number Lines",
+          "page": 99,
+          "quote": "complete the double number line diagram to show the percentages that correspond"
+        },
         {
           "lesson": 6,
           "lessonTitle": "Increasing and Decreasing",
@@ -647,7 +655,7 @@
           "quote": "They are on sale for 20% off. A sales tax of 6% is added"
         }
       ],
-      "why": "Both items apply a percentage discount and then a sales tax to the discounted price. Lesson 12's cool-down asks for exactly that sequence -- 20% off, then 6% tax on the sale price -- and its teacher note warns against the error of combining the two percentages, which is what the items' distractors test."
+      "why": "A sofa discounted 20% to $460.00 with 8% tax, asking the saving against the original price including tax. Retained at Lesson 12, Solving Multi-step Percentage Problems: the item chains a discount and a tax on one quantity, which is that lesson's subject and its cool-down exactly. A second pass placed it at Lesson 7, One Hundred Percent, for the item's hardest single step -- backing $575 out of $460 -- and Lesson 7 is now cited as introduces for supplying that reverse move. At p = 0.25 this is the hardest item in its batch, and it is hard because it needs both lessons."
     },
     "g7-2026-017": {
       "course": "Imagine IM New York, Grade 7",
@@ -825,10 +833,10 @@
       "course": "Imagine IM New York, Grade 7",
       "unit": 4,
       "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "B",
-      "sectionTitle": "Percent Increase and Decrease",
-      "primaryLesson": 9,
-      "lessonTitle": "Part of a Percent",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 11,
+      "lessonTitle": "Percentage Contexts",
       "candidateLessons": [
         3,
         6,
@@ -844,23 +852,31 @@
       "unitBasis": "course guide table and unit guide tag",
       "evidence": [
         {
-          "lesson": 9,
-          "lessonTitle": "Part of a Percent",
-          "role": "practises",
-          "activity": "Fractions of a Percent",
-          "page": 121,
-          "quote": "Find each percentage of 60. What do you notice about your answers?"
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
+          "role": "introduces",
+          "activity": "Leaving a Tip",
+          "page": 148,
+          "quote": "Which of these expressions represent a 15% tip on a $20 meal?"
         },
         {
-          "lesson": 9,
-          "lessonTitle": "Part of a Percent",
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
+          "role": "practises",
+          "activity": "A Car Dealership",
+          "page": 151,
+          "quote": "The car dealership wants to make a 32% profit."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
           "role": "assessed",
-          "activity": "Percentages of 750",
-          "page": 125,
-          "quote": "If the number increases by 4%, how many students will there be?"
+          "activity": "The Cost of a Bike",
+          "page": 154,
+          "quote": "The bike store marks up the wholesale cost of all of the bikes"
         }
       ],
-      "why": "The item is a single percentage of an amount -- 35% of the money from 500 gift cards. Lesson 9 Activity 1 is repeated practice at finding a percentage of a number, and its cool-down is the assessed task on a school of 750 students."
+      "why": "500 gift cards at $15.00, of which the library receives 35% -- a share taken out of a total someone else earns, which is the commission shape Lesson 11's card sort teaches as its own category and its car-dealership activity computes. First placed at Lesson 9, Part of a Percent, whose actual subject is fractions OF a percent (0.3%, 0.03%); this item uses a whole 35% and gets no help from that distinction. Re-derived by an independent second pass, which also found the near-identical problem -- a fundraiser keeping 40% of total sales as commission -- living as a practice problem elsewhere."
     },
     "g7-2024-034": {
       "course": "Imagine IM New York, Grade 7",
@@ -928,6 +944,14 @@
           "role": "introduces",
           "activity": "Organizing Work",
           "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent to"
+        },
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
           "quote": "Use the distributive property to write an expression that is equivalent"
         },
         {
@@ -947,7 +971,7 @@
           "quote": "Expand to write an equivalent expression"
         }
       ],
-      "why": "Each item expands a product with a negative or fractional coefficient and asks for the result as a sum of unlike terms. Lesson 18 is where distributing over a subtraction is introduced; Lesson 19's cool-down asks for exactly the item's task, on -1/2(-2x + 4y)."
+      "why": "Write (1/2)(18y - 2y + 10) as the sum of two unlike terms: distribute a fractional coefficient, then combine. Retained at Lesson 19, whose cool-down is 'Expand to write an equivalent expression: -1/2(-2x + 4y)' -- the same fractional expansion the item opens with, and whose title names the task. A second pass placed it at Lesson 18, and it is now cited as introduces: Lesson 18's Activity 2 distributes 1/2 over a sum, which is where that move arrives. The two lessons are adjacent and the call is fine; what decided it is that the item's demand is an expansion, not a subtraction."
     },
     "g7-2024-046": {
       "course": "Imagine IM New York, Grade 7",
@@ -1263,8 +1287,8 @@
       "unitTitle": "Expressions, Equations, and Inequalities",
       "sectionLetter": "D",
       "sectionTitle": "Writing Equivalent Expressions",
-      "primaryLesson": 21,
-      "lessonTitle": "Combining Like Terms (Part 2)",
+      "primaryLesson": 20,
+      "lessonTitle": "Combining Like Terms (Part 1)",
       "candidateLessons": [
         18,
         19,
@@ -1277,39 +1301,31 @@
       "unitBasis": "course guide table and unit guide tag",
       "evidence": [
         {
-          "lesson": 18,
-          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "lesson": 20,
+          "lessonTitle": "Combining Like Terms (Part 1)",
           "role": "introduces",
-          "activity": "Organizing Work",
-          "page": 214,
-          "quote": "Use the distributive property to write an expression that is equivalent"
+          "activity": "Why is it True?",
+          "page": 231,
+          "quote": "9a is equivalent to 11a − 2a ."
         },
         {
-          "lesson": 19,
-          "lessonTitle": "Expanding and Factoring",
+          "lesson": 20,
+          "lessonTitle": "Combining Like Terms (Part 1)",
           "role": "practises",
-          "activity": "Factoring and Expanding With Negative Numbers",
-          "page": 222,
-          "quote": "In each row, write the equivalent expression"
+          "activity": "’s and ’s",
+          "page": 232,
+          "quote": "Diego and Jada are both trying to write an expression with fewer terms"
         },
         {
-          "lesson": 21,
-          "lessonTitle": "Combining Like Terms (Part 2)",
-          "role": "practises",
-          "activity": "Seeing it Differently",
-          "page": 242,
-          "quote": "Some students are trying to write an expression with fewer terms"
-        },
-        {
-          "lesson": 21,
-          "lessonTitle": "Combining Like Terms (Part 2)",
+          "lesson": 20,
+          "lessonTitle": "Combining Like Terms (Part 1)",
           "role": "assessed",
-          "activity": "Subtracting Linear Expressions",
-          "page": 248,
-          "quote": "Write an equivalent expression with fewer terms"
+          "activity": "Fewer Terms",
+          "page": 237,
+          "quote": "Write each expression with fewer terms. Show your work or explain your reasoning."
         }
       ],
-      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+      "why": "Simplify -5y + 3 - 6y + 10y - 1: four like terms and two constants, no parentheses. Lesson 20 is combining like terms where the expression is already expanded, and its cool-down asks for exactly this in the item's own words. First placed at Lesson 21, which is the same skill once parentheses are in play -- its activities open with 8 - 3(4 - 9x). Re-derived to Lesson 20 by an independent second pass, and it also makes this project consistent with itself: g7-2024-037 was already placed at Lesson 20 on the recorded ground that it 'contains no parentheses, so there is nothing to expand'."
     },
     "g7-2026-041": {
       "course": "Imagine IM New York, Grade 7",
@@ -2644,215 +2660,211 @@
     },
     "g7-2024-011": {
       "course": "Imagine IM New York, Grade 7",
-      "unit": 4,
-      "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "A",
-      "sectionTitle": "Proportional Relationships with Fractions",
-      "primaryLesson": 5,
-      "lessonTitle": "Say It With Decimals",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form px+q=r and p(x+q)=r and Problems That Lead to Those Equations",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
       "candidateLessons": [
+        3,
         4,
         5,
-        8
+        6,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21
       ],
       "edition": "Imagine IM New York, 6-8",
       "status": "evidenced",
       "draft": true,
-      "unitBasis": "course guide table and unit guide tag",
+      "unitBasis": "read against the items: the course guide table points NY-7.EE.2 at Unit 4, but the task the items set is Unit 6 Lesson 12's warm-up",
       "evidence": [
         {
-          "lesson": 4,
-          "lessonTitle": "More than That, Less than That",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "introduces",
-          "activity": "Walking Half as Much Again",
-          "page": 62,
-          "quote": "Complete the table to show the total distance walked in each case"
+          "activity": "20% Off",
+          "page": 134,
+          "quote": "An item costs x dollars and then a 20% discount is applied."
         },
         {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "practises",
-          "activity": "More and Less With Decimals",
-          "page": 75,
-          "quote": "Match each diagram with a description and an equation"
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "This was a 20% increase from the second day."
         },
         {
-          "lesson": 8,
-          "lessonTitle": "Percent Increase and Decrease With Equations",
-          "role": "practises",
-          "activity": "Matching Equations",
-          "page": 110,
-          "quote": "Match an equation to the situation"
-        },
-        {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "assessed",
-          "activity": "Reading More",
-          "page": 78,
-          "quote": "Write an equation that relates the number of minutes Kiran read"
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "Then they are able to reduce that time by 1/10 ."
         }
       ],
-      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+      "why": "A shirt at n dollars discounted 15%, asking which PAIR of expressions represents the sale price -- the key pairs n - 0.15n with 0.85n. All four items on this standard were first placed at Unit 4 Lesson 5, 'Say It With Decimals', whose Activity 2 matches a decrease by a fraction to a single decimal coefficient. Re-derived to Unit 6 Lesson 12, a different unit, because its warm-up is these items verbatim: an item costs x dollars, a percentage discount is applied, and students select the expressions representing the price after -- the list holding both x - 20/100 x and 0.80x, and offering 20/100 x, the discount itself, as the trap every one of these items uses as its first choice. Unit 4 Lesson 5 describes its changes as FRACTIONS and never shows the subtraction form; the items state percentages and hand the subtraction form to the student. An independent second pass placed all four here, and NYCPS independently places g7-2025-021 in Unit 6 as well, so three readings put this standard outside the unit the first pass chose."
     },
     "g7-2025-021": {
       "course": "Imagine IM New York, Grade 7",
-      "unit": 4,
-      "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "A",
-      "sectionTitle": "Proportional Relationships with Fractions",
-      "primaryLesson": 5,
-      "lessonTitle": "Say It With Decimals",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form px+q=r and p(x+q)=r and Problems That Lead to Those Equations",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
       "candidateLessons": [
+        3,
         4,
         5,
-        8
+        6,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21
       ],
       "edition": "Imagine IM New York, 6-8",
       "status": "evidenced",
       "draft": true,
-      "unitBasis": "course guide table and unit guide tag",
+      "unitBasis": "read against the items: the course guide table points NY-7.EE.2 at Unit 4, but the task the items set is Unit 6 Lesson 12's warm-up",
       "evidence": [
         {
-          "lesson": 4,
-          "lessonTitle": "More than That, Less than That",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "introduces",
-          "activity": "Walking Half as Much Again",
-          "page": 62,
-          "quote": "Complete the table to show the total distance walked in each case"
+          "activity": "20% Off",
+          "page": 134,
+          "quote": "An item costs x dollars and then a 20% discount is applied."
         },
         {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "practises",
-          "activity": "More and Less With Decimals",
-          "page": 75,
-          "quote": "Match each diagram with a description and an equation"
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "This was a 20% increase from the second day."
         },
         {
-          "lesson": 8,
-          "lessonTitle": "Percent Increase and Decrease With Equations",
-          "role": "practises",
-          "activity": "Matching Equations",
-          "page": 110,
-          "quote": "Match an equation to the situation"
-        },
-        {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "assessed",
-          "activity": "Reading More",
-          "page": 78,
-          "quote": "Write an equation that relates the number of minutes Kiran read"
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "Then they are able to reduce that time by 1/10 ."
         }
       ],
-      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+      "why": "The sale price is given as t - 0.10t and the item asks which other expression also gives it; the key is 0.90t. All four items on this standard were first placed at Unit 4 Lesson 5, 'Say It With Decimals', whose Activity 2 matches a decrease by a fraction to a single decimal coefficient. Re-derived to Unit 6 Lesson 12, a different unit, because its warm-up is these items verbatim: an item costs x dollars, a percentage discount is applied, and students select the expressions representing the price after -- the list holding both x - 20/100 x and 0.80x, and offering 20/100 x, the discount itself, as the trap every one of these items uses as its first choice. Unit 4 Lesson 5 describes its changes as FRACTIONS and never shows the subtraction form; the items state percentages and hand the subtraction form to the student. An independent second pass placed all four here, and NYCPS independently places g7-2025-021 in Unit 6 as well, so three readings put this standard outside the unit the first pass chose."
     },
     "g7-2025-036": {
       "course": "Imagine IM New York, Grade 7",
-      "unit": 4,
-      "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "A",
-      "sectionTitle": "Proportional Relationships with Fractions",
-      "primaryLesson": 5,
-      "lessonTitle": "Say It With Decimals",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form px+q=r and p(x+q)=r and Problems That Lead to Those Equations",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
       "candidateLessons": [
+        3,
         4,
         5,
-        8
+        6,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21
       ],
       "edition": "Imagine IM New York, 6-8",
       "status": "evidenced",
       "draft": true,
-      "unitBasis": "course guide table and unit guide tag",
+      "unitBasis": "read against the items: the course guide table points NY-7.EE.2 at Unit 4, but the task the items set is Unit 6 Lesson 12's warm-up",
       "evidence": [
         {
-          "lesson": 4,
-          "lessonTitle": "More than That, Less than That",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "introduces",
-          "activity": "Walking Half as Much Again",
-          "page": 62,
-          "quote": "Complete the table to show the total distance walked in each case"
+          "activity": "20% Off",
+          "page": 134,
+          "quote": "An item costs x dollars and then a 20% discount is applied."
         },
         {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "practises",
-          "activity": "More and Less With Decimals",
-          "page": 75,
-          "quote": "Match each diagram with a description and an equation"
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "This was a 20% increase from the second day."
         },
         {
-          "lesson": 8,
-          "lessonTitle": "Percent Increase and Decrease With Equations",
-          "role": "practises",
-          "activity": "Matching Equations",
-          "page": 110,
-          "quote": "Match an equation to the situation"
-        },
-        {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "assessed",
-          "activity": "Reading More",
-          "page": 78,
-          "quote": "Write an equation that relates the number of minutes Kiran read"
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "Then they are able to reduce that time by 1/10 ."
         }
       ],
-      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+      "why": "A phone bought for x dollars decreasing 20%, asking which expression represents the value after; the key is 0.8x and the distractors include the decrease itself, 0.2x. All four items on this standard were first placed at Unit 4 Lesson 5, 'Say It With Decimals', whose Activity 2 matches a decrease by a fraction to a single decimal coefficient. Re-derived to Unit 6 Lesson 12, a different unit, because its warm-up is these items verbatim: an item costs x dollars, a percentage discount is applied, and students select the expressions representing the price after -- the list holding both x - 20/100 x and 0.80x, and offering 20/100 x, the discount itself, as the trap every one of these items uses as its first choice. Unit 4 Lesson 5 describes its changes as FRACTIONS and never shows the subtraction form; the items state percentages and hand the subtraction form to the student. An independent second pass placed all four here, and NYCPS independently places g7-2025-021 in Unit 6 as well, so three readings put this standard outside the unit the first pass chose."
     },
     "g7-2026-036": {
       "course": "Imagine IM New York, Grade 7",
-      "unit": 4,
-      "unitTitle": "Proportional Relationships and Percentages",
-      "sectionLetter": "A",
-      "sectionTitle": "Proportional Relationships with Fractions",
-      "primaryLesson": 5,
-      "lessonTitle": "Say It With Decimals",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form px+q=r and p(x+q)=r and Problems That Lead to Those Equations",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
       "candidateLessons": [
+        3,
         4,
         5,
-        8
+        6,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21
       ],
       "edition": "Imagine IM New York, 6-8",
       "status": "evidenced",
       "draft": true,
-      "unitBasis": "course guide table and unit guide tag",
+      "unitBasis": "read against the items: the course guide table points NY-7.EE.2 at Unit 4, but the task the items set is Unit 6 Lesson 12's warm-up",
       "evidence": [
         {
-          "lesson": 4,
-          "lessonTitle": "More than That, Less than That",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "introduces",
-          "activity": "Walking Half as Much Again",
-          "page": 62,
-          "quote": "Complete the table to show the total distance walked in each case"
+          "activity": "20% Off",
+          "page": 134,
+          "quote": "An item costs x dollars and then a 20% discount is applied."
         },
         {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "practises",
-          "activity": "More and Less With Decimals",
-          "page": 75,
-          "quote": "Match each diagram with a description and an equation"
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "This was a 20% increase from the second day."
         },
         {
-          "lesson": 8,
-          "lessonTitle": "Percent Increase and Decrease With Equations",
-          "role": "practises",
-          "activity": "Matching Equations",
-          "page": 110,
-          "quote": "Match an equation to the situation"
-        },
-        {
-          "lesson": 5,
-          "lessonTitle": "Say It With Decimals",
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
           "role": "assessed",
-          "activity": "Reading More",
-          "page": 78,
-          "quote": "Write an equation that relates the number of minutes Kiran read"
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "Then they are able to reduce that time by 1/10 ."
         }
       ],
-      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+      "why": "The final price is given as x - 0.25x and the item asks which other expression also gives it; the key is 0.75x. All four items on this standard were first placed at Unit 4 Lesson 5, 'Say It With Decimals', whose Activity 2 matches a decrease by a fraction to a single decimal coefficient. Re-derived to Unit 6 Lesson 12, a different unit, because its warm-up is these items verbatim: an item costs x dollars, a percentage discount is applied, and students select the expressions representing the price after -- the list holding both x - 20/100 x and 0.80x, and offering 20/100 x, the discount itself, as the trap every one of these items uses as its first choice. Unit 4 Lesson 5 describes its changes as FRACTIONS and never shows the subtraction form; the items state percentages and hand the subtraction form to the student. An independent second pass placed all four here, and NYCPS independently places g7-2025-021 in Unit 6 as well, so three readings put this standard outside the unit the first pass chose."
     },
     "g7-2023-005": {
       "course": "Imagine IM New York, Grade 7",
@@ -4621,8 +4633,8 @@
       "unitTitle": "Introducing Proportional Relationships",
       "sectionLetter": "A",
       "sectionTitle": "Representing Proportional Relationships With Tables",
-      "primaryLesson": 3,
-      "lessonTitle": "More About Constant of Proportionality",
+      "primaryLesson": 2,
+      "lessonTitle": "Introducing Proportional Relationships With Tables",
       "candidateLessons": [
         2,
         3,
@@ -4658,15 +4670,15 @@
           "quote": "b. What is the constant of proportionality?"
         },
         {
-          "lesson": 3,
-          "lessonTitle": "More About Constant of Proportionality",
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
           "role": "assessed",
-          "activity": "Fish Tank",
-          "page": 68,
-          "quote": "Water flows into the tank at a constant rate. Complete the table"
+          "activity": "Green Paint",
+          "page": 55,
+          "quote": "How many cups of yellow paint should you mix with 1 cup of blue paint"
         }
       ],
-      "why": "A table of days against total pages, asking how many pages are read in 1 day. That is the constant of proportionality read off a table, which Lesson 3 asks for by name in Activity 1 and again in the cool-down."
+      "why": "A table of days against total pages, asking how many pages are read in 1 day. Lesson 2's cool-down asks that in the item's own shape -- how many cups of yellow paint go with ONE cup of blue, read off a table -- and then names it as the constant of proportionality. First placed at Lesson 3, which asks for the constant by name; re-derived to Lesson 2 because the item asks the per-one question rather than for the constant, and an independent second pass and NYCPS both read it that way. Lesson 3 stays cited as where the constant is named and where its reciprocal is taught."
     },
     "g7-2023-039": {
       "course": "Imagine IM New York, Grade 7",
@@ -4727,8 +4739,8 @@
       "unitTitle": "Introducing Proportional Relationships",
       "sectionLetter": "A",
       "sectionTitle": "Representing Proportional Relationships With Tables",
-      "primaryLesson": 3,
-      "lessonTitle": "More About Constant of Proportionality",
+      "primaryLesson": 2,
+      "lessonTitle": "Introducing Proportional Relationships With Tables",
       "candidateLessons": [
         2,
         3,
@@ -4764,15 +4776,15 @@
           "quote": "b. What is the constant of proportionality?"
         },
         {
-          "lesson": 3,
-          "lessonTitle": "More About Constant of Proportionality",
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
           "role": "assessed",
-          "activity": "Fish Tank",
-          "page": 68,
-          "quote": "Water flows into the tank at a constant rate. Complete the table"
+          "activity": "Green Paint",
+          "page": 55,
+          "quote": "How many cups of yellow paint should you mix with 1 cup of blue paint"
         }
       ],
-      "why": "A table of packages against cost, asking the cost per package. The distractors $0.31 and $9.75 are the reciprocal and a table row taken whole, which is why Activity 1's two directions -- centimetres from millimetres and millimetres from centimetres -- are the lesson that matters here."
+      "why": "A table of packages against cost, asking the cost per package. The same per-one reading as g7-2023-004, and they share a lesson because they ask the same thing. The distractor $0.31 is the reciprocal constant -- packages per dollar -- which is why Lesson 3's two-directions activity is cited beside it."
     },
     "g7-2026-003": {
       "course": "Imagine IM New York, Grade 7",
@@ -5021,6 +5033,14 @@
           "quote": "A plane flew at a constant speed between Denver and Chicago."
         },
         {
+          "lesson": 5,
+          "lessonTitle": "Two Equations for Each Relationship",
+          "role": "practises",
+          "activity": "Meters and Centimeters",
+          "page": 90,
+          "quote": "Describe the relationship between these two constants of proportionality."
+        },
+        {
           "lesson": 4,
           "lessonTitle": "Proportional Relationships and Equations",
           "role": "assessed",
@@ -5029,7 +5049,7 @@
           "quote": "Write an equation that gives the amount of snow that has fallen"
         }
       ],
-      "why": "A table of x and y whose y column runs in quarters, asking which equation represents it. Lesson 4 is where a table becomes an equation, and its Activity 1 walks the same step of asking for the value at x before writing the general form."
+      "why": "A table whose y column runs in quarters, asking which equation represents it. Lesson 4 is where a table becomes an equation and its cool-down asks for one. A second pass placed it at Lesson 5 because the distractor y = 4x is the reciprocal of the key y = (1/4)x, which is Lesson 5's subject. Retained at Lesson 4: the item asks for ONE equation, which is Lesson 4's task, and a reciprocal distractor changes what a student must not do rather than what they must do. Lesson 5 is now cited as where that distinction is taught."
     },
     "g7-2025-008": {
       "course": "Imagine IM New York, Grade 7",
@@ -5249,8 +5269,8 @@
       "unitTitle": "Introducing Proportional Relationships",
       "sectionLetter": "B",
       "sectionTitle": "Representing Proportional Relationships With Equations",
-      "primaryLesson": 6,
-      "lessonTitle": "Writing Equations to Represent Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Proportional Relationships and Equations",
       "candidateLessons": [
         2,
         3,
@@ -5278,23 +5298,23 @@
           "quote": "How many people will x cups of rice serve?"
         },
         {
-          "lesson": 6,
-          "lessonTitle": "Writing Equations to Represent Relationships",
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
           "role": "practises",
-          "activity": "Bottle Deposits",
-          "page": 102,
-          "quote": "Write an equation that relates the number of bottles to the amount"
+          "activity": "Denver to Chicago",
+          "page": 79,
+          "quote": "A plane flew at a constant speed between Denver and Chicago."
         },
         {
-          "lesson": 6,
-          "lessonTitle": "Writing Equations to Represent Relationships",
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
           "role": "assessed",
-          "activity": "More Recycling",
-          "page": 107,
-          "quote": "Write an equation to represent the relationship between the weight of clear glass"
+          "activity": "It’s Snowing in Syracuse",
+          "page": 85,
+          "quote": "Write an equation that gives the amount of snow that has fallen"
         }
       ],
-      "why": "The robot item does not stop at the equation: it then asks how many seconds to travel 11 feet, so the equation has to be used. Lesson 6's goal is to USE equations to solve problems, and both its activity and its cool-down ask for a value first and the equation after. Lesson 4 would have been the placement if the item had stopped at d = 2t."
+      "why": "The robot item writes an equation from a table and then USES it to find the time for 11 feet. First placed at Lesson 6 for that second step, on the reasoning that Lesson 6's goal is using equations to solve problems. Re-derived to Lesson 4: its cool-down is the item's exact structure -- find a value, write the equation, then use it for a new input -- so the write-then-use pair is already Lesson 4's, and an independent second pass and NYCPS both placed it there."
     },
     "g7-2023-025": {
       "course": "Imagine IM New York, Grade 7",

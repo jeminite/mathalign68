@@ -181,3 +181,64 @@ project lessons, and spot-checking the teacher guide shows activity text present
 index did not attribute to an activity. `validate_im_ms_lesson_detail.py` only requires each
 lesson to have AT LEAST ONE activity, so it passes. This needs fixing before grade 6 is swept,
 since it is grade 6 Unit 8's own items that would be judged against it.
+
+## Settled against an independent second pass (11 items)
+
+Four readers re-derived grade 7 without seeing this file or `data/alignment.json`; the
+measurement is in `provenance/alignment_second_pass_g7.md`. Eleven placements were re-read
+and decided.
+
+### Moved a unit -- all four NY-7.EE.2 items, Unit 4 Lesson 5 -> Unit 6 Lesson 12
+
+`g7-2024-011`, `g7-2025-021`, `g7-2025-036`, `g7-2026-036` all ask the same thing: a price is
+discounted by a percentage and the student picks the equivalent single-coefficient form
+(x - 0.25x and 0.75x). Unit 6 Lesson 12's warm-up *20% Off* is that question verbatim, down
+to offering the discount itself as the first distractor, which is what every one of these
+items uses for its choice A. Unit 4 Lesson 5 describes its changes as FRACTIONS and never
+shows the subtraction form. NYCPS independently places `g7-2025-021` in Unit 6 too, so three
+readings put this standard outside the unit the first pass chose.
+
+### Moved a lesson
+
+**`g7-2023-048` and `g7-2025-048` -> Unit 4 Lesson 6.** Two items, each applying a percent
+decrease to two separate prices and then comparing or summing. Lesson 6 *Increasing and
+Decreasing* is where a forward percent decrease is taught; Lesson 11's subject is the
+markup, commission and tip vocabulary neither item uses. The second pass put `g7-2025-048`
+at Lesson 12 instead and this pass diverges: Lesson 12's "multi-step" means operations
+CHAINED on one quantity, as in its cool-down where tax is added to a discounted price. Two
+parallel decreases are not that, and splitting these twins would assert a distinction the
+items do not make.
+
+**`g7-2024-029` -> Unit 4 Lesson 11.** The library receives 35% of what the class earns --
+a share of someone else's total, which is the commission shape Lesson 11 teaches as its own
+category. Lesson 9's actual subject is fractions OF a percent (0.3%, 0.03%), which this item
+never touches.
+
+**`g7-2025-046` -> Unit 6 Lesson 20.** Simplify -5y + 3 - 6y + 10y - 1: no parentheses, so
+nothing to expand. This also makes the project consistent with itself, since `g7-2024-037`
+was already placed at Lesson 20 on exactly that recorded ground.
+
+### Held, with the second pass's lesson added as evidence
+
+**`g7-2023-041`** stays at Lesson 19 *Expanding and Factoring* -- its cool-down is
+`-1/2(-2x + 4y)`, the same fractional expansion -- with Lesson 18's *Organizing Work*, where
+1/2 is first distributed over a sum, cited as `introduces`.
+
+**`g7-2024-048`** stays at Lesson 12 *Solving Multi-step Percentage Problems*, which is the
+discount-then-tax chain the item performs, with Lesson 7 cited for the reverse step of
+backing $575 out of $460. At p = 0.25 the item is hard precisely because it needs both.
+
+**`g7-2024-021`** stays at Lesson 4 -- the task is writing one equation from a table -- with
+Lesson 5 cited for the reciprocal distinction its distractor y = 4x turns on.
+
+### Per-one from a table: three readings against one
+
+`g7-2023-004` and `g7-2024-001` moved from Lesson 3 to Lesson 2. Both ask a per-one question
+-- pages in 1 day, cost per package -- and Lesson 2's cool-down *Green Paint* asks exactly
+that of a table before naming it as the constant. The second pass and NYCPS both read them
+that way. Lesson 3 stays cited as where the constant is named and its reciprocal taught.
+
+`g7-2023-042` moved from Lesson 6 to Lesson 4, whose cool-down *It's Snowing in Syracuse* is
+the item's own structure: find a value, write the equation, then use it for a new input. The
+first pass had reached for Lesson 6 because the item uses its equation, not noticing Lesson
+4's cool-down already does both.

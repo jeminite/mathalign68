@@ -68,6 +68,16 @@ def main():
                 continue
             want = hit[0]
             entry = align[item["id"]]
+            # An entry that deliberately makes NO lesson claim cannot agree or
+            # disagree about a lesson, and counting it as a miss punishes the
+            # honesty. The six grade 7 items whose PDF page is undetermined are
+            # in this state: no stem was ever extracted, so there is nothing to
+            # judge a lesson against and the entry stops at the unit. Before
+            # this they scored as "7.5.None" against NYCPS and dragged the rate
+            # from 72.8% to 67.8% without a single placement having changed.
+            if entry.get("primaryLesson") is None:
+                stats["no lesson claimed (not scored)"] += 1
+                continue
             cg = re.search(r"Grade\s+([678])", entry.get("course") or "")
             ours = "%s.%s.%s" % (cg.group(1) if cg else g, entry["unit"],
                                  entry["primaryLesson"])
@@ -92,8 +102,11 @@ def main():
     print("entries written: %d    comparable against NYCPS: %d\n"
           % (len(align), stats["compared"]))
     for k, v in stats.most_common():
-        if k != "compared":
+        if k not in ("compared", "no lesson claimed (not scored)"):
             print("%5d  %s" % (v, k))
+    if stats["no lesson claimed (not scored)"]:
+        print("\n%5d  items NYCPS cites that we deliberately leave at the unit,"
+              " excluded from the rate" % stats["no lesson claimed (not scored)"])
     if stats["compared"]:
         agree = (stats["  same primary lesson"]
                  + stats["  NYCPS's lesson is among our evidence, not our primary"])
