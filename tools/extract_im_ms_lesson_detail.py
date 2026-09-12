@@ -232,6 +232,24 @@ def headings(spans):
     return sorted(hs, key=lambda h: (h["y"], h["x"]))
 
 
+def _inline_standards(spans, y, band=14.0):
+    """The Addressing/Building On tags printed beside an activity heading at
+    ~8.25pt. Finer than the lesson-level Alignments sidebar: it says which
+    activity carries the standard, not merely which lesson."""
+    out, label = {}, None
+    for s in sorted([x for x in spans if abs(x["y"] - y) <= band
+                     and 7.8 <= x["size"] <= 8.6],
+                    key=lambda x: x["x"]):
+        t = clean(s["text"])
+        if t in STD_LABELS:
+            label = t
+        elif label:
+            found = CODE_RE.findall(t)
+            if found:
+                out.setdefault(label, []).extend(found)
+    return {k: sorted(set(v)) for k, v in out.items()}
+
+
 def region(spans, hs, h):
     """The text under heading h, bounded by its column and the next structural
     heading. Only structural headings bound: bolded list markers and mid-sentence
@@ -402,14 +420,20 @@ def parse_lesson(doc, ent):
                 continue
             sel, _ = region(p["spans"], p["heads"], h)
             if h["kind"] == "kind":
-                name = render(fold_fractions(
-                [s for s in sel if ANSWER_FONT not in s["font"]]))
+                # The name is the bold run under the kind heading, and ONLY
+                # that. A Cool-down is followed immediately by teacher prose in
+                # the same region ("Shoes on Sale", then "Students who answer
+                # $72.24 may have combined..."), which rendered into the name and
+                # made the activity unfindable by the name an entry cites.
+                name = render([s for s in sel if s["font"] == "Hellix-Bold"
+                               and BODY_MIN <= s["size"] <= BODY_MAX])
                 kind = h["text"]
                 optional = ":" in kind
                 cur = {"kind": kind.split(":")[0].strip(),
                        "optional": optional,
                        "name": name.split("  ")[0].strip(),
-                       "page": p["i"] + 1, "standards": p["std"]}
+                       "page": p["i"] + 1,
+                       "standards": _inline_standards(p["spans"], h["y"]) or p["std"]}
                 rec["activities"].append(cur)
                 in_practice = False
             elif h["kind"] == "problem":

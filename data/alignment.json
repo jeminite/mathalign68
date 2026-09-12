@@ -151,6 +151,2708 @@
         }
       ],
       "why": "The item gives a circumference and asks for the area, which is the two-step the cool-down of Lesson 8 asks for in the same order: circumference, then diameter, then radius, then area. Lesson 10's card sort is where students practise deciding which of the two a question needs. Neither is reachable from the standard's lesson list by itself."
+    },
+    "g7-2023-033": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2024-026": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2024-043": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2025-027": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2025-044": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2026-005": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "Each item gives a quantity per a fractional quantity and asks for the unit rate. Lesson 2 Activity 1 is where that computation is introduced, from 7 1/2 kilometres in 6 minutes; Lesson 3's cool-down is where the curriculum assesses finding a unit price from a fractional amount and using it."
+    },
+    "g7-2026-044": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 2,
+      "lessonTitle": "Ratios and Rates With Fractions",
+      "candidateLessons": [
+        2,
+        3
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "practises",
+          "activity": "Comparing Running Speeds",
+          "page": 39,
+          "quote": "Lin ran 2 3/4 miles in 2/5 of an hour"
+        }
+      ],
+      "why": "This item differs from the other six on the standard: it asks for the difference between two average speeds, each a fractional distance over a fractional time. Lesson 2 Activity 2 asks exactly that comparison, for Lin and Noah."
+    },
+    "g7-2023-032": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 10,
+      "lessonTitle": "Tax and Tip",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Tax and Tip",
+          "role": "practises",
+          "activity": "Dining at a Restaurant",
+          "page": 139,
+          "quote": "it says they also need to pay $3.99 in sales tax"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Tax and Tip",
+          "role": "assessed",
+          "activity": "A Restaurant in a Different City",
+          "page": 142,
+          "quote": "At a dinner, the meal costs $22, and a sales tax of $1.87 is added"
+        }
+      ],
+      "why": "The item adds a 5% sales tax and a 20% tip to a restaurant bill. Lesson 10 is the tax-and-tip lesson; its Activity 3 works a restaurant bill with tax and tip, and its cool-down is where the curriculum assesses reasoning about a meal price and its tax."
+    },
+    "g7-2023-038": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 11,
+      "lessonTitle": "Percentage Contexts",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
+          "role": "introduces",
+          "activity": "More Shampoo and a Discounted Shirt",
+          "page": 88,
+          "quote": "A shampoo bottle says that now it contains 20% more"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
+          "role": "practises",
+          "activity": "Card Sort: Percentage Situations",
+          "page": 148,
+          "quote": "Take turns with your partner to match a situation to a category"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "Each item applies one or more percentage discounts to listed prices. Lesson 6 Activity 1 is where a discount is introduced alongside a percentage increase; Lesson 11 sorts discount, markup and tax situations apart; Lesson 12 assesses a discount applied to a normal price."
+    },
+    "g7-2023-048": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 11,
+      "lessonTitle": "Percentage Contexts",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
+          "role": "introduces",
+          "activity": "More Shampoo and a Discounted Shirt",
+          "page": 88,
+          "quote": "A shampoo bottle says that now it contains 20% more"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
+          "role": "practises",
+          "activity": "Card Sort: Percentage Situations",
+          "page": 148,
+          "quote": "Take turns with your partner to match a situation to a category"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "Each item applies one or more percentage discounts to listed prices. Lesson 6 Activity 1 is where a discount is introduced alongside a percentage increase; Lesson 11 sorts discount, markup and tax situations apart; Lesson 12 assesses a discount applied to a normal price."
+    },
+    "g7-2025-048": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 11,
+      "lessonTitle": "Percentage Contexts",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
+          "role": "introduces",
+          "activity": "More Shampoo and a Discounted Shirt",
+          "page": 88,
+          "quote": "A shampoo bottle says that now it contains 20% more"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Percentage Contexts",
+          "role": "practises",
+          "activity": "Card Sort: Percentage Situations",
+          "page": 148,
+          "quote": "Take turns with your partner to match a situation to a category"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "Each item applies one or more percentage discounts to listed prices. Lesson 6 Activity 1 is where a discount is introduced alongside a percentage increase; Lesson 11 sorts discount, markup and tax situations apart; Lesson 12 assesses a discount applied to a normal price."
+    },
+    "g7-2024-048": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Multi-Step Percentage Problems",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
+          "role": "introduces",
+          "activity": "More Shampoo and a Discounted Shirt",
+          "page": 88,
+          "quote": "A shampoo bottle says that now it contains 20% more"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Tax and Tip",
+          "role": "practises",
+          "activity": "Dining at a Restaurant",
+          "page": 139,
+          "quote": "it says they also need to pay $3.99 in sales tax"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "Both items apply a percentage discount and then a sales tax to the discounted price. Lesson 12's cool-down asks for exactly that sequence -- 20% off, then 6% tax on the sale price -- and its teacher note warns against the error of combining the two percentages, which is what the items' distractors test."
+    },
+    "g7-2026-017": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Multi-Step Percentage Problems",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Increasing and Decreasing",
+          "role": "introduces",
+          "activity": "More Shampoo and a Discounted Shirt",
+          "page": 88,
+          "quote": "A shampoo bottle says that now it contains 20% more"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Tax and Tip",
+          "role": "practises",
+          "activity": "Dining at a Restaurant",
+          "page": 139,
+          "quote": "it says they also need to pay $3.99 in sales tax"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "Both items apply a percentage discount and then a sales tax to the discounted price. Lesson 12's cool-down asks for exactly that sequence -- 20% off, then 6% tax on the sale price -- and its teacher note warns against the error of combining the two percentages, which is what the items' distractors test."
+    },
+    "g7-2024-041": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Multi-Step Percentage Problems",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "practises",
+          "activity": "What Is the Percentage? (Optional)",
+          "page": 161,
+          "quote": "What percentage of the sale price is their commission?"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "These items run the other way: a before and an after amount are given and the percentage is the unknown. Lesson 12 Activity 2 asks precisely that, for a commission and for a tip. The simple-interest framing of g7-2026-012 has no counterpart in the unit; the percentage-from-two-amounts step does."
+    },
+    "g7-2026-012": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "C",
+      "sectionTitle": "Applying Percentages",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Multi-Step Percentage Problems",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "practises",
+          "activity": "What Is the Percentage? (Optional)",
+          "page": 161,
+          "quote": "What percentage of the sale price is their commission?"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Multi-Step Percentage Problems",
+          "role": "assessed",
+          "activity": "Shoes on Sale",
+          "page": 163,
+          "quote": "They are on sale for 20% off. A sales tax of 6% is added"
+        }
+      ],
+      "why": "These items run the other way: a before and an after amount are given and the percentage is the unknown. Lesson 12 Activity 2 asks precisely that, for a commission and for a tip. The simple-interest framing of g7-2026-012 has no counterpart in the unit; the percentage-from-two-amounts step does."
+    },
+    "g7-2023-023": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "B",
+      "sectionTitle": "Percent Increase and Decrease",
+      "primaryLesson": 8,
+      "lessonTitle": "Percent Increase and Decrease With Equations",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Part of a Percent",
+          "role": "practises",
+          "activity": "Population Growth",
+          "page": 123,
+          "quote": "It increased by 8% in one year. What was the new population?"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Percent Increase and Decrease With Equations",
+          "role": "assessed",
+          "activity": "Tyler’s Savings Bond",
+          "page": 116,
+          "quote": "The value of the savings bond increases by 4% each year"
+        }
+      ],
+      "why": "The item applies a percentage increase and then a further increase to the result. Lesson 9 Activity 2 is a single population increase; Lesson 8's cool-down is the assessed task where a value increases by the same percentage year on year, which is the repeated-increase structure the item needs."
+    },
+    "g7-2024-029": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "B",
+      "sectionTitle": "Percent Increase and Decrease",
+      "primaryLesson": 9,
+      "lessonTitle": "Part of a Percent",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Part of a Percent",
+          "role": "practises",
+          "activity": "Fractions of a Percent",
+          "page": 121,
+          "quote": "Find each percentage of 60. What do you notice about your answers?"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Part of a Percent",
+          "role": "assessed",
+          "activity": "Percentages of 750",
+          "page": 125,
+          "quote": "If the number increases by 4%, how many students will there be?"
+        }
+      ],
+      "why": "The item is a single percentage of an amount -- 35% of the money from 500 gift cards. Lesson 9 Activity 1 is repeated practice at finding a percentage of a number, and its cool-down is the assessed task on a school of 750 students."
+    },
+    "g7-2024-034": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 3,
+      "lessonTitle": "Revisiting Proportional Relationships",
+      "candidateLessons": [
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "A Train Is Traveling at …",
+          "page": 37,
+          "quote": "a constant speed and goes 7 1/2 kilometers in 6 minutes"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Revisiting Proportional Relationships",
+          "role": "assessed",
+          "activity": "The Price of Wire",
+          "page": 57,
+          "quote": "It costs $3.45 to buy 3/4 foot of electrical wire"
+        }
+      ],
+      "why": "This item carries NY-7.RP.3 but is not a percentage problem: it scales $23.75 per 2 1/2 hours up to 5 3/4 hours. Lesson 3's cool-down is the same task with wire -- a price for a fractional amount, scaled to another fractional amount -- and Lesson 2 Activity 1 is where that reasoning is introduced."
+    },
+    "g7-2023-041": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 19,
+      "lessonTitle": "Expanding and Factoring",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "assessed",
+          "activity": "Equivalent Expressions",
+          "page": 227,
+          "quote": "Expand to write an equivalent expression"
+        }
+      ],
+      "why": "Each item expands a product with a negative or fractional coefficient and asks for the result as a sum of unlike terms. Lesson 18 is where distributing over a subtraction is introduced; Lesson 19's cool-down asks for exactly the item's task, on -1/2(-2x + 4y)."
+    },
+    "g7-2024-046": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 19,
+      "lessonTitle": "Expanding and Factoring",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "assessed",
+          "activity": "Equivalent Expressions",
+          "page": 227,
+          "quote": "Expand to write an equivalent expression"
+        }
+      ],
+      "why": "Each item expands a product with a negative or fractional coefficient and asks for the result as a sum of unlike terms. Lesson 18 is where distributing over a subtraction is introduced; Lesson 19's cool-down asks for exactly the item's task, on -1/2(-2x + 4y)."
+    },
+    "g7-2026-032": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 19,
+      "lessonTitle": "Expanding and Factoring",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "assessed",
+          "activity": "Equivalent Expressions",
+          "page": 227,
+          "quote": "Expand to write an equivalent expression"
+        }
+      ],
+      "why": "Each item expands a product with a negative or fractional coefficient and asks for the result as a sum of unlike terms. Lesson 18 is where distributing over a subtraction is introduced; Lesson 19's cool-down asks for exactly the item's task, on -1/2(-2x + 4y)."
+    },
+    "g7-2024-013": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2025-020": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2026-011": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2026-023": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2025-046": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2026-041": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 21,
+      "lessonTitle": "Combining Like Terms (Part 2)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Factoring and Expanding With Negative Numbers",
+          "page": 222,
+          "quote": "In each row, write the equivalent expression"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "practises",
+          "activity": "Seeing it Differently",
+          "page": 242,
+          "quote": "Some students are trying to write an expression with fewer terms"
+        },
+        {
+          "lesson": 21,
+          "lessonTitle": "Combining Like Terms (Part 2)",
+          "role": "assessed",
+          "activity": "Subtracting Linear Expressions",
+          "page": 248,
+          "quote": "Write an equivalent expression with fewer terms"
+        }
+      ],
+      "why": "These items distribute across two products and then combine like terms, with a subtraction in front of the second product. Lesson 18 introduces subtraction inside an equivalent expression, Lesson 19 the distribution, and Lesson 21 is the lesson on subtracting linear expressions whose cool-down is the item's task."
+    },
+    "g7-2024-037": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 20,
+      "lessonTitle": "Combining Like Terms (Part 1)",
+      "candidateLessons": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 20,
+          "lessonTitle": "Combining Like Terms (Part 1)",
+          "role": "introduces",
+          "activity": "’s and ’s",
+          "page": 232,
+          "quote": "trying to write an expression with fewer terms that is equivalent"
+        },
+        {
+          "lesson": 20,
+          "lessonTitle": "Combining Like Terms (Part 1)",
+          "role": "assessed",
+          "activity": "Fewer Terms",
+          "page": 237,
+          "quote": "Write each expression with fewer terms"
+        }
+      ],
+      "why": "This item combines two like terms with fractional coefficients and no distribution step, which is Lesson 20 rather than Lesson 21: its cool-down asks for 10x - 2x written with fewer terms."
+    },
+    "g7-2023-021": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "D",
+      "sectionTitle": "Writing Equivalent Expressions",
+      "primaryLesson": 19,
+      "lessonTitle": "Expanding and Factoring",
+      "candidateLessons": [
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 18,
+          "lessonTitle": "Subtraction in Equivalent Expressions",
+          "role": "introduces",
+          "activity": "Organizing Work",
+          "page": 214,
+          "quote": "Use the distributive property to write an expression that is equivalent"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "practises",
+          "activity": "Seeing Structure",
+          "page": 225,
+          "quote": "Factor each expression. Be prepared to explain your reasoning"
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Expanding and Factoring",
+          "role": "assessed",
+          "activity": "Equivalent Expressions",
+          "page": 227,
+          "quote": "Factor to write an equivalent expression"
+        }
+      ],
+      "why": "Although this item carries NY-7.EE.2, its task is factoring: 8b + 8g rewritten as 8(b + g). Lesson 18 is where the distributive property is used on a sum written out, and Lesson 19 Activity 2 is repeated practice at factoring exactly that shape."
+    },
+    "g7-2023-047": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 11,
+      "lessonTitle": "Using Equations to Solve Problems",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "assessed",
+          "activity": "The Basketball Game",
+          "page": 129,
+          "quote": "Diego scored 9 points less than Andre in the basketball game"
+        }
+      ],
+      "why": "Both items describe a total built from a fixed charge and a repeated one and ask for the unknown count or difference. Lesson 11 is the lesson on using an equation to solve such problems, and its cool-down is a chain of comparisons resolved backwards, as g7-2025-025 requires."
+    },
+    "g7-2025-025": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 11,
+      "lessonTitle": "Using Equations to Solve Problems",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "assessed",
+          "activity": "The Basketball Game",
+          "page": 129,
+          "quote": "Diego scored 9 points less than Andre in the basketball game"
+        }
+      ],
+      "why": "Both items describe a total built from a fixed charge and a repeated one and ask for the unknown count or difference. Lesson 11 is the lesson on using an equation to solve such problems, and its cool-down is a chain of comparisons resolved backwards, as g7-2025-025 requires."
+    },
+    "g7-2023-035": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 11,
+      "lessonTitle": "Using Equations to Solve Problems",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Relationships Between Quantities",
+          "role": "introduces",
+          "activity": "Entrance Fees",
+          "page": 25,
+          "quote": "A state park charges an entrance fee based on the number of people"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "assessed",
+          "activity": "The Basketball Game",
+          "page": 129,
+          "quote": "Diego scored 9 points less than Andre in the basketball game"
+        }
+      ],
+      "why": "These are multi-step money problems: a fixed fee plus a per-unit charge, or a rate applied to fractional hours. Lesson 1 Activity 1 introduces the fixed-plus-per-person structure with a park entrance fee; Lesson 11 is where it becomes an equation to solve."
+    },
+    "g7-2025-038": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 11,
+      "lessonTitle": "Using Equations to Solve Problems",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Relationships Between Quantities",
+          "role": "introduces",
+          "activity": "Entrance Fees",
+          "page": 25,
+          "quote": "A state park charges an entrance fee based on the number of people"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "assessed",
+          "activity": "The Basketball Game",
+          "page": 129,
+          "quote": "Diego scored 9 points less than Andre in the basketball game"
+        }
+      ],
+      "why": "These are multi-step money problems: a fixed fee plus a per-unit charge, or a rate applied to fractional hours. Lesson 1 Activity 1 introduces the fixed-plus-per-person structure with a park entrance fee; Lesson 11 is where it becomes an equation to solve."
+    },
+    "g7-2026-010": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 11,
+      "lessonTitle": "Using Equations to Solve Problems",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Relationships Between Quantities",
+          "role": "introduces",
+          "activity": "Entrance Fees",
+          "page": 25,
+          "quote": "A state park charges an entrance fee based on the number of people"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "assessed",
+          "activity": "The Basketball Game",
+          "page": 129,
+          "quote": "Diego scored 9 points less than Andre in the basketball game"
+        }
+      ],
+      "why": "These are multi-step money problems: a fixed fee plus a per-unit charge, or a rate applied to fractional hours. Lesson 1 Activity 1 introduces the fixed-plus-per-person structure with a park entrance fee; Lesson 11 is where it becomes an equation to solve."
+    },
+    "g7-2024-017": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "practises",
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "On the second day, she walked 5 minutes more than on the first day"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "assessed",
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "First, they reduce their time by 2.1 minutes"
+        }
+      ],
+      "why": "Both items increase a count by a percentage and then price the combined total. Lesson 12 is the lesson on solving problems about a percent increase or decrease, and its cool-down applies one reduction and then a second to the result."
+    },
+    "g7-2025-028": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "practises",
+          "activity": "Walking More Each Day",
+          "page": 135,
+          "quote": "On the second day, she walked 5 minutes more than on the first day"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "assessed",
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "First, they reduce their time by 2.1 minutes"
+        }
+      ],
+      "why": "Both items increase a count by a percentage and then price the combined total. Lesson 12 is the lesson on solving problems about a percent increase or decrease, and its cool-down applies one reduction and then a second to the result."
+    },
+    "g7-2026-025": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "practises",
+          "activity": "A Sale on Shoes",
+          "page": 136,
+          "quote": "A store is having a sale where all shoes are discounted by 20%"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "assessed",
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "First, they reduce their time by 2.1 minutes"
+        }
+      ],
+      "why": "Both items apply one reduction and then a second to what is left -- two fifths of the money, then a tenth of the remainder; a pizza total, then a 20% discount. Lesson 12 Activity 2 is the discount-then-coupon problem with the same order-matters structure, and its cool-down assesses it."
+    },
+    "g7-2026-043": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 12,
+      "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "practises",
+          "activity": "A Sale on Shoes",
+          "page": 136,
+          "quote": "A store is having a sale where all shoes are discounted by 20%"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+          "role": "assessed",
+          "activity": "Timing the Relay Race",
+          "page": 139,
+          "quote": "First, they reduce their time by 2.1 minutes"
+        }
+      ],
+      "why": "Both items apply one reduction and then a second to what is left -- two fifths of the money, then a tenth of the remainder; a pizza total, then a 20% discount. Lesson 12 Activity 2 is the discount-then-coupon problem with the same order-matters structure, and its cool-down assesses it."
+    },
+    "g7-2025-010": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 3,
+      "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+          "role": "practises",
+          "activity": "Matching Equations to Tape Diagrams",
+          "page": 46,
+          "quote": "Match each equation to one of the tape diagrams"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+          "role": "assessed",
+          "activity": "Three of These Equations Belong Together",
+          "page": 51,
+          "quote": "Which equation matches the diagram?"
+        }
+      ],
+      "why": "This item does not solve anything: it shows a rectangle and asks which equation finds the length. Lesson 3's cool-down is that exact task -- a diagram and four candidate equations, three of which are wrong in the way the item's distractors are."
+    },
+    "g7-2024-004": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 4,
+      "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "introduces",
+          "activity": "Situations and Diagrams",
+          "page": 56,
+          "quote": "Draw a tape diagram to represent each situation"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "assessed",
+          "activity": "Finding Solutions",
+          "page": 60,
+          "quote": "Find the solution to the equation and explain your reasoning"
+        }
+      ],
+      "why": "Each item is a context of the form px + q = r -- a fixed cost plus a repeated one, or equal groups plus a remainder -- to be set up and solved. Lesson 4 is where situations of that shape are turned into equations, and Lesson 11 is where they are solved in context."
+    },
+    "g7-2024-045": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 4,
+      "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "introduces",
+          "activity": "Situations and Diagrams",
+          "page": 56,
+          "quote": "Draw a tape diagram to represent each situation"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "assessed",
+          "activity": "Finding Solutions",
+          "page": 60,
+          "quote": "Find the solution to the equation and explain your reasoning"
+        }
+      ],
+      "why": "Each item is a context of the form px + q = r -- a fixed cost plus a repeated one, or equal groups plus a remainder -- to be set up and solved. Lesson 4 is where situations of that shape are turned into equations, and Lesson 11 is where they are solved in context."
+    },
+    "g7-2025-042": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 6,
+      "lessonTitle": "Distinguishing Between Two Types of Situations",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "introduces",
+          "activity": "Situations and Diagrams",
+          "page": 56,
+          "quote": "Draw a tape diagram to represent each situation"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Distinguishing Between Two Types of Situations",
+          "role": "practises",
+          "activity": "Even More Situations, Diagrams, and Equations",
+          "page": 75,
+          "quote": "Which diagram goes with which story?"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Distinguishing Between Two Types of Situations",
+          "role": "assessed",
+          "activity": "After-School Tutoring",
+          "page": 77,
+          "quote": "Write an equation for each story. Then find the number of problems originally assigned"
+        }
+      ],
+      "why": "This item is the other equation type: three friends each paid the same ticket price AND the same popcorn price, so it is 3(x + 6.50) = 54 rather than 3x + q = r. Lesson 6 is the lesson that distinguishes the two shapes, and its cool-down asks for an equation and its solution for stories of each kind."
+    },
+    "g7-2026-001": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 4,
+      "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "introduces",
+          "activity": "Situations and Diagrams",
+          "page": 56,
+          "quote": "Draw a tape diagram to represent each situation"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "assessed",
+          "activity": "Finding Solutions",
+          "page": 60,
+          "quote": "Find the solution to the equation and explain your reasoning"
+        }
+      ],
+      "why": "Each item is a context of the form px + q = r -- a fixed cost plus a repeated one, or equal groups plus a remainder -- to be set up and solved. Lesson 4 is where situations of that shape are turned into equations, and Lesson 11 is where they are solved in context."
+    },
+    "g7-2026-048": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Situations of the Form ​px + q = r​ and ​p​(x + q)​ = r​",
+      "primaryLesson": 4,
+      "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "introduces",
+          "activity": "Situations and Diagrams",
+          "page": 56,
+          "quote": "Draw a tape diagram to represent each situation"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using Equations to Solve Problems",
+          "role": "practises",
+          "activity": "At the Community Festival",
+          "page": 125,
+          "quote": "Tyler makes invitations to the community festival"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+          "role": "assessed",
+          "activity": "Finding Solutions",
+          "page": 60,
+          "quote": "Find the solution to the equation and explain your reasoning"
+        }
+      ],
+      "why": "Each item is a context of the form px + q = r -- a fixed cost plus a repeated one, or equal groups plus a remainder -- to be set up and solved. Lesson 4 is where situations of that shape are turned into equations, and Lesson 11 is where they are solved in context."
+    },
+    "g7-2026-020": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "B",
+      "sectionTitle": "Solving Equations of the Form ​px + q = r​ and ​p​(x + q)​ = r​ and Problems That Lead to",
+      "primaryLesson": 10,
+      "lessonTitle": "Different Options for Solving One Equation",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Dealing With Negative Numbers",
+          "role": "introduces",
+          "activity": "Old and New Ways to Solve",
+          "page": 108,
+          "quote": "Solve each equation. Be prepared to explain your reasoning"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Different Options for Solving One Equation",
+          "role": "assessed",
+          "activity": "Solve Two Equations",
+          "page": 120,
+          "quote": "Solve each equation. Explain or show your reasoning"
+        }
+      ],
+      "why": "This item gives a bare equation and asks which value of x makes it true, with negative answers among the choices. Lesson 9 is where solving with negative numbers is introduced and Lesson 10's cool-down is the assessed version."
+    },
+    "g7-2023-037": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 16,
+      "lessonTitle": "Interpreting Inequalities",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Club Activities Matching",
+          "page": 191,
+          "quote": "Choose the inequality that best matches each given situation"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "assessed",
+          "activity": "Party Decorations",
+          "page": 195,
+          "quote": "He plans to make one large paper crane for a centerpiece"
+        }
+      ],
+      "why": "Each item gives a budget or target with a fixed cost and a per-item cost and asks which inequality represents it, without solving. Lesson 14 is where that fixed-plus-per-item inequality is first written from a context; Lesson 16 Activity 1 is the item's task word for word."
+    },
+    "g7-2024-010": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 16,
+      "lessonTitle": "Interpreting Inequalities",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Club Activities Matching",
+          "page": 191,
+          "quote": "Choose the inequality that best matches each given situation"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "assessed",
+          "activity": "Party Decorations",
+          "page": 195,
+          "quote": "He plans to make one large paper crane for a centerpiece"
+        }
+      ],
+      "why": "Each item gives a budget or target with a fixed cost and a per-item cost and asks which inequality represents it, without solving. Lesson 14 is where that fixed-plus-per-item inequality is first written from a context; Lesson 16 Activity 1 is the item's task word for word."
+    },
+    "g7-2025-034": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 16,
+      "lessonTitle": "Interpreting Inequalities",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Club Activities Matching",
+          "page": 191,
+          "quote": "Choose the inequality that best matches each given situation"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "assessed",
+          "activity": "Party Decorations",
+          "page": 195,
+          "quote": "He plans to make one large paper crane for a centerpiece"
+        }
+      ],
+      "why": "Each item gives a budget or target with a fixed cost and a per-item cost and asks which inequality represents it, without solving. Lesson 14 is where that fixed-plus-per-item inequality is first written from a context; Lesson 16 Activity 1 is the item's task word for word."
+    },
+    "g7-2026-021": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 16,
+      "lessonTitle": "Interpreting Inequalities",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Club Activities Matching",
+          "page": 191,
+          "quote": "Choose the inequality that best matches each given situation"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "assessed",
+          "activity": "Party Decorations",
+          "page": 195,
+          "quote": "He plans to make one large paper crane for a centerpiece"
+        }
+      ],
+      "why": "Each item gives a budget or target with a fixed cost and a per-item cost and asks which inequality represents it, without solving. Lesson 14 is where that fixed-plus-per-item inequality is first written from a context; Lesson 16 Activity 1 is the item's task word for word."
+    },
+    "g7-2023-043": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 17,
+      "lessonTitle": "Modeling With Inequalities",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Modeling With Inequalities",
+          "role": "assessed",
+          "activity": "Playlist Timing",
+          "page": 205,
+          "quote": "Elena is trying to create a playlist that lasts no more than 2 hours"
+        }
+      ],
+      "why": "This item asks students to write AND solve an inequality for a party budget. Lesson 17 is the modelling lesson and its cool-down is the same shape: a fixed amount already used, a per-item amount, and a ceiling."
+    },
+    "g7-2025-029": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 14,
+      "lessonTitle": "Finding Solutions to Inequalities in Context",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "assessed",
+          "activity": "Colder and Colder",
+          "page": 173,
+          "quote": "The temperature is dropping 4 degrees every hour"
+        }
+      ],
+      "why": "Neither item asks for an inequality: each asks for the greatest or least value that keeps a running total above or below a bound. Lesson 14's cool-down is a quantity decreasing by a fixed amount each hour with a floor to stay above, which is g7-2025-029 with weeks for hours."
+    },
+    "g7-2026-006": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": "C",
+      "sectionTitle": "Inequalities",
+      "primaryLesson": 14,
+      "lessonTitle": "Finding Solutions to Inequalities in Context",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        11,
+        12,
+        16,
+        17,
+        14,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "introduces",
+          "activity": "Earning Money for Soccer Stuff",
+          "page": 168,
+          "quote": "He earns $25 plus $3 for every subscription he sells"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Solutions to Inequalities in Context",
+          "role": "assessed",
+          "activity": "Colder and Colder",
+          "page": 173,
+          "quote": "The temperature is dropping 4 degrees every hour"
+        }
+      ],
+      "why": "Neither item asks for an inequality: each asks for the greatest or least value that keeps a running total above or below a bound. Lesson 14's cool-down is a quantity decreasing by a fixed amount each hour with a floor to stay above, which is g7-2025-029 with weeks for hours."
+    },
+    "g7-2024-011": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 5,
+      "lessonTitle": "Say It With Decimals",
+      "candidateLessons": [
+        4,
+        5,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "introduces",
+          "activity": "Walking Half as Much Again",
+          "page": 62,
+          "quote": "Complete the table to show the total distance walked in each case"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "practises",
+          "activity": "More and Less With Decimals",
+          "page": 75,
+          "quote": "Match each diagram with a description and an equation"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Percent Increase and Decrease With Equations",
+          "role": "practises",
+          "activity": "Matching Equations",
+          "page": 110,
+          "quote": "Match an equation to the situation"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "assessed",
+          "activity": "Reading More",
+          "page": 78,
+          "quote": "Write an equation that relates the number of minutes Kiran read"
+        }
+      ],
+      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+    },
+    "g7-2025-021": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 5,
+      "lessonTitle": "Say It With Decimals",
+      "candidateLessons": [
+        4,
+        5,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "introduces",
+          "activity": "Walking Half as Much Again",
+          "page": 62,
+          "quote": "Complete the table to show the total distance walked in each case"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "practises",
+          "activity": "More and Less With Decimals",
+          "page": 75,
+          "quote": "Match each diagram with a description and an equation"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Percent Increase and Decrease With Equations",
+          "role": "practises",
+          "activity": "Matching Equations",
+          "page": 110,
+          "quote": "Match an equation to the situation"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "assessed",
+          "activity": "Reading More",
+          "page": 78,
+          "quote": "Write an equation that relates the number of minutes Kiran read"
+        }
+      ],
+      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+    },
+    "g7-2025-036": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 5,
+      "lessonTitle": "Say It With Decimals",
+      "candidateLessons": [
+        4,
+        5,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "introduces",
+          "activity": "Walking Half as Much Again",
+          "page": 62,
+          "quote": "Complete the table to show the total distance walked in each case"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "practises",
+          "activity": "More and Less With Decimals",
+          "page": 75,
+          "quote": "Match each diagram with a description and an equation"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Percent Increase and Decrease With Equations",
+          "role": "practises",
+          "activity": "Matching Equations",
+          "page": 110,
+          "quote": "Match an equation to the situation"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "assessed",
+          "activity": "Reading More",
+          "page": 78,
+          "quote": "Write an equation that relates the number of minutes Kiran read"
+        }
+      ],
+      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+    },
+    "g7-2026-036": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 5,
+      "lessonTitle": "Say It With Decimals",
+      "candidateLessons": [
+        4,
+        5,
+        8
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table and unit guide tag",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "introduces",
+          "activity": "Walking Half as Much Again",
+          "page": 62,
+          "quote": "Complete the table to show the total distance walked in each case"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "practises",
+          "activity": "More and Less With Decimals",
+          "page": 75,
+          "quote": "Match each diagram with a description and an equation"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Percent Increase and Decrease With Equations",
+          "role": "practises",
+          "activity": "Matching Equations",
+          "page": 110,
+          "quote": "Match an equation to the situation"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Say It With Decimals",
+          "role": "assessed",
+          "activity": "Reading More",
+          "page": 78,
+          "quote": "Write an equation that relates the number of minutes Kiran read"
+        }
+      ],
+      "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
     }
   }
 }
