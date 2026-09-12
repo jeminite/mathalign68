@@ -225,8 +225,22 @@ def main():
           not unflagged, "\n".join(unflagged[:10]))
     check("every lesson's activities are numbered 1..N with no gap",
           not gappy, "\n".join(gappy[:10]))
+    # Grade 8 Unit 6's outline bookmark reads "Section B" and stops, so five
+    # lessons carried an empty sectionTitle and a section-level comparison
+    # against an outside source silently had nothing to compare. A blank is not
+    # a section title; the extractor now reads the section's opening page.
+    unnamed = ["%s.%s.%s" % (g, u, n)
+               for g, gd in detail["grades"].items()
+               for u, ud in gd["units"].items()
+               for n, rec in ud["lessons"].items()
+               if not (rec.get("sectionLetter") or "").strip()
+               or not (rec.get("sectionTitle") or "").strip()]
+    check("every lesson names the section it belongs to",
+          not unnamed, "%d without: %s" % (len(unnamed), ", ".join(unnamed[:15])))
     note("%d heading(s) were recovered from a split word by the extractor"
          % (detail.get("meta", {}).get("headingsRecovered", 0)))
+    note("%d section title(s) were recovered from the section's opening page"
+         % (detail.get("meta", {}).get("sectionTitlesRecovered", 0)))
     if thin:
         note("%d non-project lessons carry fewer than 3 activities -- an item "
              "aligned to one of these was judged against part of the lesson: %s"

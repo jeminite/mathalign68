@@ -13,8 +13,18 @@ reading the task statements. What matters is that disagreements are SEEN and
 decided, rather than accumulating unnoticed. A rate that drifts downward as more
 entries are written is the signal to stop and re-read.
 
-Covers grades 6 and 7 for 2023-2025 only: grade 8's NYCPS sheet carries no lesson
-citations, and no sheet covers 2026.
+Reads all three sheets, but only grades 6 and 7 can ever produce a comparison:
+grade 8's sheet carries a Curriculum Note on five of its 93 rows and all five
+read "***in 7th grade", so there is no grade 8 lesson to compare against. Until
+grade 6 is aligned, every number this prints is grade 7's alone -- the line the
+docstring used to carry, that it "covers grades 6 and 7", described the files it
+opened rather than the items it scored.
+
+No sheet covers 2026, so a quarter of the corpus has no outside reading at all.
+
+For grade 8 use tools/measure_g8_section_agreement.py, which compares against the
+SECTION each row names -- coarser than a lesson, and the only outside signal that
+grade might get.
 """
 import collections
 import csv

@@ -81,6 +81,9 @@ def squash(t):
 
 
 RECOVERED = []
+# Section titles the outline bookmark omitted and the opening page supplied.
+# Counted separately from RECOVERED so neither number can hide inside the other.
+SECTIONS_RECOVERED = []
 
 
 def canonical_kind(t):
@@ -356,6 +359,27 @@ def page_standards(spans):
 
 # ------------------------------------------------------------------- assembly
 
+def section_opener_title(doc, pg):
+    """The section title as printed on the section's own opening page: the 12pt
+    Hellix-Bold run, the same rule the lesson title uses one page type over.
+
+    Only ever consulted when the outline bookmark carries no title, because the
+    outline is the better source where it has one. Checked against all 112
+    sections in the twelve New York guides: the page agrees with the outline on
+    99, and every disagreement is one the outline wins -- a curly apostrophe, a
+    title whose mathematics is drawn rather than typed ("px+q=r" prints as
+    stripped-out zero-width spaces), and one guide whose page still reads
+    "[Section Title]" where the publisher never filled the placeholder in."""
+    runs = []
+    for b in doc[pg].get_text("dict")["blocks"]:
+        for ln in b.get("lines", []):
+            txt = "".join(s["text"] for s in ln["spans"]
+                          if s["font"] == "Hellix-Bold" and 11.6 <= s["size"] <= 12.4)
+            if txt.strip():
+                runs.append(txt.strip())
+    return runs[0] if len(runs) == 1 else None
+
+
 def unit_structure(doc):
     """TOC -> ordered entries with page ranges. The outline is flat but ordered,
     so a lesson's section is simply the most recent Section entry above it."""
@@ -365,7 +389,17 @@ def unit_structure(doc):
         end = toc[i + 1][1] if i + 1 < len(toc) else doc.page_count
         m = SECTION_RE.match(title)
         if m:
-            section = (m.group(1), m.group(2).strip())
+            name = m.group(2).strip()
+            if not name:
+                # Grade 8 Unit 6's bookmark reads "Section B" and stops there,
+                # so five lessons carried an empty sectionTitle. The title is
+                # printed on the section's opening page and in the guide's own
+                # table of contents; it is the publisher's bookmark that is
+                # short, not the guide. Recover it rather than publish a blank.
+                name = section_opener_title(doc, pg) or ""
+                if name:
+                    SECTIONS_RECOVERED.append("Section %s: %s" % (m.group(1), name))
+            section = (m.group(1), name)
             continue
         m = LESSON_RE.match(title)
         if m:
@@ -529,6 +563,9 @@ def main(argv):
                     # Recorded so a jump is visible: it was 0 while 40 headings
                     # were being silently dropped, because nothing counted them.
                     "headingsRecovered": 0,
+                    # Section titles taken from the section's opening page
+                    # because the outline bookmark gave none. Expected: 1.
+                    "sectionTitlesRecovered": 0,
                     "sources": {}},
            "grades": {}}
     for g in grades:
@@ -557,8 +594,11 @@ def main(argv):
                              % (g, u, len(lessons), doc.page_count))
             doc.close()
     out["meta"]["headingsRecovered"] = len(RECOVERED)
+    out["meta"]["sectionTitlesRecovered"] = len(SECTIONS_RECOVERED)
     sys.stderr.write("  recovered %d heading(s) whose text layer split the word\n"
                      % len(RECOVERED))
+    sys.stderr.write("  recovered %d section title(s) from the opening page: %s\n"
+                     % (len(SECTIONS_RECOVERED), "; ".join(SECTIONS_RECOVERED) or "-"))
     with open(OUT, "w") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
     sys.stderr.write("wrote %s (%.1f MB)\n" % (OUT, os.path.getsize(OUT) / 1e6))
