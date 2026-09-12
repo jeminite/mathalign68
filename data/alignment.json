@@ -10458,6 +10458,816 @@
         }
       ],
       "why": "Two angles given as x and y, asking an EXPRESSION for the third. The answer is the angle sum written algebraically, and the distractors are the sum rearranged wrongly. Lesson 15 is where the sum is established by tearing the corners off a triangle; Lesson 16 proves it. This is the one NY-8.G.5 item with no parallel lines in it."
+    },
+    "g8-2023-007": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "An equation against a table, comparing rates of change. Lesson 4 is the comparing lesson and its first activity sets an equation beside a different representation. The distractors here turn on sign -- two of them compare -1.25 against 3.3 rather than the magnitudes, which is the trap."
+    },
+    "g8-2023-034": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "A table against a graph, same comparison. Two distractors assert the rates are EQUAL for irrelevant reasons -- both linear, both through the origin -- which is the confusion Lesson 4's salt mixtures cool-down is built to expose."
+    },
+    "g8-2025-032": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "y = 15x against a graph, asking which membership costs less per month. The same reading, in a context where the cheaper rate is the answer rather than the greater."
+    },
+    "g8-2024-044": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "Two dogs' speeds, one as a table and one as a graph, asking the DIFFERENCE between them. The comparison is Lesson 4's; subtracting the two rates is the extra step."
+    },
+    "g8-2024-048": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "y = 3.5x against a graph, asking both unit rates and then the price difference for 9 yards. Same comparison, carried on to a prediction."
+    },
+    "g8-2025-048": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "A graph against a table for two people's sleep, asking who gets more per night. The item says outright that both are proportional, so it is purely Lesson 4's comparison."
+    },
+    "g8-2026-048": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships",
+      "primaryLesson": 4,
+      "lessonTitle": "Comparing Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "introduces",
+          "activity": "What’s the Relationship?",
+          "page": 57,
+          "quote": "The equation y = 4.2x could represent a variety of different situations."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "practises",
+          "activity": "Comparing Two Different Representations",
+          "page": 58,
+          "quote": "Her earnings are given by the equation y = 8.40x"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Proportional Relationships",
+          "role": "assessed",
+          "activity": "Different Salt Mixtures",
+          "page": 63,
+          "quote": "Here are recipes for two mixtures of salt and water that taste different."
+        }
+      ],
+      "why": "A table against a scatter plot for two companies, asking the cost difference for 8 people. The seventh and last of the compare-two-representations items, and they all sit together because they all ask the same thing."
+    },
+    "g8-2024-009": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Finding Slopes",
+      "primaryLesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "introduces",
+          "activity": "Toward a More General Slope Formula",
+          "page": 133,
+          "quote": "Describe a procedure for finding the"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "practises",
+          "activity": "Payback Plan",
+          "page": 135,
+          "quote": "She pays him back by giving him the same amount every week."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "assessed",
+          "activity": "Different Slopes",
+          "page": 137,
+          "quote": "Find the slope of the line that passes through each pair of points."
+        }
+      ],
+      "why": "The slope of the line through two given points. Lesson 10's cool-down is that task with different coordinates. At p = 0.31 it is among the hardest here, and the distractors are the reciprocal and the two sign errors."
+    },
+    "g8-2025-035": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Finding Slopes",
+      "primaryLesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "introduces",
+          "activity": "Toward a More General Slope Formula",
+          "page": 133,
+          "quote": "Describe a procedure for finding the"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Slopes Don’t Have to Be Positive",
+          "role": "practises",
+          "activity": "The Slopes of Graphs",
+          "page": 127,
+          "quote": "Match each graph with the situation that could describe the line."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "assessed",
+          "activity": "Different Slopes",
+          "page": 137,
+          "quote": "Find the slope of the line that passes through each pair of points."
+        }
+      ],
+      "why": "Two students compute the slope of the SAME line as 2/3 and 4/6 and the item asks who is right -- both are. It tests that slope is independent of which two points you pick, which is what Lesson 10's first activity establishes by recording vertical and horizontal change for several graphs before generalising."
+    },
+    "g8-2023-033": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Linear Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Representations of Linear Relationships",
+          "role": "introduces",
+          "activity": "Rising Water Levels",
+          "page": 93,
+          "quote": "Record the data in the table."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Translating to y = mx + b",
+          "role": "practises",
+          "activity": "Translating a Line",
+          "page": 106,
+          "quote": "4 graphs showing line a and its image, line h, after a translation"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "A line on a plane, asking its equation. The distractors swap the slope with the intercept and vice versa, so the item is about reading both parameters off a graph -- Lesson 7's cool-down asks for the slope and the vertical intercept of a filling tank."
+    },
+    "g8-2025-008": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Linear Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Representations of Linear Relationships",
+          "role": "introduces",
+          "activity": "Rising Water Levels",
+          "page": 93,
+          "quote": "Record the data in the table."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Translating to y = mx + b",
+          "role": "practises",
+          "activity": "Translating a Line",
+          "page": 106,
+          "quote": "4 graphs showing line a and its image, line h, after a translation"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "The same read-the-equation-off-the-graph task, with a negative slope. Two distractors give -2 where the line falls by 1 for every 2 across."
+    },
+    "g8-2026-016": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Linear Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Representations of Linear Relationships",
+          "role": "introduces",
+          "activity": "Rising Water Levels",
+          "page": 93,
+          "quote": "Record the data in the table."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Translating to y = mx + b",
+          "role": "practises",
+          "activity": "Translating a Line",
+          "page": 106,
+          "quote": "4 graphs showing line a and its image, line h, after a translation"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "A third line-to-equation item; its distractors again swap slope and intercept."
+    },
+    "g8-2023-020": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Finding Slopes",
+      "primaryLesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "introduces",
+          "activity": "Toward a More General Slope Formula",
+          "page": 133,
+          "quote": "Describe a procedure for finding the"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "practises",
+          "activity": "All the Same",
+          "page": 153,
+          "quote": "Plot at least 10 points whose y-coordinate is -4 ."
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "Two INTERCEPTS given as coordinates -- (9,0) and (0,-5) -- and the equation wanted. Nothing is graphed, so the student must find the slope from the two points and then recognise that one of them already is the y-intercept. At p = 0.27 it is the hardest item in the sweep, and every distractor is 9/5 or a sign error on 5/9."
+    },
+    "g8-2026-020": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Finding Slopes",
+      "primaryLesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Calculating Slope",
+          "role": "introduces",
+          "activity": "Toward a More General Slope Formula",
+          "page": 133,
+          "quote": "Describe a procedure for finding the"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "practises",
+          "activity": "All the Same",
+          "page": 153,
+          "quote": "Plot at least 10 points whose y-coordinate is -4 ."
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "The line through (0,9) and (3,0), asked without a graph -- g8-2023-020's twin. Its distractors pair -3 and -1/3 against intercepts 3 and 9, so slope and intercept can each be got wrong independently. At p = 0.54 it is much easier than its twin, and the only structural difference is that both coordinates here are positive."
+    },
+    "g8-2026-034": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 3,
+      "unitTitle": "Linear Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Linear Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 3 is where proportional and linear relationships are compared, graphed and written as equations",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Representations of Linear Relationships",
+          "role": "introduces",
+          "activity": "Rising Water Levels",
+          "page": 93,
+          "quote": "Record the data in the table."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Translating to y = mx + b",
+          "role": "practises",
+          "activity": "Translating a Line",
+          "page": 106,
+          "quote": "4 graphs showing line a and its image, line h, after a translation"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Equations of All Kinds of Lines",
+          "role": "assessed",
+          "activity": "Five Lines",
+          "page": 160,
+          "quote": "Write equations for lines a, b, c, d, and e."
+        }
+      ],
+      "why": "A line on a plane, asking its equation; the fourth item to do so."
     }
   }
 }
