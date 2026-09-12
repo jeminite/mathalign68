@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g6-2025.json.",
     "items": 28,
     "itemsWithUnresolved": 0,
-    "figures": 12,
-    "displayExpressions": 2
+    "figures": 11,
+    "displayExpressions": 3
   },
   "items": [
     {
@@ -127,8 +127,8 @@
             367.5
           ],
           "paths": 111,
-          "decodedLabels": "� � � � � • � � • � � � � �� �� �� �� �� �� � � � � � � � � � �� �� • � �� • � �� �� �� �",
-          "undecodedGlyphs": 47,
+          "decodedLabels": "� � � � � • � � • � � � � ____� ____� ____� ____� ____� ____� � � � � � � � � � � � • � � • � � −� −� �",
+          "undecodedGlyphs": 35,
           "alt": "",
           "longDescription": ""
         }
@@ -289,8 +289,8 @@
             298.21
           ],
           "paths": 39,
-          "decodedLabels": "� � �� � � � �� � � � � �� � �",
-          "undecodedGlyphs": 17,
+          "decodedLabels": "� � �� � − � �� ____ − − � �� ____ −",
+          "undecodedGlyphs": 11,
           "alt": "",
           "longDescription": ""
         }
@@ -446,23 +446,18 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G6-2025/q19_2.png",
           "rect": [
-            408.81,
-            304.8,
-            542.4,
-            443.28
+            108.78,
+            82.41,
+            166.01,
+            111.06
           ],
-          "paths": 1,
-          "decodedLabels": "",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\"><span class=\"frac\"><span>(3<sup>2</sup>+5·3)</span><span>2<sup>3</sup></span></span></span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {
@@ -1028,8 +1023,8 @@
             190.73
           ],
           "paths": 30,
-          "decodedLabels": "� � �� �� � � � �� � � � � � � ��",
-          "undecodedGlyphs": 19,
+          "decodedLabels": "� � �� �� � − � �� − � � � � � ��",
+          "undecodedGlyphs": 17,
           "alt": "",
           "longDescription": ""
         }
@@ -1177,8 +1172,8 @@
             257.89
           ],
           "paths": 24,
-          "decodedLabels": "� � � � �� � � � � � � �� � � �",
-          "undecodedGlyphs": 17,
+          "decodedLabels": "− � � � �� − � � � <span class=\"repeat\">���</span> � � �",
+          "undecodedGlyphs": 14,
           "alt": "",
           "longDescription": ""
         }
@@ -1242,8 +1237,8 @@
             312.85
           ],
           "paths": 109,
-          "decodedLabels": "��� � �<sup>�</sup>� ���� � � � � � � � � �� �� �� �� � � � � � � � � � �� �� � �°��°� � • �� �� ����� • �� �",
-          "undecodedGlyphs": 58,
+          "decodedLabels": "��� � �<sup>�</sup>� ���� � � � � � � � � ____� ____� ____� ____� � � � � � � � � � � � � �°��°� � • � �� ����� • � �",
+          "undecodedGlyphs": 50,
           "alt": "",
           "longDescription": ""
         }
@@ -1310,8 +1305,8 @@
             202.0
           ],
           "paths": 20,
-          "decodedLabels": "� �� ���� � � � ���� �",
-          "undecodedGlyphs": 15,
+          "decodedLabels": "− �� ���� − � � ���� �",
+          "undecodedGlyphs": 13,
           "alt": "",
           "longDescription": ""
         }

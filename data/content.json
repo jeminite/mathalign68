@@ -7,15 +7,18 @@
     "tests": [
       "g6-2023",
       "g6-2024",
+      "g6-2025",
       "g6-2026",
       "g7-2023",
       "g7-2024",
+      "g7-2025",
       "g7-2026",
       "g8-2023",
       "g8-2024",
+      "g8-2025",
       "g8-2026"
     ],
-    "items": 297,
+    "items": 387,
     "keySources": {
       "g7-2026": "The key is NYSED's own, read from the Map to the Standards on page 38 of the released-items PDF -- which is a materially different situation from RegentsAlign, where the key lives in a separate scoring-key document and had to be derived independently first. Here the item map IS the official publication, and it is the same table this project's item data comes from. Three things guard it. First, tools/preflight.py re-derives every multiple-choice key by a second, unrelated code path -- a naive plain-reading-order re-read of the PDF with no geometry at all -- and compares; across the twelve tests that is 282 keys with no disagreement. Second, the NYCPS 'NYS Exam IM Alignment' sheets in sources/nycps/ independently agree with our standard for 256 of 273 items on the 2023-2025 tests, and where they differ ours is the more precise reading. Third, several items were checked arithmetically against the decoded content rather than taken on trust: item 15's choices decode to -8/15, -3/40, 3/40, 8/15 and -1/5 x 3/8 = -3/40, which is choice B and matches the published key; item 21's choices differ only by their inequality symbol and decode to 20x+5<=200, 20x+5<200, 5x+20>=200, 5x+20>200, of which 5x+20>=200 is the artist earning at least $200, which is choice C and matches. NOT claimed: that all 34 answers were solved from scratch before the key was consulted.",
       "g8-2026": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2026.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key in this spec cannot drift from the official table or be shifted by one released item. It was additionally checked against the transcribed choices: nine of the 34 are decided by reading the mathematics rather than the prose -- item 7's Pythagorean equation, item 15's product of powers, item 3's quotient of powers -- and in every case the keyed letter is the one the transcription makes true.",
@@ -25,7 +28,10 @@
       "g6-2023": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2023.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
       "g6-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
       "g7-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-      "g8-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item."
+      "g8-2024": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+      "g7-2025": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+      "g8-2025": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+      "g6-2025": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item."
     },
     "reviewNotes": {
       "g7-2026": [
@@ -43,7 +49,10 @@
       "g6-2023": [],
       "g6-2024": [],
       "g7-2024": [],
-      "g8-2024": []
+      "g8-2024": [],
+      "g7-2025": [],
+      "g8-2025": [],
+      "g6-2025": []
     }
   },
   "items": {
@@ -2001,6 +2010,1015 @@
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
         "check": "Rex saves $9 a month and Nero $12, so over 16 months they save $144 and $192. Both tables are in this item's figure and named in its long description."
+      }
+    },
+    "g6-2025-001": {
+      "id": "g6-2025-001",
+      "item": 1,
+      "stemHtml": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "stem": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "prose": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q01.png",
+          "type": "Tables as Answer Choices",
+          "alt": "Four Recipe tables labelled A to D, this item's answer choices, each pairing cups of cheese with ounces of noodles.",
+          "longDescription": "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": true,
+      "sourcePage": 7,
+      "reviewed": true
+    },
+    "g6-2025-003": {
+      "id": "g6-2025-003",
+      "item": 3,
+      "stemHtml": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at <span class=\"math\">(−2,3)</span> ?",
+      "stem": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at (−2,3) ?",
+      "prose": "Points W, X, Y, and Z are plotted on the coordinate plane shown below. Which point is located at  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "point W",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "point X",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "point Y",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "point Z",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q03.png",
+          "type": "Coordinate Plane",
+          "alt": "Four labelled points W, X, Y and Z plotted on a coordinate plane ruled from negative 6 to 6.",
+          "longDescription": "W is at negative 2, 3; Z is at 2, 3; X is at negative 2, negative 3; Y is at 2, negative 3."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 8,
+      "reviewed": true
+    },
+    "g6-2025-005": {
+      "id": "g6-2025-005",
+      "item": 5,
+      "stemHtml": "What is the value of the expression shown below when <span class=\"math\">c = 2</span> and <span class=\"math\">h = 3</span> ?",
+      "stem": "What is the value of the expression shown below when c = 2 and h = 3 ?",
+      "prose": "What is the value of the expression shown below when  and  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">c<sup>3</sup> + 4h − 7</span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">11</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">13</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">42</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">44</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g6-2025-006": {
+      "id": "g6-2025-006",
+      "item": 6,
+      "stemHtml": "A carton contains <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> cups of ice cream. One full serving is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. What is the total number of full servings of ice cream in the carton?",
+      "stem": "A carton contains 4(1)/(2) cups of ice cream. One full serving is (3)/(4) cup. What is the total number of full servings of ice cream in the carton?",
+      "prose": "A carton contains  cups of ice cream. One full serving is  cup. What is the total number of full servings of ice cream in the carton?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3 <span class=\"frac\"><span>3</span><span>4</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">6</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">12</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g6-2025-013": {
+      "id": "g6-2025-013",
+      "item": 13,
+      "stemHtml": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+      "stem": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+      "prose": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "20",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "34",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "40",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "48",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q13.png",
+          "type": "Diagram",
+          "alt": "The net of a rectangular prism with three of its dimensions labelled in centimetres.",
+          "longDescription": "The small face is 2 centimetres by 2 centimetres and the long face is 5 centimetres tall."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 10,
+      "reviewed": true
+    },
+    "g6-2025-016": {
+      "id": "g6-2025-016",
+      "item": 16,
+      "stemHtml": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+      "stem": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+      "prose": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "20",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "35",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "50",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "70",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g6-2025-017": {
+      "id": "g6-2025-017",
+      "item": 17,
+      "stemHtml": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+      "stem": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+      "prose": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "10.75",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "21.5",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "34.3",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "64.5",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q17.png",
+          "type": "Diagram",
+          "alt": "A regular hexagon divided into six triangles from its centre, with side and height labelled in centimetres.",
+          "longDescription": "Each side is 5 centimetres and the height from the centre to a side is 4.3 centimetres."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g6-2025-019": {
+      "id": "g6-2025-019",
+      "item": 19,
+      "stemHtml": "What is the value of the expression shown below?",
+      "stem": "What is the value of the expression shown below?",
+      "prose": "What is the value of the expression shown below?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>(3<sup>2</sup>+5·3)</span><span>2<sup>3</sup></span></span></span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 13,
+      "reviewed": true
+    },
+    "g6-2025-021": {
+      "id": "g6-2025-021",
+      "item": 21,
+      "stemHtml": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+      "stem": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+      "prose": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "12%",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "23%",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "46%",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "54%",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q21.png",
+          "type": "Data Table",
+          "alt": "A table titled Favorite Hobbies giving the number of students choosing each of four hobbies.",
+          "longDescription": "Reading 12, playing a musical instrument 11, watching movies 9, and playing sports 18."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g6-2025-023": {
+      "id": "g6-2025-023",
+      "item": 23,
+      "stemHtml": "What is the coefficient in the expression <span class=\"math\">2x<sup>3</sup></span>?",
+      "stem": "What is the coefficient in the expression 2x^3?",
+      "prose": "What is the coefficient in the expression?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">2</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2x</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g6-2025-027": {
+      "id": "g6-2025-027",
+      "item": 27,
+      "stemHtml": "Which number is not a solution to the inequality shown below?",
+      "stem": "Which number is not a solution to the inequality shown below?",
+      "prose": "Which number is not a solution to the inequality shown below?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">3w ≥ 12</span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">8</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 16,
+      "reviewed": true
+    },
+    "g6-2025-028": {
+      "id": "g6-2025-028",
+      "item": 28,
+      "stemHtml": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. <span class=\"math\">•</span> 12 students from Grade 5 <span class=\"math\">•</span> 6 students from Grade 6 <span class=\"math\">•</span> 2 students from Grade 7 <span class=\"math\">•</span> 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+      "stem": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. • 12 students from Grade 5 • 6 students from Grade 6 • 2 students from Grade 7 • 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+      "prose": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. 12 students from Grade 5 6 students from Grade 6 2 students from Grade 7 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "2 : 1",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "3 : 1",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "5 : 9",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "9 : 5",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 17,
+      "reviewed": true
+    },
+    "g6-2025-030": {
+      "id": "g6-2025-030",
+      "item": 30,
+      "stemHtml": "Which expression represents the phrase “the sum of fifteen and five less than twice a number, <span class=\"math\">n</span> ” ?",
+      "stem": "Which expression represents the phrase “the sum of fifteen and five less than twice a number, n ” ?",
+      "prose": "Which expression represents the phrase “the sum of fifteen and five less than twice a number,” ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">15 (5 − 2n)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">15 (2n − 5)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">15 + (5 − 2n)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">15 + (2n − 5)</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 18,
+      "reviewed": true
+    },
+    "g6-2025-031": {
+      "id": "g6-2025-031",
+      "item": 31,
+      "stemHtml": "Tyrone deposits <span class=\"math\">$65</span> into his bank account. The next day he withdraws <span class=\"math\">$20</span>. Which two integers represent the activity in Tyrone’s bank account?",
+      "stem": "Tyrone deposits $65 into his bank account. The next day he withdraws $20. Which two integers represent the activity in Tyrone’s bank account?",
+      "prose": "Tyrone deposits  into his bank account. The next day he withdraws . Which two integers represent the activity in Tyrone’s bank account?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−65</span> and <span class=\"math\">−20</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−65</span> and <span class=\"math\">20</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">65</span> and <span class=\"math\">−20</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">65</span> and <span class=\"math\">20</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g6-2025-032": {
+      "id": "g6-2025-032",
+      "item": 32,
+      "stemHtml": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+      "stem": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+      "prose": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "1,056",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "26,400",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "63,360",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "3,801,600",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g6-2025-033": {
+      "id": "g6-2025-033",
+      "item": 33,
+      "stemHtml": "The two rules shown below are used to generate sets of ordered pairs. The starting point is <span class=\"math\">(1,1)</span>. The ordered pairs are then graphed on a coordinate plane. <span class=\"math\">•</span> Rule for <span class=\"math\">x</span> coordinate: Each value is <span class=\"math\">3</span> more than the one before it. <span class=\"math\">•</span> Rule for <span class=\"math\">y</span> coordinate: Each value is <span class=\"math\">2</span> more than the one before it. Which graph shows the set of ordered pairs?",
+      "stem": "The two rules shown below are used to generate sets of ordered pairs. The starting point is (1,1). The ordered pairs are then graphed on a coordinate plane. • Rule for x coordinate: Each value is 3 more than the one before it. • Rule for y coordinate: Each value is 2 more than the one before it. Which graph shows the set of ordered pairs?",
+      "prose": "The two rules shown below are used to generate sets of ordered pairs. The starting point is . The ordered pairs are then graphed on a coordinate plane. Rule for coordinate: Each value is  more than the one before it. Rule for coordinate: Each value is  more than the one before it. Which graph shows the set of ordered pairs?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q33.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four coordinate grids labelled A to D, this item's answer choices, each with a handful of plotted points.",
+          "longDescription": "They differ in where the points sit and whether they climb in a straight line."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 24,
+      "reviewed": true
+    },
+    "g6-2025-034": {
+      "id": "g6-2025-034",
+      "item": 34,
+      "stemHtml": "A gift box is in the shape of a right rectangular prism. The gift box is <span class=\"math\">7<span class=\"frac\"><span>3</span><span>5</span></span></span> centimeters long, <span class=\"math\">5 <span class=\"frac\"><span>4</span><span>5</span></span></span> centimeters wide, and <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "stem": "A gift box is in the shape of a right rectangular prism. The gift box is 7(3)/(5) centimeters long, 5 (4)/(5) centimeters wide, and 2 (1)/(2) centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "prose": "A gift box is in the shape of a right rectangular prism. The gift box is  centimeters long, centimeters wide, and  centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">15 <span class=\"frac\"><span>9</span><span>10</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">70 <span class=\"frac\"><span>6</span><span>25</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">110 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">155 <span class=\"frac\"><span>8</span><span>50</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g6-2025-035": {
+      "id": "g6-2025-035",
+      "item": 35,
+      "stemHtml": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+      "stem": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+      "prose": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Apples have the greater unit price at $1.15.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Apples have the greater unit price at $1.25.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Oranges have the greater unit price at $1.15.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Oranges have the greater unit price at $1.25.",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g6-2025-036": {
+      "id": "g6-2025-036",
+      "item": 36,
+      "stemHtml": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+      "stem": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+      "prose": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "3.6",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "5.4",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "4.32",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "8.64",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G6-2025/q36.png",
+          "type": "Diagram",
+          "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
+          "longDescription": "The shaded part is 2.4 centimetres across, the height is 3 centimetres, and the unshaded corner is 1.2 centimetres."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 26,
+      "reviewed": true
+    },
+    "g6-2025-037": {
+      "id": "g6-2025-037",
+      "item": 37,
+      "stemHtml": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+      "stem": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+      "prose": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    students"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 27,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "25 students",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "6 students are 24% of the class, and 6 over 0.24 is 25. Both figures are in this item's own transcribed stem."
+      }
+    },
+    "g6-2025-039": {
+      "id": "g6-2025-039",
+      "item": 39,
+      "stemHtml": "What is the greatest common factor of 72 and 96 ?",
+      "stem": "What is the greatest common factor of 72 and 96 ?",
+      "prose": "What is the greatest common factor of 72 and 96 ?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 29,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "24",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "72 is 24 times 3 and 96 is 24 times 4. Both numbers are in this item's own transcribed stem."
+      }
+    },
+    "g6-2025-040": {
+      "id": "g6-2025-040",
+      "item": 40,
+      "stemHtml": "What is the value of the expression <span class=\"math\">4 (3 + 5<sup>2</sup>) − 6</span> ?",
+      "stem": "What is the value of the expression 4 (3 + 5^2) − 6 ?",
+      "prose": "What is the value of the expression  ?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 30,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "106",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "5 squared is 25, plus 3 is 28, times 4 is 112, less 6 is 106. The expression is this item's own transcribed stem, and it depends on the exponent being read."
+      }
+    },
+    "g6-2025-041": {
+      "id": "g6-2025-041",
+      "item": 41,
+      "stemHtml": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+      "stem": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+      "prose": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G6-2025/q41.png",
+          "type": "Data Table",
+          "alt": "A table titled Cheese Prices pairing blocks of cheese with a total price in dollars.",
+          "longDescription": "2 blocks for 112 dollars, 4 for 224, 6 for 336, and 8 for 448."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 31,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "t = 56b; t is the dependent variable and b the independent one",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "Every row of the table divides to 56: 112 over 2, 224 over 4, 336 over 6, 448 over 8. The table is this item's figure."
+      }
+    },
+    "g6-2025-042": {
+      "id": "g6-2025-042",
+      "item": 42,
+      "stemHtml": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+      "stem": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+      "prose": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    square centimeters"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G6-2025/q42.png",
+          "type": "Diagram",
+          "alt": "The net of a right square pyramid with its base and triangle height labelled in centimetres.",
+          "longDescription": "The square base is 5 centimetres on each side and each triangular face is 3.5 centimetres tall."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 32,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "60 square centimeters",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "The square base is 5 by 5, which is 25, and the four triangles are each a half of 5 by 3.5, which is 35 in total. Both dimensions are in this item's figure."
+      }
+    },
+    "g6-2025-043": {
+      "id": "g6-2025-043",
+      "item": 43,
+      "stemHtml": "The top of a rectangular table has a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> feet and an area of <span class=\"math\">21 <span class=\"frac\"><span>2</span><span>3</span></span></span> square feet. What is the length, in feet, of the top of the table?",
+      "stem": "The top of a rectangular table has a width of 3 (1)/(3) feet and an area of 21 (2)/(3) square feet. What is the length, in feet, of the top of the table?",
+      "prose": "The top of a rectangular table has a width of  feet and an area of  square feet. What is the length, in feet, of the top of the table?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    feet"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 33,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "6 1/2 feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "Twenty-one and two thirds divided by three and a third is 65/3 times 3/10, which is six and a half. Both quantities are in this item's own transcribed stem."
+      }
+    },
+    "g6-2025-044": {
+      "id": "g6-2025-044",
+      "item": 44,
+      "stemHtml": "Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? in your answer.",
+      "stem": "Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? in your answer.",
+      "prose": "Paige uses the coordinate plane shown below to represent the locations of the vegetable patches in her garden. Each unit on the coordinate plane represents 1 foot. What is the shortest distance, in feet, from the cabbage patch to the broccoli patch? in your answer.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Be sure to include the coordinates that represent the locations of both vegetable patches",
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G6-2025/q44.png",
+          "type": "Coordinate Plane",
+          "alt": "A grid titled Paige's Garden with two labelled points, Broccoli and Cabbage.",
+          "longDescription": "The broccoli patch is at negative 2, negative 3 and the cabbage patch is at 5, negative 3."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 34,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "7 feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "The cabbage is at 5, negative 3 and the broccoli at negative 2, negative 3, so they are 5 plus 2 apart. Both points are labelled in this item's figure."
+      }
+    },
+    "g6-2025-045": {
+      "id": "g6-2025-045",
+      "item": 45,
+      "stemHtml": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+      "stem": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+      "prose": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    cups of pretzels"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 35,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "7.5 cups of pretzels",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "Two cups of sesame to five of pretzels is 2.5 cups of pretzels per cup of sesame, and 3 times 2.5 is 7.5. Both quantities are in this item's own stem."
+      }
+    },
+    "g6-2025-046": {
+      "id": "g6-2025-046",
+      "item": 46,
+      "stemHtml": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+      "stem": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+      "prose": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Show your work.",
+        "Answer$"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G6-2025/q46.png",
+          "type": "Diagram",
+          "alt": "A rectangle representing a rug, with its width given as a number and its height in terms of x.",
+          "longDescription": "The rectangle is 9 feet wide and 2x feet tall."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 36,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "x = 3, and each rug costs $112",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "9 times 2x equals 54 gives x = 3; 7p = 784 gives p = 112. The rug's dimensions are in this item's figure and the total is in its stem."
       }
     },
     "g6-2026-001": {
@@ -5373,6 +6391,1122 @@
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
         "check": "460 discounted by 20% implies an original 575; with 8% tax that is 621 against 496.80. Both the discounted price and the tax rate are in this item's own stem."
+      }
+    },
+    "g7-2025-002": {
+      "id": "g7-2025-002",
+      "item": 2,
+      "stemHtml": "Which table shows a proportional relationship between the number of calories and the number of cheese slices?",
+      "stem": "Which table shows a proportional relationship between the number of calories and the number of cheese slices?",
+      "prose": "Which table shows a proportional relationship between the number of calories and the number of cheese slices?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q02.png",
+          "type": "Tables as Answer Choices",
+          "alt": "Four Calorie Information tables labelled A to D, this item's answer choices, each pairing cheese slices with calories.",
+          "longDescription": "Only one keeps a constant number of calories per slice down every row; the others break the pattern in their last line."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": true,
+      "sourcePage": 7,
+      "reviewed": true
+    },
+    "g7-2025-003": {
+      "id": "g7-2025-003",
+      "item": 3,
+      "stemHtml": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+      "stem": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+      "prose": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q03_1.png",
+          "type": "Diagram",
+          "alt": "Answer choice A: a tree diagram with two main courses, each branching to two desserts.",
+          "longDescription": "C and S each branch to P and B -- four outcomes."
+        },
+        {
+          "file": "G7-2025/q03_2.png",
+          "type": "Diagram",
+          "alt": "Answer choice B: a tree diagram with three main courses, each branching to two desserts.",
+          "longDescription": "C, S and F each branch to P and B -- six outcomes."
+        },
+        {
+          "file": "G7-2025/q03_3.png",
+          "type": "Diagram",
+          "alt": "Answer choice C: a tree diagram with three main courses whose dessert branches repeat the same letter.",
+          "longDescription": "C branches to P and P, S to B and B, F to P and P."
+        },
+        {
+          "file": "G7-2025/q03_4.png",
+          "type": "Diagram",
+          "alt": "Answer choice D: a tree diagram with three main courses, each branching to four desserts.",
+          "longDescription": "C branches to P, B, S and F; S to P, B, C and F; F to P, B, C and S."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 8,
+      "reviewed": true
+    },
+    "g7-2025-008": {
+      "id": "g7-2025-008",
+      "item": 8,
+      "stemHtml": "The table below shows the proportional relationship between the number of concert tickets purchased, <span class=\"math\">t</span>, and the total cost, <span class=\"math\">c</span>, of the tickets. Which equation represents the relationship between <span class=\"math\">t</span> and <span class=\"math\">c</span> ?",
+      "stem": "The table below shows the proportional relationship between the number of concert tickets purchased, t, and the total cost, c, of the tickets. Which equation represents the relationship between t and c ?",
+      "prose": "The table below shows the proportional relationship between the number of concert tickets purchased, , and the total cost, , of the tickets. Which equation represents the relationship between  and  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">c = 27t</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">c = 54t</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">c = 78t</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">c = 81 t</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q08_1.png",
+          "type": "Data Table",
+          "alt": "A table titled Ticket Costs pairing tickets purchased with total cost in dollars.",
+          "longDescription": "3 tickets for 81.00, 5 for 135.00, and 10 for 270.00 -- 27 dollars a ticket."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g7-2025-010": {
+      "id": "g7-2025-010",
+      "item": 10,
+      "stemHtml": "The diagram below shows a rectangular garden. The perimeter of the garden is <span class=\"math\">47</span> feet. Which equation can be used to find the length, <span class=\"math\">x</span>, in feet, of the garden?",
+      "stem": "The diagram below shows a rectangular garden. The perimeter of the garden is 47 feet. Which equation can be used to find the length, x, in feet, of the garden?",
+      "prose": "The diagram below shows a rectangular garden. The perimeter of the garden is  feet. Which equation can be used to find the length, , in feet, of the garden?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">x + 13 = 47</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">x + 6.5 = 47</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">2x + 13 = 47</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">2x + 6.5 = 47</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q10_1.png",
+          "type": "Diagram",
+          "alt": "A rectangle with its height labelled in feet and its width labelled x.",
+          "longDescription": "The height is 6.5 feet and the width is the unknown x."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 10,
+      "reviewed": true
+    },
+    "g7-2025-013": {
+      "id": "g7-2025-013",
+      "item": 13,
+      "stemHtml": "An incomplete equation is shown below. Which expression, when placed in the blank, makes this equation true?",
+      "stem": "An incomplete equation is shown below. Which expression, when placed in the blank, makes this equation true?",
+      "prose": "An incomplete equation is shown below. Which expression, when placed in the blank, makes this equation true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">−6.8 + 6.4 + = 0 ____</span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−4.3 + 4.7</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−6.5 + 6.7</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">−4.3 + (−4.7)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">−6.5 + (−6.7)</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g7-2025-014": {
+      "id": "g7-2025-014",
+      "item": 14,
+      "stemHtml": "Alexis has a part-time job. The graph below shows the relationship between <span class=\"math\">x</span>, the number of hours worked, and <span class=\"math\">y</span>, the wages she earned. What is Alexis’s wage earned per hour?",
+      "stem": "Alexis has a part-time job. The graph below shows the relationship between x, the number of hours worked, and y, the wages she earned. What is Alexis’s wage earned per hour?",
+      "prose": "Alexis has a part-time job. The graph below shows the relationship between , the number of hours worked, and , the wages she earned. What is Alexis’s wage earned per hour?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "$0.07",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$1.57",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$10.00",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "$13.75",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q14.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Alexis's Earnings, wages in dollars against hours worked, with three points labelled.",
+          "longDescription": "The line passes through 4 hours at 55 dollars, 7 hours at 96.25, and 11 hours at 151.25 -- 13.75 an hour."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g7-2025-017": {
+      "id": "g7-2025-017",
+      "item": 17,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">(−0.3) + 1.5</span> ?",
+      "stem": "Which expression is equivalent to (−0.3) + 1.5 ?",
+      "prose": "Which expression is equivalent to  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(−0.3) + (− 1.5)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(− 1.5) + (0.3)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">1.5 − 0.3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">0.3 − 1.5</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 13,
+      "reviewed": true
+    },
+    "g7-2025-020": {
+      "id": "g7-2025-020",
+      "item": 20,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">4(3x − 1.25) − 2 (3.5x + 2)</span> ?",
+      "stem": "Which expression is equivalent to 4(3x − 1.25) − 2 (3.5x + 2) ?",
+      "prose": "Which expression is equivalent to  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−4x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−2x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5x − 1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">5x − 9</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g7-2025-021": {
+      "id": "g7-2025-021",
+      "item": 21,
+      "stemHtml": "A sweater has an original price of <span class=\"math\">t</span> dollars. The expression <span class=\"math\">t − 0.10t</span> can be used to determine the sale price, in dollars, of the sweater. Which expression can also be used to determine the sale price, in dollars, of the sweater?",
+      "stem": "A sweater has an original price of t dollars. The expression t − 0.10t can be used to determine the sale price, in dollars, of the sweater. Which expression can also be used to determine the sale price, in dollars, of the sweater?",
+      "prose": "A sweater has an original price of  dollars. The expression  can be used to determine the sale price, in dollars, of the sweater. Which expression can also be used to determine the sale price, in dollars, of the sweater?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">0.10t</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">0.90t</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">0.10t− t</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">0.90t− t</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g7-2025-023": {
+      "id": "g7-2025-023",
+      "item": 23,
+      "stemHtml": "What is the product of <span class=\"math\">−6</span> <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+      "stem": "What is the product of −6 −1 (1)/(2) ?",
+      "prose": "What is the product of  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−9</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−6 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">6 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">9</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g7-2025-025": {
+      "id": "g7-2025-025",
+      "item": 25,
+      "stemHtml": "A chair is on sale at a discounted price of $49.00. The regular price of the chair is $10.00 less than 2 times the discounted price. What is the difference between the total cost of 3 regular-priced chairs and 3 chairs at the discounted price?",
+      "stem": "A chair is on sale at a discounted price of $49.00. The regular price of the chair is $10.00 less than 2 times the discounted price. What is the difference between the total cost of 3 regular-priced chairs and 3 chairs at the discounted price?",
+      "prose": "A chair is on sale at a discounted price of $49.00. The regular price of the chair is $10.00 less than 2 times the discounted price. What is the difference between the total cost of 3 regular-priced chairs and 3 chairs at the discounted price?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "$39.00",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$88.00",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$117.00",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "$147.00",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 16,
+      "reviewed": true
+    },
+    "g7-2025-027": {
+      "id": "g7-2025-027",
+      "item": 27,
+      "stemHtml": "A car travels <span class=\"math\">30</span> miles and uses <span class=\"math\">1 <span class=\"frac\"><span>2</span><span>3</span></span></span> gallons of fuel. What is the unit rate, in miles per gallon, for the car?",
+      "stem": "A car travels 30 miles and uses 1 (2)/(3) gallons of fuel. What is the unit rate, in miles per gallon, for the car?",
+      "prose": "A car travels  miles and uses  gallons of fuel. What is the unit rate, in miles per gallon, for the car?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>50</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>18</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">18</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">50</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 16,
+      "reviewed": true
+    },
+    "g7-2025-028": {
+      "id": "g7-2025-028",
+      "item": 28,
+      "stemHtml": "A school sold tickets to a musical for $8.95 per person. The musical had two performances as described below. <span class=\"math\">•</span> On Friday night, 152 people attended. <span class=\"math\">•</span> On Saturday night, 25% more people attended than Friday night. What was the total amount of money earned from tickets sold on these two nights?",
+      "stem": "A school sold tickets to a musical for $8.95 per person. The musical had two performances as described below. • On Friday night, 152 people attended. • On Saturday night, 25% more people attended than Friday night. What was the total amount of money earned from tickets sold on these two nights?",
+      "prose": "A school sold tickets to a musical for $8.95 per person. The musical had two performances as described below. On Friday night, 152 people attended. On Saturday night, 25% more people attended than Friday night. What was the total amount of money earned from tickets sold on these two nights?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "$1,700.50",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$2,723.04",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$2,944.55",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "$3,060.90",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 17,
+      "reviewed": true
+    },
+    "g7-2025-029": {
+      "id": "g7-2025-029",
+      "item": 29,
+      "stemHtml": "Shannon has $500.00 in her bank account. Each week, she withdraws $40.00 from the account. If she does not deposit or withdraw any additional money, what is the maximum number of weeks she can withdraw the same amount of money and maintain a balance of at least $200.00 ?",
+      "stem": "Shannon has $500.00 in her bank account. Each week, she withdraws $40.00 from the account. If she does not deposit or withdraw any additional money, what is the maximum number of weeks she can withdraw the same amount of money and maintain a balance of at least $200.00 ?",
+      "prose": "Shannon has $500.00 in her bank account. Each week, she withdraws $40.00 from the account. If she does not deposit or withdraw any additional money, what is the maximum number of weeks she can withdraw the same amount of money and maintain a balance of at least $200.00 ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "5",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "7",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "8",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "12",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 17,
+      "reviewed": true
+    },
+    "g7-2025-032": {
+      "id": "g7-2025-032",
+      "item": 32,
+      "stemHtml": "A submarine at sea level descends at a constant rate. After descending for <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>3</span></span></span> hours, the submarine’s depth is <span class=\"math\">2,700</span> feet below sea level. At this rate, which value represents the depth, in feet, the submarine will have reached after descending for a total of <span class=\"math\">2<span class=\"frac\"><span>1</span><span>4</span></span></span> hours?",
+      "stem": "A submarine at sea level descends at a constant rate. After descending for 1 (1)/(3) hours, the submarine’s depth is 2,700 feet below sea level. At this rate, which value represents the depth, in feet, the submarine will have reached after descending for a total of 2(1)/(4) hours?",
+      "prose": "A submarine at sea level descends at a constant rate. After descending for  hours, the submarine’s depth is  feet below sea level. At this rate, which value represents the depth, in feet, the submarine will have reached after descending for a total of  hours?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">5,805.00</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">5,400.00</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">4,837.50</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4,556.25</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 18,
+      "reviewed": true
+    },
+    "g7-2025-033": {
+      "id": "g7-2025-033",
+      "item": 33,
+      "stemHtml": "The graph below shows the prices for a number of containers of a type of yogurt. Which statement describes the unit price per container of yogurt?",
+      "stem": "The graph below shows the prices for a number of containers of a type of yogurt. Which statement describes the unit price per container of yogurt?",
+      "prose": "The graph below shows the prices for a number of containers of a type of yogurt. Which statement describes the unit price per container of yogurt?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "The unit price is <span class=\"math\">$0.50</span>.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "The unit price is <span class=\"math\">$1.00</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The unit price is <span class=\"math\">$1.50</span>.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The unit price is <span class=\"math\">$2.00</span>.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q33.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Yogurt Prices, price in dollars against number of containers.",
+          "longDescription": "Four points climb steadily: 1 container at 0.50, 2 at 1.00, 3 at 1.50 and 4 at 2.00."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g7-2025-034": {
+      "id": "g7-2025-034",
+      "item": 34,
+      "stemHtml": "A student attends a fair. Admission to the fair is <span class=\"math\">$12.00</span> and each ride ticket costs <span class=\"math\">$5.50</span>. The student can spend, at most, <span class=\"math\">$46.00</span> on admission and ride tickets. Which inequality can be used to find the number of ride tickets, <span class=\"math\">x</span>, the student can buy?",
+      "stem": "A student attends a fair. Admission to the fair is $12.00 and each ride ticket costs $5.50. The student can spend, at most, $46.00 on admission and ride tickets. Which inequality can be used to find the number of ride tickets, x, the student can buy?",
+      "prose": "A student attends a fair. Admission to the fair is  and each ride ticket costs . The student can spend, at most,  on admission and ride tickets. Which inequality can be used to find the number of ride tickets, , the student can buy?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">12x + 5.5 ≤ 46</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">5.5x + 12 ≤ 46</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">5.5x + 12 ≥ 46</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">12x + 5.5 ≥ 46</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g7-2025-035": {
+      "id": "g7-2025-035",
+      "item": 35,
+      "stemHtml": "Students in a class are recording the number of words they can type per minute each semester during the school year. The box plots below show the results for two semesters. What is the difference in the median number of words typed per minute from Semester 1 to Semester 2 ?",
+      "stem": "Students in a class are recording the number of words they can type per minute each semester during the school year. The box plots below show the results for two semesters. What is the difference in the median number of words typed per minute from Semester 1 to Semester 2 ?",
+      "prose": "Students in a class are recording the number of words they can type per minute each semester during the school year. The box plots below show the results for two semesters. What is the difference in the median number of words typed per minute from Semester 1 to Semester 2 ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "5",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "10",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "15",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "20",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G7-2025/q35.png",
+          "type": "Box Plots",
+          "alt": "Two box plots titled Number of Words Typed, one for Semester 1 and one for Semester 2, on a scale from 25 to 75.",
+          "longDescription": "Semester 1 runs from about 30 to 50 with its median near 40. Semester 2 runs from about 30 to 70 with its median near 55, so it is both higher and more spread out."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 24,
+      "reviewed": true
+    },
+    "g7-2025-036": {
+      "id": "g7-2025-036",
+      "item": 36,
+      "stemHtml": "Jacob bought a phone for <span class=\"math\">x</span> dollars. One year later, the value of the phone decreased by <span class=\"math\">20%</span>. Which expression represents the value of the phone after the decrease?",
+      "stem": "Jacob bought a phone for x dollars. One year later, the value of the phone decreased by 20%. Which expression represents the value of the phone after the decrease?",
+      "prose": "Jacob bought a phone for  dollars. One year later, the value of the phone decreased by . Which expression represents the value of the phone after the decrease?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">0.2x</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">0.8x</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">x − 0.2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">x − 0.8</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 24,
+      "reviewed": true
+    },
+    "g7-2025-037": {
+      "id": "g7-2025-037",
+      "item": 37,
+      "stemHtml": "The temperature at <span class=\"math\">8:00</span> a.m. was <span class=\"math\">−7°F</span>. At <span class=\"math\">3:00</span> p.m., the temperature had risen to <span class=\"math\">8°F</span>. What was the change in temperature, in degrees Fahrenheit, from <span class=\"math\">8:00</span> a.m. to <span class=\"math\">3:00</span> p.m.?",
+      "stem": "The temperature at 8:00 a.m. was −7°F. At 3:00 p.m., the temperature had risen to 8°F. What was the change in temperature, in degrees Fahrenheit, from 8:00 a.m. to 3:00 p.m.?",
+      "prose": "The temperature at  a.m. was . At  p.m., the temperature had risen to. What was the change in temperature, in degrees Fahrenheit, from a.m. top.m.?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−15</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">1</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">15</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g7-2025-038": {
+      "id": "g7-2025-038",
+      "item": 38,
+      "stemHtml": "Audrey is planning a party for 30 people. She wants to buy enough juice for each person to have exactly 2 servings of juice. <span class=\"math\">•</span> Each bottle of juice has 5 servings. <span class=\"math\">•</span> Each bottle of juice costs $4.89. What is the total amount it will cost Audrey to buy the bottles of juice to serve her guests and have no juice left over?",
+      "stem": "Audrey is planning a party for 30 people. She wants to buy enough juice for each person to have exactly 2 servings of juice. • Each bottle of juice has 5 servings. • Each bottle of juice costs $4.89. What is the total amount it will cost Audrey to buy the bottles of juice to serve her guests and have no juice left over?",
+      "prose": "Audrey is planning a party for 30 people. She wants to buy enough juice for each person to have exactly 2 servings of juice. Each bottle of juice has 5 servings. Each bottle of juice costs $4.89. What is the total amount it will cost Audrey to buy the bottles of juice to serve her guests and have no juice left over?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "$29.34",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "$48.90",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "$58.68",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "$73.35",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g7-2025-039": {
+      "id": "g7-2025-039",
+      "item": 39,
+      "stemHtml": "The histogram below shows the results from a survey given to each student in a 6th grade class about the number of books they read over the summer. Based on the histogram, how many students were surveyed?",
+      "stem": "The histogram below shows the results from a survey given to each student in a 6th grade class about the number of books they read over the summer. Based on the histogram, how many students were surveyed?",
+      "prose": "The histogram below shows the results from a survey given to each student in a 6th grade class about the number of books they read over the summer. Based on the histogram, how many students were surveyed?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    students"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G7-2025/q39.png",
+          "type": "Histogram",
+          "alt": "A histogram titled Books Read, number of students against a range of books.",
+          "longDescription": "The 0 to 3 bar stands at 9 students, the 4 to 7 bar at 13, and the 8 to 11 bar at 6."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 26,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "28 students",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "The three bars stand at 9, 13 and 6, which total 28. The histogram is this item's figure and its bar heights are in the long description."
+      }
+    },
+    "g7-2025-040": {
+      "id": "g7-2025-040",
+      "item": 40,
+      "stemHtml": "An expression is shown below. Determine the value of the expression.",
+      "stem": "An expression is shown below. Determine the value of the expression.",
+      "prose": "An expression is shown below. Determine the value of the expression.",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>0.5(4−6)</span><span>0.2</span></span></span>"
+      ],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 27,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "−5",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "0.5 times minus 2 is minus 1, over 0.2 is minus 5. The expression is this item's own displayed expression."
+      }
+    },
+    "g7-2025-041": {
+      "id": "g7-2025-041",
+      "item": 41,
+      "stemHtml": "Darius will spin the arrows on two spinners. Spinner A is divided into three equal sections and Spinner B is divided into four equal sections as shown below. Darius will spin each arrow one time. What is the probability that the product of the two numbers that the arrows land on from Darius’s spins will be an odd number?",
+      "stem": "Darius will spin the arrows on two spinners. Spinner A is divided into three equal sections and Spinner B is divided into four equal sections as shown below. Darius will spin each arrow one time. What is the probability that the product of the two numbers that the arrows land on from Darius’s spins will be an odd number?",
+      "prose": "Darius will spin the arrows on two spinners. Spinner A is divided into three equal sections and Spinner B is divided into four equal sections as shown below. Darius will spin each arrow one time. What is the probability that the product of the two numbers that the arrows land on from Darius’s spins will be an odd number?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G7-2025/q41.png",
+          "type": "Diagram",
+          "alt": "Two spinners, A divided into three equal sections and B into four, each with an arrow.",
+          "longDescription": "Spinner A reads 1, 2 and 3. Spinner B reads 5, 6, 7 and 8."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 28,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "1/3, or four twelfths",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "Of the twelve pairings, four give an odd product: 1 with 5, 1 with 7, 3 with 5 and 3 with 7. Both spinners are in this item's figure."
+      }
+    },
+    "g7-2025-042": {
+      "id": "g7-2025-042",
+      "item": 42,
+      "stemHtml": "Diego, Kris, and Mary each paid the same amount for a movie ticket at a theater. Each person also bought a small popcorn for <span class=\"math\">$6.50</span>, including tax. The <span class=\"math\">3</span> friends spent a total of <span class=\"math\">$54.00</span> on the movie tickets and popcorn. What was the price of each movie ticket?",
+      "stem": "Diego, Kris, and Mary each paid the same amount for a movie ticket at a theater. Each person also bought a small popcorn for $6.50, including tax. The 3 friends spent a total of $54.00 on the movie tickets and popcorn. What was the price of each movie ticket?",
+      "prose": "Diego, Kris, and Mary each paid the same amount for a movie ticket at a theater. Each person also bought a small popcorn for , including tax. The  friends spent a total of on the movie tickets and popcorn. What was the price of each movie ticket?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 29,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "$11.50",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "Three tickets plus three popcorns at 6.50 comes to 54.00, so 3x = 34.50. Both the popcorn price and the total are in this item's own stem."
+      }
+    },
+    "g7-2025-043": {
+      "id": "g7-2025-043",
+      "item": 43,
+      "stemHtml": "Andrea had a gift card with a balance of $25.00. She makes a $25.00 purchase using the gift card. Would the gift card balance be zero dollars after this transaction?",
+      "stem": "Andrea had a gift card with a balance of $25.00. She makes a $25.00 purchase using the gift card. Would the gift card balance be zero dollars after this transaction?",
+      "prose": "Andrea had a gift card with a balance of $25.00. She makes a $25.00 purchase using the gift card. Would the gift card balance be zero dollars after this transaction?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 30,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Yes — 25 plus negative 25 is 0, because the balance and the purchase are opposite quantities",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "Both amounts are in this item's own transcribed stem."
+      }
+    },
+    "g7-2025-044": {
+      "id": "g7-2025-044",
+      "item": 44,
+      "stemHtml": "Ryan drinks <span class=\"math\"><span class=\"frac\"><span>3</span><span>8</span></span></span> gallon of water for every <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>2</span></span></span> hours of exercise. At this rate, how much water, in gallons, does Ryan drink per hour of exercise?",
+      "stem": "Ryan drinks (3)/(8) gallon of water for every 1 (1)/(2) hours of exercise. At this rate, how much water, in gallons, does Ryan drink per hour of exercise?",
+      "prose": "Ryan drinks  gallon of water for every  hours of exercise. At this rate, how much water, in gallons, does Ryan drink per hour of exercise?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    gallon(s)"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 31,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "0.25 gallon",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "Three eighths of a gallon over one and a half hours is 0.375 over 1.5. Both quantities are in this item's own transcribed stem."
+      }
+    },
+    "g7-2025-045": {
+      "id": "g7-2025-045",
+      "item": 45,
+      "stemHtml": "The table below shows the price, in dollars, of different numbers of cans of soda. Is the relationship between the price, in dollars, and the number of cans of soda proportional?",
+      "stem": "The table below shows the price, in dollars, of different numbers of cans of soda. Is the relationship between the price, in dollars, and the number of cans of soda proportional?",
+      "prose": "The table below shows the price, in dollars, of different numbers of cans of soda. Is the relationship between the price, in dollars, and the number of cans of soda proportional?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G7-2025/q45.png",
+          "type": "Data Table",
+          "alt": "A table titled Soda Prices pairing a number of cans with a price in dollars.",
+          "longDescription": "2 cans for 5.50, 4 for 11.00, 8 for 22.00, and 10 for 27.50."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 32,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Yes, proportional — every row gives 2.75 dollars a can",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "5.50 over 2, 11 over 4, 22 over 8 and 27.50 over 10 all equal 2.75. The table is this item's figure."
+      }
+    },
+    "g7-2025-046": {
+      "id": "g7-2025-046",
+      "item": 46,
+      "stemHtml": "An expression is shown below. Simplify the expression completely.",
+      "stem": "An expression is shown below. Simplify the expression completely.",
+      "prose": "An expression is shown below. Simplify the expression completely.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\">−5y + 3 − 6y + 10y − 1</span>"
+      ],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 33,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "−y + 2",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "Minus 5y minus 6y plus 10y is minus y, and 3 minus 1 is 2. The expression is this item's own displayed expression."
+      }
+    },
+    "g7-2025-047": {
+      "id": "g7-2025-047",
+      "item": 47,
+      "stemHtml": "Jeffrey is painting a rectangular mural on his bedroom wall. He sketches his design on a piece of paper as described below. <span class=\"math\">•</span> He uses the entire piece of paper for his design. <span class=\"math\">•</span> The paper has a length of 8 inches and a width of 6 inches. <span class=\"math\">•</span> The scale factor is 1 inch to 1.75 feet. What is the actual area, in square feet, of the mural that Jeffrey will paint on his wall?",
+      "stem": "Jeffrey is painting a rectangular mural on his bedroom wall. He sketches his design on a piece of paper as described below. • He uses the entire piece of paper for his design. • The paper has a length of 8 inches and a width of 6 inches. • The scale factor is 1 inch to 1.75 feet. What is the actual area, in square feet, of the mural that Jeffrey will paint on his wall?",
+      "prose": "Jeffrey is painting a rectangular mural on his bedroom wall. He sketches his design on a piece of paper as described below. He uses the entire piece of paper for his design. The paper has a length of 8 inches and a width of 6 inches. The scale factor is 1 inch to 1.75 feet. What is the actual area, in square feet, of the mural that Jeffrey will paint on his wall?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer    square feet"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 34,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "147 square feet",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "At 1 inch to 1.75 feet the 8 by 6 inch sketch is 14 by 10.5 feet. All three figures are in this item's own stem."
+      }
+    },
+    "g7-2025-048": {
+      "id": "g7-2025-048",
+      "item": 48,
+      "stemHtml": "A store is offering discounts on two types of shirts. <span class=\"math\">•</span> a 10% discount on short sleeve shirts with an original price of $40.00 <span class=\"math\">•</span> a 25% discount on long sleeve shirts with an original price of $50.00 How much will a customer spend, without tax, if they purchase one of each type of shirt?",
+      "stem": "A store is offering discounts on two types of shirts. • a 10% discount on short sleeve shirts with an original price of $40.00 • a 25% discount on long sleeve shirts with an original price of $50.00 How much will a customer spend, without tax, if they purchase one of each type of shirt?",
+      "prose": "A store is offering discounts on two types of shirts. a 10% discount on short sleeve shirts with an original price of $40.00 a 25% discount on long sleeve shirts with an original price of $50.00 How much will a customer spend, without tax, if they purchase one of each type of shirt?",
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer   $"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 35,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "$73.50",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "40 less 10% is 36 and 50 less 25% is 37.50. Both prices and both discounts are in this item's own stem."
       }
     },
     "g7-2026-001": {
@@ -9107,17 +11241,11 @@
         "Explain your answer."
       ],
       "display": [
+        "<span class=\"math\">• √<span class=\"repeat\">49</span> • 1<span class=\"repeat\">.3</span></span>",
         "<span class=\"math\">• 1.234</span>"
       ],
       "choices": [],
-      "figures": [
-        {
-          "file": "G8-2024/q47.png",
-          "type": "Expression",
-          "alt": "A bulleted list of five numbers to classify as rational or irrational.",
-          "longDescription": "The square root of 49, 1.3 repeating, the square root of 32, seven halves, and 1.234."
-        }
-      ],
+      "figures": [],
       "tablesInImage": false,
       "choicesInImage": false,
       "sourcePage": 34,
@@ -9159,6 +11287,1180 @@
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
         "check": "Store A charges $3.50 a yard and Store B $2.75, so nine yards cost $31.50 and $24.75. Store A's equation is in the stem and Store B's rate is read from its graph."
+      }
+    },
+    "g8-2025-002": {
+      "id": "g8-2025-002",
+      "item": 2,
+      "stemHtml": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "stem": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "prose": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q02.png",
+          "type": "Graphs as Answer Choices",
+          "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
+          "longDescription": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 7,
+      "reviewed": true
+    },
+    "g8-2025-004": {
+      "id": "g8-2025-004",
+      "item": 4,
+      "stemHtml": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+      "stem": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+      "prose": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "parallelogram",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "rectangle",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "trapezoid",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "triangle",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q04_1.png",
+          "type": "Diagram",
+          "alt": "A shaded plane slicing vertically through a square pyramid.",
+          "longDescription": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 8,
+      "reviewed": true
+    },
+    "g8-2025-007": {
+      "id": "g8-2025-007",
+      "item": 7,
+      "stemHtml": "The diagram below shows a person flying a kite. They let out <span class=\"math\">20</span> feet of string and are holding the end of the string <span class=\"math\">4</span> feet above the ground. The kite is directly above a spot on the ground that is <span class=\"math\">15</span> feet away from where they are standing. Which equation can be used to determine the value of  <span class=\"math\">x</span> ?",
+      "stem": "The diagram below shows a person flying a kite. They let out 20 feet of string and are holding the end of the string 4 feet above the ground. The kite is directly above a spot on the ground that is 15 feet away from where they are standing. Which equation can be used to determine the value of x ?",
+      "prose": "The diagram below shows a person flying a kite. They let out  feet of string and are holding the end of the string  feet above the ground. The kite is directly above a spot on the ground that is  feet away from where they are standing. Which equation can be used to determine the value of   ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">x<sup>2</sup> = 20<sup>2</sup> + 15<sup>2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">24<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">20<sup>2</sup> = 19<sup>2</sup> + x<sup>2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">20<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q07.png",
+          "type": "Diagram",
+          "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+          "longDescription": "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 9,
+      "reviewed": true
+    },
+    "g8-2025-008": {
+      "id": "g8-2025-008",
+      "item": 8,
+      "stemHtml": "The graph of a line is shown below. What is the equation of the line?",
+      "stem": "The graph of a line is shown below. What is the equation of the line?",
+      "prose": "The graph of a line is shown below. What is the equation of the line?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">y = −2x + 3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">y = −2x + 6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 6</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q08_1.png",
+          "type": "Coordinate Plane",
+          "alt": "A line falling from left to right across a coordinate plane, crossing both axes within the first quadrant's edge.",
+          "longDescription": "The line crosses the y-axis at 3 and the x-axis at 6, falling one unit for every two across."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 10,
+      "reviewed": true
+    },
+    "g8-2025-012": {
+      "id": "g8-2025-012",
+      "item": 12,
+      "stemHtml": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball?",
+      "stem": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball?",
+      "prose": "A soccer ball has a diameter of 23 centimeters. What is the volume, to the nearest cubic centimeter, of the soccer ball?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "1,593",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "6,371",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "12,741",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "50,965",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g8-2025-014": {
+      "id": "g8-2025-014",
+      "item": 14,
+      "stemHtml": "An equation is shown below. Which value of <span class=\"math\">x</span> makes the equation true?",
+      "stem": "An equation is shown below. Which value of x makes the equation true?",
+      "prose": "An equation is shown below. Which value of  makes the equation true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">−6(x − 4) + 5x = −9x</span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−2.4</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">0.5</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 11,
+      "reviewed": true
+    },
+    "g8-2025-015": {
+      "id": "g8-2025-015",
+      "item": 15,
+      "stemHtml": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "stem": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "prose": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">1.1<span class=\"repeat\">3</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">√<span class=\"repeat\">5</span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>5</span><span>2</span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q15.png",
+          "type": "Expression",
+          "alt": "A set of four numbers shown in braces.",
+          "longDescription": "One third, 1.1 with 3 repeating, the square root of 5, and five halves."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g8-2025-016": {
+      "id": "g8-2025-016",
+      "item": 16,
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">3<sup>5</sup></span> ?",
+      "stem": "Which expression is equivalent to 3^5 ?",
+      "prose": "Which expression is equivalent to  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>(3<sup>6</sup>·3<sup>4</sup>)</span><span>3<sup>2</sup></span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(3<sup>2</sup>)<sup>2</sup> · 3</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(3<sup>3</sup>)<sup>2</sup></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>3<sup>15</sup></span><span>3<sup>3</sup></span></span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 12,
+      "reviewed": true
+    },
+    "g8-2025-017": {
+      "id": "g8-2025-017",
+      "item": 17,
+      "stemHtml": "Rectangle <span class=\"math\">JKLM</span> is graphed on the coordinate plane shown below. Rectangle <span class=\"math\">JKLM</span> will be translated <span class=\"math\">5</span> units right and <span class=\"math\">2</span> units up to produce rectangle <span class=\"math\">J′K′L′M′</span>. Which statement about the line segments of rectangle <span class=\"math\">J′K′L′M′</span> is true?",
+      "stem": "Rectangle JKLM is graphed on the coordinate plane shown below. Rectangle JKLM will be translated 5 units right and 2 units up to produce rectangle J′K′L′M′. Which statement about the line segments of rectangle J′K′L′M′ is true?",
+      "prose": "Rectangle  is graphed on the coordinate plane shown below. Rectangle  will be translated  units right and  units up to produce rectangle . Which statement about the line segments of rectangle  is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">J′M′</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">J′K′</span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q17.png",
+          "type": "Coordinate Plane",
+          "alt": "Rectangle JKLM drawn in the first quadrant of a coordinate plane ruled from negative 10 to 10.",
+          "longDescription": "J and M are the upper corners and K and L the lower ones, the rectangle sitting just right of the y-axis."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 13,
+      "reviewed": true
+    },
+    "g8-2025-019": {
+      "id": "g8-2025-019",
+      "item": 19,
+      "stemHtml": "Figure <span class=\"math\">ABCD</span> is shown on the coordinate plane below. The figure will be dilated by a scale factor of <span class=\"math\">2</span>, with the center of the dilation at the origin. The resulting image will be figure <span class=\"math\">A′B′C′D′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span> ?",
+      "stem": "Figure ABCD is shown on the coordinate plane below. The figure will be dilated by a scale factor of 2, with the center of the dilation at the origin. The resulting image will be figure A′B′C′D′. What will be the coordinates of vertex A′ ?",
+      "prose": "Figure  is shown on the coordinate plane below. The figure will be dilated by a scale factor of , with the center of the dilation at the origin. The resulting image will be figure . What will be the coordinates of vertex  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">(−5,6)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">(−3,6)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">(−3,8)</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">(−6,8)</span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q19.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+          "longDescription": "A is the upper left vertex, B the lower left, and C sits to the right of them."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 14,
+      "reviewed": true
+    },
+    "g8-2025-027": {
+      "id": "g8-2025-027",
+      "item": 27,
+      "stemHtml": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "stem": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "prose": "A diagram of a right cone is shown below. What is the volume, in cubic yards, of the cone?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">14π</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">24π</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">72π</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">96π</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q27.png",
+          "type": "Diagram",
+          "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
+          "longDescription": "The height is 8 yards and the radius is 6 yards."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g8-2025-028": {
+      "id": "g8-2025-028",
+      "item": 28,
+      "stemHtml": "A transformation maps <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span>. If <span class=\"math\">△A′B′C′</span> is similar but not congruent to <span class=\"math\">△ABC</span>, which transformation occurred?",
+      "stem": "A transformation maps △ABC to △A′B′C′. If △A′B′C′ is similar but not congruent to △ABC, which transformation occurred?",
+      "prose": "A transformation maps  to . If  is similar but not congruent to , which transformation occurred?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "a rotation about the origin",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "a reflection over the <span class=\"math\">y</span> -axis",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "a dilation with a scale factor not equal to 1",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "a translation of 1 unit in both the <span class=\"math\">x</span> and <span class=\"math\">y</span> directions",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 15,
+      "reviewed": true
+    },
+    "g8-2025-030": {
+      "id": "g8-2025-030",
+      "item": 30,
+      "stemHtml": "An equation is shown below. For which value of <span class=\"math\">h</span> will this equation have no solutions?",
+      "stem": "An equation is shown below. For which value of h will this equation have no solutions?",
+      "prose": "An equation is shown below. For which value of  will this equation have no solutions?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [
+        "<span class=\"math\">8 − 12x = h(3x − 4)</span>"
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−4</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">3</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">4</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 16,
+      "reviewed": true
+    },
+    "g8-2025-031": {
+      "id": "g8-2025-031",
+      "item": 31,
+      "stemHtml": "The diagram below shows three intersecting lines. What is the value of  <span class=\"math\">x</span> ?",
+      "stem": "The diagram below shows three intersecting lines. What is the value of x ?",
+      "prose": "The diagram below shows three intersecting lines. What is the value of   ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">6</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">10.2</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\">17</span>",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\">19.2</span>",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q31.png",
+          "type": "Diagram",
+          "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+          "longDescription": "One angle is 6x minus 23 degrees and the other is 4x plus 11 degrees."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 17,
+      "reviewed": true
+    },
+    "g8-2025-032": {
+      "id": "g8-2025-032",
+      "item": 32,
+      "stemHtml": "Alex and Taylor are comparing the costs of their gym memberships. <span class=\"math\">•</span> The total cost, <span class=\"math\">y</span>, in dollars, of Alex’s gym membership for <span class=\"math\">x</span> months is represented by the equation <span class=\"math\">y = 15x</span>. <span class=\"math\">•</span> The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month?",
+      "stem": "Alex and Taylor are comparing the costs of their gym memberships. • The total cost, y, in dollars, of Alex’s gym membership for x months is represented by the equation y = 15x. • The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month?",
+      "prose": "Alex and Taylor are comparing the costs of their gym memberships. The total cost, , in dollars, of Alex’s gym membership for  months is represented by the equation . The total cost of Taylor’s gym membership is represented by the graph shown below. Which statement identifies the gym membership with the lower cost per month?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Alex’s gym membership at a cost of <span class=\"math\">$10.00</span> per month",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Alex’s gym membership at a cost of <span class=\"math\">$15.00</span> per month",
+          "isCorrect": true
+        },
+        {
+          "label": "C",
+          "text": "Taylor’s gym membership at a cost of <span class=\"math\">$15.00</span> per month",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "Taylor’s gym membership at a cost of <span class=\"math\">$25.00</span> per month",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q32.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
+          "longDescription": "A straight line rises from about 25 dollars at the start to about 250 dollars at 10 months."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 18,
+      "reviewed": true
+    },
+    "g8-2025-033": {
+      "id": "g8-2025-033",
+      "item": 33,
+      "stemHtml": "What is the value of the expression <span class=\"math\">2<sup>5</sup> · 10<sup>0</sup> · 3<sup>−2</sup></span> ?",
+      "stem": "What is the value of the expression 2^5 · 10^0 · 3^−2 ?",
+      "prose": "What is the value of the expression  ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "<span class=\"math\">−288</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "<span class=\"math\">−90</span>",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>0</span><span>9</span></span></span>",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "<span class=\"math\"><span class=\"frac\"><span>32</span><span>9</span></span></span>",
+          "isCorrect": true
+        }
+      ],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g8-2025-034": {
+      "id": "g8-2025-034",
+      "item": 34,
+      "stemHtml": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+      "stem": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+      "prose": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Angle A is congruent to angle S.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Angle C is congruent to angle Q.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Side BC is congruent to side QR.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "Side DC is congruent to side RQ.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q34.png",
+          "type": "Coordinate Plane",
+          "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
+          "longDescription": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 23,
+      "reviewed": true
+    },
+    "g8-2025-035": {
+      "id": "g8-2025-035",
+      "item": 35,
+      "stemHtml": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and Hannah calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>4</span><span>6</span></span></span>. Their work is shown below. Which statement is true?",
+      "stem": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be (2)/(3) and Hannah calculated the slope to be (4)/(6). Their work is shown below. Which statement is true?",
+      "prose": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be  and Hannah calculated the slope to be . Their work is shown below. Which statement is true?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Only Brayden calculated the slope correctly.",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "Only Hannah calculated the slope correctly.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "Both Brayden and Hannah calculated the slope correctly.",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "Neither Brayden nor Hannah calculated the slope correctly.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q35.png",
+          "type": "Coordinate Planes",
+          "alt": "Two graphs side by side, Brayden's Work and Hannah's Work, each showing the same line with a slope triangle drawn on it.",
+          "longDescription": "Brayden marks a rise of 3 against a run of 2. Hannah marks a rise of 4 against a run of 6 on the same line."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 24,
+      "reviewed": true
+    },
+    "g8-2025-036": {
+      "id": "g8-2025-036",
+      "item": 36,
+      "stemHtml": "The table of values shown below represents a relation. Which statement describes the relation?",
+      "stem": "The table of values shown below represents a relation. Which statement describes the relation?",
+      "prose": "The table of values shown below represents a relation. Which statement describes the relation?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "The table represents a function because each input has only one output.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "The table represents a function because each output has only one input.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "The table does not represent a function because each input has only one output.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "The table does not represent a function because each output has only one input.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q36.png",
+          "type": "Data Table",
+          "alt": "A two-column table of x and y values with five rows running through zero.",
+          "longDescription": "Negative 2 with negative 12, negative 1 with negative 7, 0 with negative 2, 1 with 3, and 2 with 8."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g8-2025-037": {
+      "id": "g8-2025-037",
+      "item": 37,
+      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+      "stem": "On which number line does point P represent the value of the expression √4-repeating + √10-repeating?",
+      "prose": "On which number line does point P represent the value of the expression ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "B",
+          "text": "",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "",
+          "isCorrect": true
+        },
+        {
+          "label": "D",
+          "text": "",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q37.png",
+          "type": "Number Lines as Answer Choices",
+          "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
+          "longDescription": "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": true,
+      "sourcePage": 25,
+      "reviewed": true
+    },
+    "g8-2025-038": {
+      "id": "g8-2025-038",
+      "item": 38,
+      "stemHtml": "A scatter plot is shown below. Which statement best describes the association between <span class=\"math\">x</span> and  <span class=\"math\">y</span> ?",
+      "stem": "A scatter plot is shown below. Which statement best describes the association between x and y ?",
+      "prose": "A scatter plot is shown below. Which statement best describes the association between  and   ?",
+      "creditLine": null,
+      "instructions": [],
+      "display": [],
+      "choices": [
+        {
+          "label": "A",
+          "text": "There is a positive, linear association.",
+          "isCorrect": true
+        },
+        {
+          "label": "B",
+          "text": "There is a negative, linear association.",
+          "isCorrect": false
+        },
+        {
+          "label": "C",
+          "text": "There is a positive, nonlinear association.",
+          "isCorrect": false
+        },
+        {
+          "label": "D",
+          "text": "There is a negative, nonlinear association.",
+          "isCorrect": false
+        }
+      ],
+      "figures": [
+        {
+          "file": "G8-2025/q38.png",
+          "type": "Scatter Plot",
+          "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
+          "longDescription": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 26,
+      "reviewed": true
+    },
+    "g8-2025-039": {
+      "id": "g8-2025-039",
+      "item": 39,
+      "stemHtml": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+      "stem": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+      "prose": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q39.png",
+          "type": "Data Table",
+          "alt": "A five-row table of x and y values for a linear function.",
+          "longDescription": "Negative 18 with negative 6, negative 8 with negative 1, 0 with 3, 4 with 5, and 6 with 6."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 27,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "1/2, or 0.5",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+        "check": "From negative 18, negative 6 to 6, 6 is 12 up over 24 across. The table is this item's figure."
+      }
+    },
+    "g8-2025-040": {
+      "id": "g8-2025-040",
+      "item": 40,
+      "stemHtml": "A circular dart board has a circumference of <span class=\"math\">17.75π</span> inches. What is the radius, in inches, of the dart board?",
+      "stem": "A circular dart board has a circumference of 17.75π inches. What is the radius, in inches, of the dart board?",
+      "prose": "A circular dart board has a circumference of  inches. What is the radius, in inches, of the dart board?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer    inches"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 28,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "8.875 inches",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+        "check": "A circumference of 17.75 pi is a diameter of 17.75, so the radius is 8.875. The circumference is in this item's own transcribed stem."
+      }
+    },
+    "g8-2025-041": {
+      "id": "g8-2025-041",
+      "item": 41,
+      "stemHtml": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, <span class=\"math\">y</span>, in dollars, for Lisa mowing the lawn for <span class=\"math\">x</span> hours is represented by the equation <span class=\"math\">y = 6x + 12.</span> What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+      "stem": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, y, in dollars, for Lisa mowing the lawn for x hours is represented by the equation y = 6x + 12. What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+      "prose": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, , in dollars, for Lisa mowing the lawn for  hours is represented by the equation What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+      "creditLine": "This question is worth 1 credit.",
+      "instructions": [
+        "Answer   $"
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q41.png",
+          "type": "Data Table",
+          "alt": "A table titled David's Charges pairing hours mowed with total charges in dollars.",
+          "longDescription": "Half an hour for 17.50, one hour for 20.00, and two hours for 25.00."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 29,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "$3.00",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+        "check": "David's table gives a $15 fee and Lisa's equation gives $12. Both are in this item's stem and figure."
+      }
+    },
+    "g8-2025-042": {
+      "id": "g8-2025-042",
+      "item": 42,
+      "stemHtml": "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
+      "stem": "Classify √1.44-repeating as being rational or irrational.",
+      "prose": "Classify  as being rational or irrational.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you know your answer is correct."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 30,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Rational — the square root of 1.44 is 1.2, a terminating decimal",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+        "check": "1.2 squared is 1.44, and 1.2 is 12 tenths, a ratio of integers. The radical is this item's own transcribed stem, and it is carried by the vinculum being read as one bar."
+      }
+    },
+    "g8-2025-043": {
+      "id": "g8-2025-043",
+      "item": 43,
+      "stemHtml": "The equations of two functions are shown below. Function A: <span class=\"math\">y = 3x + 8</span> Function B: <span class=\"math\">y = x<sup>2</sup> + 2</span> Classify each function as linear or nonlinear.",
+      "stem": "The equations of two functions are shown below. Function A: y = 3x + 8 Function B: y = x^2 + 2 Classify each function as linear or nonlinear.",
+      "prose": "The equations of two functions are shown below. Function A: Function B: Classify each function as linear or nonlinear.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 31,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Function A is linear and Function B is nonlinear",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+        "check": "y = 3x + 8 is in slope-intercept form; y = x squared + 2 is not. Both equations are in this item's own transcribed stem."
+      }
+    },
+    "g8-2025-044": {
+      "id": "g8-2025-044",
+      "item": 44,
+      "stemHtml": "The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer.",
+      "stem": "The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer.",
+      "prose": "The graph shown below represents the time and speed of a roller coaster over the course of the entire ride. Based on the graph, during what interval of time, in seconds, is the speed, in miles per hour, of the roller coaster constant? Be sure to include what the constant speed is, in miles per hour, for that interval in your answer.",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q44.png",
+          "type": "Line Graph",
+          "alt": "A graph titled Roller Coaster Speed, speed in miles per hour against time in seconds.",
+          "longDescription": "The speed climbs to a peak near 50 mph at about 25 seconds, drops to 30, holds flat from 30 to 40 seconds, then falls away."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 32,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "The speed is constant at 30 miles per hour between 30 and 40 seconds",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+        "check": "That is the horizontal stretch of the graph, where the rate of change is zero. The graph is this item's figure."
+      }
+    },
+    "g8-2025-045": {
+      "id": "g8-2025-045",
+      "item": 45,
+      "stemHtml": "An equation is shown below. What value of <span class=\"math\">x</span> will make the equation true?",
+      "stem": "An equation is shown below. What value of x will make the equation true?",
+      "prose": "An equation is shown below. What value of  will make the equation true?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Show your work.",
+        "Answer"
+      ],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span> (3x + 9) = x − 4</span>"
+      ],
+      "choices": [],
+      "figures": [],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 33,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "x = −10",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+        "check": "Two thirds of 3x plus 9 is 2x + 6, and 2x + 6 = x minus 4 gives x = minus 10. The equation is this item's own displayed expression."
+      }
+    },
+    "g8-2025-046": {
+      "id": "g8-2025-046",
+      "item": 46,
+      "stemHtml": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be reflected over the <span class=\"math\">y</span> axis to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span>?",
+      "stem": "Triangle ABC is graphed on the coordinate plane shown below. Triangle ABC will be reflected over the y axis to create triangle A′B′C′. What will be the coordinates of vertex A′?",
+      "prose": "Triangleis graphed on the coordinate plane shown below. Trianglewill be reflected over theaxis to create triangle. What will be the coordinates of vertex?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q46.png",
+          "type": "Coordinate Plane",
+          "alt": "Triangle ABC drawn across the y-axis on a coordinate plane ruled from negative 7 to 7.",
+          "longDescription": "A is at negative 3, 4, B at negative 6, 0, and C at negative 1, 2."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 34,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "(3, 4)",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+        "check": "Reflecting over the y-axis negates the x coordinate and leaves y, so A at negative 3, 4 becomes 3, 4. A's position is in this item's figure."
+      }
+    },
+    "g8-2025-047": {
+      "id": "g8-2025-047",
+      "item": 47,
+      "stemHtml": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+      "stem": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+      "prose": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+      "creditLine": "This question is worth 2 credits.",
+      "instructions": [
+        "Explain your answer."
+      ],
+      "display": [
+        "<span class=\"math\">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>",
+        "<span class=\"math\">5<sup>2</sup> + 4<sup>2</sup> = 3<sup>2</sup></span>"
+      ],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q47_1.png",
+          "type": "Diagram",
+          "alt": "A right triangle with a squared grid drawn on each of its three sides, the sides labelled a, b and c.",
+          "longDescription": "The square on side a is 3 by 3, the square on side b is 4 by 4, and the square on the hypotenuse c is 5 by 5."
+        }
+      ],
+      "tablesInImage": false,
+      "choicesInImage": false,
+      "sourcePage": 35,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "The student swapped a leg for the hypotenuse: the legs are 3 and 4 and the hypotenuse is 5, so 3 squared plus 4 squared is 5 squared, or 9 + 16 = 25",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+        "check": "The squares drawn on the sides of the triangle give the side lengths, and they are in this item's figure."
+      }
+    },
+    "g8-2025-048": {
+      "id": "g8-2025-048",
+      "item": 48,
+      "stemHtml": "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night.",
+      "stem": "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night.",
+      "prose": "Kaley and Mark each tracked their total amount of sleep, to the nearest hour, for a science project and determined that their total hours of sleep is proportional to the total number of nights. The graph and the table shown below represent the sleep times for Kaley and Mark. Based on the graph and the table, determine who gets more sleep per night.",
+      "creditLine": "This question is worth 3 credits.",
+      "instructions": [
+        "Explain how you determined your answer."
+      ],
+      "display": [],
+      "choices": [],
+      "figures": [
+        {
+          "file": "G8-2025/q48.png",
+          "type": "Line Graph and Data Table",
+          "alt": "Kaley's sleep time as a graph and Mark's as a table, both against number of nights.",
+          "longDescription": "Kaley's points rise about 7 hours a night. Mark's table gives 18 hours for 2 nights, 27 for 3, 36 for 4, and 45 for 5."
+        }
+      ],
+      "tablesInImage": true,
+      "choicesInImage": false,
+      "sourcePage": 36,
+      "reviewed": true,
+      "constructedResponse": {
+        "answer": "Mark, at 9 hours a night against Kaley's 7",
+        "note": null,
+        "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+        "check": "Kaley's graph rises 7 hours a night and Mark's table rises 9. Both are in this item's figure and named in its long description."
       }
     },
     "g8-2026-001": {
@@ -10619,7 +13921,7 @@
         "Explain your answer."
       ],
       "display": [
-        "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> ○ 16<sup>8 ·</sup> 16<sup>12</sup></span>"
+        "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> ○ 16<sup>8</sup> · 16<sup>12</sup></span>"
       ],
       "choices": [],
       "figures": [],

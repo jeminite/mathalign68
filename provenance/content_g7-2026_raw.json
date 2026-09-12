@@ -629,8 +629,8 @@
             345.11
           ],
           "paths": 95,
-          "decodedLabels": "�� �� ��� ������ � � �� �� � �<sup>�</sup> � �� � � � � � � � � � � � �<sup>�</sup> � � � � � � � � � � � � � � � � ������ �� ���� ����",
-          "undecodedGlyphs": 70,
+          "decodedLabels": "�� �� ��� ������ � � �� �� � �<sup>�</sup> �� � � � � �<span class=\"frac\"><span>��</span><span>�<sup>�</sup></span></span> � � � � � � � � � � � � � � ������ �� ���� ����",
+          "undecodedGlyphs": 63,
           "alt": "",
           "longDescription": ""
         }
@@ -1258,8 +1258,8 @@
             336.03
           ],
           "paths": 189,
-          "decodedLabels": "����� ���� ���� ������ � �<sup>� � �</sup> �<sup>� � �</sup> �<sup>�</sup> �<sup>� �</sup> � � �<sup>� �</sup> �<sup>� � � � � �</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>� �</sup> � • � � � � � � � � � �� � � � � � � � � � � �• � � � � � � � � � � �<sup>� •</sup> � � � � � � � � � �<sup>� •</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �",
-          "undecodedGlyphs": 183,
+          "decodedLabels": "����� ���� ���� ������ � �<sup>�</sup><span class=\"frac\"><span>��</span><span>��</span></span> �<sup>� �</sup> �<sup>�</sup> � � �<sup>�</sup><span class=\"frac\"><span>�</span><span>��</span></span><sup>� � � � � � �</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>� �</sup> � • � � � � � � � � � �� � � � � � � � � � � �• � � � � � � � � � � �<sup>� •</sup> � � � � � � � � � �<sup>� •</sup> � � � � � ",
+          "undecodedGlyphs": 181,
           "alt": "",
           "longDescription": ""
         }
@@ -1989,8 +1989,8 @@
             350.47
           ],
           "paths": 254,
-          "decodedLabels": "����<sup>�</sup>� �������� �����<sup>�</sup>� �������� � �<sup>� � � � �</sup> � �<sup>�</sup> �<sup>� � � �</sup> � � � �<sup>� �</sup> �<sup>� � � �</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>� � � � � �</sup> � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � �",
-          "undecodedGlyphs": 243,
+          "decodedLabels": "����<sup>�</sup>� �������� �����<sup>�</sup>� �������� � �<sup>� �</sup><span class=\"frac\"><span>��</span><span>��</span></span> � �<sup>� � � �</sup> �<sup>� � � �</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>� � � � � �</sup> � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � • � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � � � � � � � � � � � � �<sup>•",
+          "undecodedGlyphs": 236,
           "alt": "",
           "longDescription": ""
         }

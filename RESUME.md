@@ -18,11 +18,13 @@ filter plus Standard, Question type, Year, four sort orders and a widened search
 tab; the same unit filter and a "Taught in" column on Items; and shift-click multi-level sort in
 every table on the site.
 
-**The whole of 2026 is published** — grade 6's 39 items, grade 7's 42 and grade 8's 42. 123 of 396
-items carry the actual question, and the Questions tab is real for every grade.
+**All twelve tests are published — 387 of 396 items carry the actual question**, with 152 figures
+and 118 constructed-response answers taken from NYSED's own exemplary responses. The nine that
+remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
+their standard, their statewide P-value and a link to the official page.
 
-Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned), the class-results
-analyzer, and then the 2023–2025 tests.
+Next: the per-item curriculum alignment (`data/alignment.json`, hand-owned) and the class-results
+analyzer.
 
 ### Two Netlify settings that were wrong at first
 
@@ -569,6 +571,39 @@ either side of it is at 109.2. An exact key made it a line of its own and it was
 END of the stem -- *"baseball cards, , Dan has. c"* -- which reads as a typo rather than as a
 missing variable. Snapping keys within `LINE_TOL` also closed grade 7 item 40's trailing `$`, the
 first half of a documented review note.
+
+## Extracting 2023-2025
+
+Nine tests, 264 items. Thirty-nine glyph labels covered all of them, and a **header-shape detector**
+found every EXEMPLARY RESPONSE page in all twelve scoring PDFs -- pages 8, 13, 18, 23, 33, 43, 53,
+63, 73, 83 in the older books and 8, 13, 18, 28, 38, 48, 58, 68 in 2026 -- validated against the
+2026 grade 8 pages already found by hand. The alternative was reading 900 scanned pages by eye.
+
+### Silent failures found by sweeping rather than by symptom
+
+**Forty-one unlabelled rule-shaped clusters.** Thin wide horizontal paths are always rules in these
+PDFs -- minus signs, fraction bars, vinculums -- and every one of these was unlabelled. They never
+raised an unresolved hole because they mostly sit inside figures, but where they did not, a whole
+displayed expression was silently dropped. Labelling them recovered `(3^6 x 3^4)/3^2`,
+`(3^2 + 5x3)/2^3`, `0.5(4-6)/0.2` and a list of numbers that had been showing as nothing at all.
+Found by listing every unlabelled cluster with a rule's shape, not by any item complaining.
+
+### Rules that had to be rules, not guesses
+
+- **A bar can be drawn as several abutting pieces.** 2025 grade 8 item 17 tiles the overbar of
+  segment J'K' from three rules. Merging them must test abutment on BOTH sides, or a radical's
+  vinculum merges with another radical's further left.
+- **An answer blank sits below the baseline; a minus sits above it.** 2025 grade 7 item 13 has one
+  of each on the same line. But a blank alone on its own line cannot be told from the minus in
+  `- 1/5`, whose fraction is consumed first -- so width decides: no minus in these papers is wider
+  than 9pt, an answer blank is nearer 30.
+- **A choice letter is centred on its content.** Matching its top left 2025 grade 8 item 16's
+  choice A empty, its fraction published as a stray expression beside it. Matching centres fixes
+  that and reaches the number-line pictures that ARE the choices in grade 6 2024 item 11 -- which
+  then published as four question marks. A block that will not decode is artwork, so it falls
+  through to the figure path rather than being claimed as text.
+- **A picture of nothing is not a figure.** Ten phantom figures across six tests. "Not pure white"
+  was too weak a test: three of 2025 grade 8's are filled with an off-white that holds no ink.
 
 ## Open questions
 

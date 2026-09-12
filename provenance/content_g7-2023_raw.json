@@ -512,8 +512,8 @@
             330.13
           ],
           "paths": 100,
-          "decodedLabels": "������<sup>�</sup>� �������� � � � �� � � • �<sup>�</sup> � �� � � � �<sup>�</sup> �� � � �<sup>�</sup> �� �<sup>�</sup> � •<sup>�</sup> �� � � � � � � � � � � � � � � � ����� ������",
-          "undecodedGlyphs": 73,
+          "decodedLabels": "������<sup>�</sup>� �������� � � � �� � � • � �� � �� �<span class=\"frac\"><span>��</span><span>��</span></span> �� � •<sup>�</sup> �� � � � � � � � � � � � � � � � ����� ������",
+          "undecodedGlyphs": 66,
           "alt": "",
           "longDescription": ""
         }

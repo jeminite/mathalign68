@@ -67,8 +67,8 @@
             485.25
           ],
           "paths": 162,
-          "decodedLabels": "� � � � � � �<sup>�</sup> � • � � � • � � � � �� � �� �� �� �� �� �� �� �� �� � � � � � � � � � � � � � � ��<sup>�� •</sup>� �� �� �� �� �� �� �� �� � �",
-          "undecodedGlyphs": 74,
+          "decodedLabels": "� � � � � � �<sup>�</sup> � • � � � • � � � � ____� � ____� ____� ____� ____� ____� ____� ____� ____� ____� � � � � � � � � � � � � � � �<sup>� •</sup>� � � � � � � � − � �",
+          "undecodedGlyphs": 53,
           "alt": "",
           "longDescription": ""
         }
@@ -132,8 +132,8 @@
             413.95
           ],
           "paths": 135,
-          "decodedLabels": "����� � ����� ������ � �<sup>� � � � �</sup> � �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> �<sup>� �</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>�</sup> �<sup>�</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � �<sup>�</sup> � � � ������ �� ������ ��������",
-          "undecodedGlyphs": 132,
+          "decodedLabels": "����� � ����� ������ � �<sup>� �</sup><span class=\"frac\"><span>��</span><span>�<sup>�</sup></span></span><sup>� � �</sup> �<sup>� �</sup> �<sup>� �</sup> � �<sup>�</sup> �<sup>�</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � �<sup>�</sup> � � � ������ �� ������ ��������",
+          "undecodedGlyphs": 125,
           "alt": "",
           "longDescription": ""
         }
@@ -241,8 +241,8 @@
             307.75
           ],
           "paths": 142,
-          "decodedLabels": "������ ����� � �<sup>� �</sup> �<sup>� � �</sup> � �<sup>� �</sup> � �<sup>�</sup> �<sup>� �</sup> � �<sup>� � � � �</sup> � �<sup>� �</sup> � �<sup>� �</sup> � � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � � • � � � � � � � � • � � � � � � � � � � � � � � � � • � � � � � � � � • � � � � � � � � �� �� ���",
-          "undecodedGlyphs": 132,
+          "decodedLabels": "������ ����� � �<sup>� �</sup> �<sup>� � �</sup> � �<span class=\"frac\"><span>�</span><span>��</span></span><span class=\"frac\"><span>��</span><span>�</span></span><sup>� �</sup> �<sup>� � � �</sup> � �<sup>� �</sup> � �<sup>� �</sup> � � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � �<sup>•</sup> � � � � � � � � • � � � � � � � � • � � � � � � � � �",
+          "undecodedGlyphs": 130,
           "alt": "",
           "longDescription": ""
         }
@@ -347,8 +347,8 @@
             436.0
           ],
           "paths": 24,
-          "decodedLabels": "� � �� � � � � �� � � �",
-          "undecodedGlyphs": 13,
+          "decodedLabels": "� � �� � − � � �� � � −",
+          "undecodedGlyphs": 11,
           "alt": "",
           "longDescription": ""
         }
@@ -454,8 +454,8 @@
             355.75
           ],
           "paths": 113,
-          "decodedLabels": "� � � � � � � �<sup>�</sup> � � �� �� �� �� �� �� �� � � � � � � � � � � �� �� �� �� �� �� � �� �",
-          "undecodedGlyphs": 51,
+          "decodedLabels": "� � � � � � � �<sup>�</sup> � � ____� ____� ____� ____� ____� ____� ____� � � � � � � � � � � � � � � �<span class=\"frac\"><span>−</span><span>−</span></span>� � � �",
+          "undecodedGlyphs": 37,
           "alt": "",
           "longDescription": ""
         }
@@ -516,8 +516,8 @@
             422.5
           ],
           "paths": 174,
-          "decodedLabels": "� � � � � � � • • � � � � �<sup>� • • �</sup> �<sup>• •</sup> � � � � �� � �� �� �� �� �� � �<sup>•</sup> � �� �<sup>•</sup> � � ��<sup>�</sup> � � � � � � � � � � � � � � �� �� �� �� �� �� �� �� �� �� � �",
-          "undecodedGlyphs": 79,
+          "decodedLabels": "� � � � � � � • • � � � � �<sup>� • • �</sup> �<sup>• •</sup> � � � � ____� � ____� ____� ____� ____� ____� � ____<sup>•</sup> � ____� ____<sup>•</sup> � � ____�<sup>�</sup> � � � � � � � � � � � � � � � � � � � � � � � − � �",
+          "undecodedGlyphs": 58,
           "alt": "",
           "longDescription": ""
         }
@@ -576,8 +576,8 @@
             394.0
           ],
           "paths": 273,
-          "decodedLabels": "<sup>�</sup> �<sup>�</sup> � �<sup>� �</sup> �<sup>� �</sup> �� � �� � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � �� • � � � � � � � � � � � � � � � �� � �� � �� � � � �� �<sup>� � � �</sup> � � �<sup>�</sup> �<sup>�</sup> � � � � �� �<sup>�</sup> �<sup>� �</sup> �<sup>�</sup> � �<sup>� �</sup> �• �� � �� � � � � • � � � � � � � �<sup>•</sup> � � � � � � � � • � � ",
-          "undecodedGlyphs": 192,
+          "decodedLabels": "<sup>�</sup> �<sup>�</sup> � �<sup>� �</sup> �<sup>� �</sup> �� � �� � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � � • � � � � � � � �� • � � � � � � � � � � � � � � � �� � �� � ____� ____ � � ____� ____<sup>� � � �</sup> � � �<sup>�</sup> �<sup>�</sup> � � � � �� �<sup>�</sup> �<sup>� �</sup> �<sup>�</sup> � �<sup>� �</sup> �• �� � �� � � � � • � � � � � � � �<sup>•</sup> � � � � � ",
+          "undecodedGlyphs": 184,
           "alt": "",
           "longDescription": ""
         }
@@ -878,8 +878,8 @@
             299.5
           ],
           "paths": 109,
-          "decodedLabels": "� � � � � � � � � � � � �� �� �� �� �� �� �� �� � � � � � � � � � � � �� �� �",
-          "undecodedGlyphs": 44,
+          "decodedLabels": "� � � � � � � � � � � � ____� ____� ____� ____� ____� ____� ____� ____� � � � � � � � � � � � −� −� �",
+          "undecodedGlyphs": 34,
           "alt": "",
           "longDescription": ""
         }
@@ -1088,8 +1088,8 @@
             328.48
           ],
           "paths": 128,
-          "decodedLabels": "� � �<sup>�</sup> • � � • � � � � �� �� �� � �<sup>•</sup> � �� �� �� ��<sup>�</sup> � � � � � • � � � � � � � �� �� • �� � �� • � �� �� �",
-          "undecodedGlyphs": 55,
+          "decodedLabels": "� � �<sup>�</sup> • � � • � � � � ____� ____� ____� � ____<sup>•</sup> � ____� ____� ____� ____�<sup>�</sup> � � � � � • � � � � � � � � � • � � � • � −� −� �",
+          "undecodedGlyphs": 41,
           "alt": "",
           "longDescription": ""
         }
@@ -1149,8 +1149,8 @@
             280.0
           ],
           "paths": 21,
-          "decodedLabels": "� ���<sup>�</sup> � ��<sup>�</sup> �� �� � � �<sup>�</sup> �",
-          "undecodedGlyphs": 18,
+          "decodedLabels": "� ��� − � ��<sup>�</sup> �� �� � � �<sup>�</sup> �",
+          "undecodedGlyphs": 17,
           "alt": "",
           "longDescription": ""
         }
@@ -1211,8 +1211,8 @@
             343.0
           ],
           "paths": 109,
-          "decodedLabels": "� � � � � • � • � � � • • � � �<sup>• •</sup>�<sup>�</sup> � �� �� �� �� �� �� � � � � � � � � � �� �� �� �� �� �� �",
-          "undecodedGlyphs": 49,
+          "decodedLabels": "� � � � � • � • � � � • • � � �<sup>• •</sup>�<sup>�</sup> � ____� ____� ____� ____� ____� ____� � � � � � � � � � � � � � −� −� �",
+          "undecodedGlyphs": 37,
           "alt": "",
           "longDescription": ""
         }
@@ -1272,8 +1272,8 @@
             270.95
           ],
           "paths": 61,
-          "decodedLabels": "� � � � � � �� � � � � � � � �",
-          "undecodedGlyphs": 16,
+          "decodedLabels": "� � � � � � ____� � � � � � � � �",
+          "undecodedGlyphs": 15,
           "alt": "",
           "longDescription": ""
         }
@@ -1385,8 +1385,8 @@
             465.0
           ],
           "paths": 143,
-          "decodedLabels": "� � � � � � � � � • � � � � �� �� �� �� �� �� �� �� �� � � � � � � � � � � � � �� �� • �� • � �� � �� �� �� �� �� �",
-          "undecodedGlyphs": 64,
+          "decodedLabels": "� � � � � � � � � • � � � � ____� ____� ____� ____� ____� ____� ____� ____� ____� � � � � � � � � � � � � � � • � • � � � � � � � � �",
+          "undecodedGlyphs": 46,
           "alt": "",
           "longDescription": ""
         }
@@ -1991,7 +1991,7 @@
             199.72,
             119.15
           ],
-          "html": "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> ○ 16<sup>8 ·</sup> 16<sup>12</sup></span>"
+          "html": "<span class=\"math\">(16<sup>5</sup>)<sup>4</sup> ○ 16<sup>8</sup> · 16<sup>12</sup></span>"
         }
       ],
       "figures": [],
@@ -2029,8 +2029,8 @@
             337.75
           ],
           "paths": 161,
-          "decodedLabels": "����<sup>�</sup>� ���� ���� � �<sup>� � � �</sup> � � �<sup>�</sup> � �<sup>�</sup> �<sup>�</sup> � �<sup>� � �</sup> �<sup>� �</sup> � �<sup>� �</sup> � � �<sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>�</sup> � � � � � � � � � � � � � � � � � � �<sup>�</sup>� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� ������",
-          "undecodedGlyphs": 159,
+          "decodedLabels": "����<sup>�</sup>� ���� ���� � �<sup>�</sup><span class=\"frac\"><span>��</span><span>�</span></span> � � � �<sup>� � �</sup> �<sup>� �</sup> � �<sup>� �</sup> � � �<sup>� � �</sup> � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �<sup>�</sup> � � � � � � � � � � � � � � � � � � �<sup>�</sup>� � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �� �",
+          "undecodedGlyphs": 152,
           "alt": "",
           "longDescription": ""
         }
@@ -2147,8 +2147,8 @@
             390.13
           ],
           "paths": 203,
-          "decodedLabels": "������ ���� �� �� ��� � � �<sup>� � � � � ��</sup> �<sup>�</sup> �<sup>� � � � � � � � �</sup> � �� �<sup>�</sup> � �<sup>��</sup> � �� �<sup>�</sup> � �<sup>�</sup> � � � � � �<sup>� �</sup> �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � �• � � � � �<sup>•</sup> � � � � � �<sup>�</sup> � ��<sup>�</sup> �<sup>��</sup> �<sup>�</sup> ��<sup>� � � �</sup> �<sup>� � �</sup> � �<sup>�</sup> �<su",
-          "undecodedGlyphs": 191,
+          "decodedLabels": "������ ���� �� �� ��� � � �<sup>� � � � � ��</sup> �<sup>�</sup> �<sup>� � � � � � � � �</sup> � �� �<sup>�</sup> � �<sup>��</sup> � �� �<sup>�</sup> � �<sup>�</sup> � � �<sup>� �</sup> �<sup>� �</sup> � � � � � � � � � � � � � � � � � � � �• � � � � �<sup>•</sup> � � � � � �<sup>�</sup> � ��<sup>�</sup> �<sup>��</sup> �<sup>�</sup> ��<sup>� �</sup> �<sup>� �</sup> � �<sup>�</sup> �<sup>�</sup> � ",
+          "undecodedGlyphs": 185,
           "alt": "",
           "longDescription": ""
         }

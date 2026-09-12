@@ -3,7 +3,7 @@
     "generatedBy": "tools/label_glyphs.py",
     "note": "Vector glyph shapes from the released-items PDFs, mapped to the characters they draw. HAND-LABELLED: a script builds the clusters, a person (or a vision pass that is then spot-checked) supplies the `label`. An unlabelled cluster makes its item fail to decode rather than decode wrongly.",
     "clusters": 441,
-    "labelled": 133,
+    "labelled": 174,
     "instances": 23637,
     "tolerance": 0.04
   },
@@ -7263,7 +7263,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 178,
       "samples": [
         {
@@ -9520,7 +9520,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 131,
       "samples": [
         {
@@ -13962,7 +13962,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 64,
       "samples": [
         {
@@ -18021,7 +18021,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 40,
       "samples": [
         {
@@ -19795,7 +19795,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 34,
       "samples": [
         {
@@ -20864,7 +20864,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 30,
       "samples": [
         {
@@ -23209,7 +23209,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 24,
       "samples": [
         {
@@ -24583,7 +24583,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 22,
       "samples": [
         {
@@ -26388,7 +26388,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 20,
       "samples": [
         {
@@ -31940,7 +31940,7 @@
         "items": 2,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 16,
       "samples": [
         {
@@ -32711,7 +32711,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 16,
       "samples": [
         {
@@ -32823,7 +32823,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 15,
       "samples": [
         {
@@ -32879,7 +32879,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 15,
       "samples": [
         {
@@ -36652,7 +36652,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 12,
       "samples": [
         {
@@ -37761,7 +37761,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 10,
       "samples": [
         {
@@ -38555,7 +38555,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 9,
       "samples": [
         {
@@ -39854,7 +39854,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 8,
       "samples": [
         {
@@ -40287,7 +40287,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 8,
       "samples": [
         {
@@ -45611,7 +45611,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 6,
       "samples": [
         {
@@ -47217,7 +47217,7 @@
         "items": 2,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 6,
       "samples": [
         {
@@ -48904,7 +48904,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 5,
       "samples": [
         {
@@ -51930,7 +51930,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 4,
       "samples": [
         {
@@ -52228,7 +52228,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 4,
       "samples": [
         {
@@ -54400,7 +54400,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 3,
       "samples": [
         {
@@ -56795,7 +56795,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 3,
       "samples": [
         {
@@ -60502,7 +60502,7 @@
         "items": 60,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -60935,7 +60935,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -61634,7 +61634,7 @@
         "items": 11,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -63893,7 +63893,7 @@
         "items": 9,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 2,
       "samples": [
         {
@@ -65298,7 +65298,7 @@
         "items": 4,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68504,7 +68504,7 @@
         "items": 48,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68530,7 +68530,7 @@
         "items": 24,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68556,7 +68556,7 @@
         "items": 20,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68582,7 +68582,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68608,7 +68608,7 @@
         "items": 8,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68634,7 +68634,7 @@
         "items": 6,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68686,7 +68686,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -68899,7 +68899,7 @@
         "items": 4,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -69166,7 +69166,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -69336,7 +69336,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {
@@ -69629,7 +69629,7 @@
         "items": 1,
         "degenerate": true
       },
-      "label": null,
+      "label": "@rule",
       "count": 1,
       "samples": [
         {

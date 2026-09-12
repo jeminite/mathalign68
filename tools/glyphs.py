@@ -93,7 +93,7 @@ INTRINSICALLY_RAISED = set("\u00b0\u2032\u2033")
 # swept into the superscript and 9^2 + 12^2 = 15^2 published as
 # "9^2 + 12^(2 =) 15^2". An operator is never an exponent here; a superscript
 # MINUS is drawn as a rule and handled before this test is reached.
-CENTRED_OPERATORS = set("=+<>\u00d7\u00f7\u00b1\u2260\u2264\u2265\u2212")
+CENTRED_OPERATORS = set("=+<>\u00d7\u00f7\u00b1\u2260\u2264\u2265\u2212\u00b7")
 
 # Inferring spaces from horizontal gaps works for digits and letters but not
 # for narrow punctuation: a period is positioned with enough side bearing that
@@ -455,10 +455,20 @@ class GlyphTable:
         # baseline down until the x in (x + 2) looked raised. A fraction's
         # numerator and denominator each sit on their own baseline and are
         # measured on their own.
-        supers, middots = set(), set()
+        supers, middots, blanks = set(), set(), set()
 
         def mark(indices):
             rects = [glyphs[i][0] for i in indices]
+            # A LONE RULE THAT IS WIDE IS AN ANSWER BLANK. It sits below the
+            # text and so forms a "line" of its own, where the baseline test
+            # further down has nothing to compare against. Width separates it
+            # from the other thing that ends up alone on a line: the minus in
+            # "- 1/5", whose fraction is consumed before this runs. No minus in
+            # these papers is wider than 9pt; an answer blank is nearer 30.
+            if indices and all(glyphs[i][2] == RULE for i in indices):
+                wide = [i for i in indices if glyphs[i][0].width > 20.0]
+                blanks.update(wide)
+                return
             if len(rects) < 2:
                 return
             # The baseline is the foot of the TALLEST glyphs. A median over
@@ -484,9 +494,18 @@ class GlyphTable:
             # from a minus by what sits around it. Grade 8 writes 16^8 . 16^12
             # for a product, and a full stop there reads as the end of a
             # sentence in the middle of an expression.
+            # AN ANSWER BLANK SITS BELOW THE BASELINE; A MINUS SITS ABOVE IT.
+            # Both are horizontal rules, and 2025 grade 7 item 13 has one of
+            # each on the same line: the minus of -6.8 is on the maths axis
+            # three points above the baseline, while the blank to be filled in
+            # is an underscore just below it. Read as a minus, the item's own
+            # equation ended "+ = 0 -".
             raised = []
             for i in indices:
                 rect, _, label = glyphs[i]
+                if label == RULE and rect.y0 >= baseline - 0.5:
+                    blanks.add(i)
+                    continue
                 if label == "." and rect.y1 < baseline - 0.2 * body_h:
                     middots.add(i)
                     continue
@@ -606,6 +625,8 @@ class GlyphTable:
                 digits = text_of(overbars[i])
                 unknown += digits.count("\ufffd")
                 out.append('<span class="repeat">%s</span>' % digits)
+            elif i in blanks:
+                out.append("____")              # a blank to fill in, not a minus
             elif i in middots:
                 out.append("\u00b7")            # multiplication, not a full stop
             elif label == RULE:

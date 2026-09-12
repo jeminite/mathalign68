@@ -66,8 +66,8 @@
             391.37
           ],
           "paths": 31,
-          "decodedLabels": "� � � � • • • •<sup>�</sup> �<sup>�</sup> � � � �",
-          "undecodedGlyphs": 11,
+          "decodedLabels": "� � � � • • • • − � − � � � �",
+          "undecodedGlyphs": 9,
           "alt": "",
           "longDescription": ""
         }
@@ -173,8 +173,8 @@
             390.5
           ],
           "paths": 39,
-          "decodedLabels": "� � � � � � � � � � � � � � �",
-          "undecodedGlyphs": 15,
+          "decodedLabels": "� � � � � ____ � � � � � � � � ____",
+          "undecodedGlyphs": 13,
           "alt": "",
           "longDescription": ""
         }
@@ -370,8 +370,8 @@
             222.09
           ],
           "paths": 89,
-          "decodedLabels": "�������� � �������� �������� ��������� � � �� �� �� �� ���� ��<sup>�</sup> � �� �� � � �� �� ��� �� ��� � � � ��<sup>�</sup> � � ��",
-          "undecodedGlyphs": 80,
+          "decodedLabels": "�������� � �������� �������� ��������� � � �� �� �� �� ���� �� − � �� �� � � �� �� ��� �� ��� � � � �� − � � ��",
+          "undecodedGlyphs": 78,
           "alt": "",
           "longDescription": ""
         }
@@ -745,8 +745,8 @@
             155.11
           ],
           "paths": 27,
-          "decodedLabels": "<sup>�</sup> � � � � � � � � � � � � � � � �<sup>� �</sup>",
-          "undecodedGlyphs": 19,
+          "decodedLabels": "− ____ � � � � � � � � � � � � � � �<sup>� �</sup>",
+          "undecodedGlyphs": 17,
           "alt": "",
           "longDescription": ""
         }
@@ -1194,8 +1194,8 @@
             393.7
           ],
           "paths": 109,
-          "decodedLabels": "����� ����� ��� � � � � • � � � � � � �<sup>�</sup> � � �<sup>�</sup> � � � �<sup>�</sup> � • � � �<sup>�</sup> � � �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> � �<sup>•</sup> � � � �<sup>�</sup> �•� � � � � � � � � � � ������ �� ������",
-          "undecodedGlyphs": 81,
+          "decodedLabels": "����� ����� ��� � � � � • � � � � � � � � � � � • � � �<sup>�</sup> � � �<sup>�</sup> �<sup>�</sup> �<sup>� �</sup> � �<sup>•</sup> � � � �<sup>�</sup> �•� � � � � � � � � � � ������ �� ������",
+          "undecodedGlyphs": 74,
           "alt": "",
           "longDescription": ""
         }

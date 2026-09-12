@@ -113,8 +113,8 @@
             361.35
           ],
           "paths": 65,
-          "decodedLabels": "���� � ���� � ���� � • • • �� �� �� �� �� � � � � � � � ������°� ��������",
-          "undecodedGlyphs": 47,
+          "decodedLabels": "���� � ���� � ���� � • • • −� −� −� −� −� � � � � � � � ������°� ��������",
+          "undecodedGlyphs": 42,
           "alt": "",
           "longDescription": ""
         }
@@ -382,8 +382,8 @@
             176.25
           ],
           "paths": 38,
-          "decodedLabels": "� � � � • • • • �� �� �� �� �� � � � � � �",
-          "undecodedGlyphs": 20,
+          "decodedLabels": "� � � � • • • • −� −� −� −� −� � � � � � �",
+          "undecodedGlyphs": 15,
           "alt": "",
           "longDescription": ""
         }
@@ -492,8 +492,8 @@
             341.49
           ],
           "paths": 102,
-          "decodedLabels": "����� � � �� � ���� � �<sup>�</sup> � �� � � �� � � � ��<sup>� �</sup> �� � � � �� • � �<sup>� �</sup> ��<sup>�</sup> • � � ��<sup>�</sup> � � � •<sup>�</sup> � � � � � � � � � � � �<sup>�</sup> ���� ���������",
-          "undecodedGlyphs": 80,
+          "decodedLabels": "����� � � �� � ���� � �<sup>�</sup> � �� �� ��<sup>�</sup> �� � � � �� • � �<sup>� �</sup> ��<sup>�</sup> • � � ��<sup>�</sup> � � � •<sup>�</sup> � � � � � � � � � � � �<sup>�</sup> ���� ���������",
+          "undecodedGlyphs": 74,
           "alt": "",
           "longDescription": ""
         }

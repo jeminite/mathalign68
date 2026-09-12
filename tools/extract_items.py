@@ -516,23 +516,32 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         r = bbox_of(blk)
         owner = None
         for ci, (letter, lx, ly) in enumerate(labels):
-            if abs(r.y0 - ly) < 9 and r.x0 > lx:
+            # COMPARE CENTRES, NOT TOPS. A choice letter is vertically centred
+            # on its content, so a stacked fraction's top sits well above it:
+            # 2025 grade 8 item 16's choice A is (3^6 . 3^4) over 3^2, whose top
+            # is 9.5pt from the letter, and the choice published empty while its
+            # fraction appeared as a stray expression beside it.
+            if abs((r.y0 + r.y1) / 2.0 - (ly + 4.0)) < 12.0 and r.x0 > lx:
                 owner = ci
                 break
         if owner is not None and r.height < 34:
             text, unknown = table.decode(blk)
-            piece = ('⟦?⟧' if unknown
-                     else '<span class="math">%s</span>' % text)
-            choice_extra.setdefault(owner, []).append((r.x0, piece))
             if unknown:
-                name = "q%02d_choice%s.png" % (number, labels[owner][0])
-                save_crop(page, r, os.path.join(adir, name), HOLE_ZOOM, pad=2)
-                unresolved.append({
-                    "kind": "answer choice %s would not decode" % labels[owner][0],
-                    "rect": [round(v, 2) for v in (r.x0, r.y0, r.x1, r.y1)],
-                    "partial": text,
-                    "crop": "%s/%s" % (tag, name),
-                })
+                # A BLOCK THAT WILL NOT DECODE IS ARTWORK, not this choice's
+                # text. Matching the choice letter's CENTRE rather than its top
+                # is what lets a stacked fraction be claimed as a choice, and
+                # the same widening reaches the number-line pictures that ARE
+                # the choices in grade 6 2024 item 11 and 2026 item 23 -- which
+                # then published as four question marks. Failing towards the
+                # figure is the safe direction: the picture is still shown, and
+                # choicesInImage says so.
+                # Not recorded as an unresolved hole: it is not a hole in a
+                # transcription, it is a picture, and it goes on to be published
+                # as one.
+                remaining.append(blk)
+                continue
+            choice_extra.setdefault(owner, []).append(
+                (r.x0, '<span class="math">%s</span>' % text))
             continue
         remaining.append(blk)
 
@@ -738,7 +747,10 @@ def save_crop(page, rect, path, zoom, pad=CROP_PAD):
     # it is too narrow for the frame test in is_furniture, so it became a
     # figure, and the item published a blank image beside a question that
     # refers to no picture at all.
-    if not any(b != 255 for b in pix.samples):
+    # "Not pure white" is too weak a test: three of 2025 grade 8's phantom
+    # figures are filled with an off-white that is not 255 but holds no ink at
+    # all. A crop with nothing at or below mid-grey has nothing to show.
+    if not any(b < 200 for b in pix.samples):
         return False
     os.makedirs(os.path.dirname(path), exist_ok=True)
     pix.save(path)

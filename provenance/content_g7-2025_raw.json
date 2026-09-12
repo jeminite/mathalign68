@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2025.json.",
     "items": 31,
     "itemsWithUnresolved": 0,
-    "figures": 16,
-    "displayExpressions": 1
+    "figures": 13,
+    "displayExpressions": 3
   },
   "items": [
     {
@@ -175,20 +175,6 @@
           "undecodedGlyphs": 32,
           "alt": "",
           "longDescription": ""
-        },
-        {
-          "file": "G7-2025/q03_5.png",
-          "rect": [
-            383.2,
-            536.38,
-            569.01,
-            698.0
-          ],
-          "paths": 1,
-          "decodedLabels": "",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
         }
       ],
       "unresolved": []
@@ -308,22 +294,8 @@
             197.5
           ],
           "paths": 13,
-          "decodedLabels": "� �� � �� � � � �",
-          "undecodedGlyphs": 10,
-          "alt": "",
-          "longDescription": ""
-        },
-        {
-          "file": "G7-2025/q10_2.png",
-          "rect": [
-            404.23,
-            404.38,
-            542.4,
-            554.85
-          ],
-          "paths": 1,
-          "decodedLabels": "",
-          "undecodedGlyphs": 0,
+          "decodedLabels": "− �� � �� − � � �",
+          "undecodedGlyphs": 8,
           "alt": "",
           "longDescription": ""
         }
@@ -372,7 +344,17 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
+      "display": [
+        {
+          "rect": [
+            108.36,
+            353.15,
+            220.94,
+            362.46
+          ],
+          "html": "<span class=\"math\">−6.8 + 6.4 + = 0 ____</span>"
+        }
+      ],
       "figures": [],
       "unresolved": []
     },
@@ -430,8 +412,8 @@
             300.15
           ],
           "paths": 159,
-          "decodedLabels": "����� �<sup>�</sup>� ���� � � � � � � � � � �<sup>� � �</sup> � �<sup>��</sup> � �� � � � � � �� ��<sup>• � �</sup> �<sup>� �</sup> � �<sup>��</sup> � ��� ���� • �� � �<sup>�</sup> �<sup>� �</sup> �<sup>�</sup> � ��� � � • � � �� � � �� �<sup>�</sup> � � � � � � � � �<sup>� �</sup> � ����� �� ��� ��",
-          "undecodedGlyphs": 108,
+          "decodedLabels": "����� �<sup>�</sup>� ���� � � � � � � �<sup>� �</sup> � �<sup>��</sup> � �� � � � � � �� ��<sup>• �</sup> �<sup>�</sup> � �<sup>��</sup> � ��� ���� • �� � �<sup>�</sup> �<sup>� �</sup> �<sup>�</sup> � ��� � � • � � �� � � �� �<sup>�</sup> � � � � � � � � �<sup>� �</sup> � ����� �� ��� ��",
+          "undecodedGlyphs": 102,
           "alt": "",
           "longDescription": ""
         }
@@ -664,22 +646,7 @@
       ],
       "choicesInImage": false,
       "display": [],
-      "figures": [
-        {
-          "file": "G7-2025/q25.png",
-          "rect": [
-            431.67,
-            272.38,
-            542.4,
-            407.88
-          ],
-          "paths": 1,
-          "decodedLabels": "",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
-        }
-      ],
+      "figures": [],
       "unresolved": []
     },
     {
@@ -925,8 +892,8 @@
             285.85
           ],
           "paths": 142,
-          "decodedLabels": "������ ������ � �<sup>�</sup>����������<sup>�</sup> � �<sup>� � �</sup>� � � � � � � � � � � � � � � � � � � �<sup>� � �</sup> � � �<sup>� � �</sup> �<sup>�</sup> � � � � � � � � � �• � � � � � � � � � � � • � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � �� ������������������",
-          "undecodedGlyphs": 137,
+          "decodedLabels": "������ ������ � �<sup>�</sup>����������<sup>� � �</sup>� � � � � � � � � � � � � � � � � � � �<sup>�</sup><span class=\"frac\"><span>��</span><span>�<sup>�</sup></span></span> �<sup>�</sup> � � � � � � � � � �• � � � � � � � � � � � • � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � �<sup>•</sup> � � � � � � � � � � � � �� ������������������",
+          "undecodedGlyphs": 130,
           "alt": "",
           "longDescription": ""
         }
@@ -1216,8 +1183,8 @@
             309.86
           ],
           "paths": 72,
-          "decodedLabels": "����� ���� � � �<sup>�</sup> � � � �<sup>�</sup> � � � � � � � �<sup>�</sup> � � � � � � � � � ��� ��� ��� � ������ �� �����",
-          "undecodedGlyphs": 59,
+          "decodedLabels": "����� ���� � � �<sup>�</sup> � � � �<sup>�</sup> � � � � � � � �<sup>�</sup> � � � � � � � � � �−� �−� �−� � ������ �� �����",
+          "undecodedGlyphs": 56,
           "alt": "",
           "longDescription": ""
         }
@@ -1243,7 +1210,17 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [],
+      "display": [
+        {
+          "rect": [
+            108.77,
+            104.04,
+            159.27,
+            126.07
+          ],
+          "html": "<span class=\"math\"><span class=\"frac\"><span>0.5(4−6)</span><span>0.2</span></span></span>"
+        }
+      ],
       "figures": [],
       "unresolved": []
     },

@@ -204,8 +204,8 @@
             239.49
           ],
           "paths": 148,
-          "decodedLabels": "• �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � � • �� �� �� �� �� �� � � � � � � �",
-          "undecodedGlyphs": 76,
+          "decodedLabels": "• −� −� −� −� −� −� � � � � � � � • −� −� −� −� −� −� � � � � � � � • −� −� −� −� −� −� � � � � � � � • −� −� −� −� −� −� � � � � � � �",
+          "undecodedGlyphs": 52,
           "alt": "",
           "longDescription": ""
         }
@@ -765,8 +765,8 @@
             423.38
           ],
           "paths": 64,
-          "decodedLabels": "� � � � �� �� � � � � �� � � � � � �� � � �� � � � � � � �� � � � � ��",
-          "undecodedGlyphs": 39,
+          "decodedLabels": "� � � � �� � � � � � �� �<span class=\"frac\"><span>�</span><span>���</span></span> − � � � �� ____ − � � � � �� − � � � ��",
+          "undecodedGlyphs": 34,
           "alt": "",
           "longDescription": ""
         }
@@ -988,8 +988,8 @@
             288.25
           ],
           "paths": 105,
-          "decodedLabels": "� � � • � • � � � �<sup>�</sup>� �<sup>�</sup>� �<sup>�</sup>�<sup>�</sup>�<sup>�</sup>�<sup>�</sup>� �� � � � � � � � � � �<sup>� �</sup> � � �<sup>•</sup> �<sup>•</sup> � �",
-          "undecodedGlyphs": 42,
+          "decodedLabels": "� � � • � • � � � � −� �−� � −� −� −� −� ____� � � � � � � � � � �<sup>�</sup> − ____ � �<sup>•</sup> �<sup>•</sup> � �",
+          "undecodedGlyphs": 33,
           "alt": "",
           "longDescription": ""
         }
