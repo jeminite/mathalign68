@@ -36,3 +36,10 @@ package-lock.json
 
 # Editor backups -- local working files, not part of the project history
 provenance/backups/
+
+# Lesson-level index derived from the per-unit teacher guides. It reproduces
+# Imagine Learning's Student Task Statements verbatim, so it is kept out of the
+# repository for the same reason the guides themselves are, and build/payload.py
+# never reads it -- only short cited quotes reach the published site. Rebuild it
+# with tools/extract_im_ms_lesson_detail.py.
+data/im_ms_lessons_detail.json
