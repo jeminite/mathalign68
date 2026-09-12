@@ -137,7 +137,8 @@ data/
   standards.json       GENERATED standards registry, built from the educator guide
   im_ms_reference.json IM 6-8 units, sections, lessons; standard-to-lesson table   [Phase 3]
 
-sources/               NYSED released-items PDFs and the educator guide (committed)
+sources/               NYSED released-items PDFs and the educator guide (committed).
+                       Imagine Learning's guides are NOT -- see provenance/imagine_guides.md
 tools/                 the pipeline and the tests — see below
 build/ + templates/    the site generator; publish.py is a thin entry point
 site/                  GENERATED — deploy this whole folder
@@ -163,7 +164,13 @@ python3 tools/build_items.py              # -> data/items.json
 python3 publish.py && python3 tools/preflight.py
 ```
 
-Everything except `alignment.json` is reproducible from `sources/` with no human step.
+Everything except `alignment.json` is reproducible from `sources/` with no human step —
+with one documented exception. `data/standards.json`'s 110 standard statements,
+`data/im_ms_reference.json` and `data/im_ms_pacing.json` are built from Imagine Learning's
+course guides, which are gitignored as licensed material. All three outputs are committed, so
+a clone builds and deploys without them; what a clone cannot do is re-derive them, and
+`preflight.py` skips those three regenerability checks with a reason rather than failing.
+`provenance/imagine_guides.md` records their sha256 and what depends on them.
 
 `python3 tools/test_extractor.py` runs 169 checks over all fourteen extractions, and
 `python3 tools/preflight.py` runs 53 more against the built site. Two of them are worth knowing

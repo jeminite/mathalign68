@@ -12,14 +12,26 @@
 # pulls them on demand for the Phase 4 exemplar harvest.
 sources/scoring/
 
-# Per-unit teacher guides: ~22MB each, nine of them, 203MB in total against a
-# 114MB repository -- and git never forgets a binary. Nothing in the build reads
-# them: the extractors read only the three course guides
-# (ImagineIM_NY_{6,7,8}__TCG_*.pdf), which ARE tracked. These hold the
-# lesson-by-lesson activity detail, kept on disk as reference for hand-aligning
-# items later.
+# EVERY Imagine Learning guide, per-unit and course alike. Two reasons, and the
+# second is the one that matters:
+#
+#   Size -- the per-unit guides are ~22MB each, nine of them, 203MB in total,
+#   and git never forgets a binary.
+#
+#   LICENSING -- these are Imagine Learning's copyrighted curriculum. The three
+#   course guides were tracked until the repository was first pushed to GitHub,
+#   at which point 101MB of licensed PDF went to a third party's servers. They
+#   were purged from history and the remote was rebuilt; do not re-add them.
+#
+# Nothing in the published build reads them. The extractors do -- see
+# provenance/imagine_guides.md for which scripts, what they produce, and the
+# sha256 of the edition this project was built against -- but their output is
+# committed, so a clone rebuilds the site without them. preflight skips the
+# regenerability checks that need them and says so.
 sources/ImagineIM_NY_?_?_TG_*.pdf
 sources/ImagineIM_?_?_TG_*.pdf
+sources/ImagineIM_NY_?__TCG_*.pdf
+sources/ImagineIM_?_?_TG_CCSS_*.pdf
 
 # Housekeeping
 .DS_Store

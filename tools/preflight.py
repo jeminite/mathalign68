@@ -108,18 +108,36 @@ def regenerability():
         check("data/items.json rebuilds byte-for-byte from provenance/",
               out.returncode == 0, (out.stdout + out.stderr).strip())
 
-    guide = os.path.join(ROOT, "sources", "3-8-educator-guide-math.pdf")
-    if not os.path.exists(guide):
-        skipped("data/standards.json rebuilds from the educator guide",
-                "sources/3-8-educator-guide-math.pdf not on disk")
-        return
-    current = open(os.path.join(DATA, "standards.json")).read()
-    out = subprocess.run([sys.executable, os.path.join(HERE, "extract_standards.py"),
-                          "--stdout"], capture_output=True, text=True)
+    # standards.json is built from TWO sources, and the guard used to name only
+    # one. The educator guide gives every standard its cluster text; the three
+    # Imagine course guides give 110 of the 146 their `statement`, and
+    # extract_standards.py skips a missing course guide SILENTLY rather than
+    # failing. So on a machine without them the rebuild came back with 110
+    # statements missing and this check failed -- reporting a difference in a
+    # file that was perfectly good, and naming the educator guide, which was
+    # present. The course guides are gitignored (they are Imagine Learning's,
+    # see provenance/imagine_guides.md), so that is every fresh clone.
+    # Hoisted: the curriculum-index loop below needs it too, and it used to sit
+    # inside the block that returns early. That return is why a missing source
+    # did not merely skip THIS check -- it removed the two after it from the run
+    # entirely. A vanished check reads as a smaller total and nothing else,
+    # which is worse than either a pass or a skip.
     strip = lambda s: re.sub(r'"generated": "[^"]*"', '"generated": "-"', s)
-    check("data/standards.json rebuilds byte-for-byte from the educator guide",
-          out.returncode == 0 and strip(current) == strip(out.stdout),
-          (out.stderr or "the rebuilt file differs from the one on disk").strip())
+
+    needs = ["3-8-educator-guide-math.pdf"] + \
+            ["ImagineIM_NY_%d__TCG_NA_V2_EN_DIG.pdf" % g for g in (6, 7, 8)]
+    missing = [n for n in needs
+               if not os.path.exists(os.path.join(ROOT, "sources", n))]
+    if missing:
+        skipped("data/standards.json rebuilds from its source guides",
+                "%s not on disk" % ", ".join(missing))
+    else:
+        current = open(os.path.join(DATA, "standards.json")).read()
+        out = subprocess.run([sys.executable, os.path.join(HERE, "extract_standards.py"),
+                              "--stdout"], capture_output=True, text=True)
+        check("data/standards.json rebuilds byte-for-byte from its source guides",
+              out.returncode == 0 and strip(current) == strip(out.stdout),
+              (out.stderr or "the rebuilt file differs from the one on disk").strip())
 
     # The curriculum index, under the same regime: a hand edit to either file
     # cannot survive the gate.

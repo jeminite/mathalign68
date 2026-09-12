@@ -153,11 +153,16 @@ before touching `templates/analyze/`.
 
 ## Tooling notes
 
-- `data/im_ms_lessons_detail.json` holds the 427 lessons' actual task statements,
-  rebuilt by `tools/extract_im_ms_lesson_detail.py` from the per-unit teacher
-  guides. Both are gitignored -- the guides for their size, the index because it
-  reproduces licensed text -- so neither survives a fresh clone, and the build
-  never reads either. Run `tools/validate_im_ms_lesson_detail.py` after a rebuild.
+- **No Imagine Learning guide is in the repository.** The per-unit teacher
+  guides, the three course guides and `data/im_ms_lessons_detail.json` (which
+  reproduces Student Task Statements verbatim) are all gitignored: they are
+  Imagine Learning's copyrighted curriculum, and the course guides were purged
+  from git history after a push put 101 MB of them on GitHub. Do not re-add
+  them. `provenance/imagine_guides.md` has their sha256, what reads them, and
+  what a fresh clone loses -- which is the ability to RE-DERIVE
+  `standards.json`'s statements, `im_ms_reference.json` and `im_ms_pacing.json`,
+  not the ability to build the site, since all three outputs are committed.
+  Run `tools/validate_im_ms_lesson_detail.py` after rebuilding the index.
 - **poppler is not installed on this machine.** No `pdftotext`, `pdfinfo` or `pdftoppm`, which
   also means the Read tool cannot render a PDF page here. Use PyMuPDF (`import fitz`), which is
   available to system python3.9.
