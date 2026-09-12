@@ -666,6 +666,52 @@ def transcription(payload):
         check("every published transcription has an extractor draft behind it",
               not no_draft, ", ".join(no_draft[:6]))
 
+    # ---- figure descriptions against the artwork -----------------------
+    # A figure's longDescription is what a screen-reader user is given INSTEAD
+    # of the picture, and until this check it was the only published field with
+    # no independent source that could contradict it. Nine of the twelve
+    # coordinate-plane descriptions turned out to disagree with the drawing --
+    # g8-2026-029's put B one unit out and C four units out, so the segment it
+    # describes is 5 units long where the item's own answer key says 6, and
+    # g8-2026-001's three wrong vertices put the answer the item asks for
+    # outside its own choices. A coordinate plane is vector artwork, so the
+    # drawing can be read back and the two compared. Placed OUTSIDE the drafts
+    # branch above on purpose: it does not depend on the drafts, and a check
+    # that vanishes when an unrelated source is missing is worse than one that
+    # fails. See tools/check_plotted_points.py for what it will not claim.
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import check_plotted_points as cpp
+    content_box = load(os.path.join(DATA, "content.json"))
+    content_box = content_box.get("items", content_box)
+    by_id = {i["id"]: i for i in load(os.path.join(DATA, "items.json"))["items"]}
+    wrong, unreadable = [], []
+    for item_id, entry in sorted(content_box.items()):
+        item = by_id.get(item_id)
+        if not item:
+            continue
+        grade, year, _ = item_id.split("-")
+        pdf = os.path.join(ROOT, "sources",
+                           "%s-released-items-math-%s.pdf" % (year, grade))
+        if not os.path.exists(pdf):
+            continue
+        for fig in entry.get("figures") or []:
+            said = cpp.stated(fig.get("longDescription"))
+            if len(said) < 2:
+                continue
+            drawn = cpp.plotted(pdf, item["pdfPage"])
+            if not drawn:
+                unreadable.append(item_id)
+                continue
+            if not cpp.compare(said, drawn)[0]:
+                wrong.append("%s: says %s, artwork plots %s"
+                             % (item_id, sorted(said), sorted(drawn)))
+    check("every figure description's coordinates are the ones the artwork plots",
+          not wrong, "\n".join(wrong[:6]))
+    if unreadable:
+        note("%d coordinate plane(s) could not be read back, so their "
+             "description is unchecked: %s"
+             % (len(unreadable), ", ".join(unreadable)))
+
     # ---- structure -----------------------------------------------------
     problems = {
         "every stem, stemAfter and choice has balanced tags": [],

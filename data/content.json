@@ -1752,7 +1752,7 @@
           "file": "G6-2024/q37.png",
           "type": "Coordinate Plane",
           "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
-          "longDescription": "A is at negative 6, 6; D is at 4, 6; B is at negative 2, negative 4; C is at 12, negative 4."
+          "longDescription": "A is at negative 6, 6; D is at 4, 6; B is at 2, negative 4; C is at 12, negative 4."
         }
       ],
       "tablesInImage": false,
@@ -9997,7 +9997,7 @@
           "file": "G8-2023/q42.png",
           "type": "Coordinate Plane",
           "alt": "Triangle XYZ and its congruent image triangle X prime Y prime Z prime on a coordinate plane ruled from negative 12 to 12.",
-          "longDescription": "Triangle XYZ is above the x-axis with X at negative 5, 2, Y at negative 2, 5 and Z at negative 2, 2. Its image is below the x-axis and shifted right."
+          "longDescription": "Triangle XYZ is above the x-axis with X at negative 10, 2, Y at negative 3, 5 and Z at negative 4, 2. Its image below the x-axis has X prime at negative 7, negative 4, Y prime at 0, negative 7 and Z prime at negative 1, negative 4."
         }
       ],
       "tablesInImage": false,
@@ -11077,7 +11077,7 @@
           "file": "G8-2024/q41.png",
           "type": "Coordinate Plane",
           "alt": "Line segment AB drawn on a coordinate plane ruled from negative 10 to 10.",
-          "longDescription": "A is at negative 1, negative 4 and B is at 4, 8."
+          "longDescription": "A is at 2, negative 4 and B is at 7, 8."
         }
       ],
       "tablesInImage": false,
@@ -12384,7 +12384,7 @@
           "file": "G8-2025/q46.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC drawn across the y-axis on a coordinate plane ruled from negative 7 to 7.",
-          "longDescription": "A is at negative 3, 4, B at negative 6, 0, and C at negative 1, 2."
+          "longDescription": "A is at negative 3, 4, B at negative 5, negative 1, and C at 1, 2."
         }
       ],
       "tablesInImage": false,
@@ -12499,7 +12499,7 @@
           "file": "G8-2026/q01.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 10 to 10 on both axes.",
-          "longDescription": "Vertex A is at negative 3, 3. Vertex B is at 0, negative 1. Vertex C is at 2, 5."
+          "longDescription": "Vertex A is at negative 2, 3. Vertex B is at 2, negative 2. Vertex C is at 3, 5."
         }
       ],
       "tablesInImage": false,
@@ -12830,7 +12830,7 @@
           "file": "G8-2026/q10.png",
           "type": "Coordinate Plane",
           "alt": "Rectangles JKLM and PQRS plotted on a coordinate plane ruled from negative 10 to 10.",
-          "longDescription": "Rectangle JKLM has corners J at 1, 8, M at 7, 8, K at 1, 4 and L at 7, 4. The smaller rectangle PQRS lies to the left of the y-axis with S at negative 4, 5, R at negative 2, 5, P at negative 4, 1 and Q at negative 2, 1."
+          "longDescription": "Rectangle JKLM has corners J at 2, 8, M at 8, 8, K at 2, 4 and L at 8, 4. The smaller rectangle PQRS lies to the left of the y-axis with S at negative 4, 4, R at negative 2, 4, P at negative 4, 1 and Q at negative 2, 1."
         }
       ],
       "tablesInImage": false,
@@ -13267,7 +13267,7 @@
           "file": "G8-2026/q22.png",
           "type": "Coordinate Plane",
           "alt": "Two congruent triangles, ABC and DEF, plotted on a coordinate plane.",
-          "longDescription": "Triangle ABC has A at negative 3, 5, B at negative 6, 1 and C at negative 2, 3. Triangle DEF has D at 4, 0, E at 5, negative 4 and F at 2, negative 2."
+          "longDescription": "Triangle ABC has A at negative 3, 5, B at negative 5, 1 and C at negative 1, 3. Triangle DEF has D at 4, 0, E at 6, negative 4 and F at 2, negative 2."
         }
       ],
       "tablesInImage": false,
@@ -13355,7 +13355,7 @@
           "file": "G8-2026/q25.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC and triangle XYZ plotted on a coordinate plane ruled from negative 6 to 6.",
-          "longDescription": "Triangle ABC has A at negative 2, 4, B at negative 6, 2 and C at negative 2, 2. Triangle XYZ has X at 3, 2, Y at 1, 5 and Z at 1, 2."
+          "longDescription": "Triangle ABC has A at negative 2, 3, B at negative 5, 1 and C at negative 2, 1. Triangle XYZ has X at 3, 2, Y at 1, 5 and Z at 1, 2."
         }
       ],
       "tablesInImage": false,
@@ -13480,7 +13480,7 @@
           "file": "G8-2026/q29.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 9 to 9.",
-          "longDescription": "Vertex A is at negative 4, 3. Vertex B is at negative 4, negative 2. Vertex C is at 3, negative 2."
+          "longDescription": "Vertex A is at negative 4, 3. Vertex B is at negative 4, negative 3. Vertex C is at 7, negative 3."
         }
       ],
       "tablesInImage": false,

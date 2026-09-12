@@ -1,155 +1,155 @@
 {
-  "testId": "g8-2024",
-  "status": "reviewed",
-  "answerKey": "ABABCDAABAABAACBCBADC",
-  "answerKeyItems": [
-    1,
-    2,
-    4,
-    5,
-    7,
-    9,
-    10,
-    12,
-    18,
-    19,
-    20,
-    22,
-    23,
-    27,
-    30,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "39": {
-      "answer": "47.1 cubic inches",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "A cone of radius 3 and height 5 has volume a third of pi times 9 times 5, which is 47.12. Both dimensions are in this item's figure and named in its long description."
-    },
-    "40": {
-      "answer": "18 feet",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "The square root of 324 is 18. The area is in this item's own transcribed stem."
-    },
-    "41": {
-      "answer": "13 units",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "From A at negative 1, negative 4 to B at 4, 8 is 5 across and 12 up, and 5-12-13 is a Pythagorean triple. The endpoints are in this item's figure."
-    },
-    "42": {
-      "answer": "35 degrees",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "Angle ABC is 180 minus 110, which is 70, and angle ACB is 180 minus 105, which is 75, leaving 35 for angle BAC. Both marked angles are in this item's figure."
-    },
-    "43": {
-      "answer": "For every year worked the salary rises by $1,500",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "The slope is 1.5 and the salary is in thousands of dollars. The equation is this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "3 feet per second",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "Dog A does 28 feet per second from its table and Dog B does 25 from its graph. Both are in this item's figure and named in its long description."
-    },
-    "45": {
-      "answer": "0.75",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "From 2 and a quarter to 3 and a half is three quarters over one. Both ordered pairs are in this item's own transcribed stem."
-    },
-    "46": {
-      "answer": "x = 8",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "Three quarters of 3x minus 8, plus 4, equals 2x minus 8 gives x = 8. The equation is this item's own displayed expression."
-    },
-    "47": {
-      "answer": "The square root of 49, 1.3 repeating, seven halves and 1.234 are rational; the square root of 32 is irrational",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is in this item's figure."
-    },
-    "48": {
-      "answer": "$6.75",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "Store A charges $3.50 a yard and Store B $2.75, so nine yards cost $31.50 and $24.75. Store A's equation is in the stem and Store B's rate is read from its graph."
-    }
+ "testId": "g8-2024",
+ "status": "reviewed",
+ "answerKey": "ABABCDAABAABAACBCBADC",
+ "answerKeyItems": [
+  1,
+  2,
+  4,
+  5,
+  7,
+  9,
+  10,
+  12,
+  18,
+  19,
+  20,
+  22,
+  23,
+  27,
+  30,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "39": {
+   "answer": "47.1 cubic inches",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "A cone of radius 3 and height 5 has volume a third of pi times 9 times 5, which is 47.12. Both dimensions are in this item's figure and named in its long description."
   },
-  "visuals": {
-    "G8-2024/q02.png": {
-      "type": "Scatter Plot",
-      "alt": "A scatter plot of about twenty points on a grid running from 0 to 12 on both axes.",
-      "long": "The points drift upward from left to right but scatter widely about that trend."
-    },
-    "G8-2024/q07.png": {
-      "type": "Equation and Data Table",
-      "alt": "Electrician A's charge given as an equation and Electrician B's given as a table.",
-      "long": "Electrician A charges C equals 25x plus 50. Electrician B charges 130 dollars for 3 hours, 150 for 4, and 170 for 5."
-    },
-    "G8-2024/q18.png": {
-      "type": "Scatter Plot",
-      "alt": "A scatter plot titled Alligator's Weight with a line of best fit, weight in pounds against time in weeks.",
-      "long": "Seven points rise from about 6 pounds at week 0 to about 20 pounds at week 50, with a straight line drawn through them."
-    },
-    "G8-2024/q19.png": {
-      "type": "Coordinate Plane",
-      "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
-      "long": "ABCD lies left of the y-axis and its image lies right of it, mirrored across the y-axis."
-    },
-    "G8-2024/q33.png": {
-      "type": "Data Table",
-      "alt": "A two-column table of x and y values with four rows.",
-      "long": "2.5 with 7.5, 3.5 with 10.5, 4.5 with 13.5, and 5.5 with 16.5 -- y is three times x each time."
-    },
-    "G8-2024/q34.png": {
-      "type": "Coordinate Plane",
-      "alt": "Quadrilateral FGHJ and its congruent image F prime G prime H prime J prime on a coordinate plane.",
-      "long": "FGHJ sits right of the y-axis with F at the origin, G at (4, 0), H at (6, 5) and J at (2, 5). The image sits left of the y-axis with F prime still at the origin, G prime at (0, 4), H prime at (-5, 6) and J prime at (-5, 2) -- the same shape turned a quarter turn counterclockwise about the origin, not resized."
-    },
-    "G8-2024/q35.png": {
-      "type": "Diagram",
-      "alt": "Two cylinders side by side, a large can and a small can, with their dimensions labelled in centimetres.",
-      "long": "The large can has a radius of 3.5 centimetres and a height of 10. The small can has a diameter of 7 centimetres and a height of 6."
-    },
-    "G8-2024/q39.png": {
-      "type": "Diagram",
-      "alt": "A cone titled Popcorn Container with its radius and height labelled in inches.",
-      "long": "The radius is 3 inches and the height is 5 inches."
-    },
-    "G8-2024/q41.png": {
-      "type": "Coordinate Plane",
-      "alt": "Line segment AB drawn on a coordinate plane ruled from negative 10 to 10.",
-      "long": "A is at negative 1, negative 4 and B is at 4, 8."
-    },
-    "G8-2024/q42.png": {
-      "type": "Diagram",
-      "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
-      "long": "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
-    },
-    "G8-2024/q44.png": {
-      "type": "Data Table and Line Graph",
-      "alt": "Dog A's run given as a table and Dog B's given as a graph.",
-      "long": "Dog A covers 56 feet in 2 seconds, 112 in 4, 168 in 6 and 224 in 8. Dog B's line passes through 200 feet at 8 seconds."
-    },
-    "G8-2024/q47.png": {
-      "type": "Expression",
-      "alt": "A bulleted list of five numbers to classify as rational or irrational.",
-      "long": "The square root of 49, 1.3 repeating, the square root of 32, seven halves, and 1.234."
-    },
-    "G8-2024/q48.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Store B, total price in dollars against fabric length in yards, with two points labelled.",
-      "long": "The line passes through 2 yards at 5.50 dollars and 6 yards at 16.50 dollars."
-    }
+  "40": {
+   "answer": "18 feet",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "The square root of 324 is 18. The area is in this item's own transcribed stem."
   },
-  "choicesInImage": [],
-  "tablesInImage": [
-    7,
-    33,
-    44
-  ],
-  "reviewNotes": []
+  "41": {
+   "answer": "13 units",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "From A at negative 1, negative 4 to B at 4, 8 is 5 across and 12 up, and 5-12-13 is a Pythagorean triple. The endpoints are in this item's figure."
+  },
+  "42": {
+   "answer": "35 degrees",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "Angle ABC is 180 minus 110, which is 70, and angle ACB is 180 minus 105, which is 75, leaving 35 for angle BAC. Both marked angles are in this item's figure."
+  },
+  "43": {
+   "answer": "For every year worked the salary rises by $1,500",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "The slope is 1.5 and the salary is in thousands of dollars. The equation is this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "3 feet per second",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "Dog A does 28 feet per second from its table and Dog B does 25 from its graph. Both are in this item's figure and named in its long description."
+  },
+  "45": {
+   "answer": "0.75",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "From 2 and a quarter to 3 and a half is three quarters over one. Both ordered pairs are in this item's own transcribed stem."
+  },
+  "46": {
+   "answer": "x = 8",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "Three quarters of 3x minus 8, plus 4, equals 2x minus 8 gives x = 8. The equation is this item's own displayed expression."
+  },
+  "47": {
+   "answer": "The square root of 49, 1.3 repeating, seven halves and 1.234 are rational; the square root of 32 is irrational",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is in this item's figure."
+  },
+  "48": {
+   "answer": "$6.75",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "Store A charges $3.50 a yard and Store B $2.75, so nine yards cost $31.50 and $24.75. Store A's equation is in the stem and Store B's rate is read from its graph."
+  }
+ },
+ "visuals": {
+  "G8-2024/q02.png": {
+   "type": "Scatter Plot",
+   "alt": "A scatter plot of about twenty points on a grid running from 0 to 12 on both axes.",
+   "long": "The points drift upward from left to right but scatter widely about that trend."
+  },
+  "G8-2024/q07.png": {
+   "type": "Equation and Data Table",
+   "alt": "Electrician A's charge given as an equation and Electrician B's given as a table.",
+   "long": "Electrician A charges C equals 25x plus 50. Electrician B charges 130 dollars for 3 hours, 150 for 4, and 170 for 5."
+  },
+  "G8-2024/q18.png": {
+   "type": "Scatter Plot",
+   "alt": "A scatter plot titled Alligator's Weight with a line of best fit, weight in pounds against time in weeks.",
+   "long": "Seven points rise from about 6 pounds at week 0 to about 20 pounds at week 50, with a straight line drawn through them."
+  },
+  "G8-2024/q19.png": {
+   "type": "Coordinate Plane",
+   "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
+   "long": "ABCD lies left of the y-axis and its image lies right of it, mirrored across the y-axis."
+  },
+  "G8-2024/q33.png": {
+   "type": "Data Table",
+   "alt": "A two-column table of x and y values with four rows.",
+   "long": "2.5 with 7.5, 3.5 with 10.5, 4.5 with 13.5, and 5.5 with 16.5 -- y is three times x each time."
+  },
+  "G8-2024/q34.png": {
+   "type": "Coordinate Plane",
+   "alt": "Quadrilateral FGHJ and its congruent image F prime G prime H prime J prime on a coordinate plane.",
+   "long": "FGHJ sits right of the y-axis with F at the origin, G at (4, 0), H at (6, 5) and J at (2, 5). The image sits left of the y-axis with F prime still at the origin, G prime at (0, 4), H prime at (-5, 6) and J prime at (-5, 2) -- the same shape turned a quarter turn counterclockwise about the origin, not resized."
+  },
+  "G8-2024/q35.png": {
+   "type": "Diagram",
+   "alt": "Two cylinders side by side, a large can and a small can, with their dimensions labelled in centimetres.",
+   "long": "The large can has a radius of 3.5 centimetres and a height of 10. The small can has a diameter of 7 centimetres and a height of 6."
+  },
+  "G8-2024/q39.png": {
+   "type": "Diagram",
+   "alt": "A cone titled Popcorn Container with its radius and height labelled in inches.",
+   "long": "The radius is 3 inches and the height is 5 inches."
+  },
+  "G8-2024/q41.png": {
+   "type": "Coordinate Plane",
+   "alt": "Line segment AB drawn on a coordinate plane ruled from negative 10 to 10.",
+   "long": "A is at 2, negative 4 and B is at 7, 8."
+  },
+  "G8-2024/q42.png": {
+   "type": "Diagram",
+   "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
+   "long": "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
+  },
+  "G8-2024/q44.png": {
+   "type": "Data Table and Line Graph",
+   "alt": "Dog A's run given as a table and Dog B's given as a graph.",
+   "long": "Dog A covers 56 feet in 2 seconds, 112 in 4, 168 in 6 and 224 in 8. Dog B's line passes through 200 feet at 8 seconds."
+  },
+  "G8-2024/q47.png": {
+   "type": "Expression",
+   "alt": "A bulleted list of five numbers to classify as rational or irrational.",
+   "long": "The square root of 49, 1.3 repeating, the square root of 32, seven halves, and 1.234."
+  },
+  "G8-2024/q48.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Store B, total price in dollars against fabric length in yards, with two points labelled.",
+   "long": "The line passes through 2 yards at 5.50 dollars and 6 yards at 16.50 dollars."
+  }
+ },
+ "choicesInImage": [],
+ "tablesInImage": [
+  7,
+  33,
+  44
+ ],
+ "reviewNotes": []
 }

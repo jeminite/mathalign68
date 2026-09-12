@@ -1,199 +1,199 @@
 {
-  "testId": "g8-2025",
-  "status": "reviewed",
-  "answerKey": "CDDCBACBBDBCACBDCCACA",
-  "answerKeyItems": [
-    2,
-    4,
-    7,
-    8,
-    12,
-    14,
-    15,
-    16,
-    17,
-    19,
-    27,
-    28,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "39": {
-      "answer": "1/2, or 0.5",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "From negative 18, negative 6 to 6, 6 is 12 up over 24 across. The table is this item's figure."
-    },
-    "40": {
-      "answer": "8.875 inches",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "A circumference of 17.75 pi is a diameter of 17.75, so the radius is 8.875. The circumference is in this item's own transcribed stem."
-    },
-    "41": {
-      "answer": "$3.00",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "David's table gives a $15 fee and Lisa's equation gives $12. Both are in this item's stem and figure."
-    },
-    "42": {
-      "answer": "Rational — the square root of 1.44 is 1.2, a terminating decimal",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "1.2 squared is 1.44, and 1.2 is 12 tenths, a ratio of integers. The radical is this item's own transcribed stem, and it is carried by the vinculum being read as one bar."
-    },
-    "43": {
-      "answer": "Function A is linear and Function B is nonlinear",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "y = 3x + 8 is in slope-intercept form; y = x squared + 2 is not. Both equations are in this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "The speed is constant at 30 miles per hour between 30 and 40 seconds",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "That is the horizontal stretch of the graph, where the rate of change is zero. The graph is this item's figure."
-    },
-    "45": {
-      "answer": "x = −10",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "Two thirds of 3x plus 9 is 2x + 6, and 2x + 6 = x minus 4 gives x = minus 10. The equation is this item's own displayed expression."
-    },
-    "46": {
-      "answer": "(3, 4)",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "Reflecting over the y-axis negates the x coordinate and leaves y, so A at negative 3, 4 becomes 3, 4. A's position is in this item's figure."
-    },
-    "47": {
-      "answer": "The student swapped a leg for the hypotenuse: the legs are 3 and 4 and the hypotenuse is 5, so 3 squared plus 4 squared is 5 squared, or 9 + 16 = 25",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "The squares drawn on the sides of the triangle give the side lengths, and they are in this item's figure."
-    },
-    "48": {
-      "answer": "Mark, at 9 hours a night against Kaley's 7",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "Kaley's graph rises 7 hours a night and Mark's table rises 9. Both are in this item's figure and named in its long description."
-    }
+ "testId": "g8-2025",
+ "status": "reviewed",
+ "answerKey": "CDDCBACBBDBCACBDCCACA",
+ "answerKeyItems": [
+  2,
+  4,
+  7,
+  8,
+  12,
+  14,
+  15,
+  16,
+  17,
+  19,
+  27,
+  28,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g8-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "39": {
+   "answer": "1/2, or 0.5",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "From negative 18, negative 6 to 6, 6 is 12 up over 24 across. The table is this item's figure."
   },
-  "visuals": {
-    "G8-2025/q02.png": {
-      "type": "Graphs as Answer Choices",
-      "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
-      "long": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat."
-    },
-    "G8-2025/q04_1.png": {
-      "type": "Diagram",
-      "alt": "A shaded plane slicing vertically through a square pyramid.",
-      "long": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two."
-    },
-    "G8-2025/q07.png": {
-      "type": "Diagram",
-      "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
-      "long": "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
-    },
-    "G8-2025/q08_1.png": {
-      "type": "Coordinate Plane",
-      "alt": "A line falling from left to right across a coordinate plane, crossing both axes within the first quadrant's edge.",
-      "long": "The line crosses the y-axis at 3 and the x-axis at 6, falling one unit for every two across."
-    },
-    "G8-2025/q15.png": {
-      "type": "Expression",
-      "alt": "A set of four numbers shown in braces.",
-      "long": "One third, 1.1 with 3 repeating, the square root of 5, and five halves."
-    },
-    "G8-2025/q17.png": {
-      "type": "Coordinate Plane",
-      "alt": "Rectangle JKLM drawn in the first quadrant of a coordinate plane ruled from negative 10 to 10.",
-      "long": "J and M are the upper corners and K and L the lower ones, the rectangle sitting just right of the y-axis."
-    },
-    "G8-2025/q19.png": {
-      "type": "Coordinate Plane",
-      "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
-      "long": "A is the upper left vertex, B the lower left, and C sits to the right of them."
-    },
-    "G8-2025/q27.png": {
-      "type": "Diagram",
-      "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
-      "long": "The height is 8 yards and the radius is 6 yards."
-    },
-    "G8-2025/q31.png": {
-      "type": "Diagram",
-      "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
-      "long": "One angle is 6x minus 23 degrees and the other is 4x plus 11 degrees."
-    },
-    "G8-2025/q32.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
-      "long": "A straight line rises from about 25 dollars at the start to about 250 dollars at 10 months."
-    },
-    "G8-2025/q34.png": {
-      "type": "Coordinate Plane",
-      "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
-      "long": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right."
-    },
-    "G8-2025/q35.png": {
-      "type": "Coordinate Planes",
-      "alt": "Two graphs side by side, Brayden's Work and Hannah's Work, each showing the same line with a slope triangle drawn on it.",
-      "long": "Brayden marks a rise of 3 against a run of 2. Hannah marks a rise of 4 against a run of 6 on the same line."
-    },
-    "G8-2025/q36.png": {
-      "type": "Data Table",
-      "alt": "A two-column table of x and y values with five rows running through zero.",
-      "long": "Negative 2 with negative 12, negative 1 with negative 7, 0 with negative 2, 1 with 3, and 2 with 8."
-    },
-    "G8-2025/q37.png": {
-      "type": "Number Lines as Answer Choices",
-      "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
-      "long": "They differ only in where P sits: about 3, about 4, about 5, and about 7."
-    },
-    "G8-2025/q38.png": {
-      "type": "Scatter Plot",
-      "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
-      "long": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
-    },
-    "G8-2025/q39.png": {
-      "type": "Data Table",
-      "alt": "A five-row table of x and y values for a linear function.",
-      "long": "Negative 18 with negative 6, negative 8 with negative 1, 0 with 3, 4 with 5, and 6 with 6."
-    },
-    "G8-2025/q41.png": {
-      "type": "Data Table",
-      "alt": "A table titled David's Charges pairing hours mowed with total charges in dollars.",
-      "long": "Half an hour for 17.50, one hour for 20.00, and two hours for 25.00."
-    },
-    "G8-2025/q44.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Roller Coaster Speed, speed in miles per hour against time in seconds.",
-      "long": "The speed climbs to a peak near 50 mph at about 25 seconds, drops to 30, holds flat from 30 to 40 seconds, then falls away."
-    },
-    "G8-2025/q46.png": {
-      "type": "Coordinate Plane",
-      "alt": "Triangle ABC drawn across the y-axis on a coordinate plane ruled from negative 7 to 7.",
-      "long": "A is at negative 3, 4, B at negative 6, 0, and C at negative 1, 2."
-    },
-    "G8-2025/q47_1.png": {
-      "type": "Diagram",
-      "alt": "A right triangle with a squared grid drawn on each of its three sides, the sides labelled a, b and c.",
-      "long": "The square on side a is 3 by 3, the square on side b is 4 by 4, and the square on the hypotenuse c is 5 by 5."
-    },
-    "G8-2025/q48.png": {
-      "type": "Line Graph and Data Table",
-      "alt": "Kaley's sleep time as a graph and Mark's as a table, both against number of nights.",
-      "long": "Kaley's points rise about 7 hours a night. Mark's table gives 18 hours for 2 nights, 27 for 3, 36 for 4, and 45 for 5."
-    }
+  "40": {
+   "answer": "8.875 inches",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "A circumference of 17.75 pi is a diameter of 17.75, so the radius is 8.875. The circumference is in this item's own transcribed stem."
   },
-  "choicesInImage": [
-    2,
-    37
-  ],
-  "tablesInImage": [
-    36,
-    39,
-    41,
-    48
-  ],
-  "reviewNotes": []
+  "41": {
+   "answer": "$3.00",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "David's table gives a $15 fee and Lisa's equation gives $12. Both are in this item's stem and figure."
+  },
+  "42": {
+   "answer": "Rational — the square root of 1.44 is 1.2, a terminating decimal",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "1.2 squared is 1.44, and 1.2 is 12 tenths, a ratio of integers. The radical is this item's own transcribed stem, and it is carried by the vinculum being read as one bar."
+  },
+  "43": {
+   "answer": "Function A is linear and Function B is nonlinear",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "y = 3x + 8 is in slope-intercept form; y = x squared + 2 is not. Both equations are in this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "The speed is constant at 30 miles per hour between 30 and 40 seconds",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "That is the horizontal stretch of the graph, where the rate of change is zero. The graph is this item's figure."
+  },
+  "45": {
+   "answer": "x = −10",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "Two thirds of 3x plus 9 is 2x + 6, and 2x + 6 = x minus 4 gives x = minus 10. The equation is this item's own displayed expression."
+  },
+  "46": {
+   "answer": "(3, 4)",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "Reflecting over the y-axis negates the x coordinate and leaves y, so A at negative 3, 4 becomes 3, 4. A's position is in this item's figure."
+  },
+  "47": {
+   "answer": "The student swapped a leg for the hypotenuse: the legs are 3 and 4 and the hypotenuse is 5, so 3 squared plus 4 squared is 5 squared, or 9 + 16 = 25",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "The squares drawn on the sides of the triangle give the side lengths, and they are in this item's figure."
+  },
+  "48": {
+   "answer": "Mark, at 9 hours a night against Kaley's 7",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "Kaley's graph rises 7 hours a night and Mark's table rises 9. Both are in this item's figure and named in its long description."
+  }
+ },
+ "visuals": {
+  "G8-2025/q02.png": {
+   "type": "Graphs as Answer Choices",
+   "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
+   "long": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat."
+  },
+  "G8-2025/q04_1.png": {
+   "type": "Diagram",
+   "alt": "A shaded plane slicing vertically through a square pyramid.",
+   "long": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two."
+  },
+  "G8-2025/q07.png": {
+   "type": "Diagram",
+   "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+   "long": "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
+  },
+  "G8-2025/q08_1.png": {
+   "type": "Coordinate Plane",
+   "alt": "A line falling from left to right across a coordinate plane, crossing both axes within the first quadrant's edge.",
+   "long": "The line crosses the y-axis at 3 and the x-axis at 6, falling one unit for every two across."
+  },
+  "G8-2025/q15.png": {
+   "type": "Expression",
+   "alt": "A set of four numbers shown in braces.",
+   "long": "One third, 1.1 with 3 repeating, the square root of 5, and five halves."
+  },
+  "G8-2025/q17.png": {
+   "type": "Coordinate Plane",
+   "alt": "Rectangle JKLM drawn in the first quadrant of a coordinate plane ruled from negative 10 to 10.",
+   "long": "J and M are the upper corners and K and L the lower ones, the rectangle sitting just right of the y-axis."
+  },
+  "G8-2025/q19.png": {
+   "type": "Coordinate Plane",
+   "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "long": "A is the upper left vertex, B the lower left, and C sits to the right of them."
+  },
+  "G8-2025/q27.png": {
+   "type": "Diagram",
+   "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
+   "long": "The height is 8 yards and the radius is 6 yards."
+  },
+  "G8-2025/q31.png": {
+   "type": "Diagram",
+   "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+   "long": "One angle is 6x minus 23 degrees and the other is 4x plus 11 degrees."
+  },
+  "G8-2025/q32.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
+   "long": "A straight line rises from about 25 dollars at the start to about 250 dollars at 10 months."
+  },
+  "G8-2025/q34.png": {
+   "type": "Coordinate Plane",
+   "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
+   "long": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right."
+  },
+  "G8-2025/q35.png": {
+   "type": "Coordinate Planes",
+   "alt": "Two graphs side by side, Brayden's Work and Hannah's Work, each showing the same line with a slope triangle drawn on it.",
+   "long": "Brayden marks a rise of 3 against a run of 2. Hannah marks a rise of 4 against a run of 6 on the same line."
+  },
+  "G8-2025/q36.png": {
+   "type": "Data Table",
+   "alt": "A two-column table of x and y values with five rows running through zero.",
+   "long": "Negative 2 with negative 12, negative 1 with negative 7, 0 with negative 2, 1 with 3, and 2 with 8."
+  },
+  "G8-2025/q37.png": {
+   "type": "Number Lines as Answer Choices",
+   "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
+   "long": "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+  },
+  "G8-2025/q38.png": {
+   "type": "Scatter Plot",
+   "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
+   "long": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
+  },
+  "G8-2025/q39.png": {
+   "type": "Data Table",
+   "alt": "A five-row table of x and y values for a linear function.",
+   "long": "Negative 18 with negative 6, negative 8 with negative 1, 0 with 3, 4 with 5, and 6 with 6."
+  },
+  "G8-2025/q41.png": {
+   "type": "Data Table",
+   "alt": "A table titled David's Charges pairing hours mowed with total charges in dollars.",
+   "long": "Half an hour for 17.50, one hour for 20.00, and two hours for 25.00."
+  },
+  "G8-2025/q44.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Roller Coaster Speed, speed in miles per hour against time in seconds.",
+   "long": "The speed climbs to a peak near 50 mph at about 25 seconds, drops to 30, holds flat from 30 to 40 seconds, then falls away."
+  },
+  "G8-2025/q46.png": {
+   "type": "Coordinate Plane",
+   "alt": "Triangle ABC drawn across the y-axis on a coordinate plane ruled from negative 7 to 7.",
+   "long": "A is at negative 3, 4, B at negative 5, negative 1, and C at 1, 2."
+  },
+  "G8-2025/q47_1.png": {
+   "type": "Diagram",
+   "alt": "A right triangle with a squared grid drawn on each of its three sides, the sides labelled a, b and c.",
+   "long": "The square on side a is 3 by 3, the square on side b is 4 by 4, and the square on the hypotenuse c is 5 by 5."
+  },
+  "G8-2025/q48.png": {
+   "type": "Line Graph and Data Table",
+   "alt": "Kaley's sleep time as a graph and Mark's as a table, both against number of nights.",
+   "long": "Kaley's points rise about 7 hours a night. Mark's table gives 18 hours for 2 nights, 27 for 3, 36 for 4, and 45 for 5."
+  }
+ },
+ "choicesInImage": [
+  2,
+  37
+ ],
+ "tablesInImage": [
+  36,
+  39,
+  41,
+  48
+ ],
+ "reviewNotes": []
 }

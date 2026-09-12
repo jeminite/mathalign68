@@ -1,133 +1,133 @@
 {
-  "testId": "g6-2024",
-  "status": "reviewed",
-  "answerKey": "BDCBDDBCBDBCBABCCDA",
-  "answerKeyItems": [
-    2,
-    3,
-    4,
-    11,
-    14,
-    15,
-    18,
-    20,
-    22,
-    23,
-    26,
-    28,
-    29,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "37": {
-      "answer": "10 units",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "A is at negative 6, 6 and D is at 4, 6, so they are 10 apart along the same horizontal line. Both vertices are in this item's figure."
-    },
-    "38": {
-      "answer": "136",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "n over 8 equals 17 gives n = 136. The equation is this item's own transcribed stem."
-    },
-    "39": {
-      "answer": "0.75 gallon, or six eighths",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "Six gallons of orange to eight of blue is 0.75 of orange for each gallon of blue. Both quantities are in this item's own stem."
-    },
-    "40": {
-      "answer": "33.75 square centimeters",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "The whole flag is 9 by 5, which is 45, and the white triangle is 4.5 by 5 halved, which is 11.25. All three dimensions are in this item's figure."
-    },
-    "41": {
-      "answer": "Not equivalent: 3 times 3 plus 5x is 9 + 15x, not 6 + 8x",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "Distributing the 3 gives 9 + 15x. Both expressions are in this item's own transcribed stem."
-    },
-    "42": {
-      "answer": "The total cost c depends on the number of tickets t, so c is the dependent variable and t the independent one; the cost rises $2.75 a ticket",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "The equation c = 2.75t is this item's own transcribed stem."
-    },
-    "43": {
-      "answer": "No — 8 is a common factor of 24 and 40 and is greater than 4",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "24 and 40 are both multiples of 8. Both numbers are in this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "64, which is 4 cubed",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "The prism is 4 unit cubes along each edge, so its volume is 4 times 4 times 4. The prism is shown in this item's figure."
-    },
-    "45": {
-      "answer": "4 units",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "The school is at 3, 2 and the house at 3, 6, so they differ by 4 in the y direction alone. Both points are labelled in this item's figure."
-    },
-    "46": {
-      "answer": "$48",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "Rex saves $9 a month and Nero $12, so over 16 months they save $144 and $192. Both tables are in this item's figure and named in its long description."
-    }
+ "testId": "g6-2024",
+ "status": "reviewed",
+ "answerKey": "BDCBDDBCBDBCBABCCDA",
+ "answerKeyItems": [
+  2,
+  3,
+  4,
+  11,
+  14,
+  15,
+  18,
+  20,
+  22,
+  23,
+  26,
+  28,
+  29,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "37": {
+   "answer": "10 units",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "A is at negative 6, 6 and D is at 4, 6, so they are 10 apart along the same horizontal line. Both vertices are in this item's figure."
   },
-  "visuals": {
-    "G6-2024/q11.png": {
-      "type": "Number Lines as Answer Choices",
-      "alt": "Four number lines labelled A to D, this item's answer choices, each running from negative 6 to 6 with a mark at negative 3.",
-      "long": "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right."
-    },
-    "G6-2024/q20.png": {
-      "type": "Diagram",
-      "alt": "A cube with one edge length labelled in inches.",
-      "long": "Each edge is 2 and a half inches."
-    },
-    "G6-2024/q28.png": {
-      "type": "Diagram",
-      "alt": "A trapezoid with its two parallel sides and its height labelled in centimetres.",
-      "long": "The top is 10 centimetres, the bottom is 16, and the height between them is 15."
-    },
-    "G6-2024/q32.png": {
-      "type": "Diagram",
-      "alt": "The net of a triangular prism with its dimensions labelled in feet.",
-      "long": "The central rectangle is 6 feet by 4 feet, the two triangles have a height of 2.5 feet, and the slanted faces are 6.5 feet."
-    },
-    "G6-2024/q37.png": {
-      "type": "Coordinate Plane",
-      "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
-      "long": "A is at negative 6, 6; D is at 4, 6; B is at negative 2, negative 4; C is at 12, negative 4."
-    },
-    "G6-2024/q40.png": {
-      "type": "Diagram",
-      "alt": "A rectangular flag with a white triangular notch cut into one side, the rest shaded, dimensions in centimetres.",
-      "long": "The flag is 9 centimetres by 5 centimetres, and the notch is 4.5 centimetres deep across the full 5 centimetre height."
-    },
-    "G6-2024/q44.png": {
-      "type": "Diagram",
-      "alt": "A cube built from smaller unit cubes.",
-      "long": "It is 4 unit cubes along each edge."
-    },
-    "G6-2024/q45.png": {
-      "type": "Coordinate Plane",
-      "alt": "A first-quadrant grid with two labelled points, House and School.",
-      "long": "The house is at 3, 6 and the school is at 3, 2."
-    },
-    "G6-2024/q46.png": {
-      "type": "Data Tables",
-      "alt": "Two tables, Rex's Savings and Nero's Savings, each pairing months with dollars saved.",
-      "long": "Rex: 2 months 18 dollars, 4 months 36, 6 months 54, 8 months 72. Nero: 3 months 36 dollars, 6 months 72, 9 months 108, 12 months 144."
-    }
+  "38": {
+   "answer": "136",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "n over 8 equals 17 gives n = 136. The equation is this item's own transcribed stem."
   },
-  "choicesInImage": [
-    11
-  ],
-  "tablesInImage": [
-    46
-  ],
-  "reviewNotes": []
+  "39": {
+   "answer": "0.75 gallon, or six eighths",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "Six gallons of orange to eight of blue is 0.75 of orange for each gallon of blue. Both quantities are in this item's own stem."
+  },
+  "40": {
+   "answer": "33.75 square centimeters",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "The whole flag is 9 by 5, which is 45, and the white triangle is 4.5 by 5 halved, which is 11.25. All three dimensions are in this item's figure."
+  },
+  "41": {
+   "answer": "Not equivalent: 3 times 3 plus 5x is 9 + 15x, not 6 + 8x",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "Distributing the 3 gives 9 + 15x. Both expressions are in this item's own transcribed stem."
+  },
+  "42": {
+   "answer": "The total cost c depends on the number of tickets t, so c is the dependent variable and t the independent one; the cost rises $2.75 a ticket",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "The equation c = 2.75t is this item's own transcribed stem."
+  },
+  "43": {
+   "answer": "No — 8 is a common factor of 24 and 40 and is greater than 4",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "24 and 40 are both multiples of 8. Both numbers are in this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "64, which is 4 cubed",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "The prism is 4 unit cubes along each edge, so its volume is 4 times 4 times 4. The prism is shown in this item's figure."
+  },
+  "45": {
+   "answer": "4 units",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "The school is at 3, 2 and the house at 3, 6, so they differ by 4 in the y direction alone. Both points are labelled in this item's figure."
+  },
+  "46": {
+   "answer": "$48",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "Rex saves $9 a month and Nero $12, so over 16 months they save $144 and $192. Both tables are in this item's figure and named in its long description."
+  }
+ },
+ "visuals": {
+  "G6-2024/q11.png": {
+   "type": "Number Lines as Answer Choices",
+   "alt": "Four number lines labelled A to D, this item's answer choices, each running from negative 6 to 6 with a mark at negative 3.",
+   "long": "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right."
+  },
+  "G6-2024/q20.png": {
+   "type": "Diagram",
+   "alt": "A cube with one edge length labelled in inches.",
+   "long": "Each edge is 2 and a half inches."
+  },
+  "G6-2024/q28.png": {
+   "type": "Diagram",
+   "alt": "A trapezoid with its two parallel sides and its height labelled in centimetres.",
+   "long": "The top is 10 centimetres, the bottom is 16, and the height between them is 15."
+  },
+  "G6-2024/q32.png": {
+   "type": "Diagram",
+   "alt": "The net of a triangular prism with its dimensions labelled in feet.",
+   "long": "The central rectangle is 6 feet by 4 feet, the two triangles have a height of 2.5 feet, and the slanted faces are 6.5 feet."
+  },
+  "G6-2024/q37.png": {
+   "type": "Coordinate Plane",
+   "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
+   "long": "A is at negative 6, 6; D is at 4, 6; B is at 2, negative 4; C is at 12, negative 4."
+  },
+  "G6-2024/q40.png": {
+   "type": "Diagram",
+   "alt": "A rectangular flag with a white triangular notch cut into one side, the rest shaded, dimensions in centimetres.",
+   "long": "The flag is 9 centimetres by 5 centimetres, and the notch is 4.5 centimetres deep across the full 5 centimetre height."
+  },
+  "G6-2024/q44.png": {
+   "type": "Diagram",
+   "alt": "A cube built from smaller unit cubes.",
+   "long": "It is 4 unit cubes along each edge."
+  },
+  "G6-2024/q45.png": {
+   "type": "Coordinate Plane",
+   "alt": "A first-quadrant grid with two labelled points, House and School.",
+   "long": "The house is at 3, 6 and the school is at 3, 2."
+  },
+  "G6-2024/q46.png": {
+   "type": "Data Tables",
+   "alt": "Two tables, Rex's Savings and Nero's Savings, each pairing months with dollars saved.",
+   "long": "Rex: 2 months 18 dollars, 4 months 36, 6 months 54, 8 months 72. Nero: 3 months 36 dollars, 6 months 72, 9 months 108, 12 months 144."
+  }
+ },
+ "choicesInImage": [
+  11
+ ],
+ "tablesInImage": [
+  46
+ ],
+ "reviewNotes": []
 }
