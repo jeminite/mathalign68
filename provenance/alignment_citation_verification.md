@@ -10,12 +10,14 @@ and ask whether the page the citation names is the page it is printed on.
 
 ## Result
 
-All 140 distinct citations written for grade 7 resolve. Per unit guide, the implied offset
-between the citation's page number and the PDF page holding the text is **0 or −1** and
-never more, which is an activity running across a page break rather than a wrong page.
+Grade 7's 129 evidenced items carry 365 evidence entries, which reduce to **142 distinct
+citations** once the shared ones are counted once. **140 of the 142 were found in their own
+unit guide by literal search.** Per unit guide the implied offset between the citation's
+page number and the PDF page holding the text is **0 or −1** and never more, which is an
+activity running across a page break rather than a wrong page.
 
-Two quotes could not be found in the PDF by literal search, and both turned out to be
-correct citations. They are worth writing down because they say what the quote check does
+The remaining two could not be found by literal search, and both turned out to be correct
+citations. They are worth writing down because they say what the quote check does
 and does not prove.
 
 ## The index is a cleaned rendering, not the PDF's own characters
