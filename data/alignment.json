@@ -6737,6 +6737,336 @@
       "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
       "evidence": [],
       "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2024-031 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.NS.3 is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g8-2025-031": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "A",
+      "sectionTitle": "Angle Relationships",
+      "primaryLesson": 5,
+      "lessonTitle": "Using Equations to Solve for Unknown Angles",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Nonadjacent Angles",
+          "role": "introduces",
+          "activity": "Vertical Angles",
+          "page": 56,
+          "quote": "Use a straightedge to draw two intersecting lines."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Using Equations to Solve for Unknown Angles",
+          "role": "practises",
+          "activity": "What Does It Look Like?",
+          "page": 78,
+          "quote": "decide which equation you agree with, and then solve it"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Using Equations to Solve for Unknown Angles",
+          "role": "assessed",
+          "activity": "In Words",
+          "page": 84,
+          "quote": "Here are three intersecting lines."
+        }
+      ],
+      "why": "Three intersecting lines with angles given in terms of x, solve for x. Lesson 5 is where an angle relationship becomes an EQUATION that is then solved, and its cool-down opens with three intersecting lines -- the item's own figure. Lesson 3 is cited for where vertical angles arrive."
+    },
+    "g8-2026-023": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "A",
+      "sectionTitle": "Angle Relationships",
+      "primaryLesson": 5,
+      "lessonTitle": "Using Equations to Solve for Unknown Angles",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Nonadjacent Angles",
+          "role": "introduces",
+          "activity": "Vertical Angles",
+          "page": 56,
+          "quote": "Use a straightedge to draw two intersecting lines."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Using Equations to Solve for Unknown Angles",
+          "role": "practises",
+          "activity": "Calculate the Measure",
+          "page": 80,
+          "quote": "Find the unknown angle measures. Show your thinking."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Using Equations to Solve for Unknown Angles",
+          "role": "assessed",
+          "activity": "In Words",
+          "page": 84,
+          "quote": "Write an equation that represents a relationship between these angles."
+        }
+      ],
+      "why": "Two intersecting lines, two angles labelled in terms of x, solve for x. It shares Lesson 5 with g8-2025-031 because both set an equation from a vertical or supplementary pair and solve it; this one has two lines where that has three."
+    },
+    "g8-2026-013": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "B",
+      "sectionTitle": "Drawing Polygons With Given Conditions",
+      "primaryLesson": 7,
+      "lessonTitle": "Building Polygons (Part 2)",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Building Polygons (Part 2)",
+          "role": "introduces",
+          "activity": "How Long Is the Third Side?",
+          "page": 106,
+          "quote": "Build as many different triangles as you can"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Building Polygons (Part 2)",
+          "role": "practises",
+          "activity": "Where Is Lin?",
+          "page": 105,
+          "quote": "the slide is 5 meters east of the swings. Lin is standing 3 meters away"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Building Polygons (Part 2)",
+          "role": "assessed",
+          "activity": "Finishing Elena’s Triangles",
+          "page": 113,
+          "quote": "Elena is trying to draw a triangle with side lengths of 4 inches, 3 inches"
+        }
+      ],
+      "why": "Four sets of three side lengths, asking which will form a triangle -- the triangle inequality, and every distractor fails it (3+5<10, 4+9<14, 6+7<14). Lesson 7 is the lesson that establishes which third sides are possible, by building them. At p = 0.38 this is among the hardest items on the grade 8 test, and the reason is worth a teacher knowing: the inequality is discovered here by construction rather than stated as a rule."
+    },
+    "g8-2023-022": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "B",
+      "sectionTitle": "Drawing Polygons With Given Conditions",
+      "primaryLesson": 8,
+      "lessonTitle": "Triangles With 3 Common Measures",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Relationships of Angles",
+          "role": "introduces",
+          "activity": "More Pattern Block Angles",
+          "page": 30,
+          "quote": "Find as many different combinations of pattern blocks as you can"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Triangles With 3 Common Measures",
+          "role": "practises",
+          "activity": "2 Angles and 1 Side",
+          "page": 121,
+          "quote": "How many different triangles are there? Explain or show your reasoning"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Triangles With 3 Common Measures",
+          "role": "assessed",
+          "activity": "Comparing Andre's and Noah’s Triangles",
+          "page": 124,
+          "quote": "each drew a triangle with side lengths of 5 cm and 3 cm"
+        }
+      ],
+      "why": "One interior angle of 34 degrees, asking which pair could be the other two -- so the student needs the angle sum to be 180. The key 66 and 80 sums to 146; every distractor fails the sum. NYSED tags it NY-7.G.2 with NY-8.G.5 secondary, and the angle sum itself is grade 8 Unit 1's subject, but the task of deciding which measures can coexist in one triangle is Unit 8 Lesson 8's."
+    },
+    "g8-2025-004": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "C",
+      "sectionTitle": "Solid Geometry",
+      "primaryLesson": 11,
+      "lessonTitle": "Slicing Solids",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Slicing Solids",
+          "role": "introduces",
+          "activity": "What’s the Cross Section?",
+          "page": 157,
+          "quote": "Think about slicing each solid parallel to its base, halfway up."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Slicing Solids",
+          "role": "practises",
+          "activity": "Card Sort: Cross Sections",
+          "page": 159,
+          "quote": "Your teacher will give you a set of cards."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Slicing Solids",
+          "role": "assessed",
+          "activity": "Pentagonal Pyramid",
+          "page": 165,
+          "quote": "Here is a pyramid with a base that is a pentagon"
+        }
+      ],
+      "why": "A vertical plane through a right rectangular pyramid, asking the resulting shape. Lesson 11 is the only lesson in the course about cross sections, and its cool-down slices a pyramid specifically -- which matters, because a vertical slice of a pyramid gives a triangle where the same slice of a prism gives a rectangle."
+    },
+    "g8-2026-045": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 8,
+      "unitTitle": "Angles, Triangles, and Prisms",
+      "sectionLetter": "C",
+      "sectionTitle": "Solid Geometry",
+      "primaryLesson": 12,
+      "lessonTitle": "Volume of Right Prisms",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: NY-7.G.* is taught in the grade 7 curriculum, Unit 8, although the item sits on the grade 8 test. NYCPS files these under its own 'Unit 7', which is the national edition's numbering -- the New York edition calls this unit 8",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Volume of Right Prisms",
+          "role": "introduces",
+          "activity": "Finding Volume With Cubes",
+          "page": 171,
+          "quote": "Using the face of a snap cube as your area unit"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Volume of Right Prisms",
+          "role": "practises",
+          "activity": "Can You Find the Volume?",
+          "page": 173,
+          "quote": "For each figure, determine whether the shape is a prism."
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Volume of Right Prisms",
+          "role": "assessed",
+          "activity": "Octagonal Box",
+          "page": 178,
+          "quote": "If the height of the box is 7 inches, what is the volume"
+        }
+      ],
+      "why": "A right rectangular prism 20.5 by 13.5 by 10 inches, asking its volume. Lesson 12 is the volume-of-a-prism lesson and its cool-down asks for a volume from a base and a height. The item needs no base decomposition -- its base is a rectangle -- so Lesson 13, which decomposes irregular bases, is a step past what it asks."
     }
   }
 }
