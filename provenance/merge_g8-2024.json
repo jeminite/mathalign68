@@ -106,8 +106,8 @@
     },
     "G8-2024/q34.png": {
       "type": "Coordinate Plane",
-      "alt": "Quadrilateral FGHJ and its larger image F prime G prime H prime J prime on a coordinate plane.",
-      "long": "FGHJ sits right of the y-axis with F at the origin, and the image is the same shape enlarged and reflected to the left."
+      "alt": "Quadrilateral FGHJ and its congruent image F prime G prime H prime J prime on a coordinate plane.",
+      "long": "FGHJ sits right of the y-axis with F at the origin, G at (4, 0), H at (6, 5) and J at (2, 5). The image sits left of the y-axis with F prime still at the origin, G prime at (0, 4), H prime at (-5, 6) and J prime at (-5, 2) -- the same shape turned a quarter turn counterclockwise about the origin, not resized."
     },
     "G8-2024/q35.png": {
       "type": "Diagram",

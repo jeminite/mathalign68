@@ -9618,6 +9618,846 @@
         }
       ],
       "why": "A segment drawn on a plane, asking its length -- the same reading as g8-2023-008 with the coordinates to be read off the graph rather than given. At p = 0.19 it is the hardest item in the whole sweep, and having to read the endpoints is the likeliest reason."
+    },
+    "g8-2023-024": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "practises",
+          "activity": "Which One?",
+          "page": 104,
+          "quote": "You can use a rigid transformation to take triangle ABC"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "assessed",
+          "activity": "Translated Trapezoid",
+          "page": 108,
+          "quote": "is the image of trapezoid ABCD under a rigid transformation"
+        }
+      ],
+      "why": "A segment reflected then rotated, asking what is ALWAYS true of the image. The key is congruence, and every distractor changes a length. Lesson 7 is the lesson whose title is the answer -- no bending or stretching -- and whose activities measure sides before and after a rigid motion."
+    },
+    "g8-2025-034": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "practises",
+          "activity": "Which One?",
+          "page": 104,
+          "quote": "You can use a rigid transformation to take triangle ABC"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "assessed",
+          "activity": "Translated Trapezoid",
+          "page": 108,
+          "quote": "is the image of trapezoid ABCD under a rigid transformation"
+        }
+      ],
+      "why": "A trapezoid rotated 180 degrees, asking which statement about the two figures is true. The student must pair corresponding parts correctly, which is what Lesson 7's Sides and Angles asks after a translation. At p = 0.81 the easiest of the five NY-8.G.1a items."
+    },
+    "g8-2026-029": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "practises",
+          "activity": "Which One?",
+          "page": 104,
+          "quote": "You can use a rigid transformation to take triangle ABC"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "assessed",
+          "activity": "Translated Trapezoid",
+          "page": 108,
+          "quote": "is the image of trapezoid ABCD under a rigid transformation"
+        }
+      ],
+      "why": "A triangle translated, asking the length of a side of the IMAGE. Length preservation is Lesson 7's whole subject, and the item is answered by measuring the original."
+    },
+    "g8-2024-034": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Composing Figures",
+          "role": "practises",
+          "activity": "Triangle Plus Two",
+          "page": 139,
+          "quote": "Triangle 2 and Triangle 3 are images of Triangle 1 under rigid transformations."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "assessed",
+          "activity": "Translated Trapezoid",
+          "page": 108,
+          "quote": "Label all vertices on trapezoid"
+        }
+      ],
+      "why": "A quadrilateral rotated, asking which two sides are equal. Answering needs the correspondence between a vertex and its image, which Lesson 10's Triangle Plus Two builds by composing figures. The figure's alt text used to say the image was LARGER, which a rotation cannot make it. Reading the crop settles it: F(0,0) G(4,0) H(6,5) J(2,5) maps to F'(0,0) G'(0,4) H'(-5,6) J'(-5,2), which is (x,y) -> (-y,x), a quarter turn counterclockwise. Congruent, not enlarged, and the key GH = H'G' = root 29 holds. The description was wrong and is fixed."
+    },
+    "g8-2024-004": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 10,
+      "lessonTitle": "Composing Figures",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Composing Figures",
+          "role": "practises",
+          "activity": "Triangle Plus One",
+          "page": 137,
+          "quote": "Rotate triangle ABC 180° using center M to form a new triangle"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Composing Figures",
+          "role": "assessed",
+          "activity": "Identifying Side Lengths and Angle Measures",
+          "page": 144,
+          "quote": "Here is a diagram showing triangle ABC and some transformations of triangle ABC"
+        }
+      ],
+      "why": "A triangle rotated then reflected, with one angle known in each of the original and the image, asking for a third. Angle preservation gives the correspondence and the angle sum finishes it, so the item needs Lesson 10's composed transformations rather than a single move."
+    },
+    "g8-2026-025": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 8,
+      "lessonTitle": "Rotation Patterns",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 7,
+          "lessonTitle": "No Bending or Stretching",
+          "role": "introduces",
+          "activity": "Sides and Angles",
+          "page": 102,
+          "quote": "write the length of each side, in grid units"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Rotation Patterns",
+          "role": "practises",
+          "activity": "Rotating a Segment",
+          "page": 113,
+          "quote": "Rotate segment CD 180° around point D."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Rotation Patterns",
+          "role": "assessed",
+          "activity": "Is It a Rotation?",
+          "page": 119,
+          "quote": "Triangle ABC is rotated 180° around point C ."
+        }
+      ],
+      "why": "A triangle rotated clockwise, asking which angle is congruent to which. It is purely a correspondence question about a ROTATION specifically, which is Lesson 8's subject."
+    },
+    "g8-2025-017": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "B",
+      "sectionTitle": "Properties of Rigid Transformations",
+      "primaryLesson": 9,
+      "lessonTitle": "Moves in Parallel",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Moves in Parallel",
+          "role": "introduces",
+          "activity": "Parallel Lines",
+          "page": 124,
+          "quote": "Use a piece of tracing paper to trace lines a and b"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Moves in Parallel",
+          "role": "practises",
+          "activity": "Let’s Do Some 180s",
+          "page": 128,
+          "quote": "The diagram shows a line with points labeled A , C , D"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Moves in Parallel",
+          "role": "assessed",
+          "activity": "Finding Missing Measurements",
+          "page": 132,
+          "quote": "are the images of A and B after a 180° rotation around point O"
+        }
+      ],
+      "why": "A rectangle translated, asking which sides of the IMAGE are parallel. This is the only item in the sweep about a rigid motion preserving PARALLELISM rather than length or angle, which is exactly Lesson 9's title and its first activity -- tracing two parallel lines and transforming both."
+    },
+    "g8-2023-019": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "C",
+      "sectionTitle": "Congruence",
+      "primaryLesson": 12,
+      "lessonTitle": "Congruent Polygons",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "introduces",
+          "activity": "Congruent Pairs (Part 1)",
+          "page": 179,
+          "quote": "decide whether or not they are congruent. Explain your reasoning."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Congruence",
+          "role": "practises",
+          "activity": "Corresponding Points in Congruent Figures",
+          "page": 199,
+          "quote": "Here are two congruent shapes with some corresponding points labeled"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "assessed",
+          "activity": "Moving to Congruence",
+          "page": 189,
+          "quote": "Describe a sequence of reflections, rotations, and translations"
+        }
+      ],
+      "why": "A triangle and its congruent image, asking which SEQUENCE of transformations maps one to the other. Lesson 12's cool-down asks for exactly that in the same words."
+    },
+    "g8-2023-042": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "C",
+      "sectionTitle": "Congruence",
+      "primaryLesson": 12,
+      "lessonTitle": "Congruent Polygons",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "introduces",
+          "activity": "Congruent Pairs (Part 1)",
+          "page": 179,
+          "quote": "decide whether or not they are congruent. Explain your reasoning."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Congruence",
+          "role": "practises",
+          "activity": "Corresponding Points in Congruent Figures",
+          "page": 199,
+          "quote": "Here are two congruent shapes with some corresponding points labeled"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "assessed",
+          "activity": "Moving to Congruence",
+          "page": 189,
+          "quote": "Describe a sequence of reflections, rotations, and translations"
+        }
+      ],
+      "why": "The same task as g8-2023-019 asked as a constructed response -- describe a sequence -- which is word for word Lesson 12's cool-down."
+    },
+    "g8-2024-019": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "C",
+      "sectionTitle": "Congruence",
+      "primaryLesson": 12,
+      "lessonTitle": "Congruent Polygons",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "introduces",
+          "activity": "Congruent Pairs (Part 1)",
+          "page": 179,
+          "quote": "decide whether or not they are congruent. Explain your reasoning."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Congruence",
+          "role": "practises",
+          "activity": "Corresponding Points in Congruent Figures",
+          "page": 199,
+          "quote": "Here are two congruent shapes with some corresponding points labeled"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "assessed",
+          "activity": "Moving to Congruence",
+          "page": 189,
+          "quote": "Describe a sequence of reflections, rotations, and translations"
+        }
+      ],
+      "why": "A trapezoid and its image, four candidate sequences. Same reading; the distractors vary the axis and the angle independently."
+    },
+    "g8-2026-022": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "C",
+      "sectionTitle": "Congruence",
+      "primaryLesson": 12,
+      "lessonTitle": "Congruent Polygons",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "introduces",
+          "activity": "Congruent Pairs (Part 1)",
+          "page": 179,
+          "quote": "decide whether or not they are congruent. Explain your reasoning."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Congruence",
+          "role": "practises",
+          "activity": "Corresponding Points in Congruent Figures",
+          "page": 199,
+          "quote": "Here are two congruent shapes with some corresponding points labeled"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Congruent Polygons",
+          "role": "assessed",
+          "activity": "Moving to Congruence",
+          "page": 189,
+          "quote": "Describe a sequence of reflections, rotations, and translations"
+        }
+      ],
+      "why": "Two congruent triangles, four candidate sequences. The distractors here vary the axis and then swap the translation's two components, so a student who picks the right reflection can still fail on the order of the units."
+    },
+    "g8-2023-025": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "D",
+      "sectionTitle": "Angles in a Triangle",
+      "primaryLesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "introduces",
+          "activity": "Cutting Parallel Lines With a Transversal",
+          "page": 215,
+          "quote": "Lines AC and DF are parallel. They are cut by transversal HJ ."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "practises",
+          "activity": "Alternate Interior Angles Are Congruent",
+          "page": 218,
+          "quote": "Lines l and k are parallel and t is a transversal."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "assessed",
+          "activity": "All The Rest",
+          "page": 224,
+          "quote": "The diagram shows two parallel lines cut by a transversal."
+        }
+      ],
+      "why": "Two parallel lines and a transversal, two angles in terms of x, solve for x. Lesson 14 is the transversal lesson and its cool-down is that figure with one measure given."
+    },
+    "g8-2026-031": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "D",
+      "sectionTitle": "Angles in a Triangle",
+      "primaryLesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "introduces",
+          "activity": "Cutting Parallel Lines With a Transversal",
+          "page": 215,
+          "quote": "Lines AC and DF are parallel. They are cut by transversal HJ ."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "practises",
+          "activity": "Alternate Interior Angles Are Congruent",
+          "page": 218,
+          "quote": "Lines l and k are parallel and t is a transversal."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "assessed",
+          "activity": "All The Rest",
+          "page": 224,
+          "quote": "The diagram shows two parallel lines cut by a transversal."
+        }
+      ],
+      "why": "Two parallel lines and TWO transversals, two angles given, asking a third. Same reading as g8-2023-025 with a second transversal, which is what Lesson 14's Activity 1 sets up when it asks for seven unknown measures at once."
+    },
+    "g8-2024-042": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "D",
+      "sectionTitle": "Angles in a Triangle",
+      "primaryLesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "introduces",
+          "activity": "Cutting Parallel Lines With a Transversal",
+          "page": 215,
+          "quote": "Lines AC and DF are parallel. They are cut by transversal HJ ."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "practises",
+          "activity": "Alternate Interior Angles Are Congruent",
+          "page": 218,
+          "quote": "Lines l and k are parallel and t is a transversal."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Alternate Interior Angles",
+          "role": "assessed",
+          "activity": "All The Rest",
+          "page": 224,
+          "quote": "The diagram shows two parallel lines cut by a transversal."
+        }
+      ],
+      "why": "Two parallel lines crossed by two transversals meeting at a point above them, asking for an angle at that point. At p = 0.22 the hardest item in the sweep: the vertex sits outside the parallel pair, so the alternate-interior relationship has to be applied twice before the triangle closes."
+    },
+    "g8-2024-023": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 1,
+      "unitTitle": "Rigid Transformations and Congruence",
+      "sectionLetter": "D",
+      "sectionTitle": "Angles in a Triangle",
+      "primaryLesson": 15,
+      "lessonTitle": "Adding the Angles in a Triangle",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 1 is where rigid transformations and congruence are taught. NY-8.G.1 and its sub-letters index DISJOINT lesson sets in the guide -- the parent at lessons 2,3,4,6,11,14 and NY-8.G.1a at 7,8,9,10,13 -- so the candidate set here is the union of both",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Adding the Angles in a Triangle",
+          "role": "introduces",
+          "activity": "Tear It Up",
+          "page": 232,
+          "quote": "you will see a page with three sets of angles and a blank space"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+          "role": "practises",
+          "activity": "Every Triangle in the World",
+          "page": 243,
+          "quote": "What is the sum of the measures of angle DBA , angle ABC"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+          "role": "assessed",
+          "activity": "Angle Sum",
+          "page": 248,
+          "quote": "What is the sum of the angle measures of triangle ABC ?"
+        }
+      ],
+      "why": "Two angles given as x and y, asking an EXPRESSION for the third. The answer is the angle sum written algebraically, and the distractors are the sum rearranged wrongly. Lesson 15 is where the sum is established by tearing the corners off a triangle; Lesson 16 proves it. This is the one NY-8.G.5 item with no parallel lines in it."
     }
   }
 }

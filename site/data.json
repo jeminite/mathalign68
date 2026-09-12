@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-12T18:16:45",
+    "built": "2026-09-12T18:25:36",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -69,7 +69,7 @@
     "alignmentCoverage": {
       "aligned": 129,
       "total": 396,
-      "drafted": 61,
+      "drafted": 76,
       "note": "Curriculum alignment is a judgement, made against the activity each lesson actually asks students to do and published with that activity named so it can be checked. Items with alignmentBasis 'unaligned' have not been judged yet; entries still in draft are not published at all."
     },
     "disclaimer": "A working analysis, shared in case it is useful. The item data and the statewide P-values are NYSED's own, published with each year's released questions. Where a question is shown, its wording comes from the PDF's own text layer character for character and only the mathematics is reconstructed -- but reconstructed maths can be wrong, so every item links to the official page and that page is the authority. Curriculum alignment is a judgement call by one teacher rather than official guidance. Corrections and disagreement are welcome.",
@@ -28370,8 +28370,8 @@
         {
           "file": "G8-2024/q34.png",
           "type": "Coordinate Plane",
-          "alt": "Quadrilateral FGHJ and its larger image F prime G prime H prime J prime on a coordinate plane.",
-          "longDescription": "FGHJ sits right of the y-axis with F at the origin, and the image is the same shape enlarged and reflected to the left."
+          "alt": "Quadrilateral FGHJ and its congruent image F prime G prime H prime J prime on a coordinate plane.",
+          "longDescription": "FGHJ sits right of the y-axis with F at the origin, G at (4, 0), H at (6, 5) and J at (2, 5). The image sits left of the y-axis with F prime still at the origin, G prime at (0, 4), H prime at (-5, 6) and J prime at (-5, 2) -- the same shape turned a quarter turn counterclockwise about the origin, not resized."
         }
       ],
       "tablesInImage": false,
