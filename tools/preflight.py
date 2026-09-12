@@ -912,8 +912,22 @@ def alignment(payload):
                 return pp.get("prompt")
         return ""
 
+    def activity_page(course_grade, unit, num, activity):
+        """The page the index says this activity starts on, or None if unknown."""
+        try:
+            rec = detail["grades"][str(course_grade)]["units"][str(unit)]["lessons"][str(num)]
+        except (KeyError, TypeError):
+            return None
+        for a in rec.get("activities", []):
+            if _norm_title(a.get("name")) == _norm_title(activity):
+                return a.get("page")
+        for pp in rec.get("practiceProblems", []):
+            if _norm_title(pp.get("problem")) == _norm_title(activity):
+                return pp.get("page")
+        return None
+
     missing, mistitled, wrong_unit, thin, longquote = [], [], [], [], []
-    noactivity, unquoted = [], []
+    noactivity, unquoted, wrongpage = [], [], []
     for item_id, entry in sorted(by_item.items()):
         g = grade_of(entry, item_id)
         for ev in entry.get("evidence") or []:
@@ -941,6 +955,17 @@ def alignment(payload):
             if detail is not None and ev.get("activity"):
                 hay = activity_text(g, entry.get("unit"), ev.get("lesson"),
                                     ev["activity"])
+                # A page number was required to be PRESENT but never to be true,
+                # so a transposed digit was invisible -- and the page is half of
+                # what makes a citation checkable by a reader. The index knows
+                # where every activity starts; all 161 evidence pages written
+                # before this check matched it exactly, so exact is the bar.
+                idx_page = activity_page(g, entry.get("unit"), ev.get("lesson"),
+                                         ev["activity"])
+                if idx_page is not None and ev.get("page") != idx_page:
+                    wrongpage.append("%s %r: entry says p%s, index says p%s"
+                                     % (item_id, ev["activity"], ev.get("page"),
+                                        idx_page))
                 if hay is None:
                     continue
                 if not hay:
@@ -985,6 +1010,8 @@ def alignment(payload):
               not noactivity, "\n".join(noactivity[:8]))
         check("every evidence quote appears in the activity it cites",
               not unquoted, "\n".join(unquoted[:8]))
+        check("every evidence page is the page the index gives that activity",
+              not wrongpage, "\n".join(wrongpage[:8]))
 
     # Reported, never failed. RegentsAlign's audit found 25 standards whose
     # questions had drifted to different lessons and judged 9 of them legitimate

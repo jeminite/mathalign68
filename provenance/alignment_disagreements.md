@@ -60,3 +60,61 @@ percentage decrease is specifically rewritten in the `0.9x` form the item uses.
 **`g7-2024-037`, ours Lesson 20, NYCPS Lesson 19.** The item combines two like
 terms with fractional coefficients and contains no parentheses, so there is
 nothing to expand. Lesson 20 is "Combining Like Terms (Part 1)".
+
+## Unit 5 -- Rational Number Arithmetic (27 items)
+
+Agreement moved 78.4% -> 68.5% when this batch landed, which is the drift the conventions
+say to stop and re-read on. Reading all of it changed two placements and confirmed the rest,
+taking it to 72.2%. The number did not return to 78.4% and should not be made to: Unit 5's
+items sit close together and NYCPS spreads them across the unit differently than reading the
+task statements does.
+
+**`g7-2025-023` -- changed, ours Lesson 9 -> Lesson 10, agreeing with NYCPS.** The item asks
+for the value of (-6)(-1 1/2), and its distractors -9 and 6 1/2 probe the sign and the
+arithmetic separately. Lesson 9 builds the sign rule; Lesson 10's Row Game is where signed
+products are evaluated, and column B carries -4/3 times -6/5. The first pass put it at the
+lesson that explains and not the lesson that asks.
+
+**`g7-2024-005` -- unchanged, NYCPS's Lesson 2 added as `introduces`.** Both NY-7.NS.1c items
+are temperature differences and the other already cited *Winter Temperatures*; this one now
+does too.
+
+### Retained after review
+
+**`g7-2025-017`, ours Lesson 5, NYCPS Lesson 7.** The item asks which expression equals
+(-0.3) + 1.5, keyed to 1.5 - 0.3. Lesson 5 Activity 2 asks "Which expression has the same
+value as 8 + -5?" with four choices of the same shape. NYCPS's Lesson 7 warm-up asks whether
+the *solution to an equation* is positive -- a different question.
+
+**`g7-2023-036`, ours Lesson 3, NYCPS Lesson 7.** "The sum of two numbers is zero" is the
+additive inverse, which is Lesson 3's warm-up and whose cool-down opens 56 + -56. Lesson 7's
+*Positive or Negative?* is again about the sign of a solution.
+
+**`g7-2024-005` and `g7-2025-037`, ours Lesson 6, NYCPS Lesson 2.** Lesson 2 finds a final
+temperature from a stated change; both items are given both temperatures and asked for the
+difference, which is Lesson 6 Activity 1's table.
+
+**`g7-2023-005` and `g7-2024-015`, ours Lesson 13, NYCPS Lesson 6.** NYCPS cites *Does the
+Order Matter?*, which compares a - b against b - a. Neither item asks that: one regroups a
+four-term signed sum, the other evaluates an expression containing a subtracted sum. Lesson 13
+is the unit's lesson on expressions with rational numbers.
+
+**`g7-2025-043`, ours Lesson 4, NYCPS Lesson 6.** A $25.00 gift card and a $25.00 purchase.
+Lesson 4 is the money lesson and its cool-down is a balance against a purchase; NYCPS cites an
+altitude table.
+
+**`g7-2025-032`, ours Lesson 12, NYCPS Lesson 14.** The item is a submarine descending at a
+constant rate. Lesson 12 is *Negative Rates*: its Activity 2 is a bathyscaphe descending at -3
+feet per second and its cool-down is a submarine descending to a stated depth in a stated
+time. Worth noting that NYCPS's own citation is internally inconsistent here -- it prints
+"Unit 5, Lesson 12" with Lesson 14's title, and names an activity, *Moving Up and Down*, that
+is not in the New York edition's Lesson 14 at all.
+
+**`g7-2025-040`, ours Lesson 13, NYCPS Lesson 10.** 0.5(4-6) over 0.2 combines a subtraction,
+a product and a division in one expression. Lesson 10 is titled *Multiply!* and does only
+products; Lesson 13 opens the section actually called "Four Operations With Rational Numbers".
+
+**`g7-2024-036`, ours Unit 4 Lesson 4, NYCPS Unit 4 Lesson 2 -- same unit.** Both readings
+leave NY-7.NS.3's tabled units of 5 and 9, because the item takes a fraction of a quantity
+twice with no signed arithmetic anywhere in it. NYCPS's Lesson 2 is rates with fractions;
+Lesson 4 computes a fractional part of a given quantity, which is the item's step.

@@ -2853,6 +2853,1237 @@
         }
       ],
       "why": "Each item asks which expression also represents a price after a percentage decrease -- x - 0.25x rewritten as 0.75x. Lesson 4 introduces the more-than/less-than structure with fractions, Lesson 5 writes it with decimals, and Lesson 8 matches percent situations to equations already in the 0.68x form the items use."
+    },
+    "g7-2023-005": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 13,
+      "lessonTitle": "Expressions With Rational Numbers",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "Adding Rational Numbers",
+          "page": 51,
+          "quote": "Find the sums. 1. -35 + 30 + 5"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "practises",
+          "activity": "Card Sort: The Same but Different",
+          "page": 170,
+          "quote": "Take turns with your partner to match two expressions with the same value"
+        }
+      ],
+      "why": "The item shows -1.5 + 2/5 + -7 + 2.6 and asks which expression is equivalent; the key regroups the two negative addends as -8.5. The task is matching expressions of equal value, which is Lesson 13 Activity 1 verbatim. Lesson 3 Activity 2 is where sums of several signed numbers mixing decimals and fractions are first asked for."
+    },
+    "g7-2024-015": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 13,
+      "lessonTitle": "Expressions With Rational Numbers",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "practises",
+          "activity": "Near and Far from Zero",
+          "page": 172,
+          "quote": "For each set of values for a and b , evaluate the given expressions"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "assessed",
+          "activity": "Make Them True",
+          "page": 178,
+          "quote": "Complete each equation with an operation to make it true."
+        }
+      ],
+      "why": "The item evaluates a single expression combining subtraction of a sum and a mixed number. Lesson 13 is the unit's lesson on evaluating expressions with rational numbers, and its cool-down is where the curriculum tests that reasoning."
+    },
+    "g7-2024-042": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "introduces",
+          "activity": "Math Talk: Missing Addend",
+          "page": 82,
+          "quote": "Solve each equation mentally. 1. 247 + c = 458"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "practises",
+          "activity": "Adding Rational Numbers",
+          "page": 51,
+          "quote": "Find the sums. 1. -35 + 30 + 5"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "Three spins of -1.5, 2 and -3.5 total -3, and the item asks which two further numbers make the score 0. That is a missing-addend question over signed decimals: Lesson 6's Math Talk asks for a missing addend, Lesson 3 Activity 2 sums signed decimals, and Lesson 3's cool-down is where a sum of zero is tested."
+    },
+    "g7-2025-017": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 5,
+      "lessonTitle": "Representing Subtraction",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Representing Subtraction",
+          "role": "introduces",
+          "activity": "We Can Add Instead",
+          "page": 73,
+          "quote": "Which expression has the same value as 8 + -5 ?"
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Representing Subtraction",
+          "role": "assessed",
+          "activity": "Same Value",
+          "page": 78,
+          "quote": "Which other expression has the same value as -14 − 8 ?"
+        }
+      ],
+      "why": "The item asks which expression equals (-0.3) + 1.5, with the key rewriting the sum as the subtraction 1.5 - 0.3. Lesson 5 Activity 2 asks that question in the same form, down to the answer-choice layout, and its cool-down tests it."
+    },
+    "g7-2023-036": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "That’s the Opposite",
+          "page": 47,
+          "quote": "A climber was 30 feet above sea level. Then she descended 30 feet."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "The item states that two numbers sum to zero and gives one of them. That is the additive inverse, which Lesson 3's warm-up introduces as 'the opposite' and whose cool-down opens with 56 + -56."
+    },
+    "g7-2025-013": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "introduces",
+          "activity": "Math Talk: Missing Addend",
+          "page": 82,
+          "quote": "Solve each equation mentally. 1. 247 + c = 458"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "practises",
+          "activity": "Adding Rational Numbers",
+          "page": 51,
+          "quote": "Find the sums. 1. -35 + 30 + 5"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "-6.8 + 6.4 leaves -0.4, and the item asks which expression placed in the blank makes the sum zero. Each choice is itself a sum, so the student adds signed decimals and then finds the opposite -- Lesson 3 Activity 2 and cool-down, reached through the missing-addend reasoning of Lesson 6's warm-up."
+    },
+    "g7-2026-002": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "That’s the Opposite",
+          "page": 47,
+          "quote": "A climber was 30 feet above sea level. Then she descended 30 feet."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "Four students each draw two integer cards and the item asks whose pair scores 0. It tests recognising a number and its opposite, which is Lesson 3's warm-up, and the cool-down's first sum is exactly a number plus its opposite."
+    },
+    "g7-2024-033": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "That’s the Opposite",
+          "page": 47,
+          "quote": "What’s the opposite? a. Running 150 feet east. b. Jumping down 10 steps."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "Every choice is a described situation and the item asks which one results in zero -- buying four batches of cookies and selling four. Lesson 3's warm-up asks for the opposite of a described action in exactly that form, and rejects the distractor's kind of reasoning by putting 'running 150 feet east' beside it."
+    },
+    "g7-2025-043": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 4,
+      "lessonTitle": "Money and Debts",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "That’s the Opposite",
+          "page": 47,
+          "quote": "A climber was 30 feet above sea level. Then she descended 30 feet."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Money and Debts",
+          "role": "practises",
+          "activity": "Earning and Spending",
+          "page": 60,
+          "quote": "At the beginning of the month Kiran had $24. He spent $16"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Money and Debts",
+          "role": "assessed",
+          "activity": "Buying a Bike",
+          "page": 65,
+          "quote": "Clare has $150 in her bank account. She buys a bike for $200."
+        }
+      ],
+      "why": "A $25.00 gift card balance and a $25.00 purchase, asked as a constructed response about whether the balance is zero. Lesson 4 is the unit's money lesson and its activity and cool-down are both a balance against a purchase; Lesson 3's warm-up is where the opposite-quantities idea itself arrives. This is why the three NY-7.NS.1a items do not share a lesson: this one is a money context, g7-2024-033 is a choice among described situations, and g7-2026-031 is symbolic."
+    },
+    "g7-2026-031": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 3,
+      "lessonTitle": "Changing Elevation",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "That’s the Opposite",
+          "page": 47,
+          "quote": "A climber was 30 feet above sea level. Then she descended 30 feet."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "practises",
+          "activity": "Adding Rational Numbers",
+          "page": 51,
+          "quote": "Find the sums. 1. -35 + 30 + 5"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "assessed",
+          "activity": "Add ‘Em Up",
+          "page": 55,
+          "quote": "Find each sum. 1. 56 + -56 2. -240 + 370"
+        }
+      ],
+      "why": "(5.2 - 1.6) + (-___) = 0 asks for the opposite of a difference, entirely symbolically -- the student must see that -5.2 + 1.6 is the opposite of 5.2 - 1.6. Lesson 3 holds both the idea and the practice with signed decimals."
+    },
+    "g7-2024-005": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 6,
+      "lessonTitle": "Finding Differences",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Changing Temperatures",
+          "role": "introduces",
+          "activity": "Winter Temperatures",
+          "page": 39,
+          "quote": "In Salt Lake City, it is 8° colder than it is in Houston."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Representing Subtraction",
+          "role": "introduces",
+          "activity": "We Can Add Instead",
+          "page": 73,
+          "quote": "Which expression has the same value as 8 − 12 ?"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "practises",
+          "activity": "Expressions with Altitude",
+          "page": 83,
+          "quote": "an expression that represents the difference between the final elevation"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "assessed",
+          "activity": "A Subtraction Expression",
+          "page": 90,
+          "quote": "Select all of the choices that are equal to -5 − -12 ."
+        }
+      ],
+      "why": "Ocean temperatures range from -2 C to 32 C and the item asks for the difference. Lesson 6 is the unit's difference lesson: its activity asks for an expression for the difference between two signed values and then its value, and its cool-down is a difference of two negatives."
+    },
+    "g7-2025-037": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 6,
+      "lessonTitle": "Finding Differences",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Changing Temperatures",
+          "role": "introduces",
+          "activity": "Winter Temperatures",
+          "page": 39,
+          "quote": "In Salt Lake City, it is 8° colder than it is in Houston."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "practises",
+          "activity": "Expressions with Altitude",
+          "page": 83,
+          "quote": "an expression that represents the difference between the final elevation"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Finding Differences",
+          "role": "assessed",
+          "activity": "A Subtraction Expression",
+          "page": 90,
+          "quote": "Select all of the choices that are equal to -5 − -12 ."
+        }
+      ],
+      "why": "The temperature rises from -7 F to 8 F and the item asks for the change. That is final minus beginning across zero, which is Lesson 6 Activity 1's table. Lesson 2's Winter Temperatures is where signed temperature comparisons start."
+    },
+    "g7-2023-046": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "A",
+      "sectionTitle": "Adding and Subtracting Rational Numbers",
+      "primaryLesson": 7,
+      "lessonTitle": "Adding and Subtracting to Solve Problems",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where adding and subtracting signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Changing Elevation",
+          "role": "introduces",
+          "activity": "Cliffs and Caves",
+          "page": 48,
+          "quote": "A mountaineer is climbing on a cliff. She is 400 feet above the ground."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Adding and Subtracting to Solve Problems",
+          "role": "practises",
+          "activity": "Climbing Mount Kilimanjaro",
+          "page": 97,
+          "quote": "He hikes up 278 meters, down 87 meters, up 548 meters"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Adding and Subtracting to Solve Problems",
+          "role": "assessed",
+          "activity": "Coffee Shop Cups",
+          "page": 102,
+          "quote": "Assume the starting amount of coffee cups is 0. How many paper cups"
+        }
+      ],
+      "why": "A diver goes down 24 feet, up 10, down another 18, and the item asks how far up to the surface. Lesson 7 Activity 2 is the same shape of problem -- a sequence of signed ups and downs whose running total is asked for -- and Lesson 3 Activity 1 is where a cliff-and-cave table first makes up positive and down negative."
+    },
+    "g7-2025-023": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 10,
+      "lessonTitle": "Multiply!",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+          "role": "introduces",
+          "activity": "Backwards in Time",
+          "page": 123,
+          "quote": "A car was traveling east at 12 meters per second. Where was the car"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "practises",
+          "activity": "Row Game: Multiplying Rational Numbers",
+          "page": 138,
+          "quote": "Evaluate the expressions in one of the columns."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+          "role": "assessed",
+          "activity": "True Statements",
+          "page": 130,
+          "quote": "Decide if each equation is true or false. 1. 7 ⋅ 8 = 56"
+        }
+      ],
+      "why": "The product of -6 and -1 1/2 is asked for as a value, and the distractors -9 and 6 1/2 probe the sign and the arithmetic separately. Lesson 10's Row Game is where signed products are evaluated, and its column B carries -4/3 times -6/5 -- negative times negative with fractions, the item's own shape. Lesson 9 is cited as where the sign rule is built and tested. First placed at Lesson 9; re-derived to Lesson 10 because the item asks students to compute, not to judge a sign."
+    },
+    "g7-2024-040": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 10,
+      "lessonTitle": "Multiply!",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+          "role": "introduces",
+          "activity": "Backwards in Time",
+          "page": 123,
+          "quote": "A car was traveling east at 12 meters per second. Where was the car"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "practises",
+          "activity": "Row Game: Multiplying Rational Numbers",
+          "page": 138,
+          "quote": "Evaluate the expressions in one of the columns."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "assessed",
+          "activity": "Making Mistakes",
+          "page": 141,
+          "quote": "Do you agree with his answers? If you disagree, explain your reasoning."
+        }
+      ],
+      "why": "-2(-3)(4) is a chain of three signed factors, not a single product, so the student has to carry a sign through two multiplications. Lesson 10's Row Game is the only place in the unit whose expressions run to three factors -- -10 (3.2) (-7.3) and 5 (-1.6) (-29.2) are on the card. Lesson 10 is marked OPTIONAL in the course guide, which is worth a teacher knowing for an item that has been released twice."
+    },
+    "g7-2026-015": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 10,
+      "lessonTitle": "Multiply!",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+          "role": "introduces",
+          "activity": "Backwards in Time",
+          "page": 123,
+          "quote": "A car was traveling east at 12 meters per second. Where was the car"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "practises",
+          "activity": "Row Game: Multiplying Rational Numbers",
+          "page": 138,
+          "quote": "Evaluate the expressions in one of the columns."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "assessed",
+          "activity": "Making Mistakes",
+          "page": 141,
+          "quote": "Do you agree with his answers? If you disagree, explain your reasoning."
+        }
+      ],
+      "why": "The product of -1/5 and 3/8 is two fractions, one negative. Lesson 10's cool-down is three signed products to check, of which the third is -3/4 times -5/7 -- the same shape, fraction times fraction with signs, and the distractors here differ only in sign and in whether the fractions were multiplied or added."
+    },
+    "g7-2026-004": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 11,
+      "lessonTitle": "Dividing Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "introduces",
+          "activity": "Multiplication and Division",
+          "page": 145,
+          "quote": "A positive number divided by a negative number equals a"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "assessed",
+          "activity": "Matching Division Expressions",
+          "page": 151,
+          "quote": "Match each expression with its value. A. 15 ÷ 12"
+        }
+      ],
+      "why": "-5/6 divided by -1/3 asks for the quotient of two negative fractions. Lesson 11 Activity 1 is where the four sign rules for division are stated by the students themselves, and its cool-down matches signed quotients to their values."
+    },
+    "g7-2026-034": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 11,
+      "lessonTitle": "Dividing Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "introduces",
+          "activity": "Multiplication and Division",
+          "page": 145,
+          "quote": "A positive number divided by a negative number equals a"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "assessed",
+          "activity": "Matching Division Expressions",
+          "page": 151,
+          "quote": "Match each expression with its value. A. 15 ÷ 12"
+        }
+      ],
+      "why": "The item asks which expression equals -45 over -9 -- it never asks for the value 5, only for an equivalent way of writing a quotient with the signs moved. That is the sentence-completion in Lesson 11 Activity 1, and the cool-down pairs 12 divided by -15 against 15 divided by -12 for the same reason."
+    },
+    "g7-2025-040": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 13,
+      "lessonTitle": "Expressions With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "introduces",
+          "activity": "Multiplication and Division",
+          "page": 145,
+          "quote": "A positive number divided by a negative number equals a"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "practises",
+          "activity": "Near and Far from Zero",
+          "page": 172,
+          "quote": "For each set of values for a and b , evaluate the given expressions"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "assessed",
+          "activity": "Make Them True",
+          "page": 178,
+          "quote": "Complete each equation with an operation to make it true."
+        }
+      ],
+      "why": "0.5(4-6) over 0.2 is one displayed expression holding a subtraction, a product and a division, and the negative appears only after the bracket is evaluated. Lesson 13 is the unit's lesson on evaluating expressions with rational numbers; its second activity evaluates a table of expressions including a divided by -b."
+    },
+    "g7-2026-047": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 13,
+      "lessonTitle": "Expressions With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Dividing Rational Numbers",
+          "role": "introduces",
+          "activity": "Multiplication and Division",
+          "page": 145,
+          "quote": "A positive number divided by a negative number equals a"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "practises",
+          "activity": "Near and Far from Zero",
+          "page": 172,
+          "quote": "For each set of values for a and b , evaluate the given expressions"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Expressions With Rational Numbers",
+          "role": "assessed",
+          "activity": "Make Them True",
+          "page": 178,
+          "quote": "Complete each equation with an operation to make it true."
+        }
+      ],
+      "why": "(1/2)(-0.4) divided by (1/3) mixes a fraction and a decimal through a multiplication and then a division. It shares Lesson 13 with g7-2025-040 because both ask the same thing -- evaluate one displayed multi-operation expression over signed rationals -- and separating them would be a distinction the items do not make."
+    },
+    "g7-2026-026": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 10,
+      "lessonTitle": "Multiply!",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "practises",
+          "activity": "Row Game: Multiplying Rational Numbers",
+          "page": 138,
+          "quote": "Evaluate the expressions in one of the columns."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Multiply!",
+          "role": "assessed",
+          "activity": "Making Mistakes",
+          "page": 141,
+          "quote": "Do you agree with his answers? If you disagree, explain your reasoning."
+        }
+      ],
+      "why": "NOTE ON THE STEM: the published stem reads 4/5 (0.2) - 5/8, which is a subtraction whose value is not among the four choices. The PDF's vector geometry shows three bracketed factors -- (4/5)(0.2)(-5/8) -- and only that product gives NYSED's key of -1/10. Aligned as the product it is: a chain of three signed factors mixing a decimal and two fractions, which is Lesson 10's Row Game."
+    },
+    "g7-2025-032": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "B",
+      "sectionTitle": "Multiplying and Dividing Rational Numbers",
+      "primaryLesson": 12,
+      "lessonTitle": "Negative Rates",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Multiplying Rational Numbers (Part 1)",
+          "role": "introduces",
+          "activity": "Velocity",
+          "page": 111,
+          "quote": "A car is traveling east at 12 meters per second. Where will it be"
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Negative Rates",
+          "role": "practises",
+          "activity": "Up and Down with the Piccards",
+          "page": 157,
+          "quote": "The Trieste descended at a rate of -3 feet per second."
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Negative Rates",
+          "role": "assessed",
+          "activity": "Submarines",
+          "page": 160,
+          "quote": "A submarine is descending to examine the seafloor 2,100 feet below the surface."
+        }
+      ],
+      "why": "A submarine descends at a constant rate and the item asks its depth after a longer fractional time. Lesson 12 is the unit's negative-rate lesson: its second activity is a bathyscaphe descending at -3 feet per second and its cool-down is a submarine descending to a stated depth in a stated time. Nothing else in the unit is this item."
+    },
+    "g7-2023-008": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 14,
+      "lessonTitle": "Solving Problems With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "practises",
+          "activity": "Scoring Margins",
+          "page": 183,
+          "quote": "What was their average scoring margin for the season?"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "assessed",
+          "activity": "Charges and Checks",
+          "page": 188,
+          "quote": "If she does not make any deposits or withdrawals, what will be the balance"
+        }
+      ],
+      "why": "Three bucket amounts are added and the total is shared equally among 5 containers -- sum, then divide. Lesson 14 Activity 1 asks for an average scoring margin, which is the same two-step shape over a list of rationals. The item uses no negative numbers, so it draws on the fraction arithmetic grade 6 supplies and on grade 7 only for the multi-step problem itself."
+    },
+    "g7-2023-040": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 14,
+      "lessonTitle": "Solving Problems With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "practises",
+          "activity": "Solar Power",
+          "page": 184,
+          "quote": "Calculate the family’s net consumption of electricity for each of these days"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "assessed",
+          "activity": "Charges and Checks",
+          "page": 188,
+          "quote": "If she does not make any deposits or withdrawals, what will be the balance"
+        }
+      ],
+      "why": "Two daily distances are each multiplied by 4 days and then differenced. Lesson 14 Activity 2 is the same combination -- multiply a rate by a period, then take the difference of two such quantities -- and it shares the standard with g7-2023-008 while asking a different thing, which is why they cite different activities."
+    },
+    "g7-2026-029": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 14,
+      "lessonTitle": "Solving Problems With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "practises",
+          "activity": "Solar Power",
+          "page": 184,
+          "quote": "Calculate the family’s net consumption of electricity for each of these days"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "assessed",
+          "activity": "Charges and Checks",
+          "page": 188,
+          "quote": "If she does not make any deposits or withdrawals, what will be the balance"
+        }
+      ],
+      "why": "Four classes' amounts are described as chained increases and decreases from one another and the item asks the surplus over $800. It is a run of signed additions to a money total, which is Lesson 14's Activity 2 and, in the cool-down, a running account balance against a fixed charge."
+    },
+    "g7-2026-040": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": "C",
+      "sectionTitle": "Four Operations With Rational Numbers",
+      "primaryLesson": 14,
+      "lessonTitle": "Solving Problems With Rational Numbers",
+      "candidateLessons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 5 is where multiplying and dividing signed rational numbers is taught",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "practises",
+          "activity": "Solar Power",
+          "page": 184,
+          "quote": "Calculate the family’s net consumption of electricity for each of these days"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Problems With Rational Numbers",
+          "role": "assessed",
+          "activity": "Charges and Checks",
+          "page": 188,
+          "quote": "If she does not make any deposits or withdrawals, what will be the balance"
+        }
+      ],
+      "why": "Four priced items in quantities including a half pound, totalled and subtracted from a $20.00 bill. Like the cool-down, it is money arithmetic where the answer is what remains of a balance, and like Activity 2 it is several products summed before the final subtraction."
+    },
+    "g7-2024-036": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 4,
+      "unitTitle": "Proportional Relationships and Percentages",
+      "sectionLetter": "A",
+      "sectionTitle": "Proportional Relationships with Fractions",
+      "primaryLesson": 4,
+      "lessonTitle": "More than That, Less than That",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "read against the item: NY-7.NS.3's table units are 5 and 9, but the item takes a fraction of a quantity with no signed arithmetic in it, which Unit 4 teaches",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Ratios and Rates With Fractions",
+          "role": "introduces",
+          "activity": "Comparing Running Speeds",
+          "page": 39,
+          "quote": "Lin ran 2 3/4 miles in 2/5 of an hour."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "practises",
+          "activity": "Walking Half as Much Again",
+          "page": 62,
+          "quote": "Complete the table to show the total distance walked in each case."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "More than That, Less than That",
+          "role": "assessed",
+          "activity": "Swimming and Skating",
+          "page": 68,
+          "quote": "Tyler swam for x minutes, and Han swam for 3/4 less than that."
+        }
+      ],
+      "why": "3/4 of 140 students play sports and 1/7 of those are in an art club: a fraction of a quantity, applied twice. Nothing in Unit 5 asks that -- Unit 5 is signed arithmetic and this item has no negative numbers -- so the search moved to Unit 4, where Lesson 4 computes a fractional part of a given quantity and its cool-down states one quantity as a fraction of another."
     }
   }
 }

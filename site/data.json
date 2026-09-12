@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-12T01:33:39",
+    "built": "2026-09-12T08:30:49",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -69,7 +69,7 @@
     "alignmentCoverage": {
       "aligned": 0,
       "total": 396,
-      "drafted": 59,
+      "drafted": 86,
       "note": "Curriculum alignment is a judgement, made against the activity each lesson actually asks students to do and published with that activity named so it can be checked. Items with alignmentBasis 'unaligned' have not been judged yet; entries still in draft are not published at all."
     },
     "disclaimer": "A working analysis, shared in case it is useful. The item data and the statewide P-values are NYSED's own, published with each year's released questions. Where a question is shown, its wording comes from the PDF's own text layer character for character and only the mathematics is reconstructed -- but reconstructed maths can be wrong, so every item links to the official page and that page is the authority. Curriculum alignment is a judgement call by one teacher rather than official guidance. Corrections and disagreement are welcome.",
