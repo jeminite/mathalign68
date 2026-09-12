@@ -469,6 +469,20 @@ def parse_lesson(doc, ent):
                 # recovered cool-down looking like an ordinary activity, so the
                 # reader would not know where the curriculum tests the skill.
                 kind = canonical_kind(kind)
+                # The New York edition marks an optional activity in its NAME --
+                # "Pondering Pools (Optional)" -- while the national edition
+                # writes it into the kind as "Activity 3: Optional". Only the
+                # second was being read, so every one of the 143 optional
+                # activities across the three grades carried optional: false.
+                # That matters: three released grade 7 items depend on an
+                # optional activity, and a teacher who skips optional work never
+                # sets that task at all.
+                #
+                # The NAME IS LEFT ALONE on purpose. Published entries cite the
+                # activity by its printed name, suffix included, and stripping it
+                # would break every such citation.
+                if (name or "").rstrip().lower().endswith("(optional)"):
+                    optional = True
                 cur = {"kind": kind.split(":")[0].strip(),
                        "optional": optional,
                        "name": name.split("  ")[0].strip(),

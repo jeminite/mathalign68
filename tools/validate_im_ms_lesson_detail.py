@@ -153,7 +153,7 @@ def main():
     print("\n3. Every lesson carries what an alignment judgement needs")
     no_act, no_task, no_std, no_narr = [], [], [], []
     thin = []
-    noncanon, gappy = [], []
+    noncanon, gappy, unflagged = [], [], []
     for g, gd in sorted(detail["grades"].items()):
         for u, ud in sorted(gd["units"].items(), key=lambda kv: int(kv[0])):
             for n, rec in sorted(ud["lessons"].items(), key=lambda kv: int(kv[0])):
@@ -184,6 +184,16 @@ def main():
                     k = (a.get("kind") or "").strip()
                     if not CANON_KIND.match(k):
                         noncanon.append("%s: %r" % (code, k))
+                # An activity printed "(Optional)" must carry the flag. The two
+                # editions mark it differently -- New York in the NAME, the
+                # national CCSS unit 9 guides in the KIND as "Activity 3:
+                # Optional" -- and only the second was read, so all 142 New York
+                # optional activities were flagged false. Asserted one way only:
+                # the flag may legitimately be true with no suffix in the name.
+                for a in acts:
+                    if (a.get("name") or "").rstrip().lower().endswith("(optional)") \
+                            and not a.get("optional"):
+                        unflagged.append("%s: %r" % (code, a.get("name")))
                 nums = [int(m.group(1)) for a in acts
                         for m in [re.match(r"^Activity\s*(\d+)$",
                                            (a.get("kind") or "").strip())] if m]
@@ -211,6 +221,8 @@ def main():
     # is working from less than the lesson contains and should know it.
     check("every activity's kind is one of the three canonical forms",
           not noncanon, "\n".join(noncanon[:10]))
+    check("every activity printed (Optional) carries the optional flag",
+          not unflagged, "\n".join(unflagged[:10]))
     check("every lesson's activities are numbered 1..N with no gap",
           not gappy, "\n".join(gappy[:10]))
     note("%d heading(s) were recovered from a split word by the extractor"

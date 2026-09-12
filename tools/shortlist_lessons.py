@@ -143,15 +143,31 @@ class Index(object):
         return out
 
     def candidate_units(self, grade, standard):
+        """A PARENT CODE IS STILL A STANDARD, and so is each of its children.
+
+        The guide indexes some lessons under NY-8.G.1 and others under
+        NY-8.G.1a, and in grade 8 those two sets share NO LESSON AT ALL --
+        parent 1.2/1.3/1.4/1.6/1.11/1.14 against child 1.7/1.8/1.9/1.10/1.13.
+        This used to take the exact code and fall back to a prefix match only
+        when the exact code was MISSING, so a sub-letter code never saw its
+        parent's lessons and vice versa.
+
+        61 remaining items were affected. The worst case is NY-8.EE.7b, whose
+        eight items had a single candidate lesson where the parent supplies four
+        more. templates/app.js already merges both directions for the site's own
+        unit filter; this brings retrieval in line with it.
+
+        Both directions, and ONLY across a sub-letter suffix: NY-6.RP.3 pairs
+        with NY-6.RP.3a but never with NY-6.RP.31 or NY-6.RP.3.Cluster-1.
+        """
         s2l = self.ref[grade]["standardToLessons"]
-        e = s2l.get(standard)
-        if not e:
-            for code, val in s2l.items():
-                if standard.startswith(code) or code.startswith(standard):
-                    e = val
-                    break
-        lessons = e["lessons"] if e else []
-        return {c.split(".")[1] for c in lessons}, set(lessons)
+        lessons = set()
+        for code, val in s2l.items():
+            if code == standard \
+                    or (code.startswith(standard) and code[len(standard):].isalpha()) \
+                    or (standard.startswith(code) and standard[len(code):].isalpha()):
+                lessons |= set(val["lessons"])
+        return {c.split(".")[1] for c in lessons}, lessons
 
     def rank(self, grade, standard, text, k=DEFAULT_K):
         """Three signals, none of which is trusted alone.
