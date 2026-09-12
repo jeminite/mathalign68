@@ -118,3 +118,31 @@ products; Lesson 13 opens the section actually called "Four Operations With Rati
 leave NY-7.NS.3's tabled units of 5 and 9, because the item takes a fraction of a quantity
 twice with no signed arithmetic anywhere in it. NYCPS's Lesson 2 is rates with fractions;
 Lesson 4 computes a fractional part of a given quantity, which is the item's step.
+
+## Units 1 and 2 -- Scale Drawings, Introducing Proportional Relationships (27 items)
+
+Agreement 72.2% -> 74.6%. One placement changed on review, and it was NYCPS's.
+
+**`g7-2024-039` -- changed, ours Lesson 2.5 -> Lesson 2.6, agreeing with NYCPS.** The item
+gives a rate in words (25 words per minute) and asks for an equation. Lesson 5's cool-down
+also gives a rate in words with two named variables, which is why the first pass chose it --
+but that cool-down HANDS the student the equation d = 50t and asks for a second one. Lesson 6
+Activity 2 asks students to write the first equation from a stated rate, which is the item.
+
+### Where NYCPS's Lesson 2.2 is cited as `introduces` rather than as the primary
+
+Five items -- `g7-2023-004`, `g7-2023-013`, `g7-2023-039`, `g7-2024-001`, `g7-2025-002`,
+`g7-2025-045` -- are placed at Lesson 3 or Lesson 7 where NYCPS cites Lesson 2. Lesson 2
+introduces proportional relationships in tables and every one of these items has a table, so
+it is cited on all of them. But Lesson 3 is titled *More About Constant of Proportionality*
+and is where the constant is asked for by name, and Lesson 7 is where a table is TESTED for
+proportionality. The items split cleanly between those two questions and Lesson 2 asks
+neither.
+
+**`g7-2023-025`, ours Lesson 13, NYCPS Lesson 4.** It is the only NY-7.RP.2c item that starts
+from a graph, and its distractors are the relationship written backwards. Lesson 13 is where a
+point, a line, a table and an equation are put on the same relationship.
+
+**`g7-2023-042`, ours Lesson 6, NYCPS Lesson 4.** The robot item does not stop at the
+equation; it then asks how many seconds to travel 11 feet. Lesson 6's goal is to use
+equations to solve problems, and Lesson 4 is cited as where the equation form arrives.

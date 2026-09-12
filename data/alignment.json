@@ -4084,6 +4084,1429 @@
         }
       ],
       "why": "3/4 of 140 students play sports and 1/7 of those are in an art club: a fraction of a quantity, applied twice. Nothing in Unit 5 asks that -- Unit 5 is signed arithmetic and this item has no negative numbers -- so the search moved to Unit 4, where Lesson 4 computes a fractional part of a given quantity and its cool-down states one quantity as a fraction of another."
+    },
+    "g7-2023-045": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 1,
+      "unitTitle": "Scale Drawings",
+      "sectionLetter": "B",
+      "sectionTitle": "Scale Drawings",
+      "primaryLesson": 7,
+      "lessonTitle": "Scale Drawings",
+      "candidateLessons": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 1 is the scale-drawing unit",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Scaling and Area",
+          "role": "introduces",
+          "activity": "Enlarged Areas",
+          "page": 106,
+          "quote": "If she increases all the sides by a scale factor of 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "practises",
+          "activity": "Sizing Up a Basketball Court",
+          "page": 116,
+          "quote": "but it says that 1 centimeter represents 2 meters"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "assessed",
+          "activity": "Length of a Bus and Width of a Lake",
+          "page": 122,
+          "quote": "the length of the school bus is 4 1/2 inches on the scale drawing"
+        }
+      ],
+      "why": "A scale drawing with its two dimensions marked in inches, a scale of 1 inch to 14 feet, and the actual area asked for. The reading goes drawing to actual, which is Lesson 7, and then to an area, which is Lesson 6. Note that Lesson 6, Scaling and Area, is marked OPTIONAL in the course guide while three released items depend on it."
+    },
+    "g7-2025-047": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 1,
+      "unitTitle": "Scale Drawings",
+      "sectionLetter": "B",
+      "sectionTitle": "Scale Drawings",
+      "primaryLesson": 7,
+      "lessonTitle": "Scale Drawings",
+      "candidateLessons": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 1 is the scale-drawing unit",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Scaling and Area",
+          "role": "introduces",
+          "activity": "Enlarged Areas",
+          "page": 106,
+          "quote": "If she increases all the sides by a scale factor of 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "practises",
+          "activity": "Sizing Up a Basketball Court",
+          "page": 116,
+          "quote": "but it says that 1 centimeter represents 2 meters"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "assessed",
+          "activity": "Length of a Bus and Width of a Lake",
+          "page": 122,
+          "quote": "the length of the school bus is 4 1/2 inches on the scale drawing"
+        }
+      ],
+      "why": "An 8 inch by 6 inch sketch at a scale of 1 inch to 1.75 feet, actual area asked for -- the same two steps as g7-2023-045, with the dimensions given in the stem rather than on a diagram."
+    },
+    "g7-2026-022": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 1,
+      "unitTitle": "Scale Drawings",
+      "sectionLetter": "B",
+      "sectionTitle": "Scale Drawings",
+      "primaryLesson": 7,
+      "lessonTitle": "Scale Drawings",
+      "candidateLessons": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 1 is the scale-drawing unit",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Scaling and Area",
+          "role": "introduces",
+          "activity": "Enlarged Areas",
+          "page": 106,
+          "quote": "If she increases all the sides by a scale factor of 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "practises",
+          "activity": "Sizing Up a Basketball Court",
+          "page": 116,
+          "quote": "but it says that 1 centimeter represents 2 meters"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Scale Drawings",
+          "role": "assessed",
+          "activity": "Length of a Bus and Width of a Lake",
+          "page": 122,
+          "quote": "the length of the school bus is 4 1/2 inches on the scale drawing"
+        }
+      ],
+      "why": "The same drawing-to-actual-area chain, but the scale is stated backwards, 1 ft to 1.5 cm, so the student must divide where the other two items multiply. That inversion is the likeliest reason this item's p-value of 0.35 is the lowest of the five NY-7.G.1 items, and it is why the unit's later lessons on how a scale can be written are worth reaching for even though the task is Lesson 7's."
+    },
+    "g7-2024-044": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 1,
+      "unitTitle": "Scale Drawings",
+      "sectionLetter": "B",
+      "sectionTitle": "Scale Drawings",
+      "primaryLesson": 9,
+      "lessonTitle": "Creating Scale Drawings",
+      "candidateLessons": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 1 is the scale-drawing unit",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "introduces",
+          "activity": "Bedroom Floor Plan",
+          "page": 138,
+          "quote": "The actual length of Wall C is 4 m. To represent Wall C"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "practises",
+          "activity": "Two Maps of Utah",
+          "page": 141,
+          "quote": "Make a scale drawing of Utah where 1 centimeter represents 50 mi."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "assessed",
+          "activity": "Drawing a Pool",
+          "page": 145,
+          "quote": "Make a scale drawing of the swimming pool where 1 centimeter represents 5 meters."
+        }
+      ],
+      "why": "A map scale of 1 centimeter to 50 miles, an actual distance of 225 miles, and the distance ON THE DRAWING asked for. That is actual-to-drawing, which is Lesson 9's direction, and its Activity 2 makes a scale drawing at 1 centimeter to 50 miles -- the item's own scale."
+    },
+    "g7-2026-037": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 1,
+      "unitTitle": "Scale Drawings",
+      "sectionLetter": "B",
+      "sectionTitle": "Scale Drawings",
+      "primaryLesson": 9,
+      "lessonTitle": "Creating Scale Drawings",
+      "candidateLessons": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 1 is the scale-drawing unit",
+      "evidence": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "introduces",
+          "activity": "Bedroom Floor Plan",
+          "page": 138,
+          "quote": "The actual length of Wall C is 4 m. To represent Wall C"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "practises",
+          "activity": "Two Maps of Utah",
+          "page": 141,
+          "quote": "Make a scale drawing of Utah where 1 centimeter represents 50 mi."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Creating Scale Drawings",
+          "role": "assessed",
+          "activity": "Drawing a Pool",
+          "page": 145,
+          "quote": "Make a scale drawing of the swimming pool where 1 centimeter represents 5 meters."
+        }
+      ],
+      "why": "Also actual-to-drawing: a court 76 4/5 feet long at 1 inch to 24 feet, asked for the drawing's length. The basketball-court context matches Lesson 7's first activity, but that activity measures a drawing to find an actual length, which is the opposite of what this item asks. Direction decided it over context."
+    },
+    "g7-2023-013": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Comparing Proportional and Nonproportional Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Comparing Relationships With Tables",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "practises",
+          "activity": "Running Laps",
+          "page": 118,
+          "quote": "The coach recorded their times at the end of laps 2, 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "assessed",
+          "activity": "Apples and Pizza",
+          "page": 123,
+          "quote": "is the cost of the apples proportional to the weight of apples?"
+        }
+      ],
+      "why": "A table of hours worked against dollars earned, with four statements to choose between; the key says it is proportional because the ratios of d to h are the same. Lesson 7 is where a table is tested for proportionality by exactly that reasoning -- Running Laps adds a pace column so the constant ratio is visible -- and the cool-down asks the question in the item's own words."
+    },
+    "g7-2025-045": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Comparing Proportional and Nonproportional Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Comparing Relationships With Tables",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "practises",
+          "activity": "Running Laps",
+          "page": 118,
+          "quote": "The coach recorded their times at the end of laps 2, 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "assessed",
+          "activity": "Apples and Pizza",
+          "page": 123,
+          "quote": "is the cost of the apples proportional to the weight of apples?"
+        }
+      ],
+      "why": "A table of cans against price, asked as a constructed response: is the relationship proportional? The cool-down of Lesson 7 asks that of a table of apples and a table of pizza, the second of which is deliberately not proportional."
+    },
+    "g7-2025-002": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "C",
+      "sectionTitle": "Comparing Proportional and Nonproportional Relationships",
+      "primaryLesson": 7,
+      "lessonTitle": "Comparing Relationships With Tables",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "practises",
+          "activity": "Running Laps",
+          "page": 118,
+          "quote": "The coach recorded their times at the end of laps 2, 4"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Comparing Relationships With Tables",
+          "role": "assessed",
+          "activity": "Apples and Pizza",
+          "page": 123,
+          "quote": "is the cost of the apples proportional to the weight of apples?"
+        }
+      ],
+      "why": "Four tables offered as the answer choices, one of which is proportional. It is the Lesson 7 cool-down's task run four times over, and Running Laps is where two tables are compared side by side for the same property."
+    },
+    "g7-2026-019": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 10,
+      "lessonTitle": "Introducing Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "T-shirts for Sale",
+          "page": 157,
+          "quote": "Is there a proportional relationship between x and y?"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Card Sort: Tables and Graphs",
+          "page": 159,
+          "quote": "Take turns with your partner to match a table with a graph."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Which Are Not Proportional",
+          "page": 163,
+          "quote": "Which graphs cannot represent a proportional relationship? Select all that apply."
+        }
+      ],
+      "why": "Four graphs as the answer choices, one proportional. Lesson 10's cool-down is that question verbatim -- which graphs cannot represent a proportional relationship -- and it is the first lesson in the unit where the graph, rather than the table, carries the judgement."
+    },
+    "g7-2026-046": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 10,
+      "lessonTitle": "Introducing Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "T-shirts for Sale",
+          "page": 157,
+          "quote": "Is there a proportional relationship between x and y?"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Card Sort: Tables and Graphs",
+          "page": 159,
+          "quote": "Take turns with your partner to match a table with a graph."
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Introducing Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Which Are Not Proportional",
+          "page": 163,
+          "quote": "Which graphs cannot represent a proportional relationship? Select all that apply."
+        }
+      ],
+      "why": "Eric's earnings as a graph beside Jenna's as a table, and the item asks which person's earnings are proportional. Lesson 10 Activity 2 is the card sort that matches tables to graphs and then asks which of the relationships are proportional, which is this item with both representations in play at once."
+    },
+    "g7-2023-004": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Proportional Relationships With Tables",
+      "primaryLesson": 3,
+      "lessonTitle": "More About Constant of Proportionality",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "practises",
+          "activity": "Centimeters and Millimeters",
+          "page": 61,
+          "quote": "b. What is the constant of proportionality?"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "assessed",
+          "activity": "Fish Tank",
+          "page": 68,
+          "quote": "Water flows into the tank at a constant rate. Complete the table"
+        }
+      ],
+      "why": "A table of days against total pages, asking how many pages are read in 1 day. That is the constant of proportionality read off a table, which Lesson 3 asks for by name in Activity 1 and again in the cool-down."
+    },
+    "g7-2023-039": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Proportional Relationships With Tables",
+      "primaryLesson": 3,
+      "lessonTitle": "More About Constant of Proportionality",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "practises",
+          "activity": "Centimeters and Millimeters",
+          "page": 61,
+          "quote": "b. What is the constant of proportionality?"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "assessed",
+          "activity": "Fish Tank",
+          "page": 68,
+          "quote": "Water flows into the tank at a constant rate. Complete the table"
+        }
+      ],
+      "why": "A table of cups of flour against cookies, asking how many cookies per cup. The same reading as g7-2023-004, and the cool-down's fish tank is the same table with a rate per minute rather than per cup."
+    },
+    "g7-2024-001": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Proportional Relationships With Tables",
+      "primaryLesson": 3,
+      "lessonTitle": "More About Constant of Proportionality",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "practises",
+          "activity": "Centimeters and Millimeters",
+          "page": 61,
+          "quote": "b. What is the constant of proportionality?"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "assessed",
+          "activity": "Fish Tank",
+          "page": 68,
+          "quote": "Water flows into the tank at a constant rate. Complete the table"
+        }
+      ],
+      "why": "A table of packages against cost, asking the cost per package. The distractors $0.31 and $9.75 are the reciprocal and a table row taken whole, which is why Activity 1's two directions -- centimetres from millimetres and millimetres from centimetres -- are the lesson that matters here."
+    },
+    "g7-2026-003": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "A",
+      "sectionTitle": "Representing Proportional Relationships With Tables",
+      "primaryLesson": 3,
+      "lessonTitle": "More About Constant of Proportionality",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Introducing Proportional Relationships With Tables",
+          "role": "introduces",
+          "activity": "Feeding a Crowd",
+          "page": 47,
+          "quote": "A recipe says that 2 cups of dry rice will serve 6 people."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "practises",
+          "activity": "Centimeters and Millimeters",
+          "page": 61,
+          "quote": "b. What is the constant of proportionality?"
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "assessed",
+          "activity": "Fish Tank",
+          "page": 68,
+          "quote": "Water flows into the tank at a constant rate. Complete the table"
+        }
+      ],
+      "why": "The item names the idea outright: which statement describes A CONSTANT OF PROPORTIONALITY for price against pounds. Lesson 3 is the lesson titled for it, and its cool-down asks for the constant in the same words."
+    },
+    "g7-2024-038": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 11,
+      "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "Tyler’s Walk",
+          "page": 169,
+          "quote": "What do the coordinates of the point tell us about the situation?"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Seagulls Eat What?",
+          "page": 172,
+          "quote": "Plot the point (1, k) on the line. What is the value"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Filling a Bucket",
+          "page": 175,
+          "quote": "How many gallons of water are in the bucket after 1 second?"
+        }
+      ],
+      "why": "A graph of total cost against weight with one point labelled, asking the cost of one pound. That is the y-value at x = 1 read from a line through the origin, which is Lesson 11 Activity 2's plot the point (1, k) and its cool-down's how many gallons after 1 second."
+    },
+    "g7-2025-014": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 11,
+      "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "Tyler’s Walk",
+          "page": 169,
+          "quote": "What do the coordinates of the point tell us about the situation?"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Seagulls Eat What?",
+          "page": 172,
+          "quote": "Plot the point (1, k) on the line. What is the value"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Filling a Bucket",
+          "page": 175,
+          "quote": "How many gallons of water are in the bucket after 1 second?"
+        }
+      ],
+      "why": "A graph of wages against hours with three points labelled, asking the wage per hour. The same (1, k) reading as g7-2024-038, with more labelled points to choose the wrong one from -- $1.57 is a labelled point's ratio taken backwards."
+    },
+    "g7-2026-035": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 13,
+      "lessonTitle": "Two Graphs for Each Relationship",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "More About Constant of Proportionality",
+          "role": "introduces",
+          "activity": "Centimeters and Millimeters",
+          "page": 61,
+          "quote": "b. What is the constant of proportionality?"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Two Graphs for Each Relationship",
+          "role": "assessed",
+          "activity": "Stickers for Sale",
+          "page": 201,
+          "quote": "How much do large stickers cost per sticker?"
+        }
+      ],
+      "why": "4 packages for $4.48, asked for the unit price -- no table and no graph, just a total and a count. Lesson 13's cool-down is the same sentence with stickers: 10 for $2.50, how much per sticker. It is the only released item on NY-7.RP.2b with no representation to read, which is why it does not share a lesson with the other six."
+    },
+    "g7-2024-021": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 4,
+      "lessonTitle": "Proportional Relationships and Equations",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "practises",
+          "activity": "Denver to Chicago",
+          "page": 79,
+          "quote": "A plane flew at a constant speed between Denver and Chicago."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "assessed",
+          "activity": "It’s Snowing in Syracuse",
+          "page": 85,
+          "quote": "Write an equation that gives the amount of snow that has fallen"
+        }
+      ],
+      "why": "A table of x and y whose y column runs in quarters, asking which equation represents it. Lesson 4 is where a table becomes an equation, and its Activity 1 walks the same step of asking for the value at x before writing the general form."
+    },
+    "g7-2025-008": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 4,
+      "lessonTitle": "Proportional Relationships and Equations",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "practises",
+          "activity": "Denver to Chicago",
+          "page": 79,
+          "quote": "A plane flew at a constant speed between Denver and Chicago."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "assessed",
+          "activity": "It’s Snowing in Syracuse",
+          "page": 85,
+          "quote": "Write an equation that gives the amount of snow that has fallen"
+        }
+      ],
+      "why": "A table of tickets against total cost, asking which equation relates them. The distractors 54 and 81 are the constant doubled and tripled, so the item turns on reading the constant correctly and then placing it -- Lesson 4's two steps."
+    },
+    "g7-2026-007": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 4,
+      "lessonTitle": "Proportional Relationships and Equations",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "practises",
+          "activity": "Denver to Chicago",
+          "page": 79,
+          "quote": "A plane flew at a constant speed between Denver and Chicago."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "assessed",
+          "activity": "It’s Snowing in Syracuse",
+          "page": 85,
+          "quote": "Write an equation that gives the amount of snow that has fallen"
+        }
+      ],
+      "why": "A table asking which equation represents it, with two additive distractors (y = x + 0.3 and y = x + 3.3) among the four. Lesson 4 is where the multiplicative form is established; the additive confusion it guards against is Lesson 7's and 8's subject."
+    },
+    "g7-2026-033": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 4,
+      "lessonTitle": "Proportional Relationships and Equations",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "practises",
+          "activity": "Denver to Chicago",
+          "page": 79,
+          "quote": "A plane flew at a constant speed between Denver and Chicago."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "assessed",
+          "activity": "It’s Snowing in Syracuse",
+          "page": 85,
+          "quote": "Write an equation that gives the amount of snow that has fallen"
+        }
+      ],
+      "why": "A table of gallons against total price, asking which equation relates p and g. Same reading as the other three table-to-equation items, and the named variables are what Lesson 4's Activity 2 sets up with t for time."
+    },
+    "g7-2024-039": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 6,
+      "lessonTitle": "Writing Equations to Represent Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Writing Equations to Represent Relationships",
+          "role": "practises",
+          "activity": "Recycling",
+          "page": 104,
+          "quote": "The weight of 10 aluminum cans is 0.16 kilograms."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Writing Equations to Represent Relationships",
+          "role": "assessed",
+          "activity": "More Recycling",
+          "page": 107,
+          "quote": "Write an equation to represent the relationship between the weight of clear glass"
+        }
+      ],
+      "why": "Marty types 25 words per minute; write an equation for w words in t minutes. First placed at Lesson 5 for its cool-down, which also gives a rate in words with two named variables -- but that cool-down HANDS the student the equation d = 50t and asks for a second one. This item asks for the first equation, from a rate, which is Lesson 6's Recycling activity. Re-derived to Lesson 6, agreeing with NYCPS. Its p-value of 0.31 is the lowest of the seven NY-7.RP.2c items."
+    },
+    "g7-2023-042": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "B",
+      "sectionTitle": "Representing Proportional Relationships With Equations",
+      "primaryLesson": 6,
+      "lessonTitle": "Writing Equations to Represent Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Writing Equations to Represent Relationships",
+          "role": "practises",
+          "activity": "Bottle Deposits",
+          "page": 102,
+          "quote": "Write an equation that relates the number of bottles to the amount"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Writing Equations to Represent Relationships",
+          "role": "assessed",
+          "activity": "More Recycling",
+          "page": 107,
+          "quote": "Write an equation to represent the relationship between the weight of clear glass"
+        }
+      ],
+      "why": "The robot item does not stop at the equation: it then asks how many seconds to travel 11 feet, so the equation has to be used. Lesson 6's goal is to USE equations to solve problems, and both its activity and its cool-down ask for a value first and the equation after. Lesson 4 would have been the placement if the item had stopped at d = 2t."
+    },
+    "g7-2023-025": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 13,
+      "lessonTitle": "Two Graphs for Each Relationship",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Proportional Relationships and Equations",
+          "role": "introduces",
+          "activity": "Feeding a Crowd, Revisited",
+          "page": 77,
+          "quote": "How many people will x cups of rice serve?"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Two Graphs for Each Relationship",
+          "role": "practises",
+          "activity": "Tables, Graphs, and Equations",
+          "page": 193,
+          "quote": "Graph the proportional relationship that is defined by your point."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Two Graphs for Each Relationship",
+          "role": "assessed",
+          "activity": "Stickers for Sale",
+          "page": 201,
+          "quote": "How much do large stickers cost per sticker?"
+        }
+      ],
+      "why": "This is the only NY-7.RP.2c item that starts from a GRAPH rather than a table or a sentence, and its distractors x = 1.5y and x = 15y are the relationship written the other way round. Lesson 13 is the lesson that puts a point, a line, a table and an equation on the same relationship, which is what the item asks the student to move between."
+    },
+    "g7-2025-033": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 11,
+      "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "Tyler’s Walk",
+          "page": 169,
+          "quote": "What do the coordinates of the point tell us about the situation?"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Seagulls Eat What?",
+          "page": 172,
+          "quote": "Plot the point (1, k) on the line. What is the value"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Filling a Bucket",
+          "page": 175,
+          "quote": "How many gallons of water are in the bucket after 1 second?"
+        }
+      ],
+      "why": "A graph of price against number of containers, asking which statement describes the unit price. Lesson 11 is the graph-reading lesson and its Activity 2 plots (1, k) and asks what k tells you about the context -- which is what the four statements here are competing to say."
+    },
+    "g7-2026-013": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 11,
+      "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "Tyler’s Walk",
+          "page": 169,
+          "quote": "What do the coordinates of the point tell us about the situation?"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Seagulls Eat What?",
+          "page": 172,
+          "quote": "Plot the point (1, k) on the line. What is the value"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Filling a Bucket",
+          "page": 175,
+          "quote": "How many gallons of water are in the bucket after 1 second?"
+        }
+      ],
+      "why": "The same reading as g7-2025-033 with gift bags: a scatter plot and four unit-rate statements. Both sit at Lesson 11 because both ask what one point on the line means, not how to compute it."
+    },
+    "g7-2026-027": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 2,
+      "unitTitle": "Introducing Proportional Relationships",
+      "sectionLetter": "D",
+      "sectionTitle": "Representing Proportional Relationships With Graphs",
+      "primaryLesson": 11,
+      "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 2 is where proportional relationships are introduced in tables, equations and graphs",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "introduces",
+          "activity": "Tyler’s Walk",
+          "page": 169,
+          "quote": "What do the coordinates of the point tell us about the situation?"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "practises",
+          "activity": "Seagulls Eat What?",
+          "page": 172,
+          "quote": "Plot the point (1, k) on the line. What is the value"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+          "role": "assessed",
+          "activity": "Filling a Bucket",
+          "page": 175,
+          "quote": "How many gallons of water are in the bucket after 1 second?"
+        }
+      ],
+      "why": "Four points are labelled on the line and the item asks which one has a y-coordinate giving the juice from 1 apple. That is the point (1, k) itself, named rather than computed -- Lesson 11 Activity 2 plots exactly that point and asks what its value means. Of the three NY-7.RP.2d items this is the one that tests the standard's own wording."
     }
   }
 }
