@@ -5507,6 +5507,1144 @@
         }
       ],
       "why": "Four points are labelled on the line and the item asks which one has a y-coordinate giving the juice from 1 apple. That is the point (1, k) itself, named rather than computed -- Lesson 11 Activity 2 plots exactly that point and asks what its value means. Of the three NY-7.RP.2d items this is the one that tests the standard's own wording."
+    },
+    "g7-2026-008": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 8,
+      "lessonTitle": "Keeping Track of All Possible Outcomes",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "How Many Different Bracelets?",
+          "page": 112,
+          "quote": "How many different bracelets are possible if each one includes 1 stone"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "practises",
+          "activity": "How Many Necklaces?",
+          "page": 116,
+          "quote": "How many different necklaces are possible? Explain your reasoning."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "assessed",
+          "activity": "Shirt Options",
+          "page": 119,
+          "quote": "How many different shirts are available with these options?"
+        }
+      ],
+      "why": "Four food items and three juices, asked for the number of combinations. Lesson 8 is the counting lesson and its warm-up and cool-down are the item three times over -- bracelets from stones, designs and sizes; shirts from size, colour and design. The distractors 3, 4 and 7 are the two counts and their sum, which is the error the lesson exists to head off."
+    },
+    "g7-2023-044": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 8,
+      "lessonTitle": "Keeping Track of All Possible Outcomes",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "How Many Different Bracelets?",
+          "page": 112,
+          "quote": "How many different bracelets are possible if each one includes 1 stone"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "practises",
+          "activity": "Lists, Tables, and Trees",
+          "page": 113,
+          "quote": "Flip a coin, and then roll a number cube."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "assessed",
+          "activity": "Shirt Options",
+          "page": 119,
+          "quote": "How many different shirts are available with these options?"
+        }
+      ],
+      "why": "A fair coin and a number cube numbered 1 to 6, asked for the number of outcomes AND for the sample space to support it. Lesson 8 Activity 1 is that experiment exactly -- flip a coin, then roll a number cube -- and it is where the sample space is written out three different ways. This is the only one of the three NY-7.SP.8b items that demands the sample space itself rather than the count."
+    },
+    "g7-2025-003": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 8,
+      "lessonTitle": "Keeping Track of All Possible Outcomes",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "How Many Different Bracelets?",
+          "page": 112,
+          "quote": "How many different bracelets are possible if each one includes 1 stone"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "practises",
+          "activity": "Lists, Tables, and Trees",
+          "page": 113,
+          "quote": "Flip a coin, and then roll a number cube."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "assessed",
+          "activity": "Shirt Options",
+          "page": 119,
+          "quote": "How many different shirts are available with these options?"
+        }
+      ],
+      "why": "Four tree diagrams offered as the answer choices, three main courses branching to two desserts. Lesson 8 Activity 1 is where the tree appears as one of three methods for a sample space, beside a list and a table. The item never computes a probability -- it only asks which tree is the right shape."
+    },
+    "g7-2023-034": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 9,
+      "lessonTitle": "Multi-Step Experiments",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "Lists, Tables, and Trees",
+          "page": 113,
+          "quote": "Flip a coin, and then roll a number cube."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "practises",
+          "activity": "Cubes and Coins",
+          "page": 126,
+          "quote": "A number cube is rolled and a coin is flipped."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "assessed",
+          "activity": "A Number Cube and 10 Cards",
+          "page": 132,
+          "quote": "What is the probability that Lin gets another turn?"
+        }
+      ],
+      "why": "Bread, meat and cheese -- 2 by 2 by 3 -- asked for the probability of one named sandwich. Lesson 9 is where a counted sample space becomes a probability, and its Cubes and Coins activity asks for the probability of one named outcome out of twelve equally likely ones, which is this item's own denominator."
+    },
+    "g7-2024-047": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 9,
+      "lessonTitle": "Multi-Step Experiments",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "Lists, Tables, and Trees",
+          "page": 113,
+          "quote": "Flip a coin, and then roll a number cube."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "practises",
+          "activity": "Cubes and Coins",
+          "page": 126,
+          "quote": "A number cube is rolled and a coin is flipped."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "assessed",
+          "activity": "A Number Cube and 10 Cards",
+          "page": 132,
+          "quote": "What is the probability that Lin gets another turn?"
+        }
+      ],
+      "why": "Movies, snacks and drinks -- 3 by 3 by 2 -- asked for the probability of one named combination, written as a fraction. The same reading as g7-2023-034 with an extra option in two of the three categories."
+    },
+    "g7-2025-041": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "B",
+      "sectionTitle": "Probabilities of Multi-Step Events",
+      "primaryLesson": 9,
+      "lessonTitle": "Multi-Step Experiments",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Keeping Track of All Possible Outcomes",
+          "role": "introduces",
+          "activity": "Lists, Tables, and Trees",
+          "page": 113,
+          "quote": "Flip a coin, and then roll a number cube."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "practises",
+          "activity": "Spinning a Color and Number",
+          "page": 125,
+          "quote": "What is the probability of getting: 1. Green (G) and 3?"
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Multi-Step Experiments",
+          "role": "assessed",
+          "activity": "A Number Cube and 10 Cards",
+          "page": 132,
+          "quote": "What is the probability that Lin gets another turn?"
+        }
+      ],
+      "why": "Two spinners, three sections and four, and the probability that the PRODUCT is odd -- so the student counts a subset of the sample space rather than one outcome. Lesson 9 Activity 1 is spinners, and its second question asks for blue and any ODD number, which is the same kind of subset. At p = 0.21 this is the hardest item on the grade 7 test, and the two other NY-7.SP.8a items are not this: they name a single outcome."
+    },
+    "g7-2024-035": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "C",
+      "sectionTitle": "Sampling",
+      "primaryLesson": 11,
+      "lessonTitle": "Comparing Groups",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "practises",
+          "activity": "Family Heights",
+          "page": 164,
+          "quote": "Compare the heights of these two families. Explain or show your reasoning."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "assessed",
+          "activity": "Prices of Homes",
+          "page": 169,
+          "quote": "Decide whether the two groups are very different or not."
+        }
+      ],
+      "why": "Two dot plots of cell phone usage, twenty teenagers and twenty adults, with four statements about means and ranges each carrying its own reason. Lesson 11 is where two groups are compared by centre and spread and where a reason has to be given -- its cool-down hands over two means and two MADs and asks whether the groups are really different."
+    },
+    "g7-2026-018": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "C",
+      "sectionTitle": "Sampling",
+      "primaryLesson": 11,
+      "lessonTitle": "Comparing Groups",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "practises",
+          "activity": "Family Heights",
+          "page": 164,
+          "quote": "Compare the heights of these two families. Explain or show your reasoning."
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "assessed",
+          "activity": "Prices of Homes",
+          "page": 169,
+          "quote": "Decide whether the two groups are very different or not."
+        }
+      ],
+      "why": "Eight tomato plants in sun and eight in shade, two dot plots, and four statements about average height and variation. The same reading as g7-2024-035, and Lesson 11's Family Heights activity is the same shape: two small groups, compare them, explain."
+    },
+    "g7-2026-014": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "C",
+      "sectionTitle": "Sampling",
+      "primaryLesson": 11,
+      "lessonTitle": "Comparing Groups",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 19,
+          "lessonTitle": "Comparing Populations With Friends",
+          "role": "practises",
+          "activity": "Features of Graphic Representations",
+          "page": 271,
+          "quote": "Which of those displays would be the easiest to use to find each feature"
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "assessed",
+          "activity": "Prices of Homes",
+          "page": 169,
+          "quote": "Decide whether the two groups are very different or not."
+        }
+      ],
+      "why": "Team A's goals as a frequency table beside Team B's as a dot plot, asked which team has the higher median. What makes it different from the other comparison items is that the two groups are given in DIFFERENT displays, so the median has to be found two ways. Lesson 19's warm-up asks precisely which display makes each measure easiest to find. Its p-value of 0.40 is the lowest of the five comparison items."
+    },
+    "g7-2023-016": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "D",
+      "sectionTitle": "Using Samples",
+      "primaryLesson": 18,
+      "lessonTitle": "Comparing Populations Using Samples",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 18,
+          "lessonTitle": "Comparing Populations Using Samples",
+          "role": "practises",
+          "activity": "Steel from Different Regions",
+          "page": 263,
+          "quote": "Here are the box plots showing the percentage of carbon in samples"
+        },
+        {
+          "lesson": 18,
+          "lessonTitle": "Comparing Populations Using Samples",
+          "role": "assessed",
+          "activity": "Teachers Watching Movies",
+          "page": 267,
+          "quote": "Noah is interested in comparing the number of movies watched by students and teachers"
+        }
+      ],
+      "why": "Two box plots and four statements about median, range, interquartile range and the second quartile. Lesson 18 Activity 3 is two box plots of carbon in steel from two regions, read for exactly those features; Lesson 11 is cited as where comparing two groups begins, with dot plots rather than box plots."
+    },
+    "g7-2025-035": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "D",
+      "sectionTitle": "Using Samples",
+      "primaryLesson": 18,
+      "lessonTitle": "Comparing Populations Using Samples",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 18,
+          "lessonTitle": "Comparing Populations Using Samples",
+          "role": "practises",
+          "activity": "Steel from Different Regions",
+          "page": 263,
+          "quote": "Here are the box plots showing the percentage of carbon in samples"
+        },
+        {
+          "lesson": 18,
+          "lessonTitle": "Comparing Populations Using Samples",
+          "role": "assessed",
+          "activity": "Teachers Watching Movies",
+          "page": 267,
+          "quote": "Noah is interested in comparing the number of movies watched by students and teachers"
+        }
+      ],
+      "why": "Two box plots of typing speed and the difference between their medians. It shares Lesson 18 with g7-2023-016 because both read features off a pair of box plots, but this one computes a difference where the other chooses among statements."
+    },
+    "g7-2026-045": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 7,
+      "unitTitle": "Probability and Sampling",
+      "sectionLetter": "D",
+      "sectionTitle": "Using Samples",
+      "primaryLesson": 16,
+      "lessonTitle": "Estimating Population Proportions",
+      "candidateLessons": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        16,
+        18,
+        19
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 7 Unit 7 is the probability and sampling unit",
+      "evidence": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Comparing Groups",
+          "role": "introduces",
+          "activity": "More Team Heights",
+          "page": 161,
+          "quote": "Make dot plots to compare the heights of the tennis and badminton teams."
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Estimating Population Proportions",
+          "role": "practises",
+          "activity": "A New Comic Book Hero",
+          "page": 234,
+          "quote": "What proportion of this sample wants the new hero"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Estimating Population Proportions",
+          "role": "assessed",
+          "activity": "More than 48 Grams",
+          "page": 241,
+          "quote": "What proportion of the reactions are above the 48 grams threshold?"
+        }
+      ],
+      "why": "A table of favourite flavours from a sample, used to predict how many of 120 sixth graders would say chocolate. That is a sample proportion scaled to a population, which is Lesson 16's whole subject. The standard cited is NY-6.SP.7, a grade 6 code, but the grade 7 course guide is what teaches it -- grade 7 Unit 7 carries the grade 6 probability and statistics cluster, so the home-grade rule points here and not at the grade 6 book. At p = 0.37 it is among the hardest items on the test."
+    },
+    "g7-2026-030": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "A",
+      "sectionTitle": "Data, Variability, and Statistical Questions",
+      "primaryLesson": 1,
+      "lessonTitle": "Got Data?",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
+      "evidence": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Got Data?",
+          "role": "introduces",
+          "activity": "Dots of Data",
+          "page": 27,
+          "quote": "Determine if each of these would be an appropriate label to represent the data"
+        },
+        {
+          "lesson": 1,
+          "lessonTitle": "Got Data?",
+          "role": "assessed",
+          "activity": "What’s the Question?",
+          "page": 36,
+          "quote": "Would each survey question produce categorical data or numerical data?"
+        }
+      ],
+      "why": "Nine cat weights on a dot plot, asked which label correctly identifies the unit of measurement, with 'number of cats', 'years', 'inches' and 'pounds' offered. The very first warm-up of the grade 6 unit is that task: a dot plot with candidate labels, including 'Weight of elephants, in pounds' and 'Number of children per class'. Nothing later in the unit asks it again."
+    },
+    "g7-2023-031": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "B",
+      "sectionTitle": "Dot Plots and Histograms",
+      "primaryLesson": 4,
+      "lessonTitle": "Dot Plots",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Representing Data Graphically",
+          "role": "introduces",
+          "activity": "Estimating Caps",
+          "page": 59,
+          "quote": "Look at the dot plot that shows the data from your class."
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dot Plots",
+          "role": "practises",
+          "activity": "Homework Time",
+          "page": 78,
+          "quote": "This dot plot shows the number of hours per week that these 25"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Dot Plots",
+          "role": "assessed",
+          "activity": "Family Size",
+          "page": 82,
+          "quote": "How many students responded to the questions?"
+        }
+      ],
+      "why": "A dot plot of hits by players, asked how many players are represented -- the count of dots, not a value read off the axis, which is why 7 and 3 are offered as distractors. Lesson 4's cool-down asks that question in the same words of a dot plot of family sizes."
+    },
+    "g7-2025-039": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "B",
+      "sectionTitle": "Dot Plots and Histograms",
+      "primaryLesson": 6,
+      "lessonTitle": "Interpreting Histograms",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Interpreting Histograms",
+          "role": "introduces",
+          "activity": "Dog Show (Part 2)",
+          "page": 99,
+          "quote": "Here is a histogram that shows some dog weights in pounds."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Using Histograms to Answer Statistical Questions",
+          "role": "practises",
+          "activity": "Measuring Earthworms",
+          "page": 114,
+          "quote": "the lengths, in millimeters, of 25 earthworms in one of the containers"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Using Histograms to Answer Statistical Questions",
+          "role": "assessed",
+          "activity": "A Tale of Two Seasons",
+          "page": 122,
+          "quote": "The two histograms show the points scored per game by a basketball player"
+        }
+      ],
+      "why": "The same count as g7-2023-031 but from a HISTOGRAM, so the student adds bar heights rather than counting dots. That is why it is at Lesson 6 and not Lesson 4: Lesson 6 is where a bar is explained as holding every value in its interval."
+    },
+    "g7-2024-007": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "D",
+      "sectionTitle": "Median and IQR",
+      "primaryLesson": 14,
+      "lessonTitle": "Comparing Mean and Median",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Using Dot Plots to Answer Statistical Questions",
+          "role": "introduces",
+          "activity": "Packs on Backs",
+          "page": 86,
+          "quote": "The dot plot shows several dots at 0 kilograms."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Describing Distributions on Histograms",
+          "role": "practises",
+          "activity": "Card Sort: Sorting Histograms",
+          "page": 127,
+          "quote": "Sort the histograms into 2 groups based on whether they are approximately symmetrical"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Comparing Mean and Median",
+          "role": "assessed",
+          "activity": "The Tallest and the Smallest in the World",
+          "page": 218,
+          "quote": "Suppose that the world’s tallest adult, who is 251 centimeters tall"
+        }
+      ],
+      "why": "Four statements about a dot plot's distribution -- symmetrical, a range of 25, an outlier, a cluster -- of which the outlier is true. Lesson 8's card sort is where symmetry becomes a way of describing a distribution, and Lesson 14 Activity 1 is the ONE place in the whole grade 6 unit where an outlier is put into a data set on purpose. The unit teaches outliers only through what they do to the mean against the median, never as a feature to spot, which is worth a teacher knowing before this item."
+    },
+    "g7-2023-009": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "D",
+      "sectionTitle": "Median and IQR",
+      "primaryLesson": 13,
+      "lessonTitle": "Median",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "home-grade rule: the standard is a grade 6 code and grade 6 Unit 8 teaches it, although the item sits on the grade 7 test -- all of grade 6's statistics is post-test and is assessed a year later",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Median",
+          "role": "practises",
+          "activity": "Siblings in the House",
+          "page": 208,
+          "quote": "Here are data that show the numbers of siblings of ten students"
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Comparing Mean and Median",
+          "role": "assessed",
+          "activity": "The Tallest and the Smallest in the World",
+          "page": 218,
+          "quote": "Find the median height in centimeters. Show your reasoning."
+        }
+      ],
+      "why": "Ten science scores, asked for the mode and how it compares to the median. Lesson 13 is the median lesson and its activity is ten values of the same shape. The mode is Lesson 9's subject, but see the caveat: the lesson-detail index holds only one activity for Lesson 9 and two for Lesson 13, which is thin for ordinary lessons, so the evidence here is weaker than elsewhere in this batch and the placement should be re-read once the index is rebuilt."
+    },
+    "g7-2024-014": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "D",
+      "sectionTitle": "Median and IQR",
+      "primaryLesson": 16,
+      "lessonTitle": "Box Plots",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "read against the item, not the registry: NY-7.SP.1 carries no statement and NYSED's own chart gives it the comparative-inferences cluster, a defect recorded in blueprint.json. Both its items are box-plot readings, which grade 6 Unit 8 section D teaches",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Quartiles and Interquartile Range",
+          "role": "introduces",
+          "activity": "Range and Interquartile Range",
+          "page": 235,
+          "quote": "Write the five-number summary for this data set. Show your reasoning."
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Box Plots",
+          "role": "practises",
+          "activity": "Studying Blinks",
+          "page": 248,
+          "quote": "The number of times each person blinked while watching a video for one minute"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Box Plots",
+          "role": "assessed",
+          "activity": "Boxes and Dots",
+          "page": 252,
+          "quote": "Here are two box plots that summarize two data sets."
+        }
+      ],
+      "why": "A box plot and the interquartile range asked for directly. Lesson 15 builds the five-number summary and names the IQR; Lesson 16 is where those five numbers become the picture the item shows, and its cool-down compares the IQR of two box plots."
+    },
+    "g7-2026-038": {
+      "course": "Imagine IM New York, Grade 6",
+      "unit": 8,
+      "unitTitle": "Data Sets and Distributions",
+      "sectionLetter": "D",
+      "sectionTitle": "Median and IQR",
+      "primaryLesson": 16,
+      "lessonTitle": "Box Plots",
+      "candidateLessons": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "read against the item, not the registry: NY-7.SP.1 carries no statement and NYSED's own chart gives it the comparative-inferences cluster, a defect recorded in blueprint.json. Both its items are box-plot readings, which grade 6 Unit 8 section D teaches",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Comparing Mean and Median",
+          "role": "introduces",
+          "activity": "The Tallest and the Smallest in the World",
+          "page": 218,
+          "quote": "Suppose that the world’s tallest adult, who is 251 centimeters tall"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Box Plots",
+          "role": "practises",
+          "activity": "Studying Blinks",
+          "page": 248,
+          "quote": "The number of times each person blinked while watching a video for one minute"
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Box Plots",
+          "role": "assessed",
+          "activity": "Boxes and Dots",
+          "page": 252,
+          "quote": "Here are two box plots that summarize two data sets."
+        }
+      ],
+      "why": "A box plot with one point plotted apart from it, asking what is true about the value 23. The key is that it lies an unusual distance from the rest -- an outlier drawn outside the whisker. Lesson 16's Studying Blinks data ends 36, 51, which is that shape in a data set, and Lesson 14 is where an unusually distant value is first put in front of students. Neither shows an outlier drawn separately on a box plot, and this item shares that gap with g7-2024-007."
+    },
+    "g7-2023-001": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        9,
+        10,
+        13
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2023-001 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.NS.2c is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g7-2023-002": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2023-002 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.EE.3 is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g7-2023-017": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2023-017 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.EE.4a is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g7-2023-018": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        7,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2023-018 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.NS.3 is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g7-2024-030": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 6,
+      "unitTitle": "Expressions, Equations, and Inequalities",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        5,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2024-030 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.EE.4b is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
+    },
+    "g7-2024-031": {
+      "course": "Imagine IM New York, Grade 7",
+      "unit": 5,
+      "unitTitle": "Rational Number Arithmetic",
+      "sectionLetter": null,
+      "sectionTitle": null,
+      "primaryLesson": null,
+      "lessonTitle": null,
+      "candidateLessons": [
+        7,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "candidates-only",
+      "draft": true,
+      "unitBasis": "course guide table only. This item has no transcription: build_pagemap.py could not determine its page, so no stem was ever extracted and there is no item text to judge a lesson against.",
+      "evidence": [],
+      "why": "Alignment in this project is per item, and a per-item judgement needs the item. g7-2024-031 is one of the nine released items whose PDF page is undetermined, so it carries no question text on the site either. The unit is recorded because the standard NY-7.NS.3 is taught there and the course guide table names the right unit 96.3% of the time; the lesson is left open rather than guessed. If the page map ever resolves this item, it should be aligned like any other."
     }
   }
 }

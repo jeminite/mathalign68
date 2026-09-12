@@ -146,3 +146,38 @@ point, a line, a table and an equation are put on the same relationship.
 **`g7-2023-042`, ours Lesson 6, NYCPS Lesson 4.** The robot item does not stop at the
 equation; it then asks how many seconds to travel 11 feet. Lesson 6's goal is to use
 equations to solve problems, and Lesson 4 is cited as where the equation form arrives.
+
+## Unit 7 and grade 6 Unit 8 -- probability, sampling and data (19 items)
+
+Agreement 74.6% -> 72.8%. Four differences retained, and all four are NYCPS citing a lesson
+about a different activity than the item performs.
+
+**`g7-2023-034` and `g7-2024-047`, ours Lesson 7.9, NYCPS Lessons 7.3 and 7.4.** Both items
+give three independent choices and ask for the probability of one named combination. NYCPS
+cites *What Are Probabilities?*, which is single-step probability (a letter selected at
+random), and *Estimating Probabilities through Repeated Experiments*, which is experimental
+probability from trials. Neither is a multi-step theoretical probability, which is Lesson 9.
+
+**`g7-2024-014`, ours grade 6 Lesson 8.16, NYCPS grade 7 Lesson 7.18 -- a different grade.**
+The item shows ONE box plot and asks for its interquartile range. NYCPS cites *Comparing
+Populations Using Samples*, which compares two box plots drawn from samples; the item has no
+comparison and no sample in it. Quartiles, IQR and box plots are built in grade 6 Unit 8
+section D, which is where the home-grade rule sends it.
+
+**`g7-2024-007`, ours grade 6 Lesson 8.14, NYCPS grade 7 Lesson 7.13 -- a different grade.**
+NYCPS cites *What Makes a Good Sample?*. Mr. Moore's data is his whole class, not a sample,
+and the item asks which statement about the distribution is true. Retained in grade 6 Unit 8,
+where distributions are described -- but see the caveat in the entry: the only place in that
+unit where an outlier is put in front of students is Lesson 14, and it is there to show what
+an outlier does to the mean against the median, not as a feature to spot.
+
+### A caveat about two of these placements
+
+`g7-2023-009` cites Lesson 6.8.13, and the lesson-detail index holds only two activities for
+it and one for Lesson 6.8.9, the mode lesson. Ordinary lessons in this curriculum carry four
+or five. Twenty-eight of the 427 indexed lessons are this thin and most are Unit 9 project
+lessons, which genuinely are -- but grade 6 Unit 8's Lessons 8, 9, 10, 12 and 13 are not
+project lessons, and spot-checking the teacher guide shows activity text present on pages the
+index did not attribute to an activity. `validate_im_ms_lesson_detail.py` only requires each
+lesson to have AT LEAST ONE activity, so it passes. This needs fixing before grade 6 is swept,
+since it is grade 6 Unit 8's own items that would be judged against it.
