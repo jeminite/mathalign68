@@ -8442,6 +8442,1182 @@
         }
       ],
       "why": "Distance against time with four labelled segments, asking which show Sean resting. Resting is the flat segment, so this is g8-2025-044's reading with the segments named for the student. At p = 0.35 it is harder than its twin, which is worth noticing: naming the segments did not make it easier."
+    },
+    "g8-2023-039": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "C",
+      "sectionTitle": "Side Lengths and Volumes of Cubes",
+      "primaryLesson": 15,
+      "lessonTitle": "Cube Roots",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Edge Lengths and Volumes",
+          "role": "introduces",
+          "activity": "Name That Edge Length!",
+          "page": 171,
+          "quote": "Fill in the missing values using the information provided"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "practises",
+          "activity": "Cube Root Values",
+          "page": 179,
+          "quote": "The value of a cube root of a number lies between two integers."
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "assessed",
+          "activity": "Different Types of Roots",
+          "page": 182,
+          "quote": "Where should √49 actually be on the number line?"
+        }
+      ],
+      "why": "x cubed equals 125, solve for x. Lesson 15 is the cube-root lesson and its cool-down plots cube roots beside square roots; Lesson 14 is cited for where an edge length is first recovered from a volume."
+    },
+    "g8-2024-012": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "C",
+      "sectionTitle": "Side Lengths and Volumes of Cubes",
+      "primaryLesson": 15,
+      "lessonTitle": "Cube Roots",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Edge Lengths and Volumes",
+          "role": "introduces",
+          "activity": "Name That Edge Length!",
+          "page": 171,
+          "quote": "Fill in the missing values using the information provided"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "practises",
+          "activity": "Cube Root Values",
+          "page": 179,
+          "quote": "The value of a cube root of a number lies between two integers."
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "assessed",
+          "activity": "Different Types of Roots",
+          "page": 182,
+          "quote": "Where should √49 actually be on the number line?"
+        }
+      ],
+      "why": "x cubed equals 64, given four choices. The same cube root as g8-2023-039, and at p = 0.79 much easier for being multiple choice."
+    },
+    "g8-2026-033": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "C",
+      "sectionTitle": "Side Lengths and Volumes of Cubes",
+      "primaryLesson": 15,
+      "lessonTitle": "Cube Roots",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Edge Lengths and Volumes",
+          "role": "introduces",
+          "activity": "Name That Edge Length!",
+          "page": 171,
+          "quote": "Fill in the missing values using the information provided"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "practises",
+          "activity": "Cube Root Values",
+          "page": 179,
+          "quote": "The value of a cube root of a number lies between two integers."
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Cube Roots",
+          "role": "assessed",
+          "activity": "Different Types of Roots",
+          "page": 182,
+          "quote": "Where should √49 actually be on the number line?"
+        }
+      ],
+      "why": "x cubed equals 8. The third cube-root item, and the easiest of the sweep at p = 0.84."
+    },
+    "g8-2024-040": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 3,
+      "lessonTitle": "Square Roots",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Square Roots",
+          "role": "introduces",
+          "activity": "Side Lengths and Areas of Squares",
+          "page": 50,
+          "quote": "Complete the tables with the missing side lengths and areas."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Square Roots",
+          "role": "practises",
+          "activity": "Comparing Areas of Squares",
+          "page": 52,
+          "quote": "Find the area of each square and estimate their side lengths."
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Square Roots",
+          "role": "assessed",
+          "activity": "What Is the Side Length?",
+          "page": 54,
+          "quote": "Write the exact value of the side length of a square"
+        }
+      ],
+      "why": "A square garden of area 324 square feet, asking the side length. Lesson 3's cool-down asks for the side length of a square given its area in those words. At p = 0.22 it is the hardest item in the sweep, and the contrast with the cube-root items is worth noting: those give a perfect cube in an equation, this gives an area in a context and expects 18."
+    },
+    "g8-2025-042": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "introduces",
+          "activity": "Looking for a Solution",
+          "page": 62,
+          "quote": "Are any of these numbers a solution to the equation"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "practises",
+          "activity": "Looking for √2",
+          "page": 63,
+          "quote": "A rational number is a number that can be expressed as a"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "assessed",
+          "activity": "Types of Solutions",
+          "page": 66,
+          "quote": "In your own words, say what a rational number is."
+        }
+      ],
+      "why": "Classify the square root of 1.44 as rational or irrational. It is rational -- 1.2 -- which is the trap, since a decimal under a radical looks irrational. Lesson 4 is where that distinction is drawn."
+    },
+    "g8-2023-035": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "introduces",
+          "activity": "Looking for a Solution",
+          "page": 62,
+          "quote": "Are any of these numbers a solution to the equation"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "practises",
+          "activity": "Looking for √2",
+          "page": 63,
+          "quote": "A rational number is a number that can be expressed as a"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "assessed",
+          "activity": "Types of Solutions",
+          "page": 66,
+          "quote": "In your own words, say what a rational number is."
+        }
+      ],
+      "why": "The square root of 50, with four statements about why it is rational or irrational. The key cites a non-repeating, non-terminating decimal, which is Lesson 4's own definition."
+    },
+    "g8-2024-047": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "introduces",
+          "activity": "Looking for a Solution",
+          "page": 62,
+          "quote": "Are any of these numbers a solution to the equation"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "practises",
+          "activity": "Looking for √2",
+          "page": 63,
+          "quote": "A rational number is a number that can be expressed as a"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "assessed",
+          "activity": "Types of Solutions",
+          "page": 66,
+          "quote": "In your own words, say what a rational number is."
+        }
+      ],
+      "why": "A list of numbers to classify, with the reasoning required. Lesson 4's cool-down asks for a definition of each kind in the student's own words plus three examples, which is this item with the list supplied. At p = 0.23 it is among the hardest here."
+    },
+    "g8-2025-015": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "introduces",
+          "activity": "Looking for a Solution",
+          "page": 62,
+          "quote": "Are any of these numbers a solution to the equation"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "practises",
+          "activity": "Looking for √2",
+          "page": 63,
+          "quote": "A rational number is a number that can be expressed as a"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "assessed",
+          "activity": "Types of Solutions",
+          "page": 66,
+          "quote": "In your own words, say what a rational number is."
+        }
+      ],
+      "why": "Which number to remove so the set holds only rationals -- the square root of 5. Same distinction as the other three, asked as a removal."
+    },
+    "g8-2026-005": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "introduces",
+          "activity": "Looking for a Solution",
+          "page": 62,
+          "quote": "Are any of these numbers a solution to the equation"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "practises",
+          "activity": "Looking for √2",
+          "page": 63,
+          "quote": "A rational number is a number that can be expressed as a"
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Rational and Irrational Numbers",
+          "role": "assessed",
+          "activity": "Types of Solutions",
+          "page": 66,
+          "quote": "In your own words, say what a rational number is."
+        }
+      ],
+      "why": "Which value is irrational, with pi as the key against 0, root 9 and a third. Root 9 is the distractor that matters, and it is the one Lesson 4's Looking for a Solution prepares."
+    },
+    "g8-2026-038": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 5,
+      "lessonTitle": "Square Roots on the Number Line",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Square Roots on the Number Line",
+          "role": "introduces",
+          "activity": "Square Root of 3",
+          "page": 73,
+          "quote": "Find a point on the number line that"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Reasoning About Square Roots",
+          "role": "practises",
+          "activity": "Solutions on a Number Line",
+          "page": 83,
+          "quote": "Plot x, y, and z on the number line."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Square Roots on the Number Line",
+          "role": "assessed",
+          "activity": "√_ Approximating 18",
+          "page": 77,
+          "quote": "Plot √ 18 on the -axis."
+        }
+      ],
+      "why": "Four points on a number line, asking which best approximates the square root of 10. Lesson 5 is the lesson that puts a square root ON the number line, and its cool-down plots one."
+    },
+    "g8-2025-037": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 5,
+      "lessonTitle": "Square Roots on the Number Line",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Square Roots on the Number Line",
+          "role": "introduces",
+          "activity": "Square Root of 3",
+          "page": 73,
+          "quote": "Find a point on the number line that"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Reasoning About Square Roots",
+          "role": "practises",
+          "activity": "Solutions on a Number Line",
+          "page": 83,
+          "quote": "Plot x, y, and z on the number line."
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Square Roots on the Number Line",
+          "role": "assessed",
+          "activity": "√_ Approximating 18",
+          "page": 77,
+          "quote": "Plot √ 18 on the -axis."
+        }
+      ],
+      "why": "Four number lines as the answer choices, for the sum of two square roots. The same plotting as g8-2026-038 with a sum to evaluate first."
+    },
+    "g8-2024-037": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "A",
+      "sectionTitle": "Side Lengths and Areas of Squares",
+      "primaryLesson": 6,
+      "lessonTitle": "Reasoning About Square Roots",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Square Roots on the Number Line",
+          "role": "introduces",
+          "activity": "Square Root of 3",
+          "page": 73,
+          "quote": "Find a point on the number line that"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Reasoning About Square Roots",
+          "role": "practises",
+          "activity": "Square Root Values",
+          "page": 82,
+          "quote": "The value of a square root of a number lies between two consecutive whole numbers."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Reasoning About Square Roots",
+          "role": "assessed",
+          "activity": "Betweens",
+          "page": 85,
+          "quote": "Which of the following numbers are greater than 6 and less than 8?"
+        }
+      ],
+      "why": "Which interval the square root of 2 falls in, and which end it is nearer. Lesson 6 is specifically about bounding a square root between consecutive whole numbers and reasoning about where inside; Lesson 5 places it, Lesson 6 argues about it."
+    },
+    "g8-2023-044": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 10,
+      "lessonTitle": "The Converse",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "introduces",
+          "activity": "Proving the Converse",
+          "page": 128,
+          "quote": "Here are three triangles with two side lengths measuring 3 and 4 units"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "practises",
+          "activity": "Calculating Legs of Right Triangles",
+          "page": 131,
+          "quote": "find the unknown leg lengths to the nearest tenth"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "assessed",
+          "activity": "Is It a Right Triangle?",
+          "page": 134,
+          "quote": "The triangle has side lengths 7, 10, and 12. Is it a right triangle?"
+        }
+      ],
+      "why": "Side lengths 8, 10 and 13, asking whether the triangle is right and requiring the Pythagorean theorem in the answer. Lesson 10's cool-down is that question with different numbers."
+    },
+    "g8-2024-030": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 10,
+      "lessonTitle": "The Converse",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "introduces",
+          "activity": "Proving the Converse",
+          "page": 128,
+          "quote": "Here are three triangles with two side lengths measuring 3 and 4 units"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "practises",
+          "activity": "Calculating Legs of Right Triangles",
+          "page": 131,
+          "quote": "find the unknown leg lengths to the nearest tenth"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "assessed",
+          "activity": "Is It a Right Triangle?",
+          "page": 134,
+          "quote": "The triangle has side lengths 7, 10, and 12. Is it a right triangle?"
+        }
+      ],
+      "why": "Which of four lists could be the sides of a right triangle. The converse again, run over four candidates rather than one."
+    },
+    "g8-2026-007": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 10,
+      "lessonTitle": "The Converse",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "introduces",
+          "activity": "Proving the Converse",
+          "page": 128,
+          "quote": "Here are three triangles with two side lengths measuring 3 and 4 units"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "practises",
+          "activity": "Calculating Legs of Right Triangles",
+          "page": 131,
+          "quote": "find the unknown leg lengths to the nearest tenth"
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Converse",
+          "role": "assessed",
+          "activity": "Is It a Right Triangle?",
+          "page": 134,
+          "quote": "The triangle has side lengths 7, 10, and 12. Is it a right triangle?"
+        }
+      ],
+      "why": "Which EQUATION proves the triangle is right -- so the item wants the statement of the converse rather than its verdict. Lesson 10's first activity is where the converse is argued into existence."
+    },
+    "g8-2025-047": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "introduces",
+          "activity": "Notice and Wonder: A Square and Four Triangles",
+          "page": 105,
+          "quote": "What do you notice? What do you wonder?"
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "practises",
+          "activity": "Adding Up Areas",
+          "page": 106,
+          "quote": "Both figures shown here are squares with a side length of a + b."
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "assessed",
+          "activity": "What Is the Hypotenuse?",
+          "page": 113,
+          "quote": "Find the length of the hypotenuse in a right triangle if a is 5 cm"
+        }
+      ],
+      "why": "A diagram with squares on each side of a right triangle, a student's erroneous working, and the error to be found and corrected. This is the only item in the sweep about WHY the theorem is true rather than how to use it, so it sits at Lesson 8, the proof, and not at Lesson 10 with the other three NY-8.G.6 items."
+    },
+    "g8-2023-040": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "introduces",
+          "activity": "Let’s Take It for a Spin",
+          "page": 110,
+          "quote": "Find the unknown side lengths in these right triangles."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "practises",
+          "activity": "Find the Missing Side Lengths",
+          "page": 120,
+          "quote": "A right triangle has sides of length 2.4 cm and 6.5 cm."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "assessed",
+          "activity": "Could Be the Hypotenuse, Could Be a Leg",
+          "page": 122,
+          "quote": "A right triangle has sides of length 3, 4, and x."
+        }
+      ],
+      "why": "A right angle at F, legs 9 and 12, asking for DE. Lesson 9 is the find-the-missing-side lesson and its second activity is a list of exactly these. NOTE ON THE STEM: the segment overbars on DF, FE and DE are published as repeating-decimal marks, so the stem reads 'DF-repeating'. The placement is unaffected."
+    },
+    "g8-2026-035": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "introduces",
+          "activity": "Let’s Take It for a Spin",
+          "page": 110,
+          "quote": "Find the unknown side lengths in these right triangles."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "practises",
+          "activity": "Find the Missing Side Lengths",
+          "page": 120,
+          "quote": "A right triangle has sides of length 2.4 cm and 6.5 cm."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "assessed",
+          "activity": "Could Be the Hypotenuse, Could Be a Leg",
+          "page": 122,
+          "quote": "A right triangle has sides of length 3, 4, and x."
+        }
+      ],
+      "why": "A store 12 miles north and a gas station 16 miles east of one home, asking the distance between them -- a right triangle in a context, with the right angle at the home. Same reading as g8-2023-040 with the triangle described rather than named."
+    },
+    "g8-2025-007": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 8,
+          "lessonTitle": "A Proof of the Pythagorean Theorem",
+          "role": "introduces",
+          "activity": "Let’s Take It for a Spin",
+          "page": 110,
+          "quote": "Find the unknown side lengths in these right triangles."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "practises",
+          "activity": "Which One Is the Hypotenuse?",
+          "page": 118,
+          "quote": "Label all the hypotenuses with c."
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Finding Unknown Side Lengths",
+          "role": "assessed",
+          "activity": "Could Be the Hypotenuse, Could Be a Leg",
+          "page": 122,
+          "quote": "A right triangle has sides of length 3, 4, and x."
+        }
+      ],
+      "why": "A kite on 20 feet of string held 4 feet up, asking which EQUATION finds x. The item never solves anything -- it turns on knowing that the 20-foot string is the hypotenuse and that the 4 feet must come off the height. Lesson 9's first activity is labelling which side is the hypotenuse, which is exactly the distinction the distractors test."
+    },
+    "g8-2023-008": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 13,
+      "lessonTitle": "Finding Distances in the Coordinate Plane",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "introduces",
+          "activity": "Closest Distance",
+          "page": 156,
+          "quote": "Order the following pairs of coordinates from closest to farthest apart."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "practises",
+          "activity": "How Far Apart?",
+          "page": 157,
+          "quote": "Find the distances between the three points shown."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "assessed",
+          "activity": "Lengths of Line Segments",
+          "page": 162,
+          "quote": "Calculate the exact lengths of segments e and f."
+        }
+      ],
+      "why": "Two plotted points, asking the distance between them. Lesson 13 is the coordinate-distance lesson. The distractors are instructive: root 145 and root 185 are what a student gets from the wrong pair of differences, and at p = 0.34 many found them."
+    },
+    "g8-2024-041": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 7,
+      "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+      "sectionLetter": "B",
+      "sectionTitle": "The Pythagorean Theorem",
+      "primaryLesson": 13,
+      "lessonTitle": "Finding Distances in the Coordinate Plane",
+      "candidateLessons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 7 in the NEW YORK edition is Pythagorean Theorem and Irrational Numbers. NYCPS files these items under its 'Unit 8' because its sheets use the national numbering, where the two units are swapped -- resolve by title",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "introduces",
+          "activity": "Closest Distance",
+          "page": 156,
+          "quote": "Order the following pairs of coordinates from closest to farthest apart."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "practises",
+          "activity": "How Far Apart?",
+          "page": 157,
+          "quote": "Find the distances between the three points shown."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Finding Distances in the Coordinate Plane",
+          "role": "assessed",
+          "activity": "Lengths of Line Segments",
+          "page": 162,
+          "quote": "Calculate the exact lengths of segments e and f."
+        }
+      ],
+      "why": "A segment drawn on a plane, asking its length -- the same reading as g8-2023-008 with the coordinates to be read off the graph rather than given. At p = 0.19 it is the hardest item in the whole sweep, and having to read the endpoints is the likeliest reason."
     }
   }
 }
