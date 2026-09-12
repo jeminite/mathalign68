@@ -576,9 +576,17 @@ def derived_unit_filter(payload):
 
     # The caveat has to ship with the filter. A unit dropdown with no note beside
     # it reads as an alignment, which is exactly what this is not.
+    #
+    # Matched on the two load-bearing words rather than the whole sentence: the
+    # first version of this check pinned the exact wording, so re-wording the
+    # caveat to say that a JUDGED placement now exists for some items failed the
+    # deploy even though the caveat was still there and had got better. A check
+    # should hold the property, not the prose.
     html = open(os.path.join(SITE, "index.html")).read()
-    check("the derived-unit caveat ships with the filter",
-          "derived from the standard, not assigned per item" in html)
+    caveat = re.search(r"derived from the standard, not (assigned|judged) per item", html)
+    check("the derived-unit caveat ships with the filter", bool(caveat),
+          "no sentence in the built page says the filter's unit is derived rather "
+          "than judged per item")
     for line in coverage:
         print("        %s" % line)
 

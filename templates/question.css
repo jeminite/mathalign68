@@ -85,3 +85,30 @@
   .qfig img { border-color: #ccc }
   .choice { break-inside: avoid }
 }
+
+/* The judged per-item placement. Deliberately quieter than the question
+   itself: it is one teacher's reading, and the question and NYSED's own data
+   above it are not. */
+.align {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--rule, #d7dbe0);
+  background: var(--soft, #f7f8fa);
+  border-radius: 0 6px 6px 0;
+}
+.align-head { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.align-where { font-weight: 600; font-size: 13px; }
+.align-lesson { font-size: 13px; }
+.align-ev { margin: 8px 0 6px; padding-left: 0; list-style: none; }
+.align-ev li { margin: 5px 0; font-size: 13px; line-height: 1.45; }
+.align-role {
+  display: inline-block; min-width: 74px; margin-right: 6px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+  opacity: .7; cursor: help;
+}
+.align-cite { }
+.align-quote { margin: 2px 0 0 80px; opacity: .8; font-style: italic; }
+@media (max-width: 560px) {
+  .align-role { min-width: 0; display: block; margin-bottom: 1px; }
+  .align-quote { margin-left: 0; }
+}

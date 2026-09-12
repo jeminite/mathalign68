@@ -666,12 +666,72 @@
       box.appendChild(ans);
     }
 
+    var placement = alignmentBlock(i);
+    if (placement) box.appendChild(placement);
+
     var foot = el("div", "row");
     foot.style.marginTop = "12px";
     var link = pdfLink(i, "Check this item in the official PDF"
                           + (i.pdfPage ? " (page " + i.pdfPage + ")" : ""));
     foot.appendChild(link);
     box.appendChild(foot);
+    return box;
+  }
+
+  /* ---------------------------------------------- the per-item alignment
+
+     This shows the JUDGED placement, which is a different thing from the
+     "Taught in" column elsewhere on the site. That column is DERIVED -- it
+     lists every unit whose lessons teach the item's standard. This is one
+     teacher's reading of what the item actually asks, and it names the
+     activity and page so a reader can check it rather than take it on trust.
+
+     Drafted entries never arrive here: build/payload.py drops them, so an
+     item with no reviewed placement simply has no block. */
+
+  var ROLE_NOTE = {
+    introduces: "where the idea or method first appears",
+    practises: "an activity or practice problem applying it",
+    assessed: "where the curriculum itself tests the skill"
+  };
+
+  function alignmentBlock(i) {
+    if (!i.unit && !i.lesson) return null;
+    var box = el("div", "align");
+
+    var head = el("div", "align-head");
+    var where = i.course + " \u00b7 Unit " + i.unit +
+                (i.unitTitle ? " " + i.unitTitle : "");
+    head.appendChild(el("span", "align-where", where));
+    if (i.lesson) {
+      head.appendChild(el("span", "align-lesson",
+        "Lesson " + i.lesson + (i.lessonTitle ? " \u00b7 " + i.lessonTitle : "")));
+    } else {
+      /* A unit-only entry is a deliberate refusal to guess, not a gap. */
+      head.appendChild(el("span", "align-lesson note", "no lesson named"));
+    }
+    box.appendChild(head);
+
+    var ev = i.lessons || [];
+    if (ev.length) {
+      var list = el("ul", "align-ev");
+      ev.forEach(function (e) {
+        var li = el("li");
+        var role = el("span", "align-role", e.role);
+        if (ROLE_NOTE[e.role]) role.title = ROLE_NOTE[e.role];
+        li.appendChild(role);
+        li.appendChild(el("span", "align-cite",
+          "Lesson " + e.lesson + (e.lessonTitle ? " " + e.lessonTitle : "") +
+          " \u00b7 " + e.activity + " \u00b7 p" + e.page));
+        if (e.quote) li.appendChild(el("div", "align-quote", "\u201c" + e.quote + "\u201d"));
+        list.appendChild(li);
+      });
+      box.appendChild(list);
+    }
+
+    box.appendChild(el("div", "src",
+      "One teacher's judgement, not official guidance. The activity and page are "
+      + "named so you can check the placement against the guide itself."));
     return box;
   }
 
@@ -1022,7 +1082,8 @@
         { key: "domainLabel", label: "Domain", wrap: true },
         { key: "units", label: "Taught in", wrap: true, sort: false,
           title: "Units whose lessons teach this item's standard. Derived from the "
-               + "standard, not an alignment of the item itself.",
+               + "standard, not an alignment of the item itself \u2014 where a judged "
+               + "placement exists it is shown on the question and may differ.",
           render: function (i) {
             var us = unitsForItem(grade, i);
             if (!us.length) return el("span", "muted", "—");
@@ -1280,11 +1341,14 @@
 
   /* ---- deriving a unit for an ITEM, which is the reverse of the above ----
 
-     There is no per-item curriculum alignment in this project: data/alignment.json
-     does not exist and every item's `unit` and `lesson` field is null. What the
-     site does have is the guide's standard-to-lesson index, so an item's unit is
+     This derivation predates the per-item alignment and still runs alongside it.
+     data/alignment.json now carries judged placements -- all of grade 7 as of the
+     second-pass review -- but the FILTER stays derived, because a filter has to
+     answer for every item including the ones nobody has judged yet. What the
+     derivation uses is the guide's standard-to-lesson index, so an item's unit is
      DERIVED from the standard it assesses -- the units whose lessons teach that
-     standard.
+     standard. A judged placement can name a different unit, and the question card
+     shows it; these two must not be conflated.
 
      That is weaker than an alignment and the page says so. "Unit 3" here means
      "Unit 3 teaches the standard this item assesses", not "this item belongs to
@@ -1382,11 +1446,15 @@
      apart on how they describe it. */
   function derivedUnitNote() {
     var n = el("p", "note");
-    n.innerHTML = "<b>Unit is derived from the standard, not assigned per item. </b>" +
+    /* Keep this phrase inside ONE string literal: preflight greps the BUILT page,
+       which embeds this source, so a phrase split across a "+" concatenation is
+       not contiguous there and the check cannot see it. */
+    n.innerHTML = "<b>This filter's unit is derived from the standard, not judged per item.</b> " +
       "An item is counted against a unit when that unit teaches the standard the item " +
       "assesses \u2014 which is not the same as saying the item belongs to the unit. One " +
       "standard is often taught in several units, so an item can appear under more than " +
-      "one, and the filtered counts overlap.";
+      "one, and the filtered counts overlap. Where an item carries a judged placement it " +
+      "is shown on the question itself, and it can name a different unit from this one.";
     return n;
   }
 
@@ -1482,8 +1550,8 @@
       "the standard that item assesses. That is not the same as saying the item " +
       "belongs to the unit — one standard can be taught in several units, so the " +
       "counts overlap and do not sum to " + itemsFor(grade).length + ". A per-item " +
-      "curriculum alignment is a separate, hand-checked piece of work and is not " +
-      "published yet.";
+      "curriculum alignment is a separate, hand-checked piece of work, and where " +
+      "it exists it is shown on the question itself rather than in these counts.";
     intro.appendChild(basis);
     host.appendChild(intro);
 
