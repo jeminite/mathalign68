@@ -100,6 +100,17 @@ Have a second pass **re-derive** the placement from the lessons rather than
 review the first pass's prose. Reviewing prose finds typos; re-deriving finds
 wrong answers.
 
+**Two careful readings agree on the lesson about two thirds of the time, and
+that is the honest ceiling.** Grade 7's blind second pass compared 129 items and
+matched 85 -- 65.9%, before any settling. Only 17 of the 44 disagreements
+crossed a UNIT. So the unit is solid, the lesson is an opinion, and the
+published evidence range is doing more work than the primary lesson number.
+Never present a single lesson as more certain than that, and do not read an
+agreement rate against an outside source as a quality score: 72.8% against NYCPS
+is not underperformance when two of this project's own readings agree at 66%.
+`provenance/alignment_second_pass_g7.md` has the measurement and what it does
+not mean.
+
 ## Privacy
 
 This repository contains no student data and never will. Class results live only in the
@@ -163,6 +174,9 @@ before touching `templates/analyze/`.
   `standards.json`'s statements, `im_ms_reference.json` and `im_ms_pacing.json`,
   not the ability to build the site, since all three outputs are committed.
   Run `tools/validate_im_ms_lesson_detail.py` after rebuilding the index.
+- **Never `git add -A` here.** Another Claude session works in this same tree on the
+  analyser. Staging everything once swept its work into a commit of mine and needed unpicking.
+  Stage explicit paths.
 - **poppler is not installed on this machine.** No `pdftotext`, `pdfinfo` or `pdftoppm`, which
   also means the Read tool cannot render a PDF page here. Use PyMuPDF (`import fitz`), which is
   available to system python3.9.
@@ -181,3 +195,23 @@ before touching `templates/analyze/`.
   agreeing is the only reason to trust a parse.
 - Write down *why*, not just what. A comment explaining which past failure a rule prevents is
   worth more than one restating the code.
+
+## Four rules this project paid for
+
+- **A guard must skip, never `return` past its siblings.** A missing source used to end
+  `preflight.py`'s regenerability function early, so it did not skip one check -- it removed the
+  two after it from the run. 105 passed where 108 was expected, and the two that vanished left
+  no trace but a smaller total. A skip and a pass are different outcomes; a check that
+  disappears is worse than either.
+- **Prefer a structural invariant to a symptom count.** "Fewer than three activities" passed
+  clean while 24 lessons were corrupt: it saw 10 of them and excluded a whole unit by design.
+  "Activities numbered 1..N with no gap" and "every kind is one of three canonical forms" catch
+  the same bug by asserting what should be true rather than counting what looks odd.
+- **An extractor change is verified by diffing the whole corpus, not the item you meant to
+  fix.** Raising a glyph height cap fixed its target item and silently emptied another item's
+  four answer choices. Re-extract all twelve tests with `--stdout` -- without it the extractor
+  overwrites the very baseline you are comparing against -- and diff every stem and choice.
+  `provenance/tall_delimiters.md` is the worked example.
+- **A parent code is still a standard, and so is each child.** `NY-8.G.1` and `NY-8.G.1a` share
+  no lesson at all in the guide's tables. Retrieval must merge both directions across a
+  sub-letter suffix, or 61 items search a fraction of their lessons.
