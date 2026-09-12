@@ -12941,6 +12941,864 @@
         }
       ],
       "why": "y = -2.3x + 187 for coffee sales against temperature, asking students to PREDICT a value from the model rather than interpret a coefficient. Lesson 8 is where a fitted model is used on new data, which is the step past Lesson 6's interpretation."
+    },
+    "g8-2023-016": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 13,
+      "lessonTitle": "The Volume of a Cylinder",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "introduces",
+          "activity": "Circular Volumes",
+          "page": 198,
+          "quote": "What is the volume, in cubic units, of each figure?"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "practises",
+          "activity": "A Cylinder’s Volume",
+          "page": 201,
+          "quote": "Here is a cylinder with height 4 units and diameter 10 units."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "assessed",
+          "activity": "Liquid Volume",
+          "page": 204,
+          "quote": "The cylinder shown here has a height of 7 centimeters and a radius"
+        }
+      ],
+      "why": "A cylinder of radius 4.8 and height 8.1, volume to the nearest tenth. Lesson 13's cool-down is that computation with different numbers. Its distractors are the volume without squaring the radius and the volume of the wrong solid."
+    },
+    "g8-2023-037": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 13,
+      "lessonTitle": "The Volume of a Cylinder",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "introduces",
+          "activity": "Circular Volumes",
+          "page": 198,
+          "quote": "What is the volume, in cubic units, of each figure?"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "practises",
+          "activity": "A Cylinder’s Volume",
+          "page": 201,
+          "quote": "Here is a cylinder with height 4 units and diameter 10 units."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "assessed",
+          "activity": "Liquid Volume",
+          "page": 204,
+          "quote": "The cylinder shown here has a height of 7 centimeters and a radius"
+        }
+      ],
+      "why": "A cylinder given by DIAMETER rather than radius, answer in terms of pi. Halving first is the whole difficulty, and Lesson 13's own activity hands the student a diameter of 10 units for the same reason. Distractor 6,776 pi is exactly what forgetting to halve produces."
+    },
+    "g8-2026-006": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 13,
+      "lessonTitle": "The Volume of a Cylinder",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "introduces",
+          "activity": "Circular Volumes",
+          "page": 198,
+          "quote": "What is the volume, in cubic units, of each figure?"
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "practises",
+          "activity": "A Cylinder’s Volume",
+          "page": 201,
+          "quote": "Here is a cylinder with height 4 units and diameter 10 units."
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "assessed",
+          "activity": "Liquid Volume",
+          "page": 204,
+          "quote": "The cylinder shown here has a height of 7 centimeters and a radius"
+        }
+      ],
+      "why": "A can 7 cm across and 10 cm tall, volume to the nearest cubic centimetre. Diameter again, and again a distractor at four times the answer."
+    },
+    "g8-2025-027": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 15,
+      "lessonTitle": "The Volume of a Cone",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "introduces",
+          "activity": "From Cylinders to Cones",
+          "page": 220,
+          "quote": "A cone and cylinder have the same height, and their bases are congruent"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "practises",
+          "activity": "Calculate That Cone",
+          "page": 221,
+          "quote": "Here is a cylinder and cone that have the same height"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "assessed",
+          "activity": "Calculate Volumes of Two Figures",
+          "page": 225,
+          "quote": "There is a cone with the same base as the given cylinder"
+        }
+      ],
+      "why": "A right cone of height 8 and radius 6, volume in terms of pi. Lesson 15 derives the cone from the cylinder, which is why its distractor 72 pi -- the cylinder's volume, three times too big -- is the one to watch."
+    },
+    "g8-2024-039": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 15,
+      "lessonTitle": "The Volume of a Cone",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "introduces",
+          "activity": "From Cylinders to Cones",
+          "page": 220,
+          "quote": "A cone and cylinder have the same height, and their bases are congruent"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "practises",
+          "activity": "Calculate That Cone",
+          "page": 221,
+          "quote": "Here is a cylinder and cone that have the same height"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "assessed",
+          "activity": "Calculate Volumes of Two Figures",
+          "page": 225,
+          "quote": "There is a cone with the same base as the given cylinder"
+        }
+      ],
+      "why": "A cone-shaped popcorn container, radius 3 and height 5, to the nearest tenth. The same formula as g8-2025-027 in a context, and Lesson 16's Popcorn Deals is the same container."
+    },
+    "g8-2026-040": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 15,
+      "lessonTitle": "The Volume of a Cone",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "introduces",
+          "activity": "From Cylinders to Cones",
+          "page": 220,
+          "quote": "A cone and cylinder have the same height, and their bases are congruent"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "practises",
+          "activity": "Calculate That Cone",
+          "page": 221,
+          "quote": "Here is a cylinder and cone that have the same height"
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "assessed",
+          "activity": "Calculate Volumes of Two Figures",
+          "page": 225,
+          "quote": "There is a cone with the same base as the given cylinder"
+        }
+      ],
+      "why": "A cone of height 12 and radius 3.2, to the nearest tenth. The third cone item; at p = 0.33 the hardest of the nine, and the only difference from the other two is that its radius is not a whole number."
+    },
+    "g8-2025-012": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "E",
+      "sectionTitle": "Dimensions and Spheres",
+      "primaryLesson": 20,
+      "lessonTitle": "The Volume of a Sphere",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 19,
+          "lessonTitle": "Estimating a Hemisphere",
+          "role": "introduces",
+          "activity": "Estimating Hemispheres",
+          "page": 273,
+          "quote": "A hemisphere with radius 5 units fits snugly into a cylinder"
+        },
+        {
+          "lesson": 20,
+          "lessonTitle": "The Volume of a Sphere",
+          "role": "practises",
+          "activity": "Spheres in Cylinders",
+          "page": 285,
+          "quote": "A cone, a sphere, and a cylinder that all have the same radius and height"
+        },
+        {
+          "lesson": 20,
+          "lessonTitle": "The Volume of a Sphere",
+          "role": "assessed",
+          "activity": "Volumes of Spheres",
+          "page": 288,
+          "quote": "Recall that the volume of a sphere is given by the formula"
+        }
+      ],
+      "why": "A soccer ball of DIAMETER 23 cm, volume to the nearest cubic centimetre. Halving a diameter and then cubing it, which Lesson 20's cool-down asks with the formula supplied."
+    },
+    "g8-2024-010": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "E",
+      "sectionTitle": "Dimensions and Spheres",
+      "primaryLesson": 20,
+      "lessonTitle": "The Volume of a Sphere",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 15,
+          "lessonTitle": "The Volume of a Cone",
+          "role": "introduces",
+          "activity": "From Cylinders to Cones",
+          "page": 220,
+          "quote": "A cone and cylinder have the same height, and their bases are congruent"
+        },
+        {
+          "lesson": 20,
+          "lessonTitle": "The Volume of a Sphere",
+          "role": "practises",
+          "activity": "Spheres in Cylinders",
+          "page": 285,
+          "quote": "A cone, a sphere, and a cylinder that all have the same radius and height"
+        },
+        {
+          "lesson": 20,
+          "lessonTitle": "The Volume of a Sphere",
+          "role": "assessed",
+          "activity": "Volumes of Spheres",
+          "page": 288,
+          "quote": "Recall that the volume of a sphere is given by the formula"
+        }
+      ],
+      "why": "The DIFFERENCE between a sphere's and a cone's volume, asked as an EXPRESSION rather than a number. Nothing is evaluated, so the item turns on knowing both formulas well enough to spot 4/3 pi r-cubed against 1/3 pi r-squared h -- and its distractors swap the square for the cube and the radius for the height. Lesson 20 is where the sphere is set beside the cone and the cylinder."
+    },
+    "g8-2024-035": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 5,
+      "unitTitle": "Functions and Volume",
+      "sectionLetter": "D",
+      "sectionTitle": "Cylinders and Cones",
+      "primaryLesson": 14,
+      "lessonTitle": "Finding Cylinder Dimensions",
+      "candidateLessons": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 5 section D and E are the volume half of Functions and Volume. NY-8.G.9 is tabled at lessons 13 to 22 and reaches no lesson below 13",
+      "evidence": [
+        {
+          "lesson": 13,
+          "lessonTitle": "The Volume of a Cylinder",
+          "role": "introduces",
+          "activity": "A Cylinder’s Volume",
+          "page": 201,
+          "quote": "Here is a cylinder with height 4 units and diameter 10 units."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Cylinder Dimensions",
+          "role": "practises",
+          "activity": "Cylinders with Unknown Dimensions",
+          "page": 211,
+          "quote": "Each row of the table has information about a particular cylinder."
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Finding Cylinder Dimensions",
+          "role": "assessed",
+          "activity": "Find the Height",
+          "page": 214,
+          "quote": "This cylinder has a volume of 12π cubic inches and a diameter of 4 inches."
+        }
+      ],
+      "why": "Two cans compared, one given by radius and the other by diameter, asking the DIFFERENCE of their volumes in terms of pi. Two cylinders held against each other with mixed dimension types is Lesson 14's table activity rather than Lesson 13's single computation."
+    },
+    "g8-2024-027": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "introduces",
+          "activity": "Exponent Rules With Bases Other than 10",
+          "page": 77,
+          "quote": "each chose an expression to start with"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "practises",
+          "activity": "Exponent Rule Practice",
+          "page": 85,
+          "quote": "For each expression, write at least 3 different equivalent expressions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "assessed",
+          "activity": "Working with Exponents",
+          "page": 88,
+          "quote": "Rewrite each expression using a single, positive exponent"
+        }
+      ],
+      "why": "Which expression equals 3 to the fifth -- the choices divide powers of 3 and powers of 9. Lesson 7 is where the rules are practised on bases other than ten, and two distractors change the base, which is its Inconsistent Bases activity exactly."
+    },
+    "g8-2025-016": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "introduces",
+          "activity": "Exponent Rules With Bases Other than 10",
+          "page": 77,
+          "quote": "each chose an expression to start with"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "practises",
+          "activity": "Exponent Rule Practice",
+          "page": 85,
+          "quote": "For each expression, write at least 3 different equivalent expressions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "assessed",
+          "activity": "Working with Exponents",
+          "page": 88,
+          "quote": "Rewrite each expression using a single, positive exponent"
+        }
+      ],
+      "why": "The same target, 3 to the fifth, with choices mixing multiplication, division and a power of a power. It needs all three rules at once rather than one, which is what Lesson 7's first activity asks by demanding three equivalent forms per expression."
+    },
+    "g8-2026-003": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "introduces",
+          "activity": "Exponent Rules With Bases Other than 10",
+          "page": 77,
+          "quote": "each chose an expression to start with"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "practises",
+          "activity": "Exponent Rule Practice",
+          "page": 85,
+          "quote": "For each expression, write at least 3 different equivalent expressions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "assessed",
+          "activity": "Working with Exponents",
+          "page": 88,
+          "quote": "Rewrite each expression using a single, positive exponent"
+        }
+      ],
+      "why": "A quotient of powers of 12. Subtracting exponents, the single rule, and the distractors divide the exponents or the bases instead."
+    },
+    "g8-2023-047": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "introduces",
+          "activity": "Exponent Rules With Bases Other than 10",
+          "page": 77,
+          "quote": "each chose an expression to start with"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "practises",
+          "activity": "Exponent Rule Practice",
+          "page": 85,
+          "quote": "For each expression, write at least 3 different equivalent expressions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "assessed",
+          "activity": "Working with Exponents",
+          "page": 88,
+          "quote": "Rewrite each expression using a single, positive exponent"
+        }
+      ],
+      "why": "Are a quotient of powers of 5 and a product with a negative exponent equivalent? Both simplify to 5 to the fourth. It asks for the reasoning, not just the verdict, which is Lesson 7's cool-down."
+    },
+    "g8-2026-043": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "introduces",
+          "activity": "Exponent Rules With Bases Other than 10",
+          "page": 77,
+          "quote": "each chose an expression to start with"
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "practises",
+          "activity": "Exponent Rule Practice",
+          "page": 85,
+          "quote": "For each expression, write at least 3 different equivalent expressions."
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Practice With Rational Bases",
+          "role": "assessed",
+          "activity": "Working with Exponents",
+          "page": 88,
+          "quote": "Rewrite each expression using a single, positive exponent"
+        }
+      ],
+      "why": "Compare a power of a power against a product of powers, choosing the right inequality symbol. Both sides are 16 to the twentieth, so the answer is equals -- and at p = 0.26 it is the hardest in the sweep, because a student who applies one rule wrongly gets a confident greater-than."
+    },
+    "g8-2023-015": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "A",
+      "sectionTitle": "Exponent Rules",
+      "primaryLesson": 5,
+      "lessonTitle": "Negative Exponents With Powers of 10",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Negative Exponents With Powers of 10",
+          "role": "introduces",
+          "activity": "Negative Exponent Table",
+          "page": 61,
+          "quote": "Complete the table to explore what negative exponents mean."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "practises",
+          "activity": "What Happens With Zero and Negative Exponents",
+          "page": 75,
+          "quote": "As you move toward the left, each number is being multiplied by"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "assessed",
+          "activity": "Spot the Mistake",
+          "page": 80,
+          "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+        }
+      ],
+      "why": "Which expression has the value one sixteenth, the choices all powers of 2 with negative exponents inside and out. Lesson 5 is where a negative exponent is given meaning by extending a table leftwards."
+    },
+    "g8-2026-015": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "B",
+      "sectionTitle": "More Exponent Rules",
+      "primaryLesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Negative Exponents With Powers of 10",
+          "role": "introduces",
+          "activity": "Negative Exponent Table",
+          "page": 61,
+          "quote": "Complete the table to explore what negative exponents mean."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "practises",
+          "activity": "What Happens With Zero and Negative Exponents",
+          "page": 75,
+          "quote": "As you move toward the left, each number is being multiplied by"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "assessed",
+          "activity": "Spot the Mistake",
+          "page": 80,
+          "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+        }
+      ],
+      "why": "A product of powers of 5 and a power of 7 with a negative exponent, asking the equivalent form. The negative exponent has to become a denominator while the base-5 powers combine, so it needs Lesson 6's work on bases other than ten as well as Lesson 5's meaning."
+    },
+    "g8-2025-033": {
+      "course": "Imagine IM New York, Grade 8",
+      "unit": 8,
+      "unitTitle": "Exponents and Scientific Notation",
+      "sectionLetter": "A",
+      "sectionTitle": "Exponent Rules",
+      "primaryLesson": 5,
+      "lessonTitle": "Negative Exponents With Powers of 10",
+      "candidateLessons": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "edition": "Imagine IM New York, 6-8",
+      "status": "evidenced",
+      "draft": true,
+      "unitBasis": "course guide table; grade 8 Unit 8 is Exponents and Scientific Notation",
+      "evidence": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Negative Exponents With Powers of 10",
+          "role": "introduces",
+          "activity": "Negative Exponent Table",
+          "page": 61,
+          "quote": "Complete the table to explore what negative exponents mean."
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "practises",
+          "activity": "What Happens With Zero and Negative Exponents",
+          "page": 75,
+          "quote": "As you move toward the left, each number is being multiplied by"
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "What About Other Bases?",
+          "role": "assessed",
+          "activity": "Spot the Mistake",
+          "page": 80,
+          "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+        }
+      ],
+      "why": "The value of 25 times 100 times 3 to the negative 2. The negative exponent makes a denominator of 9 rather than a negative number, and two distractors are negative -- which is the misconception Lesson 5's table is built to prevent."
     }
   }
 }
