@@ -1,0 +1,886 @@
+{
+ "scope": "grade 6 rp -- widen the evidence",
+ "items": {
+  "g6-2023-031": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.61,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "The number 60 is 75% of what number?",
+   "choices": [
+    "45",
+    "80",
+    "120",
+    "125"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 13,
+    "lessonTitle": "Benchmark Percentages",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 13,
+    "role": "practises",
+    "activity": "Nine is …",
+    "page": 211,
+    "quote": "9 is 75% of what number?"
+   },
+   "why": "The item asks, with no context at all, 'The number 60 is 75% of what number?' This activity is four bare questions of exactly that form -- one of them the same 75% -- asking students to find the value that corresponds to 100% mentally."
+  },
+  "g6-2023-032": {
+   "standard": "NY-6.RP.3a",
+   "pValue": 0.6,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "The table below shows the ratio of the number of teachers to the number of students at a school. The ratio of teachers to students is constant. Three numbers are missing from the table. Which table shows the correct missing numbers in the table above?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "The teacher row reads 2, question mark, 8, 12, question mark. The student row reads 5, 15, question mark, 30, 75.",
+    "They differ only in the numbers filled into the three missing cells."
+   ],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 11,
+    "lessonTitle": "Representing Ratios with Tables",
+    "candidateLessons": [
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Batches of Nihaizu Sauce",
+    "page": 167,
+    "quote": "Complete the table so that ratios represented by each row are equivalent"
+   },
+   "why": "The item shows a two-row teachers-to-students table with three cells blank and asks which completion keeps the ratio constant. This activity hands students a recipe table with cells missing, deliberately out of order so skip counting fails, and asks for exactly that completion."
+  },
+  "g6-2023-034": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.59,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "The ratio of number of yards to number of miles is 3,520 : 2. How many yards are in 5 miles?",
+   "choices": [
+    "1,760",
+    "5,280",
+    "7,040",
+    "8,800"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 3,
+    "lessonTitle": "Converting Units",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "introduces",
+    "activity": "Road Sign",
+    "page": 55,
+    "quote": "A distance of 8 kilometers is approximately 5 miles"
+   },
+   "why": "The item gives a yards-to-miles ratio of 3,520 : 2 and asks how many yards are in 5 miles. Road Sign is where two units of length are first treated as a ratio (8 km to 5 mi), with students finding the amount per 1 mile and scaling it, which is the item's method."
+  },
+  "g6-2023-036": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.67,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Mark ran 8 miles in 60 minutes. If Mark continues to run at that same rate, how many minutes will it take him to run 12 miles?",
+   "choices": [
+    "48",
+    "72",
+    "90",
+    "96"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 13,
+    "lessonTitle": "Tables and Double Number Line Diagrams",
+    "candidateLessons": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 13,
+    "role": "practises",
+    "activity": "Biking 3,000 Meters",
+    "page": 192,
+    "quote": "At this rate, how long would it take her to bike 3,000 meters?"
+   },
+   "why": "The item gives 8 miles in 60 minutes and asks how long 12 miles takes. This activity gives 150 meters in 20 seconds and asks how long 3,000 meters takes, using a table of equivalent ratios -- the same time-from-distance question at a constant rate."
+  },
+  "g6-2023-041": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.54,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "The list below shows the cost of the same candle at two different stores. <span class=\"math\">•</span> Store ABC sells 6 of these candles for $12.00. <span class=\"math\">•</span> Store XYZ sells 8 of these candles for $14.00. Which store sells the candle for a lower unit rate?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 7,
+    "lessonTitle": "More Rate Comparisons",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     8
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "assessed",
+    "activity": "Rulers by the Pack",
+    "page": 123,
+    "quote": "Which is the better deal? Explain how you know."
+   },
+   "why": "The item gives two stores selling the same candle in different pack sizes and asks which has the lower unit rate, with an explanation. This Cool-down gives two pack sizes of rulers at two prices and asks which is the better deal and how you know -- the curriculum's own test of that comparison."
+  },
+  "g6-2024-023": {
+   "standard": "NY-6.RP.3d",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A container holds 6 gallons of liquid. How many pints of liquid does the container hold?",
+   "choices": [
+    "6",
+    "8",
+    "24",
+    "48"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 3,
+    "lessonTitle": "Converting Units",
+    "candidateLessons": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "assessed",
+    "activity": "Buckets",
+    "page": 64,
+    "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?"
+   },
+   "why": "The item asks how many pints are in 6 gallons. This Cool-down hands students the same conversion fact, 8 pints in 1 gallon, and requires converting between the two units to compare buckets."
+  },
+  "g6-2024-033": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.5,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "The number 4 is 16% of what number?",
+   "choices": [
+    "12",
+    "20",
+    "25",
+    "64"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 13,
+    "lessonTitle": "Benchmark Percentages",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 13,
+    "role": "practises",
+    "activity": "Nine is …",
+    "page": 211,
+    "quote": "9 is 25% of what number?"
+   },
+   "why": "The item asks 'The number 4 is 16% of what number?' with no context. This activity asks exactly that form, but only for benchmark percentages (50, 25, 10, 75); 16% is outside the set grade 6 works with. The nearest non-benchmark work is Unit 3 Lesson 11 'Puppies Grow Up', which finds 100% from 30%, so the item's wording is taught here but its arithmetic is at the edge of the grade."
+  },
+  "g6-2024-034": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.73,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A machine produces chocolates at a constant rate. In 42 minutes, the machine produces 7 pounds of chocolates. How long, in minutes, will it take the machine to produce 9 pounds of chocolates?",
+   "choices": [
+    "6",
+    "15",
+    "54",
+    "63"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 8,
+    "lessonTitle": "Solving Rate Problems",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 8,
+    "role": "practises",
+    "activity": "Window Washing",
+    "page": 132,
+    "quote": "A window-washing crew can wash 15 windows in 18 minutes"
+   },
+   "why": "The item gives a machine making 7 pounds of chocolate in 42 minutes and asks how long 9 pounds takes. This activity gives a crew washing 15 windows in 18 minutes and asks how long a different number of windows takes, with the number deliberately not a multiple so students find the rate for one."
+  },
+  "g6-2024-039": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.37,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "An artist uses a ratio of 6 gallons of orange paint to 8 gallons of blue paint. If the artist uses 1 gallon of blue paint, how many gallons of orange paint will they use?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 5,
+    "lessonTitle": "Interpreting Rates",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     8
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 5,
+    "role": "introduces",
+    "activity": "Cooking Kinche",
+    "page": 86,
+    "quote": "That’s 0.4 cup of wheat per cup of water."
+   },
+   "why": "The item gives 6 gallons of orange paint to 8 gallons of blue and asks how much orange goes with 1 gallon of blue -- a unit rate less than 1. Cooking Kinche is where both unit rates of a ratio are named and one of them, 0.4 cup of wheat per cup of water, is exactly this less-than-one form."
+  },
+  "g6-2024-046": {
+   "standard": "NY-6.RP.3a",
+   "pValue": 0.39,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Rex and Nero are saving money for new bikes. They both start with $0.00 and save at a constant rate for 16 months. The tables below show Rex’s and Nero’s total savings, in dollars, at the end of different numbers of months. At the end of 16 months, what is the difference between the amount of money Rex saved and the amount of money Nero saved?",
+   "choices": [],
+   "figures": [
+    "Rex: 2 months 18 dollars, 4 months 36, 6 months 54, 8 months 72. Nero: 3 months 36 dollars, 6 months 72, 9 months 108, 12 months 144."
+   ],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 6,
+    "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 6,
+    "role": "practises",
+    "activity": "Making Bracelets",
+    "page": 103,
+    "quote": "finding an unknown value in a ratio given the other value"
+   },
+   "why": "The item gives two savings tables at constant rates and asks for the difference in totals at 16 months, a month neither table reaches. Making Bracelets is a table with a constant rate column in which students find far-out unknown values from that rate; the item adds a second table and a subtraction on top of that move."
+  },
+  "g6-2025-001": {
+   "standard": "NY-6.RP.3a",
+   "pValue": 0.89,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead."
+   ],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 11,
+    "lessonTitle": "Representing Ratios with Tables",
+    "candidateLessons": [
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "assessed",
+    "activity": "Batches of Cookies in a Table",
+    "page": 171,
+    "quote": "Write a sentence that describes a ratio shown in the table"
+   },
+   "why": "The item states a recipe ratio of 2 cups cheese to 8 ounces noodles and asks which of four tables represents it; the distractors add a fixed amount down the rows instead of scaling. This Cool-down is the curriculum's own check that a recipe's equivalent ratios are what a table's rows show, and that a new row must keep that ratio."
+  },
+  "g6-2025-016": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.59,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "An office has two copiers. Copier A prints 350 pages in 7 minutes. Copier B prints 210 pages in 3 minutes. How many more pages can Copier B print in 1 minute than Copier A ?",
+   "choices": [
+    "20",
+    "35",
+    "50",
+    "70"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 4,
+    "lessonTitle": "Comparing Speeds and Prices",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 4,
+    "role": "assessed",
+    "activity": "Sparkling Water",
+    "page": 81,
+    "quote": "How much cheaper or more expensive? Show your reasoning."
+   },
+   "why": "The item asks how many MORE pages per minute one copier prints than another -- two rates per 1, then a subtraction. This Cool-down asks the same two-step: find the unit price this week, compare it to the usual one, and say how much cheaper or more expensive. The exact wording 'how much faster is that person than the other' appears in Lesson 9 'Swimming and Biking', but that lesson is optional."
+  },
+  "g6-2025-021": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.46,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A teacher asks 50 sixth grade students to vote for their favorite hobby. The table below shows the results. What percent of the students voted for either playing a musical instrument or reading as their favorite hobby?",
+   "choices": [
+    "12%",
+    "23%",
+    "46%",
+    "54%"
+   ],
+   "figures": [
+    "Reading 12, playing a musical instrument 11, watching movies 9, and playing sports 18."
+   ],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 16,
+    "lessonTitle": "Finding the Percentage",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 16,
+    "role": "assessed",
+    "activity": "Library and Cafeteria",
+    "page": 255,
+    "quote": "The library has a capacity of 23 people. What percentage of the school"
+   },
+   "why": "The item gives 50 students, 12 reading and 11 playing an instrument, and asks what percent chose either. This Cool-down asks what percentage 23 is of 50 -- the same numbers and the same question. Lesson 16 is optional in its entirety (it generalizes beyond grade 6), so this is weaker evidence; the non-optional runner-up is the Lesson 14 Warm-up 'Matching the Percentage', which asks 'B is what percentage of C?' but only for benchmark pairs."
+  },
+  "g6-2025-028": {
+   "standard": "NY-6.RP.1",
+   "pValue": 0.56,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A school club includes students from four grade levels. The number of students from each grade level is shown in the list below. <span class=\"math\">•</span> 12 students from Grade 5 <span class=\"math\">•</span> 6 students from Grade 6 <span class=\"math\">•</span> 2 students from Grade 7 <span class=\"math\">•</span> 8 students from Grade 8 What is the ratio of the total number of students in the club from Grades 5 and 6 to the total number of students in the club from Grades 7 and 8 ?",
+   "choices": [
+    "2 : 1",
+    "3 : 1",
+    "5 : 9",
+    "9 : 5"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 1,
+    "lessonTitle": "Introducing Ratios and Ratio Language",
+    "candidateLessons": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 1,
+    "role": "introduces",
+    "activity": "The Teacher’s Collection",
+    "page": 28,
+    "quote": "Create categories whose quantities can be rearranged into smaller groups"
+   },
+   "why": "The item asks for the ratio of students in two grade levels combined to students in two other grade levels combined, and the only correct choice is the reduced form 9 : 5 rather than 18 : 10. This activity has students choose how to group a collection into categories, count them, and write the ratio, and it explicitly watches for categories whose counts get rearranged into smaller groups."
+  },
+  "g6-2025-032": {
+   "standard": "NY-6.RP.3d",
+   "pValue": 0.61,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "Mary rides her bike at an average speed of 12 miles in 1 hour. Riding at this rate, how many feet does Mary ride in 1 minute?",
+   "choices": [
+    "1,056",
+    "26,400",
+    "63,360",
+    "3,801,600"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 3,
+    "lessonTitle": "Converting Units",
+    "candidateLessons": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "practises",
+    "activity": "Road Sign",
+    "page": 55,
+    "quote": "The speed limit on a Canadian highway is 80 kilometers per hour."
+   },
+   "why": "The item converts an average speed of 12 miles per hour into feet per minute. Road Sign's second question is the only place in grade 6 where a speed stated in one pair of units has to be re-expressed in another (80 km/h against 75 mi/h); the item is harder because both the distance and the time unit change."
+  },
+  "g6-2025-037": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.5,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Mr. Kamski has 6 students in his class who play an instrument. These students represent 24% of the total number of students in his class. What is the total number of students in his class?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 12,
+    "lessonTitle": "Representing Percentages in Different Ways",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 12,
+    "role": "assessed",
+    "activity": "Small and Large",
+    "page": 204,
+    "quote": "This is 75% of the water that a large tank holds."
+   },
+   "why": "The item says 6 students are 24% of a class and asks for the class total. This Cool-down says 36 liters is 75% of a large tank and asks what the tank holds -- the same find-the-whole-from-a-part-and-its-percentage question, and the place the curriculum tests it."
+  },
+  "g6-2025-045": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.43,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A recipe requires a ratio of 2 cups of sesame seeds to 5 cups of pretzels. Using this ratio, how many cups of pretzels are needed when 3 cups of sesame seeds are used?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 12,
+    "lessonTitle": "Navigating a Table of Equivalent Ratios",
+    "candidateLessons": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 12,
+    "role": "practises",
+    "activity": "Comparing Taco Prices",
+    "page": 178,
+    "quote": "At this rate, how many tacos could he buy for $15?"
+   },
+   "why": "The item gives a 2 cups sesame to 5 cups pretzels ratio and asks for the pretzels that go with 3 cups of sesame, so the scale factor is 1.5 rather than a whole number. This activity has the same shape: 4 tacos for $6, then how many for $15, where a table and a value-per-1 step are needed because neither value is a multiple of the other."
+  },
+  "g6-2026-001": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.82,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "It takes approximately 2 seconds for sound to travel 686 meters through air. Based on this rate, what is the speed of sound in meters per second?",
+   "choices": [
+    "343",
+    "684",
+    "688",
+    "1,372"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 9,
+    "lessonTitle": "Constant Speed",
+    "candidateLessons": [
+     10
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "practises",
+    "activity": "Moving for 10 Seconds",
+    "page": 137,
+    "quote": "How far did each person move in 1 second?"
+   },
+   "why": "The item gives 686 meters in 2 seconds and asks for the speed in meters per second. This activity gives distances covered in 10 seconds and asks how far each person moved in 1 second -- distance per 1 unit of time, which is the definition the item is testing."
+  },
+  "g6-2026-003": {
+   "standard": "NY-6.RP.3d",
+   "pValue": 0.74,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "Lacy needs to buy <span class=\"math\">72</span> ounces of beef for a recipe. Which expression can be used to determine how many pounds of beef Lacy needs for the recipe?",
+   "choices": [
+    "<span class=\"math\">72 ÷ 16</span>",
+    "<span class=\"math\">72 × 16</span>",
+    "<span class=\"math\">72 − 16</span>",
+    "<span class=\"math\">72 + 16</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 3,
+    "lessonTitle": "Converting Units",
+    "candidateLessons": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "practises",
+    "activity": "Cooking with a Tablespoon",
+    "page": 60,
+    "quote": "decide whether to multiply or divide by the unit rate"
+   },
+   "why": "The item does not ask for the answer but for the EXPRESSION, 72 divided by 16, that converts 72 ounces to pounds. This activity converts with the same factor of 16 in both directions (cups to tablespoons and 28 tablespoons back to cups) and is explicitly about deciding whether to multiply or divide by the conversion rate."
+  },
+  "g6-2026-010": {
+   "standard": "NY-6.RP.3a",
+   "pValue": 0.78,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A gardener is filling a pool with water from a garden hose at a constant rate. He plots points showing the number of gallons of water in the pool at different times on the coordinate plane shown below. Based on the graph, what is the total amount of water, in gallons, in the pool at 3 minutes?",
+   "choices": [
+    "6",
+    "9",
+    "18",
+    "27"
+   ],
+   "figures": [
+    "The points are at 2 minutes and 18 gallons, 4 minutes and 36 gallons, and 6 minutes and 54 gallons -- a constant 9 gallons a minute."
+   ],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 17,
+    "lessonTitle": "Two Related Quantities, Part 2",
+    "candidateLessons": [
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 17,
+    "role": "practises",
+    "activity": "The Robot Race",
+    "page": 225,
+    "quote": "compare the unit rates in meters per minute for three robotics teams"
+   },
+   "why": "The item plots gallons against minutes for a hose running at a constant rate and asks for the amount at 3 minutes, a time not plotted, so the unit rate of 9 gallons per minute must be recovered from the graph. This activity builds tables, graphs and equations for constant-rate distance-time situations and has students compute the unit rate from them; its Cool-down 'Interpret the Point' then asks what a particular point on such a graph means."
+  },
+  "g6-2026-012": {
+   "standard": "NY-6.RP.1",
+   "pValue": 0.66,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "A flower garden has three different types of flowers. There are 12 daisies, 20 roses, and 13 tulips. What is the ratio of the number of roses to the total number of flowers?",
+   "choices": [
+    "20 : 25",
+    "20 : 45",
+    "25 : 20",
+    "45 : 20"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 15,
+    "lessonTitle": "Part-Part-Whole Ratios",
+    "candidateLessons": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "introduces",
+    "activity": "Cubes of Paint",
+    "page": 223,
+    "quote": "How many milliliters of maroon paint will there be?"
+   },
+   "why": "The item asks for the ratio of roses to the total number of flowers, so students must add the three counts to get the whole. Cubes of Paint is where the whole is first built from the parts of a ratio; as with the other part-to-total item, grade 6 never asks students to write the part-to-total ratio itself."
+  },
+  "g6-2026-015": {
+   "standard": "NY-6.RP.3d",
+   "pValue": 0.67,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Marty needs to measure <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup of cooking oil, but he can only find a tablespoon. He knows that <span class=\"math\">1</span> cup is the same as <span class=\"math\">16</span> tablespoons. How many tablespoons of oil will Marty need to measure <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup of oil?",
+   "choices": [
+    "<span class=\"math\">4</span>",
+    "<span class=\"math\">8</span>",
+    "<span class=\"math\">12</span>",
+    "<span class=\"math\">20</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 3,
+    "lessonTitle": "Converting Units",
+    "candidateLessons": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "practises",
+    "activity": "Cooking with a Tablespoon",
+    "page": 60,
+    "quote": "In the cookbook, it says that 1 cup equals 16 tablespoons."
+   },
+   "why": "The item says 1 cup is 16 tablespoons and asks how many tablespoons make 3/4 cup. This activity states the same conversion in the same words and asks students to measure fractional amounts of a cup, including 1/4 cup, with a tablespoon."
+  },
+  "g6-2026-024": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.56,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A soccer player scored 30% of the total goals scored by a team in a tournament. If the player scored 6 goals, how many total goals did the team score in the tournament?",
+   "choices": [
+    "14",
+    "18",
+    "20",
+    "24"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 11,
+    "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+    "candidateLessons": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Puppies Grow Up",
+    "page": 184,
+    "quote": "opportunity for students to find 100% of quantities given other percentages"
+   },
+   "why": "The item says 6 goals are 30% of a team's total and asks for the total. This activity asks for 100% of a quantity given 20% and then given 30%, and the teacher notes single out the 30% case because 100 is not a multiple of 30 -- the item's exact arithmetic."
+  },
+  "g6-2026-028": {
+   "standard": "NY-6.RP.1",
+   "pValue": 0.69,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "A cake recipe requires 6 eggs for every 4 cups of flour. Which statement is true about the relationship between flour and eggs for the recipe?",
+   "choices": [
+    "For every 2 cups of flour, 3 eggs are used.",
+    "For every 2 cups of flour, 5 eggs are used.",
+    "For every 3 cups of flour, 2 eggs are used.",
+    "For every 3 cups of flour, 5 eggs are used."
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 2,
+    "lessonTitle": "Representing Ratios with Diagrams",
+    "candidateLessons": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 2,
+    "role": "introduces",
+    "activity": "Blue Paint and Play Clay",
+    "page": 40,
+    "quote": "circle all those that correctly describe this situation"
+   },
+   "why": "The item gives 6 eggs for every 4 cups of flour and asks which 'for every' statement is true, the correct one being the regrouped 3 eggs for every 2 cups. This activity gives a 2 to 6 mixture and asks students to circle which of seven statements correctly describe it, several of them regrouped 'for every' forms of the same ratio."
+  }
+ }
+}

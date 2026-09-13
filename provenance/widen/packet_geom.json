@@ -1,0 +1,968 @@
+{
+ "scope": "grade 6 geom -- widen the evidence",
+ "items": {
+  "g6-2023-007": {
+   "standard": "NY-6.G.4",
+   "pValue": 0.45,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "The net of a right square pyramid is shown below. What is the surface area, in square inches, of the square pyramid?",
+   "choices": [
+    "64",
+    "80",
+    "224",
+    "384"
+   ],
+   "figures": [
+    "The square base is 8 inches on each side and each triangular face has a height of 10 inches."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 14,
+    "lessonTitle": "Nets and Surface Area",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Using Nets to Find Surface Area",
+    "page": 246,
+    "quote": "Find the surface area of each polyhedron. Explain your reasoning clearly."
+   },
+   "why": "The item shows the net of a right square pyramid with the base edge and the slant height of each triangular face labelled, and asks for the surface area. This activity hands students nets of polyhedra and asks them to name each solid and find its surface area by adding the areas of the polygons in the net -- exactly the square-plus-four-triangles calculation the item wants. Lesson 13 Activity 1 'Prisms and Pyramids' is where pyramid nets are introduced, but it never asks for an area."
+  },
+  "g6-2023-033": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.6,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+   "choices": [
+    "<span class=\"math\">6<span class=\"frac\"><span>3</span><span>4</span></span></span>",
+    "<span class=\"math\">8<span class=\"frac\"><span>3</span><span>4</span></span></span>",
+    "<span class=\"math\">10 <span class=\"frac\"><span>3</span><span>8</span></span></span>",
+    "<span class=\"math\">14 <span class=\"frac\"><span>5</span><span>8</span></span></span>"
+   ],
+   "figures": [
+    "It is 8 inches long, 1 and three quarters inches deep, and five eighths of an inch thick."
+   ],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "Cubes With Fractional Edge Lengths",
+    "page": 233,
+    "quote": "What is the volume, in cubic inches, of the rectangular prism?"
+   },
+   "why": "A right rectangular prism drawn with all three edges labelled (8 in by 1 3/4 in by 5/8 in); find the volume in cubic inches. This activity is where students find the volume in cubic inches of a rectangular prism whose edge lengths include fractions, after establishing it by packing with unit-fraction cubes."
+  },
+  "g6-2023-037": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.52,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A right triangle is shown below. What is the area, in square feet, of the right triangle?",
+   "choices": [],
+   "figures": [
+    "The vertical leg is 22 feet and the horizontal leg is 25 feet."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 9,
+    "lessonTitle": "Formula for the Area of a Triangle",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "assessed",
+    "activity": "Two More Triangles",
+    "page": 167,
+    "quote": "identify a base and a corresponding height. Use them to find the area"
+   },
+   "why": "A right triangle with both legs labelled (22 ft and 25 ft) and the right angle marked; find the area. This Cool-down is where the curriculum tests exactly that move -- pick a base, pick the corresponding height, use them to find the area -- and in a right triangle the two legs are that pair."
+  },
+  "g6-2023-042": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.55,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A box contains <span class=\"math\">8<span class=\"frac\"><span>1</span><span>4</span></span></span> cups of cereal. One serving of cereal is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. How many servings of cereal are in the box?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 6,
+    "lessonTitle": "Using Diagrams to Find the Number of Groups",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 6,
+    "role": "practises",
+    "activity": "Finding the Number of Groups",
+    "page": 95,
+    "quote": "How many groups of 1/2 pound are in 2 3/4 pounds?"
+   },
+   "why": "8 1/4 cups of cereal, 3/4 cup per serving, how many servings -- a 'how many groups' division with a mixed-number dividend and a non-unit fraction divisor, work shown. This activity's first question is the same sentence with different numbers, and it asks students to write the equation and find the answer with reasoning."
+  },
+  "g6-2023-045": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.47,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A shipping container in the shape of a right rectangular prism has a base with an area of <span class=\"math\">42</span> square feet. The height of the container is <span class=\"math\">5<span class=\"frac\"><span>3</span><span>4</span></span></span> feet. What is the volume, in cubic feet, of the shipping container?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "Fish Tank (Optional)",
+    "page": 236,
+    "quote": "finding the volume of rectangular prisms given the area of the base"
+   },
+   "why": "The item gives the base area (42 square feet) and the height (5 3/4 feet) rather than three edges, so it wants V = Bh with a fractional height. This activity's narrative is the one place in the unit that names that form -- 'finding the volume of rectangular prisms given the area of the base of the prism and its height' -- but the activity is optional. The non-optional runner-up is the same lesson's Cool-down 'Storage Box' (p. 238), which gives a base and a height and asks for the volume, then asks for a second method."
+  },
+  "g6-2024-020": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.44,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+   "choices": [
+    "<span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span>",
+    "<span class=\"math\">7<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">15 <span class=\"frac\"><span>5</span><span>8</span></span></span>",
+    "<span class=\"math\">20 <span class=\"frac\"><span>5</span><span>6</span></span></span>"
+   ],
+   "figures": [
+    "Each edge is 2 and a half inches."
+   ],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 14,
+    "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Volumes of Cubes and Prisms",
+    "page": 223,
+    "quote": "What is the volume, in cubic inches, of a cube with edge lengths"
+   },
+   "why": "A cube with every edge 2 1/2 inches; find the volume in cubic inches. This activity asks precisely that question for a cube with a fractional edge length (1/2 inch), and its Cool-down repeats it for 1/3 inch. Unit 1 Lesson 17 'Squares and Cubes' also cubes an edge length, but only whole-number ones, which is why the item sits in Unit 4."
+  },
+  "g6-2024-028": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.35,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "An isosceles trapezoid is shown below. What is the area, in square centimeters, of the isosceles trapezoid?",
+   "choices": [
+    "120",
+    "150",
+    "195",
+    "240"
+   ],
+   "figures": [
+    "The top is 10 centimetres, the bottom is 16, and the height between them is 15."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 11,
+    "lessonTitle": "Polygons",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Quadrilateral Strategies",
+    "page": 191,
+    "quote": "Find the area of two quadrilaterals of your choice. Show your reasoning."
+   },
+   "why": "An isosceles trapezoid with both parallel sides (10 cm, 16 cm) and the height (15 cm) labelled; find the area. IM never gives a trapezoid formula, so the intended work is decomposition into a rectangle and two triangles -- which is this activity, whose narrative is about finding 'the area of quadrilaterals that are not parallelograms'."
+  },
+  "g6-2024-032": {
+   "standard": "NY-6.G.4",
+   "pValue": 0.53,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Jose builds a skateboard ramp in the shape of a right triangular prism. The net below shows the dimensions of each part of the ramp. What is the surface area, in square feet, of the ramp?",
+   "choices": [
+    "90",
+    "75",
+    "51",
+    "44"
+   ],
+   "figures": [
+    "The net is a row of three rectangles, each 4 feet tall: one 2.5 feet wide, then one 6 feet wide, then one 6.5 feet wide. A right triangle sits above and another below the middle rectangle, each with legs of 2.5 feet and 6 feet and a slanted side of 6.5 feet."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 15,
+    "lessonTitle": "More Nets, More Surface Area",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "assessed",
+    "activity": "Surface Area of a Triangular Prism",
+    "page": 265,
+    "quote": "In this net, the two triangles are right triangles. All quadrilaterals are rectangles."
+   },
+   "why": "A skateboard ramp given as the net of a right triangular prism -- two right triangles and three rectangles -- with the surface area asked for. This Cool-down is that task verbatim: a net of right triangles and rectangles, find its surface area. It also asks which polyhedron the net makes, which the item's ramp context supplies."
+  },
+  "g6-2024-035": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "The dimensions of a cereal box in the shape of a right rectangular prism are shown below. <span class=\"math\">8 <span class=\"frac\"><span>1</span><span>10</span></span></span> inches by <span class=\"math\">4<span class=\"frac\"><span>4</span><span>5</span></span></span> inches by <span class=\"math\">12 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches What is the volume, in cubic inches, of the cereal box?",
+   "choices": [
+    "<span class=\"math\">24</span>",
+    "<span class=\"math\">25 <span class=\"frac\"><span>2</span><span>5</span></span></span>",
+    "<span class=\"math\">384<span class=\"frac\"><span>1</span><span>25</span></span></span>",
+    "<span class=\"math\">486</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "Cubes With Fractional Edge Lengths",
+    "page": 233,
+    "quote": "a rectangular prism that is 3 inches by 1 inch by 1 1/3 inch"
+   },
+   "why": "A cereal box given in prose as 8 1/10 by 4 4/5 by 12 1/2 inches; find its volume. The activity's prism is given the same way -- as three edge lengths, one of them fractional -- and asks for the volume in cubic inches."
+  },
+  "g6-2024-040": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A diagram of a rectangular flag, with a shaded section, is shown below. What is the area, in square centimeters, of the shaded section of the flag?",
+   "choices": [],
+   "figures": [
+    "The flag is 9 centimetres by 5 centimetres, and the notch is 4.5 centimetres deep across the full 5 centimetre height."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 3,
+    "lessonTitle": "Reasoning to Find Area",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 3,
+    "role": "assessed",
+    "activity": "Maritime Flag",
+    "page": 69,
+    "quote": "A maritime flag is shown. What is the area of the shaded part"
+   },
+   "why": "A rectangular flag with a triangular notch cut out of one side; find the area of the shaded part. The Cool-down of this lesson is a maritime flag with a shaded part and the same question, and the lesson's strategies -- decompose, or enclose and subtract -- are what turn 9 by 5 minus the notch into an answer."
+  },
+  "g6-2024-044": {
+   "standard": "NY-6.G.5",
+   "pValue": 0.3,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+   "choices": [],
+   "figures": [
+    "It is 4 unit cubes along each edge."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 17,
+    "lessonTitle": "Squares and Cubes",
+    "candidateLessons": []
+   },
+   "existingEvidence": {
+    "lesson": 17,
+    "role": "introduces",
+    "activity": "Perfect Cubes",
+    "page": 291,
+    "quote": "A cube has a side length of 4 cm. What is its volume?"
+   },
+   "why": "A cube built from unit cubes, 4 along each edge; name the perfect cube its volume represents and explain using volume and exponents. This activity introduces the term 'perfect cube' and then asks for the volume of a cube of side length 4 -- the item's own number, 64. The exponent half of the item is Activity 3 'Introducing Exponents' (p. 292) in the same lesson, and the preceding Activity 1 'Building with 32 Cubes' (p. 289, optional) is the one that builds the cube out of snap cubes."
+  },
+  "g6-2025-006": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A carton contains <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> cups of ice cream. One full serving is <span class=\"math\"><span class=\"frac\"><span>3</span><span>4</span></span></span> cup. What is the total number of full servings of ice cream in the carton?",
+   "choices": [
+    "<span class=\"math\">3 <span class=\"frac\"><span>3</span><span>4</span></span></span>",
+    "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>",
+    "<span class=\"math\">6</span>",
+    "<span class=\"math\">12</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 6,
+    "lessonTitle": "Using Diagrams to Find the Number of Groups",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 6,
+    "role": "assessed",
+    "activity": "How Many in 2?",
+    "page": 99,
+    "quote": "How many 3/4 s are in 2?"
+   },
+   "why": "4 1/2 cups of ice cream, 3/4 cup per serving, total number of full servings. The Cool-down of this lesson asks how many 3/4s are in a whole number -- the same divisor, the same question -- and is where the curriculum tests the interpretation."
+  },
+  "g6-2025-013": {
+   "standard": "NY-6.G.4",
+   "pValue": 0.53,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "The net of a right rectangular prism is shown below. What is the surface area, in square centimeters, of this prism?",
+   "choices": [
+    "20",
+    "34",
+    "40",
+    "48"
+   ],
+   "figures": [
+    "The small face is 2 centimetres by 2 centimetres and the long face is 5 centimetres tall."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 14,
+    "lessonTitle": "Nets and Surface Area",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Using Nets to Find Surface Area",
+    "page": 246,
+    "quote": "Name the polyhedron that each net would form when assembled."
+   },
+   "why": "The item gives the net of a right rectangular prism with only some faces dimensioned (2 by 2 and 5 tall) and asks for surface area, so the student has to work out which faces the unlabelled rectangles are before adding. That is this activity's work: name the solid the net makes, then find its surface area from the polygons in the net."
+  },
+  "g6-2025-017": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.43,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A regular hexagon is made of equilateral triangles, as shown below. What is the area, in square centimeters, of the regular hexagon?",
+   "choices": [
+    "10.75",
+    "21.5",
+    "34.3",
+    "64.5"
+   ],
+   "figures": [
+    "Each side is 5 centimetres and the height from the centre to a side is 4.3 centimetres."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 11,
+    "lessonTitle": "Polygons",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Pinwheel (Optional)",
+    "page": 195,
+    "quote": "Decompose the pinwheel into triangles and find the areas"
+   },
+   "why": "A regular hexagon drawn as six equilateral triangles from the centre, side 5 cm and the height from centre to side 4.3 cm; the distractors are one triangle (10.75) and two (21.5), so the item is 'find one triangle's area, then multiply by six'. This is the only activity in the unit that asks for the area of a polygon that is not a quadrilateral, and its narrative watches for students who decompose it into triangles -- but it is optional. The non-optional runner-up is Lesson 11 Activity 2 'Quadrilateral Strategies' (p. 191), which does the same decomposing but only on quadrilaterals."
+  },
+  "g6-2025-034": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.56,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A gift box is in the shape of a right rectangular prism. The gift box is <span class=\"math\">7<span class=\"frac\"><span>3</span><span>5</span></span></span> centimeters long, <span class=\"math\">5 <span class=\"frac\"><span>4</span><span>5</span></span></span> centimeters wide, and <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> centimeters high. What is the volume, in cubic centimeters, of the gift box?",
+   "choices": [
+    "<span class=\"math\">15 <span class=\"frac\"><span>9</span><span>10</span></span></span>",
+    "<span class=\"math\">70 <span class=\"frac\"><span>6</span><span>25</span></span></span>",
+    "<span class=\"math\">110 <span class=\"frac\"><span>1</span><span>5</span></span></span>",
+    "<span class=\"math\">155 <span class=\"frac\"><span>8</span><span>50</span></span></span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "assessed",
+    "activity": "Storage Box",
+    "page": 238,
+    "quote": "Find the volume of the box in cubic inches. Show your reasoning."
+   },
+   "why": "A gift box 7 3/5 by 5 4/5 by 2 1/2 centimetres; find the volume. The Cool-down of this lesson is a storage box given as a base measuring 3 by 4 inches and a height of 1 1/2 inches, with the volume asked for -- the curriculum testing the same computation on a prism with a fractional edge."
+  },
+  "g6-2025-036": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.39,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "The figure below shows a parallelogram with part of it shaded. What is the area, in square centimeters, of the part of the parallelogram that is shaded?",
+   "choices": [
+    "3.6",
+    "5.4",
+    "4.32",
+    "8.64"
+   ],
+   "figures": [
+    "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 11,
+    "lessonTitle": "Polygons",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Quadrilateral Strategies",
+    "page": 191,
+    "quote": "decompose the quadrilateral into parallelograms and triangles to find the area"
+   },
+   "why": "A parallelogram with part of it shaded; find the area of the shaded part. Whatever the shaded piece is, the work is to decompose the parallelogram and account for the unshaded corner, which is this activity. Confidence is low because the figure description does not reproduce the answer key: 2.4 cm across by 3 cm high is 7.2, not the keyed 5.4 (5.4 is a trapezoid with parallel sides 2.4 and 1.2 and height 3, or a triangle with base 3.6 and height 3), so the exact decomposition cannot be settled from the data in this repository."
+  },
+  "g6-2025-042": {
+   "standard": "NY-6.G.4",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "The net of a right square pyramid is shown below. What is the surface area, in square centimeters, of the pyramid?",
+   "choices": [],
+   "figures": [
+    "The square base is 5 centimetres on each side and each triangular face is 3.5 centimetres tall."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 14,
+    "lessonTitle": "Nets and Surface Area",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "assessed",
+    "activity": "Unfolded",
+    "page": 251,
+    "quote": "Find the surface area (in square units) of the polyhedron. Show your reasoning."
+   },
+   "why": "Same square-pyramid net, but as a 2-credit constructed response that says 'Show your work'. This Cool-down is where the curriculum itself tests the skill: a net is given, the student names the polyhedron and finds its surface area, showing reasoning. Lesson 14 Activity 1 'Using Nets to Find Surface Area' (p. 246) is the activity that teaches it."
+  },
+  "g6-2025-043": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.27,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "The top of a rectangular table has a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>3</span></span></span> feet and an area of <span class=\"math\">21 <span class=\"frac\"><span>2</span><span>3</span></span></span> square feet. What is the length, in feet, of the top of the table?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 13,
+    "lessonTitle": "Rectangles with Fractional Side Lengths",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 13,
+    "role": "practises",
+    "activity": "How Many Would it Take?",
+    "page": 211,
+    "quote": "Find the length of the tray in inches. Show your reasoning."
+   },
+   "why": "A table top with width 3 1/3 feet and area 21 2/3 square feet; find the length, work shown. This activity opens with a tray of width 11 1/4 inches and area 50 5/8 square inches and asks for its length -- the same missing-side-from-area division, and the only place in the unit that asks it of a rectangle. (Activities 1 and 2 of this lesson are optional; this one is not.)"
+  },
+  "g6-2026-009": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.6,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A teacher has <span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span> vanilla cakes. A serving size is <span class=\"math\"><span class=\"frac\"><span>1</span><span>12</span></span></span> of a cake. How many total servings of vanilla cake does the teacher have?",
+   "choices": [
+    "<span class=\"math\">12</span>",
+    "<span class=\"math\">24</span>",
+    "<span class=\"math\">30</span>",
+    "<span class=\"math\">60</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 10,
+    "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 10,
+    "role": "practises",
+    "activity": "Dividing by Unit Fractions",
+    "page": 163,
+    "quote": "how to find how many halves, thirds, fourths, or sixths were in 6 wholes"
+   },
+   "why": "2 1/2 cakes at 1/12 of a cake per serving, how many servings -- dividing by a unit fraction, and the answer (30) is too large to count out on a diagram. This activity is where students generalise from counting halves, thirds and sixths in a whole number to seeing that dividing by 1/b multiplies by b, which is the move the item rewards."
+  },
+  "g6-2026-011": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.46,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "An art teacher orders boxes to organize her supplies. Each box is a right rectangular prism with a length of <span class=\"math\">3 <span class=\"frac\"><span>2</span><span>3</span></span></span> inches, a width of <span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span> inches, and a height of <span class=\"math\">6</span> inches. What is the volume, in cubic inches, of each box?",
+   "choices": [
+    "<span class=\"math\">54<span class=\"frac\"><span>1</span><span>3</span></span></span>",
+    "<span class=\"math\">54<span class=\"frac\"><span>3</span><span>5</span></span></span>",
+    "<span class=\"math\">77</span>",
+    "<span class=\"math\">96</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "Cubes With Fractional Edge Lengths",
+    "page": 233,
+    "quote": "What is the volume, in cubic inches, of the rectangular prism? Explain or show"
+   },
+   "why": "Storage boxes 3 2/3 by 3 1/2 by 6 inches; find the volume of each. Same activity. Lesson 15 Activity 2 'Fish Tank' (p. 236) is an even closer echo -- a tank 10 by 8 1/4 by 6 feet, 'What is the volume of the tank in cubic feet?' -- but it is optional, so the non-optional Activity 1 is cited instead."
+  },
+  "g6-2026-016": {
+   "standard": "NY-6.G.4",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "A net of a right triangular prism is shown below. What is the surface area, in square feet, of the triangular prism?",
+   "choices": [
+    "240",
+    "288",
+    "336",
+    "384"
+   ],
+   "figures": [
+    "The net is a row of three rectangles 10 feet, 12 feet and 10 feet wide, all 6 feet tall, with a triangle above and below the middle rectangle. Each triangle has a base of 12 feet and a height of 8 feet."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 15,
+    "lessonTitle": "More Nets, More Surface Area",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "assessed",
+    "activity": "Surface Area of a Triangular Prism",
+    "page": 265,
+    "quote": "What is its surface area in square units? Show your reasoning."
+   },
+   "why": "Net of a right triangular prism (three rectangles in a row, a triangle above and below the middle one), surface area asked. The Cool-down of this lesson is the same net and the same question. Lesson 15 Activity 1 'Building Prisms and Pyramids' runs the other direction -- solid first, then draw the net -- so it is a weaker match for an item that hands the net over."
+  },
+  "g6-2026-022": {
+   "standard": "NY-6.G.5",
+   "pValue": 0.67,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "A model is built to represent a perfect cube using unit cubes. The model has 5 layers. Each layer consists of 5 rows of 5 unit cubes. What perfect cube is represented by the model?",
+   "choices": [
+    "125",
+    "25",
+    "15",
+    "10"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 17,
+    "lessonTitle": "Squares and Cubes",
+    "candidateLessons": []
+   },
+   "existingEvidence": {
+    "lesson": 17,
+    "role": "practises",
+    "activity": "Introducing Exponents",
+    "page": 292,
+    "quote": "A cube has edge length 5 in. Use an exponent to express its volume."
+   },
+   "why": "A model of 5 layers of 5 rows of 5 unit cubes; which perfect cube does it represent (125). This activity asks for the volume of a cube of edge length 5 expressed with an exponent -- the item's number and its two ideas, volume and exponent notation. Activity 2 'Perfect Cubes' (p. 291) in the same lesson supplies the term itself. Unit 6's exponent lessons (Lessons 12-15, 'Meaning of Exponents' onward) were read and rejected: they evaluate and compare exponential expressions but never tie one to a cube built from unit cubes."
+  },
+  "g6-2026-029": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.49,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "A piece of fabric in the shape of a parallelogram is used to create two sails for a sailboat. A diagram of the fabric is shown below. What is the area, in square meters, of the shaded region?",
+   "choices": [
+    "24",
+    "30",
+    "48",
+    "60"
+   ],
+   "figures": [
+    "The slanted side is 10 metres, the top is 8 metres, and the height is 6 metres, with a right angle marked at the foot of the height. One of the two triangles is shaded."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 9,
+    "lessonTitle": "Formula for the Area of a Triangle",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "practises",
+    "activity": "Applying the Formula for Area of Triangles",
+    "page": 163,
+    "quote": "circle a base measurement that you can use to find the area"
+   },
+   "why": "The fabric is a parallelogram cut by a diagonal into two sails; the shaded sail has base 8 m and height 6 m, and the slanted side of 10 m is a distractor (the wrong choices are 30, 48 and 60). This activity's whole point is that each triangle is 'labeled with two or three measurements' and students must first decide which lengths can be used before applying 1/2 b h. Lesson 8's Warm-up 'Composing Parallelograms' (p. 141, 'The triangle covers half of the region of each parallelogram') is the runner-up and explains the halving the diagram invites."
+  },
+  "g6-2026-035": {
+   "standard": "NY-6.G.2",
+   "pValue": 0.56,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A diagram of a right rectangular prism is shown below. What is the volume, in cubic inches, of the right rectangular prism?",
+   "choices": [
+    "<span class=\"math\">17<span class=\"frac\"><span>1</span><span>12</span></span></span>",
+    "<span class=\"math\">23 <span class=\"frac\"><span>1</span><span>3</span></span></span>",
+    "<span class=\"math\">120 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">122 <span class=\"frac\"><span>1</span><span>2</span></span></span>"
+   ],
+   "figures": [
+    "It is 9 and one third inches long, 2 and a half inches deep, and 5 and a quarter inches tall."
+   ],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 15,
+    "lessonTitle": "Volume of Prisms",
+    "candidateLessons": [
+     14,
+     15,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "Cubes With Fractional Edge Lengths",
+    "page": 233,
+    "quote": "What is the volume, in cubic inches, of the rectangular prism? Explain or show"
+   },
+   "why": "A right rectangular prism with three mixed-number edges (9 1/3 by 2 1/2 by 5 1/4), volume in cubic inches. Same activity: a prism with a fractional edge length, volume asked in cubic inches. The item is harder only in that all three factors are mixed numbers."
+  },
+  "g6-2026-043": {
+   "standard": "NY-6.G.1",
+   "pValue": 0.29,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A diagram of a trapezoid with dimensions in centimeters is shown below. What is the area, in square centimeters, of the trapezoid?",
+   "choices": [],
+   "figures": [
+    "The trapezoid has a horizontal top edge of 8.8 centimetres that meets both side edges at right angles. The left side is 15.2 centimetres and the right side is 11.5 centimetres, and a slanted edge joins their lower ends."
+   ],
+   "placement": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 11,
+    "lessonTitle": "Polygons",
+    "candidateLessons": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Quadrilateral Strategies",
+    "page": 191,
+    "quote": "enclose the figure in a rectangle and subtract the area of the extra pieces"
+   },
+   "why": "A right trapezoid (two right angles marked; parallel sides 11.5 cm and 15.2 cm, the 8.8 cm side perpendicular to both) with the area asked for and work shown. Again a non-parallelogram quadrilateral, handled by decomposing into a rectangle and a triangle or by enclosing and subtracting -- both strategies named in this activity."
+  },
+  "g6-2026-046": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.32,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Jackie is making batches of trail mix based on the information listed below. <span class=\"math\">•</span> She has <span class=\"math\">4<span class=\"frac\"><span>3</span><span>4</span></span></span> cups of dried bananas. <span class=\"math\">•</span> She uses <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> cup of dried bananas in each full batch of trail mix. What is the maximum number of full batches of trail mix Jackie can make with the dried bananas she has?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 16,
+    "lessonTitle": "Solving Problems Involving Fractions",
+    "candidateLessons": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16,
+     17
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 16,
+    "role": "practises",
+    "activity": "Making Ornaments",
+    "page": 251,
+    "quote": "how many whole batches of ornaments can they make? Explain your reasoning."
+   },
+   "why": "4 3/4 cups of dried bananas at 1/3 cup per batch, maximum number of FULL batches -- 4 3/4 divided by 1/3 is 14 1/4, and the item wants 14. Discarding the remainder is the distinctive demand, and this activity is the one that makes it: its narrative says 'The question asks for the whole-number of batches that can be made with available ingredients.' Lesson 16 is an optional lesson, though. The non-optional runner-up is Lesson 6 Activity 2 'Finding the Number of Groups' (p. 95), which sets up the division but never asks students to drop a partial group."
+  }
+ }
+}

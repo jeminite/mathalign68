@@ -1,0 +1,603 @@
+{
+  "scope": "grade 6 NY-6.G.* and NY-6.NS.1 -- additional evidence",
+  "items": {
+    "g6-2023-007": {
+      "added": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Polyhedra",
+          "role": "introduces",
+          "activity": "Prisms and Pyramids",
+          "page": 233,
+          "quote": "to introduce nets as two-dimensional representations of polyhedra",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Nets and Surface Area",
+          "role": "assessed",
+          "activity": "Unfolded",
+          "page": 251,
+          "quote": "Find the surface area (in square units) of the polyhedron.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the lesson where pyramid nets first appear and the Cool-down where the curriculum tests net-to-surface-area on its own, so the work spans Lessons 13-14 rather than sitting on one activity."
+    },
+    "g6-2023-033": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "introduces",
+          "activity": "Volumes of Cubes and Prisms",
+          "page": 223,
+          "quote": "students find the volume of a prism with fractional edge lengths",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "assessed",
+          "activity": "Storage Box",
+          "page": 238,
+          "quote": "Find the volume of the box in cubic inches. Show your reasoning.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Shows that fractional-edge volume is built in Lesson 14 by packing half-inch cubes and tested in the Lesson 15 Cool-down, not only practised in the one activity already cited."
+    },
+    "g6-2023-037": {
+      "added": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Area of Triangles",
+          "role": "introduces",
+          "activity": "More Triangles",
+          "page": 143,
+          "quote": "Find the areas of at least two of these triangles.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Formula for the Area of a Triangle",
+          "role": "practises",
+          "activity": "Applying the Formula for Area of Triangles",
+          "page": 163,
+          "quote": "circle a base measurement that you can use to find the area",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Right-triangle area is reasoned out informally a whole lesson earlier (Lesson 8) before the formula is applied in Lesson 9, so a teacher can start the repair either side of the formula."
+    },
+    "g6-2023-042": {
+      "added": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Using Diagrams to Find the Number of Groups",
+          "role": "assessed",
+          "activity": "How Many in 2?",
+          "page": 99,
+          "quote": "How many 3/4 s are in 2?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Using an Algorithm to Divide Fractions",
+          "role": "practises",
+          "activity": "Dividing With or Without an Algorithm",
+          "page": 179,
+          "quote": "Calculate at least four quotients. Show your reasoning.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The same division is set up with diagrams and tested in Lesson 6 and then computed with the algorithm in Lesson 11, so the item is reachable from either end of the unit."
+    },
+    "g6-2023-045": {
+      "added": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "practises",
+          "activity": "Cubes With Fractional Edge Lengths",
+          "page": 233,
+          "quote": "What is the volume, in cubic inches, of the rectangular prism?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "assessed",
+          "activity": "Storage Box",
+          "page": 238,
+          "quote": "A storage box has a base that measures 3 inches by 4 inches",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing citation is an optional activity; these two are required, and the Cool-down is the only non-optional place that states a prism as a base plus a height, which is the form this item uses."
+    },
+    "g6-2024-020": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "assessed",
+          "activity": "Triangles and Cubes",
+          "page": 228,
+          "quote": "What is the volume, in cubic inches, of one cube with an edge length",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "practises",
+          "activity": "Cubes With Fractional Edge Lengths",
+          "page": 233,
+          "quote": "finding the volume of a right rectangular prism with fractional edge lengths",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "A cube with a fractional edge length is asked for in exactly two places, the Lesson 14 Cool-down and Lesson 15 Activity 1; the pair is the whole of the curriculum's treatment."
+    },
+    "g6-2024-028": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "introduces",
+          "activity": "On the Grid",
+          "page": 61,
+          "quote": "different strategies for reasoning about finding the area of regions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Formula for the Area of a Triangle",
+          "role": "practises",
+          "activity": "Finding a Formula for the Area of a Triangle",
+          "page": 160,
+          "quote": "write an expression for the area of any triangle, using b and h",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "IM never gives a trapezoid formula, so the item is really Lesson 3's decompose-or-enclose strategies plus Lesson 9's triangle formula, assembled once in Lesson 11 Activity 2."
+    },
+    "g6-2024-032": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Nets and Surface Area",
+          "role": "introduces",
+          "activity": "Using Nets to Find Surface Area",
+          "page": 246,
+          "quote": "They use nets to find surface area, applying what they learned earlier",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "More Nets, More Surface Area",
+          "role": "practises",
+          "activity": "Building Prisms and Pyramids",
+          "page": 258,
+          "quote": "You will draw its net and calculate its surface area.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Net-to-surface-area is taught in Lesson 14 and practised in Lesson 15 before the Cool-down already cited tests it, so the span is Lessons 14-15 rather than one Cool-down."
+    },
+    "g6-2024-035": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "introduces",
+          "activity": "Volumes of Cubes and Prisms",
+          "page": 223,
+          "quote": "Sketch the prism, and find its volume in cubic inches.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "assessed",
+          "activity": "Storage Box",
+          "page": 238,
+          "quote": "Find the volume of the box in cubic inches. Show your reasoning.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Places the item across the introduce-practise-assess arc of Lessons 14-15 instead of the single Lesson 15 activity."
+    },
+    "g6-2024-040": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "introduces",
+          "activity": "On the Grid",
+          "page": 61,
+          "quote": "Find the area, in square units, of each shaded region without counting every square",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "practises",
+          "activity": "Off the Grid",
+          "page": 65,
+          "quote": "Find the area of the shaded region(s) of each figure.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Both main activities of the placement lesson ask the item's question; the off-grid one matters most, because the item's flag carries labelled lengths and no grid."
+    },
+    "g6-2024-044": {
+      "added": [
+        {
+          "lesson": 17,
+          "lessonTitle": "Squares and Cubes",
+          "role": "practises",
+          "activity": "Introducing Exponents",
+          "page": 292,
+          "quote": "A cube has edge length 5 in. Use an exponent to express its volume.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Squares and Cubes",
+          "role": "assessed",
+          "activity": "Exponent Expressions",
+          "page": 295,
+          "quote": "Use an exponent to express its volume.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item's two demands are split across Lesson 17: Activity 2 supplies the term perfect cube and Activity 3 plus the Cool-down supply the exponent notation the item asks students to use."
+    },
+    "g6-2025-006": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "How Many Groups? (Part 2)",
+          "role": "introduces",
+          "activity": "Reasoning with Fraction Strips",
+          "page": 76,
+          "quote": "How many 1/8 s are in 1 1/4 ?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Using Diagrams to Find the Number of Groups",
+          "role": "practises",
+          "activity": "Finding the Number of Groups",
+          "page": 95,
+          "quote": "How many groups of 1/2 pound are in 2 3/4 pounds?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Counting fractional servings in a mixed number starts a lesson earlier with fraction strips, so a teacher can reach the item without the tape diagrams of Lesson 6."
+    },
+    "g6-2025-013": {
+      "added": [
+        {
+          "lesson": 12,
+          "lessonTitle": "What Is Surface Area?",
+          "role": "introduces",
+          "activity": "Covering the Cabinet (Part 2)",
+          "page": 220,
+          "quote": "surface area of a three-dimensional figure is the total area of all its faces",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Nets and Surface Area",
+          "role": "assessed",
+          "activity": "Unfolded",
+          "page": 251,
+          "quote": "What kind of polyhedron can be assembled from this net?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the definition of surface area in Lesson 12 and the Cool-down that tests reading an undimensioned net, widening the entry from Lesson 14 alone to Lessons 12-14."
+    },
+    "g6-2025-017": {
+      "added": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Formula for the Area of a Triangle",
+          "role": "introduces",
+          "activity": "Applying the Formula for Area of Triangles",
+          "page": 163,
+          "quote": "circle a base measurement that you can use to find the area",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Polygons",
+          "role": "practises",
+          "activity": "Quadrilateral Strategies",
+          "page": 191,
+          "quote": "decompose the quadrilateral into parallelograms and triangles to find the area",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing citation is optional, and it is the unit's only activity about a non-quadrilateral polygon; these two are required and supply the item's actual moves, one triangle's area and decomposing a polygon into triangles."
+    },
+    "g6-2025-034": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "introduces",
+          "activity": "Volumes of Cubes and Prisms",
+          "page": 223,
+          "quote": "students find the volume of a prism with fractional edge lengths",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "practises",
+          "activity": "Cubes With Fractional Edge Lengths",
+          "page": 233,
+          "quote": "What is the volume, in cubic inches, of the rectangular prism?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Backs the Cool-down already cited with the two activities that build and practise the same computation, so the entry shows where to reteach rather than only where it is tested."
+    },
+    "g6-2025-036": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "assessed",
+          "activity": "Maritime Flag",
+          "page": 69,
+          "quote": "What is the area of the shaded part of the flag?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Area of Parallelograms",
+          "role": "introduces",
+          "activity": "More Areas of Parallelograms",
+          "page": 111,
+          "quote": "identify an appropriate pair of base-height measurements to use",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item is a shaded-part-of-a-figure question on a parallelogram, so it draws on Lesson 6's base-height choice as much as Lesson 11's decomposing, and Lesson 3's Cool-down is where a shaded part is actually tested."
+    },
+    "g6-2025-042": {
+      "added": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Polyhedra",
+          "role": "introduces",
+          "activity": "Prisms and Pyramids",
+          "page": 233,
+          "quote": "to introduce nets as two-dimensional representations of polyhedra",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Nets and Surface Area",
+          "role": "practises",
+          "activity": "Using Nets to Find Surface Area",
+          "page": 246,
+          "quote": "Find the surface area of each polyhedron. Explain your reasoning clearly.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Pairs the Cool-down already cited with the lesson that introduces pyramid nets and the activity that teaches the calculation, which is what a show-your-work item needs."
+    },
+    "g6-2025-043": {
+      "added": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Rectangles with Fractional Side Lengths",
+          "role": "introduces",
+          "activity": "Areas of Squares and Rectangles (Optional)",
+          "page": 205,
+          "quote": "the area of a rectangle with fractional side lengths can be found by multiplying",
+          "optionalEvidence": true
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Rectangles with Fractional Side Lengths",
+          "role": "assessed",
+          "activity": "Two Frames",
+          "page": 214,
+          "quote": "Two rectangular picture frames have the same area of 45 square inches",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Finding a missing side from a fractional area lives entirely in Lesson 13; the Cool-down is the only place it is tested, and the activity that justifies area as a product of fractional sides is optional."
+    },
+    "g6-2026-009": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "How Many Groups? (Part 2)",
+          "role": "introduces",
+          "activity": "Reasoning with Fraction Strips",
+          "page": 76,
+          "quote": "How many 1/2 s are in 2? How many 1/5 s are in 3?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+          "role": "assessed",
+          "activity": "Dividing by and",
+          "page": 170,
+          "quote": "Explain or show how you could find 5 ÷ 1/3",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Dividing a number by a unit fraction is counted concretely in Lesson 5 and tested in the Lesson 10 Cool-down, so the entry now spans the concrete and the generalised forms."
+    },
+    "g6-2026-011": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "introduces",
+          "activity": "Volumes of Cubes and Prisms",
+          "page": 223,
+          "quote": "students find the volume of a prism with fractional edge lengths",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "assessed",
+          "activity": "Storage Box",
+          "page": 238,
+          "quote": "Find the volume of the box in cubic inches. Show your reasoning.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds required evidence either side of the cited activity; the closest textual echo in the curriculum, Lesson 15's Fish Tank, is optional and was left out for that reason."
+    },
+    "g6-2026-016": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Nets and Surface Area",
+          "role": "introduces",
+          "activity": "Using Nets to Find Surface Area",
+          "page": 246,
+          "quote": "Find the surface area of each polyhedron. Explain your reasoning clearly.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "More Nets, More Surface Area",
+          "role": "practises",
+          "activity": "Building Prisms and Pyramids",
+          "page": 258,
+          "quote": "Find the surface area of your polyhedron. Show your thinking in an organized manner",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Shows that a triangular-prism net is worked in Lesson 14 and Lesson 15 before the Cool-down already cited assesses it, which is more useful than the Cool-down alone."
+    },
+    "g6-2026-022": {
+      "added": [
+        {
+          "lesson": 17,
+          "lessonTitle": "Squares and Cubes",
+          "role": "introduces",
+          "activity": "Perfect Cubes",
+          "page": 291,
+          "quote": "Find four other numbers that are perfect cubes and two numbers that are not",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Squares and Cubes",
+          "role": "assessed",
+          "activity": "Exponent Expressions",
+          "page": 295,
+          "quote": "Use an exponent to express its volume.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Perfect cubes and exponent notation are introduced, practised and tested inside Lesson 17 alone; no other lesson in the unit touches this item, which is worth knowing before skipping the lesson."
+    },
+    "g6-2026-029": {
+      "added": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Area of Triangles",
+          "role": "introduces",
+          "activity": "Composing Parallelograms",
+          "page": 141,
+          "quote": "The triangle covers half of the region of each parallelogram.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Formula for the Area of a Triangle",
+          "role": "assessed",
+          "activity": "Two More Triangles",
+          "page": 167,
+          "quote": "For each triangle, identify a base and a corresponding height.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The halving the item's diagram invites is established in the Lesson 8 Warm-up, and the base-height choice the 10 m distractor punishes is tested in the Lesson 9 Cool-down."
+    },
+    "g6-2026-035": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+          "role": "introduces",
+          "activity": "Volumes of Cubes and Prisms",
+          "page": 223,
+          "quote": "Sketch the prism, and find its volume in cubic inches.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Volume of Prisms",
+          "role": "assessed",
+          "activity": "Storage Box",
+          "page": 238,
+          "quote": "Describe a different way to find the volume of the box.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Widens the shared Lesson 15 activity with the lesson that builds fractional-edge volume and the Cool-down that asks for a second method, which is what a three-mixed-number product rewards."
+    },
+    "g6-2026-043": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "introduces",
+          "activity": "On the Grid",
+          "page": 61,
+          "quote": "different strategies for reasoning about finding the area of regions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Reasoning to Find Area",
+          "role": "assessed",
+          "activity": "Maritime Flag",
+          "page": 69,
+          "quote": "What is the area of the shaded part of the flag?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "A right trapezoid is a rectangle plus a right triangle, which is Lesson 3's decompose-or-enclose work; that Cool-down is the closest the unit comes to assessing it, since Lesson 11 has no area Cool-down."
+    },
+    "g6-2026-046": {
+      "added": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Using Diagrams to Find the Number of Groups",
+          "role": "practises",
+          "activity": "Finding the Number of Groups",
+          "page": 95,
+          "quote": "How many 3/8 -inch thick books make a stack that is 6 inches tall?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+          "role": "introduces",
+          "activity": "Dividing by Unit Fractions",
+          "page": 163,
+          "quote": "how to find how many halves, thirds, fourths, or sixths were in 6 wholes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The placement lesson is optional, so these two required lessons carry the division itself; neither, however, asks students to discard the partial batch, which is the item's distinctive demand."
+    }
+  }
+}

@@ -51,6 +51,10 @@ ANSWER_RE = re.compile(r"^(Sample|Possible)\b")
 TAB_Y, FOOT_Y = 46.0, 820.0
 SAME_LINE = 6.0
 
+def squash_ws(t):
+    return re.sub(r"\s+", "", t or "")
+
+
 LESSON_FIELDS = ["Goals", "Learning Targets", "Lesson Narrative",
                  "Student Learning Goal", "Required Preparation",
                  "Lesson Synthesis", "Lesson Summary"]
@@ -59,6 +63,16 @@ ACTIVITY_FIELDS = ["Activity Narrative", "Launch", "Student Task Statement",
                    "Are You Ready for More?", "Responding to Student Thinking"]
 FIELD_HEADS = set(LESSON_FIELDS) | set(ACTIVITY_FIELDS) | {"Lesson Timeline",
                                                            "Practice Problems"}
+# The same kerning artefact that splits "Ac tivity 1" also splits a FIELD heading:
+# five grade 6 Cool-downs print "Studen t Task Statement", which failed the exact
+# match, so the heading was not recognised and the whole body was never assigned to
+# the activity. The result looked like an activity that genuinely has no text --
+# name and page present, task statement and narrative both empty -- which is
+# uncitable and invisible rather than obviously broken.
+# Squashed matching is safe here for the same reason as KIND_SQUASHED_RE and more
+# so: these headings are long, distinctive strings, and the squashed form is
+# mapped back to the canonical spelling so downstream code still sees exact text.
+FIELD_HEADS_SQUASHED = {squash_ws(h): h for h in FIELD_HEADS}
 # The national CCSS edition writes "Activity 1: Optional" where New York writes
 # "Activity 1". Matching only the bare form lost every activity in grade 7 unit 9.
 KIND_RE = re.compile(r"^(Warm-up|Activity\s+\d+|Cool-down)(:\s*Optional)?$")
@@ -81,6 +95,8 @@ def squash(t):
 
 
 RECOVERED = []
+# Field headings whose text layer split a word ("Studen t Task Statement").
+FIELDS_RECOVERED = []
 # Section titles the outline bookmark omitted and the opening page supplied.
 # Counted separately from RECOVERED so neither number can hide inside the other.
 SECTIONS_RECOVERED = []
@@ -257,6 +273,10 @@ def headings(spans):
         y, x = min(v["y"] for v in g), min(v["x"] for v in g)
         if t in FIELD_HEADS:
             kind = "field"
+        elif squash_ws(t) in FIELD_HEADS_SQUASHED:
+            canonical = FIELD_HEADS_SQUASHED[squash_ws(t)]
+            FIELDS_RECOVERED.append("%s -> %s" % (t, canonical))
+            t, kind = canonical, "field"
         elif KIND_RE.match(t) or KIND_SQUASHED_RE.match(squash(t)):
             kind = "kind"
         elif PROBLEM_RE.match(t):
@@ -566,6 +586,9 @@ def main(argv):
                     # Section titles taken from the section's opening page
                     # because the outline bookmark gave none. Expected: 1.
                     "sectionTitlesRecovered": 0,
+                    # Field headings split by the same kerning artefact, e.g.
+                    # "Studen t Task Statement". Expected: 5.
+                    "fieldHeadingsRecovered": 0,
                     "sources": {}},
            "grades": {}}
     for g in grades:
@@ -595,10 +618,12 @@ def main(argv):
             doc.close()
     out["meta"]["headingsRecovered"] = len(RECOVERED)
     out["meta"]["sectionTitlesRecovered"] = len(SECTIONS_RECOVERED)
+    out["meta"]["fieldHeadingsRecovered"] = len(FIELDS_RECOVERED)
     sys.stderr.write("  recovered %d heading(s) whose text layer split the word\n"
                      % len(RECOVERED))
     sys.stderr.write("  recovered %d section title(s) from the opening page: %s\n"
                      % (len(SECTIONS_RECOVERED), "; ".join(SECTIONS_RECOVERED) or "-"))
+    sys.stderr.write("  recovered %d split field heading(s)\n" % len(FIELDS_RECOVERED))
     with open(OUT, "w") as fh:
         json.dump(out, fh, indent=1, ensure_ascii=False)
     sys.stderr.write("wrote %s (%.1f MB)\n" % (OUT, os.path.getsize(OUT) / 1e6))

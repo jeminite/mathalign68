@@ -1,0 +1,1014 @@
+{
+ "scope": "grade 6 ee -- widen the evidence",
+ "items": {
+  "g6-2023-003": {
+   "standard": "NY-6.EE.9",
+   "pValue": 0.46,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A bakery owner bakes <span class=\"math\">450</span> cookies each day. Which equation can be used to determine the number of cookies, <span class=\"math\">c</span>, the owner bakes for any number of days, <span class=\"math\">d</span> ?",
+   "choices": [
+    "<span class=\"math\">c = d + 450</span>",
+    "<span class=\"math\">d = c + 450</span>",
+    "<span class=\"math\">450d = c</span>",
+    "<span class=\"math\">450c = d</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 16,
+    "lessonTitle": "Two Related Quantities, Part 1",
+    "candidateLessons": [
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 16,
+    "role": "assessed",
+    "activity": "Kitchen Cleaner",
+    "page": 218,
+    "quote": "Select all equations that can represent the relationship between b , cups of"
+   },
+   "why": "The item asks which equation relates cookies c to days d at 450 per day. The Cool-down gives a constant-ratio table and asks which equations can represent the relationship between the two variables, with the reversed-variable distractors the item also uses."
+  },
+  "g6-2023-012": {
+   "standard": "NY-6.EE.2a",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Which expression is equivalent to <span class=\"math\">14</span> less than the product of <span class=\"math\">8</span> and <span class=\"math\">y</span> ?",
+   "choices": [
+    "<span class=\"math\">14 − 8y</span>",
+    "<span class=\"math\">14 −<span class=\"frac\"><span>y</span><span>8</span></span></span>",
+    "<span class=\"math\">8y − 14</span>",
+    "<span class=\"math\"><span class=\"frac\"><span>y</span><span>8</span></span> − 14</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 7,
+    "lessonTitle": "Write Expressions with Variables",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "assessed",
+    "activity": "Growth",
+    "page": 100,
+    "quote": "Circle the expression that represents the number of inches the plant grew"
+   },
+   "why": "The item asks which expression is \"14 less than the product of 8 and y,\" where the trap is writing 14 − 8y. The Cool-down makes students choose between x − 8 and 8 − x for a \"grew by\" comparison — the same order-of-subtraction decision."
+  },
+  "g6-2023-014": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.65,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "What is the value of the expression <span class=\"math\"><span class=\"frac\"><span>3(7−2)+5<sup>3</sup></span><span>2</span></span></span> ?",
+   "choices": [
+    "<span class=\"math\">15</span>",
+    "<span class=\"math\">17</span>",
+    "<span class=\"math\">70</span>",
+    "<span class=\"math\">72</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Row Game: Expression Explosion",
+    "page": 186,
+    "quote": "students use the order of operations to find the value of expressions"
+   },
+   "why": "The item evaluates (3(7−2)+5^3)/2, which needs the parentheses, then the exponent, then the division. The Row Game is a column of numeric expressions with exponents that students evaluate by the order of operations, which is exactly the demand."
+  },
+  "g6-2023-022": {
+   "standard": "NY-6.EE.2c",
+   "pValue": 0.63,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "What is the value of the expression <span class=\"math\">5b + c<sup>3</sup></span> when <span class=\"math\">b = 7</span> and <span class=\"math\">c = 4</span> ?",
+   "choices": [
+    "<span class=\"math\">24</span>",
+    "<span class=\"math\">47</span>",
+    "<span class=\"math\">76</span>",
+    "<span class=\"math\">99</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     14,
+     15,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "What’s the Value?",
+    "page": 195,
+    "quote": "They evaluate expressions when given a value for the variable."
+   },
+   "why": "The item evaluates 5b + c^3 at b = 7, c = 4. The activity is a list of expressions with exponents and coefficients to evaluate at a given value of the variable."
+  },
+  "g6-2023-024": {
+   "standard": "NY-6.EE.3",
+   "pValue": 0.48,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Which expression is equivalent to <span class=\"math\">8 (2a + 3b) − 2b</span> ?",
+   "choices": [
+    "<span class=\"math\">16a + b</span>",
+    "<span class=\"math\">16a + 8b</span>",
+    "<span class=\"math\">16a + 22b</span>",
+    "<span class=\"math\">16a + 24b</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 11,
+    "lessonTitle": "The Distributive Property, Part 3",
+    "candidateLessons": [
+     10,
+     11
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Writing Equivalent Expressions Using the Distributive Property",
+    "page": 142,
+    "quote": "students generate equivalent algebraic expressions using the distributive property"
+   },
+   "why": "The item needs 8(2a + 3b) − 2b = 16a + 22b: distribute over two unlike terms, then collect the b terms. The distributing half is this activity (y(3x + 4z) is a row); the collecting half is not asked anywhere in grade 6. Optional lesson; non-optional runner-up is Lesson 10, \"Areas of Partitioned Rectangles.\""
+  },
+  "g6-2023-040": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.13,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Lee makes a rectangular-shaped tile pattern by placing three tiles side by side, with no space between the tiles. The list below describes the shape of each tile and the order in which they are placed. <span class=\"math\">•</span> The first tile is in the shape of a square with side lengths of x inches. <span class=\"math\">•</span> The middle tile is shaped like a rectangle with a width of x inches and a length of 3x inches. <span class=\"math\">•</span> The third tile is shaped like a square with side lengths of x inches. The perimeter of the tile pattern is 60 inches. What is the value of x in the tile pattern?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 10,
+    "lessonTitle": "The Distributive Property, Part 2",
+    "candidateLessons": [
+     3,
+     4,
+     5,
+     6,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 10,
+    "role": "practises",
+    "activity": "Partitioned Rectangles When Lengths Are Unknown",
+    "page": 129,
+    "quote": "students use expressions with variables to represent lengths of sides and areas"
+   },
+   "why": "The item composes a square, a 3x-by-x rectangle and a square into one rectangle and solves 12x = 60 from its perimeter. Composing rectangles with an unknown side and writing expressions for the composite is this activity; writing a perimeter expression and solving back for the unknown is not asked anywhere in grade 6, which fits the item’s p-value of 0.13."
+  },
+  "g6-2023-043": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.54,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "What is the value of the expression <span class=\"math\">7 × (5 − 3)<sup>3</sup> − 20 ÷ 4</span> ?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Row Game: Expression Explosion",
+    "page": 186,
+    "quote": "use the order of operations to find the value of expressions with exponents"
+   },
+   "why": "The item evaluates 7 × (5−3)^3 − 20 ÷ 4. The Row Game rows have the same shape — a product with an exponent plus or minus a second term — and are worked by the order of operations."
+  },
+  "g6-2023-046": {
+   "standard": "NY-6.EE.9",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Logan earns money for completing chores. The graph shown below represents the relationship between the number of chores, x, he completes, and the amount o f money, y, he earns. Based on the graph, explain the relationship between the number of chores Logan completes and the amount of money he earns. Be sure to identify the dependent and the independent variables in your answer. Determine the total amount of money Logan will earn after completing 9 chores.",
+   "choices": [],
+   "figures": [
+    "Three points rise steadily: 1 chore at 4.50 dollars, 2 at 9, and 3 at 13.50."
+   ],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 17,
+    "lessonTitle": "Two Related Quantities, Part 2",
+    "candidateLessons": [
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 17,
+    "role": "assessed",
+    "activity": "Interpret the Point",
+    "page": 230,
+    "quote": "What point on the graph would represent the time it takes the robot"
+   },
+   "why": "The item reads a graph of chores against money, asks for the relationship and the dependent and independent variables, then for the earnings at 9 chores. The Cool-down asks which variable is independent, what a plotted point means, and what point would represent a value off the plotted range."
+  },
+  "g6-2024-002": {
+   "standard": "NY-6.EE.2a",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Which expression represents <span class=\"math\">5</span> more than the product of <span class=\"math\">2</span> and <span class=\"math\">y</span> ?",
+   "choices": [
+    "<span class=\"math\">2 + y + 5</span>",
+    "<span class=\"math\">2y + 5</span>",
+    "<span class=\"math\">5 + <span class=\"frac\"><span>2</span><span>y</span></span></span>",
+    "<span class=\"math\">5 + <span class=\"frac\"><span>y</span><span>2</span></span></span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 7,
+    "lessonTitle": "Write Expressions with Variables",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "practises",
+    "activity": "Building Expressions",
+    "page": 97,
+    "quote": "Write expressions to show Clare’s age when her cousin is at different ages."
+   },
+   "why": "The item asks for \"5 more than the product of 2 and y\" (2y + 5). This activity builds exactly those two pieces: x + 5 for \"5 years older\" and 3n for \"3 times as many.\""
+  },
+  "g6-2024-003": {
+   "standard": "NY-6.EE.5",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "Which value of <span class=\"math\">b</span> makes the inequality <span class=\"math\">3b &gt; 12</span> true?",
+   "choices": [
+    "<span class=\"math\">2</span>",
+    "<span class=\"math\">3</span>",
+    "<span class=\"math\">4</span>",
+    "<span class=\"math\">5</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Solutions of Inequalities",
+    "candidateLessons": [
+     9,
+     10
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "introduces",
+    "activity": "Amusement Park Rides",
+    "page": 113,
+    "quote": "a number that can be used in place of the variable to make"
+   },
+   "why": "The item asks which value of b makes 3b > 12 true. This is the activity that defines a solution to an inequality as a value that makes it true and has students decide whether given heights qualify."
+  },
+  "g6-2024-014": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.58,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "What is the value of the expression <span class=\"math\">8<sup>2</sup> ÷ 4 × 2<sup>3</sup></span> ?",
+   "choices": [
+    "<span class=\"math\">16</span>",
+    "<span class=\"math\">24</span>",
+    "<span class=\"math\">96</span>",
+    "<span class=\"math\">128</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "introduces",
+    "activity": "Calculating Surface Area",
+    "page": 185,
+    "quote": "students extend their understanding of the order of operations to include expressions with"
+   },
+   "why": "The item is 8^2 ÷ 4 × 2^3: the powers must be found before the multiplication and division. Jada and Noah argue over exactly that in 6 · 10^2, one squaring first and one multiplying first."
+  },
+  "g6-2024-022": {
+   "standard": "NY-6.EE.6",
+   "pValue": 0.58,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Tammy and Jacob collect stamps. Tammy has <span class=\"math\">s</span> stamps. Jacob has <span class=\"math\">4</span> fewer than <span class=\"math\">3</span> times the number of stamps Tammy has. Which expression can be used to represent the number of stamps Jacob has?",
+   "choices": [
+    "<span class=\"math\">3 − 4s</span>",
+    "<span class=\"math\">3s − 4</span>",
+    "<span class=\"math\">4 − 3s</span>",
+    "<span class=\"math\">4s − 3</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 7,
+    "lessonTitle": "Write Expressions with Variables",
+    "candidateLessons": [
+     2,
+     3,
+     5,
+     6,
+     7
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "practises",
+    "activity": "Building Expressions",
+    "page": 97,
+    "quote": "Write expressions that can show how many comic books Diego has for different"
+   },
+   "why": "The item wants 3s − 4 for \"4 fewer than 3 times the number of stamps Tammy has.\" This activity writes 3n for \"3 times as many comic books\" and x + 5 for an age comparison; the item combines the two steps."
+  },
+  "g6-2024-038": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.58,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "What value of <span class=\"math\">n</span> makes the equation <span class=\"math\"><span class=\"frac\"><span>n</span><span>8</span></span></span> <span class=\"math\">= 17</span> true?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 4,
+    "lessonTitle": "Practice Solving Equations",
+    "candidateLessons": [
+     3,
+     4,
+     5,
+     6,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 4,
+    "role": "assessed",
+    "activity": "Solve It!",
+    "page": 64,
+    "quote": "Solve each equation. Explain or show your reasoning."
+   },
+   "why": "The item asks for the value of n making n/8 = 17 true. The Cool-down is three equations of the forms x + p = q and px = q to be solved, including a fractional-coefficient one."
+  },
+  "g6-2024-041": {
+   "standard": "NY-6.EE.4",
+   "pValue": 0.37,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A student claims that the expression <span class=\"math\">6 + 8x</span> is equivalent to the expression <span class=\"math\">3 (3 + 5x)</span>. What is incorrect about the student’s claim? Be sure to include an equivalent expression to <span class=\"math\">3 (3 + 5x)</span> in your response.",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 10,
+    "lessonTitle": "The Distributive Property, Part 2",
+    "candidateLessons": [
+     8,
+     10,
+     11
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 10,
+    "role": "assessed",
+    "activity": "Which Expressions Represent Area?",
+    "page": 134,
+    "quote": "Select all the expressions that represent the large rectangle’s total area."
+   },
+   "why": "The item asks why 6 + 8x is not equivalent to 3(3 + 5x) and wants a correct equivalent. This Cool-down asks students to separate correct distributions (5(b + 3), 5b + 15) from a plausible wrong one (3(5 + b)) for the same rectangle."
+  },
+  "g6-2025-005": {
+   "standard": "NY-6.EE.2c",
+   "pValue": 0.73,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "What is the value of the expression shown below when <span class=\"math\">c = 2</span> and <span class=\"math\">h = 3</span> ?",
+   "choices": [
+    "<span class=\"math\">11</span>",
+    "<span class=\"math\">13</span>",
+    "<span class=\"math\">42</span>",
+    "<span class=\"math\">44</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     14,
+     15,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "assessed",
+    "activity": "Expressions with Exponents",
+    "page": 201,
+    "quote": "Find the value of each expression for the given value of x"
+   },
+   "why": "The item evaluates c^3 + 4h − 7 at c = 2, h = 3. The Cool-down is the same task — 4 + x^2, 4^x, 4x at a given value — and is where the curriculum tests it."
+  },
+  "g6-2025-019": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.5,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "What is the value of the expression shown below?",
+   "choices": [
+    "<span class=\"math\">3</span>",
+    "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">4</span>",
+    "<span class=\"math\">5 <span class=\"frac\"><span>1</span><span>4</span></span></span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Row Game: Expression Explosion",
+    "page": 186,
+    "quote": "Find the value of the expressions in one of the columns."
+   },
+   "why": "The item evaluates (3^2 + 5·3)/2^3, with exponents in both numerator and denominator. The Row Game asks for the value of exactly this kind of multi-operation expression with exponents."
+  },
+  "g6-2025-023": {
+   "standard": "NY-6.EE.2b",
+   "pValue": 0.4,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "What is the coefficient in the expression <span class=\"math\">2x<sup>3</sup></span>?",
+   "choices": [
+    "<span class=\"math\">2</span>",
+    "<span class=\"math\">3</span>",
+    "<span class=\"math\">x</span>",
+    "<span class=\"math\">2x</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "What’s the Value?",
+    "page": 195,
+    "quote": "when considering the difference between expressions like 3 x and 3x"
+   },
+   "why": "The item asks for the coefficient in 2x^3, where the distractor is the exponent 3. The activity is built on telling 3^x from 3x and uses \"coefficient\" and \"exponent\" as the words for that difference."
+  },
+  "g6-2025-027": {
+   "standard": "NY-6.EE.5",
+   "pValue": 0.61,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "Which number is not a solution to the inequality shown below?",
+   "choices": [
+    "<span class=\"math\">3</span>",
+    "<span class=\"math\">4</span>",
+    "<span class=\"math\">5</span>",
+    "<span class=\"math\">8</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Solutions of Inequalities",
+    "candidateLessons": [
+     9,
+     10
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "assessed",
+    "activity": "Solutions of Inequalities",
+    "page": 119,
+    "quote": "Select all numbers that are solutions to the inequality w < 1 ."
+   },
+   "why": "The item asks which number is NOT a solution to 3w ≥ 12. The Cool-down is the same sorting of candidate values into solutions and non-solutions of a given inequality."
+  },
+  "g6-2025-030": {
+   "standard": "NY-6.EE.2a",
+   "pValue": 0.26,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "Which expression represents the phrase “the sum of fifteen and five less than twice a number, <span class=\"math\">n</span> ” ?",
+   "choices": [
+    "<span class=\"math\">15 (5 − 2n)</span>",
+    "<span class=\"math\">15 (2n − 5)</span>",
+    "<span class=\"math\">15 + (5 − 2n)</span>",
+    "<span class=\"math\">15 + (2n − 5)</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 7,
+    "lessonTitle": "Write Expressions with Variables",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "practises",
+    "activity": "Scores and Stickers",
+    "page": 95,
+    "quote": "Another esport player scored p fewer points than Priya. Write an expression"
+   },
+   "why": "The item wants \"the sum of fifteen and five less than twice a number n\" — 15 + (2n − 5). This activity writes a comparison expression with a variable (473 − p), but nothing in grade 6 nests two operations inside one phrase, which is why confidence is low and the item’s p-value is 0.26."
+  },
+  "g6-2025-040": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.64,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "What is the value of the expression <span class=\"math\">4 (3 + 5<sup>2</sup>) − 6</span> ?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "assessed",
+    "activity": "Calculating Volumes",
+    "page": 189,
+    "quote": "Jada says the total volume is 27,000 cubic inches. Noah says it is"
+   },
+   "why": "The item is 4(3 + 5^2) − 6, whose trap is adding 3 + 5 before squaring. The Cool-down is that error exactly: Jada computes (20 + 10)^3 while Noah computes 20 + 10^3."
+  },
+  "g6-2025-046": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.45,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "The figure below shows the dimensions of a rug shaped like a rectangle. The area of the rug is 54 square feet. Write and solve an equation to determine the value of x. Be sure to use the unknown, x, in your equation. Answerx = A company buys 7 of these rugs for $784. Write and solve an equation to determine the price, p, of each rug. Be sure to use the unknown, p, in your equation.",
+   "choices": [],
+   "figures": [
+    "The rectangle is 9 feet wide and 2x feet tall."
+   ],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 5,
+    "lessonTitle": "Represent Situations with Equations",
+    "candidateLessons": [
+     3,
+     4,
+     5,
+     6,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 5,
+    "role": "practises",
+    "activity": "Choosing Equations to Match Situations",
+    "page": 70,
+    "quote": "practice matching equations to situations and then solving those equations using their choice"
+   },
+   "why": "The item asks students to write and solve an equation twice — 9 · 2x = 54 for the rug and 7p = 784 for the price. This activity is write-or-choose-then-solve for situations of exactly the px = q shape (the solar-panel question is 1.5p = 100)."
+  },
+  "g6-2026-004": {
+   "standard": "NY-6.EE.2c",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "An expression is shown below. What is the value of the expression when <span class=\"math\">x = 7</span> and <span class=\"math\">y = 3</span> ?",
+   "choices": [
+    "<span class=\"math\">16</span>",
+    "<span class=\"math\">19</span>",
+    "<span class=\"math\">23</span>",
+    "<span class=\"math\">26</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     14,
+     15,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "What’s the Value?",
+    "page": 195,
+    "quote": "they also deepen their understanding of the order of operations"
+   },
+   "why": "The item evaluates 2(12 − x) + y^2 at x = 7, y = 3, so a substitution has to be followed through parentheses and a power. This activity is where substitution and the order of operations are worked together."
+  },
+  "g6-2026-019": {
+   "standard": "NY-6.EE.3",
+   "pValue": 0.44,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "Which expression is equivalent to <span class=\"math\">5 (6m + 3) + 4m</span> ?",
+   "choices": [
+    "<span class=\"math\">37m</span>",
+    "<span class=\"math\">49m</span>",
+    "<span class=\"math\">34m + 3</span>",
+    "<span class=\"math\">34m + 15</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 11,
+    "lessonTitle": "The Distributive Property, Part 3",
+    "candidateLessons": [
+     10,
+     11
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Writing Equivalent Expressions Using the Distributive Property",
+    "page": 142,
+    "quote": "They practice writing a sum or difference when given a product"
+   },
+   "why": "The item needs 5(6m + 3) + 4m = 34m + 15, again distribute-then-collect. Only the distributing step is practised here, and in an optional lesson; non-optional runner-up is Lesson 10, \"Areas of Partitioned Rectangles.\""
+  },
+  "g6-2026-023": {
+   "standard": "NY-6.EE.8",
+   "pValue": 0.64,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "At an amusement park, a rider must be at least 48 inches tall to ride a roller coaster. Which number line represents how tall, in inches, a rider must be to ride the roller coaster?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "Each runs from 45 to 55. They differ in whether the circle at 48 is filled or open and in whether the ray shaded runs to the left or to the right."
+   ],
+   "placement": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Solutions of Inequalities",
+    "candidateLessons": [
+     8,
+     9,
+     10
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "practises",
+    "activity": "Amusement Park Rides",
+    "page": 113,
+    "quote": "represent each height requirement on a number line"
+   },
+   "why": "The item asks which number line shows \"a rider must be at least 48 inches tall.\" The activity is amusement-park height requirements, including a \"58 inches minimum,\" written as inequalities and graphed on number lines."
+  },
+  "g6-2026-026": {
+   "standard": "NY-6.EE.5",
+   "pValue": 0.64,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "An inequality is shown below. Which value of <span class=\"math\">k</span> makes the inequality true?",
+   "choices": [
+    "<span class=\"math\">30</span>",
+    "<span class=\"math\">35</span>",
+    "<span class=\"math\">45</span>",
+    "<span class=\"math\">58</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Solutions of Inequalities",
+    "candidateLessons": [
+     9,
+     10
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 9,
+    "role": "practises",
+    "activity": "Amusement Park Rides",
+    "page": 113,
+    "quote": "determining whether a value is a solution to one or more of the"
+   },
+   "why": "The item asks which value of k makes k − 16 > 29 true. Deciding whether a particular number satisfies a stated inequality is precisely the reasoning in the ride-height questions."
+  },
+  "g6-2026-027": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "A bakery sells boxes of cookies. The list below shows information for one month of sales. <span class=\"math\">•</span> The bakery sold a total of <span class=\"math\">324</span> boxes of cookies. <span class=\"math\">•</span> Of the boxes sold, <span class=\"math\">250</span> of the boxes contained just chocolate chip cookies. <span class=\"math\">•</span> The rest of the boxes sold contained just sugar cookies. Which equation can be used to determine the total number of boxes, <span class=\"math\">x</span>, of sugar cookies sold by the bakery that month?",
+   "choices": [
+    "<span class=\"math\"><span class=\"frac\"><span>324</span><span>x</span></span> = 250</span>",
+    "<span class=\"math\">324x = 250</span>",
+    "<span class=\"math\">x − 250 = 324</span>",
+    "<span class=\"math\">x + 250 = 324</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 5,
+    "lessonTitle": "Represent Situations with Equations",
+    "candidateLessons": [
+     3,
+     4,
+     5,
+     6,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 5,
+    "role": "introduces",
+    "activity": "Storytime",
+    "page": 69,
+    "quote": "students select an equation with a variable that can represent a situation with"
+   },
+   "why": "The item asks which equation determines the number of sugar-cookie boxes, x + 250 = 324. Storytime is three situations against six candidate equations, including the x + 5 = 20 versus x + 20 = 5 confusion the distractors exploit."
+  },
+  "g6-2026-030": {
+   "standard": "NY-6.EE.2a",
+   "pValue": 0.39,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Which expression is equivalent to <span class=\"math\">55</span> less than the sum of <span class=\"math\">4</span> and twice a number, <span class=\"math\">c</span> ?",
+   "choices": [
+    "<span class=\"math\">55 − 2 (4 + c)</span>",
+    "<span class=\"math\">55 − (4 + 2c)</span>",
+    "<span class=\"math\">(4 + 2c) − 55</span>",
+    "<span class=\"math\">2 (4 + c) − 55</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 7,
+    "lessonTitle": "Write Expressions with Variables",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 7,
+    "role": "practises",
+    "activity": "Scores and Stickers",
+    "page": 95,
+    "quote": "students relate quantities in situations to numerical and variable expressions"
+   },
+   "why": "The item wants \"55 less than the sum of 4 and twice a number c\" — (4 + 2c) − 55. The activity practises the \"fewer than\" ordering with a variable, but again only one operation at a time."
+  },
+  "g6-2026-032": {
+   "standard": "NY-6.EE.4",
+   "pValue": 0.62,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "An expression is shown below. Which expression is equivalent to the expression shown?",
+   "choices": [
+    "<span class=\"math\">42xy</span>",
+    "<span class=\"math\">4x + 3y</span>",
+    "<span class=\"math\">6(4x + 3y)</span>",
+    "<span class=\"math\">6 (4x + 18y)</span>"
+   ],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 11,
+    "lessonTitle": "The Distributive Property, Part 3",
+    "candidateLessons": [
+     8,
+     10,
+     11
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 11,
+    "role": "practises",
+    "activity": "Writing Equivalent Expressions Using the Distributive Property",
+    "page": 142,
+    "quote": "a product when given a sum or difference"
+   },
+   "why": "The item factors 24x + 18y into 6(4x + 3y). This activity’s table runs in that direction too (4x − 20, 10x − 5 must be written as products). Optional lesson; the non-optional runner-up is Lesson 10, Activity \"Partitioned Rectangles When Lengths Are Unknown,\" where 8 · 5 + 5x is rewritten as the product 5(8 + x)."
+  },
+  "g6-2026-038": {
+   "standard": "NY-6.EE.2b",
+   "pValue": 0.47,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "What is the coefficient in the expression <span class=\"math\">6n<sup>5</sup></span>?",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "candidateLessons": [
+     7,
+     10,
+     11,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 15,
+    "role": "practises",
+    "activity": "What’s the Value?",
+    "page": 195,
+    "quote": "practice using mathematical vocabulary related to expressions, such as “coefficient,”"
+   },
+   "why": "The item asks for the coefficient in 6n^5. Same activity, same discrimination between the number in front and the number above; the vocabulary is named in the Activity Synthesis rather than practised in a task."
+  },
+  "g6-2026-041": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.6,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Bella has a collection of 150 baseball cards. Dan has 43 fewer baseball cards in his collection than Bella has. Write and solve an equation to determine how many baseball cards, c, Dan has.",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 5,
+    "lessonTitle": "Represent Situations with Equations",
+    "candidateLessons": [
+     3,
+     4,
+     5,
+     6,
+     19
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 5,
+    "role": "practises",
+    "activity": "Choosing Equations to Match Situations",
+    "page": 70,
+    "quote": "Kiran scores 223 fewer points in a computer game than Mai."
+   },
+   "why": "The item asks students to write and solve an equation for \"Dan has 43 fewer cards than Bella’s 150.\" The activity’s first question is the same sentence with different numbers, with the same competing equations to sort out."
+  },
+  "g6-2026-045": {
+   "standard": "NY-6.EE.1",
+   "pValue": 0.4,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Evaluate the expression <span class=\"math\">3 (4<sup>3</sup> − 6<sup>2</sup>)</span> <span class=\"math\">+ 7(2 + 1)<sup>3</sup></span>.",
+   "choices": [],
+   "figures": [],
+   "placement": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 14,
+    "lessonTitle": "Evaluating Expressions with Exponents",
+    "candidateLessons": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "existingEvidence": {
+    "lesson": 14,
+    "role": "practises",
+    "activity": "Row Game: Expression Explosion",
+    "page": 186,
+    "quote": "Find the value of the expressions in one of the columns."
+   },
+   "why": "The item evaluates 3(4^3 − 6^2) + 7(2 + 1)^3 — two groupings, three powers. The Row Game is the only place students are asked to find the values of expressions with exponents at this level of nesting."
+  }
+ }
+}

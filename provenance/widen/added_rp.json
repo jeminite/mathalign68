@@ -1,0 +1,557 @@
+{
+  "scope": "grade 6 NY-6.RP.* -- additional evidence",
+  "items": {
+    "g6-2023-031": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+          "role": "introduces",
+          "activity": "Three-Day Biking Trip",
+          "page": 182,
+          "quote": "That distance is 50% of the distance his uncle biked.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Benchmark Percentages",
+          "role": "assessed",
+          "activity": "Around the Clock",
+          "page": 218,
+          "quote": "If 25% of a show is 11 minutes, how many minutes is the show?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing citation is the bare-number drill; these show the question first arising in a context two lessons earlier and then being tested in the Cool-down, so the find-the-whole move spans Lessons 11 to 13."
+    },
+    "g6-2023-032": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Ratios with Tables",
+          "role": "introduces",
+          "activity": "A Huge Amount of Sparkling Orange Juice",
+          "page": 165,
+          "quote": "to introduce a table as a way to represent equivalent ratios",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Ratios with Tables",
+          "role": "assessed",
+          "activity": "Batches of Cookies in a Table",
+          "page": 171,
+          "quote": "Complete the last row for a different batch size that hasn’t been used",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "All three citations sit inside Lesson 11 because that is the only lesson where a table of equivalent ratios is built from scratch: the first activity introduces the table, the Cool-down tests adding a row that keeps the ratio."
+    },
+    "g6-2023-034": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "practises",
+          "activity": "Cooking with a Tablespoon",
+          "page": 60,
+          "quote": "students practice converting between two units in a cooking context",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "assessed",
+          "activity": "Buckets",
+          "page": 64,
+          "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the practice and the Cool-down to the introduction already cited, showing that the whole of this item's work lives inside Lesson 3 rather than across the unit."
+    },
+    "g6-2023-036": {
+      "added": [
+        {
+          "lesson": 13,
+          "lessonTitle": "Tables and Double Number Line Diagrams",
+          "role": "introduces",
+          "activity": "Running 3,000 Meters",
+          "page": 191,
+          "quote": "He wonders how long it would take him to run 3,000 meters",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Tables and Double Number Line Diagrams",
+          "role": "assessed",
+          "activity": "Bicycle Sprint",
+          "page": 199,
+          "quote": "At that rate, how far does the cyclist travel in 3 seconds?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Warm-up poses the item's exact question (time for a distance at a given rate) before any table is built, and the Cool-down tests the reverse direction, so a teacher can see both halves of the relationship are checked here."
+    },
+    "g6-2023-041": {
+      "added": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Speeds and Prices",
+          "role": "introduces",
+          "activity": "The Best Deal on Beans",
+          "page": 77,
+          "quote": "students compare rates per 1 in a shopping context as they look for",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "More Rate Comparisons",
+          "role": "practises",
+          "activity": "Card Sort: Is it a Deal?",
+          "page": 116,
+          "quote": "Find and compare the unit rates for both the original pack",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Widens the entry from a single Cool-down to the Lesson 4 activity where comparing unit prices for different pack sizes starts and the Lesson 7 card sort where students do it repeatedly."
+    },
+    "g6-2024-023": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "introduces",
+          "activity": "Road Sign",
+          "page": 55,
+          "quote": "when a quantity is measured in two different units, the two measurements form a ratio",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "practises",
+          "activity": "Cooking with a Tablespoon",
+          "page": 60,
+          "quote": "In the cookbook, it says that 1 cup equals 16 tablespoons.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing Cool-down citation is preceded by the activity that first frames a conversion as a ratio and by the activity that practises converting with a given per-1 factor, which is exactly what 8 pints per gallon is."
+    },
+    "g6-2024-033": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+          "role": "introduces",
+          "activity": "Puppies Grow Up",
+          "page": 184,
+          "quote": "Since 100 is not a multiple of 30",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 13,
+          "lessonTitle": "Benchmark Percentages",
+          "role": "assessed",
+          "activity": "Around the Clock",
+          "page": 218,
+          "quote": "If 25% of a show is 11 minutes, how many minutes is the show?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Lesson 11 citation is the only place grade 6 finds the whole from a percent that is not a benchmark, and the Lesson 13 Cool-down shows that what is actually assessed stays benchmark-only -- together they show how far 16% sits outside the taught range."
+    },
+    "g6-2024-034": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Interpreting Rates",
+          "role": "introduces",
+          "activity": "Laundry Detergent and Raffle Tickets",
+          "page": 89,
+          "quote": "How many weeks will it take the laundry service to finish 3 gallons",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Solving Rate Problems",
+          "role": "assessed",
+          "activity": "Going Up?",
+          "page": 136,
+          "quote": "How far does the elevator travel in 11 seconds?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Lesson 5 already asks the item's question shape -- given a rate, find the time for a quantity that is not a multiple of it -- three lessons before the cited practice, and the Lesson 8 Cool-down is where it is tested."
+    },
+    "g6-2024-039": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Interpreting Rates",
+          "role": "practises",
+          "activity": "Laundry Detergent and Raffle Tickets",
+          "page": 89,
+          "quote": "How many tickets is that per dollar?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Interpreting Rates",
+          "role": "assessed",
+          "activity": "Gasoline by the Gallon",
+          "page": 93,
+          "quote": "Complete the table with the missing volume of gasoline or missing price",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Both additions stay in Lesson 5 because that is where the second, less-than-one unit rate is named and tested; the raffle-ticket question (0.25 tickets per dollar) is the same shape as the item's 0.75 gallons of orange per gallon of blue."
+    },
+    "g6-2024-046": {
+      "added": [
+        {
+          "lesson": 6,
+          "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+          "role": "introduces",
+          "activity": "Binders and Notebooks",
+          "page": 100,
+          "quote": "a unit rate is a factor that relates the values in one column",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 6,
+          "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+          "role": "assessed",
+          "activity": "Cheetah Speed",
+          "page": 110,
+          "quote": "Complete the table to represent a cheetah running at a constant speed.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Shows the whole arc inside Lesson 6: the constant-rate column is introduced in the first activity and tested in the Cool-down, which is the move the item needs twice before subtracting."
+    },
+    "g6-2025-001": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Ratios with Tables",
+          "role": "introduces",
+          "activity": "A Huge Amount of Sparkling Orange Juice",
+          "page": 165,
+          "quote": "to introduce a table as a way to represent equivalent ratios",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Ratios with Tables",
+          "role": "practises",
+          "activity": "Batches of Nihaizu Sauce",
+          "page": 167,
+          "quote": "Complete the table so that ratios represented by each row are equivalent",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Fills in the two activities that lead to the cited Cool-down, including the one that insists every row be an equivalent ratio -- the exact property the item's three distractor tables break."
+    },
+    "g6-2025-016": {
+      "added": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Comparing Speeds and Prices",
+          "role": "introduces",
+          "activity": "More Treadmills",
+          "page": 74,
+          "quote": "more efficient ways to compare speeds, namely, by computing rates per 1",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "More about Constant Speed",
+          "role": "practises",
+          "activity": "Swimming and Biking",
+          "page": 147,
+          "quote": "How much faster is that person than the other?",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "The item's second step -- how much MORE per minute -- is asked in those words only in Lesson 9, which is optional, so a teacher who skipped it has taught the rate comparison (Lesson 4) but not the difference."
+    },
+    "g6-2025-021": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Solving Percentage Problems",
+          "role": "introduces",
+          "activity": "Matching the Percentage",
+          "page": 222,
+          "quote": "students determine what percentage one number is of another number",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 16,
+          "lessonTitle": "Finding the Percentage",
+          "role": "practises",
+          "activity": "Restaurant Capacity",
+          "page": 250,
+          "quote": "What percentage of its capacity is 9 people?",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "Two of the three citations now sit in optional Lesson 16; the Lesson 14 Warm-up is the only required place this question is asked, and it uses benchmark pairs only, so 23 out of 50 is beyond what a class that skipped Lesson 16 has practised."
+    },
+    "g6-2025-028": {
+      "added": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Introducing Ratios and Ratio Language",
+          "role": "assessed",
+          "activity": "A Collection of Animals",
+          "page": 33,
+          "quote": "Write two sentences that describe a ratio of types of animals in this collection.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Defining Equivalent Ratios",
+          "role": "practises",
+          "activity": "What Are Equivalent Ratios?",
+          "page": 82,
+          "quote": "How do you know when ratios are equivalent and when they are not",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item's only correct choice is the reduced 9 : 5 rather than 18 : 10, and that equivalence is not justified until Lesson 5 -- so the entry now spans from where ratio language is tested (Lesson 1) to where equivalence is defined."
+    },
+    "g6-2025-032": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "assessed",
+          "activity": "Buckets",
+          "page": 64,
+          "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "More Rate Comparisons",
+          "role": "practises",
+          "activity": "The Fastest of All (Optional)",
+          "page": 119,
+          "quote": "students perform conversions to compare lengths given in customary and metric units",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "The nearest thing to the item's compound conversion (miles per hour into feet per minute) is the optional Lesson 7 activity, which converts sprint distances covered in 1 minute; nothing required in grade 6 changes both the distance unit and the time unit at once."
+    },
+    "g6-2025-037": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+          "role": "introduces",
+          "activity": "Puppies Grow Up",
+          "page": 184,
+          "quote": "Since 100 is not a multiple of 30",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Representing Percentages in Different Ways",
+          "role": "practises",
+          "activity": "Revisiting Jada’s Puppy",
+          "page": 196,
+          "quote": "students need to find the value for 100% when the value for 10%",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The cited Cool-down uses 75%; these show that the only non-benchmark rehearsal for 24% is the 30% question in Lesson 11, and that Lesson 12's practice is at 10%."
+    },
+    "g6-2025-045": {
+      "added": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Navigating a Table of Equivalent Ratios",
+          "role": "introduces",
+          "activity": "Hourly Wages",
+          "page": 181,
+          "quote": "In those situations, finding an equivalent ratio where one of the quantities",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Navigating a Table of Equivalent Ratios",
+          "role": "assessed",
+          "activity": "Price of Bagels",
+          "page": 186,
+          "quote": "At this rate, how much would 6 bagels cost?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Lesson 12 is where a non-whole scale factor is handled by going through a value of 1; the additions name the activity that teaches that move and the Cool-down (half a dozen from a dozen) that tests it."
+    },
+    "g6-2026-001": {
+      "added": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Constant Speed",
+          "role": "introduces",
+          "activity": "Moving 10 Meters",
+          "page": 134,
+          "quote": "time one another as they move 10 meters at a constant speed",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Constant Speed",
+          "role": "assessed",
+          "activity": "Train Speeds",
+          "page": 139,
+          "quote": "Two trains are traveling at constant speeds on different tracks.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "All of the item's work is in Lesson 9: the first activity is where students physically generate a distance-and-time pair and reduce it to distance in 1 second, and the Cool-down tests comparing constant speeds."
+    },
+    "g6-2026-003": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "introduces",
+          "activity": "Road Sign",
+          "page": 55,
+          "quote": "How many kilometers are in 1 mile?",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "assessed",
+          "activity": "Buckets",
+          "page": 64,
+          "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the activity where the per-1 conversion rate is first found and the Cool-down where converting with a given per-1 fact is tested; neither, like the item, asks students to write the conversion as an expression."
+    },
+    "g6-2026-010": {
+      "added": [
+        {
+          "lesson": 16,
+          "lessonTitle": "Two Related Quantities, Part 1",
+          "role": "introduces",
+          "activity": "Painting the Set",
+          "page": 213,
+          "quote": "completing a table of equivalent ratios and plotting the values",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Two Related Quantities, Part 2",
+          "role": "assessed",
+          "activity": "Interpret the Point",
+          "page": 230,
+          "quote": "What point on the graph would represent the time it takes the robot",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The entry now spans the pair of lessons: Lesson 16 is where a ratio is first plotted as points on a grid, and the Lesson 17 Cool-down is where reading an unplotted value off such a graph is assessed."
+    },
+    "g6-2026-012": {
+      "added": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Part-Part-Whole Ratios",
+          "role": "practises",
+          "activity": "Seasoning, Sneakers, and Concrete",
+          "page": 226,
+          "quote": "reasoning about situations involving ratios of two quantities and their sum",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Part-Part-Whole Ratios",
+          "role": "assessed",
+          "activity": "Room Sizes",
+          "page": 230,
+          "quote": "The combined area of these three rooms is 189 square feet.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down has the item's three-part structure (a 4 : 3 : 2 ratio and a total), but note that both additions, like the cited introduction, go from the total to the parts -- no grade 6 activity asks students to write the part-to-total ratio the item wants."
+    },
+    "g6-2026-015": {
+      "added": [
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "introduces",
+          "activity": "Number Talk: Fractions of a Number",
+          "page": 54,
+          "quote": "helpful later in the lesson when students solve rate problems involving fractional values",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 3,
+          "lessonTitle": "Converting Units",
+          "role": "assessed",
+          "activity": "Buckets",
+          "page": 64,
+          "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Warm-up is where three-quarters of a whole number is rehearsed mentally, which is the arithmetic the item needs once the conversion is set up, and the Cool-down is where converting with a stated per-1 fact is tested."
+    },
+    "g6-2026-024": {
+      "added": [
+        {
+          "lesson": 11,
+          "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+          "role": "introduces",
+          "activity": "Three-Day Biking Trip",
+          "page": 182,
+          "quote": "That distance is 50% of the distance his uncle biked.",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 12,
+          "lessonTitle": "Representing Percentages in Different Ways",
+          "role": "assessed",
+          "activity": "Small and Large",
+          "page": 204,
+          "quote": "This is 75% of the water that a large tank holds.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Shows that finding the whole from a part starts one activity earlier at 50% and is tested a lesson later at 75%, so the cited 30% activity is the only non-benchmark point in the range."
+    },
+    "g6-2026-028": {
+      "added": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Representing Ratios with Diagrams",
+          "role": "practises",
+          "activity": "Card Sort: Pencil Cases",
+          "page": 43,
+          "quote": "attending carefully to the quantities, their units, and their order in the ratio",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 2,
+          "lessonTitle": "Representing Ratios with Diagrams",
+          "role": "assessed",
+          "activity": "Stationery Sets",
+          "page": 46,
+          "quote": "There are 4 pencils for every notepad.",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the card sort where students match regrouped 'for every' statements to diagrams and the Cool-down where they complete such a statement themselves, which is the judgement the item's four choices ask for."
+    }
+  }
+}

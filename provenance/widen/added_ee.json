@@ -1,0 +1,700 @@
+{
+  "scope": "grade 6 NY-6.EE.* -- additional evidence",
+  "items": {
+    "g6-2023-003": {
+      "added": [
+        {
+          "lesson": 16,
+          "lessonTitle": "Two Related Quantities, Part 1",
+          "role": "introduces",
+          "activity": "Painting the Set",
+          "page": 213,
+          "quote": "allows students to interpret and write equations with variables",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Two Related Quantities, Part 2",
+          "role": "practises",
+          "activity": "The Robot Race",
+          "page": 225,
+          "quote": "consider the graphs and equations that describe the distance–time relationship",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down tests the choice of equation; these show where the two-variable equation is first written from a constant-ratio table (Lesson 16) and where the same constant-rate relationship is worked again with tables, graphs and equations (Lesson 17)."
+    },
+    "g6-2023-046": {
+      "added": [
+        {
+          "lesson": 16,
+          "lessonTitle": "Two Related Quantities, Part 1",
+          "role": "introduces",
+          "activity": "Painting the Set",
+          "page": 213,
+          "quote": "thinking about dependent and independent variables and for writing equations",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 17,
+          "lessonTitle": "Two Related Quantities, Part 2",
+          "role": "practises",
+          "activity": "The Robot Race",
+          "page": 225,
+          "quote": "consider the graphs and equations that describe the distance–time relationship",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item wants the dependent and independent variables named as well as a value read off; Lesson 16's paint activity is where those two terms are introduced, and the robot race is where students read a constant rate from a graph and table."
+    },
+    "g6-2023-012": {
+      "added": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "introduces",
+          "activity": "Scores and Stickers",
+          "page": 95,
+          "quote": "Another esport player scored p fewer points than Priya",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "practises",
+          "activity": "Building Expressions",
+          "page": 97,
+          "quote": "Diego has 3 times as many comic books as Han does",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down already covers the order-of-subtraction trap; these add the two halves the item combines -- the 'fewer than' comparison written with a variable, and the 'times as many' product."
+    },
+    "g6-2024-002": {
+      "added": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "introduces",
+          "activity": "Scores and Stickers",
+          "page": 95,
+          "quote": "they can summarize the calculations they performed with an algebraic expression",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "assessed",
+          "activity": "Growth",
+          "page": 100,
+          "quote": "Write an expression that represents the amount of water needed",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the lesson's opening move -- generalising repeated calculations into one expression -- and the Cool-down where writing an expression from a per-unit situation is tested."
+    },
+    "g6-2025-030": {
+      "added": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "practises",
+          "activity": "Building Expressions",
+          "page": 97,
+          "quote": "Write expressions that can show how many comic books Diego has",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "assessed",
+          "activity": "Growth",
+          "page": 100,
+          "quote": "the expression that represents the number of inches the plant grew",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Shows the two single-operation pieces the phrase nests -- the product with a variable, and the Cool-down's order-of-subtraction test -- which together are as close as grade 6 gets to this item."
+    },
+    "g6-2026-030": {
+      "added": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "practises",
+          "activity": "Building Expressions",
+          "page": 97,
+          "quote": "Write expressions that can show how many comic books Diego has",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "assessed",
+          "activity": "Growth",
+          "page": 100,
+          "quote": "the expression that represents the number of inches the plant grew",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing citation is the comparison expression; these add the doubling/product piece and the Cool-down where the 'less than' ordering is actually assessed."
+    },
+    "g6-2024-022": {
+      "added": [
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "introduces",
+          "activity": "Scores and Stickers",
+          "page": 95,
+          "quote": "Another esport player scored p fewer points than Priya",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 7,
+          "lessonTitle": "Write Expressions with Variables",
+          "role": "assessed",
+          "activity": "Growth",
+          "page": 100,
+          "quote": "the expression that represents the number of inches the plant grew",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds where the 'fewer than' comparison with a variable is first written and where the order of subtraction is tested, the two demands the item stacks on top of the product."
+    },
+    "g6-2023-014": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "assessed",
+          "activity": "Calculating Volumes",
+          "page": 189,
+          "quote": "Jada and Noah want to find the combined volume of two gift boxes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Brackets the Row Game practice: Lesson 14's opening activity is where order of operations is extended to exponents, and its Cool-down is where that extension is tested."
+    },
+    "g6-2023-043": {
+      "added": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Meaning of Exponents",
+          "role": "introduces",
+          "activity": "Make 81",
+          "page": 166,
+          "quote": "students practice finding the value of exponential expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "assessed",
+          "activity": "Calculating Volumes",
+          "page": 189,
+          "quote": "Jada and Noah want to find the combined volume of two gift boxes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Reaches back to Lesson 12, where finding the value of a power is first practised, and forward to the Cool-down that tests power-before-multiplication."
+    },
+    "g6-2024-014": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "practises",
+          "activity": "Row Game: Expression Explosion",
+          "page": 186,
+          "quote": "students use the order of operations to find the value of expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "assessed",
+          "activity": "Calculating Volumes",
+          "page": 189,
+          "quote": "Jada and Noah want to find the combined volume of two gift boxes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The existing citation is the Jada-and-Noah argument that introduces the rule; these add the sustained practice and the Cool-down where the same error is tested."
+    },
+    "g6-2025-019": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "assessed",
+          "activity": "Calculating Volumes",
+          "page": 189,
+          "quote": "Jada and Noah want to find the combined volume of two gift boxes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the activity where order of operations is extended to exponents and the Cool-down that tests it, so the entry spans the whole of Lesson 14 rather than one Row Game."
+    },
+    "g6-2025-040": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "practises",
+          "activity": "Row Game: Expression Explosion",
+          "page": 186,
+          "quote": "students use the order of operations to find the value of expressions",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down is where the add-before-squaring error is tested; these add where that rule is introduced and where it is practised."
+    },
+    "g6-2026-045": {
+      "added": [
+        {
+          "lesson": 12,
+          "lessonTitle": "Meaning of Exponents",
+          "role": "introduces",
+          "activity": "Make 81",
+          "page": 166,
+          "quote": "students practice finding the value of exponential expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "assessed",
+          "activity": "Calculating Volumes",
+          "page": 189,
+          "quote": "Jada and Noah want to find the combined volume of two gift boxes",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "This item needs each power evaluated as well as the operations ordered; Lesson 12 is where finding the value of a power is first practised, and the Lesson 14 Cool-down is where the ordering is tested."
+    },
+    "g6-2025-023": {
+      "added": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Equivalent Exponential Expressions",
+          "role": "assessed",
+          "activity": "Expressions with Exponents",
+          "page": 201,
+          "quote": "Find the value of each expression for the given value",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the Cool-down, which is the one place the curriculum tests telling a power apart from a coefficient by asking for both 4 to the x and 4x at the same value of x."
+    },
+    "g6-2026-038": {
+      "added": [
+        {
+          "lesson": 15,
+          "lessonTitle": "Equivalent Exponential Expressions",
+          "role": "assessed",
+          "activity": "Expressions with Exponents",
+          "page": 201,
+          "quote": "Find the value of each expression for the given value",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Same Cool-down: the exponent-versus-coefficient discrimination the item asks about by name is tested there, though never as a naming question."
+    },
+    "g6-2023-022": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Equivalent Exponential Expressions",
+          "role": "assessed",
+          "activity": "Expressions with Exponents",
+          "page": 201,
+          "quote": "Find the value of each expression for the given value",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds where the order of operations was extended to exponents (Lesson 14) and where substituting into an expression with a power is tested (Lesson 15 Cool-down)."
+    },
+    "g6-2025-005": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Equivalent Exponential Expressions",
+          "role": "practises",
+          "activity": "What’s the Value?",
+          "page": 195,
+          "quote": "students continue working with exponential expressions with variables",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down is the test; these add the main activity where substitution into exponential expressions is practised and the Lesson 14 activity where the operation order it depends on is built."
+    },
+    "g6-2026-004": {
+      "added": [
+        {
+          "lesson": 14,
+          "lessonTitle": "Evaluating Expressions with Exponents",
+          "role": "introduces",
+          "activity": "Calculating Surface Area",
+          "page": 185,
+          "quote": "extend their understanding of the order of operations to include expressions",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 15,
+          "lessonTitle": "Equivalent Exponential Expressions",
+          "role": "assessed",
+          "activity": "Expressions with Exponents",
+          "page": 201,
+          "quote": "Find the value of each expression for the given value",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item runs a substitution through parentheses and a power; these add where that operation order is introduced and where the substitution is tested."
+    },
+    "g6-2023-024": {
+      "added": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Distributive Property, Part 2",
+          "role": "introduces",
+          "activity": "Areas of Partitioned Rectangles",
+          "page": 130,
+          "quote": "students see several examples of the distributive property",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "The Distributive Property, Part 3",
+          "role": "assessed",
+          "activity": "Writing Equivalent Expressions",
+          "page": 145,
+          "quote": "Use the distributive property to write an expression that is equivalent",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "The distributing step is only practised in optional Lesson 11, so this adds the non-optional Lesson 10 activity that builds it from partitioned rectangles, plus the Lesson 11 Cool-down. Collecting the like terms afterwards is not taught anywhere in grade 6."
+    },
+    "g6-2026-019": {
+      "added": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Distributive Property, Part 2",
+          "role": "introduces",
+          "activity": "Areas of Partitioned Rectangles",
+          "page": 130,
+          "quote": "students see several examples of the distributive property",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "The Distributive Property, Part 3",
+          "role": "assessed",
+          "activity": "Writing Equivalent Expressions",
+          "page": 145,
+          "quote": "Use the distributive property to write an expression that is equivalent",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "Same span as the other distribute-then-collect item: Lesson 10 is the non-optional place the property is built, Lesson 11's Cool-down the place it is tested. The collecting step has no home in grade 6."
+    },
+    "g6-2024-041": {
+      "added": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Equal and Equivalent",
+          "role": "introduces",
+          "activity": "Identifying Equivalent Expressions",
+          "page": 108,
+          "quote": "students apply what they know about the meaning and properties of operations",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "The Distributive Property, Part 2",
+          "role": "practises",
+          "activity": "Areas of Partitioned Rectangles",
+          "page": 130,
+          "quote": "write an expression for the width, an expression for the length",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item is an equivalence claim to be judged, so this reaches back to Lesson 8, where 'equivalent expressions' is defined, and adds the Lesson 10 activity where two expressions for one area are written and compared."
+    },
+    "g6-2026-032": {
+      "added": [
+        {
+          "lesson": 10,
+          "lessonTitle": "The Distributive Property, Part 2",
+          "role": "introduces",
+          "activity": "Partitioned Rectangles When Lengths Are Unknown",
+          "page": 129,
+          "quote": "the total area of the new, larger rectangle as the product",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 11,
+          "lessonTitle": "The Distributive Property, Part 3",
+          "role": "assessed",
+          "activity": "Writing Equivalent Expressions",
+          "page": 145,
+          "quote": "Use the distributive property to write an expression that is equivalent",
+          "optionalEvidence": true
+        }
+      ],
+      "note": "The item runs the property backwards, from a sum to a product; Lesson 10's first activity is the non-optional place that direction is built, and the Lesson 11 Cool-down is where it is tested."
+    },
+    "g6-2023-040": {
+      "added": [
+        {
+          "lesson": 4,
+          "lessonTitle": "Practice Solving Equations",
+          "role": "practises",
+          "activity": "Row Game: Solving Equations Practice",
+          "page": 61,
+          "quote": "this activity is for students to practice solving equations",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Practice Solving Equations",
+          "role": "assessed",
+          "activity": "Solve It!",
+          "page": 64,
+          "quote": "Solve each equation. Explain or show your reasoning",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The placement covers composing the rectangles; the second half of the item -- solving 12x = 60 -- lives six lessons earlier, in Lesson 4's solving practice and its Cool-down."
+    },
+    "g6-2024-038": {
+      "added": [
+        {
+          "lesson": 2,
+          "lessonTitle": "Truth and Equations",
+          "role": "introduces",
+          "activity": "Find a Solution",
+          "page": 38,
+          "quote": "students look for solutions to equations and determine which value",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Practice Solving Equations",
+          "role": "practises",
+          "activity": "Row Game: Solving Equations Practice",
+          "page": 61,
+          "quote": "this activity is for students to practice solving equations",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down is the test; these show the span from Lesson 2, where a solution is something that makes an equation true, to Lesson 4's sustained practice on px = q."
+    },
+    "g6-2025-046": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Represent Situations with Equations",
+          "role": "introduces",
+          "activity": "Storytime",
+          "page": 69,
+          "quote": "students select an equation with a variable that can represent a situation",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Practice Solving Equations",
+          "role": "assessed",
+          "activity": "Solve It!",
+          "page": 64,
+          "quote": "Solve each equation. Explain or show your reasoning",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item asks students to write and then solve, twice; these add where choosing an equation for a situation is introduced and where solving it is assessed, two lessons apart."
+    },
+    "g6-2026-027": {
+      "added": [
+        {
+          "lesson": 1,
+          "lessonTitle": "Tape Diagrams and Equations",
+          "role": "introduces",
+          "activity": "Match Equations and Tape Diagrams",
+          "page": 25,
+          "quote": "Match each equation to one of the tape diagrams",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 5,
+          "lessonTitle": "Represent Situations with Equations",
+          "role": "practises",
+          "activity": "Choosing Equations to Match Situations",
+          "page": 70,
+          "quote": "Circle all of the equations that describe each situation",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The item only has to pick the equation, and its distractors are the reversed forms; Lesson 1's tape-diagram matching is where those competing forms are first sorted out, and Lesson 5's second activity is where the sorting is practised in context."
+    },
+    "g6-2026-041": {
+      "added": [
+        {
+          "lesson": 5,
+          "lessonTitle": "Represent Situations with Equations",
+          "role": "introduces",
+          "activity": "Storytime",
+          "page": 69,
+          "quote": "students select an equation with a variable that can represent a situation",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 4,
+          "lessonTitle": "Practice Solving Equations",
+          "role": "assessed",
+          "activity": "Solve It!",
+          "page": 64,
+          "quote": "Solve each equation. Explain or show your reasoning",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds where choosing an equation for a 'fewer than' situation is introduced and where solving an equation of that form is tested, so the entry covers both halves of write-and-solve."
+    },
+    "g6-2024-003": {
+      "added": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Solutions of Inequalities",
+          "role": "assessed",
+          "activity": "Solutions of Inequalities",
+          "page": 119,
+          "quote": "Select all numbers that are solutions to the inequality",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Basketball Game",
+          "page": 125,
+          "quote": "students interpret inequalities that represent constraints or conditions in a real-world situation",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Adds the Cool-down where candidate values are sorted into solutions and non-solutions, and the next lesson where the same reasoning is applied to a context, so the entry spans lessons 9 and 10."
+    },
+    "g6-2025-027": {
+      "added": [
+        {
+          "lesson": 9,
+          "lessonTitle": "Solutions of Inequalities",
+          "role": "introduces",
+          "activity": "Amusement Park Rides",
+          "page": 113,
+          "quote": "used in place of the variable to make the inequality true",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 10,
+          "lessonTitle": "Interpreting Inequalities",
+          "role": "practises",
+          "activity": "Basketball Game",
+          "page": 125,
+          "quote": "students interpret inequalities that represent constraints or conditions in a real-world situation",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The Cool-down is the test; these add where 'solution to an inequality' is defined and where finding and rejecting values is practised in a context."
+    },
+    "g6-2026-026": {
+      "added": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Writing and Graphing Inequalities",
+          "role": "introduces",
+          "activity": "How High and How Low Can It Be?",
+          "page": 102,
+          "quote": "whether or not a particular value makes an inequality true",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 9,
+          "lessonTitle": "Solutions of Inequalities",
+          "role": "assessed",
+          "activity": "Solutions of Inequalities",
+          "page": 119,
+          "quote": "Select all numbers that are solutions to the inequality",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "Reaches back to Lesson 8, where testing a value against an inequality is done before the word 'solution' exists, and forward to the Cool-down that tests it."
+    },
+    "g6-2026-023": {
+      "added": [
+        {
+          "lesson": 8,
+          "lessonTitle": "Writing and Graphing Inequalities",
+          "role": "introduces",
+          "activity": "How High and How Low Can It Be?",
+          "page": 102,
+          "quote": "to describe a range of values that includes the boundary value",
+          "optionalEvidence": false
+        },
+        {
+          "lesson": 8,
+          "lessonTitle": "Writing and Graphing Inequalities",
+          "role": "assessed",
+          "activity": "A Box of Paper Clips",
+          "page": 107,
+          "quote": "the number of paper clips in the box is at least 500",
+          "optionalEvidence": false
+        }
+      ],
+      "note": "The graphing and the 'at least' boundary the item turns on are Lesson 8's work, not Lesson 9's: that is where the closed-circle symbols are introduced and where an 'at least' statement is turned into an inequality and tested against candidate values."
+    }
+  }
+}

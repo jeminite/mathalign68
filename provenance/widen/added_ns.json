@@ -1,0 +1,493 @@
+{
+ "scope": "grade 6 NY-6.NS.4 to NS.8 and NY-6.G.3 -- additional evidence",
+ "items": {
+  "g6-2023-002": {
+   "added": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "practises",
+     "activity": "Folded Number Lines",
+     "page": 41,
+     "quote": "Determine the location of points P, X, and Y",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "assessed",
+     "activity": "Positive, Negative, and Opposite",
+     "page": 44,
+     "quote": "Plot a point on the number line to represent the value -3.2.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The existing Warm-up only primes the idea; these two show Lesson 2 going on to ask students to name the values of lettered points on a number line and then assessing a negative non-integer (-3.2) in the Cool-down -- the item's exact task."
+  },
+  "g6-2023-013": {
+   "added": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Common Multiples",
+     "role": "introduces",
+     "activity": "Least Common Multiple",
+     "page": 206,
+     "quote": "The least common multiple of 6 and 8 is 24.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 18,
+     "lessonTitle": "Using Common Multiples and Common Factors",
+     "role": "practises",
+     "activity": "Factors and Multiples",
+     "page": 214,
+     "quote": "including the greatest common factor and least common multiple",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity where 'least common multiple' is first named and defined, and shows the idea still being worked two lessons later in Lesson 18, so the Cool-down citation is not the whole span."
+  },
+  "g6-2023-017": {
+   "added": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Absolute Value of Numbers",
+     "role": "introduces",
+     "activity": "Jumping Bug",
+     "page": 78,
+     "quote": "introduced to the absolute value of a number as its distance from zero",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 1,
+     "lessonTitle": "Positive and Negative Numbers",
+     "role": "assessed",
+     "activity": "Agree or Disagree?",
+     "page": 34,
+     "quote": "A city that has an elevation of -17 meters is closer to sea level",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where absolute value is first built as distance from zero (Lesson 6 Activity 1) and, earlier still, the Lesson 1 Cool-down that already asks which elevation is closer to sea level -- the item's exact question, two weeks before the placement."
+  },
+  "g6-2023-021": {
+   "added": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "use of the general two-dimensional distance formula is not expected",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Plotting Polygons",
+     "page": 184,
+     "quote": "Here are the coordinates for four polygons.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Shows that the side-length work is actually developed in Lesson 14, where the curriculum explicitly restricts itself to horizontal and vertical distances, and that Lesson 15 first has students plot polygons from a list of coordinates."
+  },
+  "g6-2023-038": {
+   "added": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "introduces",
+     "activity": "Comparing Temperatures",
+     "page": 49,
+     "quote": "14 is less than 21, so -14 is also less than -21",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "practises",
+     "activity": "Rational Numbers on a Number Line",
+     "page": 51,
+     "quote": "Decide whether each inequality statement is true or false",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity that surfaces the exact misconception the item's distractors test (that -14 < -21 because 14 < 21) and the follow-up where students judge inequality statements about negatives."
+  },
+  "g6-2024-004": {
+   "added": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Interpreting Points in a Coordinate Plane",
+     "role": "introduces",
+     "activity": "High and Low Temperatures",
+     "page": 166,
+     "quote": "introduces the idea of vertical difference on the coordinate plane",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Points and Distances",
+     "page": 179,
+     "quote": "What is the distance between points A and B",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the Lesson 13 activity that first introduces vertical difference in the coordinate plane -- the item is a purely vertical distance -- and the Cool-down where that distance is assessed."
+  },
+  "g6-2024-018": {
+   "added": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "introduces",
+     "activity": "Folded Number Lines",
+     "page": 41,
+     "quote": "the same distance from 0 on the number line are called opposites",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity where 'opposites' is defined as same distance from 0, which is the idea the existing Cool-down citation assesses. Nothing else in the unit works the -(-x) notation, so only one citation was added."
+  },
+  "g6-2024-026": {
+   "added": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Points in the Coordinate Plane",
+     "role": "practises",
+     "activity": "The Coordinate Plane",
+     "page": 142,
+     "quote": "If a point has a positive y -coordinate, in which quadrants could it be?",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Points and Distances",
+     "page": 179,
+     "quote": "Plot the point (-3, 2) . Label it E",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Shows the sign-and-quadrant reasoning the item needs being worked in Lesson 11, three lessons before the reflection language of the placement, and assessed by plotting signed coordinates in the Lesson 14 Cool-down."
+  },
+  "g6-2024-029": {
+   "added": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "practises",
+     "activity": "Rational Numbers on a Number Line",
+     "page": 51,
+     "quote": "students plot positive and negative numbers on a horizontal number line",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 4,
+     "lessonTitle": "Ordering Rational Numbers",
+     "role": "assessed",
+     "activity": "Getting Them in Order",
+     "page": 62,
+     "quote": "Write a sentence to compare the two points shown on the number line.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity where students plot signed numbers and evaluate position claims, and the Lesson 4 Cool-down that asks for a sentence comparing two points -- the sentence form the item's answer choices take."
+  },
+  "g6-2024-043": {
+   "added": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Common Factors",
+     "role": "introduces",
+     "activity": "Greatest Common Factor",
+     "page": 197,
+     "quote": "The greatest common factor of 30 and 18 is 6.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 16,
+     "lessonTitle": "Common Factors",
+     "role": "practises",
+     "activity": "Diego’s Book Drive",
+     "page": 195,
+     "quote": "how you know that it is the largest possible number of boxes",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where 'greatest common factor' is first named and where students must justify that a number is the largest possible -- the justification the item demands when it asks whether the claim is correct."
+  },
+  "g6-2024-045": {
+   "added": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Points in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "The Coordinate Plane",
+     "page": 142,
+     "quote": "Write the coordinates of each labeled point.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Points and Distances",
+     "page": 179,
+     "quote": "What is the distance between points C and D?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where reading and writing coordinates is built (Lesson 11), which the item explicitly requires in its answer, alongside the Cool-down that assesses the distance itself."
+  },
+  "g6-2025-003": {
+   "added": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Interpreting Points in a Coordinate Plane",
+     "role": "practises",
+     "activity": "Unlabeled Points",
+     "page": 163,
+     "quote": "Label each point in the coordinate plane with the letter that represents its coordinates.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 11,
+     "lessonTitle": "Points in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Target Practice",
+     "page": 147,
+     "quote": "Name two coordinates that could be the landing points of her two arrows.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the Lesson 11 Cool-down that assesses naming coordinates in the lower quadrants, and the Lesson 13 Warm-up that asks students to match lettered points to ordered pairs -- the item's exact task, two lessons after the placement."
+  },
+  "g6-2025-031": {
+   "added": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+     "role": "introduces",
+     "activity": "Notice and Wonder: It Comes and Goes",
+     "page": 66,
+     "quote": "introduce positive and negative numbers in the new context of money and inventory",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 5,
+     "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+     "role": "practises",
+     "activity": "The Hardware Store",
+     "page": 67,
+     "quote": "What does -25 mean in this situation?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where the money-and-inventory context is first introduced and where students first interpret a specific negative amount, so the entry covers the whole of Lesson 5 rather than only its Cool-down."
+  },
+  "g6-2025-039": {
+   "added": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Common Factors",
+     "role": "introduces",
+     "activity": "Greatest Common Factor",
+     "page": 197,
+     "quote": "Find all of the factors of 28 and 12.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 18,
+     "lessonTitle": "Using Common Multiples and Common Factors",
+     "role": "practises",
+     "activity": "Factors and Multiples",
+     "page": 214,
+     "quote": "the side length, in feet, of the largest possible tile she could use",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where 'greatest common factor' is defined and practised on bare number pairs, and shows the same idea reappearing in a Lesson 18 tiling problem."
+  },
+  "g6-2025-044": {
+   "added": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Signs of Numbers in Coordinates",
+     "page": 174,
+     "quote": "How far away are they from the y -axis?",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Four Quadrants of “a-MAZE-ing”",
+     "page": 185,
+     "quote": "Students must determine from the information given that each grid square has length 2.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity that builds horizontal distance from the y-axis and the Lesson 15 maze, where students must work out the scale of a grid square -- the item's 'each unit represents 1 foot'."
+  },
+  "g6-2026-002": {
+   "added": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Comparing Numbers and Distance from Zero",
+     "role": "practises",
+     "activity": "Submarine",
+     "page": 87,
+     "quote": "A submarine is at an elevation of -100 feet (100 feet below sea level)",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "assessed",
+     "activity": "Making More Comparisons",
+     "page": 54,
+     "quote": "Label each point on the number line with the name of the city",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Shows that reading signed elevations off a number line keeps recurring after the placement: Lesson 7's Warm-up glosses -100 feet as 100 feet below sea level, and the Lesson 3 Cool-down uses the item's exact figure of cities labelled on a number line."
+  },
+  "g6-2026-005": {
+   "added": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "Find the distance between each pair of points.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Four Quadrants of “a-MAZE-ing”",
+     "page": 185,
+     "quote": "find horizontal and vertical distances between coordinates in a puzzle",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the Lesson 14 activity where finding the distance between two points is actually taught, and the Lesson 15 maze where horizontal and vertical distances are practised before the Cool-down assesses them."
+  },
+  "g6-2026-008": {
+   "added": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "assessed",
+     "activity": "Positive, Negative, and Opposite",
+     "page": 44,
+     "quote": "What is the opposite of -3.2?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the Cool-down that assesses the opposite of a signed number directly. Lesson 2 Activity 2 is the only other place opposites are developed, and it is already the existing citation, so nothing further was added."
+  },
+  "g6-2026-017": {
+   "added": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Common Multiples",
+     "role": "introduces",
+     "activity": "Least Common Multiple",
+     "page": 206,
+     "quote": "The least common multiple of 6 and 8 is 24.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 18,
+     "lessonTitle": "Using Common Multiples and Common Factors",
+     "role": "assessed",
+     "activity": "What Kind of Problem?",
+     "page": 225,
+     "quote": "A florist orders sunflowers every 6 days and daisies every 4 days.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the Lesson 17 activity that states the least common multiple of 6 and 8 is 24 -- literally this item's numbers and answer -- and the Lesson 18 Cool-down that asks students to recognise this problem type from a repeating-schedule story."
+  },
+  "g6-2026-020": {
+   "added": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Absolute Value of Numbers",
+     "role": "practises",
+     "activity": "Absolute Elevation and Temperature",
+     "page": 80,
+     "quote": "Which temperature has a smaller absolute value? Explain how you know.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 7,
+     "lessonTitle": "Comparing Numbers and Distance from Zero",
+     "role": "practises",
+     "activity": "Inequality Mix and Match (Optional)",
+     "page": 90,
+     "quote": "One partner will use 2 numbers and 1 symbol to write a true statement.",
+     "optionalEvidence": true
+    }
+   ],
+   "note": "Adds the one undamaged place the curriculum asks which number has the smaller absolute value, plus the optional partner game where students write comparison statements using both inequality symbols and absolute value."
+  },
+  "g6-2026-033": {
+   "added": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Signs of Numbers in Coordinates",
+     "page": 174,
+     "quote": "How are the coordinates the same? How are they different?",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Four Quadrants of “a-MAZE-ing”",
+     "page": 185,
+     "quote": "How far did he walk from his starting point to his ending point?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds where students compare how two points' coordinates are alike and different -- the reasoning the item's answer choices need -- and the Lesson 15 maze where a distance is found from start and end coordinates."
+  },
+  "g6-2026-039": {
+   "added": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "introduces",
+     "activity": "Comparing Temperatures",
+     "page": 49,
+     "quote": "students connect a visual number line representation of positive and negative numbers",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "practises",
+     "activity": "Rational Numbers on a Number Line",
+     "page": 51,
+     "quote": "Plot the numbers -2, 4, -7, and 10 on the number line.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the activity that connects the number line to inequality symbols in a temperature context, matching the item's context, and the follow-up where students plot signed numbers before comparing them."
+  }
+ }
+}
