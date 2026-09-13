@@ -3,7 +3,11 @@
 ## Status
 
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a deploy gate
-that passes — 108 checks, 0 skipped.
+that passes — 114 checks, 0 skipped.
+
+**`REVIEW.md` is the standing list of what a person still has to decide or check.** None of it
+blocks the gate; all of it is what a machine cannot catch. Read it before touching published
+data.
 
 **Live and public at <https://mathalign68.netlify.app>.** 396 items across grades 6-8, 42 of them
 (all of 2026 grade 7) showing the actual question, and an About & corrections tab with a working
@@ -23,22 +27,28 @@ and 118 constructed-response answers taken from NYSED's own exemplary responses.
 remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
 their standard, their statewide P-value and a link to the official page.
 
-**Grade 7's curriculum alignment is done and published** -- 129 of its 135 items carry a
-judged placement with named, paged, quoted evidence, rendered on each question card. The
-other 6 are the items whose PDF page `build_pagemap.py` leaves undetermined: no stem, so no
-lesson is guessed. Grades 8 and 6 are not started. The class-results analyzer is done.
+**Grades 7 and 8 are aligned and published — 264 of 396 items** carry a judged placement with
+named, paged, quoted evidence, rendered on each question card. Grade 6 is next. The nine items
+still without a placement are the six grade 7 and three grade 6 items whose PDF page
+`build_pagemap.py` leaves undetermined: no stem, so no lesson is guessed.
 
-Before trusting any single lesson number, read `provenance/alignment_second_pass_g7.md`.
-Four independent readers re-derived grade 7 blind to the first pass, and the two readings
-picked the same lesson 65.9% of the time. Every one of the 44 disagreements was then settled
--- 16 placements changed, 28 held with the losing reading recorded -- which brought it to
-78.3%. The lasting finding is that only 17 of the 44 crossed a UNIT: the unit is solid, the
-lesson is an opinion, and the published evidence range is what a teacher should read.
+Before trusting any single lesson number, read `provenance/alignment_second_pass_g7.md` and
+`provenance/alignment_second_pass_g8.md`. Every placement in both grades was re-derived blind by
+readers who could not see the first pass, and every disagreement was then settled by re-reading
+the lesson rather than by seniority.
 
-Next: grade 8, then grade 6. Fix `tools/extract_im_ms_lesson_detail.py` before grade 6 --
-grade 6 Unit 8 Lessons 8, 9 and 13 lost their activity boundaries, merging several activities
-into the first entry, and those are the lessons grade 6's own statistics items will be judged
-against. `validate_im_ms_lesson_detail.py` reports the symptom.
+Grade 7's two readings picked the same lesson 65.9% of the time, and settling its 44
+disagreements changed 16 placements. **Grade 8's agreed only 55.6%, and settlement went 50–4 to
+the second reading** — which is not two good readings differing, it is one bad one. A blind
+re-test with the labels stripped and the sides randomised went 18 of 18 the same way and named
+the fault independently: the first pass matched a *topic label* rather than the item's question.
+Section agreement against NYCPS rose 63.7% → 69.2%, so settlement moved toward the outside
+source rather than away.
+
+The lasting finding holds across both grades: **the unit is solid, the lesson is an opinion**,
+and the published evidence range is what a teacher should read. Only 17 of grade 7's 44
+disagreements crossed a unit, and only 10 of grade 8's 60 -- 86.8% and 92.6% agreement on the
+unit, against 65.9% and 55.6% on the lesson.
 
 ### Two Netlify settings that were wrong at first
 
@@ -53,8 +63,8 @@ The class-results analyzer is now built and gated (`site/analyze/`, sources in
 `templates/analyze/`). It reads a NYSED ISA export entirely in the browser, identifies the test
 from the file's own headers, and compares each item to NYSED's statewide P-value; see
 `provenance/isa_format.md`. Its "Imagine IM" column fills from the per-item alignment, which
-exists for grade 7 only — so a grade 6 export, the one real ISA in hand, still reads "not yet
-placed" for every item until grade 6 is swept.
+exists for grades 7 and 8 — so a grade 6 export, the one real ISA in hand, still reads "not yet
+placed" for every item until grade 6 is swept. That is the main reason grade 6 is next.
 
 | Phase | State | Blocked by |
 |---|---|---|
@@ -68,7 +78,7 @@ placed" for every item until grade 6 is swept.
 | 5 — class-results analyzer | done | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | done | — |
-| 3c — the per-ITEM judgement pass | grade 7 published; 8 and 6 next | — |
+| 3c — the per-ITEM judgement pass | grades 7 and 8 published; grade 6 next | — |
 | 4 — scoring-materials exemplars, CCLS-era archive | later | — |
 
 ## Done in Phase 0
@@ -106,8 +116,9 @@ methods (the geometry parser and a plain-text count of the type strings).
 - Five tabs — Standards, Difficulty, Blueprint, Post-test standards, Items — with a grade 6/7/8
   switcher that carries its own accent colour, so a screenshot of one grade cannot be mistaken
   for another. Verified in a browser on all three grades with no console errors.
-- `tools/preflight.py` — now 108 checks and 0 skipped; it was 53 with 3 skips when Phase 1
-  closed, and the skips were the Phase 2 and Phase 3 suites, which now run.
+- `tools/preflight.py` — now 114 checks and 0 skipped; it was 53 with 3 skips when Phase 1
+  closed, and the skips were the Phase 2 and Phase 3 suites, which now run. A *falling* count
+  means a check stopped running, which is worse than one failing.
 - `tools/test_extractor.py` — 169 checks: goldens for all 14 extractions, property tests that
   consult no golden, and a test that deliberately breaks column assignment and requires the
   suite to notice.

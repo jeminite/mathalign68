@@ -1,6 +1,10 @@
 # Working in MathAlign68
 
 Read `README.md` first for what this project is. This file is about how to work in it.
+`REVIEW.md` is the standing list of what a *person* still has to decide or check -- open
+questions rather than finished findings, and none of them blocks the deploy gate. Read it before
+starting anything that touches published data, and add to it rather than leaving a doubt in a
+commit message.
 
 `~/Desktop/ClaudeProjects/RELATIONSHIPS.md` is the authoritative description of how this
 project relates to RegentsAlign, AlgebraTeaching and TeachingBrain. If a relationship changes,
