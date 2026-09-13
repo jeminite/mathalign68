@@ -44,8 +44,9 @@
   }
 
   function lessonCell(i) {
-    // Grade 6 has no published alignment yet -- every entry is still draft, and
-    // build/payload.py drops drafts before they reach the site. Say so rather
+    // 385 of 396 items carry a judged placement. The 11 that do not are the nine
+    // on image-only PDF pages, which have no stem to judge, and the two on a
+    // grade 5 standard with no grade 5 curriculum in the project. Say so rather
     // than rendering an empty cell that looks like a bug.
     if (i.lessonTitle) {
       return esc("Unit " + (i.unit || "?") + ", Lesson " + (i.lesson || "?") + " — " + i.lessonTitle);
@@ -176,6 +177,32 @@
              "per student per year." + plContext(r, lost) + "</p>");
     }
 
+    /* ---- the same thing said in lessons ----
+       A standard is not something a teacher can reteach on a Tuesday. Every item
+       now carries a judged lesson, so the table above can be restated as the
+       lessons whose activities ask these items' questions. */
+    var fl = (r.focusByLesson || []).filter(function (x) { return x.creditsLost > 0; });
+    if (fl.length) {
+      h.push("<h3>Which lessons to reteach</h3>");
+      h.push('<p class="note">The same credits, attributed to the <strong>lesson</strong> whose ' +
+             "activities ask each item's question rather than to the standard it assesses. " +
+             "Each placement was judged by reading the lessons and carries quoted evidence on " +
+             "the main site. A standard taught across two lessons contributes its weight to " +
+             "both, so these rows do not sum to the figure above.</p>");
+      h.push('<table class="grid"><thead><tr><th>Lesson</th><th>Standards</th>' +
+             "<th>Your class</th><th>State</th><th>Diff</th><th>Credits/yr</th>" +
+             "<th>Credits lost</th></tr></thead><tbody>");
+      fl.slice(0, 12).forEach(function (x) {
+        h.push("<tr><td><strong>U" + x.unit + ", L" + x.lesson + "</strong> " +
+               esc(x.lessonTitle || "") + "</td><td>" + x.standards.map(esc).join(", ") +
+               "</td><td>" + pc(x.classP) + "</td><td>" + pc(x.stateP) +
+               '</td><td class="' + gapClass(x.gap) + '">' + gapStr(x.gap) +
+               "</td><td>" + x.creditsPerYear.toFixed(2) +
+               '</td><td><strong>' + x.creditsLost.toFixed(2) + "</strong></td></tr>");
+      });
+      h.push("</tbody></table>");
+    }
+
     /* ---- what gates proficiency ---- */
     h.push("<h3>What gates proficiency</h3>");
     if (!r.gating.usable) {
@@ -224,10 +251,12 @@
     if (G && G.units && G.units.length) {
       h.push("<h3>When the gating content is taught</h3>");
       h.push('<p class="note">The standards that gate proficiency, placed against the ' +
-             "35-week Imagine IM pacing calendar. The unit a standard belongs to is taken from " +
-             "the publisher\u2019s own standard-to-lesson table, which names the right " +
-             "<em>unit</em> 96.3% of the time and the right lesson only 77.4%, so this is unit " +
-             "level only.</p>");
+             "35-week Imagine IM pacing calendar. The unit comes from the <strong>judged " +
+             "placement</strong> \u2014 each item read against the lessons, with quoted " +
+             "evidence on the main site. Where no item on a standard was judged, it falls " +
+             "back to the publisher\u2019s own standard-to-lesson table, which names the " +
+             "right <em>unit</em> 96.4% of the time and the right lesson only 77.8%. Either " +
+             "way this table is unit level, because pacing is.</p>");
       h.push('<table class="grid"><thead><tr><th>Unit</th><th>Starts</th>' +
              "<th>Gating credits</th><th>Standards</th></tr></thead><tbody>");
       G.units.forEach(function (u) {

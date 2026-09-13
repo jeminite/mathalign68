@@ -234,8 +234,17 @@ async function main() {
   ok("a prior-grade standard is kept separate from a genuine index gap",
      r.placement.priorGrade.length + r.placement.unplaced.length >= 0 &&
      r.placement.unplaced.indexOf("NY-5.OA.3") < 0, r.placement.unplaced);
-  check("placement states the table's unit-level accuracy",
-        [r.placement.unitAccuracy, r.placement.lessonAccuracy], [0.963, 0.774]);
+  // The figures moved when a regex fix let three more NYCPS rows parse; see
+  // provenance/alignment_baseline_measurement.md. They describe the FALLBACK
+  // now -- placement prefers the judged placement and reaches the table only
+  // for a standard no item was judged into.
+  check("placement states the table's accuracy, which is now the fallback's",
+        [r.placement.unitAccuracy, r.placement.lessonAccuracy], [0.964, 0.778]);
+  // The judged placement must actually be the one in use. If this ever reads 0
+  // judged, the report has silently gone back to the standard-to-lesson table.
+  ok("placement answers from judged placements, not the table",
+     r.placement.judgedStandards > 0 && r.placement.derivedStandards === 0,
+     [r.placement.judgedStandards, r.placement.derivedStandards]);
 
   /* ------------------------------------------------------------ checkpoints */
 
@@ -293,8 +302,23 @@ async function main() {
   ok("instructions stay an array", cp.units.every((u) => u.items.every((i) =>
      i.instructions === null || Array.isArray(i.instructions))), true);
 
+  // A standard that resolves to no unit at all must be REPORTED, never dropped
+  // silently -- a checkpoint plan that quietly omits a gating standard is worse
+  // than one that admits it cannot place it.
+  //
+  // This used to assert the property using NY-6.G.5, which the publisher's table
+  // never cites. It no longer works as a fixture, and the reason is the change
+  // worth having: NY-6.G.5's two items are now judged into Unit 1 Lesson 17, so
+  // a standard that could not be scheduled at all can be. The property is now
+  // exercised directly instead of relying on the real data still having a hole.
+  const orphan = Engine.checkpoints(
+    [], DATA,
+    { usable: true, rows: [{ standard: "NY-6.ZZ.9", credits: 3, bucket: "gates-L2-L3" }] },
+    { byStandard: {} }, 6);
   ok("a standard gating proficiency but in no unit is reported, not dropped",
-     cp.unschedulable.indexOf("NY-6.G.5") >= 0, cp.unschedulable);
+     (orphan.unschedulable || []).indexOf("NY-6.ZZ.9") >= 0, orphan.unschedulable);
+  ok("every gating standard in the real file can now be scheduled",
+     cp.unschedulable.length === 0, cp.unschedulable);
 
   // Without a usable gating analysis there is nothing to check against, and the
   // refusal has to say so rather than produce an empty set.

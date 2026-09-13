@@ -171,7 +171,13 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
        /does not publish the population/.test(out), true);
     ok("the dominant-distractor section rendered", /one wrong answer dominated/.test(out), true);
     ok("the by-class table rendered", /By class/.test(out), true);
-    ok("grade 6 alignment shows as not yet placed", /not yet placed/.test(out), true);
+    // The fallback still has to render, but it is now the exception rather than
+    // the rule: 38 of this file's 39 items carry a judged lesson, and the one
+    // that does not is on NY-5.OA.3, a grade 5 standard with no grade 5
+    // curriculum in the project to place it against.
+    ok("an item with no judged lesson still renders its fallback",
+       /not yet placed/.test(out), true);
+    ok("items WITH a judged lesson show it", /Unit \d+, Lesson \d+ \u2014 /.test(out), true);
     ok("constructed response is kept separate from multiple choice",
        /not a percent correct/.test(out), true);
     ok("items deep-link to the official PDF",
@@ -192,7 +198,16 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
     ok("band sizes are shown, not hidden", /Level 1 \(\d+ students\)/.test(out), true);
     ok("the gating threshold is stated on the page", /at least \d+% of its credits/.test(out), true);
     ok("the pacing section rendered", /When the gating content is taught/.test(out), true);
-    ok("the table's unit-level accuracy is stated", /96\.3% of the time/.test(out), true);
+    ok("the fallback table's accuracy is stated", /96\.4% of the time/.test(out), true);
+    // The pacing table is only as good as where its units come from. It must say
+    // they are judged, or a reader assumes the standard-to-lesson table.
+    ok("the pacing section says the unit was judged, not derived",
+       /unit comes from the <strong>judged placement<\/strong>/.test(out), true);
+    // The lesson rollup is the payoff of the alignment: a standard is not
+    // something a teacher can reteach on a Tuesday, a lesson is.
+    ok("the lessons-to-reteach section rendered", /Which lessons to reteach/.test(out), true);
+    ok("it warns that lesson rows do not sum to the standard total",
+       /do not sum to the figure above/.test(out), true);
 
     // The sentence that keeps the page honest. Closing the State gap is worth
     // far less than it sounds, and the page has to say so where the figure is.
@@ -215,8 +230,15 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
        /official page/.test(out), true);
     ok("Unit 7's missing mid-unit assessment is called out",
        /has no mid-unit assessment/.test(out), true);
-    ok("the unschedulable gating standard is named",
-       /NY-6\.G\.5/.test(out) && /Check it by hand/.test(out), true);
+    // This used to assert that NY-6.G.5 rendered with a "Check it by hand" note,
+    // because the publisher's standard-to-lesson table never cites that standard
+    // and nothing could place it. Its two items are now judged into Unit 1
+    // Lesson 17, so every gating standard on this file can be scheduled and the
+    // block correctly does not render. The engine suite exercises the
+    // unschedulable path directly on a synthetic gating standard, which does not
+    // depend on the real data still having a hole in it.
+    ok("no gating standard is left unschedulable on this file",
+       !/Check it by hand/.test(out), true);
     // Figures are served from the site's own assets, not from anywhere else.
     const figs = (out.match(/<img[^>]+src="([^"]+)"/g) || [])
       .map((m) => m.replace(/^.*src="([^"]+)".*$/, "$1"));

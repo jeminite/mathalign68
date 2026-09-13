@@ -455,6 +455,10 @@
         sourceUrl: meta.sourceUrl || null,
         lesson: meta.lesson || null, lessonTitle: meta.lessonTitle || null,
         unit: meta.unit || null, unitTitle: meta.unitTitle || null,
+        // Which grade's curriculum the placement sits in. A grade 8 item on a
+        // grade 7 standard is judged into grade 7's course, and filing it under
+        // a grade 8 unit would be wrong.
+        course: meta.course || null,
         alignmentStatus: meta.alignmentStatus || null
       });
     });
@@ -551,6 +555,7 @@
     var gating = parsed.hasPl ? bandGating(parsed, items, byItem)
                               : { usable: false, why: "this file carries no proficiency-level column" };
     var focusRows = focus(items, data, test.grade);
+    var lessonRows = focusByLesson(items, test.grade, focusRows);
     var place = placement(items, data, test.grade);
     place.focusRows = focusRows;
     var checks = checkpoints(items, data, gating, place, test.grade);
@@ -604,7 +609,7 @@
                        function (i) { return i.domainLabel; }),
       bySection: bySection,
       totalCredits: totalCredits,
-      curve: curve, gating: gating, focus: focusRows,
+      curve: curve, gating: gating, focus: focusRows, focusByLesson: lessonRows,
       placement: place, gatingByUnit: gatingByUnit, checkpoints: checks,
       constructed: items.filter(function (i) { return i.type === "cr"; })
                         .sort(function (a, b) { return b.zeroCredit - a.zeroCredit; }),
@@ -661,6 +666,77 @@
                // not an area of focus, and signing it would sort it into the
                // middle rather than out of the way.
                creditsLost: gap === null || gap >= 0 ? 0 : Math.round(-gap * mean * 100) / 100 };
+    }).sort(function (a, b) { return b.creditsLost - a.creditsLost; });
+  }
+
+  // The same question asked of LESSONS instead of standards.
+  //
+  // focus() answers "which standard is costing you credits", which is the
+  // question the data could answer before the alignment existed. A standard is
+  // not a thing a teacher can reteach on a Tuesday; a lesson is. Every item now
+  // carries a judged lesson, so the credits a class is losing can be attributed
+  // to the lesson whose activities ask that item's question -- "reteach Unit 3
+  // Lesson 7" rather than "focus on NY-6.RP.3b".
+  //
+  // Deliberately reuses focus()'s credit weighting rather than recomputing it:
+  // creditsPerYear is how often this content has actually recurred across the
+  // released tests, and a lesson inherits it from the items on it. Two figures
+  // that ought to agree and are computed twice will eventually disagree.
+  //
+  // Items without a judged lesson in this grade's own curriculum are skipped,
+  // not bucketed into an "unknown" row. A lesson report whose largest row is
+  // "unknown" teaches nobody anything.
+  function focusByLesson(items, grade, focusRows) {
+    var perStandard = {};
+    (focusRows || []).forEach(function (r) { perStandard[r.standard] = r; });
+
+    var acc = {};
+    items.forEach(function (i) {
+      if (i.lesson === null || i.lesson === undefined) return;
+      if (i.unit === null || i.unit === undefined) return;
+      var m = /Grade\s+(\d)/.exec(i.course || "");
+      if (!m || m[1] !== String(grade)) return;
+
+      var key = i.unit + "." + i.lesson;
+      var a = acc[key] = acc[key] ||
+        { unit: i.unit, unitTitle: i.unitTitle || null,
+          lesson: i.lesson, lessonTitle: i.lessonTitle || null,
+          items: [], standards: [], earned: 0, possible: 0, stateEarned: 0,
+          creditsPerYear: 0 };
+      a.items.push(i.item);
+      if (a.standards.indexOf(i.standard) < 0) {
+        a.standards.push(i.standard);
+        // A standard's whole per-year credit weight is attributed to each lesson
+        // its items land on. Two lessons sharing a standard therefore both show
+        // its weight, which overstates the total ACROSS rows -- the same
+        // double-count gatingByUnit already carries and reports rather than
+        // hides. Per row the figure is right, and the rows are what a teacher
+        // reads.
+        var f = perStandard[i.standard];
+        if (f) a.creditsPerYear += f.creditsPerYear;
+      }
+      a.earned += i.earned;
+      a.possible += i.credits * i.n;
+      if (i.stateP !== null && i.stateP !== undefined) {
+        a.stateEarned += i.stateP * i.credits * i.n;
+      }
+    });
+
+    return Object.keys(acc).map(function (k) {
+      var a = acc[k];
+      var classP = a.possible ? a.earned / a.possible : null;
+      var stateP = a.possible ? a.stateEarned / a.possible : null;
+      var gap = (classP === null || stateP === null) ? null : classP - stateP;
+      a.classP = pct(classP);
+      a.stateP = pct(stateP);
+      a.gap = pct(gap);
+      a.creditsPerYear = Math.round(a.creditsPerYear * 100) / 100;
+      // Same rule as focus(): a lesson the class beat the state on is not an
+      // area of focus, and signing it would sort it into the middle rather than
+      // out of the way.
+      a.creditsLost = (gap === null || gap >= 0)
+        ? 0 : Math.round(-gap * a.creditsPerYear * 100) / 100;
+      return a;
     }).sort(function (a, b) { return b.creditsLost - a.creditsLost; });
   }
 
@@ -746,10 +822,21 @@
 
   // Where a standard is taught, and when.
   //
-  // UNIT granularity only. provenance/alignment_baseline_measurement.md measures
-  // the publisher's standard-to-lesson table at 96.3% for the unit and 77.4% for
-  // the lesson, and CLAUDE.md says to use it to pick the unit and then read the
-  // lessons. A focus report needs the unit, which is the part it is good at.
+  // THE JUDGED PLACEMENT FIRST. This used to read the publisher's
+  // standard-to-lesson table and nothing else, which
+  // provenance/alignment_baseline_measurement.md measures at 96.4% for the unit
+  // and 77.8% for the lesson. That was the only source available when this was
+  // written. 385 of 396 items now carry a placement judged by reading the
+  // lessons, so the table is the fallback and the judgement is the answer.
+  //
+  // It matters more here than on the main site, because three of this report's
+  // claims hang off it: which unit to focus on, when that unit is taught, and
+  // when to run a checkpoint. Those were all being answered by a table the rest
+  // of the project exists to improve on.
+  //
+  // Still UNIT granularity in byStandard, because every consumer of it schedules
+  // against the pacing calendar and pacing is per unit. byLesson carries the
+  // finer answer for the focus report.
   function placement(items, data, grade) {
     var cur = ((data.curriculum || {}).grades || {})[String(grade)] || {};
     var s2l = cur.standardToLessons || {};
@@ -758,8 +845,40 @@
     // Reading it from the unit rather than republishing a pacing block keeps one
     // copy of the 35-week table on the site.
     var units = cur.units || {};
-    var out = {}, unplaced = [], priorGrade = [];
+    var out = {}, unplaced = [], priorGrade = [], judged = {}, derivedStds = {};
+
+    function unitRecord(u) {
+      var p = units[u] || {};
+      return { unit: Number(u), title: p.title || null, startWeek: p.startWeek || null,
+               days: p.days || null, midUnitAssessment: !!p.midUnitAssessment };
+    }
+
+    // A placement counts for THIS grade only when it was judged into this
+    // grade's curriculum. A grade 8 item on a grade 7 standard is judged into
+    // grade 7 Unit 8, and filing it under grade 8's Unit 8 -- a different unit
+    // about a different topic -- is exactly the kind of error the edition swap
+    // already makes easy.
+    function judgedUnitFor(i) {
+      if (i.unit === null || i.unit === undefined) return null;
+      var m = /Grade\s+(\d)/.exec(i.course || "");
+      return (m && m[1] === String(grade)) ? String(i.unit) : null;
+    }
+
     items.forEach(function (i) {
+      var ju = judgedUnitFor(i);
+      if (ju === null) return;
+      (judged[i.standard] = judged[i.standard] || {})[ju] = 1;
+    });
+
+    items.forEach(function (i) {
+      // Judged wins. Several items on one standard can be judged into different
+      // units -- alignment is per item, not per standard -- so the answer for a
+      // standard is the set its own items actually landed in.
+      if (judged[i.standard]) {
+        out[i.standard] = Object.keys(judged[i.standard])
+          .sort(function (a, b) { return a - b; }).map(unitRecord);
+        return;
+      }
       var codes = s2l[i.standard] || [];
       if (!codes.length) {
         // A prior-grade post-test standard is not IN this grade's curriculum and
@@ -777,15 +896,14 @@
         var parts = String(c).split(".");
         if (parts.length >= 2) seenUnits[parts[1]] = 1;
       });
+      derivedStds[i.standard] = 1;
       out[i.standard] = Object.keys(seenUnits).sort(function (a, b) { return a - b; })
-        .map(function (u) {
-          var p = units[u] || {};
-          return { unit: Number(u), title: p.title || null, startWeek: p.startWeek || null,
-                   days: p.days || null, midUnitAssessment: !!p.midUnitAssessment };
-        });
+        .map(unitRecord);
     });
     return { byStandard: out, unplaced: unplaced, priorGrade: priorGrade,
-             unitAccuracy: 0.963, lessonAccuracy: 0.774 };
+             judgedStandards: Object.keys(judged).length,
+             derivedStandards: Object.keys(derivedStds).length,
+             unitAccuracy: 0.964, lessonAccuracy: 0.778 };
   }
 
   /* ---------------------------------------------------------- checkpoints */
