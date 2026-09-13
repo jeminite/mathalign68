@@ -1,0 +1,3017 @@
+{
+ "activities": {
+  "6.1.11|pinwheel optional": {
+   "lessonTitle": "Polygons",
+   "page": 195,
+   "sectionLetter": "C"
+  },
+  "6.1.11|quadrilateral strategies": {
+   "lessonTitle": "Polygons",
+   "page": 191,
+   "sectionLetter": "C"
+  },
+  "6.1.12|covering the cabinet part 2": {
+   "lessonTitle": "What is Surface Area?",
+   "page": 220,
+   "sectionLetter": "D"
+  },
+  "6.1.13|prisms and pyramids": {
+   "lessonTitle": "Polyhedra",
+   "page": 233,
+   "sectionLetter": "D"
+  },
+  "6.1.14|unfolded": {
+   "lessonTitle": "Nets and Surface Area",
+   "page": 251,
+   "sectionLetter": "D"
+  },
+  "6.1.14|using nets to find surface area": {
+   "lessonTitle": "Nets and Surface Area",
+   "page": 246,
+   "sectionLetter": "D"
+  },
+  "6.1.15|building prisms and pyramids": {
+   "lessonTitle": "More Nets, More Surface Area",
+   "page": 258,
+   "sectionLetter": "D"
+  },
+  "6.1.15|surface area of a triangular prism": {
+   "lessonTitle": "More Nets, More Surface Area",
+   "page": 265,
+   "sectionLetter": "D"
+  },
+  "6.1.17|exponent expressions": {
+   "lessonTitle": "Squares and Cubes",
+   "page": 295,
+   "sectionLetter": "E"
+  },
+  "6.1.17|introducing exponents": {
+   "lessonTitle": "Squares and Cubes",
+   "page": 292,
+   "sectionLetter": "E"
+  },
+  "6.1.17|perfect cubes": {
+   "lessonTitle": "Squares and Cubes",
+   "page": 291,
+   "sectionLetter": "E"
+  },
+  "6.1.3|maritime flag": {
+   "lessonTitle": "Reasoning to Find Area",
+   "page": 69,
+   "sectionLetter": "A"
+  },
+  "6.1.3|off the grid": {
+   "lessonTitle": "Reasoning to Find Area",
+   "page": 65,
+   "sectionLetter": "A"
+  },
+  "6.1.3|on the grid": {
+   "lessonTitle": "Reasoning to Find Area",
+   "page": 61,
+   "sectionLetter": "A"
+  },
+  "6.1.6|more areas of parallelograms": {
+   "lessonTitle": "Area of Parallelograms",
+   "page": 111,
+   "sectionLetter": "B"
+  },
+  "6.1.8|composing parallelograms": {
+   "lessonTitle": "Area of Triangles",
+   "page": 141,
+   "sectionLetter": "C"
+  },
+  "6.1.8|more triangles": {
+   "lessonTitle": "Area of Triangles",
+   "page": 143,
+   "sectionLetter": "C"
+  },
+  "6.1.9|applying the formula for area of triangles": {
+   "lessonTitle": "Formula for the Area of a Triangle",
+   "page": 163,
+   "sectionLetter": "C"
+  },
+  "6.1.9|finding a formula for the area of a triangle": {
+   "lessonTitle": "Formula for the Area of a Triangle",
+   "page": 160,
+   "sectionLetter": "C"
+  },
+  "6.1.9|two more triangles": {
+   "lessonTitle": "Formula for the Area of a Triangle",
+   "page": 167,
+   "sectionLetter": "C"
+  },
+  "6.2.11|a huge amount of sparkling orange juice": {
+   "lessonTitle": "Representing Ratios with Tables",
+   "page": 165,
+   "sectionLetter": "D"
+  },
+  "6.2.11|batches of cookies in a table": {
+   "lessonTitle": "Representing Ratios with Tables",
+   "page": 171,
+   "sectionLetter": "D"
+  },
+  "6.2.11|batches of nihaizu sauce": {
+   "lessonTitle": "Representing Ratios with Tables",
+   "page": 167,
+   "sectionLetter": "D"
+  },
+  "6.2.12|comparing taco prices": {
+   "lessonTitle": "Navigating a Table of Equivalent Ratios",
+   "page": 178,
+   "sectionLetter": "D"
+  },
+  "6.2.12|hourly wages": {
+   "lessonTitle": "Navigating a Table of Equivalent Ratios",
+   "page": 181,
+   "sectionLetter": "D"
+  },
+  "6.2.12|price of bagels": {
+   "lessonTitle": "Navigating a Table of Equivalent Ratios",
+   "page": 186,
+   "sectionLetter": "D"
+  },
+  "6.2.13|bicycle sprint": {
+   "lessonTitle": "Tables and Double Number Line Diagrams",
+   "page": 199,
+   "sectionLetter": "D"
+  },
+  "6.2.13|biking 3 000 meters": {
+   "lessonTitle": "Tables and Double Number Line Diagrams",
+   "page": 192,
+   "sectionLetter": "D"
+  },
+  "6.2.13|running 3 000 meters": {
+   "lessonTitle": "Tables and Double Number Line Diagrams",
+   "page": 191,
+   "sectionLetter": "D"
+  },
+  "6.2.15|cubes of paint": {
+   "lessonTitle": "Part-Part-Whole Ratios",
+   "page": 223,
+   "sectionLetter": "E"
+  },
+  "6.2.15|room sizes": {
+   "lessonTitle": "Part-Part-Whole Ratios",
+   "page": 230,
+   "sectionLetter": "E"
+  },
+  "6.2.15|seasoning sneakers and concrete": {
+   "lessonTitle": "Part-Part-Whole Ratios",
+   "page": 226,
+   "sectionLetter": "E"
+  },
+  "6.2.1|a collection of animals": {
+   "lessonTitle": "Introducing Ratios and Ratio Language",
+   "page": 33,
+   "sectionLetter": "A"
+  },
+  "6.2.1|the teacher s collection": {
+   "lessonTitle": "Introducing Ratios and Ratio Language",
+   "page": 28,
+   "sectionLetter": "A"
+  },
+  "6.2.2|blue paint and play clay": {
+   "lessonTitle": "Representing Ratios with Diagrams",
+   "page": 40,
+   "sectionLetter": "A"
+  },
+  "6.2.2|card sort pencil cases": {
+   "lessonTitle": "Representing Ratios with Diagrams",
+   "page": 43,
+   "sectionLetter": "A"
+  },
+  "6.2.2|stationery sets": {
+   "lessonTitle": "Representing Ratios with Diagrams",
+   "page": 46,
+   "sectionLetter": "A"
+  },
+  "6.2.5|what are equivalent ratios": {
+   "lessonTitle": "Defining Equivalent Ratios",
+   "page": 82,
+   "sectionLetter": "B"
+  },
+  "6.2.8|more shopping": {
+   "lessonTitle": "How Much for One?",
+   "page": 126,
+   "sectionLetter": "C"
+  },
+  "6.2.9|moving 10 meters": {
+   "lessonTitle": "Constant Speed",
+   "page": 134,
+   "sectionLetter": "C"
+  },
+  "6.2.9|moving for 10 seconds": {
+   "lessonTitle": "Constant Speed",
+   "page": 137,
+   "sectionLetter": "C"
+  },
+  "6.2.9|train speeds": {
+   "lessonTitle": "Constant Speed",
+   "page": 139,
+   "sectionLetter": "C"
+  },
+  "6.3.10|kiran mai s coins": {
+   "lessonTitle": "What Are Percentages?",
+   "page": 174,
+   "sectionLetter": "C"
+  },
+  "6.3.11|puppies grow up": {
+   "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+   "page": 184,
+   "sectionLetter": "C"
+  },
+  "6.3.11|three day biking trip": {
+   "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+   "page": 182,
+   "sectionLetter": "C"
+  },
+  "6.3.12|revisiting jada s puppy": {
+   "lessonTitle": "Representing Percentages in Different Ways",
+   "page": 196,
+   "sectionLetter": "C"
+  },
+  "6.3.12|small and large": {
+   "lessonTitle": "Representing Percentages in Different Ways",
+   "page": 204,
+   "sectionLetter": "C"
+  },
+  "6.3.13|around the clock": {
+   "lessonTitle": "Benchmark Percentages",
+   "page": 218,
+   "sectionLetter": "C"
+  },
+  "6.3.13|nine is": {
+   "lessonTitle": "Benchmark Percentages",
+   "page": 211,
+   "sectionLetter": "C"
+  },
+  "6.3.13|shopping with coupons": {
+   "lessonTitle": "Benchmark Percentages",
+   "page": 214,
+   "sectionLetter": "C"
+  },
+  "6.3.14|matching the percentage": {
+   "lessonTitle": "Solving Percentage Problems",
+   "page": 222,
+   "sectionLetter": "C"
+  },
+  "6.3.16|library and cafeteria": {
+   "lessonTitle": "Finding the Percentage",
+   "page": 255,
+   "sectionLetter": "C"
+  },
+  "6.3.16|restaurant capacity": {
+   "lessonTitle": "Finding the Percentage",
+   "page": 250,
+   "sectionLetter": "C"
+  },
+  "6.3.3|buckets": {
+   "lessonTitle": "Converting Units",
+   "page": 64,
+   "sectionLetter": "A"
+  },
+  "6.3.3|cooking with a tablespoon": {
+   "lessonTitle": "Converting Units",
+   "page": 60,
+   "sectionLetter": "A"
+  },
+  "6.3.3|number talk fractions of a number": {
+   "lessonTitle": "Converting Units",
+   "page": 54,
+   "sectionLetter": "A"
+  },
+  "6.3.3|road sign": {
+   "lessonTitle": "Converting Units",
+   "page": 55,
+   "sectionLetter": "A"
+  },
+  "6.3.4|more treadmills": {
+   "lessonTitle": "Comparing Speeds and Prices",
+   "page": 74,
+   "sectionLetter": "B"
+  },
+  "6.3.4|sparkling water": {
+   "lessonTitle": "Comparing Speeds and Prices",
+   "page": 81,
+   "sectionLetter": "B"
+  },
+  "6.3.4|the best deal on beans": {
+   "lessonTitle": "Comparing Speeds and Prices",
+   "page": 77,
+   "sectionLetter": "B"
+  },
+  "6.3.5|cooking kinche": {
+   "lessonTitle": "Interpreting Rates",
+   "page": 86,
+   "sectionLetter": "B"
+  },
+  "6.3.5|gasoline by the gallon": {
+   "lessonTitle": "Interpreting Rates",
+   "page": 93,
+   "sectionLetter": "B"
+  },
+  "6.3.5|laundry detergent and raffle tickets": {
+   "lessonTitle": "Interpreting Rates",
+   "page": 89,
+   "sectionLetter": "B"
+  },
+  "6.3.6|binders and notebooks": {
+   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "page": 100,
+   "sectionLetter": "B"
+  },
+  "6.3.6|cheetah speed": {
+   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "page": 110,
+   "sectionLetter": "B"
+  },
+  "6.3.6|making bracelets": {
+   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "page": 103,
+   "sectionLetter": "B"
+  },
+  "6.3.7|card sort is it a deal": {
+   "lessonTitle": "More Rate Comparisons",
+   "page": 116,
+   "sectionLetter": "B"
+  },
+  "6.3.7|rulers by the pack": {
+   "lessonTitle": "More Rate Comparisons",
+   "page": 123,
+   "sectionLetter": "B"
+  },
+  "6.3.7|the fastest of all optional": {
+   "lessonTitle": "More Rate Comparisons",
+   "page": 119,
+   "sectionLetter": "B"
+  },
+  "6.3.8|going up": {
+   "lessonTitle": "Solving Rate Problems",
+   "page": 136,
+   "sectionLetter": "B"
+  },
+  "6.3.8|window washing": {
+   "lessonTitle": "Solving Rate Problems",
+   "page": 132,
+   "sectionLetter": "B"
+  },
+  "6.3.9|camels on a desert trail": {
+   "lessonTitle": "More About Constant Speed",
+   "page": 143,
+   "sectionLetter": "B"
+  },
+  "6.3.9|penguin speed": {
+   "lessonTitle": "More About Constant Speed",
+   "page": 153,
+   "sectionLetter": "B"
+  },
+  "6.3.9|swimming and biking": {
+   "lessonTitle": "More About Constant Speed",
+   "page": 147,
+   "sectionLetter": "B"
+  },
+  "6.4.10|dividing by and": {
+   "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+   "page": 170,
+   "sectionLetter": "C"
+  },
+  "6.4.10|dividing by unit fractions": {
+   "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+   "page": 163,
+   "sectionLetter": "C"
+  },
+  "6.4.11|dividing with or without an algorithm": {
+   "lessonTitle": "Using an Algorithm to Divide Fractions",
+   "page": 179,
+   "sectionLetter": "C"
+  },
+  "6.4.13|areas of squares and rectangles optional": {
+   "lessonTitle": "Rectangles With Fractional Side Lengths",
+   "page": 205,
+   "sectionLetter": "D"
+  },
+  "6.4.13|how many would it take": {
+   "lessonTitle": "Rectangles With Fractional Side Lengths",
+   "page": 211,
+   "sectionLetter": "D"
+  },
+  "6.4.13|two frames": {
+   "lessonTitle": "Rectangles With Fractional Side Lengths",
+   "page": 214,
+   "sectionLetter": "D"
+  },
+  "6.4.14|triangles and cubes": {
+   "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+   "page": 228,
+   "sectionLetter": "D"
+  },
+  "6.4.14|volumes of cubes and prisms": {
+   "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+   "page": 223,
+   "sectionLetter": "D"
+  },
+  "6.4.15|cubes with fractional edge lengths": {
+   "lessonTitle": "Volume of Prisms",
+   "page": 233,
+   "sectionLetter": "D"
+  },
+  "6.4.15|fish tank optional": {
+   "lessonTitle": "Volume of Prisms",
+   "page": 236,
+   "sectionLetter": "D"
+  },
+  "6.4.15|storage box": {
+   "lessonTitle": "Volume of Prisms",
+   "page": 238,
+   "sectionLetter": "D"
+  },
+  "6.4.16|making ornaments": {
+   "lessonTitle": "Solving Problems Involving Fractions",
+   "page": 251,
+   "sectionLetter": "E"
+  },
+  "6.4.5|reasoning with fraction strips": {
+   "lessonTitle": "How Many Groups? (Part 2)",
+   "page": 76,
+   "sectionLetter": "B"
+  },
+  "6.4.6|finding the number of groups": {
+   "lessonTitle": "Using Diagrams to Find the Number of Groups",
+   "page": 95,
+   "sectionLetter": "B"
+  },
+  "6.4.6|how many in 2": {
+   "lessonTitle": "Using Diagrams to Find the Number of Groups",
+   "page": 99,
+   "sectionLetter": "B"
+  },
+  "6.6.10|areas of partitioned rectangles": {
+   "lessonTitle": "The Distributive Property, Part 2",
+   "page": 130,
+   "sectionLetter": "B"
+  },
+  "6.6.10|partitioned rectangles when lengths are unknown": {
+   "lessonTitle": "The Distributive Property, Part 2",
+   "page": 129,
+   "sectionLetter": "B"
+  },
+  "6.6.10|which expressions represent area": {
+   "lessonTitle": "The Distributive Property, Part 2",
+   "page": 134,
+   "sectionLetter": "B"
+  },
+  "6.6.11|writing equivalent expressions": {
+   "lessonTitle": "The Distributive Property, Part 3",
+   "page": 145,
+   "sectionLetter": "B"
+  },
+  "6.6.11|writing equivalent expressions using the distributive property": {
+   "lessonTitle": "The Distributive Property, Part 3",
+   "page": 142,
+   "sectionLetter": "B"
+  },
+  "6.6.12|make 81": {
+   "lessonTitle": "Meaning of Exponents",
+   "page": 166,
+   "sectionLetter": "C"
+  },
+  "6.6.14|calculating surface area": {
+   "lessonTitle": "Evaluating Expressions With Exponents",
+   "page": 185,
+   "sectionLetter": "C"
+  },
+  "6.6.14|calculating volumes": {
+   "lessonTitle": "Evaluating Expressions With Exponents",
+   "page": 189,
+   "sectionLetter": "C"
+  },
+  "6.6.14|row game expression explosion": {
+   "lessonTitle": "Evaluating Expressions With Exponents",
+   "page": 186,
+   "sectionLetter": "C"
+  },
+  "6.6.15|expressions with exponents": {
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "page": 201,
+   "sectionLetter": "C"
+  },
+  "6.6.15|what s the value": {
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "page": 195,
+   "sectionLetter": "C"
+  },
+  "6.6.16|kitchen cleaner": {
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "page": 218,
+   "sectionLetter": "D"
+  },
+  "6.6.16|painting the set": {
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "page": 213,
+   "sectionLetter": "D"
+  },
+  "6.6.16|what s the relationship": {
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "page": 211,
+   "sectionLetter": "D"
+  },
+  "6.6.17|interpret the point": {
+   "lessonTitle": "Two Related Quantities, Part 2",
+   "page": 230,
+   "sectionLetter": "D"
+  },
+  "6.6.17|the robot race": {
+   "lessonTitle": "Two Related Quantities, Part 2",
+   "page": 225,
+   "sectionLetter": "D"
+  },
+  "6.6.19|getting to know an equation": {
+   "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+   "page": 250,
+   "sectionLetter": "E"
+  },
+  "6.6.19|sharing your equation with others": {
+   "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+   "page": 253,
+   "sectionLetter": "E"
+  },
+  "6.6.1|match equations and tape diagrams": {
+   "lessonTitle": "Tape Diagrams and Equations",
+   "page": 25,
+   "sectionLetter": "A"
+  },
+  "6.6.2|find a solution": {
+   "lessonTitle": "Truth and Equations",
+   "page": 38,
+   "sectionLetter": "A"
+  },
+  "6.6.2|notice and wonder equations": {
+   "lessonTitle": "Truth and Equations",
+   "page": 35,
+   "sectionLetter": "A"
+  },
+  "6.6.4|row game solving equations practice": {
+   "lessonTitle": "Practice Solving Equations",
+   "page": 61,
+   "sectionLetter": "A"
+  },
+  "6.6.4|solve it": {
+   "lessonTitle": "Practice Solving Equations",
+   "page": 64,
+   "sectionLetter": "A"
+  },
+  "6.6.5|choosing equations to match situations": {
+   "lessonTitle": "Represent Situations with Equations",
+   "page": 70,
+   "sectionLetter": "A"
+  },
+  "6.6.5|more storytime": {
+   "lessonTitle": "Represent Situations with Equations",
+   "page": 74,
+   "sectionLetter": "A"
+  },
+  "6.6.5|storytime": {
+   "lessonTitle": "Represent Situations with Equations",
+   "page": 69,
+   "sectionLetter": "A"
+  },
+  "6.6.7|building expressions": {
+   "lessonTitle": "Write Expressions With Variables",
+   "page": 97,
+   "sectionLetter": "B"
+  },
+  "6.6.7|growth": {
+   "lessonTitle": "Write Expressions With Variables",
+   "page": 100,
+   "sectionLetter": "B"
+  },
+  "6.6.7|scores and stickers": {
+   "lessonTitle": "Write Expressions With Variables",
+   "page": 95,
+   "sectionLetter": "B"
+  },
+  "6.6.8|identifying equivalent expressions": {
+   "lessonTitle": "Equal and Equivalent",
+   "page": 108,
+   "sectionLetter": "B"
+  },
+  "6.6.9|ways to represent area of a rectangle": {
+   "lessonTitle": "The Distributive Property, Part 1",
+   "page": 117,
+   "sectionLetter": "B"
+  },
+  "6.7.10|basketball game": {
+   "lessonTitle": "Interpreting Inequalities",
+   "page": 125,
+   "sectionLetter": "B"
+  },
+  "6.7.11|target practice": {
+   "lessonTitle": "Points on the Coordinate Plane",
+   "page": 147,
+   "sectionLetter": "C"
+  },
+  "6.7.11|the coordinate plane": {
+   "lessonTitle": "Points on the Coordinate Plane",
+   "page": 142,
+   "sectionLetter": "C"
+  },
+  "6.7.13|high and low temperatures": {
+   "lessonTitle": "Interpreting Points on a Coordinate Plane",
+   "page": 166,
+   "sectionLetter": "C"
+  },
+  "6.7.13|unlabeled points": {
+   "lessonTitle": "Interpreting Points on a Coordinate Plane",
+   "page": 163,
+   "sectionLetter": "C"
+  },
+  "6.7.14|finding distances in a coordinate plane": {
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "page": 176,
+   "sectionLetter": "C"
+  },
+  "6.7.14|points and distances": {
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "page": 179,
+   "sectionLetter": "C"
+  },
+  "6.7.14|signs of numbers in coordinates": {
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "page": 174,
+   "sectionLetter": "C"
+  },
+  "6.7.15|four quadrants of a maze ing": {
+   "lessonTitle": "Shapes in the Coordinate Plane",
+   "page": 185,
+   "sectionLetter": "C"
+  },
+  "6.7.15|perimeter of a polygon": {
+   "lessonTitle": "Shapes in the Coordinate Plane",
+   "page": 187,
+   "sectionLetter": "C"
+  },
+  "6.7.15|plotting polygons": {
+   "lessonTitle": "Shapes in the Coordinate Plane",
+   "page": 184,
+   "sectionLetter": "C"
+  },
+  "6.7.16|diego s book drive": {
+   "lessonTitle": "Common Factors",
+   "page": 195,
+   "sectionLetter": "D"
+  },
+  "6.7.16|greatest common factor": {
+   "lessonTitle": "Common Factors",
+   "page": 197,
+   "sectionLetter": "D"
+  },
+  "6.7.16|in your own words": {
+   "lessonTitle": "Common Factors",
+   "page": 200,
+   "sectionLetter": "D"
+  },
+  "6.7.17|in your own words again": {
+   "lessonTitle": "Common Multiples",
+   "page": 210,
+   "sectionLetter": "D"
+  },
+  "6.7.17|least common multiple": {
+   "lessonTitle": "Common Multiples",
+   "page": 206,
+   "sectionLetter": "D"
+  },
+  "6.7.18|factors and multiples": {
+   "lessonTitle": "Using Common Multiples and Common Factors",
+   "page": 214,
+   "sectionLetter": "D"
+  },
+  "6.7.18|what kind of problem": {
+   "lessonTitle": "Using Common Multiples and Common Factors",
+   "page": 225,
+   "sectionLetter": "D"
+  },
+  "6.7.1|agree or disagree": {
+   "lessonTitle": "Positive and Negative Numbers",
+   "page": 34,
+   "sectionLetter": "A"
+  },
+  "6.7.1|high places low places": {
+   "lessonTitle": "Positive and Negative Numbers",
+   "page": 29,
+   "sectionLetter": "A"
+  },
+  "6.7.2|a point on the number line": {
+   "lessonTitle": "Points on the Number Line",
+   "page": 38,
+   "sectionLetter": "A"
+  },
+  "6.7.2|folded number lines": {
+   "lessonTitle": "Points on the Number Line",
+   "page": 41,
+   "sectionLetter": "A"
+  },
+  "6.7.2|positive negative and opposite": {
+   "lessonTitle": "Points on the Number Line",
+   "page": 44,
+   "sectionLetter": "A"
+  },
+  "6.7.3|comparing temperatures": {
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "page": 49,
+   "sectionLetter": "A"
+  },
+  "6.7.3|making more comparisons": {
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "page": 54,
+   "sectionLetter": "A"
+  },
+  "6.7.3|rational numbers on a number line": {
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "page": 51,
+   "sectionLetter": "A"
+  },
+  "6.7.4|getting them in order": {
+   "lessonTitle": "Ordering Rational Numbers",
+   "page": 62,
+   "sectionLetter": "A"
+  },
+  "6.7.5|event planner": {
+   "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+   "page": 73,
+   "sectionLetter": "A"
+  },
+  "6.7.5|notice and wonder it comes and goes": {
+   "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+   "page": 66,
+   "sectionLetter": "A"
+  },
+  "6.7.5|the hardware store": {
+   "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+   "page": 67,
+   "sectionLetter": "A"
+  },
+  "6.7.6|absolute elevation and temperature": {
+   "lessonTitle": "Absolute Value of Numbers",
+   "page": 80,
+   "sectionLetter": "A"
+  },
+  "6.7.6|jumping bug": {
+   "lessonTitle": "Absolute Value of Numbers",
+   "page": 78,
+   "sectionLetter": "A"
+  },
+  "6.7.7|inequality mix and match optional": {
+   "lessonTitle": "Comparing Numbers and Distance from Zero",
+   "page": 90,
+   "sectionLetter": "A"
+  },
+  "6.7.7|submarine": {
+   "lessonTitle": "Comparing Numbers and Distance from Zero",
+   "page": 87,
+   "sectionLetter": "A"
+  },
+  "6.7.8|a box of paper clips": {
+   "lessonTitle": "Writing and Graphing Inequalities",
+   "page": 107,
+   "sectionLetter": "B"
+  },
+  "6.7.8|how high and how low can it be": {
+   "lessonTitle": "Writing and Graphing Inequalities",
+   "page": 102,
+   "sectionLetter": "B"
+  },
+  "6.7.8|stories about 9": {
+   "lessonTitle": "Writing and Graphing Inequalities",
+   "page": 104,
+   "sectionLetter": "B"
+  },
+  "6.7.9|amusement park rides": {
+   "lessonTitle": "Solutions of Inequalities",
+   "page": 113,
+   "sectionLetter": "B"
+  },
+  "6.7.9|solutions of inequalities": {
+   "lessonTitle": "Solutions of Inequalities",
+   "page": 119,
+   "sectionLetter": "B"
+  },
+  "6.8.13|siblings in the house": {
+   "lessonTitle": "Median",
+   "page": 208,
+   "sectionLetter": "D"
+  },
+  "6.8.14|the tallest and the smallest in the world": {
+   "lessonTitle": "Comparing Mean and Median",
+   "page": 218,
+   "sectionLetter": "D"
+  },
+  "6.8.15|range and interquartile range": {
+   "lessonTitle": "Quartiles and Interquartile Range",
+   "page": 235,
+   "sectionLetter": "D"
+  },
+  "6.8.16|boxes and dots": {
+   "lessonTitle": "Box Plots",
+   "page": 252,
+   "sectionLetter": "D"
+  },
+  "6.8.16|studying blinks": {
+   "lessonTitle": "Box Plots",
+   "page": 248,
+   "sectionLetter": "D"
+  },
+  "6.8.1|dots of data": {
+   "lessonTitle": "Got Data?",
+   "page": 27,
+   "sectionLetter": "A"
+  },
+  "6.8.1|what s the question": {
+   "lessonTitle": "Got Data?",
+   "page": 36,
+   "sectionLetter": "A"
+  },
+  "6.8.3|estimating caps": {
+   "lessonTitle": "Representing Data Graphically",
+   "page": 59,
+   "sectionLetter": "B"
+  },
+  "6.8.4|family size": {
+   "lessonTitle": "Dot Plots",
+   "page": 82,
+   "sectionLetter": "B"
+  },
+  "6.8.4|homework time": {
+   "lessonTitle": "Dot Plots",
+   "page": 78,
+   "sectionLetter": "B"
+  },
+  "6.8.5|packs on backs": {
+   "lessonTitle": "Using Dot Plots to Answer Statistical Questions",
+   "page": 86,
+   "sectionLetter": "B"
+  },
+  "6.8.6|dog show part 2": {
+   "lessonTitle": "Interpreting Histograms",
+   "page": 99,
+   "sectionLetter": "B"
+  },
+  "6.8.7|a tale of two seasons": {
+   "lessonTitle": "Using Histograms to Answer Statistical Questions",
+   "page": 122,
+   "sectionLetter": "B"
+  },
+  "6.8.7|measuring earthworms": {
+   "lessonTitle": "Using Histograms to Answer Statistical Questions",
+   "page": 114,
+   "sectionLetter": "B"
+  },
+  "6.8.8|card sort sorting histograms": {
+   "lessonTitle": "Describing Distributions on Histograms",
+   "page": 127,
+   "sectionLetter": "B"
+  },
+  "6.8.9|mode": {
+   "lessonTitle": "Mean and Mode",
+   "page": 148,
+   "sectionLetter": "C"
+  },
+  "7.1.12|pondering pools optional": {
+   "lessonTitle": "Units In Scale Drawings",
+   "page": 180,
+   "sectionLetter": "B"
+  },
+  "7.1.6|enlarged areas": {
+   "lessonTitle": "Scaling and Area",
+   "page": 106,
+   "sectionLetter": "A"
+  },
+  "7.1.7|length of a bus and width of a lake": {
+   "lessonTitle": "Scale Drawings",
+   "page": 122,
+   "sectionLetter": "B"
+  },
+  "7.1.9|bedroom floor plan": {
+   "lessonTitle": "Creating Scale Drawings",
+   "page": 138,
+   "sectionLetter": "B"
+  },
+  "7.1.9|drawing a pool": {
+   "lessonTitle": "Creating Scale Drawings",
+   "page": 145,
+   "sectionLetter": "B"
+  },
+  "7.1.9|two maps of utah": {
+   "lessonTitle": "Creating Scale Drawings",
+   "page": 141,
+   "sectionLetter": "B"
+  },
+  "7.2.10|card sort tables and graphs": {
+   "lessonTitle": "Introducing Graphs of Proportional Relationships",
+   "page": 159,
+   "sectionLetter": "D"
+  },
+  "7.2.10|t shirts for sale": {
+   "lessonTitle": "Introducing Graphs of Proportional Relationships",
+   "page": 157,
+   "sectionLetter": "D"
+  },
+  "7.2.10|which are not proportional": {
+   "lessonTitle": "Introducing Graphs of Proportional Relationships",
+   "page": 163,
+   "sectionLetter": "D"
+  },
+  "7.2.11|filling a bucket": {
+   "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+   "page": 175,
+   "sectionLetter": "D"
+  },
+  "7.2.11|seagulls eat what": {
+   "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+   "page": 172,
+   "sectionLetter": "D"
+  },
+  "7.2.11|tyler s walk": {
+   "lessonTitle": "Interpreting Graphs of Proportional Relationships",
+   "page": 169,
+   "sectionLetter": "D"
+  },
+  "7.2.13|stickers for sale": {
+   "lessonTitle": "Two Graphs for Each Relationship",
+   "page": 201,
+   "sectionLetter": "D"
+  },
+  "7.2.13|tables graphs and equations": {
+   "lessonTitle": "Two Graphs for Each Relationship",
+   "page": 193,
+   "sectionLetter": "D"
+  },
+  "7.2.2|feeding a crowd": {
+   "lessonTitle": "Introducing Proportional Relationships With Tables",
+   "page": 47,
+   "sectionLetter": "A"
+  },
+  "7.2.2|green paint": {
+   "lessonTitle": "Introducing Proportional Relationships With Tables",
+   "page": 55,
+   "sectionLetter": "A"
+  },
+  "7.2.3|centimeters and millimeters": {
+   "lessonTitle": "More About Constant of Proportionality",
+   "page": 61,
+   "sectionLetter": "A"
+  },
+  "7.2.3|fish tank": {
+   "lessonTitle": "More About Constant of Proportionality",
+   "page": 68,
+   "sectionLetter": "A"
+  },
+  "7.2.4|denver to chicago": {
+   "lessonTitle": "Proportional Relationships and Equations",
+   "page": 79,
+   "sectionLetter": "B"
+  },
+  "7.2.4|feeding a crowd revisited": {
+   "lessonTitle": "Proportional Relationships and Equations",
+   "page": 77,
+   "sectionLetter": "B"
+  },
+  "7.2.4|it s snowing in syracuse": {
+   "lessonTitle": "Proportional Relationships and Equations",
+   "page": 85,
+   "sectionLetter": "B"
+  },
+  "7.2.5|meters and centimeters": {
+   "lessonTitle": "Two Equations for Each Relationship",
+   "page": 90,
+   "sectionLetter": "B"
+  },
+  "7.2.6|bottle deposits": {
+   "lessonTitle": "Writing Equations to Represent Relationships",
+   "page": 102,
+   "sectionLetter": "B"
+  },
+  "7.2.6|more recycling": {
+   "lessonTitle": "Writing Equations to Represent Relationships",
+   "page": 107,
+   "sectionLetter": "B"
+  },
+  "7.2.6|recycling": {
+   "lessonTitle": "Writing Equations to Represent Relationships",
+   "page": 104,
+   "sectionLetter": "B"
+  },
+  "7.2.7|apples and pizza": {
+   "lessonTitle": "Comparing Relationships With Tables",
+   "page": 123,
+   "sectionLetter": "C"
+  },
+  "7.2.7|running laps": {
+   "lessonTitle": "Comparing Relationships With Tables",
+   "page": 118,
+   "sectionLetter": "C"
+  },
+  "7.2.7|visiting the state park": {
+   "lessonTitle": "Comparing Relationships With Tables",
+   "page": 116,
+   "sectionLetter": "C"
+  },
+  "7.3.10|card sort circle problems": {
+   "lessonTitle": "Distinguishing Circumference and Area",
+   "page": 163,
+   "sectionLetter": "C"
+  },
+  "7.3.4|using": {
+   "lessonTitle": "Applying Circumference",
+   "page": 72,
+   "sectionLetter": "A"
+  },
+  "7.3.7|areas of two circles": {
+   "lessonTitle": "Exploring the Area of a Circle",
+   "page": 126,
+   "sectionLetter": "B"
+  },
+  "7.3.8|a circumference of 44": {
+   "lessonTitle": "Relating Area to Circumference",
+   "page": 141,
+   "sectionLetter": "B"
+  },
+  "7.3.8|making a polygon out of a circle": {
+   "lessonTitle": "Relating Area to Circumference",
+   "page": 133,
+   "sectionLetter": "B"
+  },
+  "7.3.8|objects for a powwow": {
+   "lessonTitle": "Relating Area to Circumference",
+   "page": 138,
+   "sectionLetter": "B"
+  },
+  "7.4.10|a restaurant in a different city": {
+   "lessonTitle": "Tax and Tip",
+   "page": 142,
+   "sectionLetter": "C"
+  },
+  "7.4.10|dining at a restaurant": {
+   "lessonTitle": "Tax and Tip",
+   "page": 139,
+   "sectionLetter": "C"
+  },
+  "7.4.11|a car dealership": {
+   "lessonTitle": "Percentage Contexts",
+   "page": 151,
+   "sectionLetter": "C"
+  },
+  "7.4.11|card sort percentage situations": {
+   "lessonTitle": "Percentage Contexts",
+   "page": 148,
+   "sectionLetter": "C"
+  },
+  "7.4.11|leaving a tip": {
+   "lessonTitle": "Percentage Contexts",
+   "page": 148,
+   "sectionLetter": "C"
+  },
+  "7.4.11|the cost of a bike": {
+   "lessonTitle": "Percentage Contexts",
+   "page": 154,
+   "sectionLetter": "C"
+  },
+  "7.4.12|information gap sporting goods": {
+   "lessonTitle": "Solving Multi-step Percentage Problems",
+   "page": 159,
+   "sectionLetter": "C"
+  },
+  "7.4.12|shoes on sale": {
+   "lessonTitle": "Solving Multi-step Percentage Problems",
+   "page": 163,
+   "sectionLetter": "C"
+  },
+  "7.4.12|what is the percentage optional": {
+   "lessonTitle": "Solving Multi-step Percentage Problems",
+   "page": 161,
+   "sectionLetter": "C"
+  },
+  "7.4.12|which three go together equations": {
+   "lessonTitle": "Solving Multi-step Percentage Problems",
+   "page": 158,
+   "sectionLetter": "C"
+  },
+  "7.4.2|a train is traveling at": {
+   "lessonTitle": "Ratios and Rates With Fractions",
+   "page": 37,
+   "sectionLetter": "A"
+  },
+  "7.4.2|comparing running speeds": {
+   "lessonTitle": "Ratios and Rates With Fractions",
+   "page": 39,
+   "sectionLetter": "A"
+  },
+  "7.4.3|swimming manufacturing and painting": {
+   "lessonTitle": "Revisiting Proportional Relationships",
+   "page": 52,
+   "sectionLetter": "A"
+  },
+  "7.4.3|the price of rope": {
+   "lessonTitle": "Revisiting Proportional Relationships",
+   "page": 49,
+   "sectionLetter": "A"
+  },
+  "7.4.3|the price of wire": {
+   "lessonTitle": "Revisiting Proportional Relationships",
+   "page": 57,
+   "sectionLetter": "A"
+  },
+  "7.4.4|swimming and skating": {
+   "lessonTitle": "More than That, Less than That",
+   "page": 68,
+   "sectionLetter": "A"
+  },
+  "7.4.4|walking half as much again": {
+   "lessonTitle": "More than That, Less than That",
+   "page": 62,
+   "sectionLetter": "A"
+  },
+  "7.4.6|fish population": {
+   "lessonTitle": "Increasing and Decreasing",
+   "page": 93,
+   "sectionLetter": "B"
+  },
+  "7.4.6|more shampoo and a discounted shirt": {
+   "lessonTitle": "Increasing and Decreasing",
+   "page": 88,
+   "sectionLetter": "B"
+  },
+  "7.4.6|using tape diagrams": {
+   "lessonTitle": "Increasing and Decreasing",
+   "page": 90,
+   "sectionLetter": "B"
+  },
+  "7.4.7|double number lines": {
+   "lessonTitle": "One Hundred Percent",
+   "page": 99,
+   "sectionLetter": "B"
+  },
+  "7.4.8|tyler s savings bond": {
+   "lessonTitle": "Percent Increase and Decrease With Equations",
+   "page": 116,
+   "sectionLetter": "B"
+  },
+  "7.4.9|population growth": {
+   "lessonTitle": "Part of a Percent",
+   "page": 123,
+   "sectionLetter": "B"
+  },
+  "7.5.10|making mistakes": {
+   "lessonTitle": "Multiply!",
+   "page": 141,
+   "sectionLetter": "B"
+  },
+  "7.5.10|row game multiplying rational numbers": {
+   "lessonTitle": "Multiply!",
+   "page": 138,
+   "sectionLetter": "B"
+  },
+  "7.5.11|matching division expressions": {
+   "lessonTitle": "Dividing Rational Numbers",
+   "page": 151,
+   "sectionLetter": "B"
+  },
+  "7.5.11|multiplication and division": {
+   "lessonTitle": "Dividing Rational Numbers",
+   "page": 145,
+   "sectionLetter": "B"
+  },
+  "7.5.12|submarines": {
+   "lessonTitle": "Negative Rates",
+   "page": 160,
+   "sectionLetter": "B"
+  },
+  "7.5.12|up and down with the piccards": {
+   "lessonTitle": "Negative Rates",
+   "page": 157,
+   "sectionLetter": "B"
+  },
+  "7.5.13|card sort the same but different": {
+   "lessonTitle": "Expressions With Rational Numbers",
+   "page": 170,
+   "sectionLetter": "C"
+  },
+  "7.5.13|make them true": {
+   "lessonTitle": "Expressions With Rational Numbers",
+   "page": 178,
+   "sectionLetter": "C"
+  },
+  "7.5.13|near and far from zero": {
+   "lessonTitle": "Expressions With Rational Numbers",
+   "page": 172,
+   "sectionLetter": "C"
+  },
+  "7.5.14|charges and checks": {
+   "lessonTitle": "Solving Problems With Rational Numbers",
+   "page": 188,
+   "sectionLetter": "C"
+  },
+  "7.5.14|scoring margins": {
+   "lessonTitle": "Solving Problems With Rational Numbers",
+   "page": 183,
+   "sectionLetter": "C"
+  },
+  "7.5.14|solar power": {
+   "lessonTitle": "Solving Problems With Rational Numbers",
+   "page": 184,
+   "sectionLetter": "C"
+  },
+  "7.5.15|math talk opposites and reciprocals": {
+   "lessonTitle": "Solving Equations With Rational Numbers",
+   "page": 192,
+   "sectionLetter": "C"
+  },
+  "7.5.2|winter temperatures": {
+   "lessonTitle": "Changing Temperatures",
+   "page": 39,
+   "sectionLetter": "A"
+  },
+  "7.5.3|add em up": {
+   "lessonTitle": "Changing Elevation",
+   "page": 55,
+   "sectionLetter": "A"
+  },
+  "7.5.3|adding rational numbers": {
+   "lessonTitle": "Changing Elevation",
+   "page": 51,
+   "sectionLetter": "A"
+  },
+  "7.5.3|cliffs and caves": {
+   "lessonTitle": "Changing Elevation",
+   "page": 48,
+   "sectionLetter": "A"
+  },
+  "7.5.3|that s the opposite": {
+   "lessonTitle": "Changing Elevation",
+   "page": 47,
+   "sectionLetter": "A"
+  },
+  "7.5.4|buying a bike": {
+   "lessonTitle": "Money and Debts",
+   "page": 65,
+   "sectionLetter": "A"
+  },
+  "7.5.4|earning and spending": {
+   "lessonTitle": "Money and Debts",
+   "page": 60,
+   "sectionLetter": "A"
+  },
+  "7.5.5|same value": {
+   "lessonTitle": "Representing Subtraction",
+   "page": 78,
+   "sectionLetter": "A"
+  },
+  "7.5.5|we can add instead": {
+   "lessonTitle": "Representing Subtraction",
+   "page": 73,
+   "sectionLetter": "A"
+  },
+  "7.5.6|a subtraction expression": {
+   "lessonTitle": "Finding Differences",
+   "page": 90,
+   "sectionLetter": "A"
+  },
+  "7.5.6|expressions with altitude": {
+   "lessonTitle": "Finding Differences",
+   "page": 83,
+   "sectionLetter": "A"
+  },
+  "7.5.6|math talk missing addend": {
+   "lessonTitle": "Finding Differences",
+   "page": 82,
+   "sectionLetter": "A"
+  },
+  "7.5.7|climbing mount kilimanjaro": {
+   "lessonTitle": "Adding and Subtracting to Solve Problems",
+   "page": 97,
+   "sectionLetter": "A"
+  },
+  "7.5.7|coffee shop cups": {
+   "lessonTitle": "Adding and Subtracting to Solve Problems",
+   "page": 102,
+   "sectionLetter": "A"
+  },
+  "7.5.8|velocity": {
+   "lessonTitle": "Multiplying Rational Numbers (Part 1)",
+   "page": 111,
+   "sectionLetter": "B"
+  },
+  "7.5.9|backwards in time": {
+   "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+   "page": 123,
+   "sectionLetter": "B"
+  },
+  "7.5.9|true statements": {
+   "lessonTitle": "Multiplying Rational Numbers (Part 2)",
+   "page": 130,
+   "sectionLetter": "B"
+  },
+  "7.6.10|solve two equations": {
+   "lessonTitle": "Different Options for Solving One Equation",
+   "page": 120,
+   "sectionLetter": "B"
+  },
+  "7.6.11|at the community festival": {
+   "lessonTitle": "Using Equations to Solve Problems",
+   "page": 125,
+   "sectionLetter": "B"
+  },
+  "7.6.11|the basketball game": {
+   "lessonTitle": "Using Equations to Solve Problems",
+   "page": 129,
+   "sectionLetter": "B"
+  },
+  "7.6.12|20 off": {
+   "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+   "page": 134,
+   "sectionLetter": "B"
+  },
+  "7.6.12|timing the relay race": {
+   "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+   "page": 139,
+   "sectionLetter": "B"
+  },
+  "7.6.12|walking more each day": {
+   "lessonTitle": "Solving Problems About Percent Increase or Decrease",
+   "page": 135,
+   "sectionLetter": "B"
+  },
+  "7.6.14|colder and colder": {
+   "lessonTitle": "Finding Solutions to Inequalities in Context",
+   "page": 173,
+   "sectionLetter": "C"
+  },
+  "7.6.14|earning money for soccer stuff": {
+   "lessonTitle": "Finding Solutions to Inequalities in Context",
+   "page": 168,
+   "sectionLetter": "C"
+  },
+  "7.6.16|club activities matching": {
+   "lessonTitle": "Interpreting Inequalities",
+   "page": 191,
+   "sectionLetter": "C"
+  },
+  "7.6.16|party decorations": {
+   "lessonTitle": "Interpreting Inequalities",
+   "page": 195,
+   "sectionLetter": "C"
+  },
+  "7.6.17|ordering sandwiches": {
+   "lessonTitle": "Modeling With Inequalities",
+   "page": 200,
+   "sectionLetter": "C"
+  },
+  "7.6.17|playlist timing": {
+   "lessonTitle": "Modeling With Inequalities",
+   "page": 205,
+   "sectionLetter": "C"
+  },
+  "7.6.18|organizing work": {
+   "lessonTitle": "Subtraction in Equivalent Expressions",
+   "page": 214,
+   "sectionLetter": "D"
+  },
+  "7.6.19|equivalent expressions": {
+   "lessonTitle": "Expanding and Factoring",
+   "page": 227,
+   "sectionLetter": "D"
+  },
+  "7.6.19|factoring and expanding with negative numbers": {
+   "lessonTitle": "Expanding and Factoring",
+   "page": 222,
+   "sectionLetter": "D"
+  },
+  "7.6.19|seeing structure": {
+   "lessonTitle": "Expanding and Factoring",
+   "page": 225,
+   "sectionLetter": "D"
+  },
+  "7.6.20|fewer terms": {
+   "lessonTitle": "Combining Like Terms (Part 1)",
+   "page": 237,
+   "sectionLetter": "D"
+  },
+  "7.6.20|s and s": {
+   "lessonTitle": "Combining Like Terms (Part 1)",
+   "page": 232,
+   "sectionLetter": "D"
+  },
+  "7.6.20|why is it true": {
+   "lessonTitle": "Combining Like Terms (Part 1)",
+   "page": 231,
+   "sectionLetter": "D"
+  },
+  "7.6.21|seeing it differently": {
+   "lessonTitle": "Combining Like Terms (Part 2)",
+   "page": 242,
+   "sectionLetter": "D"
+  },
+  "7.6.21|subtracting linear expressions": {
+   "lessonTitle": "Combining Like Terms (Part 2)",
+   "page": 248,
+   "sectionLetter": "D"
+  },
+  "7.6.3|drawing tape diagrams to represent equations": {
+   "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+   "page": 48,
+   "sectionLetter": "A"
+  },
+  "7.6.3|matching equations to tape diagrams": {
+   "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+   "page": 46,
+   "sectionLetter": "A"
+  },
+  "7.6.3|three of these equations belong together": {
+   "lessonTitle": "Reasoning About Equations With Tape Diagrams",
+   "page": 51,
+   "sectionLetter": "A"
+  },
+  "7.6.4|finding solutions": {
+   "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+   "page": 60,
+   "sectionLetter": "A"
+  },
+  "7.6.4|situations and diagrams": {
+   "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+   "page": 56,
+   "sectionLetter": "A"
+  },
+  "7.6.4|situations diagrams and equations": {
+   "lessonTitle": "Reasoning About Equations and Tape Diagrams (Part 1)",
+   "page": 58,
+   "sectionLetter": "A"
+  },
+  "7.6.6|after school tutoring": {
+   "lessonTitle": "Distinguishing Between Two Types of Situations",
+   "page": 77,
+   "sectionLetter": "A"
+  },
+  "7.6.6|even more situations diagrams and equations": {
+   "lessonTitle": "Distinguishing Between Two Types of Situations",
+   "page": 75,
+   "sectionLetter": "A"
+  },
+  "7.6.9|old and new ways to solve": {
+   "lessonTitle": "Dealing With Negative Numbers",
+   "page": 108,
+   "sectionLetter": "B"
+  },
+  "7.7.11|family heights": {
+   "lessonTitle": "Comparing Groups",
+   "page": 164,
+   "sectionLetter": "C"
+  },
+  "7.7.11|more team heights": {
+   "lessonTitle": "Comparing Groups",
+   "page": 161,
+   "sectionLetter": "C"
+  },
+  "7.7.11|prices of homes": {
+   "lessonTitle": "Comparing Groups",
+   "page": 169,
+   "sectionLetter": "C"
+  },
+  "7.7.16|a new comic book hero": {
+   "lessonTitle": "Estimating Population Proportions",
+   "page": 234,
+   "sectionLetter": "D"
+  },
+  "7.7.16|more than 48 grams": {
+   "lessonTitle": "Estimating Population Proportions",
+   "page": 241,
+   "sectionLetter": "D"
+  },
+  "7.7.18|steel from different regions": {
+   "lessonTitle": "Comparing Populations Using Samples",
+   "page": 263,
+   "sectionLetter": "D"
+  },
+  "7.7.18|teachers watching movies": {
+   "lessonTitle": "Comparing Populations Using Samples",
+   "page": 267,
+   "sectionLetter": "D"
+  },
+  "7.7.19|features of graphic representations": {
+   "lessonTitle": "Comparing Populations With Friends",
+   "page": 271,
+   "sectionLetter": "D"
+  },
+  "7.7.4|fiction or nonfiction": {
+   "lessonTitle": "Estimating Probabilities Through Repeated Experiments",
+   "page": 66,
+   "sectionLetter": "A"
+  },
+  "7.7.8|how many different bracelets": {
+   "lessonTitle": "Keeping Track of All Possible Outcomes",
+   "page": 112,
+   "sectionLetter": "B"
+  },
+  "7.7.8|how many necklaces": {
+   "lessonTitle": "Keeping Track of All Possible Outcomes",
+   "page": 116,
+   "sectionLetter": "B"
+  },
+  "7.7.8|lists tables and trees": {
+   "lessonTitle": "Keeping Track of All Possible Outcomes",
+   "page": 113,
+   "sectionLetter": "B"
+  },
+  "7.7.8|shirt options": {
+   "lessonTitle": "Keeping Track of All Possible Outcomes",
+   "page": 119,
+   "sectionLetter": "B"
+  },
+  "7.7.9|a number cube and 10 cards": {
+   "lessonTitle": "Multi-Step Experiments",
+   "page": 132,
+   "sectionLetter": "B"
+  },
+  "7.7.9|cubes and coins": {
+   "lessonTitle": "Multi-Step Experiments",
+   "page": 126,
+   "sectionLetter": "B"
+  },
+  "7.7.9|spinning a color and number": {
+   "lessonTitle": "Multi-Step Experiments",
+   "page": 125,
+   "sectionLetter": "B"
+  },
+  "7.8.10|three angles": {
+   "lessonTitle": "Drawing Triangles (Part 2)",
+   "page": 143,
+   "sectionLetter": "B"
+  },
+  "7.8.11|card sort cross sections": {
+   "lessonTitle": "Slicing Solids",
+   "page": 159,
+   "sectionLetter": "C"
+  },
+  "7.8.11|pentagonal pyramid": {
+   "lessonTitle": "Slicing Solids",
+   "page": 165,
+   "sectionLetter": "C"
+  },
+  "7.8.11|what s the cross section": {
+   "lessonTitle": "Slicing Solids",
+   "page": 157,
+   "sectionLetter": "C"
+  },
+  "7.8.12|can you find the volume": {
+   "lessonTitle": "Volume of Right Prisms",
+   "page": 173,
+   "sectionLetter": "C"
+  },
+  "7.8.12|finding volume with cubes": {
+   "lessonTitle": "Volume of Right Prisms",
+   "page": 171,
+   "sectionLetter": "C"
+  },
+  "7.8.12|octagonal box": {
+   "lessonTitle": "Volume of Right Prisms",
+   "page": 178,
+   "sectionLetter": "C"
+  },
+  "7.8.1|more pattern block angles": {
+   "lessonTitle": "Relationships of Angles",
+   "page": 30,
+   "sectionLetter": "A"
+  },
+  "7.8.3|vertical angles": {
+   "lessonTitle": "Nonadjacent Angles",
+   "page": 56,
+   "sectionLetter": "A"
+  },
+  "7.8.5|calculate the measure": {
+   "lessonTitle": "Using Equations to Solve for Unknown Angles",
+   "page": 80,
+   "sectionLetter": "A"
+  },
+  "7.8.5|in words": {
+   "lessonTitle": "Using Equations to Solve for Unknown Angles",
+   "page": 84,
+   "sectionLetter": "A"
+  },
+  "7.8.5|what does it look like": {
+   "lessonTitle": "Using Equations to Solve for Unknown Angles",
+   "page": 78,
+   "sectionLetter": "A"
+  },
+  "7.8.7|finishing elena s triangles": {
+   "lessonTitle": "Building Polygons (Part 2)",
+   "page": 113,
+   "sectionLetter": "B"
+  },
+  "7.8.7|how long is the third side": {
+   "lessonTitle": "Building Polygons (Part 2)",
+   "page": 106,
+   "sectionLetter": "B"
+  },
+  "7.8.7|where is lin": {
+   "lessonTitle": "Building Polygons (Part 2)",
+   "page": 105,
+   "sectionLetter": "B"
+  },
+  "7.8.8|2 angles and 1 side": {
+   "lessonTitle": "Triangles With 3 Common Measures",
+   "page": 121,
+   "sectionLetter": "B"
+  },
+  "7.8.8|comparing andre s and noah s triangles": {
+   "lessonTitle": "Triangles With 3 Common Measures",
+   "page": 124,
+   "sectionLetter": "B"
+  },
+  "8.1.10|identifying side lengths and angle measures": {
+   "lessonTitle": "Composing Figures",
+   "page": 144,
+   "sectionLetter": "B"
+  },
+  "8.1.10|triangle plus one": {
+   "lessonTitle": "Composing Figures",
+   "page": 137,
+   "sectionLetter": "B"
+  },
+  "8.1.10|triangle plus two": {
+   "lessonTitle": "Composing Figures",
+   "page": 139,
+   "sectionLetter": "B"
+  },
+  "8.1.12|congruent pairs part 1": {
+   "lessonTitle": "Congruent Polygons",
+   "page": 179,
+   "sectionLetter": "C"
+  },
+  "8.1.12|moving to congruence": {
+   "lessonTitle": "Congruent Polygons",
+   "page": 189,
+   "sectionLetter": "C"
+  },
+  "8.1.13|corresponding points in congruent figures": {
+   "lessonTitle": "Congruence",
+   "page": 199,
+   "sectionLetter": "C"
+  },
+  "8.1.14|all the rest": {
+   "lessonTitle": "Alternate Interior Angles",
+   "page": 224,
+   "sectionLetter": "D"
+  },
+  "8.1.14|alternate interior angles are congruent": {
+   "lessonTitle": "Alternate Interior Angles",
+   "page": 218,
+   "sectionLetter": "D"
+  },
+  "8.1.14|cutting parallel lines with a transversal": {
+   "lessonTitle": "Alternate Interior Angles",
+   "page": 215,
+   "sectionLetter": "D"
+  },
+  "8.1.15|tear it up": {
+   "lessonTitle": "Adding the Angles in a Triangle",
+   "page": 232,
+   "sectionLetter": "D"
+  },
+  "8.1.16|angle plus two": {
+   "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+   "page": 241,
+   "sectionLetter": "D"
+  },
+  "8.1.16|angle sum": {
+   "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+   "page": 248,
+   "sectionLetter": "D"
+  },
+  "8.1.16|every triangle in the world": {
+   "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+   "page": 243,
+   "sectionLetter": "D"
+  },
+  "8.1.5|reflecting points on the coordinate plane": {
+   "lessonTitle": "Coordinate Moves",
+   "page": 75,
+   "sectionLetter": "A"
+  },
+  "8.1.5|translating coordinates": {
+   "lessonTitle": "Coordinate Moves",
+   "page": 74,
+   "sectionLetter": "A"
+  },
+  "8.1.7|sides and angles": {
+   "lessonTitle": "No Bending or Stretching",
+   "page": 102,
+   "sectionLetter": "B"
+  },
+  "8.1.7|translated trapezoid": {
+   "lessonTitle": "No Bending or Stretching",
+   "page": 108,
+   "sectionLetter": "B"
+  },
+  "8.1.7|which one": {
+   "lessonTitle": "No Bending or Stretching",
+   "page": 104,
+   "sectionLetter": "B"
+  },
+  "8.1.8|is it a rotation": {
+   "lessonTitle": "Rotation Patterns",
+   "page": 119,
+   "sectionLetter": "B"
+  },
+  "8.1.8|rotating a segment": {
+   "lessonTitle": "Rotation Patterns",
+   "page": 113,
+   "sectionLetter": "B"
+  },
+  "8.1.9|finding missing measurements": {
+   "lessonTitle": "Moves in Parallel",
+   "page": 132,
+   "sectionLetter": "B"
+  },
+  "8.1.9|let s do some 180s": {
+   "lessonTitle": "Moves in Parallel",
+   "page": 128,
+   "sectionLetter": "B"
+  },
+  "8.1.9|parallel lines": {
+   "lessonTitle": "Moves in Parallel",
+   "page": 124,
+   "sectionLetter": "B"
+  },
+  "8.2.10|similar triangles on the same line": {
+   "lessonTitle": "Meet Slope",
+   "page": 146,
+   "sectionLetter": "C"
+  },
+  "8.2.4|a dilated image": {
+   "lessonTitle": "Dilations on a Square Grid",
+   "page": 68,
+   "sectionLetter": "A"
+  },
+  "8.2.4|card sort matching dilations on a coordinate grid": {
+   "lessonTitle": "Dilations on a Square Grid",
+   "page": 64,
+   "sectionLetter": "A"
+  },
+  "8.2.4|dilations on a grid": {
+   "lessonTitle": "Dilations on a Square Grid",
+   "page": 62,
+   "sectionLetter": "A"
+  },
+  "8.2.5|information gap dilations": {
+   "lessonTitle": "More Dilations",
+   "page": 74,
+   "sectionLetter": "A"
+  },
+  "8.2.6|similarity transformations part 1": {
+   "lessonTitle": "Similarity",
+   "page": 90,
+   "sectionLetter": "B"
+  },
+  "8.2.7|are they similar": {
+   "lessonTitle": "Similar Polygons",
+   "page": 105,
+   "sectionLetter": "B"
+  },
+  "8.2.7|how do you know": {
+   "lessonTitle": "Similar Polygons",
+   "page": 112,
+   "sectionLetter": "B"
+  },
+  "8.2.7|math talk congruence and similarity": {
+   "lessonTitle": "Similar Polygons",
+   "page": 104,
+   "sectionLetter": "B"
+  },
+  "8.2.9|quotients of sides within similar triangles": {
+   "lessonTitle": "Side Length Quotients in Similar Triangles",
+   "page": 131,
+   "sectionLetter": "B"
+  },
+  "8.2.9|similar sides": {
+   "lessonTitle": "Side Length Quotients in Similar Triangles",
+   "page": 136,
+   "sectionLetter": "B"
+  },
+  "8.2.9|using side quotients to find side lengths of similar triangles": {
+   "lessonTitle": "Side Length Quotients in Similar Triangles",
+   "page": 133,
+   "sectionLetter": "B"
+  },
+  "8.3.10|different slopes": {
+   "lessonTitle": "Calculating Slope",
+   "page": 137,
+   "sectionLetter": "C"
+  },
+  "8.3.10|payback plan": {
+   "lessonTitle": "Calculating Slope",
+   "page": 135,
+   "sectionLetter": "C"
+  },
+  "8.3.10|toward a more general slope formula": {
+   "lessonTitle": "Calculating Slope",
+   "page": 133,
+   "sectionLetter": "C"
+  },
+  "8.3.12|all the same": {
+   "lessonTitle": "Equations of All Kinds of Lines",
+   "page": 153,
+   "sectionLetter": "C"
+  },
+  "8.3.12|five lines": {
+   "lessonTitle": "Equations of All Kinds of Lines",
+   "page": 160,
+   "sectionLetter": "C"
+  },
+  "8.3.4|comparing two different representations": {
+   "lessonTitle": "Comparing Proportional Relationships",
+   "page": 58,
+   "sectionLetter": "A"
+  },
+  "8.3.4|different salt mixtures": {
+   "lessonTitle": "Comparing Proportional Relationships",
+   "page": 63,
+   "sectionLetter": "A"
+  },
+  "8.3.4|what s the relationship": {
+   "lessonTitle": "Comparing Proportional Relationships",
+   "page": 57,
+   "sectionLetter": "A"
+  },
+  "8.3.6|savings": {
+   "lessonTitle": "More Linear Relationships",
+   "page": 87,
+   "sectionLetter": "B"
+  },
+  "8.3.7|rising water levels": {
+   "lessonTitle": "Representations of Linear Relationships",
+   "page": 93,
+   "sectionLetter": "B"
+  },
+  "8.3.8|translating a line": {
+   "lessonTitle": "Translating to y = mx + b",
+   "page": 106,
+   "sectionLetter": "B"
+  },
+  "8.4.4|make your own steps": {
+   "lessonTitle": "More Balanced Moves",
+   "page": 59,
+   "sectionLetter": "A"
+  },
+  "8.4.4|step by step by step by step": {
+   "lessonTitle": "More Balanced Moves",
+   "page": 56,
+   "sectionLetter": "A"
+  },
+  "8.4.5|check it": {
+   "lessonTitle": "Solving Any Linear Equation",
+   "page": 72,
+   "sectionLetter": "A"
+  },
+  "8.4.5|trading moves": {
+   "lessonTitle": "Solving Any Linear Equation",
+   "page": 67,
+   "sectionLetter": "A"
+  },
+  "8.4.6|think before you step": {
+   "lessonTitle": "Strategic Solving",
+   "page": 83,
+   "sectionLetter": "A"
+  },
+  "8.4.6|which would you rather solve": {
+   "lessonTitle": "Strategic Solving",
+   "page": 79,
+   "sectionLetter": "A"
+  },
+  "8.4.7|choose your own solution": {
+   "lessonTitle": "All, Some, or No Solutions",
+   "page": 95,
+   "sectionLetter": "B"
+  },
+  "8.4.7|notice and wonder equation solutions": {
+   "lessonTitle": "All, Some, or No Solutions",
+   "page": 90,
+   "sectionLetter": "B"
+  },
+  "8.4.7|thinking about solutions": {
+   "lessonTitle": "All, Some, or No Solutions",
+   "page": 91,
+   "sectionLetter": "B"
+  },
+  "8.4.7|what s the equation": {
+   "lessonTitle": "All, Some, or No Solutions",
+   "page": 93,
+   "sectionLetter": "B"
+  },
+  "8.4.8|how does she know": {
+   "lessonTitle": "How Many Solutions?",
+   "page": 105,
+   "sectionLetter": "B"
+  },
+  "8.4.8|make use of structure": {
+   "lessonTitle": "How Many Solutions?",
+   "page": 101,
+   "sectionLetter": "B"
+  },
+  "8.5.10|dog bath": {
+   "lessonTitle": "Piecewise Linear Functions",
+   "page": 147,
+   "sectionLetter": "C"
+  },
+  "8.5.10|lin s phone charge": {
+   "lessonTitle": "Piecewise Linear Functions",
+   "page": 153,
+   "sectionLetter": "C"
+  },
+  "8.5.13|a cylinder s volume": {
+   "lessonTitle": "The Volume of a Cylinder",
+   "page": 201,
+   "sectionLetter": "D"
+  },
+  "8.5.13|circular volumes": {
+   "lessonTitle": "The Volume of a Cylinder",
+   "page": 198,
+   "sectionLetter": "D"
+  },
+  "8.5.13|liquid volume": {
+   "lessonTitle": "The Volume of a Cylinder",
+   "page": 204,
+   "sectionLetter": "D"
+  },
+  "8.5.14|cylinders with unknown dimensions": {
+   "lessonTitle": "Finding Cylinder Dimensions",
+   "page": 211,
+   "sectionLetter": "D"
+  },
+  "8.5.14|find the height": {
+   "lessonTitle": "Finding Cylinder Dimensions",
+   "page": 214,
+   "sectionLetter": "D"
+  },
+  "8.5.15|calculate that cone": {
+   "lessonTitle": "The Volume of a Cone",
+   "page": 221,
+   "sectionLetter": "D"
+  },
+  "8.5.15|calculate volumes of two figures": {
+   "lessonTitle": "The Volume of a Cone",
+   "page": 225,
+   "sectionLetter": "D"
+  },
+  "8.5.15|from cylinders to cones": {
+   "lessonTitle": "The Volume of a Cone",
+   "page": 220,
+   "sectionLetter": "D"
+  },
+  "8.5.19|estimating hemispheres": {
+   "lessonTitle": "Estimating a Hemisphere",
+   "page": 273,
+   "sectionLetter": "E"
+  },
+  "8.5.1|guess my rule": {
+   "lessonTitle": "Inputs and Outputs",
+   "page": 27,
+   "sectionLetter": "A"
+  },
+  "8.5.1|making tables": {
+   "lessonTitle": "Inputs and Outputs",
+   "page": 29,
+   "sectionLetter": "A"
+  },
+  "8.5.1|what s the rule": {
+   "lessonTitle": "Inputs and Outputs",
+   "page": 33,
+   "sectionLetter": "A"
+  },
+  "8.5.20|spheres in cylinders": {
+   "lessonTitle": "The Volume of a Sphere",
+   "page": 285,
+   "sectionLetter": "E"
+  },
+  "8.5.20|volumes of spheres": {
+   "lessonTitle": "The Volume of a Sphere",
+   "page": 288,
+   "sectionLetter": "E"
+  },
+  "8.5.21|the right fit optional": {
+   "lessonTitle": "Cylinders, Cones, and Spheres",
+   "page": 296,
+   "sectionLetter": "E"
+  },
+  "8.5.2|using function language": {
+   "lessonTitle": "Introduction to Functions",
+   "page": 41,
+   "sectionLetter": "A"
+  },
+  "8.5.2|wait time": {
+   "lessonTitle": "Introduction to Functions",
+   "page": 45,
+   "sectionLetter": "A"
+  },
+  "8.5.2|you know this do you know that": {
+   "lessonTitle": "Introduction to Functions",
+   "page": 38,
+   "sectionLetter": "A"
+  },
+  "8.5.3|diagrams equations and descriptions": {
+   "lessonTitle": "Equations for Functions",
+   "page": 56,
+   "sectionLetter": "B"
+  },
+  "8.5.3|dimes and quarters": {
+   "lessonTitle": "Equations for Functions",
+   "page": 59,
+   "sectionLetter": "B"
+  },
+  "8.5.3|the value of some quarters": {
+   "lessonTitle": "Equations for Functions",
+   "page": 62,
+   "sectionLetter": "B"
+  },
+  "8.5.4|equations and graphs of functions": {
+   "lessonTitle": "Tables, Equations, and Graphs of Functions",
+   "page": 67,
+   "sectionLetter": "B"
+  },
+  "8.5.4|running around a track": {
+   "lessonTitle": "Tables, Equations, and Graphs of Functions",
+   "page": 70,
+   "sectionLetter": "B"
+  },
+  "8.5.4|subway fare card": {
+   "lessonTitle": "Tables, Equations, and Graphs of Functions",
+   "page": 74,
+   "sectionLetter": "B"
+  },
+  "8.5.5|time and temperature": {
+   "lessonTitle": "More Graphs of Functions",
+   "page": 79,
+   "sectionLetter": "B"
+  },
+  "8.5.7|comparing different areas": {
+   "lessonTitle": "Connecting Representations of Functions",
+   "page": 110,
+   "sectionLetter": "B"
+  },
+  "8.5.7|comparing temperatures": {
+   "lessonTitle": "Connecting Representations of Functions",
+   "page": 103,
+   "sectionLetter": "B"
+  },
+  "8.5.7|comparing volumes": {
+   "lessonTitle": "Connecting Representations of Functions",
+   "page": 105,
+   "sectionLetter": "B"
+  },
+  "8.5.7|which are the same which are different": {
+   "lessonTitle": "Connecting Representations of Functions",
+   "page": 102,
+   "sectionLetter": "B"
+  },
+  "8.5.8|beginning to see daylight": {
+   "lessonTitle": "Linear Functions",
+   "page": 128,
+   "sectionLetter": "C"
+  },
+  "8.5.8|is it filling up or draining out": {
+   "lessonTitle": "Linear Functions",
+   "page": 122,
+   "sectionLetter": "C"
+  },
+  "8.5.8|proportional relationships define linear functions": {
+   "lessonTitle": "Linear Functions",
+   "page": 119,
+   "sectionLetter": "C"
+  },
+  "8.5.9|an illuminated moon": {
+   "lessonTitle": "Linear Models",
+   "page": 133,
+   "sectionLetter": "C"
+  },
+  "8.5.9|board game sales": {
+   "lessonTitle": "Linear Models",
+   "page": 139,
+   "sectionLetter": "C"
+  },
+  "8.5.9|candlelight": {
+   "lessonTitle": "Linear Models",
+   "page": 132,
+   "sectionLetter": "C"
+  },
+  "8.6.4|battery life": {
+   "lessonTitle": "Fitting a Line to Data",
+   "page": 68,
+   "sectionLetter": "B"
+  },
+  "8.6.5|fitting lines": {
+   "lessonTitle": "Describing Trends in Scatter Plots",
+   "page": 80,
+   "sectionLetter": "B"
+  },
+  "8.6.5|practice fitting lines": {
+   "lessonTitle": "Describing Trends in Scatter Plots",
+   "page": 85,
+   "sectionLetter": "B"
+  },
+  "8.6.5|this is one way to do it": {
+   "lessonTitle": "Describing Trends in Scatter Plots",
+   "page": 90,
+   "sectionLetter": "B"
+  },
+  "8.6.6|describing linear associations": {
+   "lessonTitle": "The Slope of a Fitted Line",
+   "page": 95,
+   "sectionLetter": "B"
+  },
+  "8.6.6|estimating slope": {
+   "lessonTitle": "The Slope of a Fitted Line",
+   "page": 94,
+   "sectionLetter": "B"
+  },
+  "8.6.6|interpreting slopes": {
+   "lessonTitle": "The Slope of a Fitted Line",
+   "page": 97,
+   "sectionLetter": "B"
+  },
+  "8.6.6|positive or negative": {
+   "lessonTitle": "The Slope of a Fitted Line",
+   "page": 101,
+   "sectionLetter": "B"
+  },
+  "8.6.6|trends in the price of used cars": {
+   "lessonTitle": "The Slope of a Fitted Line",
+   "page": 106,
+   "sectionLetter": "B"
+  },
+  "8.6.7|make your own scatter plot": {
+   "lessonTitle": "Observing More Patterns in Scatter Plots",
+   "page": 117,
+   "sectionLetter": "B"
+  },
+  "8.6.7|scatter plot city": {
+   "lessonTitle": "Observing More Patterns in Scatter Plots",
+   "page": 112,
+   "sectionLetter": "B"
+  },
+  "8.6.8|animal brains": {
+   "lessonTitle": "Analyzing Bivariate Data",
+   "page": 122,
+   "sectionLetter": "B"
+  },
+  "8.6.8|drawing a line": {
+   "lessonTitle": "Analyzing Bivariate Data",
+   "page": 127,
+   "sectionLetter": "B"
+  },
+  "8.7.10|calculating legs of right triangles": {
+   "lessonTitle": "The Converse",
+   "page": 131,
+   "sectionLetter": "B"
+  },
+  "8.7.10|is it a right triangle": {
+   "lessonTitle": "The Converse",
+   "page": 134,
+   "sectionLetter": "B"
+  },
+  "8.7.10|proving the converse": {
+   "lessonTitle": "The Converse",
+   "page": 128,
+   "sectionLetter": "B"
+  },
+  "8.7.11|cutting corners": {
+   "lessonTitle": "Applications of the Pythagorean Theorem",
+   "page": 139,
+   "sectionLetter": "B"
+  },
+  "8.7.11|how high up": {
+   "lessonTitle": "Applications of the Pythagorean Theorem",
+   "page": 143,
+   "sectionLetter": "B"
+  },
+  "8.7.13|closest distance": {
+   "lessonTitle": "Finding Distances in the Coordinate Plane",
+   "page": 156,
+   "sectionLetter": "B"
+  },
+  "8.7.13|how far apart": {
+   "lessonTitle": "Finding Distances in the Coordinate Plane",
+   "page": 157,
+   "sectionLetter": "B"
+  },
+  "8.7.13|lengths of line segments": {
+   "lessonTitle": "Finding Distances in the Coordinate Plane",
+   "page": 162,
+   "sectionLetter": "B"
+  },
+  "8.7.14|name that edge length": {
+   "lessonTitle": "Edge Lengths and Volumes",
+   "page": 171,
+   "sectionLetter": "C"
+  },
+  "8.7.15|cube root values": {
+   "lessonTitle": "Cube Roots",
+   "page": 179,
+   "sectionLetter": "C"
+  },
+  "8.7.15|different types of roots": {
+   "lessonTitle": "Cube Roots",
+   "page": 182,
+   "sectionLetter": "C"
+  },
+  "8.7.16|rational numbers as fractions": {
+   "lessonTitle": "Decimal Representations of Rational Numbers",
+   "page": 191,
+   "sectionLetter": "D"
+  },
+  "8.7.17|some numbers are not rational": {
+   "lessonTitle": "Infinite Decimal Expansions",
+   "page": 206,
+   "sectionLetter": "D"
+  },
+  "8.7.3|comparing areas of squares": {
+   "lessonTitle": "Square Roots",
+   "page": 52,
+   "sectionLetter": "A"
+  },
+  "8.7.3|side lengths and areas of squares": {
+   "lessonTitle": "Square Roots",
+   "page": 50,
+   "sectionLetter": "A"
+  },
+  "8.7.3|what is the side length": {
+   "lessonTitle": "Square Roots",
+   "page": 54,
+   "sectionLetter": "A"
+  },
+  "8.7.4|looking for 2": {
+   "lessonTitle": "Rational and Irrational Numbers",
+   "page": 63,
+   "sectionLetter": "A"
+  },
+  "8.7.4|looking for a solution": {
+   "lessonTitle": "Rational and Irrational Numbers",
+   "page": 62,
+   "sectionLetter": "A"
+  },
+  "8.7.4|three squares": {
+   "lessonTitle": "Rational and Irrational Numbers",
+   "page": 60,
+   "sectionLetter": "A"
+  },
+  "8.7.4|types of solutions": {
+   "lessonTitle": "Rational and Irrational Numbers",
+   "page": 66,
+   "sectionLetter": "A"
+  },
+  "8.7.5|approximating 18": {
+   "lessonTitle": "Square Roots on the Number Line",
+   "page": 77,
+   "sectionLetter": "A"
+  },
+  "8.7.5|square root of 3": {
+   "lessonTitle": "Square Roots on the Number Line",
+   "page": 73,
+   "sectionLetter": "A"
+  },
+  "8.7.6|betweens": {
+   "lessonTitle": "Reasoning About Square Roots",
+   "page": 85,
+   "sectionLetter": "A"
+  },
+  "8.7.6|solutions on a number line": {
+   "lessonTitle": "Reasoning About Square Roots",
+   "page": 83,
+   "sectionLetter": "A"
+  },
+  "8.7.6|square root values": {
+   "lessonTitle": "Reasoning About Square Roots",
+   "page": 82,
+   "sectionLetter": "A"
+  },
+  "8.7.7|does plus equal": {
+   "lessonTitle": "Finding Side Lengths of Triangles",
+   "page": 101,
+   "sectionLetter": "B"
+  },
+  "8.7.8|adding up areas": {
+   "lessonTitle": "A Proof of the Pythagorean Theorem",
+   "page": 106,
+   "sectionLetter": "B"
+  },
+  "8.7.8|let s take it for a spin": {
+   "lessonTitle": "A Proof of the Pythagorean Theorem",
+   "page": 110,
+   "sectionLetter": "B"
+  },
+  "8.7.8|notice and wonder a square and four triangles": {
+   "lessonTitle": "A Proof of the Pythagorean Theorem",
+   "page": 105,
+   "sectionLetter": "B"
+  },
+  "8.7.8|what is the hypotenuse": {
+   "lessonTitle": "A Proof of the Pythagorean Theorem",
+   "page": 113,
+   "sectionLetter": "B"
+  },
+  "8.7.9|could be the hypotenuse could be a leg": {
+   "lessonTitle": "Finding Unknown Side Lengths",
+   "page": 122,
+   "sectionLetter": "B"
+  },
+  "8.7.9|find the missing side lengths": {
+   "lessonTitle": "Finding Unknown Side Lengths",
+   "page": 120,
+   "sectionLetter": "B"
+  },
+  "8.7.9|which one is the hypotenuse": {
+   "lessonTitle": "Finding Unknown Side Lengths",
+   "page": 118,
+   "sectionLetter": "B"
+  },
+  "8.8.5|negative exponent table": {
+   "lessonTitle": "Negative Exponents With Powers of 10",
+   "page": 61,
+   "sectionLetter": "A"
+  },
+  "8.8.6|exponent rules with bases other than 10": {
+   "lessonTitle": "What About Other Bases?",
+   "page": 77,
+   "sectionLetter": "B"
+  },
+  "8.8.6|spot the mistake": {
+   "lessonTitle": "What About Other Bases?",
+   "page": 80,
+   "sectionLetter": "B"
+  },
+  "8.8.6|what happens with zero and negative exponents": {
+   "lessonTitle": "What About Other Bases?",
+   "page": 75,
+   "sectionLetter": "B"
+  },
+  "8.8.7|exponent rule practice": {
+   "lessonTitle": "Practice With Rational Bases",
+   "page": 85,
+   "sectionLetter": "B"
+  },
+  "8.8.7|inconsistent bases": {
+   "lessonTitle": "Practice With Rational Bases",
+   "page": 86,
+   "sectionLetter": "B"
+  },
+  "8.8.7|working with exponents": {
+   "lessonTitle": "Practice With Rational Bases",
+   "page": 88,
+   "sectionLetter": "B"
+  }
+ },
+ "meta": {
+  "citedActivities": 473,
+  "generatedBy": "tools/build_citation_index.py",
+  "note": "Activity names, pages and quote digests for every PUBLISHED citation. Every field here is already on the public site. No licensed task text, narrative or activity body appears in this file, and an activity no citation names is absent entirely.",
+  "schemaVersion": 1,
+  "verifiedQuotes": 639
+ },
+ "quoteDigests": [
+  "02ddbafa2714b9ed13f9a70649e49aa4",
+  "02fc5cf037c69534aba9ea356c5976c9",
+  "045e6c6b26ff96ce56624bf75368a055",
+  "04c7024d7c611ce98ad0aeb58235aee3",
+  "05764776a17c73dc0b4c0c7084bffd4b",
+  "063cc98e36b8b89ccd0b49888badd5b6",
+  "069eb412ac1eb02596ee6f81fedb7d91",
+  "06fbec1d39f324173bd247b59d637516",
+  "07959f434298ca1f90733a929511ac7b",
+  "07aa92c3152cbe140c83db9cb014eaa4",
+  "081887906e783bf29bc72df34ff81940",
+  "0858cf531323cf32397f50ad9c728505",
+  "08b918a983901dbec4dc1a01918b06a3",
+  "0a2a44eced8a4e9b438cf53e709bf6d8",
+  "0a75f522472b3e2dc00d70e32bb63218",
+  "0a9e412a8b8e6606e07b2632ed4e6cc0",
+  "0aec01f549d51eeb67cacca921043e3e",
+  "0b0796b9f3045ba38e5cf6c7b81564b9",
+  "0b11272c6e7af99b79397e5e1a31300c",
+  "0b2f7668501a55d02d781e6193509b20",
+  "0b30ab6cb916916cb381766149b42e2b",
+  "0b47b3dff4a03e150777211fab175980",
+  "0b68182fb1df46cc9528ee601f45303a",
+  "0bd5ab836db5d2d1b6d50c1c994cd367",
+  "0c4347dd5ad749f5a859c90233ebcde2",
+  "0ce5096c14e4014e956a352b98ecd8dd",
+  "0d45e1fc154f1913c7a921c2df544ea8",
+  "0ddcac7bcf3cc5af4c8ed6414130260a",
+  "0e2346b7441f3ecaf4259819f85e377f",
+  "0e5ec29d98c6f9d8f098d37e93f38447",
+  "0f2c8af745da8cf9e72b657de71ef403",
+  "0f620f97125bc1f04d98cd9be3036673",
+  "0fa48ed39ae4278983586ba243ae9c5c",
+  "0fb241fd397207dd7bc6296734e0c0ac",
+  "0fe8256d2a6ff5e3344934319cb21f04",
+  "10840fb114ee857959de6f7f541c3d9e",
+  "10d76503858d7b7784850ec1e8d56ddc",
+  "111f28060f23979cae133b8aca302464",
+  "12065e9d1876cdf0a4f4d2beb4857bb4",
+  "1214e072d31304a6c99645e307b81245",
+  "132ef76da82871b853afb29b6a8b293f",
+  "137b92294d7fc4aeeba56dc24b824c35",
+  "1399d65b7cb4809d04ce21e7b76c9bf2",
+  "146e607ec5cdc6915ff8ade696242cbc",
+  "14750dadfee02af73334a74ebdadcaa9",
+  "147d55e719dfb0d4e1a406dcb8bca978",
+  "14a7cffae2f4f144cf27f5a541b47372",
+  "14ca1b7b8d323c5f17d34ef37285bc59",
+  "155f093f53125303df5047497f341796",
+  "15a1af8ba5d880a67e932e2db7e7ff90",
+  "167cebffb127a2ff6151cc0f93c65de9",
+  "168d69092605c2c54cc14b9b10187073",
+  "1697fe03f6bb883477313ffc8fbd6e78",
+  "16f4e9d156a18a8afd871eed64309d08",
+  "188a76c9bd08d8c39ae7c079418e0706",
+  "18ebad19a5d36395fe1327af233244c7",
+  "196c0b0abd631c8eb67a07e5c7544408",
+  "19d622093bac119798e73fb08192ae74",
+  "1a623e882079bcf7210208bbf716a73d",
+  "1abccab48b4759f2d2a6c845e1950926",
+  "1ad8bc156e1a5c82c88d0dccc17d0147",
+  "1add068f5f72ec6f0e8a93aff1e349f6",
+  "1addee88feb311e6266f2f4a2f2c3702",
+  "1b4ed4ee9ffdea99a205cbd9007db56e",
+  "1ba2a14c339a4a5859692592d508d496",
+  "1bc1236bcdbe3a06581918bddeb7f35e",
+  "1bc83e83b36bb254845d847a1fb90ec7",
+  "1bd89a541f60960db0c677f1881b2fe8",
+  "1bfcb8c948be809d9c91f78a54d1cb29",
+  "1c3b5946590e793cf6f9bd9d1e2d1b49",
+  "1ce5b4c7a2616865c9f374c3bca5adda",
+  "1e0c9712517488ccd18b9482f436ec44",
+  "1e4ce492a63c8085b4fd189baf8a4e96",
+  "1e4ff6a518f43d1da684c6f8d66cf5eb",
+  "1f076b93b5dfe2f059ad8b6ce37a04a6",
+  "1f4b85e80a66c39813b88357ea6d5566",
+  "1f7eb3ac28182aa24628d67926a8d10f",
+  "1f96b145de0fc2c48736caea53b464a8",
+  "1f99b06d4bf3483a48acfe29bca5c379",
+  "201ed987a46d1d4f9e714c8638dca19d",
+  "203ca9f26561c5860943a3cbd67eff39",
+  "205d97fb1a5f4d0d61d76d7f24670356",
+  "218053b9a21e10d6fa7775dac3e6694e",
+  "22e9f22207d7f8f7e80a94ba8339d15f",
+  "231b33af5617f12a1f97aa1ead40431e",
+  "23ee7ecc1aad781e87c6b0585c6c8bb9",
+  "242decac00b5fc3c85c6ede078e901f7",
+  "2521d39cad039270a66343ca7ffa4737",
+  "266108cf3b16f73018c59b75ccf31bed",
+  "267050542cc01ce65116f25d7db5c9a9",
+  "26dd0c6adaba9769a38ef6edfc29fd96",
+  "270716b3251a70f2b3f733a423b9a5b3",
+  "271d9852ea0c9d82419d514fe97d002f",
+  "27552bd5822ff715e1f0d270306ab093",
+  "2787184cebd5d631dbebffaebb1e43da",
+  "27a2a784d278105f5cc8dafe3c013105",
+  "27d90138237f74c30e9062650d6c8ac2",
+  "27e90a66e81fd439fd82da430bb70e44",
+  "28221497721d97fb6dcca47756abeb7e",
+  "2872dfb9dcd3f8c2df50c507bf424990",
+  "2918baf98a486d2db7f832d1082b30bc",
+  "291cf5b23827f414030f9e097d354a6c",
+  "29b0e24c7331b7038972c2a97fe2b651",
+  "29e2a251d7b64c1961f5a0739f72862e",
+  "2a0dc83c0dcfcd075a4e2b5d390963d4",
+  "2a1a6b7fc9ce736bf3e7bc69bc88a6c5",
+  "2a2faf2f1fcecb3c916a7c643e41a697",
+  "2b3fd2ad9eddadf41f9544029a261f39",
+  "2b67ba0025bd82a8ad195c8aeec12278",
+  "2be443a93338d128690c8cae8a464cf4",
+  "2c637c0a16cafb0ec4fe2282c1fa9bff",
+  "2c9e628f3105c595842b558279b96242",
+  "2ca36bc07ac4775c1109b425cc2c8acd",
+  "2d044874edbeb83634e09e6ae36c39ab",
+  "2e1770ddc4304f2d24eff162df68ecae",
+  "2e28ab2bb881583a1db3996ed90f5a0e",
+  "2e6d7f10e08d24328038497bb7b92334",
+  "2ec7e073f8afa7f9adeffb9b05005b57",
+  "2f1f7317b8d8a1b578fce3154a960766",
+  "2f29db1e04485f8bef9b14887b757cf8",
+  "2f6157b652b175515b13f3fae8f7709d",
+  "2fa2b5d02c088f02a5dcecb7dd2399da",
+  "2fa68ace783d5c026ffae6ea0a95022b",
+  "31067ba25f3401322f7a1d99e864fe70",
+  "311ad79a00e637444ab3428812f2ee43",
+  "319431a451cef80cea6e1d7f50762400",
+  "31d4c661f9a1c17e1cf3bef08d928ab8",
+  "31d5aacbc163fd1df4721287402df627",
+  "31e7f85905d1d41cbc18ed94e5b0a4be",
+  "322ce97ce1b1117004adeb400df9c6e4",
+  "323c881c9a969b4488a4d098ea223b1b",
+  "324dcb516198c9afa071b30258abc308",
+  "32746b61c41d824920a5e20897208c04",
+  "32b48219797f2e60463d8fb09f2a6714",
+  "3542db40e0b9a49cfcd27da75141a3fa",
+  "35cd8f11e8a177206e9f7b1438db776e",
+  "362aafe625e94b3199b590c2f2d89307",
+  "3642ee6abd6fed95ace9b68022b1f50c",
+  "364e044ce551334fdb4a23c23351b45a",
+  "36a3fc23605dd962fe2cc1ca3c6fc2cb",
+  "373590de5c22b479ec50d70e624b4ae7",
+  "373f2e3f4b2be670caf914552c45deba",
+  "37976e99fbf7f700bf93d03a24e0d846",
+  "37dc88372ec3b97a81a6696683f28828",
+  "383555e7f6f8e0b1c97d6ac3c57f6250",
+  "383e25da358a5ac55fe41b7f0f7222fc",
+  "3966a04fec02c4acadf942006506dc7f",
+  "399db6faf90f8fd5aca1074f8e308388",
+  "39c7206c2c7b3ba62897b363889e12fa",
+  "3a24c39268f05bd5905eda686ca1583a",
+  "3a9cc518bab6a7b4c210da8595e9b916",
+  "3b522a45912b16d54aa4fb829c873235",
+  "3b530a6a4e0961d93d2cfde4cb07c526",
+  "3c7aebf3c66c465a3d141bb7335d1175",
+  "3cca58579c3c420596fd19f3ccf2ac10",
+  "3d03a7e0eb7a8cda4b4e21b9f0a3b530",
+  "3ebb274448e1a4bf2be8c5d7c0abd242",
+  "3f9e650f5a847220fe8c26b91839dd2c",
+  "401dd72d6752ce540c161829122b33bf",
+  "40805181c6444d914fd9af4ed9b56b05",
+  "40ca2659df7887709deaf81a23f2bc70",
+  "40eb36f1a3328430aba2e79bc2e85b64",
+  "411d2213a6e060acf937ea24c915c6f0",
+  "41712a8cfc51907c4b4cf64e06d7785a",
+  "41acc21ba65646494089073523a14e25",
+  "4297810d12eb9b82b45bf580bc9eee7b",
+  "43198b36b19e1716e578e5405d3145a3",
+  "43615e32b06a89031a35deb8787e2a83",
+  "43e7c707784964d100817120d255e64a",
+  "4420f6508ebb38c3b22af09a53ee6f2e",
+  "444b1ce75cb97ab5c40cdff7530aac31",
+  "4458d5b0038567743888a127839d488b",
+  "44aeede85a6597d56a0665fe4259352f",
+  "452239a36dc79adf3771e4e31fc693f8",
+  "452e97f5f7f011ce2011779aa0977e17",
+  "45730d5dda093399e1181208231404f8",
+  "45b1039d90fd7cd3fb9d22a2378220c2",
+  "4611fb8400978cfb0341dfd3820e831d",
+  "4730ceca86a0b2b921436fb685d81966",
+  "47fcb540cc0ae2d7f01c7796c11ca8f7",
+  "496b5e8cc26607a8d284a36318c60be7",
+  "4a36a426b0c5ac12fb543fd3396f126c",
+  "4ab5ac997f20150f0f536184aadc1b3a",
+  "4b3c20bd10c01e862368bb55d130293a",
+  "4c15f8b6b2a7dac496c9c7d71fb52828",
+  "4c3b53c5ce6cae6fa95c68a142ba75f2",
+  "4c7a9609929c77413b5df7d12b3858a5",
+  "4cc732d170d48205ccfa48b0551b1516",
+  "4d06db29c95989769c294b79f446086d",
+  "4d7dd391ff2823889599cd9c432c88d5",
+  "4dc0e11dd67550d3fce0760cf2f60d4f",
+  "4fdf04318e4e8651f0896350b11925c4",
+  "5077cb80df839c8ea925898c87a13bdf",
+  "51a3ea5a727836846782c6508276401a",
+  "51e3abd725ab17a06603e971d39a60a9",
+  "522c74d9edd1d0b4b8c7038d4d1ae24c",
+  "531a4c98a13d4b4211edea794734cccf",
+  "533d353a15645398c61678ab4c82a15a",
+  "5364efbfe8bb7d5253acdba9c291ecca",
+  "53665d24618e02602782d1537e43098b",
+  "541647788824c8d7bd089e1ff697b884",
+  "5419db45c3910f1df44762503396a37a",
+  "54282eddc307ce6f3448f71456a49ef3",
+  "551ceb927815375d977bfe54646fe706",
+  "55a14081e416174398cad8656700e26e",
+  "55b3974950f2fde2b724aac6a6c1e34e",
+  "5605a6251770ba332dca14f51bb19cc3",
+  "562bfae1b9f18d28a43883e63ce2edb2",
+  "564a21166117023780e76fc12af4028b",
+  "56540bba608f71498f57ba8abda1859e",
+  "5684049f18482880e621baa25833612b",
+  "56b757e2dbe5efd26970079f130a7461",
+  "570fb72be03da2164f9c9fc26091dc0f",
+  "573369eba70dde475420de1459bb4caf",
+  "574d5b4a4aca97fc80740b9d41962a7e",
+  "5769227f74eeb61e08598631fd1d4dda",
+  "57b042591ed0a0d1b61a6e6cc890c6aa",
+  "57d033622affdee08d3f0adc608d9593",
+  "5877b6bfbe56b920b4094370f593fa0c",
+  "594eb0d3d398232a96097f46bd565c3c",
+  "596429c42c5281bc103b8067f9a4f6c6",
+  "5acf66ce5edb1fb4a620df69789f05f5",
+  "5ad894c39fa83d563a333c7e94794c0b",
+  "5b8959c961ec78ba570150f25043ee08",
+  "5cc8d7dae2f0d31bdb0d64c47202c3b8",
+  "5cdc1d9490bf29837d239b6f46fc77c4",
+  "5cf2f707d7b1631fead996c3140d98c7",
+  "5db780a76b363e78ce68a9acf74c0dc6",
+  "5de88ff34647c7309a1bf71f81a89e6d",
+  "5eb54090856e16ccc0d4e78f40734690",
+  "5f6da85173d19f0da91f49a1fa4d7516",
+  "5fb89cce9614dc4c7c54d26dabb84bad",
+  "6018e1564823aa34aef8468c2db6b8dc",
+  "604c02f37e04728f25560121cbd43ddb",
+  "608e0084c079ee45a407f06d93b8e29d",
+  "60cd7e5cecc2c58b077e1d5633891425",
+  "60d2d05adf56b5851fcf40ac5c69d2d2",
+  "616e7498e5fe734d30e8194e701ec3aa",
+  "62dce38d0d858064aa92bdb20ce320e2",
+  "64d3a3cc51900219a5b5b3086b89c4e4",
+  "64e660db1a1092151c26eaf020118ef2",
+  "64eede8dddfda8d203af4addf9a923ff",
+  "6524006333caf2e49e14745da2c4de1e",
+  "654ffb371b4a8d808b59a85e3bdac3a7",
+  "657f65f8eed0988e2cb4d985c169fc77",
+  "65959fdc2e60fb08092b93e6316ebc66",
+  "66f1ebfc004d35b58428abe9608bba26",
+  "673848c1b9d2b3fc4006c57377aa2965",
+  "68dd9f7b9ddc7ee788ab4c4a6e47a644",
+  "68ebe85a7370454b34c8f5acab2c2335",
+  "6960e4cbdf35b583c6263fd399208594",
+  "698e983db4c5e795d02c07a1edcf9ad0",
+  "6a63856396673df9b39cde3b43e4ed04",
+  "6b1b6127b8a27304c238f5315726a010",
+  "6b22ac214cd10da0f341e7dd30685765",
+  "6b3d0e77b59df66e14d3853038259718",
+  "6ccd2017494d8a6e9368f6d1223579da",
+  "6d10e52798879d668a21e9eac1a6c1e2",
+  "6d145de9c08eeef424855a391ba20849",
+  "6d3182153faaa328237b9e5b49b90f35",
+  "6d8fbdc8c7d2e4c937cdcfcc7a518798",
+  "6dc777d31c2c1d171e817136076bad17",
+  "6dcfec5f795d160f380188b6b9766972",
+  "6e18ac4759b1b8febafa45975a6a1113",
+  "6e328e0c2e660bcec16a8e535bd63cc6",
+  "6e544ae3e50fa9c165beb4f94258b774",
+  "6ea79bd38fa8727be3f98ac4c54a2696",
+  "6fafdaa0178a8bae18456ed0f24885cb",
+  "700f1ff41e4e82bfc8ccef8d048025cb",
+  "70ee890b0a5af7326f92da6d993dffed",
+  "71849efe2075e81bae093492a3e2bcbe",
+  "722938e88f3e395d8040d55e3c0559f8",
+  "726397c7bbb06c520fab652ff3463fdc",
+  "72685ddba080be64c309cd84c3c57aef",
+  "728ffdc76c71f8483a60a51ce280044d",
+  "72f934dcfe373e7677795f6ed681023b",
+  "73389a4e87bbc7c7c6c8dc7e7d2a3a5c",
+  "74cfdfc34b2c6f83186652a429d7df74",
+  "75648fc4420aa2c291eecb44467f4de5",
+  "7641bed52e6bdee3cb1ae6b1b6901b4e",
+  "769f7ce1240852a2e7461ee33a24d9cb",
+  "7782af1032d8a3434f336a38fc6463b0",
+  "7828966b9884a54953e54313691aa763",
+  "78627862e4151205dc5637b4ec9de613",
+  "78a1fe42818279e4abdc8f36343e9152",
+  "78a81b3347fa91a2afd3af16e08bdfda",
+  "78c25bad5d7800d69be55f0bcd0139c2",
+  "79a71ae3d712181c1b5413880f809d0c",
+  "79bb709fa7d79f2ed36d5f786627ad90",
+  "7a9d8573b6d32d6baa54ff6008601553",
+  "7b090d9bf9b100d16c1e948980718800",
+  "7b1723cf41c810fff6798e0bab91889d",
+  "7b1a7bfb7bff42c177b4946d25d008f4",
+  "7b533b68a3a827bc7cbfb0b3dfc91b4c",
+  "7b602265fbe9497cf8cc51e3427ec87d",
+  "7b6864a6aa19a70af53ba62c764bb424",
+  "7b85c6b3a33169482833da3f79193d9c",
+  "7bf53a19d2cb6de887deaaa200a40977",
+  "7c2fe9ae187425d58d2ea5c1fb432179",
+  "7d3822f52796894e8707c02525fe8bc3",
+  "7d8390ca4166d09fc7cc8e174d2ea096",
+  "7db2ad7609f48bcc4bf5bca8964d93b4",
+  "7e08b0226825808f4c84724a0ae38f56",
+  "7eb8250dd617e3cd9a122f6e40aa238f",
+  "7f6ab1a48903f09c3a522b0b05aed8f0",
+  "7f8112f185c1ac55d27332f536ec3cb2",
+  "7f927ac0ef54f9548d2c66d4e74fa409",
+  "801dc645a503bfa5b39c9db0f64fc593",
+  "8045785238751870ddc605b886ef4d9c",
+  "804ad5f61a5a9993abfc012c6909c3f0",
+  "809b724f1881a22aa040fd5c616695d3",
+  "809c2105ad5c18d58cca40c1cdc27fa7",
+  "81ab7d459f1c57b0b272011ff73026e2",
+  "81c2a812a87e4be01a5e7bad2c3b08e6",
+  "81c985ed7159868ca49f3608bfd4af5e",
+  "82001ec8284ea330483d57a27c764527",
+  "82f5837da4aaf90b88c13e0af3686cea",
+  "831639174bb2c1130a01bd34d64c6939",
+  "84c854af2665f6b9549b960ac56ff888",
+  "84fba20e6739994cb317700295735924",
+  "84fe71e0df004b7d8a41e611b79209fb",
+  "853823f57f2ac995812af458d45dde43",
+  "85aedba7190d82dfaafdf92e42a3a56b",
+  "8659eb87b5df7b53bf86683830d0c844",
+  "86711e8f096ad6cf7bc5bdb7fa14c982",
+  "86855377271fa4ffe8f5d09f61703b61",
+  "8701bb4c91cff743da5a2d47bda1df7a",
+  "89392ebb1618f0e22ce6c7edf74373d4",
+  "898760639706750159eccd8f1b61349a",
+  "8a20740cb95f73ef1e3da2d9b30158d6",
+  "8b6a4ece9887801c3d3546e024b662a2",
+  "8b6c88a4bbe35550452e2a5f28f99711",
+  "8b86567d52be797c87653b0154327652",
+  "8bd5669d53bf055cb34270f6e8ed68dc",
+  "8cfc7a5f3c16e10251010ef12f85fb0c",
+  "8d31c6c4c209d21c64e00f0fcb392eed",
+  "8dc8d3eadf5b9ae43af979d62e0d4f9b",
+  "8ddccb8f87cf67e9dcc8002690125048",
+  "8de51af499fdc9d2b38110de747a5ede",
+  "8e0e2d643993d9f995ca66bf589795ea",
+  "8ed1d6e0de7a706b7d36b5ee3fdf5e55",
+  "8f1a1975d5e425fe5860a6d7d7a51fb8",
+  "8f7e68a453882d794aa267d691f9f6bc",
+  "8fe047e75f33383cc338cfaddfc50d64",
+  "9011ef69f1909ef52ca3cb6abec920d1",
+  "909741a559401f8bd8be740b3ae12631",
+  "90f5fc0690e8c83c273daabee26b2f52",
+  "9106c0cf318fb656e56d482ce9598d52",
+  "912c53ae9275a1ab87014e35481c99e6",
+  "91860648b81cf510a4a463849ab11a96",
+  "91976638fe740a323c6814b41972e718",
+  "91b38203f0b617a926423001bbdfa3cc",
+  "91cd13a1d0a88057c29868f947a61a0f",
+  "91d1a08bd48617b3b722ed5bd49cd901",
+  "91f8db7e9464929731774660afb3ff88",
+  "92065b2bcadaf742f1c659dec5ee1e02",
+  "921eb13e15380861a34ec52a171603aa",
+  "92e14fb7ea81aae8a105e4f7b39660f5",
+  "92f0f1b9ff35950e2390025905e51d49",
+  "9330d247df5f67ef079c19fb0a2d0fab",
+  "935a2845f4f0e251668ebc3008d037ae",
+  "9367f78beb0b475febe009539de44f4f",
+  "93e5fb38f21b81f2a2529df47ddad27b",
+  "9428b3ece7de465f3511634fbae90024",
+  "944ada6e20233ed2b6c7bd0b4eb156b1",
+  "94a71ae95c6af92c01da3f5e5ee6b98a",
+  "94f3432629387b627967d84b544038df",
+  "950bd7f74a6c1ba9482472a1be808f54",
+  "95c25de08c5a29f4ef09ba1eab0d9426",
+  "95e9d671a17856a40f13db391c21d5b1",
+  "95f6cb2bebb6d3433a6707e131120966",
+  "9653905f22b57247ae0c4153fdb657a0",
+  "96f52ca8abe8d7ab1412082edd490b25",
+  "971ee39bb095060d5e41a035be622716",
+  "97248521cad2fcf8f18d2cd1fa472fca",
+  "9738cbac8c5f59b3a976e707c1dfb2c7",
+  "9758044c69e20731ffb0abd7668deb46",
+  "97e693a9d093206c7939cfd77de302ce",
+  "989599688132eff789d1b12a155755b0",
+  "98c2dbf27a443907daa25a15e79819d4",
+  "9931cd775075a6b9f2b6af497abfe40e",
+  "9a10c973452f130abd1f4b655856b47c",
+  "9b06d7246d78f6183d52534d46a3c460",
+  "9b82ab2b00793d4b2d2c2f1cb43fc382",
+  "9bcddbb4c7afea46995636f3ad4fc05c",
+  "9bd176f805eedacdd36c5cc5b9c4c576",
+  "9c0c35a6a13bcbd32dab353d956d45f2",
+  "9c29c21cd4b871b6b3a6c11e6fc137bc",
+  "9c2eb2987c68b378be6b4724fa112959",
+  "9c95cd0b0d3ceec4e0605f6f73ff4afe",
+  "9ca2936c18dcfcf4a770b10300641e6b",
+  "9d1a48521ead9e68695fc69bacc5852d",
+  "9d3311b248084f9b2aba34e06e5034a1",
+  "9d70e60f381a2ab867dd53181b3e24bf",
+  "9db04b48fdd43d996e00c278ebcc095e",
+  "9e46da0619bdc324a820d07cee5e5d5a",
+  "9e825c61c10b44a5a544f89a35ecfb00",
+  "9e9aed1ba5d17341354261d23b1686e3",
+  "9eaf5218c36c8021d6e33e3f183c7c08",
+  "9eb91ce93515c32afe15cf04f74a4c2e",
+  "9ed74d39666f3df41f4b018dff0b619d",
+  "9f48cdec54344eeb73483cc2486d5daa",
+  "9f550ff0690b02bb701687426bf6ae14",
+  "9f72dbf1374ceac4359b09595bffc762",
+  "9fb34eb7f59a6dda666580a874293a26",
+  "a088a3cd1398f01d7359abc275879891",
+  "a0e6ecf72b5b79884c1774d9e9c48752",
+  "a184bc4226b6ea1d56319b603c390350",
+  "a1ae533f96acb84a153df909d49a7a95",
+  "a1b8a3b164b7d306118360e5cad46b17",
+  "a26a6c8747060bb56cf8b908ab3c8a2b",
+  "a3fed7e38954683a5f0316b18b1a6469",
+  "a49f01c33323f4b6fcf9c4e22b623306",
+  "a64b96d995e930c027024903028baf8e",
+  "a8504c829e2f8750d9f122ef76c1a1f2",
+  "a864b4901b8bdb35107b727dedf64f85",
+  "a86c51d335765b4abad7e5fbc5a622d4",
+  "a8931948f69c205c46fcdbcf15381f72",
+  "a8cb24a968321096d6ea670ebfa18349",
+  "a938d5325068aaaec688c47343e61d8f",
+  "aa7454fd2da3a6de2f7298050aead27c",
+  "aa8097568f5cfedad087501ce4210689",
+  "aaa9529f439271af94aa087d3335c035",
+  "ab5050e8fcfad946900776b974c16fc6",
+  "ab77afa92f7ab6af40f3f134a6c56510",
+  "ac024f5a0e95f74e0ba2b1437be5f19f",
+  "ac578002a4d694b505bdcd471d66675c",
+  "ac5ce2e5a9c62f5cb40368fb9f8898b1",
+  "acb3b7aee31804774ee000da4b713e0b",
+  "acb89da29948ea96db09cef701587656",
+  "ad5a525d9ddcb898661ad3445f8ccf78",
+  "ae49d2b2613da7283026dbb5276f7265",
+  "af38cdc9ead82282844fe92455ea5cbb",
+  "af531e3da657dbf47e23232c34bd1e14",
+  "af8c7949f3046807459958498cdacc38",
+  "afab30c52fea666e67215c3846eca86a",
+  "afb68a6ecafea53b3963c2e16975913c",
+  "aff374e85b241726cae204bee5c61e00",
+  "afff05e53b6165b3735a350fbacba7a7",
+  "b01e58bdbdf6adc90faf29b25a5f8774",
+  "b08cb967d6da4465a11973c56e817080",
+  "b0d1da696643a89b894fa575a3b577d6",
+  "b11f92aeba3c9fe81b969f48a9986e58",
+  "b128dddc751445c873d2a25f0dd3da82",
+  "b194bc81b6e5465cf8849eb7731dd603",
+  "b1ba5c9db145a018f6135d928a608049",
+  "b201d0b8035128006c814f9da22a9bfe",
+  "b262a58806131840de0fa2ca6af46cfa",
+  "b300e10c05cc662042dec1bf01e94ba5",
+  "b32eebfdd506eb1625dab1882bba78f9",
+  "b3a46bdcff83084b2642bbce8ddaed70",
+  "b43e89211961653a40d1546f838449de",
+  "b46fb91d0693048b5bcb8403236d9737",
+  "b4b1ab5e090494192cba5ea7ff38c359",
+  "b50316c84da4b5c03844814b6b2440b1",
+  "b5124d2818100f79bb3a58e2c7a2a602",
+  "b55db2ca6d44d6081e651060f0c442f0",
+  "b5bcdb4df8ed970dc3dc944b8897d75b",
+  "b61f924f27301a23e22170ad2757fd24",
+  "b6886ba4c96ac5d4dc97cb0dbaeb19b4",
+  "b69e926243ac5c57bf0ef8ae323fad07",
+  "b79d531a1dc5dfe3cebde30232f1bde8",
+  "b7b06c88a4c2f7196516e4ed00a254d7",
+  "b9498fb1f1320aec8439a20795184b84",
+  "b9ba8c5ba8e1f28264e22dcbf5edc406",
+  "ba0f89bdecfcdc373116dbb305c24f78",
+  "baa89765c08680d3e4152d83141385f2",
+  "bc03fffa115faf97dfd1af18c99e0d28",
+  "bc79447beae06d5634403f06a05c270f",
+  "bc7c0754def8e86feadac619718e03c5",
+  "bd00631a8f22fb956f0d22a4c19baac9",
+  "bd0bb7c8729f2336f79664573a0b7175",
+  "bd551481f5a644e7a354cdb144e3ff5c",
+  "bd9c2d0ab27dc94909c9b3c7c7667f25",
+  "bdc4204129ff17e0b4318881b42a7f4f",
+  "bf13d5e2824419ca18208aca24cdc72c",
+  "bf37ad9b56b2a609b9c6df8699af3fbd",
+  "bf7b40eb47a35f934b519d2f5d60d60d",
+  "c233099013c8c434dda828fa7ddfa2c7",
+  "c256267d3398cb071bbc15a18844906e",
+  "c3c1796e2b7882bfa2297b38cf297be7",
+  "c3d31fb0e538d0a56689e6723c22b031",
+  "c423fd924a764e7765f6b1f8d699eece",
+  "c501a3778430e4b6fad471c908fa66c1",
+  "c58b6c2b157cfc3d3fb6e3235ec048c6",
+  "c65eec678b4a8bb9211fcffb37c160f2",
+  "c6662821777b337e70166a630d176a37",
+  "c6bdef3feba90b2962f36d231fc7ea32",
+  "c70fef70b04853cf0d7bd66bb553b48a",
+  "c78b99083cafd9ffa59c028666eb4f43",
+  "c79e7f9523d3fb107f3c7ed2fcd8f5d7",
+  "c8d7669d2b2a1841bbcad17c81719b22",
+  "c90c34f1fa82d3f1a7848264c16850c9",
+  "c9dc3b6ef41976812190f5b790ae6000",
+  "cb03a2950f374f6e2df0fefa72ae4ed7",
+  "cb19019a4894153d5c7b1ff41c9fb174",
+  "cb2a3daa9c642a2e9564f73cbba244e6",
+  "cbbb3183a17491ee774b3c77abd9b426",
+  "cbcf23cc342c7b17ad24cc31bc03d8ee",
+  "cc40399e477ba93b4a231a55f286ff1e",
+  "cc6c515a55b6a8396271d298da567645",
+  "cd4965edb0e8ee402cb3e83f8d82f1e5",
+  "cd745a3440c68c17656ba87666a312bf",
+  "cd8d9d2a279accfd4ff05d45cd05e16a",
+  "ce125854699d54de33ee8176fbb91d54",
+  "ce9fbf7ab6a9505affa606a1e2f5d8f1",
+  "cf72b434c7dc74a3df71c8e02e63e97d",
+  "cfa7d0e9d5566e534c31f8f50c02f8d7",
+  "d013dd35411b33f4e192ca9089cc2788",
+  "d151ef6b7102e19ecb1a75ad1b1f8cff",
+  "d17baf208c807b50ad1487b1c42a839f",
+  "d183b88d8af49ea2beca65ae3d8a03d7",
+  "d1970c93d60ed001b9522d1f05a08aac",
+  "d1be95942952996aee6a49357a9bbab0",
+  "d1cd2175e9632d3dfc981cdbea61664d",
+  "d25c8d2f8b3b2a487ea3ce4dd817a8b2",
+  "d272ca136f35273ee89caf31788d4154",
+  "d2aba1ef6269f2dc1f0dd251908e3a0f",
+  "d3a708f64e38bcbfd5efcca51bd4c3fc",
+  "d3c47707310602b87a281d1762f05335",
+  "d442e2478067df98dd320867fa0f85c9",
+  "d4afc9ceb0bad124dc4bd415c4dfa6cd",
+  "d4bb7824b148c78f9fdd2300b300a3c0",
+  "d54b314f460d7eb36d7fdfdcf506d005",
+  "d5d08de807d4a7abdcf74b2451fdbe99",
+  "d5d841b90adf6041b324bb952915dec9",
+  "d5fa81e80ed881e2c98a8ffbee420096",
+  "d6ae15effe3d7ae5a1efc68ce5a06b86",
+  "d6ca7655353313a62ab20256c7f1620e",
+  "d70790fb1c721a1e6cfd9ef8f760f5f5",
+  "d73ca39bb248bbb498a42431ed797310",
+  "d74095c59a85699eb80aca71540f9f0d",
+  "d763c1f91f1a00c78e934eace149924a",
+  "d7a9fd83c6413f5aa08ccf95ca391fbc",
+  "d8fadaeb128e6ad4763a3c4bc4834839",
+  "d917882043015ebc920d1701ec52cbdc",
+  "d9285e49381d4665b63a4bdde766b853",
+  "d992d73eaa6b0e522bfbe4f4f0de0005",
+  "da137ca4f53652f00d4a4afe19e3cb1b",
+  "dabfcff7988719a4aef6a25157879236",
+  "db5640606fc400f8f193d31000ed7447",
+  "dbb28936403fa620956078900ec867b3",
+  "dc29fac04ee9c18d9202eb1fffcda7c7",
+  "dc5a11c3fbfeb3b14accf8b5f3b7d908",
+  "dd5fe8ea0b47327497f8d92c3bd29edf",
+  "ddbd070ff7b1e7dbaf732e405482b535",
+  "ddc1fa6a2324f2b7814631e1142c3e56",
+  "de44c7788244274c0ed0221a60d7dcb1",
+  "deb1ecadd7fdf65057cb185b313e64f7",
+  "df4b3da56d7523777d5f123bb1e9ef67",
+  "df61447ab33950560fc3d34415291e94",
+  "dfbba40c5b290f7f957f90e7c8436ffe",
+  "e0130ce8310d9b3cb802760aff7bd4df",
+  "e1696818e9fa5f82733c395e6449c628",
+  "e1f63dbbfeb201a5b608c41f816e7b5f",
+  "e257199dc067ed6c3fbdb3e5aae06989",
+  "e30383736393996787b869a0ad27330a",
+  "e33b7d21c11f1d56ffb5ac30b2c7bfdc",
+  "e3583a3fb29eb587c5c9ea87502c8923",
+  "e3b26a53c96538d1b211f344f2c477b0",
+  "e3b61f6dd214fe13f8017248698a299b",
+  "e3f7a7439887b998659c7d65df72faeb",
+  "e480dc6e5d277e8e706d80f8d0184dab",
+  "e4a4247b34637b26105f0ae992f4d239",
+  "e59f3a8f3687cdc7df6b99c36b79ab83",
+  "e670bd7038e8fb0b179f1cc6f7586831",
+  "e776d96ade434cf1166906475e77a618",
+  "e7a49a9f7a0ed34c4e14d6321d2931fa",
+  "e7b277f6599f9bd7e4f04418876a1c51",
+  "e86370e65674e0681e02b9f2b0ebc263",
+  "e887994d0c6c6a81862789fa592ca454",
+  "e8df6d3fbba636ae82b558a2ce72b608",
+  "e8ee440dc8477b02ccf596a5e1a0470c",
+  "e94dd1e4b9305573bbd2f63839e9ec37",
+  "e9bf031f38c42ac7f455de05860b4d78",
+  "ea5e4ed257336db44ca9dd4b02ece793",
+  "eaf1ec79e35eebad2f0063119b26f290",
+  "eafc9f10ea8854fdbbf8c7c8fc838ec3",
+  "eb4e98c272a3287bf001528559174a04",
+  "eb5fd2958a05a909a8f190d10a930114",
+  "eb720f40457feb47c7a557318d24fa22",
+  "eb88d489ce6bd915bdbe66f2d0441add",
+  "ebbfb15787579390c2486bbf463e6e73",
+  "ebc59d53c1688c7a658ed121a0442312",
+  "ebcdb21910f85b6d092449b166098240",
+  "ebf4baea5d98ac8ae4179e118b60a05b",
+  "ec5f072363e1fb5be6b68a6db69ff18e",
+  "ec705e57885bb88428f5a7f5cfe8329f",
+  "eccdbfd71560f843abc2a550ce9430d8",
+  "ed66dec01c6e83ed10e90deebc9f632c",
+  "edfce1b458bce025e56a0b70ee5295e1",
+  "ee3e602baae40b95fbe160e4616a552c",
+  "eed97f0ebd2c26ed1fcb10a02e9deb35",
+  "f017586fac309a61ee2c17654392af54",
+  "f067cd9b6340e5bce3c659da0eb90f55",
+  "f0a88db82e2431e79c949b773fb4c4f5",
+  "f0cdee4ec3d02d20f78310b17ca898dd",
+  "f0ecd86fd18afd09dead7a33e9237a38",
+  "f12e907c1467c6304a7a9449132ae3a9",
+  "f13a5d5af7391166fe8087c8d48f80e9",
+  "f1ab4f83f1c86cbfcd291e15371fde04",
+  "f1c9b21cb9be3fe7cce1855f27b6ac9d",
+  "f1debd5c13efd5546a07ea1e9f89d1f5",
+  "f1ec14d7893bb40de225af982fba6bd0",
+  "f2080a761c07162c5c03ad1cee69ac06",
+  "f2637caf2175e9d71bc297a20bcbb21d",
+  "f2c0042920cd67ec960991b5344eabbe",
+  "f2f2d11444ba266a94fec50dc40e0df9",
+  "f32860e270f2b3b41833a28ef9346b3d",
+  "f383a9a73f0583a3ec70f43814a4f2b5",
+  "f3948b276761c1433a400c0e7c7c81aa",
+  "f40c117e8056bddaad1a3149ef5adc54",
+  "f4a66f9926f45170a44a552c669ed617",
+  "f5196a8b274a617161d4e3b4e547262c",
+  "f519ea74784671fd96332a0aabc7d111",
+  "f52a331b99116faa13c270fa821bc16b",
+  "f5d41bbde6bf42ed6a4fa6e80a0de56e",
+  "f625a817d9449ad222cb882e7ba79182",
+  "f63bd0886d589884321545cd591d0b92",
+  "f67f24f175203ac00a32c92471f71482",
+  "f6e1759111e45718af270e1fd038f6a8",
+  "f71cce3cc66acf526b70cfae9a9c91cc",
+  "f8492c9834780ecf75e613d543837413",
+  "f881c0b347d7d496fd6b233d93b69a09",
+  "f8ca1c786769ac2e176e7493d0bed3df",
+  "f909d87e367d43463fd0f0b01e7cfb42",
+  "f923862597474d456e3d17bf53a5866a",
+  "fb0d008aafdae88d3fae430f67719c94",
+  "fbbbf6d06ac93d60cec86c9211537a36",
+  "fbc958b5696b926648e3f7d4318a192c",
+  "fbcbf602c30d015152a3eee31df9559e",
+  "fc51deb41de34d1695917a182dfd5bee",
+  "fcf4da61f68d066f4718c52d92d4d12b",
+  "fdf68e35ef074ae182eaf9fc28bc0812",
+  "fe2d9b00165abd14c8d36cfec971bf6d",
+  "fe4a62e5e4bdb806e2462e168ed611e4",
+  "fe64354641fcef6c7d496cd4823ec160",
+  "fef4cdbe82279c592db8735024e247d4",
+  "ff7a2c97f0663e981b9df7389e32f2a8"
+ ]
+}

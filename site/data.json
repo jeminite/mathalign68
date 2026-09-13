@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-13T08:51:40",
+    "built": "2026-09-13T09:07:08",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -17516,14 +17516,6 @@
           "activity": "Organizing Work",
           "page": 214,
           "quote": "Use the distributive property to write an expression that is equivalent to"
-        },
-        {
-          "lesson": 18,
-          "lessonTitle": "Subtraction in Equivalent Expressions",
-          "role": "introduces",
-          "activity": "Organizing Work",
-          "page": 214,
-          "quote": "Use the distributive property to write an expression that is equivalent"
         },
         {
           "lesson": 19,
@@ -37238,7 +37230,7 @@
           "lesson": 6,
           "lessonTitle": "What About Other Bases?",
           "role": "practises",
-          "activity": "What Happens With Zero and Negative Exponents",
+          "activity": "What Happens With Zero and Negative Exponents?",
           "page": 75,
           "quote": "As you move toward the left, each number is being multiplied by"
         },
@@ -37989,17 +37981,9 @@
           "lesson": 4,
           "lessonTitle": "Applying Circumference",
           "role": "practises",
-          "activity": "Using",
-          "page": 72,
-          "quote": "students calculate the remaining measurements for the circles in the previous activity"
-        },
-        {
-          "lesson": 4,
-          "lessonTitle": "Applying Circumference",
-          "role": "practises",
           "activity": "Using \u03c0",
           "page": 72,
-          "quote": "One measurement for each object is listed in the table"
+          "quote": "students calculate the remaining measurements for the circles in the previous activity"
         },
         {
           "lesson": 8,

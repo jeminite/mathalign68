@@ -188,6 +188,27 @@ def regenerability():
               out.returncode == 0 and strip(open(path).read()) == strip(out.stdout),
               (out.stderr or "the rebuilt file differs from the one on disk").strip())
 
+    # data/alignment_citations.json is what a machine without the guides checks
+    # citations against, so it has to be regenerable like any other generated
+    # file -- otherwise it is just an assertion that the citations were fine,
+    # written by the same hand that wrote them. Its inputs are alignment.json
+    # (hand-owned) and the gitignored lesson-detail index, so this runs only
+    # where the latter exists.
+    label = "data/alignment_citations.json rebuilds from the alignment and the guides"
+    cite_path = os.path.join(DATA, "alignment_citations.json")
+    detail_src = os.path.join(DATA, "im_ms_lessons_detail.json")
+    if not os.path.exists(detail_src):
+        skipped(label, "data/im_ms_lessons_detail.json is not on this machine")
+    elif not os.path.exists(cite_path):
+        skipped(label, "data/alignment_citations.json has not been built")
+    else:
+        out = subprocess.run([sys.executable,
+                              os.path.join(HERE, "build_citation_index.py"), "--stdout"],
+                             capture_output=True, text=True)
+        check(label,
+              out.returncode == 0 and open(cite_path).read() == out.stdout,
+              (out.stderr or "the rebuilt index differs from the one on disk").strip())
+
 
 # ------------------------------------------------------------------- 3. the payload
 
@@ -475,6 +496,32 @@ def curriculum_index(payload):
         check("the curriculum numbering passes its own validation gate",
               out.returncode == 0 and "safe to build on" in body,
               "\n".join(body.strip().split("\n")[-12:]))
+
+    # The OTHER validator. tools/validate_im_ms_lesson_detail.py holds 13 checks
+    # on the lesson-detail index -- activities numbered 1..N with no gap, every
+    # kind one of three canonical forms, every lesson naming its section -- and
+    # nothing ran it. It is the only gate on the file that section 9 uses to
+    # verify all 1,153 published evidence citations, so the gate on the gate was
+    # dark: the detail index could go wrong in exactly the ways that validator
+    # was written to catch, and a clean preflight would still say "safe to
+    # deploy".
+    #
+    # Skipped rather than failed when the index is absent, because it is
+    # gitignored licensed text and a fresh clone legitimately has no copy.
+    detail_gate = os.path.join(HERE, "validate_im_ms_lesson_detail.py")
+    detail_file = os.path.join(DATA, "im_ms_lessons_detail.json")
+    if not os.path.exists(detail_gate):
+        pass
+    elif not os.path.exists(detail_file):
+        skipped("the lesson-detail index passes its own validation gate",
+                "data/im_ms_lessons_detail.json is not on this machine")
+    else:
+        out = subprocess.run([sys.executable, detail_gate], capture_output=True,
+                             text=True, timeout=600)
+        body = out.stdout + out.stderr
+        check("the lesson-detail index passes its own validation gate",
+              out.returncode == 0 and "safe to build on" in body,
+              "\n".join(body.strip().split("\n")[-14:]))
 
     cur = payload["curriculum"]["grades"]
     check("the index covers grades 6, 7 and 8",
@@ -970,6 +1017,11 @@ KERN = re.compile(r"(?<![A-Za-z0-9])[A-Za-z] \([A-Za-z](?:\s*[-+\u2212]\s*\d+)?\
 
 # -------------------------------------------------------------------- 9. alignment
 
+def _squash_ws(t):
+    """Whitespace-normalised only -- the form build_citation_index.py digests."""
+    return re.sub(r"\s+", " ", (t or "")).strip()
+
+
 def _squash(t):
     """Compare quotes on words alone: apostrophes and dashes differ between the
     PDF's typography and anything retyped from it."""
@@ -1196,10 +1248,83 @@ def alignment(payload):
           not thin, "\n".join(thin[:8]))
     check("no evidence quote exceeds 15 words",
           not longquote, "\n".join(longquote[:8]))
+
+    # An entry citing one activity twice in the same role is padding, not range,
+    # and the evidence range is the thing a teacher is meant to read. Three crept
+    # in during grade 6's widening and none tripped a check, because the
+    # duplicate test there compared activity names exactly while preflight
+    # resolves them loosely: "Using" and "Using pi" are the same activity, and
+    # the second spelling slipped past as new. Compared here the way the resolver
+    # compares, so the two cannot disagree again.
+    padded = []
+    for item_id, entry in sorted(by_item.items()):
+        seen = {}
+        for ev in entry.get("evidence") or []:
+            key = (ev.get("lesson"), _norm_title(ev.get("activity")), ev.get("role"))
+            if key in seen:
+                padded.append("%s: %r cited twice as %s"
+                              % (item_id, ev.get("activity"), ev.get("role")))
+            seen[key] = 1
+    check("no entry cites the same activity twice in the same role",
+          not padded, "\n".join(padded[:8]))
+    # THE PORTABLE HALF. data/alignment_citations.json records, for every
+    # published citation, the activity's page and a digest over the quote --
+    # every field of it already public on the site, and no licensed text in it.
+    # It exists so a collaborator who cannot have the guides still gets real
+    # checks instead of three skips. Where the guides ARE present the index is
+    # regenerated and compared, so it cannot drift from what it certifies.
+    cite_index = os.path.join(DATA, "alignment_citations.json")
+    citations = load(cite_index) if os.path.exists(cite_index) else None
+    if citations is None:
+        skipped("the citation index certifies every published citation",
+                "data/alignment_citations.json has not been built")
+    else:
+        idx_act = citations.get("activities") or {}
+        idx_q = set(citations.get("quoteDigests") or [])
+        unknown_act, wrong_pg, unverified = [], [], []
+        for item_id, entry in sorted(by_item.items()):
+            course = entry.get("course") or ""
+            m = re.search(r"Grade\s+([678])", course)
+            if not m or entry.get("unit") is None:
+                continue
+            for ev in entry.get("evidence") or []:
+                key = "%s.%s.%s|%s" % (m.group(1), entry["unit"], ev.get("lesson"),
+                                       _norm_title(ev.get("activity")))
+                rec = idx_act.get(key)
+                if rec is None:
+                    unknown_act.append("%s: %r in lesson %s"
+                                       % (item_id, ev.get("activity"), ev.get("lesson")))
+                    continue
+                if rec.get("page") != ev.get("page"):
+                    wrong_pg.append("%s %r: entry says p%s, index says p%s"
+                                    % (item_id, ev.get("activity"), ev.get("page"),
+                                       rec.get("page")))
+                raw = "\x1f".join([_squash_ws(course), str(ev.get("lesson")),
+                                   _squash_ws(ev.get("activity")),
+                                   _squash_ws(ev.get("quote"))])
+                if hashlib.sha256(raw.encode("utf-8")).hexdigest()[:32] not in idx_q:
+                    unverified.append("%s: %r" % (item_id, (ev.get("quote") or "")[:50]))
+        check("every cited activity is one the citation index certifies",
+              not unknown_act, "\n".join(unknown_act[:6]))
+        check("every evidence page matches the citation index",
+              not wrong_pg, "\n".join(wrong_pg[:6]))
+        # Catches the realistic failure: a quote reworded in alignment.json on a
+        # machine with no guides, which would silently stop matching its source.
+        check("every published quote is one that was verified against the guides",
+              not unverified, "\n".join(unverified[:6]))
+
     if detail is None:
-        skipped("every evidence quote appears in the activity it cites",
-                "data/im_ms_lessons_detail.json is not on this machine -- rebuild "
-                "it with tools/extract_im_ms_lesson_detail.py")
+        # THREE checks depend on the detail file and only ONE skip was printed
+        # here, so a machine without the guides reported "1 skipped" while three
+        # checks silently left the run. That is the failure this project already
+        # has a rule about: a skip and a pass are different outcomes, and a check
+        # that disappears is worse than either. One skip per check, by name.
+        why = ("data/im_ms_lessons_detail.json is not on this machine -- it is "
+               "gitignored because it reproduces licensed task text; rebuild it "
+               "with tools/extract_im_ms_lesson_detail.py")
+        skipped("every cited activity exists in the lesson", why)
+        skipped("every evidence quote appears in the activity it cites", why)
+        skipped("every evidence page is the page the index gives that activity", why)
     else:
         check("every cited activity exists in the lesson",
               not noactivity, "\n".join(noactivity[:8]))
