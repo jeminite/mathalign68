@@ -20,6 +20,13 @@ can catch, and everything below is what it cannot.
 | 8 | 65 |
 | **total** | **152** |
 
+Eleven have now been found wrong and corrected: nine coordinate planes in grade 8 and grade 6,
+`g8-2025-035`'s transposed rise and run, and `g6-2025-036`, whose description said the shaded
+part was "2.4 centimetres across, the height is 3 centimetres" — from which a reader computes
+7.2, where the key says 5.4, because the shaded region is a **trapezoid** and the description
+never said so. Two of the eleven were caught by a check; the other two by a reader noticing the
+description did not reproduce the answer.
+
 Only **12** of those are coordinate planes, which is the one kind
 `tools/check_plotted_points.py` can verify by reading the drawing back out of the PDF. When that
 check was first run against those 12, **nine were wrong** — see
@@ -102,12 +109,25 @@ Eight are grade 7 `NY-7.EE.3`, placed in Units 2 and 4 where the guide's table s
 Deliberate — the table names the right unit only 96% of the time and the right lesson 77% — but
 these are the ones to check first if a placement is ever questioned.
 
-### 10. Grade 7's six `candidates-only` items
+### 10. Nine `candidates-only` items, and why they cannot be fixed
 
-`g7-2023-001`, `-002`, `-017`, `-018`, `g7-2024-030`, `-031`. Their PDF page is undetermined, so
-there is no stem and no item-specific evidence to judge on. They carry a unit and candidate
-lessons, stay drafted, and never publish. They become answerable only if those pages are
-resolved.
+`g6-2023-015`, `g6-2023-030`, `g6-2025-038`, `g7-2023-001`, `-002`, `-017`, `-018`,
+`g7-2024-030`, `-031`. They carry a unit and candidate lessons, stay drafted, and never publish.
+
+**Every one of them sits on an image-only page** — the released PDFs carry a handful of pages
+with no text layer at all (2023 grade 6 has five, 2023 grade 7 three, 2025 grade 6 three, 2024
+grade 7 one). That is why `build_pagemap.py` declines to place an item there, and it is also why
+they can never be transcribed under the current rule: published prose must be character-identical
+to the PDF's own text layer, and there is none to match.
+
+So this is not a backlog item waiting on someone finding the page. Closing it would mean either
+OCR plus a human proofread, or relaxing the prose-fidelity rule — and that rule is the reason
+the transcriptions are worth trusting. **A decision, not a task.**
+
+Worth knowing: during grade 6's sweep one agent read two of these off a rendered image by eye and
+placed them on real evidence. The placements looked plausible. That is exactly the failure the
+rule exists to prevent, and the merge script now enforces `candidates-only` for any page-less
+item rather than leaving each pass to remember.
 
 ### 11. Three cited standards have no counterpart in the standards table
 
