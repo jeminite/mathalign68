@@ -241,6 +241,36 @@ def main():
          % (detail.get("meta", {}).get("headingsRecovered", 0)))
     note("%d section title(s) were recovered from the section's opening page"
          % (detail.get("meta", {}).get("sectionTitlesRecovered", 0)))
+
+    # WHERE THE INDEX LOST A SYMBOL, VISIBLY.
+    # The guides set mathematics as artwork, so a drawn symbol does not survive
+    # extraction. Usually that is invisible. But when it was the ONLY thing
+    # distinguishing two numbered sub-items, they collapse into byte-identical
+    # twins -- grade 6 Unit 7 Lesson 7's Cool-down lists "-5 < 3" and "-5 > 3"
+    # twice each, because items 3 and 4 are |-5| < 3 and |-5| > 3 and the bars
+    # were drawn. A reader placing an item against that activity sees a question
+    # that appears to ask the same thing twice.
+    # Reported, not failed: about seven of these are legitimate repetition
+    # ("No response necessary.", "What do you notice?"), so a hard check would
+    # be wrong more often than not. The list is short enough to read.
+    ITEM_RE = re.compile(r"(?:^|\s)(\d{1,2})\.\s")
+    twins = []
+    for g, gd in detail["grades"].items():
+        for u, ud in gd["units"].items():
+            for n, rec in ud["lessons"].items():
+                for a in rec.get("activities") or []:
+                    text = re.sub(r"\s+", " ", a.get("studentTaskStatement") or "")
+                    parts = ITEM_RE.split(text)
+                    bodies = [b.strip() for b in parts[2::2] if len(b.strip()) > 2]
+                    if len(bodies) < 3:
+                        continue
+                    dup = {b for b in bodies if bodies.count(b) > 1}
+                    if dup:
+                        twins.append("%s.%s.%s %r" % (g, u, n, a.get("name")))
+    if twins:
+        note("%d activit(y/ies) repeat a numbered sub-item word for word -- check "
+             "whether a drawn symbol was the difference: %s"
+             % (len(twins), ", ".join(twins[:6])))
     if thin:
         note("%d non-project lessons carry fewer than 3 activities -- an item "
              "aligned to one of these was judged against part of the lesson: %s"
