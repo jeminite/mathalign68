@@ -538,19 +538,20 @@ def curriculum_index(payload):
 # ------------------------------------------- 7d. the derived unit filter
 
 def derived_unit_filter(payload):
-    """The Questions and Items tabs filter by unit without any per-item alignment.
+    """The Questions and Items tabs filter by unit. The browser answers with the
+    JUDGED placement where one exists and derives the unit from the standard
+    where none does, so these checks re-derive the same mapping here, in
+    different code, and assert what makes the feature safe to publish.
 
-    The unit is DERIVED in the browser: an item's standard is looked up in the
-    curriculum index, and the units whose lessons teach it are the answer. These
-    checks re-derive the same mapping here, in different code, and assert the
-    two properties that make the feature safe to publish.
+    The first check is the important one, and it guards the direction nobody
+    expects. A derived unit is not an alignment, and the moment it is written
+    onto an item it reads like one -- so a populated unit must trace to an
+    alignment ENTRY, never to the browser's derivation leaking into the payload.
 
-    The first is the important one. A derived unit is not an alignment, and the
-    moment it is written onto an item it starts reading like one. Section 9
-    already asserts the negative while data/alignment.json is absent; this names
-    the dependency so nobody satisfies that check later by populating the fields
-    and quietly turns a derivation into a claim."""
-    section("7d. Derived unit filter")
+    The coverage report mirrors the browser's actual rule rather than the old
+    derive-everything one. Reporting derivation coverage for items that are
+    judged would describe a page that no longer exists."""
+    section("7d. Unit filter -- judged where possible, derived where not")
     if "curriculum" not in payload:
         skipped("the derived unit filter has options for every grade",
                 "payload carries no curriculum block")
@@ -590,7 +591,12 @@ def derived_unit_filter(payload):
                       if c.startswith(code) and len(c) == len(code) + 1
                       and c[-1].isalpha())
 
-    empty, coverage = [], []
+    def placed_grade(item):
+        m = re.search(r"Grade\s+(\d)", item.get("course") or "")
+        return m.group(1) if m else None
+
+    empty, coverage, mismatched = [], [], []
+    judged_total = derived_total = elsewhere_total = 0
     for grade, spec in sorted(payload["curriculum"]["grades"].items()):
         index = {}
         for code, lessons in spec["standardToLessons"].items():
@@ -598,39 +604,86 @@ def derived_unit_filter(payload):
             for c in (expand(code) or [code]):
                 index.setdefault(c, set()).update(units)
         items = [i for i in payload["items"] if i["grade"] == int(grade)]
-        units, bare = set(), 0
+        units, bare, judged, derived, elsewhere = set(), 0, 0, 0, 0
         for item in items:
+            if item.get("unit") is not None and placed_grade(item) == grade:
+                # The browser returns exactly this one unit for a judged item.
+                judged += 1
+                units.add(str(item["unit"]))
+                continue
+            if item.get("unit") is not None:
+                # Judged into ANOTHER grade's curriculum: no unit of this grade
+                # contains it, and the browser says so by returning nothing.
+                elsewhere += 1
+                bare += 1
+                continue
             hit = set(index.get(item["standard"], ()))
             for c in item.get("secondary") or []:
                 hit |= set(index.get(c, ()))
             if hit:
+                derived += 1
                 units |= hit
             else:
                 bare += 1
+        judged_total += judged
+        derived_total += derived
+        elsewhere_total += elsewhere
         if not units:
             empty.append("grade %s" % grade)
-        coverage.append("grade %s: %d unit options over %d items, %d with no unit"
-                        % (grade, len(units), len(items), bare))
+        coverage.append("grade %s: %d unit options over %d items -- %d judged, "
+                        "%d derived, %d taught in another grade, %d with no unit"
+                        % (grade, len(units), len(items), judged, derived,
+                           elsewhere, bare))
+
+    # THE CHECK THAT MAKES THE CHANGE WORTH ANYTHING. A judged item must filter
+    # to its judged unit and nothing else. If the browser ever fell back to the
+    # derivation for an item that has a judgement, the filter would quietly go
+    # back to being the standard-to-lesson table -- right on the unit 96.4% of
+    # the time -- while the page claimed a judged placement.
+    for item in payload["items"]:
+        if item.get("unit") is None:
+            continue
+        if placed_grade(item) != str(item["grade"]):
+            continue
+        if item["alignmentBasis"] == "unaligned":
+            mismatched.append(item["id"])
+    check("every judged item filters to its own judged unit",
+          not mismatched,
+          "%d item(s) carry a unit the payload does not treat as aligned: %s"
+          % (len(mismatched), ", ".join(mismatched[:6])))
 
     # An empty option list means the standard-to-lesson join silently broke --
     # a parent-code regression would do it -- and the dropdown would render with
     # nothing in it rather than failing.
-    check("the derived unit filter has options for every grade",
+    check("the unit filter has options for every grade",
           not empty, "no unit resolves for %s" % ", ".join(empty))
+    print("        %d items filter by a JUDGED unit, %d by a derived one, "
+          "%d are taught in another grade"
+          % (judged_total, derived_total, elsewhere_total))
 
     # The caveat has to ship with the filter. A unit dropdown with no note beside
     # it reads as an alignment, which is exactly what this is not.
     #
-    # Matched on the two load-bearing words rather than the whole sentence: the
-    # first version of this check pinned the exact wording, so re-wording the
-    # caveat to say that a JUDGED placement now exists for some items failed the
-    # deploy even though the caveat was still there and had got better. A check
-    # should hold the property, not the prose.
+    # Matched on the load-bearing words rather than the whole sentence: an early
+    # version pinned the exact wording, so re-wording the caveat failed the deploy
+    # even though the caveat was still there and had got better. A check should
+    # hold the property, not the prose.
+    #
+    # The property has changed, and the caveat with it. The filter now prefers the
+    # JUDGED placement and derives only where none exists, so a page claiming the
+    # unit is always derived would be as wrong as one making no claim at all. What
+    # must still ship is the distinction itself -- that some units are judged and
+    # some are derived -- because a bare dropdown reads as an alignment for every
+    # row in it.
     html = open(os.path.join(SITE, "index.html")).read()
-    caveat = re.search(r"derived from the standard, not (assigned|judged) per item", html)
-    check("the derived-unit caveat ships with the filter", bool(caveat),
-          "no sentence in the built page says the filter's unit is derived rather "
-          "than judged per item")
+    # Kept as ONE contiguous phrase on purpose: preflight greps the BUILT page,
+    # which embeds templates/app.js verbatim, so a sentence split across a "+"
+    # concatenation is not contiguous there and this check cannot see it.
+    caveat = re.search(r"judged placement where one exists, and derives the unit "
+                       r"from the standard where none does", html)
+    check("the judged-versus-derived caveat ships with the filter", bool(caveat),
+          "no sentence in the built page distinguishes the units that were judged "
+          "per item from the units derived from the standard")
     for line in coverage:
         print("        %s" % line)
 

@@ -1339,21 +1339,34 @@
     return itemsForCodes(grade, unitStandards(unit));
   }
 
-  /* ---- deriving a unit for an ITEM, which is the reverse of the above ----
+  /* ---- a unit for an ITEM: the judged placement first, derivation as fallback ----
 
-     This derivation predates the per-item alignment and still runs alongside it.
-     data/alignment.json now carries judged placements -- all of grade 7 as of the
-     second-pass review -- but the FILTER stays derived, because a filter has to
-     answer for every item including the ones nobody has judged yet. What the
-     derivation uses is the guide's standard-to-lesson index, so an item's unit is
-     DERIVED from the standard it assesses -- the units whose lessons teach that
-     standard. A judged placement can name a different unit, and the question card
-     shows it; these two must not be conflated.
+     This used to be derivation ONLY, and the reason was sound at the time: a
+     filter has to answer for every item, and when it was written only grade 7 had
+     been judged. 385 of 396 items now carry a judged placement, so the default
+     has flipped. The judged unit is what the alignment pass decided by reading the
+     lessons; the derivation is what the guide's standard-to-lesson table implies,
+     and that table names the right unit 96.4% of the time and the right LESSON
+     only 77.8%. Preferring the judgement where one exists is the whole point of
+     having made it.
 
-     That is weaker than an alignment and the page says so. "Unit 3" here means
-     "Unit 3 teaches the standard this item assesses", not "this item belongs to
-     Unit 3". It is over-inclusive, never wrong, and it is the same join the
-     Curriculum tab already publishes, so the two tabs cannot disagree.
+     THREE CASES, and the middle one is the one worth getting right:
+
+     - Judged, placed in this item's own grade: use that unit. One unit, not a set.
+     - Judged, placed in ANOTHER grade's curriculum: return nothing. These are the
+       16 post-test items -- a grade 8 item on a grade 7 standard, say -- and they
+       are not taught in this grade at all, so no unit of THIS grade's course
+       contains them. The derivation used to answer here anyway and could be
+       flatly wrong: g8-2023-022 derives to grade 8 units 1, 2 and 9 while its
+       judged placement is grade 7 Unit 8. Silence is the honest answer, and the
+       question card still shows where it IS taught.
+     - Not judged: fall back to the derivation, which is what the remaining 11
+       items get. It is over-inclusive but never empty for want of trying.
+
+     A DERIVED unit is weaker than a judged one and the page still says so.
+     "Unit 3" derived means "Unit 3 teaches the standard this item assesses", not
+     "this item belongs to Unit 3", and one standard is often taught in several
+     units, so a derived item can appear under more than one.
 
      PARENT CODES ARE THE HAZARD, in the opposite direction from expandCode's
      usual use. standardToLessons can be keyed on NY-7.EE.4 while every item
@@ -1381,10 +1394,28 @@
     return index;
   }
 
-  /* The units that teach this item's standards, as sorted number-strings.
-     Empty means the item assesses a standard this grade's curriculum does not
-     teach -- prior-grade content, which is exactly the post-test set. */
+  /* The grade whose curriculum a judged placement sits in, or null. The course
+     string is the only place the payload records it, because a placement can be
+     in a different grade from the test the item sat on. */
+  function placedInGrade(item) {
+    var m = /Grade\s+(\d)/.exec(item.course || "");
+    return m ? m[1] : null;
+  }
+
+  /* Whether this item's unit came from a judgement rather than a derivation.
+     The question card and the "Taught in" column both key off it. */
+  function unitIsJudged(grade, item) {
+    return item.unit !== null && item.unit !== undefined &&
+      placedInGrade(item) === String(grade);
+  }
+
+  /* The unit(s) this item belongs to, as sorted number-strings. A judged
+     placement gives exactly one. Empty means either that the item is taught in
+     another grade, or -- for an unjudged item -- that it assesses a standard this
+     grade's curriculum does not teach. */
   function unitsForItem(grade, item) {
+    if (unitIsJudged(grade, item)) return [String(item.unit)];
+    if (item.unit !== null && item.unit !== undefined) return [];
     var index = unitIndexFor(grade), found = {};
     var codes = [item.standard].concat(item.secondary || []);
     codes.forEach(function (c) {
@@ -1449,12 +1480,13 @@
     /* Keep this phrase inside ONE string literal: preflight greps the BUILT page,
        which embeds this source, so a phrase split across a "+" concatenation is
        not contiguous there and the check cannot see it. */
-    n.innerHTML = "<b>This filter's unit is derived from the standard, not judged per item.</b> " +
-      "An item is counted against a unit when that unit teaches the standard the item " +
-      "assesses \u2014 which is not the same as saying the item belongs to the unit. One " +
-      "standard is often taught in several units, so an item can appear under more than " +
-      "one, and the filtered counts overlap. Where an item carries a judged placement it " +
-      "is shown on the question itself, and it can name a different unit from this one.";
+    n.innerHTML = "<b>This filter uses the judged placement where one exists, and derives the unit from the standard where none does.</b> " +
+      "385 of 396 items carry a placement judged by reading the lessons, and those " +
+      "sit in exactly one unit. For the rest the unit is derived \u2014 the item is " +
+      "counted against every unit that teaches the standard it assesses, which is not " +
+      "the same as saying it belongs there, so a derived item can appear under more " +
+      "than one unit and those counts overlap. An item taught in another grade appears " +
+      "under no unit of this one; the question card says where it is taught.";
     return n;
   }
 
