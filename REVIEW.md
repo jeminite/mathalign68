@@ -106,6 +106,17 @@ The crops are at `assets/G7-2023/q16.png`, `assets/G7-2026/q14.png`,
 - **`meta.reviewNotes` is populated for exactly one test of twelve.** Whether that
   means "reviewed, nothing to note" or "not reviewed" is a question only the
   author can answer, and it changes how much the other eleven can be trusted.
+- **No placement has ever been checked against whether students who were taught
+  that lesson did better on that item.** 385 items carry a judged placement, each
+  with a named activity and page, and the blind second pass is good evidence the
+  *method* works — grade 8 agreed with itself 55.6% of the time, grade 6 settled 18
+  disagreements. But that measures two readings against each other, not either
+  against reality. The only real test is next year's performance on the exact
+  standard, which is the same once-a-year signal AlgebraTeaching's gaps register
+  calls `verified`. Worth looking back at in 2027 planning.
+- **Nor has any credit target.** MS343Teaching tells a student they need six more
+  credits, off a curve recovered from one year's conversion. Nothing checks a year
+  later whether they got them.
 
 ## 7. Smaller things a maintainer would trip over
 
@@ -123,6 +134,18 @@ The crops are at `assets/G7-2023/q16.png`, `assets/G7-2026/q14.png`,
   except the new answer-choice rule, which matches on a substring.
 - `tools/test_engine.js`'s only end-to-end check against a **real** ISA export
   skips unless `MATHALIGN_ISA` is set, so it never runs on the gate.
+- **`/analyze/` is live and has never been opened by a human.** It passes 57 render
+  checks, two of which are the nearest automated substitute — every class it uses is
+  styled, and the print rules cover the checkpoint sheet — but "every class is
+  styled" is not "it looks right". Everything reachable from a shell checks out:
+  extension 1.0.93 in Chrome Profile 4, that profile signed in as the matching
+  account, the native host registered at `~/.claude/chrome/chrome-native-host` and
+  executable, the extension ID allow-listed. Restarting Chrome fixed one real thing
+  — the process had been up ten days running 1.0.90 with three newer versions
+  unloaded on disk. What remains is inside the extension UI: site permission for
+  `localhost`, and a claude.ai login in that profile. Check in particular that a
+  checkpoint prints one page per unit with the answer key last; a sheet that prints
+  badly will not get used.
 
 ## 8. Curriculum findings — not defects, and not backlog
 
