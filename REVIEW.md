@@ -1,231 +1,179 @@
 # Things a person still needs to look at
 
-Three files carry different jobs. `provenance/` explains **why** things are as they are.
-`RESUME.md` says **where the work is up to**. This file lists what a *person* must decide or
-check — open questions, not finished findings.
+Three files carry different jobs. `provenance/` explains **why** things are as
+they are. `RESUME.md` says **where the work is up to**. This file lists what a
+*person* must decide or check — open questions, not finished findings.
 
-Nothing here blocks the deploy gate. That is the point: `preflight.py` catches what a machine
-can catch, and everything below is what it cannot.
+Nothing here blocks the deploy gate. That is the point: `preflight.py` catches
+what a machine can catch, and everything below is what it cannot.
+
+**Last reviewed 2026-09-13**, after grade 6's alignment, the analyzer rewiring
+and the figure audit.
 
 ---
 
-## Published data that may be wrong
+## 1. Alt text has never been audited — the largest open risk
 
-### 1. 140 figure descriptions have never been checked against the artwork
+152 figures, every one with alt text, median 15 words. `preflight.py` checks
+three things about it: that it exists, that no two figures share the same
+string, and (new) that it does not contradict its own `longDescription`. Nothing
+checks whether it **describes the figure**.
 
-| grade | figures with a description |
+The comparison that makes this urgent: the `longDescription` on the same 152
+figures was checked the same three ways, and when 140 of them were finally read
+against the artwork, **31.7% failed**. Alt text is the same surface, written by
+the same hand, in the same sitting.
+
+The self-consistency check caught one contradiction immediately — `g8-2025-027`'s
+alt said "base radius" where the artwork labels a diameter.
+
+**The method is known and cheap.** Every figure is a committed PNG under
+`assets/`, named in its own `file` field. `provenance/figure_descriptions.md`
+records the two waves, the verdict vocabulary and what the failures had in
+common. Alt text is shorter than a long description, so this is a smaller job
+than the audit that just finished.
+
+## 2. Three figure descriptions still cannot be written
+
+Each needs a value read off a drawing the audit did not resolve. All grade 7,
+all `insufficient`:
+
+| item | what is missing |
 |---|---|
-| 6 | 41 |
-| 7 | 46 |
-| 8 | 65 |
-| **total** | **152** |
+| `g7-2023-016` | the two box endpoints (Q1 and Q3) for each class |
+| `g7-2026-014` | the dot counts above 0, 1, 2, 3, 4 on Team B's plot |
+| `g7-2026-027` | the coordinates of Q, R and S — above all, which point sits at x = 1 apple |
 
-Eleven have now been found wrong and corrected: nine coordinate planes in grade 8 and grade 6,
-`g8-2025-035`'s transposed rise and run, and `g6-2025-036`, whose description said the shaded
-part was "2.4 centimetres across, the height is 3 centimetres" — from which a reader computes
-7.2, where the key says 5.4, because the shaded region is a **trapezoid** and the description
-never said so. Two of the eleven were caught by a check; the other two by a reader noticing the
-description did not reproduce the answer.
+The crops are at `assets/G7-2023/q16.png`, `assets/G7-2026/q14.png`,
+`assets/G7-2026/q27.png`.
 
-Only **12** of those are coordinate planes, which is the one kind
-`tools/check_plotted_points.py` can verify by reading the drawing back out of the PDF. When that
-check was first run against those 12, **nine were wrong** — see
-`provenance/figure_descriptions.md`. Two broke their item outright: one described a segment 5
-units long where NYSED's own key says 6, and one described vertices making the answer a
-coordinate pair that is not among the four choices.
+## 3. Published data that is still wrong
 
-The remaining 140 are diagrams, tables, labelled constructions and geometric figures. No check
-can reach them, and a 75% error rate in the only sample anyone could measure is not a reassuring
-prior. **This is what a screen-reader user is given instead of the picture.**
+- **`g7-2026-026`'s stem.** Needs the tall delimiters clustered and hand-labelled;
+  raising the height cap fixed its target and silently emptied another item's four
+  answer choices. `provenance/tall_delimiters.md` has the geometry and the
+  nine-item corpus diff.
+- **Radical overbars publish as repeating-decimal marks** in 14 grade 8 items —
+  `√50` reads as `√5-repeating0-repeating`. `provenance/radical_markup.md`.
+- **Two activity names publish with a drawn symbol missing**: `Using` is *Using π*
+  (7.3.4), `Does Plus Equal ?` is *Does a² + b² Equal c²?* (8.7.7). Deliberate —
+  a citation must quote what the index stores or the gate cannot resolve it. See
+  `provenance/lesson_index_glyph_loss.md` for the font-size-aware technique that
+  recovers such symbols when a placement turns on one.
 
-Scheduled for after grade 6's alignment. It needs a person and a rendered page per figure.
+## 4. Judgements a teacher should confirm
 
-### 2. `g6-2024-045`'s coordinate plane cannot be read back
+- **Three contested placements**, where the settlers and a blind re-test disagree
+  and both readings are recorded: `g8-2023-043`, `g8-2026-020`, `g8-2026-025`.
+  Each carries `contested: true`.
+- **Nine placements rest on optional work** — `g8-2024-010` plus eight in grade 6
+  (`g6-2023-024`, `g6-2023-044`, `g6-2023-045`, `g6-2025-017`, `g6-2025-021`,
+  `g6-2026-019`, `g6-2026-032`, `g6-2026-046`). Each names its non-optional
+  runner-up. A class following the pacing table's skips has never met the tested
+  form of these questions.
+- **58 standards place their items at more than one lesson.** Expected —
+  alignment is per item — but it is also what drift looks like. The gate prints
+  the list every run.
+- **15 entries sit outside every unit the guide tables for their standard.**
+  Three are `candidates-only` entries with `unit: null` tripping the report as
+  noise; the real set is 12. Deliberate, but these are the first to check if a
+  placement is ever questioned.
+- **Three cited standards have no counterpart in `standards.json`**:
+  `NY-6.SP.7a`, `NY-8.EE.8c`, `NY-8.SP.4`. The last is understood (removed under
+  NGMLS, and the guide's table was never regenerated). The other two want a look.
 
-Its plot has no negative quadrant, so the axis is drawn along the box edge and the origin cannot
-be told from the corner. The checker reports it as *unchecked* rather than passing it — by name,
-every run, so the exemption cannot grow quietly. Verified by eye once and correct at that time.
+## 5. Two permanent categories, not backlog
 
-### 3. `g7-2026-026`'s stem is still wrong
+- **Nine `candidates-only` items sit on image-only PDF pages.** The released PDFs
+  carry pages with no text layer, so `build_pagemap.py` will not place an item
+  there and the prose-fidelity rule cannot be satisfied. Closing this means OCR
+  plus a human proofread, or relaxing the rule that makes every transcription
+  worth trusting. **A decision, not a task.**
+- **Two `NY-5.OA.3` items are `no-lesson-found`** (`g6-2025-033`, `g6-2026-042`).
+  It is a grade 5 standard, there is no grade 5 curriculum in this repository,
+  and the home-grade rule has no grade to search. Both blind readings reached
+  this independently. NYCPS also had to leave grade 6 to place it.
 
-The fix needs the tall delimiters clustered and hand-labelled, not a height cap raised — raising
-the cap fixed the target item and silently emptied another item's four answer choices.
-`provenance/tall_delimiters.md` has the geometry, the nine-item corpus diff and the reproduction
-command.
+## 6. Data with no independent check
 
-### 4. Radicals publish with a repeating-decimal mark
+- **`data/glyphs.json`** — 441 clusters, 174 labelled by hand, 267 unlabelled, and
+  no regenerability check. A *missing* label fails loudly; a *wrong* one decodes
+  silently wrong, and prose fidelity cannot catch it because it strips the decoded
+  mathematics before comparing. Two near-misses are on record.
+- **`data/content.json`** has no regenerability check, unlike `data/items.json`
+  where `build_items.py --check` makes a hand patch impossible to hide. Its own
+  meta says not to hand-edit it; nothing enforces that.
+- **`meta.reviewNotes` is populated for exactly one test of twelve.** Whether that
+  means "reviewed, nothing to note" or "not reviewed" is a question only the
+  author can answer, and it changes how much the other eleven can be trusted.
 
-Several grade 8 stems render a radical's overbar as a repeating-decimal mark, so `√50` reads as
-`√5-repeating0-repeating` and segment `DF` as `DF-repeating`. It does not change what the item
-asks, but it is visible on the page. `provenance/radical_markup.md` also needs its own fix.
+## 7. Smaller things a maintainer would trip over
 
-### 5. Two activity names publish with a symbol missing
+- `README.md` still tells a first-time reader that grades 6 and 8 are "not
+  started", and its `data/` layout block documents five of the nine files —
+  omitting `content.json` (634 KB, hand-owned) and `glyphs.json` entirely.
+- The phase table in `RESUME.md` uses the number 4 for two different phases and
+  runs 0, 1a–c, 2, 3, 4, 5, 3a, 3b, 3c, 4. It wants renumbering.
+- `g7-2024-015` has `choicesInImage: false` while its crop shows choice A.
+- `g7-2025-002`'s `choices` array is stored A, C, B, D — the two-by-two visual
+  order, not alphabetical. The `label` fields are right; confirm nothing
+  downstream indexes that array positionally.
+- Figure `type` labels are not normalised: `Data Table`/`Data Tables`,
+  `Box Plot`/`Box Plots`, `Dot Plot`/`Dot Plots`. Nothing keys off `type` today
+  except the new answer-choice rule, which matches on a substring.
+- `tools/test_engine.js`'s only end-to-end check against a **real** ISA export
+  skips unless `MATHALIGN_ISA` is set, so it never runs on the gate.
 
-The guides set their mathematics as artwork, so a drawn symbol does not survive extraction:
+## 8. Curriculum findings — not defects, and not backlog
 
-| publishes as | the workbook prints |
-|---|---|
-| `Using` (grade 7, 3.4) | Using **π** |
-| `Does Plus Equal ?` (grade 8, 7.7) | Does **a² + b²** Equal **c²**? |
+These belong in a teaching document rather than an open-items list. Collecting
+them is the next piece of work after the alt-text audit.
 
-A citation has to quote the name the index stores or `preflight.py` cannot resolve it, so these
-publish as-is deliberately. `provenance/lesson_index_glyph_loss.md` has the detail and the
-font-size-aware extraction technique that recovers the symbols when a placement turns on one.
+- **No required grade 8 Unit 2 activity dilates about the origin**, yet every
+  NYSED dilation item does. Those items sit at p = 0.34–0.42.
+- **Grade 6 never asks for a part-to-total ratio**; two items ask exactly that.
+- **Combining like terms lives only in an optional grade 6 lesson** (U6 L11);
+  three items need it.
+- **No grade 6 activity asks for a perimeter expression with a variable** —
+  including `g6-2023-040`, the hardest item on any of these tests at p = 0.13.
+- **The decimal test for irrationality is teacher-facing only** (8.7.17's
+  synthesis and summary, never a student task); three grade 8 items are built on
+  it.
+- **No grade 8 Unit 5 activity compares an equation to a table**, which
+  `g8-2025-041` (p = 0.23) needs.
+- **Finding the whole from a non-benchmark percent is barely taught** in grade 6.
 
----
+These were derived from grades 6 and 8. **The equivalent sweep for grade 7 has
+never been done** and is cheap now that all three grades are aligned.
 
-## Judgements a teacher should confirm
+## 9. Phases never started
 
-### 6. Three contested placements
-
-Two honest procedures disagree on these, and both readings are recorded in the entry's `why`,
-which carries `contested: true`:
-
-| item | settled at | the blind judge preferred |
-|---|---|---|
-| `g8-2023-043` | 8.4.5 *Solving Any Linear Equation* | 8.4.4 *More Balanced Moves* |
-| `g8-2026-020` | 8.3.10 *Calculating Slope* | 8.2.12 *Using Equations for Lines* |
-| `g8-2026-025` | 8.1.7 *No Bending or Stretching* | 8.1.10 *Composing Figures* |
-
-The settlement stands because its reading saw both arguments in full and the blind judge saw
-only their conclusions. A teacher's eye would settle it better than either.
-
-### 7. `g8-2024-010` rests on optional work
-
-Its evidence is *The Right Fit (Optional)*, 8.5.21 — the only place students apply the sphere
-and cone formulas to separately dimensioned figures, and it even uses the item's exact cone
-(radius 3, height 8). A teacher may never have set it. The non-optional fallback is named in the
-entry.
-
-### 8. 39 standards place their items at more than one lesson
-
-Expected — alignment is per item, not per standard, and two items on one standard routinely ask
-different things. But it is also what drift looks like. Worth one pass asking whether each split
-is a real difference in what the items ask. `preflight.py` prints the list every run.
-
-### 9. 12 entries sit outside every unit the guide tables for their standard
-
-Eight are grade 7 `NY-7.EE.3`, placed in Units 2 and 4 where the guide's table says 3, 5 and 6.
-Deliberate — the table names the right unit only 96% of the time and the right lesson 77% — but
-these are the ones to check first if a placement is ever questioned.
-
-### 10. Nine `candidates-only` items, and why they cannot be fixed
-
-`g6-2023-015`, `g6-2023-030`, `g6-2025-038`, `g7-2023-001`, `-002`, `-017`, `-018`,
-`g7-2024-030`, `-031`. They carry a unit and candidate lessons, stay drafted, and never publish.
-
-**Every one of them sits on an image-only page** — the released PDFs carry a handful of pages
-with no text layer at all (2023 grade 6 has five, 2023 grade 7 three, 2025 grade 6 three, 2024
-grade 7 one). That is why `build_pagemap.py` declines to place an item there, and it is also why
-they can never be transcribed under the current rule: published prose must be character-identical
-to the PDF's own text layer, and there is none to match.
-
-So this is not a backlog item waiting on someone finding the page. Closing it would mean either
-OCR plus a human proofread, or relaxing the prose-fidelity rule — and that rule is the reason
-the transcriptions are worth trusting. **A decision, not a task.**
-
-Worth knowing: during grade 6's sweep one agent read two of these off a rendered image by eye and
-placed them on real evidence. The placements looked plausible. That is exactly the failure the
-rule exists to prevent, and the merge script now enforces `candidates-only` for any page-less
-item rather than leaving each pass to remember.
-
-### 11. Three cited standards have no counterpart in the standards table
-
-`NY-6.SP.7a`, `NY-8.EE.8c`, `NY-8.SP.4`. `NY-8.SP.4` is understood — it was removed under NGMLS
-and the guide's *Standards by Lesson* table was never regenerated, which is also why every Unit 6
-lesson number that table gives above lesson 8 is two too high. The other two want a look.
-
----
-
-## Decisions waiting on a person
-
-### 16. Grade 6's 126 placements are all still `draft: true`
-
-Every grade 6 item has a first-pass placement and not one is published, so the site reads
-"not yet placed" for grade 6 everywhere — in the Questions tab, in the analyser's focus
-ranking, and in the per-student plans MS343Teaching generates. Grades 7 and 8 are at 96% and
-100%.
-
-Clearing the flag is the act of review and `CLAUDE.md` is specific about how: **re-derive the
-placement from the lessons rather than review the first pass's prose.** Grade 8's blind second
-pass agreed with its own first pass only **55.6%** of the time and produced 60 disagreements to
-settle, so this is not a formality — reviewing the prose would have passed most of those.
-
-Until it is done, the analyser's "Taught in" column and the checkpoint placement for grade 6
-rest on the publisher's standard-to-lesson table, which names the right unit 96.3% of the time
-and the right lesson only 77.4%. That is fine for unit-level advice and is why the checkpoints
-are placed by unit, but it is not a lesson citation.
-
-### 17. Where the student data rests, across the practice
-
-Not a MathAlign68 problem — this repo holds no student data — but it is the boundary this
-project's privacy posture is half of, so it is recorded where a person will see it.
-
-`~/Desktop/ClaudeProjects/` is **iCloud-synced**; `~/Developer/ClaudeProjects/` is not.
-MS343Teaching sits in `~/Developer/` deliberately, to keep its UID-only results out of iCloud.
-AlgebraTeaching sits on the Desktop side and holds `students/name_uid_crosswalk_2026.json`, the
-one file in the practice with real names, plus loose student workbooks at the Desktop root.
-
-So the protection currently runs opposite to the sensitivity. Recorded 2026-09-12 as a known
-position rather than a recommendation; iCloud is the user's own encrypted account, so this is
-about where data rests, not a breach. The full note is in `RELATIONSHIPS.md` under the privacy
-boundary. **Do not "tidy up" by moving MS343Teaching into the hub** — that undoes the decision.
-
----
-
-## Curriculum findings worth acting on in teaching
-
-These are not defects. They are things the alignment turned up that a teacher can use.
-
-### 12. No required Unit 2 activity dilates about the origin
-
-"Origin" appears in grade 8 Unit 2 only inside the word "original". Dilation about (0, 0) is
-there — in Lesson 4's *lesson summary*, in an *optional* Are-You-Ready-for-More, and in Lesson
-5's *practice problems* — but in no required activity.
-
-**Every NYSED dilation item is centred at the origin**, and they are the low-scoring ones:
-p = 0.34, 0.41, 0.42.
-
-### 13. The decimal test for irrationality is teacher-facing only
-
-IM's working definition throughout is the *fraction* test. The non-terminating, non-repeating
-decimal test appears only in 8.7.17's lesson synthesis and lesson summary — never in a student
-task statement or activity narrative, so a class can miss it entirely.
-
-**Three items and their distractors are built on the decimal test**: `g8-2023-035`,
-`g8-2024-047`, `g8-2026-005`.
-
-### 14. No Unit 5 activity compares an equation to a table
-
-The unit compares equation to graph, and description to graph, but never equation to table. The
-hardest item in that whole set — `g8-2025-041` at **p = 0.23** — needs exactly that, plus
-extrapolating a table back to x = 0 to read an initial value, which appears nowhere in Unit 5.
-Its only real home is 8.3.5 *Stacking Cups*.
-
-Related: the test says "rate of change", Unit 3 says "slope", and the lesson that welds them is
-8.3.5 Activity 2 *Connecting Slope to Rate of Change*. Students who met slope in Unit 3 and
-functions in Unit 5 without that weld will read those items as unfamiliar.
-
-### 15. Several of Unit 5's best matches are optional
-
-The closest Unit 5 activity for comparing rates across representations (*Which Is Growing
-Faster?*), for reading m and b off a graph, and for combining the sphere and cone formulas
-(*The Right Fit*) is optional in every case, and 8.5.18 and 8.5.22 are optional lessons.
-Skipping the optional work leaves those exact item types untouched.
-
----
+- **National IM 6–8 alignment from the public tables** — `RESUME.md` marks it
+  "after 2" and Phase 2 finished long ago. Only two national-edition unit guides
+  are on disk, so the corpus for it is fragmentary.
+- **The CCLS-era archive (2016–2022)** stays deferred. `fetch_sources.py` already
+  encodes the shape of that archive — the URL split at 2023, the one-off 2017
+  grade 7 filename, that 2020 does not exist and 2021 has no scoring materials.
+  One open fact: **`sources/ccls/` holds 2022 grade 6 and grade 7 but no grade 8**,
+  and nothing records whether that test exists upstream or was skipped.
+- **2027** needs one number changed in `fetch_sources.py` and three new
+  `blueprint.json` entries. Nothing else appears year-hardcoded.
 
 ## Two working habits this project paid for
 
-Both were caught by looking at a result and disbelieving it, and both instruments were wrong in
-the direction that flattered the conclusion being tested.
+Both were caught by looking at a result and disbelieving it, and both instruments
+were wrong in the direction that flattered the conclusion being tested.
 
-- **A blind test of grade 8's settlement fed the first pass a strawman.** It took each entry's
-  `evidence[0]`, which is usually the *introduces* citation at a different lesson than the
-  primary, and paired it with the primary lesson — making the first pass appear to cite
-  activities from the wrong lesson in 12 of 18 items, all on its side. Thrown away and re-run.
-- **The citation checker reported page offsets of −59.** Every one was the quote appearing in
-  the unit's front matter, because the checker took the *first* page containing it rather than
-  the nearest.
+- **A blind test of grade 8's settlement fed the first pass a strawman.** It took
+  each entry's `evidence[0]`, which is usually the *introduces* citation at a
+  different lesson than the primary, and paired it with the primary lesson —
+  making the first pass appear to cite activities from the wrong lesson in 12 of
+  18 items. Thrown away and re-run.
+- **The citation checker reported page offsets of −59.** Every one was the quote
+  appearing in the unit's front matter, because the checker took the *first* page
+  containing it rather than the nearest.
 
-When a measurement comes out lopsided, check the instrument before believing the result.
+A third, from the figure audit: **arithmetic alone would have passed three of the
+nine `wrong` descriptions**, and every failure in the second wave existed only
+because somebody looked at the picture. When a check and a reading disagree,
+find out which is wrong before trusting either.

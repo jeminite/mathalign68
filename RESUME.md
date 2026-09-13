@@ -3,7 +3,7 @@
 ## Status
 
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a deploy gate
-that passes — 114 checks, 0 skipped.
+that passes — **126 checks, 0 skipped**, plus 90 engine and 57 render checks in `npm test`.
 
 **`REVIEW.md` is the standing list of what a person still has to decide or check.** None of it
 blocks the gate; all of it is what a machine cannot catch. Read it before touching published
@@ -27,7 +27,7 @@ and 118 constructed-response answers taken from NYSED's own exemplary responses.
 remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
 their standard, their statewide P-value and a link to the official page.
 
-**Grades 7 and 8 are aligned and published — 264 of 396 items** carry a judged placement with
+**All three grades are aligned and published — 385 of 396 items** carry a judged placement with
 named, paged, quoted evidence, rendered on each question card. Grade 6 is next. The nine items
 still without a placement are the six grade 7 and three grade 6 items whose PDF page
 `build_pagemap.py` leaves undetermined: no stem, so no lesson is guessed.
@@ -75,11 +75,53 @@ placed" for every item until grade 6 is swept. That is the main reason grade 6 i
 | 2 — questions for 2026 grade 7 | done | 42 items published |
 | 3 — curriculum index from the TCGs | done | — |
 | 4 — questions for 2026 grades 6 and 8 | done | — |
-| 5 — class-results analyzer | done | — |
+| 5 — class-results analyzer | done, deployed 2026-09-13 | — |
 | 3a — national IM 6–8 alignment (public tables) | after 2 | — |
 | 3b — Imagine IM New York 6–8 alignment | done | — |
-| 3c — the per-ITEM judgement pass | grades 7 and 8 published; grade 6 next | — |
+| 3c — the per-ITEM judgement pass | done — 385 of 396 published | — |
 | 4 — scoring-materials exemplars, CCLS-era archive | later | — |
+
+## Where to pick up — 2026-09-13
+
+The analyser is complete and live. It now answers four questions in order: **what happened**
+(class against the state, item by item, with the dominant wrong answer named), **what to focus on**
+(standards ranked by expected credits lost per student per year — the gap multiplied by how many
+credits that standard actually carries), **when it is taught** (against the 35-week pacing
+calendar), and **what to ask** (real released questions per unit, with NYSED's own answers).
+
+Ranked by value, and none of it is blocked:
+
+1. **Look at the analyse page.** `REVIEW.md` item 18. It is live and passes 57 render checks and
+   nobody has opened it. The Chrome extension needs site permission for `localhost` and a claude.ai
+   login in Profile 4; everything else about it checks out.
+2. **Act on the pacing finding.** The standards that gate proficiency concentrate in Unit 6
+   (week 21) and Unit 7 (week 25), so **17 of the 20 distinct gating credits are taught in weeks
+   21-29** against a test at roughly week 30 — the content that most decides proficiency arrives
+   last, with the least room to reteach. Moving some of it earlier is the highest-leverage single
+   change the data points to, and it needs a dependency reading of the course guide plus a decision
+   about what gives. Units 1-5 already fill about twenty weeks.
+3. **Unit 7 has no mid-unit assessment**, carries gating weight, and starts five weeks before the
+   test — one reading, at the end. The analyse page calls this out; adding an interim check is a
+   smaller and more obviously correct change than reordering units.
+4. **Decide what to do about `6.SP`.** `provenance/statistics_blind_spot.md`: taught only in Unit 8
+   (weeks 29-32), assessed only on the **grade 7** test, zero released credits in grade 6. Taught
+   last, never measured in its own grade, separated from its test by a summer. A September
+   diagnostic in grade 7 is the obvious response and there are 7 released credits across four years
+   to build one from — thin, and that is the constraint.
+5. **Eleven items still carry no placement**, for reasons already recorded as `REVIEW.md` items 10
+   and 11. Worth one pass to see whether any has become fixable.
+
+### The private counterpart
+
+`MS343Teaching` (in `~/Developer/ClaudeProjects/`, deliberately outside iCloud — see
+`RELATIONSHIPS.md`) has its own `RESUME.md`. In short: raw-score-to-level curves recovered for
+grades 5, 6 and 7; per-student plans for two incoming cohorts; 19 checks. Its next action is to
+name **lessons** rather than units in the plans, now that 385 items carry a judged placement.
+
+**It imports `templates/analyze/engine.js` and reads `site/data.json`.** So the engine is a small
+public API as well as this site's internals — `cfb6c9f` changed how placement works and the import
+survived, but the thing that proves it is `node tools/test_curves.js` over there, not anything in
+this repo. Run it after touching the engine.
 
 ## Done in Phase 0
 
