@@ -499,6 +499,37 @@ table.grid a:hover { text-decoration:underline }
 }
 .actions button:hover { background:var(--accent-d) }
 
+/* Checkpoint sets. Laid out to be printed and handed out, which is the only way
+   a checkpoint actually gets used. */
+.cp {
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; margin:12px 0; box-shadow:var(--shadow);
+}
+.cp-h { display:flex; align-items:center; gap:8px; flex-wrap:wrap; color:var(--ink);
+        border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:4px }
+.cp-h .spacer { flex:1 }
+.cp-when {
+  margin:12px 0 6px; font-size:12.5px; font-weight:700; color:var(--accent);
+  text-transform:uppercase; letter-spacing:.04em;
+}
+.cp-q { border-left:3px solid var(--line); padding:2px 0 2px 12px; margin:10px 0 }
+.cp-q-h { font-size:12.5px; color:var(--muted) }
+.cp-q-h a { color:var(--accent) }
+.cp-instr { margin:6px 0 2px; font-style:italic; color:var(--body) }
+.cp-stem { margin:6px 0; color:var(--ink) }
+.cp-fig { max-width:100%; height:auto; margin:8px 0; border-radius:6px }
+.cp-choices { margin:6px 0 0; padding-left:22px }
+.cp-choices li { margin:3px 0 }
+
+/* The answer key sits last and prints last, so a set can be handed out without
+   it by dropping the final page. */
+.answers {
+  margin:22px 0 0; padding:12px 14px; border:1px dashed var(--line);
+  border-radius:10px; background:var(--line-soft);
+}
+.answers h4 { margin:0 0 8px }
+.ans { margin:3px 0; font-size:13.5px }
+
 /* A printed report is the thing that gets taken to a meeting, so it is laid
  * out rather than left to the browser: no controls, no drop zone, and tables
  * that do not break across a page mid-row. */
@@ -508,6 +539,10 @@ table.grid a:hover { text-decoration:underline }
   .wrap-a { max-width:none; padding:0 }
   table.grid { font-size:11px }
   table.grid tr, .dom { page-break-inside:avoid }
+  /* One unit's checkpoint per page, and never a question split across a break. */
+  .cp { page-break-before:always; page-break-inside:avoid; border:0; box-shadow:none; padding:0 }
+  .cp-q { page-break-inside:avoid }
+  .answers { page-break-before:always }
   .caution, .warn { border-left-width:3px }
 }
 
@@ -777,7 +812,48 @@ table.grid a:hover { text-decoration:underline }
     });
   }
 
-  var api = { parse: parse, colIndex: colIndex };
+  // Every sheet, in workbook order, with its name. The analyse page deliberately
+  // reads only the first sheet -- a results export has one -- but a longitudinal
+  // workbook keeps one sheet per cohort, and a caller that needs those should not
+  // have to reimplement the unzip to get them.
+  function parseAll(buf) {
+    var map;
+    try {
+      map = unzip(buf);
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    var sheets = Object.keys(map).filter(function (n) {
+      return /^xl\/worksheets\/sheet\d+\.xml$/.test(n);
+    }).sort(function (a, b) {
+      return parseInt(/(\d+)/.exec(a)[1], 10) - parseInt(/(\d+)/.exec(b)[1], 10);
+    });
+    if (!sheets.length) return Promise.reject(new Error("That file has no worksheets in it."));
+
+    return read(map, "xl/workbook.xml").then(function (wbXml) {
+      // Sheet names live in workbook.xml in presentation order, which is not
+      // necessarily the sheetN.xml numbering order. Zipping them by position is
+      // what every other reader does and is right often enough to be useful;
+      // callers that must be certain should match on content, not on name.
+      var names = [];
+      var re = /<sheet\b[^>]*\bname="([^"]*)"/g, m;
+      while ((m = re.exec(wbXml || "")) !== null) names.push(unescapeXml(m[1]));
+      return read(map, "xl/sharedStrings.xml").then(function (ssXml) {
+        var strings = sharedStrings(ssXml);
+        var out = [];
+        function step(i) {
+          if (i >= sheets.length) return out;
+          return read(map, sheets[i]).then(function (sheetXml) {
+            out.push({ name: names[i] || sheets[i], grid: sheetGrid(sheetXml || "", strings) });
+            return step(i + 1);
+          });
+        }
+        return step(0);
+      });
+    });
+  }
+
+  var api = { parse: parse, parseAll: parseAll, colIndex: colIndex };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.XlsxLite = api;
 })(this);
@@ -1338,6 +1414,8 @@ table.grid a:hover { text-decoration:underline }
                               : { usable: false, why: "this file carries no proficiency-level column" };
     var focusRows = focus(items, data, test.grade);
     var place = placement(items, data, test.grade);
+    place.focusRows = focusRows;
+    var checks = checkpoints(items, data, gating, place, test.grade);
 
     // Gating credits per unit -- the finding that turned out to matter most on
     // the real file. The standards that gate proficiency concentrate in units
@@ -1389,7 +1467,7 @@ table.grid a:hover { text-decoration:underline }
       bySection: bySection,
       totalCredits: totalCredits,
       curve: curve, gating: gating, focus: focusRows,
-      placement: place, gatingByUnit: gatingByUnit,
+      placement: place, gatingByUnit: gatingByUnit, checkpoints: checks,
       constructed: items.filter(function (i) { return i.type === "cr"; })
                         .sort(function (a, b) { return b.zeroCredit - a.zeroCredit; }),
       omissions: items.filter(function (i) { return i.omitted > 0; })
@@ -1572,6 +1650,143 @@ table.grid a:hover { text-decoration:underline }
              unitAccuracy: 0.963, lessonAccuracy: 0.774 };
   }
 
+  /* ---------------------------------------------------------- checkpoints */
+
+  // Real released questions to check the gating standards with, placed on the
+  // pacing calendar.
+  //
+  // The rest of this report says what happened, what to focus on and when it is
+  // taught. It stopped short of what to ASK, which left a teacher with a date and
+  // no instrument. Every item here is a real released NYSED question with its own
+  // published answer; nothing is generated.
+  //
+  // AlgebraTeaching's Snorkl calendar is the model, including the placement rule:
+  // check a standard just after it is first taught, not at the end of the year.
+  var CHECKPOINT_CAP = 6;
+
+  function checkpoints(items, data, gating, place, grade) {
+    if (!gating.usable) return { usable: false, why: gating.why };
+
+    var lost = {};
+    (place.focusRows || []).forEach(function (f) { lost[f.standard] = f.creditsLost; });
+
+    var gates = gating.rows.filter(function (r) { return r.bucket === "gates-L2-L3"; });
+    if (!gates.length) return { usable: false, why: "no standard gated proficiency cleanly" };
+
+    // A standard taught in several units is checked in the EARLIEST of them. A
+    // checkpoint after the third teaching is not a checkpoint, it is a post-mortem.
+    var byUnit = {}, unschedulable = [];
+    gates.forEach(function (r) {
+      var us = (place.byStandard[r.standard] || []).slice()
+        .sort(function (a, b) { return (a.startWeek || 99) - (b.startWeek || 99); });
+      if (!us.length) { unschedulable.push(r.standard); return; }
+      var u = us[0];
+      var g = byUnit[u.unit] = byUnit[u.unit] ||
+        { unit: u.unit, title: u.title, startWeek: u.startWeek,
+          midUnitAssessment: u.midUnitAssessment, standards: [] };
+      g.standards.push(r);
+    });
+
+    // The class's own result per standard, to choose between items on it.
+    var classOn = {};
+    items.forEach(function (i) {
+      var c = classOn[i.standard] = classOn[i.standard] || { cr: [], all: [] };
+      c.all.push(i);
+      if (i.type === "cr") c.cr.push(i);
+    });
+
+    // Everything released on this grade, transcribed, with an answer to mark
+    // against. An item with no answer cannot be a checkpoint.
+    var pool = data.items.filter(function (it) {
+      if (it.grade !== grade || !it.transcribed) return false;
+      return it.type === "Multiple Choice" ? !!it.key : !!((it.cr || {}).answer);
+    });
+
+    var used = {}, thinSupply = [];
+
+    function pick(std, want) {
+      var avail = pool.filter(function (it) { return it.standard === std && !used[it.id]; });
+      // Constructed response first where the class lost most ground on this
+      // standard's CR items -- that is where a wrong answer is most legible.
+      var weakCr = (classOn[std] && classOn[std].cr.length)
+        ? classOn[std].cr.some(function (i) { return i.gap !== null && i.gap < -0.05; })
+        : false;
+      avail.sort(function (a, b) {
+        if (weakCr && (a.type === "Multiple Choice") !== (b.type === "Multiple Choice")) {
+          return a.type === "Multiple Choice" ? 1 : -1;
+        }
+        // Then the item the state found hardest: a checkpoint that everyone
+        // passes has told the teacher nothing.
+        var pa = a.pValue === null ? 1 : a.pValue, pb = b.pValue === null ? 1 : b.pValue;
+        if (pa !== pb) return pa - pb;
+        return b.year - a.year;
+      });
+      var out = avail.slice(0, want);
+      out.forEach(function (it) { used[it.id] = 1; });
+      if (out.length < want) thinSupply.push({ standard: std, wanted: want, got: out.length });
+      return out.map(function (it) {
+        return { id: it.id, year: it.year, item: it.item, type: it.type,
+                 credits: it.credits, standard: it.standard, key: it.key || null,
+                 stem: it.stem || null, stemAfter: it.stemAfter || null,
+                 stemPlain: it.stemPlain || null, instructions: it.instructions || null,
+                 choiceList: it.choiceList || null, choicesInImage: !!it.choicesInImage,
+                 figures: it.figures || [], answer: (it.cr || {}).answer || null,
+                 pValue: it.pValue, sourceUrl: it.sourceUrl || null };
+      });
+    }
+
+    // One item per gating standard; a second for the standards costing the most
+    // credits. Unbounded, this gave one unit ten items -- that is an exam, not a
+    // checkpoint, and an exam does not get used as one.
+    var ranked = gates.slice().sort(function (a, b) {
+      return (lost[b.standard] || 0) - (lost[a.standard] || 0);
+    });
+    var doubled = {};
+    ranked.slice(0, Math.max(1, Math.ceil(ranked.length / 3))).forEach(function (r) {
+      doubled[r.standard] = 1;
+    });
+
+    var units = Object.keys(byUnit).map(function (k) { return byUnit[k]; })
+      .sort(function (a, b) { return (a.startWeek || 99) - (b.startWeek || 99); });
+
+    units.forEach(function (u) {
+      var picked = [];
+      u.standards.sort(function (a, b) {
+        return (lost[b.standard] || 0) - (lost[a.standard] || 0);
+      }).forEach(function (r) {
+        if (picked.length >= CHECKPOINT_CAP) return;
+        var want = doubled[r.standard] ? 2 : 1;
+        want = Math.min(want, CHECKPOINT_CAP - picked.length);
+        picked = picked.concat(pick(r.standard, want));
+      });
+      u.items = picked;
+      u.gatingCredits = u.standards.reduce(function (a, r) { return a + r.credits; }, 0);
+      // Split across the mid-unit assessment and the unit assessment where there
+      // is one. Where there is not, the unit gives a single reading at the end --
+      // which for a unit carrying real gating weight close to the test is worth
+      // saying out loud.
+      if (u.midUnitAssessment && picked.length > 1) {
+        var half = Math.ceil(picked.length / 2);
+        u.sets = [{ when: "mid-unit assessment", items: picked.slice(0, half) },
+                  { when: "unit assessment", items: picked.slice(half) }];
+      } else {
+        u.sets = [{ when: "unit assessment", items: picked }];
+      }
+    });
+
+    var lateNoMid = units.filter(function (u) {
+      return !u.midUnitAssessment && u.gatingCredits >= 4 && u.startWeek >= 21;
+    });
+
+    return { usable: true, cap: CHECKPOINT_CAP, units: units,
+             totalItems: units.reduce(function (a, u) { return a + u.items.length; }, 0),
+             thinSupply: thinSupply, unschedulable: unschedulable,
+             lateWithoutMidUnit: lateNoMid.map(function (u) {
+               return { unit: u.unit, title: u.title, startWeek: u.startWeek,
+                        gatingCredits: u.gatingCredits };
+             }) };
+  }
+
   /* -------------------------------------------------------------- the guard */
 
   // Walk the finished report and refuse to hand back anything identity-shaped.
@@ -1664,6 +1879,7 @@ table.grid a:hover { text-decoration:underline }
               identifyTest: identifyTest, plCurve: plCurve,
               creditsToReach: creditsToReach, focus: focus,
               bandGating: bandGating, placement: placement,
+              checkpoints: checkpoints,
               analyse: analyse, assertNoIdentity: assertNoIdentity, run: run };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.ClassEngine = api;
@@ -1936,6 +2152,68 @@ table.grid a:hover { text-decoration:underline }
              (r.grade || "") + " unit: " + r.placement.priorGrade.map(esc).join(", ") + ".</p>");
     }
 
+    /* ---- what to ask, and when ---- */
+    var C = r.checkpoints;
+    if (C && C.usable) {
+      h.push("<h3>What to ask, and when</h3>");
+      h.push('<p class="note">Real released questions to check the gating standards with, ' +
+             "placed just after each is first taught \u2014 a check at the end of the year is a " +
+             "post-mortem. Every question is NYSED's own, with NYSED's own answer; nothing here " +
+             "is invented. Capped at " + C.cap + " per unit, because a longer set is an exam and " +
+             "an exam does not get used as a checkpoint.</p>");
+
+      if (C.lateWithoutMidUnit.length) {
+        C.lateWithoutMidUnit.forEach(function (u) {
+          h.push('<div class="caution"><strong>Unit ' + u.unit + " carries " + u.gatingCredits +
+                 " proficiency-gating credits, starts in week " + u.startWeek +
+                 ", and has no mid-unit assessment.</strong> That gives one reading, at the end, " +
+                 "with little of the year left to act on it. If any unit is worth adding an " +
+                 "interim check to, it is this one.</div>");
+        });
+      }
+
+      C.units.forEach(function (u) {
+        h.push('<div class="cp">');
+        h.push('<div class="cp-h"><strong>Unit ' + u.unit + " \u2014 " + esc(u.title || "?") +
+               '</strong><span class="spacer"></span><span class="muted">week ' +
+               (u.startWeek === null ? "?" : u.startWeek) + " \u00b7 " + u.gatingCredits +
+               " gating credits</span></div>");
+        u.sets.forEach(function (st) {
+          if (!st.items.length) return;
+          h.push('<p class="cp-when">' + esc(st.when) + "</p>");
+          st.items.forEach(function (it) { h.push(cpItem(it)); });
+        });
+        h.push("</div>");
+      });
+
+      h.push('<div class="answers"><h4>Answer key</h4>');
+      C.units.forEach(function (u) {
+        u.items.forEach(function (it) {
+          h.push('<p class="ans"><strong>' + it.year + " Q" + it.item + "</strong> \u00b7 " +
+                 esc(it.standard) + " \u2014 " +
+                 (it.type === "Multiple Choice"
+                   ? "<strong>" + esc(it.key) + "</strong>"
+                   : trusted(it.answer) || '<span class="muted">see the rating guide</span>') +
+                 "</p>");
+        });
+      });
+      h.push("</div>");
+
+      var notes = [];
+      if (C.thinSupply.length) {
+        notes.push("Only " + C.thinSupply.map(function (t) {
+          return t.got + " released question" + (t.got === 1 ? "" : "s") + " exist" +
+                 (t.got === 1 ? "s" : "") + " on " + t.standard;
+        }).join(", ") + ", so that check cannot be varied year to year.");
+      }
+      if (C.unschedulable.length) {
+        notes.push(C.unschedulable.map(esc).join(", ") + " gates proficiency but sits in no unit " +
+                   "in the publisher's table, so it could not be placed on the calendar. " +
+                   "Check it by hand.");
+      }
+      if (notes.length) h.push('<p class="note">' + notes.join(" ") + "</p>");
+    }
+
     /* ---- rollups ---- */
     h.push("<h3>By standard</h3>");
     h.push(rollupTable(r.byStandard, "Standard"));
@@ -2031,6 +2309,48 @@ table.grid a:hover { text-decoration:underline }
            ". Closing the gap to the State average is worth real credits, but it is " +
            "<strong>not</strong> the same as moving a student up a level: that takes closer to " +
            "8 credits from mid-Level 2.";
+  }
+
+  // One checkpoint question, printable. Stems and choices come from the payload
+  // and carry the site's own <span class="math"> markup, so they go in as HTML;
+  // everything derived from the dropped file still goes through esc().
+  function cpItem(it) {
+    var h = ['<div class="cp-q">'];
+    h.push('<div class="cp-q-h">' + it.year + " Q" + it.item + " \u00b7 " + esc(it.standard) +
+           " \u00b7 " + (it.type === "Multiple Choice" ? "multiple choice"
+                                                       : it.credits + "-credit response") +
+           ' \u00b7 <span class="muted">State ' + pc(it.pValue) + " got this right</span>" +
+           (it.sourceUrl ? ' \u00b7 <a href="' + esc(it.sourceUrl) +
+            '" target="_blank" rel="noopener">official page</a>' : "") + "</div>");
+    // Stem, figures, stemAfter, instructions, choices -- the order templates/app.js
+    // uses. Instructions printed first put "Show your work. / Answer" above the
+    // question they belong under, and stemAfter was dropped entirely, losing the
+    // second half of any item whose text wraps around its figure.
+    if (it.stem) h.push('<div class="cp-stem">' + trusted(it.stem) + "</div>");
+    (it.figures || []).forEach(function (f) {
+      h.push('<img class="cp-fig" src="../assets/' + esc(f.file) + '" alt="' +
+             esc(f.alt || "figure") + '">');
+    });
+    if (it.stemAfter) h.push('<div class="cp-stem">' + trusted(it.stemAfter) + "</div>");
+    // An ARRAY of lines, the way the main page treats it. Concatenating it as a
+    // string printed "Show your work.,Answer" on every constructed-response item.
+    (it.instructions || []).forEach(function (line) {
+      h.push('<p class="cp-instr">' + trusted(line) + "</p>");
+    });
+    if (it.type === "Multiple Choice") {
+      if (it.choicesInImage) {
+        h.push('<p class="muted">The answer choices are pictures \u2014 open the official page ' +
+               "to print them.</p>");
+      } else if (it.choiceList) {
+        h.push('<ol class="cp-choices">');
+        it.choiceList.forEach(function (c) {
+          h.push("<li><strong>" + esc(c.label) + "</strong> " + trusted(c.text) + "</li>");
+        });
+        h.push("</ol>");
+      }
+    }
+    h.push("</div>");
+    return h.join("");
   }
 
   function tally(i) {

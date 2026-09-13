@@ -552,6 +552,8 @@
                               : { usable: false, why: "this file carries no proficiency-level column" };
     var focusRows = focus(items, data, test.grade);
     var place = placement(items, data, test.grade);
+    place.focusRows = focusRows;
+    var checks = checkpoints(items, data, gating, place, test.grade);
 
     // Gating credits per unit -- the finding that turned out to matter most on
     // the real file. The standards that gate proficiency concentrate in units
@@ -603,7 +605,7 @@
       bySection: bySection,
       totalCredits: totalCredits,
       curve: curve, gating: gating, focus: focusRows,
-      placement: place, gatingByUnit: gatingByUnit,
+      placement: place, gatingByUnit: gatingByUnit, checkpoints: checks,
       constructed: items.filter(function (i) { return i.type === "cr"; })
                         .sort(function (a, b) { return b.zeroCredit - a.zeroCredit; }),
       omissions: items.filter(function (i) { return i.omitted > 0; })
@@ -786,6 +788,143 @@
              unitAccuracy: 0.963, lessonAccuracy: 0.774 };
   }
 
+  /* ---------------------------------------------------------- checkpoints */
+
+  // Real released questions to check the gating standards with, placed on the
+  // pacing calendar.
+  //
+  // The rest of this report says what happened, what to focus on and when it is
+  // taught. It stopped short of what to ASK, which left a teacher with a date and
+  // no instrument. Every item here is a real released NYSED question with its own
+  // published answer; nothing is generated.
+  //
+  // AlgebraTeaching's Snorkl calendar is the model, including the placement rule:
+  // check a standard just after it is first taught, not at the end of the year.
+  var CHECKPOINT_CAP = 6;
+
+  function checkpoints(items, data, gating, place, grade) {
+    if (!gating.usable) return { usable: false, why: gating.why };
+
+    var lost = {};
+    (place.focusRows || []).forEach(function (f) { lost[f.standard] = f.creditsLost; });
+
+    var gates = gating.rows.filter(function (r) { return r.bucket === "gates-L2-L3"; });
+    if (!gates.length) return { usable: false, why: "no standard gated proficiency cleanly" };
+
+    // A standard taught in several units is checked in the EARLIEST of them. A
+    // checkpoint after the third teaching is not a checkpoint, it is a post-mortem.
+    var byUnit = {}, unschedulable = [];
+    gates.forEach(function (r) {
+      var us = (place.byStandard[r.standard] || []).slice()
+        .sort(function (a, b) { return (a.startWeek || 99) - (b.startWeek || 99); });
+      if (!us.length) { unschedulable.push(r.standard); return; }
+      var u = us[0];
+      var g = byUnit[u.unit] = byUnit[u.unit] ||
+        { unit: u.unit, title: u.title, startWeek: u.startWeek,
+          midUnitAssessment: u.midUnitAssessment, standards: [] };
+      g.standards.push(r);
+    });
+
+    // The class's own result per standard, to choose between items on it.
+    var classOn = {};
+    items.forEach(function (i) {
+      var c = classOn[i.standard] = classOn[i.standard] || { cr: [], all: [] };
+      c.all.push(i);
+      if (i.type === "cr") c.cr.push(i);
+    });
+
+    // Everything released on this grade, transcribed, with an answer to mark
+    // against. An item with no answer cannot be a checkpoint.
+    var pool = data.items.filter(function (it) {
+      if (it.grade !== grade || !it.transcribed) return false;
+      return it.type === "Multiple Choice" ? !!it.key : !!((it.cr || {}).answer);
+    });
+
+    var used = {}, thinSupply = [];
+
+    function pick(std, want) {
+      var avail = pool.filter(function (it) { return it.standard === std && !used[it.id]; });
+      // Constructed response first where the class lost most ground on this
+      // standard's CR items -- that is where a wrong answer is most legible.
+      var weakCr = (classOn[std] && classOn[std].cr.length)
+        ? classOn[std].cr.some(function (i) { return i.gap !== null && i.gap < -0.05; })
+        : false;
+      avail.sort(function (a, b) {
+        if (weakCr && (a.type === "Multiple Choice") !== (b.type === "Multiple Choice")) {
+          return a.type === "Multiple Choice" ? 1 : -1;
+        }
+        // Then the item the state found hardest: a checkpoint that everyone
+        // passes has told the teacher nothing.
+        var pa = a.pValue === null ? 1 : a.pValue, pb = b.pValue === null ? 1 : b.pValue;
+        if (pa !== pb) return pa - pb;
+        return b.year - a.year;
+      });
+      var out = avail.slice(0, want);
+      out.forEach(function (it) { used[it.id] = 1; });
+      if (out.length < want) thinSupply.push({ standard: std, wanted: want, got: out.length });
+      return out.map(function (it) {
+        return { id: it.id, year: it.year, item: it.item, type: it.type,
+                 credits: it.credits, standard: it.standard, key: it.key || null,
+                 stem: it.stem || null, stemAfter: it.stemAfter || null,
+                 stemPlain: it.stemPlain || null, instructions: it.instructions || null,
+                 choiceList: it.choiceList || null, choicesInImage: !!it.choicesInImage,
+                 figures: it.figures || [], answer: (it.cr || {}).answer || null,
+                 pValue: it.pValue, sourceUrl: it.sourceUrl || null };
+      });
+    }
+
+    // One item per gating standard; a second for the standards costing the most
+    // credits. Unbounded, this gave one unit ten items -- that is an exam, not a
+    // checkpoint, and an exam does not get used as one.
+    var ranked = gates.slice().sort(function (a, b) {
+      return (lost[b.standard] || 0) - (lost[a.standard] || 0);
+    });
+    var doubled = {};
+    ranked.slice(0, Math.max(1, Math.ceil(ranked.length / 3))).forEach(function (r) {
+      doubled[r.standard] = 1;
+    });
+
+    var units = Object.keys(byUnit).map(function (k) { return byUnit[k]; })
+      .sort(function (a, b) { return (a.startWeek || 99) - (b.startWeek || 99); });
+
+    units.forEach(function (u) {
+      var picked = [];
+      u.standards.sort(function (a, b) {
+        return (lost[b.standard] || 0) - (lost[a.standard] || 0);
+      }).forEach(function (r) {
+        if (picked.length >= CHECKPOINT_CAP) return;
+        var want = doubled[r.standard] ? 2 : 1;
+        want = Math.min(want, CHECKPOINT_CAP - picked.length);
+        picked = picked.concat(pick(r.standard, want));
+      });
+      u.items = picked;
+      u.gatingCredits = u.standards.reduce(function (a, r) { return a + r.credits; }, 0);
+      // Split across the mid-unit assessment and the unit assessment where there
+      // is one. Where there is not, the unit gives a single reading at the end --
+      // which for a unit carrying real gating weight close to the test is worth
+      // saying out loud.
+      if (u.midUnitAssessment && picked.length > 1) {
+        var half = Math.ceil(picked.length / 2);
+        u.sets = [{ when: "mid-unit assessment", items: picked.slice(0, half) },
+                  { when: "unit assessment", items: picked.slice(half) }];
+      } else {
+        u.sets = [{ when: "unit assessment", items: picked }];
+      }
+    });
+
+    var lateNoMid = units.filter(function (u) {
+      return !u.midUnitAssessment && u.gatingCredits >= 4 && u.startWeek >= 21;
+    });
+
+    return { usable: true, cap: CHECKPOINT_CAP, units: units,
+             totalItems: units.reduce(function (a, u) { return a + u.items.length; }, 0),
+             thinSupply: thinSupply, unschedulable: unschedulable,
+             lateWithoutMidUnit: lateNoMid.map(function (u) {
+               return { unit: u.unit, title: u.title, startWeek: u.startWeek,
+                        gatingCredits: u.gatingCredits };
+             }) };
+  }
+
   /* -------------------------------------------------------------- the guard */
 
   // Walk the finished report and refuse to hand back anything identity-shaped.
@@ -878,6 +1017,7 @@
               identifyTest: identifyTest, plCurve: plCurve,
               creditsToReach: creditsToReach, focus: focus,
               bandGating: bandGating, placement: placement,
+              checkpoints: checkpoints,
               analyse: analyse, assertNoIdentity: assertNoIdentity, run: run };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.ClassEngine = api;

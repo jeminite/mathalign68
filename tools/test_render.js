@@ -204,6 +204,27 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
     const focusAt = out.indexOf("Where to focus next year");
     ok("the results precede the recommendations", gapAt >= 0 && gapAt < focusAt, [gapAt, focusAt]);
 
+    // Checkpoints
+    ok("the checkpoint section rendered", /What to ask, and when/.test(out), true);
+    ok("it says the questions are NYSED's own", /nothing here\s*is invented/.test(out), true);
+    ok("the cap is explained, not just applied", /an exam does not get used/.test(out), true);
+    ok("an answer key is present", /Answer key/.test(out), true);
+    ok("the answer key comes after the questions",
+       out.indexOf("Answer key") > out.indexOf("What to ask, and when"), true);
+    ok("checkpoint items deep-link to the official page",
+       /official page/.test(out), true);
+    ok("Unit 7's missing mid-unit assessment is called out",
+       /has no mid-unit assessment/.test(out), true);
+    ok("the unschedulable gating standard is named",
+       /NY-6\.G\.5/.test(out) && /Check it by hand/.test(out), true);
+    // Figures are served from the site's own assets, not from anywhere else.
+    const figs = (out.match(/<img[^>]+src="([^"]+)"/g) || [])
+      .map((m) => m.replace(/^.*src="([^"]+)".*$/, "$1"));
+    ok("every checkpoint figure is a same-origin asset path",
+       figs.every((u) => u.indexOf("../assets/") === 0), figs.slice(0, 3));
+    ok("no instructions array leaked as a comma-joined string",
+       !/Show your work\.,/.test(out), true);
+
     // An individual proficiency level must not reach the page. The curve and the
     // band percentages are aggregate; a per-student PL is not.
     ok("no per-student proficiency level in the rendered report",

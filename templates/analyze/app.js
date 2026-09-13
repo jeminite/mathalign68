@@ -263,6 +263,68 @@
              (r.grade || "") + " unit: " + r.placement.priorGrade.map(esc).join(", ") + ".</p>");
     }
 
+    /* ---- what to ask, and when ---- */
+    var C = r.checkpoints;
+    if (C && C.usable) {
+      h.push("<h3>What to ask, and when</h3>");
+      h.push('<p class="note">Real released questions to check the gating standards with, ' +
+             "placed just after each is first taught \u2014 a check at the end of the year is a " +
+             "post-mortem. Every question is NYSED's own, with NYSED's own answer; nothing here " +
+             "is invented. Capped at " + C.cap + " per unit, because a longer set is an exam and " +
+             "an exam does not get used as a checkpoint.</p>");
+
+      if (C.lateWithoutMidUnit.length) {
+        C.lateWithoutMidUnit.forEach(function (u) {
+          h.push('<div class="caution"><strong>Unit ' + u.unit + " carries " + u.gatingCredits +
+                 " proficiency-gating credits, starts in week " + u.startWeek +
+                 ", and has no mid-unit assessment.</strong> That gives one reading, at the end, " +
+                 "with little of the year left to act on it. If any unit is worth adding an " +
+                 "interim check to, it is this one.</div>");
+        });
+      }
+
+      C.units.forEach(function (u) {
+        h.push('<div class="cp">');
+        h.push('<div class="cp-h"><strong>Unit ' + u.unit + " \u2014 " + esc(u.title || "?") +
+               '</strong><span class="spacer"></span><span class="muted">week ' +
+               (u.startWeek === null ? "?" : u.startWeek) + " \u00b7 " + u.gatingCredits +
+               " gating credits</span></div>");
+        u.sets.forEach(function (st) {
+          if (!st.items.length) return;
+          h.push('<p class="cp-when">' + esc(st.when) + "</p>");
+          st.items.forEach(function (it) { h.push(cpItem(it)); });
+        });
+        h.push("</div>");
+      });
+
+      h.push('<div class="answers"><h4>Answer key</h4>');
+      C.units.forEach(function (u) {
+        u.items.forEach(function (it) {
+          h.push('<p class="ans"><strong>' + it.year + " Q" + it.item + "</strong> \u00b7 " +
+                 esc(it.standard) + " \u2014 " +
+                 (it.type === "Multiple Choice"
+                   ? "<strong>" + esc(it.key) + "</strong>"
+                   : trusted(it.answer) || '<span class="muted">see the rating guide</span>') +
+                 "</p>");
+        });
+      });
+      h.push("</div>");
+
+      var notes = [];
+      if (C.thinSupply.length) {
+        notes.push("Only " + C.thinSupply.map(function (t) {
+          return t.got + " released question" + (t.got === 1 ? "" : "s") + " exist" +
+                 (t.got === 1 ? "s" : "") + " on " + t.standard;
+        }).join(", ") + ", so that check cannot be varied year to year.");
+      }
+      if (C.unschedulable.length) {
+        notes.push(C.unschedulable.map(esc).join(", ") + " gates proficiency but sits in no unit " +
+                   "in the publisher's table, so it could not be placed on the calendar. " +
+                   "Check it by hand.");
+      }
+      if (notes.length) h.push('<p class="note">' + notes.join(" ") + "</p>");
+    }
+
     /* ---- rollups ---- */
     h.push("<h3>By standard</h3>");
     h.push(rollupTable(r.byStandard, "Standard"));
@@ -358,6 +420,48 @@
            ". Closing the gap to the State average is worth real credits, but it is " +
            "<strong>not</strong> the same as moving a student up a level: that takes closer to " +
            "8 credits from mid-Level 2.";
+  }
+
+  // One checkpoint question, printable. Stems and choices come from the payload
+  // and carry the site's own <span class="math"> markup, so they go in as HTML;
+  // everything derived from the dropped file still goes through esc().
+  function cpItem(it) {
+    var h = ['<div class="cp-q">'];
+    h.push('<div class="cp-q-h">' + it.year + " Q" + it.item + " \u00b7 " + esc(it.standard) +
+           " \u00b7 " + (it.type === "Multiple Choice" ? "multiple choice"
+                                                       : it.credits + "-credit response") +
+           ' \u00b7 <span class="muted">State ' + pc(it.pValue) + " got this right</span>" +
+           (it.sourceUrl ? ' \u00b7 <a href="' + esc(it.sourceUrl) +
+            '" target="_blank" rel="noopener">official page</a>' : "") + "</div>");
+    // Stem, figures, stemAfter, instructions, choices -- the order templates/app.js
+    // uses. Instructions printed first put "Show your work. / Answer" above the
+    // question they belong under, and stemAfter was dropped entirely, losing the
+    // second half of any item whose text wraps around its figure.
+    if (it.stem) h.push('<div class="cp-stem">' + trusted(it.stem) + "</div>");
+    (it.figures || []).forEach(function (f) {
+      h.push('<img class="cp-fig" src="../assets/' + esc(f.file) + '" alt="' +
+             esc(f.alt || "figure") + '">');
+    });
+    if (it.stemAfter) h.push('<div class="cp-stem">' + trusted(it.stemAfter) + "</div>");
+    // An ARRAY of lines, the way the main page treats it. Concatenating it as a
+    // string printed "Show your work.,Answer" on every constructed-response item.
+    (it.instructions || []).forEach(function (line) {
+      h.push('<p class="cp-instr">' + trusted(line) + "</p>");
+    });
+    if (it.type === "Multiple Choice") {
+      if (it.choicesInImage) {
+        h.push('<p class="muted">The answer choices are pictures \u2014 open the official page ' +
+               "to print them.</p>");
+      } else if (it.choiceList) {
+        h.push('<ol class="cp-choices">');
+        it.choiceList.forEach(function (c) {
+          h.push("<li><strong>" + esc(c.label) + "</strong> " + trusted(c.text) + "</li>");
+        });
+        h.push("</ol>");
+      }
+    }
+    h.push("</div>");
+    return h.join("");
   }
 
   function tally(i) {

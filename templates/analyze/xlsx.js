@@ -223,7 +223,48 @@
     });
   }
 
-  var api = { parse: parse, colIndex: colIndex };
+  // Every sheet, in workbook order, with its name. The analyse page deliberately
+  // reads only the first sheet -- a results export has one -- but a longitudinal
+  // workbook keeps one sheet per cohort, and a caller that needs those should not
+  // have to reimplement the unzip to get them.
+  function parseAll(buf) {
+    var map;
+    try {
+      map = unzip(buf);
+    } catch (err) {
+      return Promise.reject(err);
+    }
+    var sheets = Object.keys(map).filter(function (n) {
+      return /^xl\/worksheets\/sheet\d+\.xml$/.test(n);
+    }).sort(function (a, b) {
+      return parseInt(/(\d+)/.exec(a)[1], 10) - parseInt(/(\d+)/.exec(b)[1], 10);
+    });
+    if (!sheets.length) return Promise.reject(new Error("That file has no worksheets in it."));
+
+    return read(map, "xl/workbook.xml").then(function (wbXml) {
+      // Sheet names live in workbook.xml in presentation order, which is not
+      // necessarily the sheetN.xml numbering order. Zipping them by position is
+      // what every other reader does and is right often enough to be useful;
+      // callers that must be certain should match on content, not on name.
+      var names = [];
+      var re = /<sheet\b[^>]*\bname="([^"]*)"/g, m;
+      while ((m = re.exec(wbXml || "")) !== null) names.push(unescapeXml(m[1]));
+      return read(map, "xl/sharedStrings.xml").then(function (ssXml) {
+        var strings = sharedStrings(ssXml);
+        var out = [];
+        function step(i) {
+          if (i >= sheets.length) return out;
+          return read(map, sheets[i]).then(function (sheetXml) {
+            out.push({ name: names[i] || sheets[i], grid: sheetGrid(sheetXml || "", strings) });
+            return step(i + 1);
+          });
+        }
+        return step(0);
+      });
+    });
+  }
+
+  var api = { parse: parse, parseAll: parseAll, colIndex: colIndex };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.XlsxLite = api;
 })(this);

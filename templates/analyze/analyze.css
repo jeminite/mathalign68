@@ -98,6 +98,37 @@ table.grid a:hover { text-decoration:underline }
 }
 .actions button:hover { background:var(--accent-d) }
 
+/* Checkpoint sets. Laid out to be printed and handed out, which is the only way
+   a checkpoint actually gets used. */
+.cp {
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; margin:12px 0; box-shadow:var(--shadow);
+}
+.cp-h { display:flex; align-items:center; gap:8px; flex-wrap:wrap; color:var(--ink);
+        border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:4px }
+.cp-h .spacer { flex:1 }
+.cp-when {
+  margin:12px 0 6px; font-size:12.5px; font-weight:700; color:var(--accent);
+  text-transform:uppercase; letter-spacing:.04em;
+}
+.cp-q { border-left:3px solid var(--line); padding:2px 0 2px 12px; margin:10px 0 }
+.cp-q-h { font-size:12.5px; color:var(--muted) }
+.cp-q-h a { color:var(--accent) }
+.cp-instr { margin:6px 0 2px; font-style:italic; color:var(--body) }
+.cp-stem { margin:6px 0; color:var(--ink) }
+.cp-fig { max-width:100%; height:auto; margin:8px 0; border-radius:6px }
+.cp-choices { margin:6px 0 0; padding-left:22px }
+.cp-choices li { margin:3px 0 }
+
+/* The answer key sits last and prints last, so a set can be handed out without
+   it by dropping the final page. */
+.answers {
+  margin:22px 0 0; padding:12px 14px; border:1px dashed var(--line);
+  border-radius:10px; background:var(--line-soft);
+}
+.answers h4 { margin:0 0 8px }
+.ans { margin:3px 0; font-size:13.5px }
+
 /* A printed report is the thing that gets taken to a meeting, so it is laid
  * out rather than left to the browser: no controls, no drop zone, and tables
  * that do not break across a page mid-row. */
@@ -107,5 +138,9 @@ table.grid a:hover { text-decoration:underline }
   .wrap-a { max-width:none; padding:0 }
   table.grid { font-size:11px }
   table.grid tr, .dom { page-break-inside:avoid }
+  /* One unit's checkpoint per page, and never a question split across a break. */
+  .cp { page-break-before:always; page-break-inside:avoid; border:0; box-shadow:none; padding:0 }
+  .cp-q { page-break-inside:avoid }
+  .answers { page-break-before:always }
   .caution, .warn { border-left-width:3px }
 }

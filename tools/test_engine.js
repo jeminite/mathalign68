@@ -237,6 +237,71 @@ async function main() {
   check("placement states the table's unit-level accuracy",
         [r.placement.unitAccuracy, r.placement.lessonAccuracy], [0.963, 0.774]);
 
+  /* ------------------------------------------------------------ checkpoints */
+
+  const cp = r.checkpoints;
+  ok("checkpoints were built", cp.usable, cp.why);
+  ok("every unit's set is capped", cp.units.every((u) => u.items.length <= cp.cap),
+     cp.units.map((u) => u.items.length));
+  // The cap exists because one item per standard, unbounded, gave a unit ten
+  // items. That is an exam, and an exam does not get used as a checkpoint.
+  ok("a unit with many gating standards is capped, not expanded",
+     cp.units.every((u) => u.items.length <= 6), true);
+  ok("no item is used in two checkpoints", (function () {
+    const seenIds = {};
+    return cp.units.every((u) => u.items.every((i) => {
+      if (seenIds[i.id]) return false;
+      seenIds[i.id] = 1; return true;
+    }));
+  })(), true);
+
+  // Every item must be markable. A checkpoint whose answer is unknown is not one.
+  ok("every checkpoint item has an answer",
+     cp.units.every((u) => u.items.every((i) =>
+       i.type === "Multiple Choice" ? !!i.key : !!i.answer)), true);
+  ok("every checkpoint item resolves to a real released item",
+     cp.units.every((u) => u.items.every((i) =>
+       DATA.items.some((x) => x.id === i.id && x.transcribed))), true);
+
+  // Placement: a standard taught in several units is checked at the EARLIEST.
+  // A checkpoint after the third teaching is a post-mortem.
+  ok("units are ordered by when they are taught",
+     cp.units.every((u, i) => i === 0 || cp.units[i - 1].startWeek <= u.startWeek), true);
+  const cpStds = cp.units.reduce((a, u) => a.concat(u.standards.map((x) => x.standard)), []);
+  ok("each gating standard is checked in exactly one unit",
+     cpStds.length === new Set(cpStds).size, cpStds);
+
+  // A unit with a mid-unit assessment gets two smaller sets rather than one big
+  // one, so there is a reading early enough to act on.
+  const withMid = cp.units.filter((u) => u.midUnitAssessment && u.items.length > 1);
+  ok("a unit with a mid-unit assessment splits its set",
+     withMid.every((u) => u.sets.length === 2), withMid.map((u) => u.sets.length));
+  ok("a unit without one gets a single set at the end",
+     cp.units.filter((u) => !u.midUnitAssessment).every((u) => u.sets.length === 1), true);
+  ok("the sets hold every picked item and no more",
+     cp.units.every((u) => u.sets.reduce((a, st) => a + st.items.length, 0) === u.items.length),
+     true);
+
+  // Item text must come from the payload, never be reconstructed. stemAfter was
+  // dropped at first, which silently lost the second half of any item whose text
+  // wraps around its figure.
+  ok("checkpoint items carry the payload's own stem markup",
+     cp.units.every((u) => u.items.every((i) => {
+       const src = DATA.items.filter((x) => x.id === i.id)[0];
+       return i.stem === (src.stem || null) && i.stemAfter === (src.stemAfter || null);
+     })), true);
+  ok("instructions stay an array", cp.units.every((u) => u.items.every((i) =>
+     i.instructions === null || Array.isArray(i.instructions))), true);
+
+  ok("a standard gating proficiency but in no unit is reported, not dropped",
+     cp.unschedulable.indexOf("NY-6.G.5") >= 0, cp.unschedulable);
+
+  // Without a usable gating analysis there is nothing to check against, and the
+  // refusal has to say so rather than produce an empty set.
+  const noGate = Engine.checkpoints([], DATA, { usable: false, why: "no PL column" },
+                                    { byStandard: {} }, 6);
+  ok("no gating analysis means no checkpoints", noGate.usable === false, noGate);
+
   /* --------------------------------------------------------- names left in */
 
   const idGrid = await read(fixture("isa_identity_left_in.xlsx"));
@@ -390,6 +455,13 @@ async function main() {
       .filter((u) => u.startWeek >= 21 && u.startWeek <= 29)
       .reduce((a, u) => a + u.credits, 0);
     check("17 gating credits fall in weeks 21-29", mid, 17);
+
+    // The checkpoint findings on the real file.
+    check("Unit 6's set is capped at six, not ten",
+          rr.checkpoints.units.filter((u) => u.unit === 6)[0].items.length, 6);
+    check("Unit 7 is flagged: gating weight, late, and no mid-unit assessment",
+          rr.checkpoints.lateWithoutMidUnit.map((u) => u.unit), [7]);
+    check("17 checkpoint items in total", rr.checkpoints.totalItems, 17);
 
     check("NY-5.OA.3 is a prior-grade standard, not an index gap",
           [rr.placement.priorGrade, rr.placement.unplaced],

@@ -1279,6 +1279,27 @@ def privacy(payload):
         check("the gating threshold and band sizes are shown",
               "of its credits" in blob and "students)" in blob)
 
+        # Checkpoint questions are NYSED's own text, selected from the payload
+        # and never reconstructed. The page reads them from data.json at runtime,
+        # so the only way item text could arrive otherwise is a hand-written
+        # string in the page -- which is what this looks for. The project's whole
+        # transcription posture depends on no code path inventing a stem.
+        check("the analyze page builds checkpoints from the payload, not literals",
+              "checkpoints" in blob and "data.items.filter" in blob)
+
+        # An unmarkable question is not a checkpoint. The engine filters the pool
+        # on having a key or an official answer; if that filter goes, a teacher
+        # gets a question nobody can score.
+        check("checkpoints require an answer to mark against",
+              'it.type === "Multiple Choice" ? !!it.key' in blob)
+
+        # Figures are served from site/assets/, which publish.py fills from the
+        # payload's own references. An absolute or third-party image URL here
+        # would be the one way this page could still reach off-origin.
+        imgs = re.findall(r'<img[^>]+src\s*=\s*["\']([^"\']+)', blob)
+        off = [u for u in imgs if u.startswith(("http://", "https://", "//"))]
+        check("no checkpoint figure loads from another origin", not off, str(off[:3]))
+
 
 # ----------------------------------------------------------------- 11. the site
 
