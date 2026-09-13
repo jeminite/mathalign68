@@ -225,6 +225,56 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
     ok("no instructions array leaked as a comma-joined string",
        !/Show your work\.,/.test(out), true);
 
+    // Every class the report uses must actually be styled.
+    //
+    // This is the nearest automated thing to looking at the page: a class name
+    // that was written in the renderer and never in the stylesheet produces a
+    // page that is correct in structure and wrong on screen, which no other check
+    // here would notice. It is not a substitute for opening the page, and does not
+    // pretend to be -- it catches one specific class of mistake that otherwise
+    // only shows up visually.
+    const styleBlocks = (html.match(/<style>([\s\S]*?)<\/style>/g) || [])
+      .map((b) => b.replace(/^<style>|<\/style>$/g, "")).join("\n");
+    const usedClasses = new Set();
+    (out.match(/class="([^"]+)"/g) || []).forEach((m) => {
+      m.replace(/^class="|"$/g, "").split(/\s+/).forEach((c) => { if (c) usedClasses.add(c); });
+    });
+    const definedClasses = new Set(
+      (styleBlocks.match(/\.[A-Za-z][\w-]*/g) || []).map((c) => c.slice(1)));
+    const unstyled = [...usedClasses].filter((c) => !definedClasses.has(c));
+    check("every class the report uses is styled", unstyled, []);
+
+    // The print rules, which are the whole point of a checkpoint sheet. There are
+    // several @media print blocks -- one per stylesheet -- so they are matched by
+    // brace depth and merged; reading only the first found base.css's and reported
+    // every rule in analyze.css as missing.
+    const printBlocks = [];
+    for (let at = styleBlocks.indexOf("@media print"); at >= 0;
+         at = styleBlocks.indexOf("@media print", at + 1)) {
+      const open = styleBlocks.indexOf("{", at);
+      let depth = 0, end = open;
+      for (let k = open; k < styleBlocks.length; k++) {
+        if (styleBlocks[k] === "{") depth++;
+        else if (styleBlocks[k] === "}" && --depth === 0) { end = k; break; }
+      }
+      printBlocks.push(styleBlocks.slice(open + 1, end));
+    }
+    const printCss = printBlocks.join("\n");
+    ok("there is a print stylesheet", printBlocks.length > 0, printBlocks.length);
+    // The selector is given plain and escaped where it is used, so the label reads
+    // as a selector rather than as a regex.
+    [".drop", ".actions", ".cp", ".cp-q", ".answers"].forEach((sel) => {
+      const esc2 = sel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      ok("print rules cover " + sel,
+         new RegExp("(^|[,{}\\s])" + esc2 + "\\s*[,{]", "m").test(printCss), true);
+    });
+    ok("a checkpoint starts on its own page",
+       /\.cp\s*\{[^}]*page-break-before\s*:\s*always/.test(printCss), true);
+    ok("a question never splits across a page",
+       /\.cp-q\s*\{[^}]*page-break-inside\s*:\s*avoid/.test(printCss), true);
+    ok("the answer key starts on its own page",
+       /\.answers\s*\{[^}]*page-break-before\s*:\s*always/.test(printCss), true);
+
     // An individual proficiency level must not reach the page. The curve and the
     // band percentages are aggregate; a per-student PL is not.
     ok("no per-student proficiency level in the rendered report",

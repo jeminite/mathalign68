@@ -137,6 +137,42 @@ lesson number that table gives above lesson 8 is two too high. The other two wan
 
 ---
 
+## Decisions waiting on a person
+
+### 16. Grade 6's 126 placements are all still `draft: true`
+
+Every grade 6 item has a first-pass placement and not one is published, so the site reads
+"not yet placed" for grade 6 everywhere — in the Questions tab, in the analyser's focus
+ranking, and in the per-student plans MS343Teaching generates. Grades 7 and 8 are at 96% and
+100%.
+
+Clearing the flag is the act of review and `CLAUDE.md` is specific about how: **re-derive the
+placement from the lessons rather than review the first pass's prose.** Grade 8's blind second
+pass agreed with its own first pass only **55.6%** of the time and produced 60 disagreements to
+settle, so this is not a formality — reviewing the prose would have passed most of those.
+
+Until it is done, the analyser's "Taught in" column and the checkpoint placement for grade 6
+rest on the publisher's standard-to-lesson table, which names the right unit 96.3% of the time
+and the right lesson only 77.4%. That is fine for unit-level advice and is why the checkpoints
+are placed by unit, but it is not a lesson citation.
+
+### 17. Where the student data rests, across the practice
+
+Not a MathAlign68 problem — this repo holds no student data — but it is the boundary this
+project's privacy posture is half of, so it is recorded where a person will see it.
+
+`~/Desktop/ClaudeProjects/` is **iCloud-synced**; `~/Developer/ClaudeProjects/` is not.
+MS343Teaching sits in `~/Developer/` deliberately, to keep its UID-only results out of iCloud.
+AlgebraTeaching sits on the Desktop side and holds `students/name_uid_crosswalk_2026.json`, the
+one file in the practice with real names, plus loose student workbooks at the Desktop root.
+
+So the protection currently runs opposite to the sensitivity. Recorded 2026-09-12 as a known
+position rather than a recommendation; iCloud is the user's own encrypted account, so this is
+about where data rests, not a breach. The full note is in `RELATIONSHIPS.md` under the privacy
+boundary. **Do not "tidy up" by moving MS343Teaching into the hub** — that undoes the decision.
+
+---
+
 ## Curriculum findings worth acting on in teaching
 
 These are not defects. They are things the alignment turned up that a teacher can use.

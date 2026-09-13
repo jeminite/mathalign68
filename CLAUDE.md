@@ -7,8 +7,15 @@ starting anything that touches published data, and add to it rather than leaving
 commit message.
 
 `~/Desktop/ClaudeProjects/RELATIONSHIPS.md` is the authoritative description of how this
-project relates to RegentsAlign, AlgebraTeaching and TeachingBrain. If a relationship changes,
-fix it there first, then update the pointer here.
+project relates to RegentsAlign, AlgebraTeaching, MS343Teaching and TeachingBrain. If a
+relationship changes, fix it there first, then update the pointer here.
+
+**MS343Teaching imports this project's `templates/analyze/engine.js` and reads its
+`site/data.json`**, both one way and both on published files. So the engine is a small public API
+as well as this site's internals: renaming what it returns breaks a caller that is invisible from
+here. `MS343Teaching/tools/test_curves.js` is the check that notices, and the agreement it asserts
+-- the grade 6 level curve recovered two independent ways, matching on all 35 shared raw scores --
+is recorded in `provenance/pl_curve.md`.
 
 The path is absolute on purpose. This repository actually lives at
 `~/Developer/ClaudeProjects/MathAlign68` and is symlinked into the Desktop hub, so a relative

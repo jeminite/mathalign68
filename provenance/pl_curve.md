@@ -100,6 +100,29 @@ This is adjacent to, but not the same as, `RESUME.md` open question 1 (what popu
 statewide P-values are computed over). It settles the scoring denominator, not the P-value
 denominator. Do not let the stronger claim follow from the weaker evidence.
 
+## Why this is trustworthy: two independent paths agree
+
+The curve above was recovered by **scoring 39 items against NYSED's answer key** and pairing each
+student's credit total with the level in their ISA row.
+
+The school's own roster workbook contains the same conversion by a completely different route: a
+`RS` column and a `PR` column, both written by the reporting system, with no item-level scoring
+anywhere in between. `MS343Teaching/tools/build_curves.js` recovers the curve from those.
+
+**The two agree on all 35 shared raw scores**, and on where Level 3 begins (raw 24). Nothing is
+shared between the paths but the truth: one reads the answer key and counts credits, the other
+reads two numbers off a report. That agreement is the only reason to trust either, and it is worth
+re-running whenever either side changes:
+
+```bash
+cd ../MS343Teaching && node tools/build_curves.js && node tools/test_curves.js
+```
+
+The roster workbooks also yield curves for **grades 5 and 7**, which this project cannot see —
+grade 5 is outside its scope and no grade 7 ISA has arrived. Level 3 begins at a scale score of
+**450 in all three grades**, which is what makes a cross-grade target possible at all: the raw
+score is grade-specific, the scale score is not.
+
 ## What does not carry to another test
 
 The curve is **this test's**. 2027's grade 6 test will have its own conversion, and a grade 5 PL
