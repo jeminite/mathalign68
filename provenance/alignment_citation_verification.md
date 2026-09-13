@@ -59,3 +59,46 @@ after a batch is the check that can.
 Regenerate with the script in this commit's message, or re-derive it: for each evidence
 entry, search its unit guide for the normalised quote and compare the hit's page index
 against the cited page.
+
+---
+
+# Grade 8, after the second pass and settlement
+
+Re-run once every grade 8 placement had been settled, because settlement moved
+56 of 60 disputed entries and rewrote their evidence.
+
+**204 distinct citations. 198 found in their own unit guide by literal search.**
+The offset between the page a citation names and the PDF page holding the text:
+
+```
+  0 : 126      +1 : 53      -1 : 17      +2 : 2
+```
+
+Never more than two, which is an activity running across a page break on top of
+the one-page difference between printed and PDF numbering that most of these
+guides carry. Two citations name a page that is not itself among the pages
+holding their quote — `8.2.6 Similarity Transformations (Part 1)` and
+`8.3.7 Rising Water Levels`, both +2 — and both are long activities whose teacher
+notes open on the cited page and whose student task statement prints two leaves
+later. The index records an activity's START page, so this is the expected shape,
+not a wrong page.
+
+**A caution about how this was measured.** The first run of this check took the
+FIRST page in the guide containing each quote, and reported offsets as large as
+−59. Every one of those was the quote appearing earlier in the unit's front
+matter or a "lesson at a glance" spread. Searching all pages and keeping the
+nearest hit is the correct instrument; taking the first hit invents errors.
+
+## The six not found are all rendering, not misplacement
+
+Two are apostrophes. `7.3.8 A Circumference of 44` is printed with a typographic
+apostrophe — *The circle's diameter is approximately 14 cm* — where the citation
+carries a straight one. The text is on page 141, exactly as cited.
+
+Four are mathematics drawn rather than typed, the limitation recorded in
+`provenance/lesson_index_glyph_loss.md`: `√18`, `√49`, `2t + 6 = 2t + 3` and an
+exponent expression that reaches the index as `2 ⋅ 2`. The index holds what the
+text layer gave it, the citation quotes the index faithfully, and the PDF's own
+characters differ. Nothing is misplaced.
+
+So all 204 stand.

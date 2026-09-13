@@ -161,6 +161,17 @@ teacher's own browser: `site/analyze/` reads the dropped file locally, fetches n
 If you ever find yourself adding a `.gitignore` rule to keep student data out of this repo,
 something has been put in the wrong folder. Move it.
 
+**When the `SURNAME, FORENAME` scan fires, change the content, never the scan.** Publishing
+grade 8 tripped it twice, both times on geometry: an alignment note reading "the segment
+overbars on DF, FE and DE", and a verbatim curriculum quote, "Triangle ABC is similar to
+triangles DEF, GHI, and JKL." Both look exactly like a name pair to a regex. The note was
+reworded; the quote could not be -- a quote must stay a literal substring of its activity --
+so a different sentence from the same activity was cited instead. Loosening the pattern was
+the available third option and is the wrong one: real surnames of two letters exist, this
+district has plenty of them, and a privacy guard that has been relaxed once to let a triangle
+through is no longer a guard. Two false positives in 396 items is the price, and it is
+cheap.
+
 ## Working on the analyser
 
 `provenance/isa_format.md` is the spec: what a NYSED ISA export looks like, how it differs from
