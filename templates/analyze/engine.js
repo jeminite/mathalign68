@@ -834,9 +834,14 @@
   // when to run a checkpoint. Those were all being answered by a table the rest
   // of the project exists to improve on.
   //
-  // Still UNIT granularity in byStandard, because every consumer of it schedules
-  // against the pacing calendar and pacing is per unit. byLesson carries the
-  // finer answer for the focus report.
+  // byStandard is keyed by UNIT and stays that way, because every consumer of it
+  // schedules against the pacing calendar and pacing is per unit -- startWeek and
+  // the mid-unit assessment flag exist nowhere else, and there is no per-lesson
+  // week published anywhere. The judged LESSONS now ride INSIDE each unit record
+  // rather than replacing it: MS343Teaching's per-student plans have to name a
+  // lesson a teacher can reteach on a Tuesday and need the week attached to it,
+  // so handing back two structures to re-join would only move the join outwards.
+  // byLesson still carries the class-performance answer for the focus report.
   function placement(items, data, grade) {
     var cur = ((data.curriculum || {}).grades || {})[String(grade)] || {};
     var s2l = cur.standardToLessons || {};
@@ -846,11 +851,50 @@
     // copy of the 35-week table on the site.
     var units = cur.units || {};
     var out = {}, unplaced = [], priorGrade = [], judged = {}, derivedStds = {};
+    var unjudged = {};
 
-    function unitRecord(u) {
+    // Resolve a lesson's title from the curriculum index, the same way
+    // unitRecord resolves a unit's, so the site keeps one copy of the titles.
+    // The fallback is the title the ALIGNMENT recorded: a judged lesson the
+    // index does not hold would otherwise publish as a bare number, and
+    // "Lesson 12" with nothing to look up is not a thing anyone can go and read.
+    //
+    // The key is lessonTitle and NOT title, deliberately. assertNoIdentity's
+    // SKIP list exempts lessonTitle and unitTitle from the SURNAME, FORENAME
+    // sweep because the publisher's own prose trips it -- "Triangle ABC is
+    // similar to triangles DEF, GHI, and JKL" is a real curriculum sentence, and
+    // CLAUDE.md's rule is to change the content rather than the scan. A field
+    // called title inside this record would be swept instead of skipped, and
+    // would throw on a geometry lesson the first time one came through.
+    function lessonRecord(u, n, fallbackTitle, itemNumbers) {
+      var ls = ((units[u] || {}).lessons || {})[String(n)] || {};
+      return { lesson: Number(n),
+               lessonTitle: ls.title || fallbackTitle || null,
+               items: itemNumbers };
+    }
+
+    function unitRecord(u, judgedInUnit) {
       var p = units[u] || {};
+      var jl = judgedInUnit || { lessons: {}, noLesson: 0 };
+      var nums = Object.keys(jl.lessons).sort(function (a, b) { return a - b; });
       return { unit: Number(u), title: p.title || null, startWeek: p.startWeek || null,
-               days: p.days || null, midUnitAssessment: !!p.midUnitAssessment };
+               days: p.days || null, midUnitAssessment: !!p.midUnitAssessment,
+               // Empty for a unit that came from the table rather than a
+               // judgement, so a consumer can tell "no lesson was judged" from
+               // "no lesson was asked for". The table is 77.8% right on the
+               // lesson against 96.4% on the unit, so its lesson codes must not
+               // arrive here dressed as judgements.
+               lessons: nums.map(function (n) {
+                 return lessonRecord(u, n, jl.lessons[n].title, jl.lessons[n].items);
+               }),
+               // An item judged into this unit but not to a lesson within it.
+               // Zero today, because the 9 candidates-only alignments are all
+               // drafted and build/payload.py drops a drafted entry's unit along
+               // with its lesson. Carried anyway: it is what makes the "every
+               // judged item is accounted for" invariant checkable, and it is
+               // the shape the report needs the day a unit-only placement is
+               // reviewed and published.
+               itemsWithoutLesson: jl.noLesson };
     }
 
     // A placement counts for THIS grade only when it was judged into this
@@ -866,8 +910,21 @@
 
     items.forEach(function (i) {
       var ju = judgedUnitFor(i);
-      if (ju === null) return;
-      (judged[i.standard] = judged[i.standard] || {})[ju] = 1;
+      if (ju === null) {
+        // An item with no judged placement at all. Recorded per standard rather
+        // than discarded: a standard whose OTHER items are judged answers from
+        // those, and this one then becomes invisible -- a plan would list two
+        // lessons for a three-item standard and read as if it had covered it.
+        (unjudged[i.standard] = unjudged[i.standard] || []).push(i.item);
+        return;
+      }
+      var perStd = judged[i.standard] = judged[i.standard] || {};
+      var perUnit = perStd[ju] = perStd[ju] || { lessons: {}, noLesson: 0 };
+      if (i.lesson === null || i.lesson === undefined) { perUnit.noLesson++; return; }
+      var key = String(i.lesson);
+      var l = perUnit.lessons[key] = perUnit.lessons[key] ||
+        { title: i.lessonTitle || null, items: [] };
+      if (l.items.indexOf(i.item) < 0) l.items.push(i.item);
     });
 
     items.forEach(function (i) {
@@ -876,7 +933,8 @@
       // standard is the set its own items actually landed in.
       if (judged[i.standard]) {
         out[i.standard] = Object.keys(judged[i.standard])
-          .sort(function (a, b) { return a - b; }).map(unitRecord);
+          .sort(function (a, b) { return a - b; })
+          .map(function (u) { return unitRecord(u, judged[i.standard][u]); });
         return;
       }
       var codes = s2l[i.standard] || [];
@@ -898,12 +956,42 @@
       });
       derivedStds[i.standard] = 1;
       out[i.standard] = Object.keys(seenUnits).sort(function (a, b) { return a - b; })
-        .map(unitRecord);
+        .map(function (u) { return unitRecord(u, null); });
     });
+    // Only for a standard that DOES answer from judged placements. A standard
+    // with no judged item at all is already reported, and better, by priorGrade
+    // (taught a year earlier, so there is no lesson in this grade to find) or by
+    // unplaced (a genuine hole in the index). Listing it here as well would tell
+    // a teacher to go looking for the grade 6 lesson behind NY-5.OA.3.
+    Object.keys(unjudged).forEach(function (st) {
+      if (!judged[st]) delete unjudged[st];
+    });
+
     return { byStandard: out, unplaced: unplaced, priorGrade: priorGrade,
+             // Item numbers on a standard that names lessons but does not name
+             // one for these, so a consumer can say what it is NOT naming. A
+             // plan listing two lessons for a three-item standard otherwise
+             // reads as though it had covered the standard.
+             unjudgedItems: unjudged,
              judgedStandards: Object.keys(judged).length,
              derivedStandards: Object.keys(derivedStds).length,
-             unitAccuracy: 0.964, lessonAccuracy: 0.778 };
+             // The TABLE's accuracy against NYCPS's independent citations. This
+             // is the FALLBACK's quality, measured in
+             // provenance/alignment_baseline_measurement.md.
+             unitAccuracy: 0.964, lessonAccuracy: 0.778,
+             // The JUDGED placement's own agreement, which is what a consumer of
+             // `lessons` is actually leaning on. Grade 7's 129 evidenced items
+             // were re-derived blind by a reader who could not see the first
+             // pass: 85 chose the same lesson, 112 the same unit.
+             // provenance/alignment_second_pass_g7.md.
+             //
+             // ONE measurement, not a per-grade figure. Grade 6 was never
+             // second-passed, and grade 8's 55.6% is not comparable -- a blind
+             // re-test chose the second reading 18 times out of 18, so that
+             // number measured one bad reading rather than irreducible
+             // judgement. Quoting the honest ceiling everywhere beats quoting a
+             // flattering per-grade number three different ways.
+             lessonAgreement: 0.659, unitAgreement: 0.868 };
   }
 
   /* ---------------------------------------------------------- checkpoints */

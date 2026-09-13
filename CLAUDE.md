@@ -17,6 +17,18 @@ here. `MS343Teaching/tools/test_curves.js` is the check that notices, and the ag
 -- the grade 6 level curve recovered two independent ways, matching on all 35 shared raw scores --
 is recorded in `provenance/pl_curve.md`.
 
+`placement().byStandard` is the part of that API the private side leans on hardest, and it now
+carries the judged LESSONS inside each unit record as well as the unit's week. Two things about
+it are load-bearing rather than stylistic. A lesson's title lives under `lessonTitle` and never
+under `title`, because `assertNoIdentity`'s skip list is keyed on the field name and a curriculum
+title is exactly the prose that trips the `SURNAME, FORENAME` sweep. And `lessonAgreement` /
+`unitAgreement` are published beside the older `lessonAccuracy` / `unitAccuracy` rather than
+replacing them: the older pair is the standard-to-lesson TABLE's accuracy against NYCPS, the new
+pair is what two of this project's own blind readings agreed on, and a consumer quoting one for
+the other would overstate the lesson. That is also why the private side reads the figure from
+here instead of restating it -- a hedge kept in two places drifts, and this one is the whole
+reason a lesson can be named at all.
+
 The path is absolute on purpose. This repository actually lives at
 `~/Developer/ClaudeProjects/MathAlign68` and is symlinked into the Desktop hub, so a relative
 `../RELATIONSHIPS.md` resolves to `~/Developer/ClaudeProjects/`, where the file does not exist.

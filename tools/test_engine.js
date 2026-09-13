@@ -246,6 +246,136 @@ async function main() {
      r.placement.judgedStandards > 0 && r.placement.derivedStandards === 0,
      [r.placement.judgedStandards, r.placement.derivedStandards]);
 
+  /* ------------------------------------------- lessons inside the placement */
+
+  // MS343Teaching's per-student plans said "Unit 6 (Expressions and Equations),
+  // week 21" while 385 of 396 items carried a judged lesson. A unit is twenty
+  // days of teaching; a lesson is something a teacher can reteach on a Tuesday.
+  // These guard the shape that finer answer travels in, because the only caller
+  // is in another repository and is invisible from here.
+  const placedUnits = [];
+  Object.keys(r.placement.byStandard).forEach((s) =>
+    r.placement.byStandard[s].forEach((u) => placedUnits.push([s, u])));
+  ok("every unit record carries a lessons array",
+     placedUnits.length > 0 && placedUnits.every(([, u]) => Array.isArray(u.lessons)),
+     placedUnits.length);
+  ok("some standard actually names a lesson",
+     placedUnits.some(([, u]) => u.lessons.length > 0),
+     placedUnits.filter(([, u]) => u.lessons.length > 0).length);
+  ok("every judged lesson has a number and a title that resolved",
+     placedUnits.every(([, u]) => u.lessons.every((l) =>
+       Number.isInteger(l.lesson) && typeof l.lessonTitle === "string" &&
+       l.lessonTitle.length > 0)),
+     placedUnits.map(([s, u]) => u.lessons.map((l) => [s, l.lesson, l.lessonTitle]))
+                .reduce((a, b) => a.concat(b), [])
+                .filter((x) => !x[2]));
+  ok("lesson numbers ascend and do not repeat within a unit",
+     placedUnits.every(([, u]) => u.lessons.every((l, k) =>
+       k === 0 || l.lesson > u.lessons[k - 1].lesson)),
+     placedUnits.map(([s, u]) => [s, u.lessons.map((l) => l.lesson)]));
+  // The privacy sweep's SKIP list is keyed on the FIELD NAME: lessonTitle and
+  // unitTitle are exempt from the SURNAME, FORENAME regex because the
+  // publisher's own prose trips it. A lesson record whose title lived under a
+  // key called `title` would be swept instead, and would throw the first time a
+  // geometry lesson came through. Pinned so a later tidy-up cannot rename it.
+  ok("a lesson's title is under lessonTitle, never title",
+     placedUnits.every(([, u]) => u.lessons.every((l) => !("title" in l))), true);
+  // Structural, not a count: every item judged into a unit in THIS grade is
+  // either listed under one of that unit's lessons or counted as lacking one.
+  // "Fewer than three activities" passed clean while 24 lessons were corrupt;
+  // asserting what should be true catches what counting what looks odd misses.
+  ok("every judged item is either on a lesson or counted as lacking one", (function () {
+    const want = {};
+    r.items.forEach((i) => {
+      if (i.unit === null || i.unit === undefined) return;
+      const m = /Grade\s+(\d)/.exec(i.course || "");
+      if (!m || m[1] !== String(r.grade)) return;
+      const k = i.standard + "|" + i.unit;
+      (want[k] = want[k] || []).push(i.item);
+    });
+    return Object.keys(want).length > 0 && Object.keys(want).every((k) => {
+      const st = k.split("|")[0], un = k.split("|")[1];
+      const rec = (r.placement.byStandard[st] || [])
+        .filter((x) => String(x.unit) === un)[0];
+      if (!rec) return false;
+      const listed = rec.lessons.reduce((n, l) => n + l.items.length, 0);
+      return listed + rec.itemsWithoutLesson === want[k].length;
+    });
+  })(), true);
+  // The judged placement's own agreement, beside the table's accuracy above.
+  // These are different measurements of different things and conflating them
+  // would overstate the lesson: the table is 77.8% against NYCPS, while two of
+  // this project's own careful readings agree on the lesson only 65.9% of the
+  // time. See provenance/alignment_second_pass_g7.md.
+  check("placement states the judged placement's own blind agreement",
+        [r.placement.lessonAgreement, r.placement.unitAgreement], [0.659, 0.868]);
+  ok("the lesson is reported as the weaker claim than the unit",
+     r.placement.lessonAgreement < r.placement.unitAgreement,
+     [r.placement.lessonAgreement, r.placement.unitAgreement]);
+
+  // The mixed case is exercised directly, because no 2026 test has one: a
+  // standard whose items are judged into different lessons AND one of whose
+  // items carries no placement at all. g6-2023 item 15 is the real example
+  // (NY-6.G.1, one item judged and one not), and relying on the real data still
+  // having that hole is how the orphan-standard test above went stale.
+  const mixed = Engine.placement([
+    { standard: "NY-6.EE.7", unit: 6, lesson: 4, lessonTitle: "Practice Solving Equations",
+      course: "Imagine IM New York, Grade 6", item: 11 },
+    { standard: "NY-6.EE.7", unit: 6, lesson: 4, lessonTitle: "Practice Solving Equations",
+      course: "Imagine IM New York, Grade 6", item: 12 },
+    // No title on the alignment side, to exercise the curriculum lookup. The
+    // index is the authority on what lesson 5 is CALLED in this edition, and a
+    // citation whose number and title disagree is the shape an edition
+    // renumbering leaves behind -- which is why the curriculum wins and the
+    // alignment's own title is only the fallback.
+    { standard: "NY-6.EE.7", unit: 6, lesson: 5, lessonTitle: null,
+      course: "Imagine IM New York, Grade 6", item: 13 },
+    // Judged into the unit but not to a lesson: the candidates-only shape, which
+    // is drafted and so unpublished today but is what this field is for.
+    { standard: "NY-6.EE.7", unit: 6, lesson: null, lessonTitle: null,
+      course: "Imagine IM New York, Grade 6", item: 14 },
+    // No placement at all.
+    { standard: "NY-6.EE.7", unit: null, lesson: null, lessonTitle: null,
+      course: null, item: 15 },
+    // A prior-grade standard with no judged item: already reported by
+    // priorGrade, so it must NOT also appear as an unjudged item.
+    { standard: "NY-5.OA.3", unit: null, lesson: null, lessonTitle: null,
+      course: null, item: 42, postTest: true }
+  ], DATA, 6);
+  const mu = mixed.byStandard["NY-6.EE.7"][0];
+  check("several items on one standard collapse into one lesson each",
+        mu.lessons.map((l) => [l.lesson, l.items]), [[4, [11, 12]], [5, [13]]]);
+  check("a lesson's title is resolved from the curriculum index",
+        mu.lessons.map((l) => l.lessonTitle),
+        ["Practice Solving Equations", "Represent Situations with Equations"]);
+  // And a lesson the index does not hold still names itself rather than
+  // publishing "Lesson 12" with nothing to look up.
+  const offIndex = Engine.placement([
+    { standard: "NY-6.EE.7", unit: 6, lesson: 99, lessonTitle: "A Lesson Not In The Index",
+      course: "Imagine IM New York, Grade 6", item: 1 }
+  ], DATA, 6);
+  check("a judged lesson outside the index falls back to the alignment's title",
+        offIndex.byStandard["NY-6.EE.7"][0].lessons,
+        [{ lesson: 99, lessonTitle: "A Lesson Not In The Index", items: [1] }]);
+  check("an item judged into the unit but not to a lesson is counted",
+        mu.itemsWithoutLesson, 1);
+  check("an item with no placement at all is named, not dropped",
+        mixed.unjudgedItems["NY-6.EE.7"], [15]);
+  ok("a prior-grade standard is not also listed as an unjudged item",
+     !("NY-5.OA.3" in mixed.unjudgedItems) &&
+     mixed.priorGrade.indexOf("NY-5.OA.3") >= 0,
+     [Object.keys(mixed.unjudgedItems), mixed.priorGrade]);
+  // The fallback must not dress the table's lesson codes as judgements.
+  const tabled = Engine.placement([
+    { standard: "NY-6.EE.1", unit: null, lesson: null, lessonTitle: null,
+      course: null, item: 1 }
+  ], DATA, 6);
+  ok("a unit derived from the table names no lesson",
+     (tabled.byStandard["NY-6.EE.1"] || []).length > 0 &&
+     tabled.byStandard["NY-6.EE.1"].every((u) => u.lessons.length === 0 &&
+                                                 u.itemsWithoutLesson === 0),
+     tabled.byStandard["NY-6.EE.1"]);
+
   /* ------------------------------------------------------------ checkpoints */
 
   const cp = r.checkpoints;

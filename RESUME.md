@@ -3,7 +3,7 @@
 ## Status
 
 **Phases 0 and 1 complete.** 396 items across 12 tests, a five-tab site, and a deploy gate
-that passes — **126 checks, 0 skipped**, plus 90 engine and 57 render checks in `npm test`.
+that passes — **126 checks, 0 skipped**, plus 105 engine and 57 render checks in `npm test`.
 
 **`REVIEW.md` is the standing list of what a person still has to decide or check.** None of it
 blocks the gate; all of it is what a machine cannot catch. Read it before touching published
@@ -115,13 +115,25 @@ Ranked by value, and none of it is blocked:
 
 `MS343Teaching` (in `~/Developer/ClaudeProjects/`, deliberately outside iCloud — see
 `RELATIONSHIPS.md`) has its own `RESUME.md`. In short: raw-score-to-level curves recovered for
-grades 5, 6 and 7; per-student plans for two incoming cohorts; 19 checks. Its next action is to
-name **lessons** rather than units in the plans, now that 385 items carry a judged placement.
+grades 5, 6 and 7; per-student plans for two incoming cohorts; 19 checks. **Its plans now name
+lessons rather than units**, which was its next action and is done: `placement().byStandard`
+carries the judged lessons inside each unit record, and the plans render them grouped by unit in
+pacing order — "Unit 6, week 21 — Expressions and Equations / Lesson 5, *Represent Situations
+with Equations*". Test-scoped on purpose: the lessons are the ones that test's own items sat on,
+matching the credits column beside them.
+
+`placement()` also publishes `lessonAgreement` (0.659) and `unitAgreement` (0.868) beside the
+older `lessonAccuracy` / `unitAccuracy`. The two pairs measure different things and conflating
+them would overstate the lesson: the old pair is the standard-to-lesson TABLE's accuracy against
+NYCPS, the new pair is what two of this project's own blind readings agreed on. The private side
+reads the figure from here rather than restating it, because a hedge kept in two places drifts
+and that hedge is the whole reason naming a lesson is defensible.
 
 **It imports `templates/analyze/engine.js` and reads `site/data.json`.** So the engine is a small
 public API as well as this site's internals — `cfb6c9f` changed how placement works and the import
 survived, but the thing that proves it is `node tools/test_curves.js` over there, not anything in
-this repo. Run it after touching the engine.
+this repo. Run it after touching the engine. Note that the real-ISA path of `test_engine.js` has
+three stale pinned figures, unrelated to either change; `REVIEW.md` §7 has the evidence.
 
 ## Done in Phase 0
 
@@ -190,7 +202,7 @@ and gets their class beside the state, item by item. Everything happens in the b
 - `templates/analyze/app.js` + `index.html` + `analyze.css` — the page. Built into one
   self-contained `site/analyze/index.html` by `render_analyze()`, with no `<script src>` at all.
 - `tools/make_isa_fixture.js` — generates the two synthetic fixtures, deterministically.
-- `tools/test_engine.js` (44 checks) and `tools/test_render.js` (23) — `npm test`.
+- `tools/test_engine.js` (105 checks) and `tools/test_render.js` (57) — `npm test`.
 
 **What made this buildable was getting a real file.** Open question 3 had said not to guess at
 four layouts, and it was right: the ISA turned out to carry no answer key at all, so

@@ -134,6 +134,21 @@ The crops are at `assets/G7-2023/q16.png`, `assets/G7-2026/q14.png`,
   except the new answer-choice rule, which matches on a substring.
 - `tools/test_engine.js`'s only end-to-end check against a **real** ISA export
   skips unless `MATHALIGN_ISA` is set, so it never runs on the gate.
+- **And when it is set, three of its checks fail — today, and for a reason nobody
+  has looked at.** `MATHALIGN_ISA=<the grade 6 2026 export> node tools/test_engine.js`
+  reports 3 of 125 failed: Unit 6 carries 8 gating credits where 11 is pinned,
+  weeks 21–29 carry 13 where 17 is pinned, and `NY-6.G.5` is no longer in
+  `placement.unplaced`. All three have the same cause and it is the *good* kind:
+  grade 6's judged alignment landed, the judged placement replaced the
+  standard-to-lesson table, and `NY-6.G.5`'s item 22 moved to Unit 1 Lesson 17
+  *Squares and Cubes*. The fixture-based checkpoint test WAS rewritten for exactly
+  this (its comment says so — "it no longer works as a fixture"); the real-ISA
+  pins beside it were missed. So these are stale expectations rather than a
+  regression, and re-deriving them means confirming the three new numbers by hand
+  rather than pasting in what the run prints. **Verified identical before and
+  after the September 2026 placement change**, so nothing in that work caused
+  them. The reason this sat unnoticed is the bullet above: the gate never runs
+  this path.
 - **`/analyze/` is live and has never been opened by a human.** It passes 57 render
   checks, two of which are the nearest automated substitute — every class it uses is
   styled, and the print rules cover the checkpoint sheet — but "every class is
