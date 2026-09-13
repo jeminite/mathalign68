@@ -1,0 +1,175 @@
+{
+ "scope": "final figure wave -- g6",
+ "items": [
+  {
+   "id": "g6-2023-032",
+   "figureIndex": 1,
+   "crop": "assets/G6-2023/q32_2.png",
+   "standard": "NY-6.RP.3a",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.6,
+   "figureType": "Tables as Answer Choices",
+   "altText": null,
+   "longDescription": "They differ only in the numbers filled into the three missing cells.",
+   "stem": "The table below shows the ratio of the number of teachers to the number of students at a school. The ratio of teachers to students is constant. Three numbers are missing from the table. Which table shows the correct missing numbers in the table above?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g6-2023-039",
+   "figureIndex": 0,
+   "crop": "assets/G6-2023/q39.png",
+   "standard": "NY-6.RP.1",
+   "type": "Constructed Response",
+   "key": null,
+   "pValue": 0.69,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "Two circles come first, then two squares, then one triangle -- five shapes in all.",
+   "stem": "A set of shapes is shown below. What is the ratio of the number of circles to the total number of shapes?",
+   "choices": [],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g6-2024-011",
+   "figureIndex": 0,
+   "crop": "assets/G6-2024/q11.png",
+   "standard": "NY-6.EE.8",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.55,
+   "figureType": "Number Lines as Answer Choices",
+   "altText": null,
+   "longDescription": "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right.",
+   "stem": "Which number line represents <span class=\"math\">x ≥ −3</span> ?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g6-2024-020",
+   "figureIndex": 0,
+   "crop": "assets/G6-2024/q20.png",
+   "standard": "NY-6.G.2",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.44,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "Each edge is 2 and a half inches.",
+   "stem": "A diagram of a cube is shown below. What is the volume, in cubic inches, of the cube?",
+   "choices": [
+    "<span class=\"math\">1 <span class=\"frac\"><span>7</span><span>8</span></span></span>",
+    "<span class=\"math\">7<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">15 <span class=\"frac\"><span>5</span><span>8</span></span></span>",
+    "<span class=\"math\">20 <span class=\"frac\"><span>5</span><span>6</span></span></span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g6-2024-044",
+   "figureIndex": 0,
+   "crop": "assets/G6-2024/q44.png",
+   "standard": "NY-6.G.5",
+   "type": "Constructed Response",
+   "key": null,
+   "pValue": 0.3,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "It is 4 unit cubes along each edge.",
+   "stem": "A prism made of unit cubes is shown below. What perfect cube is represented by the volume of the prism? Be sure to include what you know about volume and exponents in your answer.",
+   "choices": [],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g6-2025-001",
+   "figureIndex": 0,
+   "crop": "assets/G6-2025/q01.png",
+   "standard": "NY-6.RP.3a",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.89,
+   "figureType": "Tables as Answer Choices",
+   "altText": null,
+   "longDescription": "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead.",
+   "stem": "A recipe requires 2 cups of cheese for every 8 ounces of noodles. Which table represents the ratio of cheese to noodles for this recipe?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g6-2025-033",
+   "figureIndex": 0,
+   "crop": "assets/G6-2025/q33.png",
+   "standard": "NY-5.OA.3",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.57,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "They differ in where the points sit and whether they climb in a straight line.",
+   "stem": "The two rules shown below are used to generate sets of ordered pairs. The starting point is <span class=\"math\">(1,1)</span>. The ordered pairs are then graphed on a coordinate plane. <span class=\"math\">•</span> Rule for <span class=\"math\">x</span> coordinate: Each value is <span class=\"math\">3</span> more than the one before it. <span class=\"math\">•</span> Rule for <span class=\"math\">y</span> coordinate: Each value is <span class=\"math\">2</span> more than the one before it. Which graph shows the set of ordered pairs?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g6-2026-008",
+   "figureIndex": 0,
+   "crop": "assets/G6-2026/q08.png",
+   "standard": "NY-6.NS.6a",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.54,
+   "figureType": "Number Line",
+   "altText": null,
+   "longDescription": "P is at negative four and a half, Q at negative three and a half, R at three and a half, and S at four and a half.",
+   "stem": "Four points are plotted on the number line shown below. Which point represents the opposite of <span class=\"math\">4<span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+   "choices": [
+    "P",
+    "Q",
+    "R",
+    "S"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g6-2026-034",
+   "figureIndex": 0,
+   "crop": "assets/G6-2026/q34.png",
+   "standard": "NY-6.RP.3a",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.77,
+   "figureType": "Tables as Answer Choices",
+   "altText": null,
+   "longDescription": "Each pairs a number of notebooks with a price in dollars. They differ in which row holds which values and in whether the prices double the notebook counts or the other way round.",
+   "stem": "A store has a sale on one type of notebook. The price of 3 of these notebooks is $6. Which table shows the same relationship for each given number of notebooks of this type and the total price for those notebooks?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  }
+ ]
+}

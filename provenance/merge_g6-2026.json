@@ -122,7 +122,7 @@
   "G6-2026/q34.png": {
    "type": "Tables as Answer Choices",
    "alt": "Four tables titled Notebook Prices labelled A, B, C and D, which are this item's answer choices.",
-   "long": "Each pairs a number of notebooks with a price in dollars. They differ in which row holds which values and in whether the prices double the notebook counts or the other way round."
+   "long": "Four tables are shown, labeled A, B, C and D. Each is titled Notebook Prices and has a row labeled Number of Notebooks above a row labeled Price (dollars), with five columns. In table A the notebook row reads 6, 12, 18, 24, 30 and the price row reads 3, 6, 9, 12, 15. In table B the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 12, 18, 24, 30. In table C the notebook row reads 6, 9, 12, 15, 18 and the price row reads 3, 6, 9, 12, 15. In table D the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 9, 12, 15, 18."
   },
   "G6-2026/q35.png": {
    "type": "Diagram",

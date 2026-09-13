@@ -82,7 +82,7 @@
   "G8-2025/q02.png": {
    "type": "Graphs as Answer Choices",
    "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
-   "long": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat."
+   "long": "Four scatter plots are shown, each plotting the same eight data points on axes marked in single units, x from 0 to 10 and y from 0 to 8, and each with one straight line drawn across it. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. The eight points, identical in all four plots, are at about (2, 6), (2.6, 6), (3, 4.1), (6.1, 3.2), (6.1, 2.3), (7.9, 2.1), (8.2, 1.9) and (9.8, 1.8); they fall from upper left to lower right. The line in plot A falls from left to right through about (2, 6.3) and (10, 1.8), so it runs above the points through the middle of the plot: where x is 6 the line is at about 4.1 while the two points there are at 3.2 and 2.3. The line in plot C falls a little more steeply, through about (2, 6) and (10, 0.6), so it runs through the middle of the points: where x is 6 the line is at about 3.3, between the points at 3.2 and 2.3, and where x is 8 it is at about 2.0, between the points at 2.1 and 1.9. The line in plot B is horizontal at about y equals 2.9. The line in plot D rises from left to right through about (2, 2) and (10, 7.7), the opposite direction from the points."
   },
   "G8-2025/q04_1.png": {
    "type": "Diagram",
@@ -112,11 +112,11 @@
   "G8-2025/q19.png": {
    "type": "Coordinate Plane",
    "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
-   "long": "A is the upper left vertex, B the lower left, and C sits to the right of them."
+   "long": "A coordinate plane is shown with both axes marked in single units from -10 to 10. Four-sided figure ABCD sits above the x-axis and just left of the y-axis. Its vertices are A at (-3, 4), B at (-3, 1), C at (-1, 2) and D at (-1, 3). Side AB is vertical and 3 units long, and side DC is vertical and 1 unit long."
   },
   "G8-2025/q27.png": {
    "type": "Diagram",
-   "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
+   "alt": "A cone with its height and the full width of its base labelled in yards, with the right angle at the centre marked.",
    "long": "The cone stands on its circular base with its apex at the top. A dashed segment runs from the apex straight down to the centre of the base, meeting the base at a marked right angle, and is labelled 8 yards. A second dashed segment runs right across the base through that centre, from one edge to the other, and is labelled 6 yards, so 6 yards is the diameter of the base."
   },
   "G8-2025/q31.png": {
@@ -132,7 +132,7 @@
   "G8-2025/q34.png": {
    "type": "Coordinate Plane",
    "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
-   "long": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right."
+   "long": "A coordinate plane is shown with the x-axis marked in single units from -9 to 9 and the y-axis in single units from -4 to 4. Trapezoid ABCD lies below the x-axis and left of the y-axis, with A at (-6, -1), B at (-3, -1), C at (-2, -3) and D at (-7, -3); AB is the shorter horizontal side, on top, and DC is the longer horizontal side, below. Trapezoid PQRS lies above the x-axis and right of the y-axis, with P at (6, 1), Q at (3, 1), R at (2, 3) and S at (7, 3); QP is the shorter horizontal side, below, and RS is the longer horizontal side, above."
   },
   "G8-2025/q35.png": {
    "type": "Coordinate Planes",
@@ -147,12 +147,12 @@
   "G8-2025/q37.png": {
    "type": "Number Lines as Answer Choices",
    "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
-   "long": "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+   "long": "Four number lines are shown one above another, labelled A at the top, then B, then C, then D at the bottom. Each is marked in single units from -1 to 8 and carries a single point labelled P. On number line A, P sits just left of 3, at about 2.8. On number line B, P sits just left of 4, at about 3.8. On number line C, P sits just right of 5, at about 5.2. On number line D, P sits exactly on 7."
   },
   "G8-2025/q38.png": {
    "type": "Scatter Plot",
    "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
-   "long": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
+   "long": "A scatter plot is shown with both axes marked every 5 units from 0 to 60. About thirty points rise from lower left to upper right, the lowest at about (6, 6) and the highest at about (51, 53). They lie in a band about 10 units wide around a straight path, with no bend or curve anywhere along it. Reading across the plot, the middle of the band is at about y equals 16 where x is 9, about y equals 21 where x is 15, about y equals 33 where x is 27, about y equals 40 where x is 38, and about y equals 49 where x is 49, so the points gain height at a roughly constant rate all the way across."
   },
   "G8-2025/q39.png": {
    "type": "Data Table",

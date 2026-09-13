@@ -1,0 +1,59 @@
+{
+  "scope": "grade 7 final figure wave",
+  "items": {
+    "g7-2024-015#0": {
+      "id": "g7-2024-015",
+      "figureIndex": 0,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A single displayed expression: one third, minus a parenthesised group containing two thirds plus five sevenths, minus the mixed number two and one fifth. The parentheses close immediately after five sevenths, so the two and one fifth is outside them. Below the expression the crop also carries the bold letter A and, to its right, negative one fifteenth.",
+      "replacement": "A single expression is shown. It is one third, minus the quantity two thirds plus five sevenths, minus the mixed number two and one fifth. Only two thirds and five sevenths are inside the parentheses; the two and one fifth is subtracted after the parentheses close. Below the expression the image also shows answer choice A, negative one fifteenth.",
+      "why": "Every value is correct, but the description conveys where the parentheses close only through commas: \"in brackets, two thirds plus five sevenths, minus two and a fifth\". Read with the two and a fifth inside the group, the expression evaluates to one and sixteen one-hundred-fifths, the magnitude of distractor C, instead of the key's negative three and twenty-six one-hundred-fifths, so the grouping has to be stated in words rather than punctuation."
+    },
+    "g7-2025-002#0": {
+      "id": "g7-2025-002",
+      "figureIndex": 0,
+      "verdict": "wrong",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four two-column tables, each titled CALORIE INFORMATION, laid out in two rows of two and lettered A (top left), C (top right), B (bottom left), D (bottom right). Columns are Number of Cheese Slices and Number of Calories. A: 2 and 226, 4 and 452, 5 and 678, 8 and 904. B: 2 and 208, 4 and 416, 5 and 624, 8 and 832. C: 1 and 106, 2 and 212, 3 and 318, 4 and 424. D: 1 and 103, 2 and 206, 3 and 412, 4 and 824.",
+      "replacement": "Four tables titled Calorie Information are shown, lettered A, B, C and D. Each has two columns, Number of Cheese Slices and Number of Calories, and four rows of data. Table A: 2 slices and 226 calories, 4 slices and 452 calories, 5 slices and 678 calories, 8 slices and 904 calories. Table B: 2 slices and 208 calories, 4 slices and 416 calories, 5 slices and 624 calories, 8 slices and 832 calories. Table C: 1 slice and 106 calories, 2 slices and 212 calories, 3 slices and 318 calories, 4 slices and 424 calories. Table D: 1 slice and 103 calories, 2 slices and 206 calories, 3 slices and 412 calories, 4 slices and 824 calories.",
+      "why": "The claim that the non-proportional tables \"break the pattern in their last line\" contradicts the artwork: A and B break at their third row (5 slices paired with 678 and with 624) and their last rows, 8 and 904 and 8 and 832, are the ones that do hold the ratio, while D breaks at both its third and fourth rows. The description also never says which table is A, B, C or D, so a reader who works out that the constant-ratio table exists still cannot select the key C."
+    },
+    "g7-2025-003#0": {
+      "id": "g7-2025-003",
+      "figureIndex": 0,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A tree diagram labelled with the bold letter A at the left. The rows are labelled Main Course (top) and Dessert (bottom). Two main-course letters appear, C and S; each has two segments dropping to P on the left and B on the right. F does not appear anywhere. Four dessert endpoints in total.",
+      "replacement": "Answer choice A. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Two main courses appear, C and S; F is not shown. C branches down to P and to B, and S branches down to P and to B, giving four endpoints in all.",
+      "why": "The branching is described accurately, but the description never says this is answer choice A, so a reader who has worked out that a two-main-course tree is not the answer has no way to know which letter to rule out. Saying outright that F is absent also makes the omission checkable rather than inferred."
+    },
+    "g7-2025-003#1": {
+      "id": "g7-2025-003",
+      "figureIndex": 1,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A tree diagram labelled with the bold letter B at the left, rows labelled Main Course and Dessert. Three main-course letters, C, S and F, each with two segments dropping to P on the left and B on the right. Six dessert endpoints in total.",
+      "replacement": "Answer choice B. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F. Each one branches down to P and to B, giving six endpoints in all.",
+      "why": "The branching matches the artwork, but the description never says this is answer choice B. Since B is the key, a reader with this text alone recognises the correct tree and still cannot name the letter to bubble."
+    },
+    "g7-2025-003#2": {
+      "id": "g7-2025-003",
+      "figureIndex": 2,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A tree diagram labelled with the bold letter C at the left, rows labelled Main Course and Dessert. Three main-course letters, C, S and F. The C branches end at P and P, the S branches end at B and B, and the F branches end at P and P. Six endpoints, but each main course repeats one dessert.",
+      "replacement": "Answer choice C. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with two branches. The two branches from C both end at P, the two branches from S both end at B, and the two branches from F both end at P. There are six endpoints, but no main course is paired with both desserts.",
+      "why": "The pairings are reported correctly, but the description never says this is answer choice C, so the letter cannot be eliminated from the text alone."
+    },
+    "g7-2025-003#3": {
+      "id": "g7-2025-003",
+      "figureIndex": 3,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A tree diagram labelled with the bold letter D at the left, rows labelled Main Course and Dessert. Three main-course letters, C, S and F, each with four segments. C ends at P, B, S and F; S ends at P, B, C and F; F ends at P, B, C and S. Twelve endpoints, with main-course letters appearing in the dessert row.",
+      "replacement": "Answer choice D. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with four branches. C branches to P, B, S and F; S branches to P, B, C and F; F branches to P, B, C and S. There are twelve endpoints, and main-course letters appear in the dessert row alongside P and B.",
+      "why": "The branch lists match the artwork exactly, but the description never says this is answer choice D, and it does not point out that the dessert row contains main-course letters, which is the visible reason this tree is not a menu of meal combinations."
+    }
+  }
+}

@@ -1,158 +1,158 @@
 {
-  "testId": "g7-2025",
-  "status": "reviewed",
-  "answerKey": "CBACADCDBDCCDBDABCBDC",
-  "answerKeyItems": [
-    2,
-    3,
-    8,
-    10,
-    13,
-    14,
-    17,
-    20,
-    21,
-    23,
-    25,
-    27,
-    28,
-    29,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "39": {
-      "answer": "28 students",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "The three bars stand at 9, 13 and 6, which total 28. The histogram is this item's figure and its bar heights are in the long description."
-    },
-    "40": {
-      "answer": "−5",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "0.5 times minus 2 is minus 1, over 0.2 is minus 5. The expression is this item's own displayed expression."
-    },
-    "41": {
-      "answer": "1/3, or four twelfths",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "Of the twelve pairings, four give an odd product: 1 with 5, 1 with 7, 3 with 5 and 3 with 7. Both spinners are in this item's figure."
-    },
-    "42": {
-      "answer": "$11.50",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "Three tickets plus three popcorns at 6.50 comes to 54.00, so 3x = 34.50. Both the popcorn price and the total are in this item's own stem."
-    },
-    "43": {
-      "answer": "Yes — 25 plus negative 25 is 0, because the balance and the purchase are opposite quantities",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "Both amounts are in this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "0.25 gallon",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "Three eighths of a gallon over one and a half hours is 0.375 over 1.5. Both quantities are in this item's own transcribed stem."
-    },
-    "45": {
-      "answer": "Yes, proportional — every row gives 2.75 dollars a can",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "5.50 over 2, 11 over 4, 22 over 8 and 27.50 over 10 all equal 2.75. The table is this item's figure."
-    },
-    "46": {
-      "answer": "−y + 2",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "Minus 5y minus 6y plus 10y is minus y, and 3 minus 1 is 2. The expression is this item's own displayed expression."
-    },
-    "47": {
-      "answer": "147 square feet",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "At 1 inch to 1.75 feet the 8 by 6 inch sketch is 14 by 10.5 feet. All three figures are in this item's own stem."
-    },
-    "48": {
-      "answer": "$73.50",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "40 less 10% is 36 and 50 less 25% is 37.50. Both prices and both discounts are in this item's own stem."
-    }
+ "testId": "g7-2025",
+ "status": "reviewed",
+ "answerKey": "CBACADCDBDCCDBDABCBDC",
+ "answerKeyItems": [
+  2,
+  3,
+  8,
+  10,
+  13,
+  14,
+  17,
+  20,
+  21,
+  23,
+  25,
+  27,
+  28,
+  29,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "39": {
+   "answer": "28 students",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "The three bars stand at 9, 13 and 6, which total 28. The histogram is this item's figure and its bar heights are in the long description."
   },
-  "visuals": {
-    "G7-2025/q02.png": {
-      "type": "Tables as Answer Choices",
-      "alt": "Four Calorie Information tables labelled A to D, this item's answer choices, each pairing cheese slices with calories.",
-      "long": "Only one keeps a constant number of calories per slice down every row; the others break the pattern in their last line."
-    },
-    "G7-2025/q03_1.png": {
-      "type": "Diagram",
-      "alt": "Answer choice A: a tree diagram with two main courses, each branching to two desserts.",
-      "long": "C and S each branch to P and B -- four outcomes."
-    },
-    "G7-2025/q03_2.png": {
-      "type": "Diagram",
-      "alt": "Answer choice B: a tree diagram with three main courses, each branching to two desserts.",
-      "long": "C, S and F each branch to P and B -- six outcomes."
-    },
-    "G7-2025/q03_3.png": {
-      "type": "Diagram",
-      "alt": "Answer choice C: a tree diagram with three main courses whose dessert branches repeat the same letter.",
-      "long": "C branches to P and P, S to B and B, F to P and P."
-    },
-    "G7-2025/q03_4.png": {
-      "type": "Diagram",
-      "alt": "Answer choice D: a tree diagram with three main courses, each branching to four desserts.",
-      "long": "C branches to P, B, S and F; S to P, B, C and F; F to P, B, C and S."
-    },
-    "G7-2025/q08_1.png": {
-      "type": "Data Table",
-      "alt": "A table titled Ticket Costs pairing tickets purchased with total cost in dollars.",
-      "long": "3 tickets for 81.00, 5 for 135.00, and 10 for 270.00 -- 27 dollars a ticket."
-    },
-    "G7-2025/q10_1.png": {
-      "type": "Diagram",
-      "alt": "A rectangle with its height labelled in feet and its width labelled x.",
-      "long": "The height is 6.5 feet and the width is the unknown x."
-    },
-    "G7-2025/q14.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Alexis's Earnings, wages in dollars against hours worked, with three points labelled.",
-      "long": "The line passes through 4 hours at 55 dollars, 7 hours at 96.25, and 11 hours at 151.25 -- 13.75 an hour."
-    },
-    "G7-2025/q33.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Yogurt Prices, price in dollars against number of containers.",
-      "long": "Four points climb steadily: 1 container at 0.50, 2 at 1.00, 3 at 1.50 and 4 at 2.00."
-    },
-    "G7-2025/q35.png": {
-      "type": "Box Plots",
-      "alt": "Two box plots titled Number of Words Typed, one for Semester 1 and one for Semester 2, on a scale from 25 to 75.",
-      "long": "Semester 1 runs from about 30 to 50 with its median near 40. Semester 2 runs from about 30 to 70 with its median near 55, so it is both higher and more spread out."
-    },
-    "G7-2025/q39.png": {
-      "type": "Histogram",
-      "alt": "A histogram titled Books Read, number of students against a range of books.",
-      "long": "The 0 to 3 bar stands at 9 students, the 4 to 7 bar at 13, and the 8 to 11 bar at 6."
-    },
-    "G7-2025/q41.png": {
-      "type": "Diagram",
-      "alt": "Two spinners, A divided into three equal sections and B into four, each with an arrow.",
-      "long": "Spinner A reads 1, 2 and 3. Spinner B reads 5, 6, 7 and 8."
-    },
-    "G7-2025/q45.png": {
-      "type": "Data Table",
-      "alt": "A table titled Soda Prices pairing a number of cans with a price in dollars.",
-      "long": "2 cans for 5.50, 4 for 11.00, 8 for 22.00, and 10 for 27.50."
-    }
+  "40": {
+   "answer": "−5",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "0.5 times minus 2 is minus 1, over 0.2 is minus 5. The expression is this item's own displayed expression."
   },
-  "choicesInImage": [
-    2,
-    3
-  ],
-  "tablesInImage": [
-    2,
-    8,
-    45
-  ],
-  "reviewNotes": []
+  "41": {
+   "answer": "1/3, or four twelfths",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "Of the twelve pairings, four give an odd product: 1 with 5, 1 with 7, 3 with 5 and 3 with 7. Both spinners are in this item's figure."
+  },
+  "42": {
+   "answer": "$11.50",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "Three tickets plus three popcorns at 6.50 comes to 54.00, so 3x = 34.50. Both the popcorn price and the total are in this item's own stem."
+  },
+  "43": {
+   "answer": "Yes — 25 plus negative 25 is 0, because the balance and the purchase are opposite quantities",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "Both amounts are in this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "0.25 gallon",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "Three eighths of a gallon over one and a half hours is 0.375 over 1.5. Both quantities are in this item's own transcribed stem."
+  },
+  "45": {
+   "answer": "Yes, proportional — every row gives 2.75 dollars a can",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "5.50 over 2, 11 over 4, 22 over 8 and 27.50 over 10 all equal 2.75. The table is this item's figure."
+  },
+  "46": {
+   "answer": "−y + 2",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "Minus 5y minus 6y plus 10y is minus y, and 3 minus 1 is 2. The expression is this item's own displayed expression."
+  },
+  "47": {
+   "answer": "147 square feet",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "At 1 inch to 1.75 feet the 8 by 6 inch sketch is 14 by 10.5 feet. All three figures are in this item's own stem."
+  },
+  "48": {
+   "answer": "$73.50",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "40 less 10% is 36 and 50 less 25% is 37.50. Both prices and both discounts are in this item's own stem."
+  }
+ },
+ "visuals": {
+  "G7-2025/q02.png": {
+   "type": "Tables as Answer Choices",
+   "alt": "Four Calorie Information tables labelled A to D, this item's answer choices, each pairing cheese slices with calories.",
+   "long": "Four tables titled Calorie Information are shown, lettered A, B, C and D. Each has two columns, Number of Cheese Slices and Number of Calories, and four rows of data. Table A: 2 slices and 226 calories, 4 slices and 452 calories, 5 slices and 678 calories, 8 slices and 904 calories. Table B: 2 slices and 208 calories, 4 slices and 416 calories, 5 slices and 624 calories, 8 slices and 832 calories. Table C: 1 slice and 106 calories, 2 slices and 212 calories, 3 slices and 318 calories, 4 slices and 424 calories. Table D: 1 slice and 103 calories, 2 slices and 206 calories, 3 slices and 412 calories, 4 slices and 824 calories."
+  },
+  "G7-2025/q03_1.png": {
+   "type": "Diagram",
+   "alt": "Answer choice A: a tree diagram with two main courses, each branching to two desserts.",
+   "long": "Answer choice A. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Two main courses appear, C and S; F is not shown. C branches down to P and to B, and S branches down to P and to B, giving four endpoints in all."
+  },
+  "G7-2025/q03_2.png": {
+   "type": "Diagram",
+   "alt": "Answer choice B: a tree diagram with three main courses, each branching to two desserts.",
+   "long": "Answer choice B. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F. Each one branches down to P and to B, giving six endpoints in all."
+  },
+  "G7-2025/q03_3.png": {
+   "type": "Diagram",
+   "alt": "Answer choice C: a tree diagram with three main courses whose dessert branches repeat the same letter.",
+   "long": "Answer choice C. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with two branches. The two branches from C both end at P, the two branches from S both end at B, and the two branches from F both end at P. There are six endpoints, but no main course is paired with both desserts."
+  },
+  "G7-2025/q03_4.png": {
+   "type": "Diagram",
+   "alt": "Answer choice D: a tree diagram with three main courses, each branching to four desserts.",
+   "long": "Answer choice D. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with four branches. C branches to P, B, S and F; S branches to P, B, C and F; F branches to P, B, C and S. There are twelve endpoints, and main-course letters appear in the dessert row alongside P and B."
+  },
+  "G7-2025/q08_1.png": {
+   "type": "Data Table",
+   "alt": "A table titled Ticket Costs pairing tickets purchased with total cost in dollars.",
+   "long": "3 tickets for 81.00, 5 for 135.00, and 10 for 270.00 -- 27 dollars a ticket."
+  },
+  "G7-2025/q10_1.png": {
+   "type": "Diagram",
+   "alt": "A rectangle with its height labelled in feet and its width labelled x.",
+   "long": "The height is 6.5 feet and the width is the unknown x."
+  },
+  "G7-2025/q14.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Alexis's Earnings, wages in dollars against hours worked, with three points labelled.",
+   "long": "The line passes through 4 hours at 55 dollars, 7 hours at 96.25, and 11 hours at 151.25 -- 13.75 an hour."
+  },
+  "G7-2025/q33.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Yogurt Prices, price in dollars against number of containers.",
+   "long": "Four points climb steadily: 1 container at 0.50, 2 at 1.00, 3 at 1.50 and 4 at 2.00."
+  },
+  "G7-2025/q35.png": {
+   "type": "Box Plots",
+   "alt": "Two box plots titled Number of Words Typed, one for Semester 1 and one for Semester 2, on a scale from 25 to 75.",
+   "long": "Semester 1 runs from about 30 to 50 with its median near 40. Semester 2 runs from about 30 to 70 with its median near 55, so it is both higher and more spread out."
+  },
+  "G7-2025/q39.png": {
+   "type": "Histogram",
+   "alt": "A histogram titled Books Read, number of students against a range of books.",
+   "long": "The 0 to 3 bar stands at 9 students, the 4 to 7 bar at 13, and the 8 to 11 bar at 6."
+  },
+  "G7-2025/q41.png": {
+   "type": "Diagram",
+   "alt": "Two spinners, A divided into three equal sections and B into four, each with an arrow.",
+   "long": "Spinner A reads 1, 2 and 3. Spinner B reads 5, 6, 7 and 8."
+  },
+  "G7-2025/q45.png": {
+   "type": "Data Table",
+   "alt": "A table titled Soda Prices pairing a number of cans with a price in dollars.",
+   "long": "2 cans for 5.50, 4 for 11.00, 8 for 22.00, and 10 for 27.50."
+  }
+ },
+ "choicesInImage": [
+  2,
+  3
+ ],
+ "tablesInImage": [
+  2,
+  8,
+  45
+ ],
+ "reviewNotes": []
 }

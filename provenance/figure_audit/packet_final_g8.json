@@ -1,0 +1,325 @@
+{
+ "scope": "final figure wave -- g8",
+ "items": [
+  {
+   "id": "g8-2023-002",
+   "figureIndex": 0,
+   "crop": "assets/G8-2023/q02.png",
+   "standard": "NY-8.SP.1",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.66,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "They differ in the direction and tightness of the trend the points follow.",
+   "stem": "Which scatter plot best represents a linear association between <span class=\"math\">y</span> and <span class=\"math\">x</span> ?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g8-2023-019",
+   "figureIndex": 0,
+   "crop": "assets/G8-2023/q19.png",
+   "standard": "NY-8.G.2",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.58,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "Triangle ABC sits to the right of the y-axis and its image lies to the left, reflected across it.",
+   "stem": "Triangle <span class=\"math\">ABC</span> and its congruent image, triangle <span class=\"math\">A′B′C′</span>, are graphed on the coordinate plane shown below. Which sequence of transformations maps triangle <span class=\"math\">ABC</span> onto triangle <span class=\"math\">A′B′C′</span> ?",
+   "choices": [
+    "a reflection over the <span class=\"math\">y</span> -axis and then a translation <span class=\"math\">2</span> units up",
+    "a reflection over the <span class=\"math\">y</span> -axis and then a translation <span class=\"math\">2</span> units down",
+    "a reflection over the <span class=\"math\">x</span> -axis and then a translation <span class=\"math\">8</span> units left",
+    "a reflection over the <span class=\"math\">x</span> -axis and then a translation <span class=\"math\">8</span> units right"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2023-029",
+   "figureIndex": 0,
+   "crop": "assets/G8-2023/q29.png",
+   "standard": "NY-8.G.4",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.57,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "Triangle ABC is above the x-axis and its image is below it, smaller and turned.",
+   "stem": "On a coordinate plane, <span class=\"math\">△ABC</span> undergoes a sequence of transformations to create <span class=\"math\">△A′B′C′</span>. Which sequence of transformations could have been used to take <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span> ?",
+   "choices": [
+    "a dilation by a scale factor of  <span class=\"math\">2</span> centered at the origin and then a reflection over the <span class=\"math\">x</span> -axis",
+    "a dilation by a scale factor of  <span class=\"math\">2</span> centered at the origin and then a reflection over the <span class=\"math\">y</span> -axis",
+    "a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin and then a reflection over the <span class=\"math\">x</span> -axis",
+    "a dilation by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>2</span></span></span> centered at the origin and then a reflection over the <span class=\"math\">y</span> -axis"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2023-033",
+   "figureIndex": 0,
+   "crop": "assets/G8-2023/q33.png",
+   "standard": "NY-8.EE.6",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.71,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "The line rises from lower left to upper right, crossing the y-axis just above the origin.",
+   "stem": "The graph of a line is shown on the coordinate plane below. Which equation represents the graph of the line?",
+   "choices": [
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x + 1</span>",
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 2</span>",
+    "<span class=\"math\">y = 2x + 1</span>",
+    "<span class=\"math\">y = 2x − 2</span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2023-036",
+   "figureIndex": 0,
+   "crop": "assets/G8-2023/q36.png",
+   "standard": "NY-8.F.1",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.48,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "Two show closed curves and two show straight lines; only one passes the vertical line test for a function.",
+   "stem": "Which graph represents <span class=\"math\">y</span> as a function of <span class=\"math\">x</span> ?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g8-2024-002",
+   "figureIndex": 0,
+   "crop": "assets/G8-2024/q02.png",
+   "standard": "NY-8.SP.2",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.68,
+   "figureType": "Scatter Plot",
+   "altText": null,
+   "longDescription": "The points drift upward from left to right but scatter widely about that trend.",
+   "stem": "A scatter plot is shown below. Which pair of points could be used to draw a line that best represents the relationship of the data?",
+   "choices": [
+    "<span class=\"math\">(4,7)</span> and <span class=\"math\">(8,4)</span>",
+    "<span class=\"math\">(3,3)</span> and <span class=\"math\">(9,7)</span>",
+    "<span class=\"math\">(2,4)</span> and <span class=\"math\">(6,4)</span>",
+    "<span class=\"math\">(3,2)</span> and <span class=\"math\">(3,4)</span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2024-019",
+   "figureIndex": 0,
+   "crop": "assets/G8-2024/q19.png",
+   "standard": "NY-8.G.2",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.39,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "ABCD lies left of the y-axis and its image lies right of it, mirrored across the y-axis.",
+   "stem": "Trapezoid ABCD and its image A’B’C’D’ are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A’B’C’D’ ?",
+   "choices": [
+    "reflection over the x axis and then a rotation of 180˚ about the origin",
+    "reflection over the x axis and then a rotation of 90˚ about the origin",
+    "reflection over the y axis and then a rotation of 180˚ about the origin",
+    "reflection over the y axis and then a rotation of 90˚ about the origin"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2025-002",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q02.png",
+   "standard": "NY-8.SP.2",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.82,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat.",
+   "stem": "A set of data is graphed on a scatter plot. Which scatter plot of the data shows a line that could be used to best model the relationship of the data?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g8-2025-004",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q04_1.png",
+   "standard": "NY-7.G.3",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.62,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two.",
+   "stem": "A vertical plane intersects a right rectangular pyramid as shown below. What is the resulting two-dimensional shape formed by the intersection of the plane and the pyramid?",
+   "choices": [
+    "parallelogram",
+    "rectangle",
+    "trapezoid",
+    "triangle"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2025-017",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q17.png",
+   "standard": "NY-8.G.1c",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.68,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "J and M are the upper corners and K and L the lower ones, the rectangle sitting just right of the y-axis.",
+   "stem": "Rectangle <span class=\"math\">JKLM</span> is graphed on the coordinate plane shown below. Rectangle <span class=\"math\">JKLM</span> will be translated <span class=\"math\">5</span> units right and <span class=\"math\">2</span> units up to produce rectangle <span class=\"math\">J′K′L′M′</span>. Which statement about the line segments of rectangle <span class=\"math\">J′K′L′M′</span> is true?",
+   "choices": [
+    "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">J′M′</span></span>",
+    "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+    "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">J′K′</span></span>",
+    "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">L′M′</span></span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2025-019",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q19.png",
+   "standard": "NY-8.G.3",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.42,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "A is the upper left vertex, B the lower left, and C sits to the right of them.",
+   "stem": "Figure <span class=\"math\">ABCD</span> is shown on the coordinate plane below. The figure will be dilated by a scale factor of <span class=\"math\">2</span>, with the center of the dilation at the origin. The resulting image will be figure <span class=\"math\">A′B′C′D′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span> ?",
+   "choices": [
+    "<span class=\"math\">(−5,6)</span>",
+    "<span class=\"math\">(−3,6)</span>",
+    "<span class=\"math\">(−3,8)</span>",
+    "<span class=\"math\">(−6,8)</span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2025-034",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q34.png",
+   "standard": "NY-8.G.1a",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.81,
+   "figureType": "Coordinate Plane",
+   "altText": null,
+   "longDescription": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right.",
+   "stem": "Trapezoid ABCD was rotated 180° about the origin to create trapezoid PQRS, as shown below. Which statement about the trapezoids is true?",
+   "choices": [
+    "Angle A is congruent to angle S.",
+    "Angle C is congruent to angle Q.",
+    "Side BC is congruent to side QR.",
+    "Side DC is congruent to side RQ."
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2025-037",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q37.png",
+   "standard": "NY-8.NS.2",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.57,
+   "figureType": "Number Lines as Answer Choices",
+   "altText": null,
+   "longDescription": "They differ only in where P sits: about 3, about 4, about 5, and about 7.",
+   "stem": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g8-2025-038",
+   "figureIndex": 0,
+   "crop": "assets/G8-2025/q38.png",
+   "standard": "NY-8.SP.1",
+   "type": "Multiple Choice",
+   "key": "A",
+   "pValue": 0.67,
+   "figureType": "Scatter Plot",
+   "altText": null,
+   "longDescription": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association.",
+   "stem": "A scatter plot is shown below. Which statement best describes the association between <span class=\"math\">x</span> and  <span class=\"math\">y</span> ?",
+   "choices": [
+    "There is a positive, linear association.",
+    "There is a negative, linear association.",
+    "There is a positive, nonlinear association.",
+    "There is a negative, nonlinear association."
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2026-011",
+   "figureIndex": 0,
+   "crop": "assets/G8-2026/q11.png",
+   "standard": "NY-8.F.1",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.44,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "A is a row of points all at height 2. B is a set of points rising from left to right. C is a U-shaped curve opening upward. D is a V shape made of two rays meeting on the x-axis.",
+   "stem": "Which relation is not a function?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g8-2026-034",
+   "figureIndex": 0,
+   "crop": "assets/G8-2026/q34.png",
+   "standard": "NY-8.SP.1",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.78,
+   "figureType": "Graphs as Answer Choices",
+   "altText": null,
+   "longDescription": "Each plot shows about twenty points on axes running from 0 to 10. They differ in how strongly and in which direction the points trend.",
+   "stem": "Which scatter plot represents data with a positive linear association?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "scope": "final figure wave -- g7",
+ "items": [
+  {
+   "id": "g7-2024-015",
+   "figureIndex": 0,
+   "crop": "assets/G7-2024/q15_1.png",
+   "standard": "NY-7.NS.1d",
+   "type": "Multiple Choice",
+   "key": "D",
+   "pValue": 0.69,
+   "figureType": "Expression",
+   "altText": null,
+   "longDescription": "The expression is a third minus, in brackets, two thirds plus five sevenths, minus two and a fifth. Choice A is negative one fifteenth.",
+   "stem": "What is the value of the expression shown below?",
+   "choices": [
+    "<span class=\"math\">− <span class=\"frac\"><span>1</span><span>15</span></span></span>",
+    "<span class=\"math\">− <span class=\"frac\"><span>11</span><span>15</span></span></span>",
+    "<span class=\"math\">−1 <span class=\"frac\"><span>16</span><span>105</span></span></span>",
+    "<span class=\"math\">−3 <span class=\"frac\"><span>26</span><span>105</span></span></span>"
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g7-2025-002",
+   "figureIndex": 0,
+   "crop": "assets/G7-2025/q02.png",
+   "standard": "NY-7.RP.2a",
+   "type": "Multiple Choice",
+   "key": "C",
+   "pValue": 0.81,
+   "figureType": "Tables as Answer Choices",
+   "altText": null,
+   "longDescription": "Only one keeps a constant number of calories per slice down every row; the others break the pattern in their last line.",
+   "stem": "Which table shows a proportional relationship between the number of calories and the number of cheese slices?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "answer-choice figure that never maps the letters"
+  },
+  {
+   "id": "g7-2025-003",
+   "figureIndex": 0,
+   "crop": "assets/G7-2025/q03_1.png",
+   "standard": "NY-7.SP.8b",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.82,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "C and S each branch to P and B -- four outcomes.",
+   "stem": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g7-2025-003",
+   "figureIndex": 1,
+   "crop": "assets/G7-2025/q03_2.png",
+   "standard": "NY-7.SP.8b",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.82,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "C, S and F each branch to P and B -- six outcomes.",
+   "stem": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g7-2025-003",
+   "figureIndex": 2,
+   "crop": "assets/G7-2025/q03_3.png",
+   "standard": "NY-7.SP.8b",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.82,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "C branches to P and P, S to B and B, F to P and P.",
+   "stem": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "no numbers in the description"
+  },
+  {
+   "id": "g7-2025-003",
+   "figureIndex": 3,
+   "crop": "assets/G7-2025/q03_4.png",
+   "standard": "NY-7.SP.8b",
+   "type": "Multiple Choice",
+   "key": "B",
+   "pValue": 0.82,
+   "figureType": "Diagram",
+   "altText": null,
+   "longDescription": "C branches to P, B, S and F; S to P, B, C and F; F to P, B, C and S.",
+   "stem": "At an event, each person can choose one main course and one dessert for a meal. The main course choices are chicken (C), steak (S), or fish (F). The choices for dessert are pudding (P) or a brownie (B). Which tree diagram represents all the different meal combinations being offered at the event?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "reason": "no numbers in the description"
+  }
+ ]
+}

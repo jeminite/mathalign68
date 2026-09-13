@@ -1,0 +1,86 @@
+{
+  "scope": "grade 6 final figure wave",
+  "items": {
+    "g6-2023-032#1": {
+      "id": "g6-2023-032",
+      "figureIndex": 1,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four copies of the same two-row, five-column table, each titled TEACHERS AND STUDENTS, laid out two by two with the letter beside each: A top left, B below it, C top right, D below it. Rows are Number of Teachers and Number of Students. A reads 2, 6, 8, 12, 37 over 5, 15, 16, 30, 75. B reads 2, 6, 8, 12, 30 over 5, 15, 20, 30, 75. C reads 2, 12, 8, 12, 72 over 5, 15, 11, 30, 75. D reads 2, 6, 8, 12, 32 over 5, 15, 20, 30, 75. The three cells that were blank in the stem table are the second teacher cell, the third student cell and the fifth teacher cell, and the choices do indeed agree everywhere else.",
+      "replacement": "Four versions of the same table appear, labeled A, B, C and D. Each is titled Teachers and Students and has a row labeled Number of Teachers above a row labeled Number of Students, with five columns. In table A the teacher row reads 2, 6, 8, 12, 37 and the student row reads 5, 15, 16, 30, 75. In table B the teacher row reads 2, 6, 8, 12, 30 and the student row reads 5, 15, 20, 30, 75. In table C the teacher row reads 2, 12, 8, 12, 72 and the student row reads 5, 15, 11, 30, 75. In table D the teacher row reads 2, 6, 8, 12, 32 and the student row reads 5, 15, 20, 30, 75.",
+      "why": "Every word of the old description is true, but it never says which lettered table holds which numbers, so a reader who has correctly worked out that the missing cells are 6 teachers, 20 students and 30 teachers still has no way to pick B. The replacement names all four tables, and B is the only one whose columns all reduce to 2 to 5."
+    },
+    "g6-2023-039#0": {
+      "id": "g6-2023-039",
+      "figureIndex": 0,
+      "verdict": "sound",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Five outlined shapes in a single row, left to right: two circles, then two squares, then one right triangle. Nothing is labeled and no shape is shaded.",
+      "replacement": null,
+      "why": "The count and the kinds match the artwork exactly, and two circles out of five shapes is the whole of what the ratio question needs."
+    },
+    "g6-2024-011#0": {
+      "id": "g6-2024-011",
+      "figureIndex": 0,
+      "verdict": "insufficient",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four number lines stacked vertically, labeled A, B, C, D from top to bottom. Each runs from negative 6 to 6 with a tick at every whole number and an arrowhead at each end. A: filled circle at negative 3, heavy shading running left. B: filled circle at negative 3, heavy shading running right. C: open circle at negative 3, shading running left. D: open circle at negative 3, shading running right.",
+      "replacement": "Four number lines are shown, labeled A, B, C and D. Each runs from negative 6 to 6, with a tick mark at every whole number and an arrowhead at both ends. Number line A has a filled circle at negative 3 and is shaded from that point to the left. Number line B has a filled circle at negative 3 and is shaded from that point to the right. Number line C has an open circle at negative 3 and is shaded from that point to the left. Number line D has an open circle at negative 3 and is shaded from that point to the right.",
+      "why": "The old description correctly identifies the two things that vary, but a reader who knows x is at least negative 3 needs a filled circle shaded rightward and is never told that this is B. The replacement assigns each combination to its letter."
+    },
+    "g6-2024-020#0": {
+      "id": "g6-2024-020",
+      "figureIndex": 0,
+      "verdict": "sound",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A cube drawn in three-quarter view, front face square, with top and right faces receding. A single dimension bar sits under the bottom front edge reading 2 and one half in. No other edge carries a measurement.",
+      "replacement": null,
+      "why": "Only one edge is labeled in the artwork, but the stem states the solid is a cube, so carrying that length to every edge is a fair reading rather than an addition; 2.5 cubed is 15 and 5 eighths, which is choice C."
+    },
+    "g6-2024-044#0": {
+      "id": "g6-2024-044",
+      "figureIndex": 0,
+      "verdict": "sound",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A solid built from unit cubes, drawn in three-quarter view with the individual cube edges visible. The front face is a 4 by 4 grid, the top face shows 4 by 4, and the right face shows 4 by 4, so the solid is 4 cubes wide, 4 tall and 4 deep.",
+      "replacement": null,
+      "why": "Four along every edge is what the drawing shows, and it is everything needed to give 4 cubed, or 64, which is the perfect cube the response has to name."
+    },
+    "g6-2025-001#0": {
+      "id": "g6-2025-001",
+      "figureIndex": 0,
+      "verdict": "wrong",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four tables titled RECIPE, laid out two by two, labeled A top left, B below it, C top right, D below it. All four have the same two column headings: Cheese (cups) on the left, Noodles (ounces) on the right, with four rows. A: 2 and 8, 3 and 9, 4 and 10, 5 and 11. B: 2 and 8, 4 and 16, 6 and 24, 8 and 32. C: 8 and 2, 9 and 3, 10 and 4, 11 and 5. D: 8 and 2, 16 and 4, 24 and 6, 32 and 8.",
+      "replacement": "Four tables are shown, labeled A, B, C and D. Each is titled Recipe and has two columns, headed Cheese (cups) on the left and Noodles (ounces) on the right, with four rows of numbers. Table A pairs 2 cups of cheese with 8 ounces of noodles, 3 with 9, 4 with 10, and 5 with 11. Table B pairs 2 cups with 8 ounces, 4 with 16, 6 with 24, and 8 with 32. Table C pairs 8 cups with 2 ounces, 9 with 3, 10 with 4, and 11 with 5. Table D pairs 8 cups with 2 ounces, 16 with 4, 24 with 6, and 32 with 8.",
+      "why": "The old description says only one table keeps a constant ratio and the others add a fixed amount; the artwork shows two tables with a constant ratio, B at 2 cups to 8 ounces and D at 8 cups to 2 ounces, and D is wrong because it reverses the recipe, not because it adds. It also never maps the letters. The replacement lets a reader see that only B pairs 2 cups of cheese with 8 ounces of noodles throughout."
+    },
+    "g6-2025-033#0": {
+      "id": "g6-2025-033",
+      "figureIndex": 0,
+      "verdict": "wrong",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four coordinate grids laid out two by two, labeled A top left, B below it, C top right, D below it. Each has an x axis numbered 0 to 10 and a y axis numbered 0 to 10 with gridlines at every whole number. A has points at (1,1), (4,4), (7,7), (10,10). B has five points at (1,1), (3,3), (5,5), (7,7), (9,9). C has points at (1,1), (4,3), (7,5), (10,7). D has points at (1,1), (3,4), (5,7), (7,10). All four sets are collinear.",
+      "replacement": "Four coordinate grids are shown, labeled A, B, C and D. Each has an x axis numbered 0 to 10 and a y axis numbered 0 to 10, with gridlines at every whole number. Grid A shows four points, at (1, 1), (4, 4), (7, 7) and (10, 10). Grid B shows five points, at (1, 1), (3, 3), (5, 5), (7, 7) and (9, 9). Grid C shows four points, at (1, 1), (4, 3), (7, 5) and (10, 7). Grid D shows four points, at (1, 1), (3, 4), (5, 7) and (7, 10).",
+      "why": "The old description says the graphs differ in whether the points climb in a straight line, but every one of the four sets is collinear, so that stated difference is not in the artwork; it also maps no letters. With the coordinates given, a reader applying plus 3 to x and plus 2 to y from (1,1) gets (1,1), (4,3), (7,5), (10,7) and lands on C."
+    },
+    "g6-2026-008#0": {
+      "id": "g6-2026-008",
+      "figureIndex": 0,
+      "verdict": "sound",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "A single number line with arrowheads at both ends, ticks and labels at every whole number from negative 5 to 5. Four dots sit midway between ticks: P between negative 5 and negative 4, Q between negative 4 and negative 3, R between 3 and 4, S between 4 and 5, so they are at negative 4.5, negative 3.5, 3.5 and 4.5.",
+      "replacement": null,
+      "why": "All four positions are stated with their signs and match the dots exactly, so a reader takes the opposite of 4 and a half and finds it is P, which is choice A."
+    },
+    "g6-2026-034#0": {
+      "id": "g6-2026-034",
+      "figureIndex": 0,
+      "verdict": "wrong",
+      "readTheCrop": true,
+      "whatTheArtworkShows": "Four tables stacked vertically, each titled NOTEBOOK PRICES, labeled A, B, C, D from top to bottom. Each has a row labeled Number of Notebooks above a row labeled Price (dollars), five columns. A: notebooks 6, 12, 18, 24, 30 over prices 3, 6, 9, 12, 15. B: notebooks 3, 6, 9, 12, 15 over prices 6, 12, 18, 24, 30. C: notebooks 6, 9, 12, 15, 18 over prices 3, 6, 9, 12, 15. D: notebooks 3, 6, 9, 12, 15 over prices 6, 9, 12, 15, 18.",
+      "replacement": "Four tables are shown, labeled A, B, C and D. Each is titled Notebook Prices and has a row labeled Number of Notebooks above a row labeled Price (dollars), with five columns. In table A the notebook row reads 6, 12, 18, 24, 30 and the price row reads 3, 6, 9, 12, 15. In table B the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 12, 18, 24, 30. In table C the notebook row reads 6, 9, 12, 15, 18 and the price row reads 3, 6, 9, 12, 15. In table D the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 9, 12, 15, 18.",
+      "why": "The old description claims the tables differ in whether the prices double the notebook counts or the other way round, but C is neither, its notebook counts step by 3 against prices stepping by 3 from a different start, and D adds 3 to the price for every 3 notebooks; it also maps no letters. With the rows given, B is the only table in which the price is always twice the number of notebooks, matching 3 notebooks for 6 dollars."
+    }
+  }
+}

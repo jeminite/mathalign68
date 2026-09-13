@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-13T09:36:45",
+    "built": "2026-09-13T09:48:28",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -4438,7 +4438,7 @@
           "file": "G6-2023/q32_2.png",
           "type": "Tables as Answer Choices",
           "alt": "Four completed versions of the Teachers and Students table, labelled A to D, which are this item's answer choices.",
-          "longDescription": "They differ only in the numbers filled into the three missing cells."
+          "longDescription": "Four versions of the same table appear, labeled A, B, C and D. Each is titled Teachers and Students and has a row labeled Number of Teachers above a row labeled Number of Students, with five columns. In table A the teacher row reads 2, 6, 8, 12, 37 and the student row reads 5, 15, 16, 30, 75. In table B the teacher row reads 2, 6, 8, 12, 30 and the student row reads 5, 15, 20, 30, 75. In table C the teacher row reads 2, 12, 8, 12, 72 and the student row reads 5, 15, 11, 30, 75. In table D the teacher row reads 2, 6, 8, 12, 32 and the student row reads 5, 15, 20, 30, 75."
         }
       ],
       "tablesInImage": true,
@@ -6178,7 +6178,7 @@
           "file": "G6-2024/q11.png",
           "type": "Number Lines as Answer Choices",
           "alt": "Four number lines labelled A to D, this item's answer choices, each running from negative 6 to 6 with a mark at negative 3.",
-          "longDescription": "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right."
+          "longDescription": "Four number lines are shown, labeled A, B, C and D. Each runs from negative 6 to 6, with a tick mark at every whole number and an arrowhead at both ends. Number line A has a filled circle at negative 3 and is shaded from that point to the left. Number line B has a filled circle at negative 3 and is shaded from that point to the right. Number line C has an open circle at negative 3 and is shaded from that point to the left. Number line D has an open circle at negative 3 and is shaded from that point to the right."
         }
       ],
       "tablesInImage": false,
@@ -8741,7 +8741,7 @@
           "file": "G6-2025/q01.png",
           "type": "Tables as Answer Choices",
           "alt": "Four Recipe tables labelled A to D, this item's answer choices, each pairing cups of cheese with ounces of noodles.",
-          "longDescription": "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead."
+          "longDescription": "Four tables are shown, labeled A, B, C and D. Each is titled Recipe and has two columns, headed Cheese (cups) on the left and Noodles (ounces) on the right, with four rows of numbers. Table A pairs 2 cups of cheese with 8 ounces of noodles, 3 with 9, 4 with 10, and 5 with 11. Table B pairs 2 cups with 8 ounces, 4 with 16, 6 with 24, and 8 with 32. Table C pairs 8 cups with 2 ounces, 9 with 3, 10 with 4, and 11 with 5. Table D pairs 8 cups with 2 ounces, 16 with 4, 24 with 6, and 32 with 8."
         }
       ],
       "tablesInImage": true,
@@ -10280,7 +10280,7 @@
           "file": "G6-2025/q33.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four coordinate grids labelled A to D, this item's answer choices, each with a handful of plotted points.",
-          "longDescription": "They differ in where the points sit and whether they climb in a straight line."
+          "longDescription": "Four coordinate grids are shown, labeled A, B, C and D. Each has an x axis numbered 0 to 10 and a y axis numbered 0 to 10, with gridlines at every whole number. Grid A shows four points, at (1, 1), (4, 4), (7, 7) and (10, 10). Grid B shows five points, at (1, 1), (3, 3), (5, 5), (7, 7) and (9, 9). Grid C shows four points, at (1, 1), (4, 3), (7, 5) and (10, 7). Grid D shows four points, at (1, 1), (3, 4), (5, 7) and (7, 10)."
         }
       ],
       "tablesInImage": false,
@@ -14556,7 +14556,7 @@
           "file": "G6-2026/q34.png",
           "type": "Tables as Answer Choices",
           "alt": "Four tables titled Notebook Prices labelled A, B, C and D, which are this item's answer choices.",
-          "longDescription": "Each pairs a number of notebooks with a price in dollars. They differ in which row holds which values and in whether the prices double the notebook counts or the other way round."
+          "longDescription": "Four tables are shown, labeled A, B, C and D. Each is titled Notebook Prices and has a row labeled Number of Notebooks above a row labeled Price (dollars), with five columns. In table A the notebook row reads 6, 12, 18, 24, 30 and the price row reads 3, 6, 9, 12, 15. In table B the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 12, 18, 24, 30. In table C the notebook row reads 6, 9, 12, 15, 18 and the price row reads 3, 6, 9, 12, 15. In table D the notebook row reads 3, 6, 9, 12, 15 and the price row reads 6, 9, 12, 15, 18."
         }
       ],
       "tablesInImage": true,
@@ -19211,7 +19211,7 @@
           "file": "G7-2024/q15_1.png",
           "type": "Expression",
           "alt": "A displayed expression with answer choice A shown beneath it.",
-          "longDescription": "The expression is a third minus, in brackets, two thirds plus five sevenths, minus two and a fifth. Choice A is negative one fifteenth."
+          "longDescription": "A single expression is shown. It is one third, minus the quantity two thirds plus five sevenths, minus the mixed number two and one fifth. Only two thirds and five sevenths are inside the parentheses; the two and one fifth is subtracted after the parentheses close. Below the expression the image also shows answer choice A, negative one fifteenth."
         }
       ],
       "tablesInImage": false,
@@ -21347,7 +21347,7 @@
           "file": "G7-2025/q02.png",
           "type": "Tables as Answer Choices",
           "alt": "Four Calorie Information tables labelled A to D, this item's answer choices, each pairing cheese slices with calories.",
-          "longDescription": "Only one keeps a constant number of calories per slice down every row; the others break the pattern in their last line."
+          "longDescription": "Four tables titled Calorie Information are shown, lettered A, B, C and D. Each has two columns, Number of Cheese Slices and Number of Calories, and four rows of data. Table A: 2 slices and 226 calories, 4 slices and 452 calories, 5 slices and 678 calories, 8 slices and 904 calories. Table B: 2 slices and 208 calories, 4 slices and 416 calories, 5 slices and 624 calories, 8 slices and 832 calories. Table C: 1 slice and 106 calories, 2 slices and 212 calories, 3 slices and 318 calories, 4 slices and 424 calories. Table D: 1 slice and 103 calories, 2 slices and 206 calories, 3 slices and 412 calories, 4 slices and 824 calories."
         }
       ],
       "tablesInImage": true,
@@ -21460,25 +21460,25 @@
           "file": "G7-2025/q03_1.png",
           "type": "Diagram",
           "alt": "Answer choice A: a tree diagram with two main courses, each branching to two desserts.",
-          "longDescription": "C and S each branch to P and B -- four outcomes."
+          "longDescription": "Answer choice A. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Two main courses appear, C and S; F is not shown. C branches down to P and to B, and S branches down to P and to B, giving four endpoints in all."
         },
         {
           "file": "G7-2025/q03_2.png",
           "type": "Diagram",
           "alt": "Answer choice B: a tree diagram with three main courses, each branching to two desserts.",
-          "longDescription": "C, S and F each branch to P and B -- six outcomes."
+          "longDescription": "Answer choice B. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F. Each one branches down to P and to B, giving six endpoints in all."
         },
         {
           "file": "G7-2025/q03_3.png",
           "type": "Diagram",
           "alt": "Answer choice C: a tree diagram with three main courses whose dessert branches repeat the same letter.",
-          "longDescription": "C branches to P and P, S to B and B, F to P and P."
+          "longDescription": "Answer choice C. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with two branches. The two branches from C both end at P, the two branches from S both end at B, and the two branches from F both end at P. There are six endpoints, but no main course is paired with both desserts."
         },
         {
           "file": "G7-2025/q03_4.png",
           "type": "Diagram",
           "alt": "Answer choice D: a tree diagram with three main courses, each branching to four desserts.",
-          "longDescription": "C branches to P, B, S and F; S to P, B, C and F; F to P, B, C and S."
+          "longDescription": "Answer choice D. A tree diagram with a top row labelled Main Course and a bottom row labelled Dessert. Three main courses appear, C, S and F, each with four branches. C branches to P, B, S and F; S branches to P, B, C and F; F branches to P, B, C and S. There are twelve endpoints, and main-course letters appear in the dessert row alongside P and B."
         }
       ],
       "tablesInImage": false,
@@ -28912,7 +28912,7 @@
           "file": "G8-2023/q02.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
-          "longDescription": "They differ in the direction and tightness of the trend the points follow."
+          "longDescription": "Four scatter plots are shown, each on axes labeled x and y and marked in single units from 0 to 11. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A ten points bend upward: they sit almost on the x-axis at about (1, 0.2), (2, 0.2) and (3.6, 0.4), then climb more and more steeply through about (5, 1), (6.3, 1.8), (7.3, 2.9) and (8, 4.1) to about (9, 5.5), (9, 7) and (9, 8.3), so the path curves rather than running straight. In plot C ten points rise to a peak and then fall, forming an arch: about (0.2, 4.5), (1, 6), (1.2, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) and (9, 4). In plot B ten points are scattered with no pattern at all: about (2, 5), (3, 9), (4, 6.5), (4.6, 9), (5, 4.5), (7, 7), (7, 4), (8, 9), (9, 7) and (9, 6.5). In plot D ten points fall from upper left to lower right in a narrow, nearly straight band: about (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) and (10, 2)."
         }
       ],
       "tablesInImage": false,
@@ -29695,7 +29695,7 @@
           "file": "G8-2023/q19.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC and its image triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
-          "longDescription": "Triangle ABC sits to the right of the y-axis and its image lies to the left, reflected across it."
+          "longDescription": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC lies below the x-axis and to the right of the y-axis, with A at (4, -4), B at (8, -8) and C at (10, -5). Triangle A'B'C' lies below the x-axis and to the left of the y-axis, with A' at (-4, -2), B' at (-8, -6) and C' at (-10, -3)."
         }
       ],
       "tablesInImage": false,
@@ -30490,7 +30490,7 @@
           "file": "G8-2023/q29.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC and triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
-          "longDescription": "Triangle ABC is above the x-axis and its image is below it, smaller and turned."
+          "longDescription": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC is above the x-axis and right of the y-axis, with A at (2, 4), B at (2, 2) and C at (6, 2); side AB is vertical and 2 units long, and side BC is horizontal and 4 units long. Triangle A'B'C' is below the x-axis and right of the y-axis, with A' at (4, -8), B' at (4, -4) and C' at (12, -4); side A'B' is vertical and 4 units long, and side B'C' is horizontal and 8 units long. Each side of triangle A'B'C' is twice the length of the matching side of triangle ABC."
         }
       ],
       "tablesInImage": false,
@@ -30605,7 +30605,7 @@
           "file": "G8-2023/q33.png",
           "type": "Coordinate Plane",
           "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
-          "longDescription": "The line rises from lower left to upper right, crossing the y-axis just above the origin."
+          "longDescription": "A coordinate plane is shown with both axes marked in single units from -6 to 6. A single straight line rises from the lower left to the upper right across the whole grid. Two points are plotted on it: (0, 1), on the y-axis, and (6, 4). The line also crosses the x-axis at (-2, 0)."
         }
       ],
       "tablesInImage": false,
@@ -30956,7 +30956,7 @@
           "file": "G8-2023/q36.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four graphs labelled A, B, C and D, which are this item's answer choices.",
-          "longDescription": "Two show closed curves and two show straight lines; only one passes the vertical line test for a function."
+          "longDescription": "Four graphs are shown, each on a coordinate plane with both axes marked in single units from -8 to 8. Graph A is at the upper left, graph C at the upper right, graph B at the lower left, and graph D at the lower right. Graph A shows a curve shaped like a sideways U opening to the right: it turns at (-6, 0), and its two arms straighten into horizontal rays that run right without end, the upper one along y = 5 and the lower one along y = -5, so the curve passes through both (0, 5) and (0, -5). Graph C shows the mirror image of that, a sideways U opening to the left: it turns at (6, 0), and its two arms run left without end along y = 5 and y = -5, so it too passes through both (0, 5) and (0, -5). Graph B shows a single vertical line through every point with x equal to 3, running up and down without end. Graph D shows a single horizontal line through every point with y equal to 3, running left and right without end."
         }
       ],
       "tablesInImage": false,
@@ -35586,7 +35586,7 @@
           "file": "G8-2025/q02.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
-          "longDescription": "The points fall from upper left to lower right. The choices differ in how well the drawn line follows them; two slope the wrong way or sit flat."
+          "longDescription": "Four scatter plots are shown, each plotting the same eight data points on axes marked in single units, x from 0 to 10 and y from 0 to 8, and each with one straight line drawn across it. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. The eight points, identical in all four plots, are at about (2, 6), (2.6, 6), (3, 4.1), (6.1, 3.2), (6.1, 2.3), (7.9, 2.1), (8.2, 1.9) and (9.8, 1.8); they fall from upper left to lower right. The line in plot A falls from left to right through about (2, 6.3) and (10, 1.8), so it runs above the points through the middle of the plot: where x is 6 the line is at about 4.1 while the two points there are at 3.2 and 2.3. The line in plot C falls a little more steeply, through about (2, 6) and (10, 0.6), so it runs through the middle of the points: where x is 6 the line is at about 3.3, between the points at 3.2 and 2.3, and where x is 8 it is at about 2.0, between the points at 2.1 and 1.9. The line in plot B is horizontal at about y equals 2.9. The line in plot D rises from left to right through about (2, 2) and (10, 7.7), the opposite direction from the points."
         }
       ],
       "tablesInImage": false,
@@ -36606,7 +36606,7 @@
           "file": "G8-2025/q19.png",
           "type": "Coordinate Plane",
           "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
-          "longDescription": "A is the upper left vertex, B the lower left, and C sits to the right of them."
+          "longDescription": "A coordinate plane is shown with both axes marked in single units from -10 to 10. Four-sided figure ABCD sits above the x-axis and just left of the y-axis. Its vertices are A at (-3, 4), B at (-3, 1), C at (-1, 2) and D at (-1, 3). Side AB is vertical and 3 units long, and side DC is vertical and 1 unit long."
         }
       ],
       "tablesInImage": false,
@@ -36716,7 +36716,7 @@
         {
           "file": "G8-2025/q27.png",
           "type": "Diagram",
-          "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
+          "alt": "A cone with its height and the full width of its base labelled in yards, with the right angle at the centre marked.",
           "longDescription": "The cone stands on its circular base with its apex at the top. A dashed segment runs from the apex straight down to the centre of the base, meeting the base at a marked right angle, and is labelled 8 yards. A second dashed segment runs right across the base through that centre, from one edge to the other, and is labelled 6 yards, so 6 yards is the diameter of the base."
         }
       ],
@@ -37398,7 +37398,7 @@
           "file": "G8-2025/q34.png",
           "type": "Coordinate Plane",
           "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
-          "longDescription": "ABCD has A and B on top and D and C below. QRSP is the same shape sitting the other side of the x-axis and to the right."
+          "longDescription": "A coordinate plane is shown with the x-axis marked in single units from -9 to 9 and the y-axis in single units from -4 to 4. Trapezoid ABCD lies below the x-axis and left of the y-axis, with A at (-6, -1), B at (-3, -1), C at (-2, -3) and D at (-7, -3); AB is the shorter horizontal side, on top, and DC is the longer horizontal side, below. Trapezoid PQRS lies above the x-axis and right of the y-axis, with P at (6, 1), Q at (3, 1), R at (2, 3) and S at (7, 3); QP is the shorter horizontal side, below, and RS is the longer horizontal side, above."
         }
       ],
       "tablesInImage": false,
@@ -37730,7 +37730,7 @@
           "file": "G8-2025/q37.png",
           "type": "Number Lines as Answer Choices",
           "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
-          "longDescription": "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+          "longDescription": "Four number lines are shown one above another, labelled A at the top, then B, then C, then D at the bottom. Each is marked in single units from -1 to 8 and carries a single point labelled P. On number line A, P sits just left of 3, at about 2.8. On number line B, P sits just left of 4, at about 3.8. On number line C, P sits just right of 5, at about 5.2. On number line D, P sits exactly on 7."
         }
       ],
       "tablesInImage": false,
@@ -37849,7 +37849,7 @@
           "file": "G8-2025/q38.png",
           "type": "Scatter Plot",
           "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
-          "longDescription": "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
+          "longDescription": "A scatter plot is shown with both axes marked every 5 units from 0 to 60. About thirty points rise from lower left to upper right, the lowest at about (6, 6) and the highest at about (51, 53). They lie in a band about 10 units wide around a straight path, with no bend or curve anywhere along it. Reading across the plot, the middle of the band is at about y equals 16 where x is 9, about y equals 21 where x is 15, about y equals 33 where x is 27, about y equals 40 where x is 38, and about y equals 49 where x is 49, so the points gain height at a roughly constant rate all the way across."
         }
       ],
       "tablesInImage": false,
@@ -39948,7 +39948,7 @@
           "file": "G8-2026/q11.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four small coordinate graphs labelled A, B, C and D, which are this item's answer choices.",
-          "longDescription": "A is a row of points all at height 2. B is a set of points rising from left to right. C is a U-shaped curve opening upward. D is a V shape made of two rays meeting on the x-axis."
+          "longDescription": "Four graphs are shown. Graph A is at the upper left, graph C at the upper right, graph B at the lower left, and graph D at the lower right. Graph A has axes from 0 to 7 and shows five separate points, all at height 2: (1, 2), (2, 2), (3, 2), (4, 2) and (5, 2). Graph B has axes from 0 to 7 and shows five separate points: (0, 1), (1, 3), (2, 4), (3, 2) and (4, 4), so the heights rise, drop back at x equals 3, and rise again, and no x value is used more than once. Graph C is a coordinate plane with x from -3 to 3 and y from -1 to 5, showing a U-shaped curve opening upward whose lowest point is the origin, passing through about (1, 1), (-1, 1), (2, 4) and (-2, 4) before leaving the top of the grid. Graph D is a coordinate plane with x from -1 to 5 and y from -3 to 3, showing two straight rays that both begin at the origin and open to the right, like a greater-than sign: the upper ray rises to the right through (1, 1), (2, 2), (3, 3) and (4, 4), and the lower ray falls to the right through (1, -1), (2, -2), (3, -3) and (4, -4)."
         }
       ],
       "tablesInImage": false,
@@ -41890,7 +41890,7 @@
           "file": "G8-2026/q31.png",
           "type": "Diagram",
           "alt": "Two parallel lines a and b cut by two transversals q and t, with three angles numbered.",
-          "longDescription": "Angle 1 and angle 2 sit where the transversals meet line a, and angle 3 sits where transversal t meets line b."
+          "longDescription": "Two horizontal parallel lines are drawn, line a above and line b below. Two transversals, t and q, cross each other at a single point on line a. Transversal t runs from lower left to upper right: it crosses line b, continues up to that point on line a, and carries on above it. Transversal q runs from upper left to lower right: it passes through that same point on line a and then crosses line b farther to the right. At that point on line a, three angles open downward side by side and together fill the half-turn below line a. Angle 1 is the rightmost, between line a going right and transversal q going down. Angle 2 is next to angle 1 on its left, between transversal q going down and transversal t going down to the left; angles 1 and 2 are adjacent and together make the angle between line a going right and transversal t going down to the left. The third angle, unlabelled, lies between transversal t going down to the left and line a going left. Angle 3 is at the point where transversal t crosses line b, above line b and to the left of t."
         }
       ],
       "tablesInImage": false,
@@ -42226,7 +42226,7 @@
           "file": "G8-2026/q34.png",
           "type": "Graphs as Answer Choices",
           "alt": "Four scatter plots labelled A, B, C and D, which are this item's answer choices.",
-          "longDescription": "Each plot shows about twenty points on axes running from 0 to 10. They differ in how strongly and in which direction the points trend."
+          "longDescription": "Four scatter plots are shown, each on axes marked in single units from 0 to 10 in both directions. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A the points fall from upper left to lower right in a loose band: (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4) and (10, 1). In plot B the points rise from lower left to upper right along a straight path in a fairly tight band: (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6) and (7, 8). In plot C the points first fall and then rise again, forming a wide U with its lowest points near x equals 5: (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5) and (10, 7). In plot D the points follow no trend at all: (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7) and (10, 2)."
         }
       ],
       "tablesInImage": false,

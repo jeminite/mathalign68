@@ -1,0 +1,149 @@
+{
+ "scope": "grade 8 final figure wave",
+ "items": {
+  "g8-2023-002#0": {
+   "id": "g8-2023-002",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four scatter plots in a two-by-two block: A upper left, C upper right, B lower left, D lower right, each on axes from 0 to 11. A is an upward-bending curve, C is an arch that rises to (5, 10) and falls again, B is a random scatter, and D is a nearly straight downward band from (1, 10) to (10, 2). The key, D, is the only one whose points follow a straight path.",
+   "replacement": "Four scatter plots are shown, each on axes labeled x and y and marked in single units from 0 to 11. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A ten points bend upward: they sit almost on the x-axis at about (1, 0.2), (2, 0.2) and (3.6, 0.4), then climb more and more steeply through about (5, 1), (6.3, 1.8), (7.3, 2.9) and (8, 4.1) to about (9, 5.5), (9, 7) and (9, 8.3), so the path curves rather than running straight. In plot C ten points rise to a peak and then fall, forming an arch: about (0.2, 4.5), (1, 6), (1.2, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) and (9, 4). In plot B ten points are scattered with no pattern at all: about (2, 5), (3, 9), (4, 6.5), (4.6, 9), (5, 4.5), (7, 7), (7, 4), (8, 9), (9, 7) and (9, 6.5). In plot D ten points fall from upper left to lower right in a narrow, nearly straight band: about (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) and (10, 2).",
+   "why": "The published text never says which plot is A, B, C or D, so a reader who correctly decides that the answer is the straight downward band still cannot name a letter. The replacement fixes each letter to a grid position and gives the points of all four plots."
+  },
+  "g8-2023-019#0": {
+   "id": "g8-2023-019",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Axes marked every 2 units from -12 to 12. Triangle ABC is below the x-axis and right of the y-axis with A at (4, -4), B at (8, -8), C at (10, -5). Triangle A'B'C' is below the x-axis and left of the y-axis with A' at (-4, -2), B' at (-8, -6), C' at (-10, -3). The image is the y-axis mirror moved 2 units up, which is key A.",
+   "replacement": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC lies below the x-axis and to the right of the y-axis, with A at (4, -4), B at (8, -8) and C at (10, -5). Triangle A'B'C' lies below the x-axis and to the left of the y-axis, with A' at (-4, -2), B' at (-8, -6) and C' at (-10, -3).",
+   "why": "Every word of the published text is true, but all four choices begin with a reflection, and the three that survive differ only by 2 units up, 2 units down, or 8 units sideways -- a distinction the text supplies nothing to settle. The vertices are labelled in the figure and the replacement reads them off."
+  },
+  "g8-2023-029#0": {
+   "id": "g8-2023-029",
+   "figureIndex": 0,
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Triangle ABC in the first quadrant: A (2, 4), B (2, 2), C (6, 2). Triangle A'B'C' in the fourth quadrant: A' (4, -8), B' (4, -4), C' (12, -4). Leg AB is 2 units and leg A'B' is 4 units; leg BC is 4 units and leg B'C' is 8 units. The image is twice as large, not smaller, and it is reflected over the x-axis, not rotated.",
+   "replacement": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC is above the x-axis and right of the y-axis, with A at (2, 4), B at (2, 2) and C at (6, 2); side AB is vertical and 2 units long, and side BC is horizontal and 4 units long. Triangle A'B'C' is below the x-axis and right of the y-axis, with A' at (4, -8), B' at (4, -4) and C' at (12, -4); side A'B' is vertical and 4 units long, and side B'C' is horizontal and 8 units long. Each side of triangle A'B'C' is twice the length of the matching side of triangle ABC.",
+   "why": "The published text calls the image 'smaller and turned'. The image is twice as large in each direction, and it is reflected rather than rotated. 'Smaller' points the reader straight at the scale-factor-one-half choices C and D, which are printed distractors; the key is A, scale factor 2."
+  },
+  "g8-2023-033#0": {
+   "id": "g8-2023-033",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A single straight line rising left to right across a grid marked in single units from -6 to 6 on both axes. Two points are plotted on the line: (0, 1) on the y-axis and (6, 4). The line crosses the x-axis at (-2, 0), so its slope is one half and its y-intercept is 1.",
+   "replacement": "A coordinate plane is shown with both axes marked in single units from -6 to 6. A single straight line rises from the lower left to the upper right across the whole grid. Two points are plotted on it: (0, 1), on the y-axis, and (6, 4). The line also crosses the x-axis at (-2, 0).",
+   "why": "'Crossing the y-axis just above the origin' does not distinguish an intercept of 1 from an intercept of 2, and 'rises from lower left to upper right' does not distinguish a slope of one half from a slope of 2 -- which is exactly the two-by-two grid of choices. The figure plots two points on the line and the replacement names both."
+  },
+  "g8-2023-036#0": {
+   "id": "g8-2023-036",
+   "figureIndex": 0,
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four graphs on planes marked in single units from -8 to 8: A upper left, C upper right, B lower left, D lower right. A is a sideways U opening to the right, turning at (-6, 0), its two arms running right as horizontal rays along y = 5 and y = -5. C is the mirror of A, turning at (6, 0) with arms running left along y = 5 and y = -5. B is the vertical line x = 3. D is the horizontal line y = 3, the key.",
+   "replacement": "Four graphs are shown, each on a coordinate plane with both axes marked in single units from -8 to 8. Graph A is at the upper left, graph C at the upper right, graph B at the lower left, and graph D at the lower right. Graph A shows a curve shaped like a sideways U opening to the right: it turns at (-6, 0), and its two arms straighten into horizontal rays that run right without end, the upper one along y = 5 and the lower one along y = -5, so the curve passes through both (0, 5) and (0, -5). Graph C shows the mirror image of that, a sideways U opening to the left: it turns at (6, 0), and its two arms run left without end along y = 5 and y = -5, so it too passes through both (0, 5) and (0, -5). Graph B shows a single vertical line through every point with x equal to 3, running up and down without end. Graph D shows a single horizontal line through every point with y equal to 3, running left and right without end.",
+   "why": "The two curves are not closed -- each is an open sideways U whose arms run off the grid as infinite rays -- so the published text describes a shape the artwork does not contain. It also never names a letter, so even a reader who knows the answer is the horizontal line cannot pick D."
+  },
+  "g8-2024-002#0": {
+   "id": "g8-2024-002",
+   "figureIndex": 0,
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A scatter plot on axes marked in single units from 0 to 12, with about twenty-one points running from (1, 1) up to (10, 9) in a wide upward-drifting cloud. The published text's direction claim matches, and of the four answer pairs only B, (3, 3) and (9, 7), gives a line with positive slope: A slopes down, C is horizontal, D is vertical.",
+   "replacement": null,
+   "why": "The reader learns the trend is upward, and that eliminates A (downward), C (flat) and D (vertical), leaving the key B with no guesswork. Worth a maintainer's note: it reaches the key only because the three distractor pairs happen to cover the three non-positive directions; the text gives no data points, so a reader cannot check that B's line actually runs through the middle of the cloud."
+  },
+  "g8-2024-019#0": {
+   "id": "g8-2024-019",
+   "figureIndex": 0,
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Trapezoid ABCD below the x-axis and left of the y-axis: A (-10, -4), B (-8, -8), C (-4, -8), D (-4, -4). Its image is below the x-axis and right of the y-axis: A' (10, -4), B' (8, -8), C' (4, -8), D' (4, -4). Every y-coordinate is unchanged and every x-coordinate is negated, so the net effect is exactly a reflection over the y-axis, which is what the published text says.",
+   "replacement": null,
+   "why": "A reflection over the y-axis is precisely what the key's composition produces -- reflect over the x-axis, then rotate 180 degrees about the origin -- and it is not what any other choice produces, so the stated net transformation is enough to reach A. The text's description of the two positions also matches the artwork."
+  },
+  "g8-2025-002#0": {
+   "id": "g8-2025-002",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four copies of the same eight-point falling scatter, each with one line drawn: A upper left, C upper right, B lower left, D lower right. A's line has about the right slope but sits roughly one unit too high, passing over the points in the middle of the plot. C's line is slightly steeper and runs through the middle of the cloud. B's line is horizontal near y = 2.9 and D's rises. The key, C, differs from A only in vertical position.",
+   "replacement": "Four scatter plots are shown, each plotting the same eight data points on axes marked in single units, x from 0 to 10 and y from 0 to 8, and each with one straight line drawn across it. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. The eight points, identical in all four plots, are at about (2, 6), (2.6, 6), (3, 4.1), (6.1, 3.2), (6.1, 2.3), (7.9, 2.1), (8.2, 1.9) and (9.8, 1.8); they fall from upper left to lower right. The line in plot A falls from left to right through about (2, 6.3) and (10, 1.8), so it runs above the points through the middle of the plot: where x is 6 the line is at about 4.1 while the two points there are at 3.2 and 2.3. The line in plot C falls a little more steeply, through about (2, 6) and (10, 0.6), so it runs through the middle of the points: where x is 6 the line is at about 3.3, between the points at 3.2 and 2.3, and where x is 8 it is at about 2.0, between the points at 2.1 and 1.9. The line in plot B is horizontal at about y equals 2.9. The line in plot D rises from left to right through about (2, 2) and (10, 7.7), the opposite direction from the points.",
+   "why": "The published text never maps a letter, and it separates only the two obviously wrong lines ('slope the wrong way or sit flat'). The real work in this item is choosing between the two falling lines, and the text says nothing that distinguishes them. The replacement gives the shared points and each line by two of its own points, so the reader can see that A's line sits above the cloud and C's runs through it."
+  },
+  "g8-2025-004#0": {
+   "id": "g8-2025-004",
+   "figureIndex": 0,
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A right rectangular pyramid drawn in perspective with a shaded vertical plane passing through the apex and the dashed altitude, slicing down to the base. The shaded region inside the solid is a triangle with its point at the apex and its base a segment of the pyramid's base.",
+   "replacement": null,
+   "why": "The text places the cutting plane through the apex and down to the base, which is what the artwork shows and is the whole of what the item turns on: a plane meeting the solid at the single apex point above and along a straight base segment below gives a three-sided section, the key."
+  },
+  "g8-2025-017#0": {
+   "id": "g8-2025-017",
+   "figureIndex": 0,
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Rectangle JKLM on a plane marked in single units from -10 to 10, with J (1, 4), M (3, 4), K (1, 1) and L (3, 1). J and M are the upper corners and K and L the lower ones, and the whole rectangle sits between x equals 1 and x equals 3, just right of the y-axis -- exactly what the published text says.",
+   "replacement": null,
+   "why": "Knowing J and M are the top pair and K and L the bottom pair fixes JK and LM as the two vertical sides and JM and KL as the two horizontal ones, since in rectangle JKLM the sides are JK, KL, LM and MJ. That makes JK parallel to LM and rules out the other three, and translation does not change parallelism, so no coordinates are needed."
+  },
+  "g8-2025-019#0": {
+   "id": "g8-2025-019",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-sided figure ABCD on a plane marked in single units from -10 to 10, in the second quadrant just left of the y-axis: A (-3, 4), B (-3, 1), C (-1, 2), D (-1, 3). Side AB is vertical and 3 units long; side DC is vertical and 1 unit long. Doubling A about the origin gives (-6, 8), the key.",
+   "replacement": "A coordinate plane is shown with both axes marked in single units from -10 to 10. Four-sided figure ABCD sits above the x-axis and just left of the y-axis. Its vertices are A at (-3, 4), B at (-3, 1), C at (-1, 2) and D at (-1, 3). Side AB is vertical and 3 units long, and side DC is vertical and 1 unit long.",
+   "why": "The item asks for the coordinates of A after a dilation, and the published text gives no coordinates at all -- only that A is the upper left vertex. It also omits D entirely. Without A at (-3, 4) the reader cannot produce (-6, 8) or reject the three distractors."
+  },
+  "g8-2025-034#0": {
+   "id": "g8-2025-034",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Trapezoid ABCD below the x-axis and left of the y-axis: A (-6, -1), B (-3, -1), C (-2, -3), D (-7, -3), with AB the short top side and DC the long bottom side. Trapezoid PQRS above the x-axis and right of the y-axis: P (6, 1), Q (3, 1), R (2, 3), S (7, 3), with QP the short bottom side and RS the long top side. The 180-degree rotation sends A to P, B to Q, C to R and D to S, so BC corresponds to QR, the key.",
+   "replacement": "A coordinate plane is shown with the x-axis marked in single units from -9 to 9 and the y-axis in single units from -4 to 4. Trapezoid ABCD lies below the x-axis and left of the y-axis, with A at (-6, -1), B at (-3, -1), C at (-2, -3) and D at (-7, -3); AB is the shorter horizontal side, on top, and DC is the longer horizontal side, below. Trapezoid PQRS lies above the x-axis and right of the y-axis, with P at (6, 1), Q at (3, 1), R at (2, 3) and S at (7, 3); QP is the shorter horizontal side, below, and RS is the longer horizontal side, above.",
+   "why": "Every choice is a claim about which vertex or side of ABCD corresponds to which of PQRS, and the published text gives no way to work that out: it places A and B on top and D and C below but says nothing about left and right, and it lists the second trapezoid as 'QRSP' without saying where any of P, Q, R or S sits. The replacement gives both sets of coordinates, which is what the labelled figure shows a sighted reader."
+  },
+  "g8-2025-037#0": {
+   "id": "g8-2025-037",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four number lines stacked vertically, labelled A, B, C, D from top to bottom, each marked in single units from -1 to 8 with one point P. P is at about 2.8 on A, about 3.8 on B, about 5.2 on C, and exactly 7 on D. The expression is 2 plus the square root of 10, about 5.16, so C is the key.",
+   "replacement": "Four number lines are shown one above another, labelled A at the top, then B, then C, then D at the bottom. Each is marked in single units from -1 to 8 and carries a single point labelled P. On number line A, P sits just left of 3, at about 2.8. On number line B, P sits just left of 4, at about 3.8. On number line C, P sits just right of 5, at about 5.2. On number line D, P sits exactly on 7.",
+   "why": "The published text lists four positions but never attaches them to letters, leaving the reader to assume the list runs A, B, C, D. It also rounds: P on A is at 2.8 and P on C is at 5.2, and 'about 3' and 'about 5' would not survive a distractor placed just below 5. The replacement names each letter and gives each position relative to the nearest tick."
+  },
+  "g8-2025-038#0": {
+   "id": "g8-2025-038",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A scatter plot on axes marked every 5 units from 0 to 60, with about thirty points running from about (6, 6) to about (51, 53). The band is roughly 10 units wide and its centre climbs at a roughly constant rate -- about y = 16 at x = 9, about y = 21 at x = 15, about y = 33 at x = 27, about y = 40 at x = 38, about y = 49 at x = 49 -- with no bend anywhere.",
+   "replacement": "A scatter plot is shown with both axes marked every 5 units from 0 to 60. About thirty points rise from lower left to upper right, the lowest at about (6, 6) and the highest at about (51, 53). They lie in a band about 10 units wide around a straight path, with no bend or curve anywhere along it. Reading across the plot, the middle of the band is at about y equals 16 where x is 9, about y equals 21 where x is 15, about y equals 33 where x is 27, about y equals 40 where x is 38, and about y equals 49 where x is 49, so the points gain height at a roughly constant rate all the way across.",
+   "why": "The direction claim is right and rules out the two negative choices, but the remaining pair is positive linear against positive nonlinear, and the text never says the trend is straight. 'Climb steadily' is an impression, and a steadily increasing curve climbs steadily too. The replacement gives five readings of the band's centre at a constant rate and states outright that there is no bend."
+  },
+  "g8-2026-011#0": {
+   "id": "g8-2026-011",
+   "figureIndex": 0,
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four graphs: A upper left, C upper right, B lower left, D lower right. A is five points at height 2 for x from 1 to 5. B is five points at (0, 1), (1, 3), (2, 4), (3, 2) and (4, 4) -- they rise, drop at x = 3, then rise again. C is an upward-opening parabola with its vertex at the origin. D is two rays from the origin opening to the RIGHT, like a greater-than sign, one through (4, 4) and one through (4, -4). D is the key because it fails the vertical line test.",
+   "replacement": "Four graphs are shown. Graph A is at the upper left, graph C at the upper right, graph B at the lower left, and graph D at the lower right. Graph A has axes from 0 to 7 and shows five separate points, all at height 2: (1, 2), (2, 2), (3, 2), (4, 2) and (5, 2). Graph B has axes from 0 to 7 and shows five separate points: (0, 1), (1, 3), (2, 4), (3, 2) and (4, 4), so the heights rise, drop back at x equals 3, and rise again, and no x value is used more than once. Graph C is a coordinate plane with x from -3 to 3 and y from -1 to 5, showing a U-shaped curve opening upward whose lowest point is the origin, passing through about (1, 1), (-1, 1), (2, 4) and (-2, 4) before leaving the top of the grid. Graph D is a coordinate plane with x from -1 to 5 and y from -3 to 3, showing two straight rays that both begin at the origin and open to the right, like a greater-than sign: the upper ray rises to the right through (1, 1), (2, 2), (3, 3) and (4, 4), and the lower ray falls to the right through (1, -1), (2, -2), (3, -3) and (4, -4).",
+   "why": "Graph D is not a V. It is a sideways V opening to the right, and the difference decides the item: a V opening upward passes the vertical line test, so the published text tells the reader that all four graphs are functions when the question asks which one is not. The description of graph B is also inaccurate -- its points do not simply rise from left to right, they drop from 4 to 2 at x equals 3."
+  },
+  "g8-2026-034#0": {
+   "id": "g8-2026-034",
+   "figureIndex": 0,
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four scatter plots on axes from 0 to 10: A upper left, C upper right, B lower left, D lower right. A falls from upper left to lower right. B rises in a fairly tight straight band and is the key. C falls and then rises, a wide U. D has no trend. The plots hold between thirteen and twenty points, not 'about twenty' in every case.",
+   "replacement": "Four scatter plots are shown, each on axes marked in single units from 0 to 10 in both directions. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A the points fall from upper left to lower right in a loose band: (3, 7), (3, 5), (4, 6), (4, 4), (5, 5), (5, 2), (6, 7), (6, 6), (6, 4), (7, 4), (7, 3), (7, 1), (8, 6), (8, 4), (8, 2), (9, 3), (9, 2), (9, 1), (10, 4) and (10, 1). In plot B the points rise from lower left to upper right along a straight path in a fairly tight band: (1, 3), (1, 2), (1, 1), (2, 5), (2, 2), (3, 6), (3, 4), (4, 8), (4, 6), (4, 5), (5, 9), (5, 5), (5, 3), (6, 7), (6, 6) and (7, 8). In plot C the points first fall and then rise again, forming a wide U with its lowest points near x equals 5: (1, 8), (1, 6), (1, 4), (2, 7), (2, 5), (3, 6), (3, 4), (4, 5), (4, 3), (5, 3), (6, 4), (6, 2), (7, 5), (7, 4), (8, 6), (8, 3), (9, 7), (9, 5) and (10, 7). In plot D the points follow no trend at all: (1, 3), (2, 10), (2, 7), (3, 6), (4, 4), (5, 2), (6, 8), (7, 5), (8, 9), (9, 6), (9, 3), (10, 7) and (10, 2).",
+   "why": "The published text says the plots differ in strength and direction of trend but never says which plot is which, so the letter cannot be chosen. It is also loose on the counts -- plot D holds thirteen points and plot B sixteen. The replacement fixes the letters to grid positions and lists each plot's points."
+  }
+ }
+}

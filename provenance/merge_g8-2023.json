@@ -82,7 +82,7 @@
   "G8-2023/q02.png": {
    "type": "Graphs as Answer Choices",
    "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
-   "long": "They differ in the direction and tightness of the trend the points follow."
+   "long": "Four scatter plots are shown, each on axes labeled x and y and marked in single units from 0 to 11. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A ten points bend upward: they sit almost on the x-axis at about (1, 0.2), (2, 0.2) and (3.6, 0.4), then climb more and more steeply through about (5, 1), (6.3, 1.8), (7.3, 2.9) and (8, 4.1) to about (9, 5.5), (9, 7) and (9, 8.3), so the path curves rather than running straight. In plot C ten points rise to a peak and then fall, forming an arch: about (0.2, 4.5), (1, 6), (1.2, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) and (9, 4). In plot B ten points are scattered with no pattern at all: about (2, 5), (3, 9), (4, 6.5), (4.6, 9), (5, 4.5), (7, 7), (7, 4), (8, 9), (9, 7) and (9, 6.5). In plot D ten points fall from upper left to lower right in a narrow, nearly straight band: about (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) and (10, 2)."
   },
   "G8-2023/q07.png": {
    "type": "Equation and Data Table",
@@ -92,7 +92,7 @@
   "G8-2023/q19.png": {
    "type": "Coordinate Plane",
    "alt": "Triangle ABC and its image triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
-   "long": "Triangle ABC sits to the right of the y-axis and its image lies to the left, reflected across it."
+   "long": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC lies below the x-axis and to the right of the y-axis, with A at (4, -4), B at (8, -8) and C at (10, -5). Triangle A'B'C' lies below the x-axis and to the left of the y-axis, with A' at (-4, -2), B' at (-8, -6) and C' at (-10, -3)."
   },
   "G8-2023/q25.png": {
    "type": "Diagram",
@@ -102,12 +102,12 @@
   "G8-2023/q29.png": {
    "type": "Coordinate Plane",
    "alt": "Triangle ABC and triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
-   "long": "Triangle ABC is above the x-axis and its image is below it, smaller and turned."
+   "long": "A coordinate plane is shown with both axes marked every 2 units from -12 to 12. Triangle ABC is above the x-axis and right of the y-axis, with A at (2, 4), B at (2, 2) and C at (6, 2); side AB is vertical and 2 units long, and side BC is horizontal and 4 units long. Triangle A'B'C' is below the x-axis and right of the y-axis, with A' at (4, -8), B' at (4, -4) and C' at (12, -4); side A'B' is vertical and 4 units long, and side B'C' is horizontal and 8 units long. Each side of triangle A'B'C' is twice the length of the matching side of triangle ABC."
   },
   "G8-2023/q33.png": {
    "type": "Coordinate Plane",
    "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
-   "long": "The line rises from lower left to upper right, crossing the y-axis just above the origin."
+   "long": "A coordinate plane is shown with both axes marked in single units from -6 to 6. A single straight line rises from the lower left to the upper right across the whole grid. Two points are plotted on it: (0, 1), on the y-axis, and (6, 4). The line also crosses the x-axis at (-2, 0)."
   },
   "G8-2023/q34.png": {
    "type": "Data Table and Coordinate Plane",
@@ -117,7 +117,7 @@
   "G8-2023/q36.png": {
    "type": "Graphs as Answer Choices",
    "alt": "Four graphs labelled A, B, C and D, which are this item's answer choices.",
-   "long": "Two show closed curves and two show straight lines; only one passes the vertical line test for a function."
+   "long": "Four graphs are shown, each on a coordinate plane with both axes marked in single units from -8 to 8. Graph A is at the upper left, graph C at the upper right, graph B at the lower left, and graph D at the lower right. Graph A shows a curve shaped like a sideways U opening to the right: it turns at (-6, 0), and its two arms straighten into horizontal rays that run right without end, the upper one along y = 5 and the lower one along y = -5, so the curve passes through both (0, 5) and (0, -5). Graph C shows the mirror image of that, a sideways U opening to the left: it turns at (6, 0), and its two arms run left without end along y = 5 and y = -5, so it too passes through both (0, 5) and (0, -5). Graph B shows a single vertical line through every point with x equal to 3, running up and down without end. Graph D shows a single horizontal line through every point with y equal to 3, running left and right without end."
   },
   "G8-2023/q42.png": {
    "type": "Coordinate Plane",

@@ -831,6 +831,47 @@ def transcription(payload):
             if not cpp.compare(said, drawn)[0]:
                 wrong.append("%s: says %s, artwork plots %s"
                              % (item_id, sorted(said), sorted(drawn)))
+    # Alt text and the long description describe the same picture, so where they
+    # name the same measurement they must agree. g8-2025-027's alt called a
+    # labelled DIAMETER the "base radius" while its description called it a
+    # diameter -- and the radius reading yields a printed distractor. Nothing
+    # can check alt text against the artwork, but it can be checked against its
+    # own sibling, and that is free.
+    contradict = []
+    for item_id, entry in sorted(content_box.items()):
+        for fig in entry.get("figures") or []:
+            a, d = (fig.get("alt") or "").lower(), (fig.get("longDescription") or "").lower()
+            if not a or not d:
+                continue
+            for one, other in (("radius", "diameter"), ("diameter", "radius")):
+                if re.search(r"\b%s\b" % one, a) and re.search(r"\b%s\b" % other, d) \
+                        and not re.search(r"\b%s\b" % one, d):
+                    contradict.append("%s: alt says %s, description says %s"
+                                      % (item_id, one, other))
+    # A figure whose type ends "as Answer Choices" IS the four options. A
+    # description that says how they differ -- "they differ in the direction of
+    # the trend" -- without saying which is A and which is B leaves a reader who
+    # solved the problem perfectly unable to pick. 12 of the 15 read that way,
+    # and worse, three of them misstated what varies: compressing four choices
+    # into one clause requires a judgement about what they have in common, and
+    # that judgement was wrong more often than right. Enumerating each letter
+    # removes the opportunity to be wrong, so the rule is mechanical.
+    unmapped = []
+    for item_id, entry in sorted(content_box.items()):
+        for fig in entry.get("figures") or []:
+            if "answer choices" not in (fig.get("type") or "").lower():
+                continue
+            d = fig.get("longDescription") or ""
+            named = {c for c in "ABCD" if re.search(r"\b%s\b" % c, d)}
+            if len(named) < 4:
+                unmapped.append("%s: names %s"
+                                % (item_id, ", ".join(sorted(named)) or "no choice"))
+    check("every answer-choice figure says which choice is which",
+          not unmapped, "\n".join(unmapped[:8]))
+
+    check("no figure's alt text contradicts its own description",
+          not contradict, "\n".join(contradict[:6]))
+
     check("every figure description's coordinates are the ones the artwork plots",
           not wrong, "\n".join(wrong[:6]))
     if unreadable:

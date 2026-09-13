@@ -95,3 +95,89 @@ figures whose content reduces to numbers a script can re-derive from the drawing
 Everything else — diagrams, tables, labelled constructions, geometric figures —
 still rests on a person having read the picture, and a description that
 contradicts its own stem is the shape those errors take.
+
+
+---
+
+# The audit, and the real error rate
+
+The 9-of-12 figure at the top of this note came from coordinate planes alone,
+which are the only kind a script can check. It was never a safe estimate for the
+rest. **140 distinct figures were then audited by hand**, in two waves, against
+one question: *does this description, on its own, let a reader reach the item's
+answer?*
+
+| | audited | sound | wrong | insufficient |
+|---|---|---|---|---|
+| wave 1 — by arithmetic, descriptions carrying numbers | 111 | 89 | 9 | 13 |
+| wave 2 — against the artwork, the rest | 31 | 8 | 7 | 16 |
+| **total** | **142 verdicts, 140 figures** | **97** | **16** | **29** |
+
+**45 of 142 failed: 31.7%.** Wave 1's residue ran 19.8%; wave 2, which took the
+descriptions arithmetic could not reach, ran 74%.
+
+`wrong` means the description states something the artwork does not show.
+`insufficient` means every word is true and a fact the reader needs is missing —
+the more common failure, and the harder one to see.
+
+## Every failure is one failure
+
+The numbers are transcribed carefully and **the relationship the numbers hang on
+is summarised away**:
+
+- angle diagrams that give both labels and never say opposite or adjacent, when
+  the distractors are precisely the alternative relations;
+- lines described as "rising steeply" instead of by a point — where a
+  description named a plotted coordinate it was right, every time;
+- the origin asserted where false, omitted where true and load-bearing;
+- a labelled **diameter** called a radius, on the one item where that changes the
+  answer, handing the reader a printed distractor.
+
+## Two things the audit changed about how to check this
+
+**The artwork was always available.** Every figure is committed as a cropped PNG
+under `assets/`, named in each figure's own `file` field. Checking against it
+never needed the source PDFs — and it is not optional. Arithmetic alone would
+have passed three of wave 1's nine `wrong` verdicts, and *every* one of wave 2's
+seven exists only because somebody looked. `g6-2026-029` reaches the right answer
+by luck: it calls a diagonal "the top" and a side "the height", and those two
+happen to be perpendicular.
+
+**Summarising is not merely incomplete, it is error-prone.** Of the five
+answer-choice figures in grade 6's final wave, three did not just fail to map the
+letters — they misstated what varies. "Only one keeps a constant ratio" when two
+do. "Whether they climb in a straight line" when all four point sets are
+collinear. Compressing four choices into one clause requires a judgement about
+what they have in common, and that judgement was wrong more often than right.
+Enumerating each letter removes the opportunity to be wrong.
+
+Two independent agents also found that the choices are laid out two-by-two, so
+**visual reading order is A, C, B, D** — down the columns, not across the rows.
+That is very likely how several of these went wrong at the source, and
+`g7-2025-002`'s stored `choices` array is in exactly that order.
+
+## What now holds the line
+
+- `every answer-choice figure says which choice is which` — 12 of 15 failed this
+  before the audit; all 15 pass now. The rule is mechanical because the judgement
+  it replaces was unreliable.
+- `no figure's alt text contradicts its own description` — alt text is the other
+  screen-reader surface, 152 of 152 populated and checkable against nothing.
+  It can at least be checked against its sibling. It caught `g8-2025-027`, whose
+  alt said "base radius" where the artwork labels a diameter.
+- `every figure description's coordinates are the ones the artwork plots` — the
+  original mechanical check, still narrow: it engages only when the prose states
+  two or more coordinate pairs, so 12 of the 28 coordinate planes reach it.
+  `g8-2026-026` is a coordinate plane that states intercepts instead of pairs and
+  so was never checked — and it was wrong.
+
+## Still open
+
+Four failures have no replacement, each needing a value read off a drawing that
+the audit did not resolve: `g7-2023-016` (box-plot five-number summaries),
+`g7-2026-014` (Team B's dot counts), `g7-2026-027` (the coordinates of Q, R, S)
+and `g8-2026-034`'s companion reading.
+
+**Alt text has never been audited.** 152 descriptions, median 15 words, checked
+only for existence, uniqueness and now self-consistency. If the `longDescription`
+rate is any guide, roughly a third of them do not say what they should.

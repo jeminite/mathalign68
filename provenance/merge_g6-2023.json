@@ -100,7 +100,7 @@
   "G6-2023/q32_2.png": {
    "type": "Tables as Answer Choices",
    "alt": "Four completed versions of the Teachers and Students table, labelled A to D, which are this item's answer choices.",
-   "long": "They differ only in the numbers filled into the three missing cells."
+   "long": "Four versions of the same table appear, labeled A, B, C and D. Each is titled Teachers and Students and has a row labeled Number of Teachers above a row labeled Number of Students, with five columns. In table A the teacher row reads 2, 6, 8, 12, 37 and the student row reads 5, 15, 16, 30, 75. In table B the teacher row reads 2, 6, 8, 12, 30 and the student row reads 5, 15, 20, 30, 75. In table C the teacher row reads 2, 12, 8, 12, 72 and the student row reads 5, 15, 11, 30, 75. In table D the teacher row reads 2, 6, 8, 12, 32 and the student row reads 5, 15, 20, 30, 75."
   },
   "G6-2023/q33.png": {
    "type": "Diagram",
