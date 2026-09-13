@@ -117,17 +117,17 @@
   "G8-2025/q27.png": {
    "type": "Diagram",
    "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
-   "long": "The height is 8 yards and the radius is 6 yards."
+   "long": "The cone stands on its circular base with its apex at the top. A dashed segment runs from the apex straight down to the centre of the base, meeting the base at a marked right angle, and is labelled 8 yards. A second dashed segment runs right across the base through that centre, from one edge to the other, and is labelled 6 yards, so 6 yards is the diameter of the base."
   },
   "G8-2025/q31.png": {
    "type": "Diagram",
    "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
-   "long": "One angle is 6x minus 23 degrees and the other is 4x plus 11 degrees."
+   "long": "Three lines cross at a single point: one horizontal, one rising to the upper right, and one rising to the upper left. The angle marked 6x minus 23 degrees lies above the horizontal line, between the horizontal ray going left and the ray going up to the left. The angle marked 4x plus 11 degrees lies below the horizontal line, between the horizontal ray going right and the ray going down to the right. The two are vertical angles."
   },
   "G8-2025/q32.png": {
    "type": "Line Graph",
    "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
-   "long": "A straight line rises from about 25 dollars at the start to about 250 dollars at 10 months."
+   "long": "A straight line starts at the origin, zero dollars at zero months, and rises steadily, passing through 25 dollars at 1 month and reaching 250 dollars at 10 months. The horizontal axis is the number of months and the vertical axis is the cost in dollars."
   },
   "G8-2025/q34.png": {
    "type": "Coordinate Plane",

@@ -1,0 +1,257 @@
+{
+  "scope": "grade 6 number-bearing figure descriptions",
+  "items": {
+    "g6-2023-002": {
+      "verdict": "wrong",
+      "computed": "P and Q are only located as 'between -2 and -1', so the description picks out no single point; and R is placed at -1, which the tick spacing contradicts.",
+      "key": "B (point Q, at -1 1/3)",
+      "agrees": false,
+      "missing": "the exact position of P (-1 2/3) and Q (-1 1/3), the fact that each unit is divided into thirds, and R's true position (-2/3)",
+      "replacement": "The number line runs from negative 2 to 2, with each whole unit divided into three equal parts. Point P is at negative 1 and two thirds, point Q is at negative 1 and one third, point R is at negative two thirds, and point S is at 1 and one third.",
+      "why": "The line is divided into thirds, and the four dots sit at -5/3, -4/3, -2/3 and 4/3. R is one third to the right of -1, not at -1, and the description never says which of P and Q is the one at -1 1/3, so a reader is left choosing between A and B at random."
+    },
+    "g6-2023-007": {
+      "verdict": "sound",
+      "computed": "8*8 + 4*(0.5*8*10) = 64 + 160 = 224",
+      "key": "C (224)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The square base is 8 by 8 and each of the four triangular faces has slant height 10, which is everything the surface area needs."
+    },
+    "g6-2023-017": {
+      "verdict": "sound",
+      "computed": "|83|, |-122|, |456|, |-17| -> smallest is 17, swimming",
+      "key": "D (swimming)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four elevations are stated with their signs, so the reader can compare distances from zero directly."
+    },
+    "g6-2023-032": {
+      "verdict": "sound",
+      "computed": "Ratio 2:5. Missing cells are 6 teachers (with 15 students), 20 students (with 8 teachers), and 30 teachers (with 75 students).",
+      "key": "B",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The stem table is transcribed exactly and yields 6, 20 and 30. Note for the render wave: the item's SECOND figure (the four answer-choice tables, figureIndex 1) is described only as 'They differ only in the numbers filled into the three missing cells', so a reader who has computed 6, 20, 30 still cannot tell which lettered table holds them. That figure is outside this packet but leaves the item unanswerable."
+    },
+    "g6-2023-033": {
+      "verdict": "sound",
+      "computed": "8 * 1.75 * 0.625 = 8.75",
+      "key": "B (8 3/4)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three edge lengths are given and multiply to 8 3/4 cubic inches."
+    },
+    "g6-2023-037": {
+      "verdict": "sound",
+      "computed": "0.5 * 22 * 25 = 275",
+      "key": "275 square feet",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both legs of the right triangle are given, which is all the area formula needs."
+    },
+    "g6-2023-044": {
+      "verdict": "sound",
+      "computed": "Car A 130/2 = 65 mph -> 520 mi at 8 h; Car B 186/3 = 62 mph -> 496 mi; 520 - 496 = 24",
+      "key": "24 miles",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both tables are transcribed exactly and each gives a constant unit rate."
+    },
+    "g6-2023-046": {
+      "verdict": "sound",
+      "computed": "4.50 per chore; 9 * 4.50 = 40.50",
+      "key": "$40.50, money earned dependent, chores independent",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The three listed points give a constant rate of $4.50 per chore, which reaches $40.50 at 9 chores. Accuracy note for the render wave: the graph also plots a point at the origin that the description omits; it does not change the computation but it is part of the artwork."
+    },
+    "g6-2024-028": {
+      "verdict": "sound",
+      "computed": "0.5 * (10 + 16) * 15 = 195",
+      "key": "C (195)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both bases and the perpendicular height are given; the 15 is marked in the figure as the dashed altitude with a right angle, exactly as described."
+    },
+    "g6-2024-032": {
+      "verdict": "sound",
+      "computed": "2*(0.5*2.5*6) + 4*(2.5 + 6 + 6.5) = 15 + 60 = 75",
+      "key": "B (75)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Every panel of the net is given a width and a height and both triangles get all three sides; the 2.5-6-6.5 triangle is also internally consistent as a right triangle."
+    },
+    "g6-2024-040": {
+      "verdict": "wrong",
+      "computed": "Read as written -- a notch 4.5 cm deep across the full 5 cm height -- the missing piece is a 4.5 by 5 rectangle, giving 45 - 22.5 = 22.5 square centimeters.",
+      "key": "33.75 square centimeters",
+      "agrees": false,
+      "missing": "that the notch is triangular (apex 4.5 cm in from the right edge, base the full 5 cm edge) and that the shaded section is the rest of the rectangle",
+      "replacement": "The flag is a rectangle 9 centimeters long and 5 centimeters tall, shaded gray. A white triangular notch is cut into the right-hand 5 centimeter edge: its two slanted sides run from the top right corner and from the bottom right corner of the rectangle to a single point inside the flag, level with the middle of that edge and 4.5 centimeters in from it. A dashed 4.5 centimeter segment joins that point to the right edge and meets the edge at a right angle. The shaded section is the whole rectangle apart from this white triangle.",
+      "why": "The notch is a triangle, not a full-depth bite: its base is the entire 5 cm right edge and it comes to a single point 4.5 cm inside the flag, so it removes 11.25 square centimeters, not 22.5. The description also never says which part of the flag is shaded."
+    },
+    "g6-2024-046": {
+      "verdict": "sound",
+      "computed": "Rex 18/2 = $9 per month -> $144 at 16 months; Nero 36/3 = $12 per month -> $192; 192 - 144 = 48",
+      "key": "$48",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both tables are transcribed exactly and each gives a constant monthly rate."
+    },
+    "g6-2025-013": {
+      "verdict": "sound",
+      "computed": "A 2 by 2 square face fixes two dimensions and the 5 cm face height fixes the third: 2*(2*2) + 4*(2*5) = 8 + 40 = 48",
+      "key": "D (48)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "A right rectangular prism with a 2 by 2 face and a 5 cm length is completely determined, so all six faces follow. The description is terse about the net's layout (four side panels in a band with a square flap above and below) but no dimension is missing."
+    },
+    "g6-2025-017": {
+      "verdict": "sound",
+      "computed": "6 * (0.5 * 5 * 4.3) = 64.5, or 0.5 * 30 * 4.3 = 64.5",
+      "key": "D (64.5)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The side length and the apothem are both given, which is all the hexagon's area needs by either route."
+    },
+    "g6-2025-021": {
+      "verdict": "sound",
+      "computed": "(11 + 12) / 50 = 23/50 = 46%",
+      "key": "C (46%)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four counts are given and attributed to the right hobbies, and they sum to the 50 students the stem names."
+    },
+    "g6-2025-036": {
+      "verdict": "insufficient",
+      "computed": "Top 2.4, height 3, bottom stated only as 'shorter' -- the trapezoid's area cannot be evaluated.",
+      "key": "B (5.4)",
+      "agrees": false,
+      "missing": "the shaded trapezoid's bottom edge (1.2 cm), and that the 2.4 cm edge is the whole parallelogram's top and equals its bottom edge",
+      "replacement": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The parallelogram's top and bottom edges are each 2.4 centimeters long and lie 3 centimeters apart vertically, and the figure leans to the right, so the bottom edge starts 1.2 centimeters to the left of the top edge. The dashed line drops from the parallelogram's top left corner straight down to the bottom edge, cutting off a triangle whose base along the bottom edge is 1.2 centimeters. The shaded trapezoid has a top edge of 2.4 centimeters, a bottom edge of 1.2 centimeters, and a height of 3 centimeters.",
+      "why": "The 2.4 cm is in fact the full top edge of the parallelogram, so the bottom edge of the shaded trapezoid is 2.4 - 1.2 = 1.2 cm and the area is 0.5*(2.4+1.2)*3 = 5.4. Neither the 1.2 cm bottom edge nor the fact that the 2.4 cm edge is also the parallelogram's bottom edge length is stated, so the reader has no way to get there."
+    },
+    "g6-2025-041": {
+      "verdict": "sound",
+      "computed": "112/2 = 224/4 = 336/6 = 448/8 = 56, so t = 56b",
+      "key": "t = 56b",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four pairs are given and every one of them gives the same unit price of $56 a block."
+    },
+    "g6-2025-042": {
+      "verdict": "sound",
+      "computed": "5*5 + 4*(0.5*5*3.5) = 25 + 35 = 60",
+      "key": "60 square centimeters",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The square base and the slant height of each triangular face are both given."
+    },
+    "g6-2025-046": {
+      "verdict": "sound",
+      "computed": "9 * 2x = 54 -> 18x = 54 -> x = 3",
+      "key": "x = 3, each rug $112",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The two edge labels, 9 feet and 2x feet, are exactly what the equation needs; the second part of the item uses no figure."
+    },
+    "g6-2026-002": {
+      "verdict": "sound",
+      "computed": "A = -5 (below), B = -2 (below), C = 2 (above) -> only 'City B is below sea level and City C is above sea level' holds",
+      "key": "D",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three positions are given with their signs, so every one of the four statements can be tested."
+    },
+    "g6-2026-006": {
+      "verdict": "sound",
+      "computed": "2 + x + 5 + 2 + (x + 3) + 6 = 2x + 18",
+      "key": "D (2x + 18)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All six side labels are listed, and they are consistent with the L-shape drawn (the two horizontal runs 2 and 5 total the x+3 bottom, the verticals x and 2 total the 6 side, giving x = 4)."
+    },
+    "g6-2026-010": {
+      "verdict": "sound",
+      "computed": "18/2 = 36/4 = 54/6 = 9 gallons per minute; 3 * 9 = 27",
+      "key": "D (27)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three plotted points are given with both coordinates and they fix the constant rate."
+    },
+    "g6-2026-016": {
+      "verdict": "sound",
+      "computed": "6*(10 + 12 + 10) + 2*(0.5*12*8) = 192 + 96 = 288",
+      "key": "B (288)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Every rectangle gets a width and a height and both triangles get a base and a height; the 12-base, 8-height triangle is consistent with the two 10 ft rectangles as its slanted sides."
+    },
+    "g6-2026-023": {
+      "verdict": "insufficient",
+      "computed": "'At least 48' means a filled circle at 48 with the line shaded to the right, but the description never says which lettered line that is, so the reader cannot choose among A, B, C and D.",
+      "key": "A",
+      "agrees": false,
+      "missing": "which of the four lettered number lines has each combination of filled or open circle and left or right shading",
+      "replacement": "Four number lines, labeled A, B, C and D, each running from 45 to 55 and marked at every whole number. Line A has a filled circle at 48 and the line to the right of it is drawn heavy. Line B has an open circle at 48 and the line to the right of it is drawn heavy. Line C has a filled circle at 48 and the line to the left of it is drawn heavy. Line D has an open circle at 48 and the line to the left of it is drawn heavy.",
+      "why": "The four choices are described only as a set of variations. The reader knows what the correct line must look like and still cannot name it. On the page, A is filled-and-right, B is open-and-right, C is filled-and-left, D is open-and-left."
+    },
+    "g6-2026-029": {
+      "verdict": "wrong",
+      "computed": "Taken as written -- a parallelogram with a top edge of 8, a slanted side of 10 and a height of 6, cut into two triangles -- one triangle is 0.5*8*6 = 24, which happens to match the key.",
+      "key": "A (24)",
+      "agrees": true,
+      "missing": "that the 8 metre segment is the diagonal between the two triangles, that the 6 metre segment is the vertical left side of the parallelogram, and that the shaded triangle is the lower one bounded by those two",
+      "replacement": "The fabric is a parallelogram that leans to the right. Its left-hand side is vertical and 6 meters long, and the side running up and to the right from the top of that vertical side is 10 meters long; the other two sides are parallel to these. A horizontal segment 8 meters long runs from the top of the 6 meter side across to the opposite corner, dividing the parallelogram into two triangles, and a right angle is marked where that segment meets the 6 meter side. The lower of the two triangles, the one bounded by the 6 meter vertical side and the 8 meter segment, is shaded.",
+      "why": "The figure has no 8 metre top edge. The 8 metres is the interior segment that divides the parallelogram into the two sails, and the 6 metres is the parallelogram's own vertical side, not an altitude dropped to a base. The description hands a blind reader a different quadrilateral from the one drawn; it lands on 24 only because the 8 and the 6 happen to be perpendicular. It also never says which of the two triangles is shaded."
+    },
+    "g6-2026-031": {
+      "verdict": "sound",
+      "computed": "18 + 21 + 11 = 50 students; 21/50 = 42%",
+      "key": "B (42%)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three counts are given and attributed to the right flavors, so the total and the vanilla share both follow from the description alone."
+    },
+    "g6-2026-035": {
+      "verdict": "sound",
+      "computed": "(28/3) * (5/2) * (21/4) = 2940/24 = 122.5",
+      "key": "D (122 1/2)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three edge lengths are given as mixed numbers and multiply to 122 1/2 cubic inches."
+    },
+    "g6-2026-043": {
+      "verdict": "sound",
+      "computed": "0.5 * (15.2 + 11.5) * 8.8 = 0.5 * 26.7 * 8.8 = 117.48",
+      "key": "117.48 square centimeters",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description states that the 8.8 cm top edge meets both side edges at right angles, which is what makes the 15.2 and 11.5 sides the parallel pair and the 8.8 the height."
+    }
+  }
+}

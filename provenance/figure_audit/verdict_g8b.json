@@ -1,0 +1,203 @@
+{
+  "scope": "grade 8 number-bearing figure descriptions, second half",
+  "items": {
+    "g8-2025-036": {
+      "verdict": "sound",
+      "computed": "Five pairs, first values -2, -1, 0, 1, 2 all distinct, each paired with exactly one second value, so it is a function because each input has one output -- choice A",
+      "key": "A",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The five pairs listed have distinct inputs, which is exactly the fact choice A rests on; because the outputs are distinct too, a reader who reversed the columns still lands on A."
+    },
+    "g8-2025-037": {
+      "verdict": "sound",
+      "computed": "root 4 plus root 10 = 2 + 3.16 = about 5.2; the third number line puts P at about 5 -- choice C",
+      "key": "C",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description gives P's position on all four number lines in choice order, and only the third, about 5, matches 2 + 3.16."
+    },
+    "g8-2025-039": {
+      "verdict": "sound",
+      "computed": "(-1 minus -6) / (-8 minus -18) = 5/10 = 0.5; every consecutive pair gives the same 0.5",
+      "key": "1/2, or 0.5",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four consecutive pairs of the listed values give a rate of change of 1/2, matching NYSED's answer; the listing convention (first value is x) is the only thing a reader must assume."
+    },
+    "g8-2025-041": {
+      "verdict": "sound",
+      "computed": "Hourly rate (20.00 - 17.50) / 0.5 = 5 dollars per hour; David's fee = 20.00 - 5 = 15.00; Lisa's fee = 12.00; difference = 3.00",
+      "key": "$3.00",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Three points are given and they are collinear at 5 dollars per hour, so David's intercept of 15 dollars is recoverable and 15 minus 12 is 3."
+    },
+    "g8-2025-044": {
+      "verdict": "sound",
+      "computed": "Flat at 30 miles per hour from 30 seconds to 40 seconds",
+      "key": "The speed is constant at 30 miles per hour between 30 and 40 seconds",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description names the one flat stretch, its height in miles per hour and both endpoints in seconds, which is the whole of the required answer."
+    },
+    "g8-2025-047": {
+      "verdict": "sound",
+      "computed": "Squares of 3 on a, 4 on b, 5 on hypotenuse c; the student's displayed line 5 squared + 4 squared = 3 squared uses 5 as a leg and 3 as the hypotenuse; correct is 3 squared + 4 squared = 5 squared, 9 + 16 = 25",
+      "key": "The student swapped a leg for the hypotenuse: legs 3 and 4, hypotenuse 5, so 9 + 16 = 25",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The student's erroneous equations are carried in the item's display block, not the figure, so the figure only has to supply 3, 4 and 5 and say which side is the hypotenuse -- it does both."
+    },
+    "g8-2025-048": {
+      "verdict": "sound",
+      "computed": "Kaley 7 hours per night; Mark 18/2 = 27/3 = 36/4 = 45/5 = 9 hours per night; Mark sleeps more",
+      "key": "Mark, at 9 hours a night against Kaley's 7",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Mark's four table pairs all reduce to 9 hours per night and Kaley's graph rate is stated as 7, so the comparison and both rates are reachable."
+    },
+    "g8-2026-002": {
+      "verdict": "sound",
+      "computed": "Store B: 9 dollars for 4 pounds = 2.25 per pound; Store A = 1.50 per pound; Store B is 0.75 more -- choice B",
+      "key": "B",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The stated point (4 pounds, 9 dollars) on a line through the origin gives 2.25 per pound, which is exactly 0.75 above Store A's 1.50."
+    },
+    "g8-2026-004": {
+      "verdict": "sound",
+      "computed": "From the stem's equation y = -2x + 29: decrease of 2 per day and y = 5 at x = 12 -- choice D; the described points fall from about 30 on day 1 to about 11 on day 9, a downward trend consistent with that line",
+      "key": "D",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The key is computed from the equation printed in the stem, and the described scatter (falling from roughly 30 to roughly 11 over days 1 to 9) is consistent with a slope near -2, so nothing in the figure text steers a reader away from D."
+    },
+    "g8-2026-006": {
+      "verdict": "sound",
+      "computed": "7 cm across means diameter 7, radius 3.5; volume = pi x 3.5 squared x 10 = 384.8, to the nearest cubic centimetre 385 -- choice C",
+      "key": "C (385)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "\"7 centimetres across\" can only mean the full width, i.e. the diameter, which halves to 3.5 and gives 385; reading 7 as a radius would give 1,539, which is distractor D, so the wording is doing the work it has to do."
+    },
+    "g8-2026-008": {
+      "verdict": "sound",
+      "computed": "Through (0, -3), (2, -2) and (6, 0): slope = 1/2, intercept -3, so y = (1/2)x - 3 -- choice A",
+      "key": "A",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All three stated points satisfy y = (1/2)x - 3 and no other choice, and the stated upward direction rules out the two negative-slope options."
+    },
+    "g8-2026-017": {
+      "verdict": "sound",
+      "computed": "Angle F = 180 - 76 - 65 = 39 degrees; EF/AB = 94/188 = 1/2 and EG/AC = 66/132 = 1/2, so FG = 201/2 = 100.5 cm -- choice D",
+      "key": "D",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Two angles of EFG are given, so the third is 39, and the two matched side pairs establish the scale factor of one half that turns BC = 201 into FG = 100.5."
+    },
+    "g8-2026-018": {
+      "verdict": "sound",
+      "computed": "Falling for x less than -6, constant at 5 from -6 to 2, rising for x greater than 2 -- so the function is increasing when x is greater than 2, choice C",
+      "key": "C",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description gives the behaviour on all three intervals, which is what is needed to accept C and reject A, B and D."
+    },
+    "g8-2026-023": {
+      "verdict": "insufficient",
+      "computed": "Ambiguous. Read as a linear pair (adjacent angles): 4x - 15 + 115 = 180, x = 20, which is distractor A. Read as opposite angles: 4x - 15 = 115, x = 32.5, the key.",
+      "key": "C (32.5)",
+      "agrees": false,
+      "missing": "That the two labelled angles are opposite each other across the crossing point -- vertical angles, and therefore equal. \"The angle below it\" does not settle whether the second angle is opposite the first or next to it, and the adjacent reading gives x = 20, which is choice A.",
+      "replacement": "Two straight lines cross at a single point. One of the angles they form is labelled 4x minus 15 degrees, and the angle directly opposite it, on the far side of the crossing point, is labelled 115 degrees.",
+      "why": "Both readings of \"below\" are geometrically consistent and each lands on a different listed choice, so the description as written does not determine the answer; only the opposite-angle reading gives the key, and the replacement states it outright."
+    },
+    "g8-2026-026": {
+      "verdict": "wrong",
+      "computed": "y-intercept 4 and x-intercept 8 give a slope of (0 - 4)/(8 - 0) = -1/2, which the description repeats as \"falling one unit for every two it runs\". A rate of change of -1/2 is not among the four choices, and it contradicts the key's -2/3.",
+      "key": "C (rate of change -2/3, y-intercept 4)",
+      "agrees": false,
+      "missing": null,
+      "replacement": "The line slants downward from left to right. It crosses the y-axis at 4 and the x-axis at 6, passing through the point 3, 2, so it falls 2 units for every 3 units it runs to the right.",
+      "why": "A line with y-intercept 4 and rate of change -2/3 crosses the x-axis at 6, not 8, and falls 2 for every 3 across, not 1 for every 2; the description's two statements agree with each other, so a reader gets a self-consistent -1/2 and finds no matching choice."
+    },
+    "g8-2026-031": {
+      "verdict": "insufficient",
+      "computed": "Nothing. The description carries no angle measures and no usable positions, so no value of angle 2 can be derived from it. The key, 49, is 128 minus 79.",
+      "key": "A (49)",
+      "agrees": false,
+      "missing": "Everything that makes the figure answerable: where angle 1 and angle 2 sit relative to each other and to the transversals q and t, whether q and t cross between or outside the parallel lines, and which side of each intersection each numbered angle is on. Without that a reader cannot tell that 79 and the 52-degree supplement of 128 are two angles of a triangle whose third angle, 49, is angle 2.",
+      "replacement": null,
+      "why": "The text names three angles and stops; it states no relationship that lets 79 and 128 be combined. The replacement cannot be written from the packet alone -- it needs the page render to fix the configuration, so route this one to the rendering wave."
+    },
+    "g8-2026-034": {
+      "verdict": "insufficient",
+      "computed": "Nothing. The description says the four plots \"differ in how strongly and in which direction the points trend\" without saying which does what, so no choice is reachable.",
+      "key": "B",
+      "agrees": false,
+      "missing": "The direction and form of each of the four plots -- above all which one rises from lower left to upper right in a roughly straight band.",
+      "replacement": null,
+      "why": "This is the whole item: the four plots are the answer choices, and the description deliberately withholds the one fact that distinguishes them. The replacement needs the four plots read off the page, so route it to the rendering wave."
+    },
+    "g8-2026-035": {
+      "verdict": "sound",
+      "computed": "Right angle at Home with legs 12 and 16: hypotenuse = square root of (144 + 256) = square root of 400 = 20 miles -- choice B",
+      "key": "B (20)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description states which vertex carries the right angle, both leg lengths, and that the unknown side joins Store to Gas Station, which is exactly the Pythagorean setup that yields 20."
+    },
+    "g8-2026-037": {
+      "verdict": "sound",
+      "computed": "A is x squared (4, 16, 36, 64), B is x cubed (8, 64, 216, 512), C is 2x squared (8, 32, 72, 128), D rises 4 for every 2 in x (6, 10, 14, 18), a constant rate -- choice D",
+      "key": "D",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All sixteen pairs are given, and only D has constant first differences, so the elimination is fully supported."
+    },
+    "g8-2026-038": {
+      "verdict": "sound",
+      "computed": "Root 10 is about 3.16, which is just past 3 -- point C",
+      "key": "C",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The four points are located relative to whole numbers, and only C sits just above 3, where 3.16 falls; B is just below 3 and so is excluded."
+    },
+    "g8-2026-044": {
+      "verdict": "sound",
+      "computed": "Segments B and D are the flat ones -- distance unchanged while time passes, so those are the rests",
+      "key": "Segments B and D",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Each of the five segments is given with its start and end distance and time, and exactly B and D hold distance constant."
+    },
+    "g8-2026-048": {
+      "verdict": "sound",
+      "computed": "Splash Zone: 33.75/3 = 45/4 = 56.25/5 = 67.50/6 = 11.25 per person, so 8 people cost 90.00. Tube Time: 24/2 = 36/3 = 48/4 = 60/5 = 12.00 per person, so 8 people cost 96.00. Difference 6.00.",
+      "key": "$6.00",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both sets of pairs are proportional and give clean unit rates of 11.25 and 12.00, and 8 times the 0.75 gap is 6.00."
+    }
+  }
+}

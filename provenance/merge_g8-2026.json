@@ -135,7 +135,7 @@
   "G8-2026/q23_1.png": {
    "type": "Diagram",
    "alt": "Two intersecting lines with two of the angles they form labelled.",
-   "long": "One angle is labelled 4x minus 15 degrees and the angle below it is labelled 115 degrees."
+   "long": "Two straight lines cross at a single point. One of the angles they form is labelled 4x minus 15 degrees, and the angle directly opposite it, on the far side of the crossing point, is labelled 115 degrees."
   },
   "G8-2026/q25.png": {
    "type": "Coordinate Plane",
@@ -145,7 +145,7 @@
   "G8-2026/q26.png": {
    "type": "Coordinate Plane",
    "alt": "A straight line with a negative slope graphed on a coordinate plane.",
-   "long": "The line crosses the y-axis at 4 and the x-axis at 8, falling one unit for every two it runs to the right."
+   "long": "The line slants downward from left to right. It crosses the y-axis at 4 and the x-axis at 6, passing through the point 3, 2, so it falls 2 units for every 3 units it runs to the right."
   },
   "G8-2026/q29.png": {
    "type": "Coordinate Plane",

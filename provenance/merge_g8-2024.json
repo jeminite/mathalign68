@@ -127,12 +127,12 @@
   "G8-2024/q42.png": {
    "type": "Diagram",
    "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
-   "long": "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
+   "long": "Lines p and q are horizontal and parallel, with p above q. The two transversals meet at point A above line p. One runs down to the left from A, crossing line p at B and crossing line q on its way to point D, which lies below line q. The other runs down to the right from A, crossing line p at C and crossing line q on its way to point F, which lies below line q. B is to the left of C on line p. Where the first transversal crosses line q, the 110-degree angle is above line q on the left side of that transversal. Where the second transversal crosses line q, the 105-degree angle is above line q on the right side of that transversal."
   },
   "G8-2024/q44.png": {
    "type": "Data Table and Line Graph",
    "alt": "Dog A's run given as a table and Dog B's given as a graph.",
-   "long": "Dog A covers 56 feet in 2 seconds, 112 in 4, 168 in 6 and 224 in 8. Dog B's line passes through 200 feet at 8 seconds."
+   "long": "Dog A covers 56 feet in 2 seconds, 112 feet in 4 seconds, 168 feet in 6 seconds, and 224 feet in 8 seconds. Dog B's line starts at the origin and passes through the plotted point at 8 seconds and 200 feet."
   },
   "G8-2024/q47.png": {
    "type": "Expression",

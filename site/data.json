@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-13T09:07:08",
+    "built": "2026-09-13T09:36:45",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -3119,7 +3119,7 @@
           "file": "G6-2023/q02.png",
           "type": "Number Line",
           "alt": "A number line from negative 2 to 2 with four points marked P, Q, R and S.",
-          "longDescription": "P and Q sit between negative 2 and negative 1, R is at negative 1, and S lies between 1 and 2."
+          "longDescription": "The number line runs from negative 2 to 2, with each whole unit divided into three equal parts. Point P is at negative 1 and two thirds, point Q is at negative 1 and one third, point R is at negative two thirds, and point S is at 1 and one third."
         }
       ],
       "tablesInImage": false,
@@ -8091,7 +8091,7 @@
           "file": "G6-2024/q40.png",
           "type": "Diagram",
           "alt": "A rectangular flag with a white triangular notch cut into one side, the rest shaded, dimensions in centimetres.",
-          "longDescription": "The flag is 9 centimetres by 5 centimetres, and the notch is 4.5 centimetres deep across the full 5 centimetre height."
+          "longDescription": "The flag is a rectangle 9 centimeters long and 5 centimeters tall, shaded gray. A white triangular notch is cut into the right-hand 5 centimeter edge: its two slanted sides run from the top right corner and from the bottom right corner of the rectangle to a single point inside the flag, level with the middle of that edge and 4.5 centimeters in from it. A dashed 4.5 centimeter segment joins that point to the right edge and meets the edge at a right angle. The shaded section is the whole rectangle apart from this white triangle."
         }
       ],
       "tablesInImage": false,
@@ -10593,7 +10593,7 @@
           "file": "G6-2025/q36.png",
           "type": "Diagram",
           "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
-          "longDescription": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
+          "longDescription": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The parallelogram's top and bottom edges are each 2.4 centimeters long and lie 3 centimeters apart vertically, and the figure leans to the right, so the bottom edge starts 1.2 centimeters to the left of the top edge. The dashed line drops from the parallelogram's top left corner straight down to the bottom edge, cutting off a triangle whose base along the bottom edge is 1.2 centimeters. The shaded trapezoid has a top edge of 2.4 centimeters, a bottom edge of 1.2 centimeters, and a height of 3 centimeters."
         }
       ],
       "tablesInImage": false,
@@ -13509,7 +13509,7 @@
           "file": "G6-2026/q23.png",
           "type": "Number Lines as Answer Choices",
           "alt": "Four number lines labelled A, B, C and D, which are this item's answer choices.",
-          "longDescription": "Each runs from 45 to 55. They differ in whether the circle at 48 is filled or open and in whether the ray shaded runs to the left or to the right."
+          "longDescription": "Four number lines, labeled A, B, C and D, each running from 45 to 55 and marked at every whole number. Line A has a filled circle at 48 and the line to the right of it is drawn heavy. Line B has an open circle at 48 and the line to the right of it is drawn heavy. Line C has a filled circle at 48 and the line to the left of it is drawn heavy. Line D has an open circle at 48 and the line to the left of it is drawn heavy."
         }
       ],
       "tablesInImage": false,
@@ -14032,7 +14032,7 @@
           "file": "G6-2026/q29.png",
           "type": "Diagram",
           "alt": "A parallelogram divided into two triangles, with its dimensions labelled in metres.",
-          "longDescription": "The slanted side is 10 metres, the top is 8 metres, and the height is 6 metres, with a right angle marked at the foot of the height. One of the two triangles is shaded."
+          "longDescription": "The fabric is a parallelogram that leans to the right. Its left-hand side is vertical and 6 meters long, and the side running up and to the right from the top of that vertical side is 10 meters long; the other two sides are parallel to these. A horizontal segment 8 meters long runs from the top of the 6 meter side across to the opposite corner, dividing the parallelogram into two triangles, and a right angle is marked where that segment meets the 6 meter side. The lower of the two triangles, the one bounded by the 6 meter vertical side and the 8 meter segment, is shaded."
         }
       ],
       "tablesInImage": false,
@@ -15633,7 +15633,7 @@
           "file": "G7-2023/q05.png",
           "type": "Expression",
           "alt": "A displayed sum of four signed numbers, with answer choice A shown beneath it.",
-          "longDescription": "The sum is negative 1.5 plus two fifths plus negative 7 plus 2.6. Choice A regroups it as negative 5.5 plus 2.6, then plus two fifths."
+          "longDescription": "The expression reads negative 1.5 plus two fifths plus negative 7 plus 2.6, with two fifths written as a stacked fraction."
         }
       ],
       "tablesInImage": false,
@@ -19442,7 +19442,7 @@
           "file": "G7-2024/q21.png",
           "type": "Data Table",
           "alt": "A two-column table of x and y values whose y column runs in quarters.",
-          "longDescription": "9 with 2.25, 13 with 3.25, 17 with 4.25, and 21 with 5.25."
+          "longDescription": "Columns are x and y. The rows read 9 and 2.25; 13 and 3.25; 17 and 4.25; 21 and 5.25."
         }
       ],
       "tablesInImage": true,
@@ -30261,7 +30261,7 @@
           "file": "G8-2023/q25.png",
           "type": "Diagram",
           "alt": "Two parallel lines a and b cut by a transversal c, with two angles labelled in terms of x.",
-          "longDescription": "One angle is 13x plus 6 degrees and the other is 11x plus 30 degrees."
+          "longDescription": "Lines a and b are horizontal and parallel, with a above b, and transversal c crosses both, slanting up to the right. The angle marked 13x plus 6 degrees sits above line a, on the left side of line c. The angle marked 11x plus 30 degrees sits above line b, on the left side of line c."
         }
       ],
       "tablesInImage": false,
@@ -30722,7 +30722,7 @@
           "file": "G8-2023/q34.png",
           "type": "Data Table and Coordinate Plane",
           "alt": "Function A as a table of x and y values and Function B as a line graphed on a coordinate plane.",
-          "longDescription": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin rising steeply."
+          "longDescription": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin and through the plotted point 4 comma 6."
         }
       ],
       "tablesInImage": true,
@@ -32102,7 +32102,7 @@
           "file": "G8-2023/q48.png",
           "type": "Equation, Data Table and Coordinate Plane",
           "alt": "Three functions shown three ways: Function A as an equation, Function B as a table, Function C as a graph.",
-          "longDescription": "Function A is y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a steep straight line through the origin."
+          "longDescription": "Function A is the equation y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a straight line passing through the plotted points 0 comma negative 4 and 1 comma negative 1."
         }
       ],
       "tablesInImage": true,
@@ -34887,7 +34887,7 @@
           "file": "G8-2024/q42.png",
           "type": "Diagram",
           "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
-          "longDescription": "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
+          "longDescription": "Lines p and q are horizontal and parallel, with p above q. The two transversals meet at point A above line p. One runs down to the left from A, crossing line p at B and crossing line q on its way to point D, which lies below line q. The other runs down to the right from A, crossing line p at C and crossing line q on its way to point F, which lies below line q. B is to the left of C on line p. Where the first transversal crosses line q, the 110-degree angle is above line q on the left side of that transversal. Where the second transversal crosses line q, the 105-degree angle is above line q on the right side of that transversal."
         }
       ],
       "tablesInImage": false,
@@ -35079,7 +35079,7 @@
           "file": "G8-2024/q44.png",
           "type": "Data Table and Line Graph",
           "alt": "Dog A's run given as a table and Dog B's given as a graph.",
-          "longDescription": "Dog A covers 56 feet in 2 seconds, 112 in 4, 168 in 6 and 224 in 8. Dog B's line passes through 200 feet at 8 seconds."
+          "longDescription": "Dog A covers 56 feet in 2 seconds, 112 feet in 4 seconds, 168 feet in 6 seconds, and 224 feet in 8 seconds. Dog B's line starts at the origin and passes through the plotted point at 8 seconds and 200 feet."
         }
       ],
       "tablesInImage": true,
@@ -36717,7 +36717,7 @@
           "file": "G8-2025/q27.png",
           "type": "Diagram",
           "alt": "A cone with its height and base radius labelled in yards, with the right angle at the centre marked.",
-          "longDescription": "The height is 8 yards and the radius is 6 yards."
+          "longDescription": "The cone stands on its circular base with its apex at the top. A dashed segment runs from the apex straight down to the centre of the base, meeting the base at a marked right angle, and is labelled 8 yards. A second dashed segment runs right across the base through that centre, from one edge to the other, and is labelled 6 yards, so 6 yards is the diameter of the base."
         }
       ],
       "tablesInImage": false,
@@ -37053,7 +37053,7 @@
           "file": "G8-2025/q31.png",
           "type": "Diagram",
           "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
-          "longDescription": "One angle is 6x minus 23 degrees and the other is 4x plus 11 degrees."
+          "longDescription": "Three lines cross at a single point: one horizontal, one rising to the upper right, and one rising to the upper left. The angle marked 6x minus 23 degrees lies above the horizontal line, between the horizontal ray going left and the ray going up to the left. The angle marked 4x plus 11 degrees lies below the horizontal line, between the horizontal ray going right and the ray going down to the right. The two are vertical angles."
         }
       ],
       "tablesInImage": false,
@@ -37168,7 +37168,7 @@
           "file": "G8-2025/q32.png",
           "type": "Line Graph",
           "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
-          "longDescription": "A straight line rises from about 25 dollars at the start to about 250 dollars at 10 months."
+          "longDescription": "A straight line starts at the origin, zero dollars at zero months, and rises steadily, passing through 25 dollars at 1 month and reaching 250 dollars at 10 months. The horizontal axis is the number of months and the vertical axis is the cost in dollars."
         }
       ],
       "tablesInImage": false,
@@ -41203,7 +41203,7 @@
           "file": "G8-2026/q23_1.png",
           "type": "Diagram",
           "alt": "Two intersecting lines with two of the angles they form labelled.",
-          "longDescription": "One angle is labelled 4x minus 15 degrees and the angle below it is labelled 115 degrees."
+          "longDescription": "Two straight lines cross at a single point. One of the angles they form is labelled 4x minus 15 degrees, and the angle directly opposite it, on the far side of the crossing point, is labelled 115 degrees."
         }
       ],
       "tablesInImage": false,
@@ -41428,7 +41428,7 @@
           "file": "G8-2026/q26.png",
           "type": "Coordinate Plane",
           "alt": "A straight line with a negative slope graphed on a coordinate plane.",
-          "longDescription": "The line crosses the y-axis at 4 and the x-axis at 8, falling one unit for every two it runs to the right."
+          "longDescription": "The line slants downward from left to right. It crosses the y-axis at 4 and the x-axis at 6, passing through the point 3, 2, so it falls 2 units for every 3 units it runs to the right."
         }
       ],
       "tablesInImage": false,

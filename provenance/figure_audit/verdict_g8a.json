@@ -1,0 +1,194 @@
+{
+  "scope": "grade 8 number-bearing figure descriptions, first half",
+  "items": {
+    "g8-2023-007": {
+      "verdict": "sound",
+      "computed": "Function A slope 5/4 = 1.25; Function B 1.5/5 = 0.3; 1.25 > 0.3, so A has the greater rate of change -- choice C",
+      "key": "C (Function A greater, because 1.25 > 0.3)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The equation and all three table pairs are stated exactly as drawn, and the two rates they give are the two numbers choice C compares."
+    },
+    "g8-2023-025": {
+      "verdict": "insufficient",
+      "computed": "13x + 6 and 11x + 30 with no stated relationship: congruent gives x = 12, supplementary gives x = 6. Both are printed choices (C and A), so the description alone does not decide between them.",
+      "key": "C (12)",
+      "agrees": false,
+      "missing": "Where each marked angle sits. Both are above their own line and on the left side of transversal c, which makes them corresponding angles and therefore equal; the description gives only the two expressions.",
+      "replacement": "Lines a and b are horizontal and parallel, with a above b, and transversal c crosses both, slanting up to the right. The angle marked 13x plus 6 degrees sits above line a, on the left side of line c. The angle marked 11x plus 30 degrees sits above line b, on the left side of line c.",
+      "why": "With no position given, a reader has no reason to set the two expressions equal rather than add them to 180, and the supplementary route lands on choice A, 6."
+    },
+    "g8-2023-034": {
+      "verdict": "wrong",
+      "computed": "Function A slope 2 from the table; Function B described as 'rising steeply', which reads as steeper than 2 -- choice A",
+      "key": "B (Function A's rate of change is greater)",
+      "agrees": false,
+      "missing": null,
+      "replacement": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin and through the plotted point 4 comma 6.",
+      "why": "Function B's line runs through the origin and the plotted point (4, 6), a slope of 1.5, which is less than Function A's 2; calling it 'steep' with no number points the reader at the opposite choice."
+    },
+    "g8-2023-045": {
+      "verdict": "sound",
+      "computed": "Function A: 12/2 = 6 per unit across all four pairs; Function B: 3 over 6 = one half; A is greater",
+      "key": "Function A, rate of change 6, against Function B's one half",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both rates are stated and both match the drawing -- Function B's line does run from the origin to the plotted point (6, 3)."
+    },
+    "g8-2023-048": {
+      "verdict": "wrong",
+      "computed": "A linear, B nonlinear, C linear -- which matches the key, but only because the false detail happens not to be load-bearing",
+      "key": "Function A linear, Function B nonlinear, Function C linear",
+      "agrees": true,
+      "missing": null,
+      "replacement": "Function A is the equation y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a straight line passing through the plotted points 0 comma negative 4 and 1 comma negative 1.",
+      "why": "Function C does not pass through the origin -- it crosses the y-axis at negative 4 and is marked at (0, -4) and (1, -1). The item awards credit for stating properties of all three functions, so a reader repeating the false y-intercept can lose credit on a 3-credit response."
+    },
+    "g8-2024-007": {
+      "verdict": "sound",
+      "computed": "A: fee 50, rate 25. B: rate (150-130)/1 = 20, fee 130 - 3(20) = 70. A's fee is less, A's rate is greater -- choice C",
+      "key": "C (A's initial fee less, A's hourly rate greater)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The equation and all three table rows are stated exactly as drawn, and they yield both comparisons choice C makes."
+    },
+    "g8-2024-018": {
+      "verdict": "sound",
+      "computed": "Points climb about 14 pounds over 50 weeks, roughly 0.3 pound per week, so the 0.3 in the line of fit is pounds gained per week -- choice B",
+      "key": "B (approximate pounds gained each week)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both axes are named with their units and the span of the seven points matches the line y = 0.3x + 5.8 at its two ends, which is what makes 0.3 a weekly rate rather than a starting weight."
+    },
+    "g8-2024-033": {
+      "verdict": "sound",
+      "computed": "x rises by 1 each row while y rises by 3 each row: a constant rate of change, so linear -- choice B",
+      "key": "B (linear because the rate of change is constant)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four pairs are transcribed exactly and the constant first difference is visible from them, which is the reason choice B gives."
+    },
+    "g8-2024-034": {
+      "verdict": "sound",
+      "computed": "GH runs from (4, 0) to (6, 5), length sqrt(29); H'G' runs from (-5, 6) to (0, 4), length sqrt(29). The other three pairs mismatch 4 against sqrt(29) -- choice C",
+      "key": "C (GH and H'G')",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All eight vertices are stated and all eight match the graph; they satisfy the quarter-turn (x, y) to (-y, x), so every side length can be computed from the text alone."
+    },
+    "g8-2024-035": {
+      "verdict": "sound",
+      "computed": "Large: pi(3.5^2)(10) = 122.5pi. Small: diameter 7 so radius 3.5, pi(3.5^2)(6) = 73.5pi. Difference 49pi -- choice B",
+      "key": "B (49 pi)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The diagram really does label the large can with a radius (centre dot to edge) and the small can with a full-width diameter, and the description keeps those two words straight, which is what keeps the reader off the un-halved distractor."
+    },
+    "g8-2024-039": {
+      "verdict": "sound",
+      "computed": "(1/3)pi(3^2)(5) = 15pi = 47.1 cubic inches",
+      "key": "47.1 cubic inches",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The 3 inches really is a radius in the drawing -- the measure runs from the centre dot to the rim -- and 5 inches is the height, so the description's two words give exactly NYSED's answer."
+    },
+    "g8-2024-042": {
+      "verdict": "insufficient",
+      "computed": "Two angle measures with no positions: 180 - 110 - 105 is negative, so a reader cannot form a triangle at all. Reaching 35 requires knowing the marked angles are the ones opening away from the figure, so the triangle's angles at B and C are 70 and 75.",
+      "key": "35 degrees",
+      "agrees": false,
+      "missing": "Which side of each transversal each marked angle opens on, and that D and F lie below line q rather than on it. The 110-degree angle is above line q on the left of its transversal; the 105-degree angle is above line q on the right of its transversal.",
+      "replacement": "Lines p and q are horizontal and parallel, with p above q. The two transversals meet at point A above line p. One runs down to the left from A, crossing line p at B and crossing line q on its way to point D, which lies below line q. The other runs down to the right from A, crossing line p at C and crossing line q on its way to point F, which lies below line q. B is to the left of C on line p. Where the first transversal crosses line q, the 110-degree angle is above line q on the left side of that transversal. Where the second transversal crosses line q, the 105-degree angle is above line q on the right side of that transversal.",
+      "why": "As written the two numbers sum to 215, so any reader treating them as the triangle's own angles hits a contradiction; the positions are what turn them into 70 and 75 and give 180 - 70 - 75 = 35."
+    },
+    "g8-2024-044": {
+      "verdict": "insufficient",
+      "computed": "Dog A: 28 feet per second. Dog B: one point, (8, 200), with no second point and no intercept -- a speed cannot be computed, and any head start would change it.",
+      "key": "3 feet per second",
+      "agrees": false,
+      "missing": "That Dog B's line starts at the origin. Only then does the single plotted point give 200 / 8 = 25 feet per second and a difference of 3.",
+      "replacement": "Dog A covers 56 feet in 2 seconds, 112 feet in 4 seconds, 168 feet in 6 seconds, and 224 feet in 8 seconds. Dog B's line starts at the origin and passes through the plotted point at 8 seconds and 200 feet.",
+      "why": "One point on a line fixes a rate only if the line's starting point is known; the graph does start at (0, 0), but the description never says so."
+    },
+    "g8-2024-048": {
+      "verdict": "sound",
+      "computed": "Store B: 5.50/2 = 2.75 and 16.50/6 = 2.75 per yard. Store A: 3.50. At 9 yards, 31.50 - 24.75 = 6.75",
+      "key": "Store A $3.50, Store B $2.75, difference $6.75",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both labelled points are transcribed exactly, and two points are enough to fix the unit rate without any assumption about the intercept."
+    },
+    "g8-2025-007": {
+      "verdict": "sound",
+      "computed": "Right triangle with hypotenuse 20 and legs 15 and x: 20^2 = 15^2 + x^2 -- choice D",
+      "key": "D (20^2 = 15^2 + x^2)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "The description keeps x measured upward from the hand rather than from the ground, which is exactly what stops a reader adding 4 to 20 and taking choice B."
+    },
+    "g8-2025-008": {
+      "verdict": "sound",
+      "computed": "y-intercept 3, falling 1 for every 2 across: y = -(1/2)x + 3 -- choice C. The x-intercept of 6 is consistent.",
+      "key": "C (y = -1/2 x + 3)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Intercept and slope are both stated and both match the graph, and the stated slope direction rules out the -2 distractors."
+    },
+    "g8-2025-015": {
+      "verdict": "sound",
+      "computed": "1/3 rational, 1.1 with 3 repeating rational, square root of 5 irrational, 5/2 rational -- remove the square root of 5, choice C",
+      "key": "C (square root of 5)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "All four members are named exactly as printed, including the repeating bar, which is the one detail that could otherwise make 1.13 look irrational."
+    },
+    "g8-2025-027": {
+      "verdict": "wrong",
+      "computed": "(1/3)pi(6^2)(8) = 96pi -- choice D, the un-halved-radius distractor",
+      "key": "B (24 pi)",
+      "agrees": false,
+      "missing": null,
+      "replacement": "The cone stands on its circular base with its apex at the top. A dashed segment runs from the apex straight down to the centre of the base, meeting the base at a marked right angle, and is labelled 8 yards. A second dashed segment runs right across the base through that centre, from one edge to the other, and is labelled 6 yards, so 6 yards is the diameter of the base.",
+      "why": "The 6 yards is drawn as a full-width chord across the base through the centre -- a diameter -- so the radius is 3 and the volume is 24pi; calling it a radius yields 96pi, which is a printed choice, so the reader answers confidently and wrongly."
+    },
+    "g8-2025-031": {
+      "verdict": "insufficient",
+      "computed": "6x - 23 and 4x + 11 with no stated relationship: equal gives x = 17, supplementary gives 19.2, complementary gives 10.2. All three are printed choices (C, D, B).",
+      "key": "C (17)",
+      "agrees": false,
+      "missing": "That the two marked angles are vertical angles -- one above the horizontal line on the left, the other below it on the right, formed by the same two lines.",
+      "replacement": "Three lines cross at a single point: one horizontal, one rising to the upper right, and one rising to the upper left. The angle marked 6x minus 23 degrees lies above the horizontal line, between the horizontal ray going left and the ray going up to the left. The angle marked 4x plus 11 degrees lies below the horizontal line, between the horizontal ray going right and the ray going down to the right. The two are vertical angles.",
+      "why": "Every one of the three natural relationships between two labelled angles leads to a different printed choice, so with no positions given the reader is choosing at random among C, D and B."
+    },
+    "g8-2025-032": {
+      "verdict": "wrong",
+      "computed": "Taylor read as 25 dollars at month 0 rising to 250 at month 10 gives 22.50 per month plus a 25 dollar joining fee; Alex is still the cheaper at 15, so choice B survives, but the graph shows no joining fee at all.",
+      "key": "B (Alex's, at $15.00 per month)",
+      "agrees": true,
+      "missing": null,
+      "replacement": "A straight line starts at the origin, zero dollars at zero months, and rises steadily, passing through 25 dollars at 1 month and reaching 250 dollars at 10 months. The horizontal axis is the number of months and the vertical axis is the cost in dollars.",
+      "why": "The line begins at (0, 0); the 25 dollars belongs to month 1, not to the start. As written the description invents a 25 dollar initial fee and a 22.50 monthly rate, neither of which is on the graph, and it hides the fact that Taylor's actual rate is the 25 dollars named in choice D."
+    },
+    "g8-2025-035": {
+      "verdict": "sound",
+      "computed": "Brayden 2/3; Hannah 4/6 = 2/3; equal, so both are correct -- choice C",
+      "key": "C (both calculated correctly)",
+      "agrees": true,
+      "missing": null,
+      "replacement": null,
+      "why": "Both slope triangles are stated with rise and run the right way round and both sit on the same rising line, so the two fractions come out equal as the key requires."
+    }
+  }
+}

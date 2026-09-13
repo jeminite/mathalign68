@@ -1,134 +1,134 @@
 {
-  "testId": "g7-2024",
-  "status": "reviewed",
-  "answerKey": "BABCBDBCDDCACABDBBBCC",
-  "answerKeyItems": [
-    1,
-    4,
-    5,
-    7,
-    10,
-    11,
-    13,
-    14,
-    15,
-    17,
-    21,
-    26,
-    29,
-    30,
-    31,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "39": {
-      "answer": "w = 25t",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "25 words a minute over t minutes is 25t words. The rate is in this item's own transcribed stem."
-    },
-    "40": {
-      "answer": "24",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "Minus 2 times minus 3 is 6, times 4 is 24. The expression is this item's own transcribed stem."
-    },
-    "41": {
-      "answer": "30%",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "55 minus 38.50 is 16.50, and 16.50 over 55 is 0.30. Both prices are in this item's own transcribed stem."
-    },
-    "42": {
-      "answer": "1 and 2, or 0 and 3",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "The first three spins total minus 3, so the last two must total 3. Every value on the spinner is in this item's figure and named in its long description."
-    },
-    "43": {
-      "answer": "2.5 miles per hour",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "Five and a half miles over two and a fifth hours is 5.5 over 2.2, which is 2.5. Both quantities are in this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "4.5 centimeters",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "225 miles at 50 miles to the centimetre is 4.5 centimetres. The scale and the distance are in this item's own stem."
-    },
-    "45": {
-      "answer": "19 roast beef sandwiches",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "25 turkey at 4.99 is 124.75, and 219.56 minus that is 94.81, which is 19 more sandwiches. All three figures are in this item's own stem."
-    },
-    "46": {
-      "answer": "−12 + 8x",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "Minus 8 times 4 minus x is minus 32 plus 8x, and plus 20 gives minus 12 plus 8x. The expression is this item's own transcribed stem."
-    },
-    "47": {
-      "answer": "1/18",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "A third for the comedy, a third for the chips and a half for the juice multiply to one eighteenth. All three option lists are in this item's own stem."
-    },
-    "48": {
-      "answer": "$124.20",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "460 discounted by 20% implies an original 575; with 8% tax that is 621 against 496.80. Both the discounted price and the tax rate are in this item's own stem."
-    }
+ "testId": "g7-2024",
+ "status": "reviewed",
+ "answerKey": "BABCBDBCDDCACABDBBBCC",
+ "answerKeyItems": [
+  1,
+  4,
+  5,
+  7,
+  10,
+  11,
+  13,
+  14,
+  15,
+  17,
+  21,
+  26,
+  29,
+  30,
+  31,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g7-2024.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "39": {
+   "answer": "w = 25t",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "25 words a minute over t minutes is 25t words. The rate is in this item's own transcribed stem."
   },
-  "visuals": {
-    "G7-2024/q01_1.png": {
-      "type": "Data Table",
-      "alt": "A table titled Cost of Butter pairing a number of packages with a cost in dollars.",
-      "long": "3 packages for 9.75, 4 for 13.00, 7 for 22.75, and 11 for 35.75 -- 3.25 a package."
-    },
-    "G7-2024/q07.png": {
-      "type": "Dot Plot",
-      "alt": "A dot plot titled Student Study Times, counting students against minutes studied from 5 to 50.",
-      "long": "One student studied 5 minutes; the rest cluster between 20 and 45 minutes, with the tallest stack at 30."
-    },
-    "G7-2024/q14.png": {
-      "type": "Box Plot",
-      "alt": "A box plot titled Students' Test Scores on a scale from 60 to 85.",
-      "long": "The whiskers run from about 61 to 82, the box from about 67 to 78, and the median line sits at about 75."
-    },
-    "G7-2024/q15_1.png": {
-      "type": "Expression",
-      "alt": "A displayed expression with answer choice A shown beneath it.",
-      "long": "The expression is a third minus, in brackets, two thirds plus five sevenths, minus two and a fifth. Choice A is negative one fifteenth."
-    },
-    "G7-2024/q21.png": {
-      "type": "Data Table",
-      "alt": "A two-column table of x and y values whose y column runs in quarters.",
-      "long": "9 with 2.25, 13 with 3.25, 17 with 4.25, and 21 with 5.25."
-    },
-    "G7-2024/q35_1.png": {
-      "type": "Dot Plot",
-      "alt": "A dot plot titled Teenagers' Cell Phone Usage, counting teenagers against minutes from 380 to 700.",
-      "long": "The points cluster around 520 to 560 minutes, with the tallest stack at 540."
-    },
-    "G7-2024/q35_2.png": {
-      "type": "Dot Plot",
-      "alt": "A dot plot titled Adults' Cell Phone Usage, counting adults against minutes from 80 to 400.",
-      "long": "The points cluster around 220 to 280 minutes, with the tallest stack at 240 and one outlier near 360."
-    },
-    "G7-2024/q38.png": {
-      "type": "Line Graph",
-      "alt": "A graph titled Cost of Candy, total cost in dollars against weight in pounds, with one point labelled.",
-      "long": "The line rises from the origin through 6 pounds at 21 dollars -- 3.50 a pound."
-    },
-    "G7-2024/q42.png": {
-      "type": "Diagram",
-      "alt": "A spinner divided into eight equal sectors, each labelled with a number, with the arrow pointing between two of them.",
-      "long": "Going round, the sectors read 1, 2, 3, 4, negative 3.5, negative 2.5, negative 1.5 and 0."
-    }
+  "40": {
+   "answer": "24",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "Minus 2 times minus 3 is 6, times 4 is 24. The expression is this item's own transcribed stem."
   },
-  "choicesInImage": [],
-  "tablesInImage": [
-    1,
-    21
-  ],
-  "reviewNotes": []
+  "41": {
+   "answer": "30%",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "55 minus 38.50 is 16.50, and 16.50 over 55 is 0.30. Both prices are in this item's own transcribed stem."
+  },
+  "42": {
+   "answer": "1 and 2, or 0 and 3",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "The first three spins total minus 3, so the last two must total 3. Every value on the spinner is in this item's figure and named in its long description."
+  },
+  "43": {
+   "answer": "2.5 miles per hour",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "Five and a half miles over two and a fifth hours is 5.5 over 2.2, which is 2.5. Both quantities are in this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "4.5 centimeters",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "225 miles at 50 miles to the centimetre is 4.5 centimetres. The scale and the distance are in this item's own stem."
+  },
+  "45": {
+   "answer": "19 roast beef sandwiches",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "25 turkey at 4.99 is 124.75, and 219.56 minus that is 94.81, which is 19 more sandwiches. All three figures are in this item's own stem."
+  },
+  "46": {
+   "answer": "−12 + 8x",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "Minus 8 times 4 minus x is minus 32 plus 8x, and plus 20 gives minus 12 plus 8x. The expression is this item's own transcribed stem."
+  },
+  "47": {
+   "answer": "1/18",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "A third for the comedy, a third for the chips and a half for the juice multiply to one eighteenth. All three option lists are in this item's own stem."
+  },
+  "48": {
+   "answer": "$124.20",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "460 discounted by 20% implies an original 575; with 8% tax that is 621 against 496.80. Both the discounted price and the tax rate are in this item's own stem."
+  }
+ },
+ "visuals": {
+  "G7-2024/q01_1.png": {
+   "type": "Data Table",
+   "alt": "A table titled Cost of Butter pairing a number of packages with a cost in dollars.",
+   "long": "3 packages for 9.75, 4 for 13.00, 7 for 22.75, and 11 for 35.75 -- 3.25 a package."
+  },
+  "G7-2024/q07.png": {
+   "type": "Dot Plot",
+   "alt": "A dot plot titled Student Study Times, counting students against minutes studied from 5 to 50.",
+   "long": "One student studied 5 minutes; the rest cluster between 20 and 45 minutes, with the tallest stack at 30."
+  },
+  "G7-2024/q14.png": {
+   "type": "Box Plot",
+   "alt": "A box plot titled Students' Test Scores on a scale from 60 to 85.",
+   "long": "The whiskers run from about 61 to 82, the box from about 67 to 78, and the median line sits at about 75."
+  },
+  "G7-2024/q15_1.png": {
+   "type": "Expression",
+   "alt": "A displayed expression with answer choice A shown beneath it.",
+   "long": "The expression is a third minus, in brackets, two thirds plus five sevenths, minus two and a fifth. Choice A is negative one fifteenth."
+  },
+  "G7-2024/q21.png": {
+   "type": "Data Table",
+   "alt": "A two-column table of x and y values whose y column runs in quarters.",
+   "long": "Columns are x and y. The rows read 9 and 2.25; 13 and 3.25; 17 and 4.25; 21 and 5.25."
+  },
+  "G7-2024/q35_1.png": {
+   "type": "Dot Plot",
+   "alt": "A dot plot titled Teenagers' Cell Phone Usage, counting teenagers against minutes from 380 to 700.",
+   "long": "The points cluster around 520 to 560 minutes, with the tallest stack at 540."
+  },
+  "G7-2024/q35_2.png": {
+   "type": "Dot Plot",
+   "alt": "A dot plot titled Adults' Cell Phone Usage, counting adults against minutes from 80 to 400.",
+   "long": "The points cluster around 220 to 280 minutes, with the tallest stack at 240 and one outlier near 360."
+  },
+  "G7-2024/q38.png": {
+   "type": "Line Graph",
+   "alt": "A graph titled Cost of Candy, total cost in dollars against weight in pounds, with one point labelled.",
+   "long": "The line rises from the origin through 6 pounds at 21 dollars -- 3.50 a pound."
+  },
+  "G7-2024/q42.png": {
+   "type": "Diagram",
+   "alt": "A spinner divided into eight equal sectors, each labelled with a number, with the arrow pointing between two of them.",
+   "long": "Going round, the sectors read 1, 2, 3, 4, negative 3.5, negative 2.5, negative 1.5 and 0."
+  }
+ },
+ "choicesInImage": [],
+ "tablesInImage": [
+  1,
+  21
+ ],
+ "reviewNotes": []
 }

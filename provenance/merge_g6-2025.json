@@ -110,7 +110,7 @@
   "G6-2025/q36.png": {
    "type": "Diagram",
    "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
-   "long": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
+   "long": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The parallelogram's top and bottom edges are each 2.4 centimeters long and lie 3 centimeters apart vertically, and the figure leans to the right, so the bottom edge starts 1.2 centimeters to the left of the top edge. The dashed line drops from the parallelogram's top left corner straight down to the bottom edge, cutting off a triangle whose base along the bottom edge is 1.2 centimeters. The shaded trapezoid has a top edge of 2.4 centimeters, a bottom edge of 1.2 centimeters, and a height of 3 centimeters."
   },
   "G6-2025/q41.png": {
    "type": "Data Table",

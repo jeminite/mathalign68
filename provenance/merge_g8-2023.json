@@ -97,7 +97,7 @@
   "G8-2023/q25.png": {
    "type": "Diagram",
    "alt": "Two parallel lines a and b cut by a transversal c, with two angles labelled in terms of x.",
-   "long": "One angle is 13x plus 6 degrees and the other is 11x plus 30 degrees."
+   "long": "Lines a and b are horizontal and parallel, with a above b, and transversal c crosses both, slanting up to the right. The angle marked 13x plus 6 degrees sits above line a, on the left side of line c. The angle marked 11x plus 30 degrees sits above line b, on the left side of line c."
   },
   "G8-2023/q29.png": {
    "type": "Coordinate Plane",
@@ -112,7 +112,7 @@
   "G8-2023/q34.png": {
    "type": "Data Table and Coordinate Plane",
    "alt": "Function A as a table of x and y values and Function B as a line graphed on a coordinate plane.",
-   "long": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin rising steeply."
+   "long": "Function A pairs negative 6 with negative 12, negative 2 with negative 4, 0 with 0, and 2 with 4. Function B is a straight line through the origin and through the plotted point 4 comma 6."
   },
   "G8-2023/q36.png": {
    "type": "Graphs as Answer Choices",
@@ -132,7 +132,7 @@
   "G8-2023/q48.png": {
    "type": "Equation, Data Table and Coordinate Plane",
    "alt": "Three functions shown three ways: Function A as an equation, Function B as a table, Function C as a graph.",
-   "long": "Function A is y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a steep straight line through the origin."
+   "long": "Function A is the equation y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a straight line passing through the plotted points 0 comma negative 4 and 1 comma negative 1."
   }
  },
  "choicesInImage": [
