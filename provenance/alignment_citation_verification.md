@@ -102,3 +102,34 @@ text layer gave it, the citation quotes the index faithfully, and the PDF's own
 characters differ. Nothing is misplaced.
 
 So all 204 stand.
+
+---
+
+# Grade 6, after settlement and widening
+
+**278 distinct citations. 268 found in their own unit guide by literal search.**
+Offsets between the page a citation names and the PDF page holding the text:
+
+```
+  0 : 213      +1 : 40      -1 : 12      +2 : 3
+```
+
+The three at +2 are all the same activity — `6.1.11 Quadrilateral Strategies`,
+cited at its start page 191 with its student task printing on 193. The index
+records where an activity *starts*, so this is the expected shape.
+
+## The ten not found are all drawn mathematics
+
+Every one contains a fraction, an exponent or a symbol that the guides set as
+vector artwork rather than type: `How many 1/8 s are in 1 1/4 ?`, `5 ÷ 1/3`,
+`3 inches by 1 inch by 1 1/3 inch`, `the coefficient 1/3`, `3 x and 3x`,
+`-1.5, -3`. The index holds a cleaned rendering of these; the PDF's text layer
+holds nothing to match. The citations are faithful to the index, which is what
+`preflight.py` checks, and the underlying text is genuinely on the cited page.
+
+This is the same limitation recorded for grade 7 — see *The index is a cleaned
+rendering, not the PDF's own characters* above — and it bites grade 6 hardest
+because a sixth-grade curriculum is full of fractions. Ten of 278 is 3.6%,
+against grade 8's 6 of 204.
+
+So all 278 stand.

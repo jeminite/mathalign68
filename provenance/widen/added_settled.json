@@ -1,0 +1,419 @@
+{
+ "scope": "grade 6 settled items -- additional evidence",
+ "items": {
+  "g6-2023-018": {
+   "added": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Truth and Equations",
+     "role": "introduces",
+     "activity": "Notice and Wonder: Equations",
+     "page": 35,
+     "quote": "a variable represents an unknown number in an equation or diagram",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 17,
+     "lessonTitle": "Two Related Quantities, Part 2",
+     "role": "assessed",
+     "activity": "Interpret the Point",
+     "page": 230,
+     "quote": "What does the coefficient 1/3 tell us about the situation?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The gap the settlement recorded stands: no grade 6 activity asks a student to name the coefficient of an expression. These two show the nearest the course comes — Lesson 2’s Warm-up is where 3 ⋅ x is first compressed to 3x, which is what makes 5 the coefficient of z, and Lesson 17’s Cool-down is the only place inside an activity where a student meets the word at all, and there it is handed to them and they are asked what it means."
+  },
+  "g6-2023-035": {
+   "added": [
+    {
+     "lesson": 9,
+     "lessonTitle": "The Distributive Property, Part 1",
+     "role": "introduces",
+     "activity": "Ways to Represent Area of a Rectangle",
+     "page": 117,
+     "quote": "make sense of equivalent expressions and revisit their understanding of the distributive property",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 11,
+     "lessonTitle": "The Distributive Property, Part 3",
+     "role": "practises",
+     "activity": "Writing Equivalent Expressions Using the Distributive Property",
+     "page": 142,
+     "quote": "use the distributive property to write an equivalent expression",
+     "optionalEvidence": true
+    }
+   ],
+   "note": "Widens from one Cool-down to the whole arc: Lesson 9 builds the distributive property on numeric rectangle areas before any variable appears, and Lesson 11 is the only place a product of the item’s exact shape, 3(2x + 1), is expanded — but Lesson 11 is optional, so a class that skipped it never rehearsed the inner 4 ⋅ 3m step."
+  },
+  "g6-2023-039": {
+   "added": [
+    {
+     "lesson": 1,
+     "lessonTitle": "Introducing Ratios and Ratio Language",
+     "role": "introduces",
+     "activity": "The Teacher’s Collection",
+     "page": 28,
+     "quote": "This activity introduces students to ratio language and notation through examples based on a collection",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Part-Part-Whole Ratios",
+     "role": "practises",
+     "activity": "Cubes of Paint",
+     "page": 223,
+     "quote": "students also begin to think about the ratio between the two quantities and their total",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The established gap stands: grade 6 never asks for a part-to-total ratio. What these add is the two halves the item needs, each rehearsed separately — Lesson 1 is where counting a pictured collection into categories and writing a ratio sentence is taught, and Lesson 15 is the one place the parts of a ratio are related to their total, though it asks for the total amount, never for a part-to-total ratio."
+  },
+  "g6-2023-044": {
+   "added": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+     "role": "assessed",
+     "activity": "Cheetah Speed",
+     "page": 110,
+     "quote": "Complete the table to represent a cheetah running at a constant speed",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 9,
+     "lessonTitle": "More about Constant Speed",
+     "role": "practises",
+     "activity": "Camels on a Desert Trail",
+     "page": 143,
+     "quote": "How far apart will they be in 0, 1, 2, and 3 hours?",
+     "optionalEvidence": true
+    }
+   ],
+   "note": "The placement sits in an optional lesson, so the required-lesson evidence matters: Lesson 6’s Cool-down is the assessed version of reading a constant-speed table and finding a distance for a time that is not listed, which is the item’s first half. Camels supplies the second half — two movers at constant speeds and how far apart they are after a given number of hours — but it is optional too, so a class that skipped Lesson 9 has met the difference question nowhere in Unit 3."
+  },
+  "g6-2024-011": {
+   "added": [
+    {
+     "lesson": 8,
+     "lessonTitle": "Writing and Graphing Inequalities",
+     "role": "introduces",
+     "activity": "How High and How Low Can It Be?",
+     "page": 102,
+     "quote": "The symbols ≤ and ≥ are introduced to describe a range of values",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "practises",
+     "activity": "Amusement Park Rides",
+     "page": 113,
+     "quote": "represent the height restrictions as inequality statements and graph those inequalities",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the two things the card sort assumes: Lesson 8’s first activity is where ≥ and ≤ are introduced as the symbols that include the boundary value, and Lesson 9’s first activity is where a student actually graphs one — the Twirl-O-Coaster’s “58 inches minimum” is an h ≥ 58 drawn on a number line, so the closed circle this item turns on is exercised in Lesson 9 after all, even though its Cool-down uses only a strict inequality."
+  },
+  "g6-2024-015": {
+   "added": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Using Diagrams to Find the Number of Groups",
+     "role": "practises",
+     "activity": "Finding the Number of Groups",
+     "page": 95,
+     "quote": "How many groups of 1/2 pound are in 2 3/4 pounds?",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 6,
+     "lessonTitle": "Using Diagrams to Find the Number of Groups",
+     "role": "assessed",
+     "activity": "How Many in 2?",
+     "page": 99,
+     "quote": "Write a multiplication equation and a division equation that can be used",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Both additions come from the lesson the losing reading picked, and they earn their place: the Warm-up already cited asks the item’s bare numbers, while Lesson 6 asks the same question in the item’s own units (pounds into fractional-pound groups) and then assesses it, so a teacher can see the item is rehearsed twice, once stripped of context and once in it."
+  },
+  "g6-2024-031": {
+   "added": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Interpreting Rates",
+     "role": "practises",
+     "activity": "Cooking Kinche",
+     "page": 86,
+     "quote": "students explore two unit rates associated with the ratio, think about their meanings",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 6,
+     "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+     "role": "assessed",
+     "activity": "Cheetah Speed",
+     "page": 110,
+     "quote": "Complete the table to represent a cheetah running at a constant speed",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Keeps the evidence out of the price aisle, which is the whole reason the placement moved to Unit 3: Cooking Kinche works both per-1 values of a non-price ratio (cups of wheat per cup of water and back), and Lesson 6’s Cool-down is where a per-1 value in a non-price context — meters per second — is assessed."
+  },
+  "g6-2024-036": {
+   "added": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Practice Solving Equations",
+     "role": "practises",
+     "activity": "Row Game: Solving Equations Practice",
+     "page": 61,
+     "quote": "The purpose of this activity is for students to practice solving equations",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 5,
+     "lessonTitle": "Represent Situations with Equations",
+     "role": "introduces",
+     "activity": "Storytime",
+     "page": 69,
+     "quote": "students select an equation with a variable that can represent a situation",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Splits the item’s two demands across the lessons that own them: Storytime is where choosing the equation that matches a situation is introduced, and the Row Game is the losing reading’s lesson, which is where px = q is solved often enough to produce non-whole answers such as 6x = 45 — the step that turns $62.50 ÷ $25.00 into 2½ hours."
+  },
+  "g6-2024-037": {
+   "added": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "students develop strategies for finding the distance between two points in the coordinate plane",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Four Quadrants of “a-MAZE-ing”",
+     "page": 185,
+     "quote": "find horizontal and vertical distances between coordinates in a puzzle",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Shows the span either side of the Cool-down already cited: Lesson 14’s main activity is where horizontal and vertical distance between two plotted points is built, and Lesson 15 keeps practising exactly that — without the perimeter and the plot-it-yourself steps that made the losing reading a poorer fit."
+  },
+  "g6-2024-042": {
+   "added": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "introduces",
+     "activity": "Painting the Set",
+     "page": 213,
+     "quote": "the terms “dependent variable” and “independent variable” are introduced to describe the two variables",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 17,
+     "lessonTitle": "Two Related Quantities, Part 2",
+     "role": "assessed",
+     "activity": "Interpret the Point",
+     "page": 230,
+     "quote": "Which variable is independent variable?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Cites the losing lesson on its own terms — Lesson 16 really is where the two words are coined — and then adds the one Cool-down in the unit that asks the item’s question of a given equation: name the independent variable and say what the coefficient means, for a relationship of exactly the rate-times-a-variable form of c = 2.75t."
+  },
+  "g6-2025-035": {
+   "added": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Comparing Speeds and Prices",
+     "role": "assessed",
+     "activity": "Sparkling Water",
+     "page": 81,
+     "quote": "Bottles of sparkling water usually cost $1.69 each. This week, 4 bottles cost $5.",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 5,
+     "lessonTitle": "Interpreting Rates",
+     "role": "introduces",
+     "activity": "Laundry Detergent and Raffle Tickets",
+     "page": 89,
+     "quote": "students are introduced to the term unit rate as a general name",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The losing lesson supplies the vocabulary the item’s answer choices use — Lesson 5 is where “unit rate” is named — and Lesson 4’s Cool-down is the assessed two-price comparison. Worth knowing: both that Cool-down and the activity already cited ask which price is lower, while this item asks which is greater."
+  },
+  "g6-2025-041": {
+   "added": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "assessed",
+     "activity": "Kitchen Cleaner",
+     "page": 218,
+     "quote": "Select all equations that can represent the relationship between",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 17,
+     "lessonTitle": "Two Related Quantities, Part 2",
+     "role": "practises",
+     "activity": "The Robot Race",
+     "page": 225,
+     "quote": "consider the graphs and equations that describe the distance–time relationship",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the assessed end of the placement lesson — a table of two quantities and a list of candidate equations to select from — and the following lesson, where tables of a constant-rate relationship are worked into equations and graphs. Neither closes the gap the settlement named: the only task that literally asks for an equation written from a table is the Cool-down of the optional Lesson 18."
+  },
+  "g6-2026-006": {
+   "added": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "practises",
+     "activity": "Building Expressions",
+     "page": 97,
+     "quote": "Write expressions to show Clare’s age when her cousin is at different ages",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "assessed",
+     "activity": "Growth",
+     "page": 100,
+     "quote": "Write an expression that represents the amount of water needed for n trees",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The established gap stands — no grade 6 activity asks for a perimeter expression containing a variable, and none collects like terms across unlike lengths. These show where the generic skill the item leans on does live: Lesson 7 is the unit’s “write an expression with a variable for a quantity” lesson, its main activity producing the item’s variable-plus-constant shape (x + 5) and its Cool-down assessing it."
+  },
+  "g6-2026-014": {
+   "added": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "introduces",
+     "activity": "What’s the Relationship?",
+     "page": 211,
+     "quote": "they can write equations with two variables to represent the relationship between the quantities",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 19,
+     "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+     "role": "practises",
+     "activity": "Getting to Know an Equation",
+     "page": 250,
+     "quote": "focuses on just one of those equations to learn about the real-world situation",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "The Warm-up is the one place in Section D where the relationship between two quantities is additive rather than multiplicative, which is where the item’s +5 would have to come from; the losing lesson’s activity is where both shapes are met side by side (G = J + 13 and E = 6s). Neither combines them, so the settlement’s note holds: no grade 6 activity writes a two-variable equation with a rate and a fixed amount together."
+  },
+  "g6-2026-021": {
+   "added": [
+    {
+     "lesson": 8,
+     "lessonTitle": "How Much for One?",
+     "role": "practises",
+     "activity": "More Shopping",
+     "page": 126,
+     "quote": "students practice finding unit prices, using different reasoning strategies, and articulating their reasoning",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 12,
+     "lessonTitle": "Navigating a Table of Equivalent Ratios",
+     "role": "assessed",
+     "activity": "Price of Bagels",
+     "page": 186,
+     "quote": "At this rate, how much would 6 bagels cost?",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Widens beyond the one activity that introduces the strategy: Lesson 8 already has the item’s exact shape — n items for $X, find the per-1 value, then scale to a quantity that is not a multiple (“Four bags of chips cost $6 … how much will 7 bags cost?”) — and the Lesson 12 Cool-down is where scaling through 1 is assessed."
+  },
+  "g6-2026-031": {
+   "added": [
+    {
+     "lesson": 10,
+     "lessonTitle": "What Are Percentages?",
+     "role": "assessed",
+     "activity": "Kiran & Mai’s Coins",
+     "page": 174,
+     "quote": "Kiran has 80 cents. What percent of a dollar does he have?",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 13,
+     "lessonTitle": "Benchmark Percentages",
+     "role": "practises",
+     "activity": "Shopping with Coupons",
+     "page": 214,
+     "quote": "For what percentage off is this coupon? Show your reasoning.",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Traces the item’s question form across the section: Lesson 10 assesses “B is what percentage of C” when the whole is 100, Lesson 13 practises it when the whole is not (saving $6 on a $24 item), and the Lesson 14 Warm-up already cited matches it to benchmark answers. None of them makes the student build the whole by summing a table first, which is the step this item adds."
+  },
+  "g6-2026-034": {
+   "added": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Representing Ratios with Tables",
+     "role": "introduces",
+     "activity": "A Huge Amount of Sparkling Orange Juice",
+     "page": 165,
+     "quote": "to introduce a table as a way to represent equivalent ratios",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 11,
+     "lessonTitle": "Representing Ratios with Tables",
+     "role": "assessed",
+     "activity": "Batches of Cookies in a Table",
+     "page": 171,
+     "quote": "Write a sentence that describes a ratio shown in the table",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Adds the lesson that creates the representation the item asks students to judge: Lesson 11 is where a table is introduced as a way to hold equivalent ratios, and its Cool-down is where students must say what a row of that table means — the reading skill the item’s wrong tables punish. The losing reading sat in Unit 3 and so could not be cited here."
+  },
+  "g6-2026-044": {
+   "added": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Comparing Speeds and Prices",
+     "role": "introduces",
+     "activity": "The Best Deal on Beans",
+     "page": 77,
+     "quote": "students compare rates per 1 in a shopping context as they look for",
+     "optionalEvidence": false
+    },
+    {
+     "lesson": 7,
+     "lessonTitle": "More Rate Comparisons",
+     "role": "practises",
+     "activity": "Card Sort: Is it a Deal?",
+     "page": 116,
+     "quote": "Find and compare the unit rates for both the original pack and the new pack",
+     "optionalEvidence": false
+    }
+   ],
+   "note": "Cites the losing lesson, which genuinely introduces comparing prices per 1 while shopping, and adds the activity that immediately precedes the Cool-down already cited — a card sort whose cards are pairs of offers in the item’s own form (“10 for $3.50” against “6 for $2.40”) to be judged by unit rate."
+  }
+ }
+}
