@@ -1,0 +1,795 @@
+{
+ "scope": "unit4_8_6_g7",
+ "items": {
+  "g8-2023-015": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 11,
+   "stem": "Which expression has a value of <span class=\"math\"><span class=\"frac\"><span>1</span><span>16</span></span></span> ?",
+   "choices": [
+    "<span class=\"math\">(2<sup>−4</sup>)<sup>−1</sup></span>",
+    "<span class=\"math\">(2<sup>4</sup>)<sup>−1</sup></span>",
+    "<span class=\"math\">(2<sup>8</sup>)<sup>−2</sup></span>",
+    "<span class=\"math\">(2<sup>−8</sup>)<sup>−2</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 5,
+    "lessonTitle": "Negative Exponents With Powers of 10",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "Negative Exponents With Powers of 10",
+      "role": "introduces",
+      "activity": "Negative Exponent Table",
+      "page": 61,
+      "quote": "Complete the table to explore what negative exponents mean."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "practises",
+      "activity": "What Happens With Zero and Negative Exponents",
+      "page": 75,
+      "quote": "As you move toward the left, each number is being multiplied by"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "assessed",
+      "activity": "Spot the Mistake",
+      "page": 80,
+      "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+     }
+    ],
+    "why": "Which expression has the value one sixteenth, the choices all powers of 2 with negative exponents inside and out. Lesson 5 is where a negative exponent is given meaning by extending a table leftwards."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "activity": "Exponent Rules With Bases Other than 10",
+    "page": 77,
+    "quote": "practice using exponent rules to analyze expressions and identify equivalent expressions",
+    "confidence": "medium",
+    "why": "Item asks which of (2^-4)^-1, (2^4)^-1, (2^8)^-2, (2^-8)^-2 has the value 1/16 - a power raised to a negative power, base 2, then read as a fraction. This activity is where students screen lists of expressions with bases 5, 3, x and 8 for equivalence using the exponent rules; the sister Activity 1 in the same lesson is what establishes 2^-n = 1/2^n."
+   }
+  },
+  "g8-2023-022": {
+   "standard": "NY-7.G.2",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 13,
+   "stem": "Trent draws a triangle with one interior angle measuring <span class=\"math\">34<sup>○</sup></span>. Which angle measures could be the measures of the other two interior angles in Trent’s triangle?",
+   "choices": [
+    "<span class=\"math\">46<sup>○</sup></span> and <span class=\"math\">90<sup>○</sup></span>",
+    "<span class=\"math\">53<sup>○</sup></span> and <span class=\"math\">127<sup>○</sup></span>",
+    "<span class=\"math\">66<sup>○</sup></span> and <span class=\"math\">80<sup>○</sup></span>",
+    "<span class=\"math\">68<sup>○</sup></span> and <span class=\"math\">68<sup>○</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Angles, Triangles, and Prisms",
+    "lesson": 8,
+    "lessonTitle": "Triangles With 3 Common Measures",
+    "evidence": [
+     {
+      "lesson": 1,
+      "lessonTitle": "Relationships of Angles",
+      "role": "introduces",
+      "activity": "More Pattern Block Angles",
+      "page": 30,
+      "quote": "Find as many different combinations of pattern blocks as you can"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Triangles With 3 Common Measures",
+      "role": "practises",
+      "activity": "2 Angles and 1 Side",
+      "page": 121,
+      "quote": "How many different triangles are there? Explain or show your reasoning"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Triangles With 3 Common Measures",
+      "role": "assessed",
+      "activity": "Comparing Andre's and Noah’s Triangles",
+      "page": 124,
+      "quote": "each drew a triangle with side lengths of 5 cm and 3 cm"
+     }
+    ],
+    "why": "One interior angle of 34 degrees, asking which pair could be the other two -- so the student needs the angle sum to be 180. The key 66 and 80 sums to 146; every distractor fails the sum. NYSED tags it NY-7.G.2 with NY-8.G.5 secondary, and the angle sum itself is grade 8 Unit 1's subject, but the task of deciding which measures can coexist in one triangle is Unit 8 Lesson 8's."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Angles, Triangles, and Prisms",
+    "lesson": 10,
+    "lessonTitle": "Drawing Triangles (Part 2)",
+    "activity": "Three Angles",
+    "page": 143,
+    "quote": "Draw as many different triangles as you can with each of these sets of measurements",
+    "confidence": "medium",
+    "why": "The item gives one angle of 34 degrees and asks which pair could be the other two, which only the 180 degree sum decides. This activity is the grade 7 home for that question: students attempt three given angles and find that 50/60/70 works while 50/60/100 cannot be drawn. A teacher should know the guide states outright that in grade 7 students are not expected to learn the 180 degree sum; the rule itself is taught in grade 8 Unit 1 Lesson 15, Adding the Angles in a Triangle, whose Cool-down asks whether three right angles can make a triangle."
+   }
+  },
+  "g8-2023-043": {
+   "standard": "NY-8.EE.7b",
+   "pValue": 0.46,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 29,
+   "stem": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 5,
+    "lessonTitle": "Solving Any Linear Equation",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "More Balanced Moves",
+      "role": "introduces",
+      "activity": "Step by Step by Step by Step",
+      "page": 56,
+      "quote": "Here is an equation and the steps"
+     },
+     {
+      "lesson": 5,
+      "lessonTitle": "Solving Any Linear Equation",
+      "role": "practises",
+      "activity": "Trading Moves",
+      "page": 67,
+      "quote": "Select 2 to solve with your partner by taking turns describing a move"
+     },
+     {
+      "lesson": 5,
+      "lessonTitle": "Solving Any Linear Equation",
+      "role": "assessed",
+      "activity": "Check It",
+      "page": 72,
+      "quote": "Noah tries to solve the equation"
+     }
+    ],
+    "why": "24x + 33 = 3(5x + 21) - 9: distribute on the right, then collect. Lesson 5 is the lesson for solving ANY linear equation, and its first activity trades moves back and forth across an equals sign."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 4,
+    "lessonTitle": "More Balanced Moves",
+    "activity": "Make Your Own Steps",
+    "page": 59,
+    "quote": "solve equations individually and then compare differing, though accurate, solution paths",
+    "confidence": "high",
+    "why": "Item asks students to solve 24x + 33 = 3(5x + 21) - 9 and show their work. This activity's instruction is 'Solve these equations for x' over multi-step equations with a coefficient distributed over parentheses; Activity 1 of the same lesson is built around 14x - 2x + 3 = 3(5x + 9), which is the item's equation in all but the numbers."
+   }
+  },
+  "g8-2023-047": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.32,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 33,
+   "stem": "A student claims the expressions <span class=\"math\"><span class=\"frac\"><span>5<sup>7</sup></span><span>5<sup>3</sup></span></span></span> and <span class=\"math\">5<sup>6</sup> × 5<sup>−2</sup></span> are equivalent. Is the student correct? expression in simplest form in your answer.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 7,
+    "lessonTitle": "Practice With Rational Bases",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "introduces",
+      "activity": "Exponent Rules With Bases Other than 10",
+      "page": 77,
+      "quote": "each chose an expression to start with"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "role": "practises",
+      "activity": "Exponent Rule Practice",
+      "page": 85,
+      "quote": "For each expression, write at least 3 different equivalent expressions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "role": "assessed",
+      "activity": "Working with Exponents",
+      "page": 88,
+      "quote": "Rewrite each expression using a single, positive exponent"
+     }
+    ],
+    "why": "Are a quotient of powers of 5 and a product with a negative exponent equivalent? Both simplify to 5 to the fourth. It asks for the reasoning, not just the verdict, which is Lesson 7's cool-down."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "activity": "Exponent Rules With Bases Other than 10",
+    "page": 77,
+    "quote": "decide which expressions are not equivalent to the original. Be prepared to explain",
+    "confidence": "high",
+    "why": "Item asks whether 5^7/5^3 and 5^6 x 5^-2 are equivalent, with an explanation citing properties of exponents and the simplest-form value. That is this activity's task verbatim: Lin's list starts from a power of 5 and students decide which entries are not equivalent to it and explain why."
+   }
+  },
+  "g8-2024-046": {
+   "standard": "NY-8.EE.7b",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 33,
+   "stem": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 6,
+    "lessonTitle": "Strategic Solving",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "More Balanced Moves",
+      "role": "introduces",
+      "activity": "Make Your Own Steps",
+      "page": 59,
+      "quote": "Solve these equations for x."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "practises",
+      "activity": "Which Would You Rather Solve?",
+      "page": 79,
+      "quote": "Here are a lot of equations:"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "assessed",
+      "activity": "Think Before You Step",
+      "page": 83,
+      "quote": "Without solving, identify whether this equation has a solution"
+     }
+    ],
+    "why": "(1/4)(3x - 8) + 4 = 2(x - 4). A fractional coefficient over a bracket, which is where the choice of first move starts to matter -- distribute the quarter, or multiply through by 4 first. That choice is Lesson 6's entire subject. At p = 0.34 it is the hardest of the eight solve-it items."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 5,
+    "lessonTitle": "Solving Any Linear Equation",
+    "activity": "Check It",
+    "page": 72,
+    "quote": "Check Noah’s work. If it is not correct, describe what is wrong",
+    "confidence": "high",
+    "why": "Item asks for the x that makes 1/4(3x - 8) + 4 = 2(x - 4) true, with work shown. This Cool-down is Noah's attempt at 1/2(7x - 6) = 6x - 10 - the same fraction-times-parentheses on one side, linear expression on the other - and it is where the lesson tests that skill."
+   }
+  },
+  "g8-2025-033": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.68,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 23,
+   "stem": "What is the value of the expression <span class=\"math\">2<sup>5</sup> · 10<sup>0</sup> · 3<sup>−2</sup></span> ?",
+   "choices": [
+    "<span class=\"math\">−288</span>",
+    "<span class=\"math\">−90</span>",
+    "<span class=\"math\"><span class=\"frac\"><span>0</span><span>9</span></span></span>",
+    "<span class=\"math\"><span class=\"frac\"><span>32</span><span>9</span></span></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 5,
+    "lessonTitle": "Negative Exponents With Powers of 10",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "Negative Exponents With Powers of 10",
+      "role": "introduces",
+      "activity": "Negative Exponent Table",
+      "page": 61,
+      "quote": "Complete the table to explore what negative exponents mean."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "practises",
+      "activity": "What Happens With Zero and Negative Exponents",
+      "page": 75,
+      "quote": "As you move toward the left, each number is being multiplied by"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "assessed",
+      "activity": "Spot the Mistake",
+      "page": 80,
+      "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+     }
+    ],
+    "why": "The value of 25 times 100 times 3 to the negative 2. The negative exponent makes a denominator of 9 rather than a negative number, and two distractors are negative -- which is the misconception Lesson 5's table is built to prevent."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "activity": "What Happens With Zero and Negative Exponents?",
+    "page": 75,
+    "quote": "From the work you have done with negative exponents, how would you write",
+    "confidence": "high",
+    "why": "Item asks for the value of 2^5 x 10^0 x 3^-2, which needs the zero exponent and a negative exponent written as a fraction, on bases that are not 10. This activity does both: it asks the value of 2^0 and then asks students to write 5^-n and 3^-n as fractions."
+   }
+  },
+  "g8-2025-038": {
+   "standard": "NY-8.SP.1",
+   "pValue": 0.67,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 26,
+   "stem": "A scatter plot is shown below. Which statement best describes the association between <span class=\"math\">x</span> and  <span class=\"math\">y</span> ?",
+   "choices": [
+    "There is a positive, linear association.",
+    "There is a negative, linear association.",
+    "There is a positive, nonlinear association.",
+    "There is a negative, nonlinear association."
+   ],
+   "figures": [
+    "The points climb steadily from lower left to upper right in a fairly tight band -- a strong positive association."
+   ],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Associations in Data",
+    "lesson": 6,
+    "lessonTitle": "The Slope of a Fitted Line",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "role": "introduces",
+      "activity": "Describing Linear Associations",
+      "page": 95,
+      "quote": "decide if there is an association between the 2 variables"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "role": "practises",
+      "activity": "Positive or Negative?",
+      "page": 101,
+      "quote": "decide whether it makes sense to fit a linear model to the data"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Observing More Patterns in Scatter Plots",
+      "role": "assessed",
+      "activity": "Make Your Own Scatter Plot",
+      "page": 117,
+      "quote": "Draw a scatter plot that shows a positive linear association and clustering."
+     }
+    ],
+    "why": "One scatter plot and four statements pairing direction with linearity. Unlike the other two NY-8.SP.1 items the student is not choosing among plots but DESCRIBING one, which is what Lesson 6's first activity asks for each plot in turn."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Associations in Data",
+    "lesson": 7,
+    "lessonTitle": "Observing More Patterns in Scatter Plots",
+    "activity": "Scatter Plot City",
+    "page": 112,
+    "quote": "Sort the cards again into categories based on their associations: positive association",
+    "confidence": "high",
+    "why": "The item shows one scatter plot and offers the four combinations of positive/negative and linear/non-linear. Scatter Plot City sorts the same deck twice, once by direction of association and once by linear against non-linear, which is precisely the two-way choice the item forces. Lesson 6's Positive or Negative? is the alternative."
+   }
+  },
+  "g8-2025-040": {
+   "standard": "NY-7.G.4",
+   "pValue": 0.29,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 28,
+   "stem": "A circular dart board has a circumference of <span class=\"math\">17.75π</span> inches. What is the radius, in inches, of the dart board?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Measuring Circles",
+    "lesson": 4,
+    "lessonTitle": "Applying Circumference",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Applying Circumference",
+      "role": "practises",
+      "activity": "Using π",
+      "page": 72,
+      "quote": "One measurement for each object is listed in the table"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Relating Area to Circumference",
+      "role": "assessed",
+      "activity": "A Circumference of 44",
+      "page": 141,
+      "quote": "The circle's radius is approximately"
+     }
+    ],
+    "why": "The item gives a circumference and asks for the radius. Lesson 4 Activity 1 has students complete a table of radius, diameter and circumference in whichever direction the given measurement requires. The cool-down of Lesson 8 asks for the radius from a given circumference, which is the item's task exactly."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Measuring Circles",
+    "lesson": 3,
+    "lessonTitle": "Exploring Circumference",
+    "activity": "Calculating Circumference and Diameter",
+    "page": 63,
+    "quote": "students apply the proportional relationship between circumference and diameter to calculate unknown measurements",
+    "confidence": "high",
+    "why": "The item gives a circumference of 17.75 pi inches and asks for the radius, which is the circumference relation run backwards and no area at all. This activity is where students complete a table of circles from one given measurement using that relation. Lesson 8's Cool-down, A Circumference of 44, asks for diameter and radius from a circumference and is the close second."
+   }
+  },
+  "g8-2025-045": {
+   "standard": "NY-8.EE.7b",
+   "pValue": 0.44,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 33,
+   "stem": "An equation is shown below. What value of <span class=\"math\">x</span> will make the equation true?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 6,
+    "lessonTitle": "Strategic Solving",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "More Balanced Moves",
+      "role": "introduces",
+      "activity": "Make Your Own Steps",
+      "page": 59,
+      "quote": "Solve these equations for x."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "practises",
+      "activity": "Which Would You Rather Solve?",
+      "page": 79,
+      "quote": "Here are a lot of equations:"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "assessed",
+      "activity": "Think Before You Step",
+      "page": 83,
+      "quote": "Without solving, identify whether this equation has a solution"
+     }
+    ],
+    "why": "(2/3)(3x + 9) = x - 4. The two thirds cancels the three cleanly if distributed, which is the strategic reading Lesson 6 asks for in Which Would You Rather Solve?."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 5,
+    "lessonTitle": "Solving Any Linear Equation",
+    "activity": "Check It",
+    "page": 72,
+    "quote": "Check Noah’s work. If it is not correct, describe what is wrong",
+    "confidence": "high",
+    "why": "Item asks for the x making 2/3(3x + 9) = x - 4 true, with work shown. This Cool-down solves 1/2(7x - 6) = 6x - 10 - a fraction distributed over a binomial set equal to a linear expression - which is the identical solving task."
+   }
+  },
+  "g8-2026-003": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.63,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 6,
+   "stem": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>12<sup>20</sup></span><span>12<sup>4</sup></span></span></span> ?",
+   "choices": [
+    "<span class=\"math\">1<sup>5</sup></span>",
+    "<span class=\"math\">1<sup>16</sup></span>",
+    "<span class=\"math\">12<sup>5</sup></span>",
+    "<span class=\"math\">12<sup>16</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 7,
+    "lessonTitle": "Practice With Rational Bases",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "introduces",
+      "activity": "Exponent Rules With Bases Other than 10",
+      "page": 77,
+      "quote": "each chose an expression to start with"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "role": "practises",
+      "activity": "Exponent Rule Practice",
+      "page": 85,
+      "quote": "For each expression, write at least 3 different equivalent expressions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Practice With Rational Bases",
+      "role": "assessed",
+      "activity": "Working with Exponents",
+      "page": 88,
+      "quote": "Rewrite each expression using a single, positive exponent"
+     }
+    ],
+    "why": "A quotient of powers of 12. Subtracting exponents, the single rule, and the distractors divide the exponents or the bases instead."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "activity": "Spot the Mistake",
+    "page": 80,
+    "quote": "Andre was trying to write 7/7 with a single exponent and wrote",
+    "confidence": "high",
+    "why": "Item asks which expression equals 12^20/12^4, with distractors 1^5 and 1^16 that come from dividing the bases. This Cool-down is Andre's mis-application of the quotient rule to a quotient of powers of 7, which is where the lesson tests dividing powers with a base other than 10."
+   }
+  },
+  "g8-2026-012": {
+   "standard": "NY-8.EE.7a",
+   "pValue": 0.48,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 12,
+   "stem": "Which equation has an infinite number of solutions?",
+   "choices": [
+    "<span class=\"math\">2x − 1 = 2 (x − 1)</span>",
+    "<span class=\"math\">2x − 2 = 2 (x − 1)</span>",
+    "<span class=\"math\">2x − 3 = 3 (x − 1)</span>",
+    "<span class=\"math\">2x + 3 = 3 (x − 1)</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 7,
+    "lessonTitle": "All, Some, or No Solutions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "All, Some, or No Solutions",
+      "role": "introduces",
+      "activity": "Thinking About Solutions",
+      "page": 91,
+      "quote": "2t + 6 = 2t + 3"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "All, Some, or No Solutions",
+      "role": "practises",
+      "activity": "What’s the Equation?",
+      "page": 93,
+      "quote": "Complete each equation so that it is true for all values of x."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "All, Some, or No Solutions",
+      "role": "assessed",
+      "activity": "Choose Your Own Solution",
+      "page": 95,
+      "quote": "What value could you write in after"
+     }
+    ],
+    "why": "Four equations, asking which has infinitely many solutions. Lesson 7's first activity is a list of equations to sort by exactly this, and it contains both the always-true and the never-true forms the distractors use."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 8,
+    "lessonTitle": "How Many Solutions?",
+    "activity": "Make Use of Structure",
+    "page": 101,
+    "quote": "determine whether it has no solutions, exactly one solution, or is true for all",
+    "confidence": "high",
+    "why": "Item presents four equations of the form 2x + c = k(x - 1) and asks which has infinitely many solutions; the distractors include one-solution and no-solution cases, so all three categories must be told apart. This activity asks precisely for that three-way classification over grouped triples of near-identical equations."
+   }
+  },
+  "g8-2026-015": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.52,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 14,
+   "stem": "Which expression is equivalent to <span class=\"math\">(5<sup>2</sup>) (7<sup>−2</sup>) (5<sup>4</sup>)</span> ?",
+   "choices": [
+    "<span class=\"math\"><span class=\"frac\"><span>5<sup>6</sup></span><span>7<sup>2</sup></span></span></span>",
+    "<span class=\"math\"><span class=\"frac\"><span>25<sup>6</sup></span><span>7<sup>2</sup></span></span></span>",
+    "<span class=\"math\">17<sup>4</sup></span>",
+    "<span class=\"math\">175<sup>4</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "Negative Exponents With Powers of 10",
+      "role": "introduces",
+      "activity": "Negative Exponent Table",
+      "page": 61,
+      "quote": "Complete the table to explore what negative exponents mean."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "practises",
+      "activity": "What Happens With Zero and Negative Exponents",
+      "page": 75,
+      "quote": "As you move toward the left, each number is being multiplied by"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "What About Other Bases?",
+      "role": "assessed",
+      "activity": "Spot the Mistake",
+      "page": 80,
+      "quote": "Diego was trying to write 2 ⋅ 2 with a single exponent"
+     }
+    ],
+    "why": "A product of powers of 5 and a power of 7 with a negative exponent, asking the equivalent form. The negative exponent has to become a denominator while the base-5 powers combine, so it needs Lesson 6's work on bases other than ten as well as Lesson 5's meaning."
+   },
+   "secondPass": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 7,
+    "lessonTitle": "Practice With Rational Bases",
+    "activity": "Inconsistent Bases",
+    "page": 86,
+    "quote": "exponents can be added (or subtracted) only when the powers being multiplied",
+    "confidence": "high",
+    "why": "Item asks which expression equals (5^2)(7^-2)(5^4); the distractors 25^6, 17^4 and 175^4 all come from combining the bases 5 and 7. This activity's whole point is that exponents combine only when the bases match, with problems such as 3^a x 5^b = 15^c marked false."
+   }
+  },
+  "g8-2026-032": {
+   "standard": "NY-8.EE.7b",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 25,
+   "stem": "An equation is shown below. What value of <span class=\"math\">x</span> makes the equation true?",
+   "choices": [
+    "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>7</span></span></span>",
+    "<span class=\"math\">5</span>",
+    "<span class=\"math\">6 <span class=\"frac\"><span>1</span><span>3</span></span></span>",
+    "<span class=\"math\">7</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 6,
+    "lessonTitle": "Strategic Solving",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "More Balanced Moves",
+      "role": "introduces",
+      "activity": "Make Your Own Steps",
+      "page": 59,
+      "quote": "Solve these equations for x."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "practises",
+      "activity": "Which Would You Rather Solve?",
+      "page": 79,
+      "quote": "Here are a lot of equations:"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Strategic Solving",
+      "role": "assessed",
+      "activity": "Think Before You Step",
+      "page": 83,
+      "quote": "Without solving, identify whether this equation has a solution"
+     }
+    ],
+    "why": "(1/2)(14 + 4x) = 5(x - 2) + 2. A fractional coefficient on one side and a distribution on the other; the same strategic choice as the other two."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 5,
+    "lessonTitle": "Solving Any Linear Equation",
+    "activity": "Check It",
+    "page": 72,
+    "quote": "Check Noah’s work. If it is not correct, describe what is wrong",
+    "confidence": "high",
+    "why": "Item asks what value of x makes 1/2(14 + 4x) = 5(x - 2) + 2 true. This Cool-down works 1/2(7x - 6) = 6x - 10, the same halved-binomial-on-the-left equation, and asks students to verify each step - the same solving competence the item scores."
+   }
+  },
+  "g8-2026-046": {
+   "standard": "NY-8.SP.3",
+   "pValue": 0.41,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 38,
+   "stem": "A coffee shop manager tracks the daily high temperature and the number of cups of coffee sold daily in October to predict sales in November. The manager uses this data to model the relationship between the number of cups of coffee sold daily in October, <span class=\"math\">y</span>, and the daily temperature, <span class=\"math\">x</span>, in degrees Fahrenheit with the equation <span class=\"math\">y = −2.3x + 187</span>. Based on the model, how many cups of coffee can the manager predict to be sold in one day in November if the high temperature for that day is <span class=\"math\">60°F</span> ?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Associations in Data",
+    "lesson": 8,
+    "lessonTitle": "Analyzing Bivariate Data",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "The Slope of a Fitted Line",
+      "role": "introduces",
+      "activity": "Interpreting Slopes",
+      "page": 97,
+      "quote": "a linear model for some data is shown"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Analyzing Bivariate Data",
+      "role": "practises",
+      "activity": "Animal Brains",
+      "page": 122,
+      "quote": "Is there an association between the weight of an animal’s body"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Analyzing Bivariate Data",
+      "role": "assessed",
+      "activity": "Drawing a Line",
+      "page": 127,
+      "quote": "A new point will be added to the scat"
+     }
+    ],
+    "why": "y = -2.3x + 187 for coffee sales against temperature, asking students to PREDICT a value from the model rather than interpret a coefficient. Lesson 8 is where a fitted model is used on new data, which is the step past Lesson 6's interpretation."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Associations in Data",
+    "lesson": 4,
+    "lessonTitle": "Fitting a Line to Data",
+    "activity": "A 1 Foot Foot",
+    "page": 75,
+    "quote": "What width does the model predict for a foot with length 29 cm?",
+    "confidence": "medium",
+    "why": "The item substitutes 60 degrees into y = -2.3x + 187 to predict cups of coffee sold. Lesson 4 is where a model is first used to predict a value not in the data, and this Cool-down asks for exactly such a prediction, though from the graph of the model rather than by evaluating its equation."
+   }
+  }
+ }
+}

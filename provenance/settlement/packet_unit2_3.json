@@ -1,0 +1,774 @@
+{
+ "scope": "unit2_3",
+ "items": {
+  "g8-2023-003": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 8,
+   "stem": "Quadrilateral <span class=\"math\">ABCD</span> is graphed on a coordinate plane. Vertex <span class=\"math\">A</span> is located at the point <span class=\"math\">(−2,3)</span>. The quadrilateral is dilated by a scale factor of <span class=\"math\">2</span>, with the center of dilation at the origin, to form quadrilateral <span class=\"math\">A′B′C′D′</span>. Which ordered pair represents the location of vertex <span class=\"math\">A′</span> ?",
+   "choices": [
+    "<span class=\"math\">(−4,5)</span>",
+    "<span class=\"math\">(−4,6)</span>",
+    "<span class=\"math\">(0,5)</span>",
+    "<span class=\"math\">(6, −4)</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 4,
+    "lessonTitle": "Dilations on a Square Grid",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "introduces",
+      "activity": "Dilations on a Grid",
+      "page": 62,
+      "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "practises",
+      "activity": "Card Sort: Matching Dilations on a Coordinate Grid",
+      "page": 64,
+      "quote": "descriptions of dilations and graphs"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "assessed",
+      "activity": "A Dilated Image",
+      "page": 68,
+      "quote": "Draw the image of rectangle ABCD after a dilation using point P"
+     }
+    ],
+    "why": "Vertex A at (-2, 3), dilated by 2 about the origin, asking for A'. Lesson 4 is dilation on a coordinate grid. The distractors add 2 rather than multiplying, which is the error the lesson's card sort is built to separate."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 5,
+    "lessonTitle": "More Dilations",
+    "activity": "Information Gap: Dilations",
+    "page": 74,
+    "quote": "determine and request the information needed to perform a dilation",
+    "confidence": "high",
+    "why": "The item names a vertex by coordinates with no picture and asks for the image under a dilation of scale factor 2 about the origin. Lesson 5 is where dilations are performed from coordinates, centre and scale factor alone, and this activity makes students assemble exactly those three pieces before dilating. Lesson 4 is the alternative when a grid is shown."
+   }
+  },
+  "g8-2023-020": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.27,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 12,
+   "stem": "Which equation represents the graph of a line on a coordinate plane that passes through the <span class=\"math\">x</span> -intercept at <span class=\"math\">(9,0)</span> and the <span class=\"math\">y</span> -intercept at <span class=\"math\">(0, −5)</span> ?",
+   "choices": [
+    "<span class=\"math\">y = −<span class=\"frac\"><span>9</span><span>5</span></span>x − 5</span>",
+    "<span class=\"math\">y = <span class=\"frac\"><span>9</span><span>5</span></span>x − 5</span>",
+    "<span class=\"math\">y = −<span class=\"frac\"><span>5</span><span>9</span></span>x − 5</span>",
+    "<span class=\"math\">y = <span class=\"frac\"><span>5</span><span>9</span></span>x − 5</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 12,
+    "lessonTitle": "Equations of All Kinds of Lines",
+    "evidence": [
+     {
+      "lesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "role": "introduces",
+      "activity": "Toward a More General Slope Formula",
+      "page": 133,
+      "quote": "Describe a procedure for finding the"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "practises",
+      "activity": "All the Same",
+      "page": 153,
+      "quote": "Plot at least 10 points whose y-coordinate is -4 ."
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "assessed",
+      "activity": "Five Lines",
+      "page": 160,
+      "quote": "Write equations for lines a, b, c, d, and e."
+     }
+    ],
+    "why": "Two INTERCEPTS given as coordinates -- (9,0) and (0,-5) -- and the equation wanted. Nothing is graphed, so the student must find the slope from the two points and then recognise that one of them already is the y-intercept. At p = 0.27 it is the hardest item in the sweep, and every distractor is 9/5 or a sign error on 5/9."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Writing Relationships From Two Points",
+    "page": 173,
+    "quote": "Using what you know about similar triangles, find an equation for the line",
+    "confidence": "medium",
+    "why": "Item asks which equation represents the line through the x-intercept (9,0) and the y-intercept (0,-5); all four choices share the constant -5, so the work is the slope between two given points. This activity is the one place the course hands students two points on a line and asks them to produce an equation for it, then asks what the slope of that line is. Caveat: IM writes it from slope triangles rather than in y = mx + b form."
+   }
+  },
+  "g8-2023-033": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 21,
+   "stem": "The graph of a line is shown on the coordinate plane below. Which equation represents the graph of the line?",
+   "choices": [
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x + 1</span>",
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 2</span>",
+    "<span class=\"math\">y = 2x + 1</span>",
+    "<span class=\"math\">y = 2x − 2</span>"
+   ],
+   "figures": [
+    "The line rises from lower left to upper right, crossing the y-axis just above the origin."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 7,
+    "lessonTitle": "Representations of Linear Relationships",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "role": "introduces",
+      "activity": "Rising Water Levels",
+      "page": 93,
+      "quote": "Record the data in the table."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Translating to y = mx + b",
+      "role": "practises",
+      "activity": "Translating a Line",
+      "page": 106,
+      "quote": "4 graphs showing line a and its image, line h, after a translation"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "assessed",
+      "activity": "Five Lines",
+      "page": 160,
+      "quote": "Write equations for lines a, b, c, d, and e."
+     }
+    ],
+    "why": "A line on a plane, asking its equation. The distractors swap the slope with the intercept and vice versa, so the item is about reading both parameters off a graph -- Lesson 7's cool-down asks for the slope and the vertical intercept of a filling tank."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 15,
+    "lessonTitle": "Using Linear Relations to Solve Problems",
+    "activity": "Five Savings Accounts",
+    "page": 194,
+    "quote": "Write an equation for each line on the graph.",
+    "confidence": "medium",
+    "why": "Item shows one graphed line and asks which of four y = mx + b equations represents it. Step 3 of this activity puts several lines with different slopes and vertical intercepts on one grid and asks students to write an equation for each, which is the same read-the-slope-and-intercept-off-the-graph work."
+   }
+  },
+  "g8-2023-038": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.52,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 24,
+   "stem": "Quadrilateral <span class=\"math\">ABCD</span> is graphed on a coordinate plane, with point <span class=\"math\">C</span> plotted at <span class=\"math\">(−4,3)</span>. Quadrilateral <span class=\"math\">ABCD</span> is then reflected over the <span class=\"math\">y</span> -axis to create its image <span class=\"math\">A′B′C′D′</span>. After the reflection, what are the coordinates of point <span class=\"math\">C′</span> ?",
+   "choices": [
+    "<span class=\"math\">(4,3)</span>",
+    "<span class=\"math\">(4, −3)</span>",
+    "<span class=\"math\">(−4,3)</span>",
+    "<span class=\"math\">(−4, −3)</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "introduces",
+      "activity": "Dilations on a Grid",
+      "page": 62,
+      "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "practises",
+      "activity": "Dilations and Slope Triangles",
+      "page": 171,
+      "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "assessed",
+      "activity": "Is the Point on the Line?",
+      "page": 178,
+      "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+     }
+    ],
+    "why": "A reflection over the y-axis, asking the image of a point. Unit 2 teaches transformations on coordinates but its reflections belong to Unit 1; NY-8.G.3 is tabled here, and Lesson 12 is the lesson that works transformations against coordinates generally. Worth knowing: the distractors offer all four sign combinations, so a student who knows a reflection negates ONE coordinate still has to pick which."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Reflecting Points on the Coordinate Plane",
+    "page": 75,
+    "quote": "generalize to describe where a reflection over the y-axis takes any point",
+    "confidence": "high",
+    "why": "The item reflects point C at negative 4, 3 over the y-axis and asks for C prime. Unit 2 teaches dilation, not reflection, so this belongs to Unit 1 Coordinate Moves, whose first activity has students reflect listed points over an axis and then generalise the rule for a reflection over the y-axis."
+   }
+  },
+  "g8-2024-022": {
+   "standard": "NY-8.G.4",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 15,
+   "stem": "On a coordinate plane, triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90</span> degrees clockwise about the origin and then dilated with a scale factor of <span class=\"math\">2</span> centered at the origin to form triangle <span class=\"math\">A′B′C′</span>. Which statement describes the relationship between triangle <span class=\"math\">ABC</span> and triangle <span class=\"math\">A′B′C′</span> ?",
+   "choices": [
+    "They are similar and congruent.",
+    "They are similar but not congruent.",
+    "They are congruent but not similar.",
+    "They are neither congruent nor similar."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 6,
+    "lessonTitle": "Similarity",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "Similarity",
+      "role": "introduces",
+      "activity": "Similarity Transformations (Part 1)",
+      "page": 90,
+      "quote": "Find a sequence of translations, rotations, reflections"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Similar Polygons",
+      "role": "practises",
+      "activity": "Are They Similar?",
+      "page": 105,
+      "quote": "These polygons are similar because their side lengths"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Similar Polygons",
+      "role": "assessed",
+      "activity": "How Do You Know?",
+      "page": 112,
+      "quote": "Are these 2 figures similar? Explain how you know."
+     }
+    ],
+    "why": "A rotation followed by a dilation by 2, asking how the two triangles relate. The answer is similar but not congruent, which is what a dilation by anything other than 1 produces. Lesson 6 is where similarity is defined as a sequence including a dilation."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 7,
+    "lessonTitle": "Similar Polygons",
+    "activity": "Math Talk: Congruence and Similarity",
+    "page": 104,
+    "quote": "Two figures can be similar but be different sizes, like a square",
+    "confidence": "high",
+    "why": "The item applies a rotation and then a dilation of scale factor 2 and asks how the image relates to the original; the answer is similar but not congruent. This Math Talk is the one activity that rules on exactly that relationship between congruence and similarity."
+   }
+  },
+  "g8-2025-008": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 10,
+   "stem": "The graph of a line is shown below. What is the equation of the line?",
+   "choices": [
+    "<span class=\"math\">y = −2x + 3</span>",
+    "<span class=\"math\">y = −2x + 6</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 6</span>"
+   ],
+   "figures": [
+    "The line crosses the y-axis at 3 and the x-axis at 6, falling one unit for every two across."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 7,
+    "lessonTitle": "Representations of Linear Relationships",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "role": "introduces",
+      "activity": "Rising Water Levels",
+      "page": 93,
+      "quote": "Record the data in the table."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Translating to y = mx + b",
+      "role": "practises",
+      "activity": "Translating a Line",
+      "page": 106,
+      "quote": "4 graphs showing line a and its image, line h, after a translation"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "assessed",
+      "activity": "Five Lines",
+      "page": 160,
+      "quote": "Write equations for lines a, b, c, d, and e."
+     }
+    ],
+    "why": "The same read-the-equation-off-the-graph task, with a negative slope. Two distractors give -2 where the line falls by 1 for every 2 across."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 15,
+    "lessonTitle": "Using Linear Relations to Solve Problems",
+    "activity": "Five Savings Accounts",
+    "page": 194,
+    "quote": "Write an equation for each line on the graph.",
+    "confidence": "medium",
+    "why": "Item shows a line falling from y-intercept 3 to x-intercept 6 and asks for its equation. Step 3 of this activity asks students to write the equation of each of five graphed lines; the lesson narrative notes this is where lines with positive, negative and zero slopes appear on the same axes."
+   }
+  },
+  "g8-2025-028": {
+   "standard": "NY-8.G.4",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 15,
+   "stem": "A transformation maps <span class=\"math\">△ABC</span> to <span class=\"math\">△A′B′C′</span>. If <span class=\"math\">△A′B′C′</span> is similar but not congruent to <span class=\"math\">△ABC</span>, which transformation occurred?",
+   "choices": [
+    "a rotation about the origin",
+    "a reflection over the <span class=\"math\">y</span> -axis",
+    "a dilation with a scale factor not equal to 1",
+    "a translation of 1 unit in both the <span class=\"math\">x</span> and <span class=\"math\">y</span> directions"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 6,
+    "lessonTitle": "Similarity",
+    "evidence": [
+     {
+      "lesson": 6,
+      "lessonTitle": "Similarity",
+      "role": "introduces",
+      "activity": "Similarity Transformations (Part 1)",
+      "page": 90,
+      "quote": "Find a sequence of translations, rotations, reflections"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Similar Polygons",
+      "role": "practises",
+      "activity": "Are They Similar?",
+      "page": 105,
+      "quote": "These polygons are similar because their side lengths"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Similar Polygons",
+      "role": "assessed",
+      "activity": "How Do You Know?",
+      "page": 112,
+      "quote": "Are these 2 figures similar? Explain how you know."
+     }
+    ],
+    "why": "Which transformation makes a figure similar BUT NOT congruent -- the answer is a dilation with scale factor not 1, and the three distractors are the three rigid motions. This is the definition of similarity stated as a multiple-choice question, which is Lesson 6's subject reduced to one line."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 7,
+    "lessonTitle": "Similar Polygons",
+    "activity": "Math Talk: Congruence and Similarity",
+    "page": 104,
+    "quote": "The side lengths will not change when the scale factor is 1",
+    "confidence": "high",
+    "why": "The item asks which single transformation produces a similar but not congruent image, the key being a dilation with a scale factor not equal to 1. The Math Talk's third statement says in as many words that a dilation changes side lengths except when the scale factor is 1, which is what separates the dilation choice from the three rigid motions."
+   }
+  },
+  "g8-2025-035": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.43,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 24,
+   "stem": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and Hannah calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>4</span><span>6</span></span></span>. Their work is shown below. Which statement is true?",
+   "choices": [
+    "Only Brayden calculated the slope correctly.",
+    "Only Hannah calculated the slope correctly.",
+    "Both Brayden and Hannah calculated the slope correctly.",
+    "Neither Brayden nor Hannah calculated the slope correctly."
+   ],
+   "figures": [
+    "Brayden marks a rise of 3 against a run of 2. Hannah marks a rise of 4 against a run of 6 on the same line."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "evidence": [
+     {
+      "lesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "role": "introduces",
+      "activity": "Toward a More General Slope Formula",
+      "page": 133,
+      "quote": "Describe a procedure for finding the"
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Slopes Don’t Have to Be Positive",
+      "role": "practises",
+      "activity": "The Slopes of Graphs",
+      "page": 127,
+      "quote": "Match each graph with the situation that could describe the line."
+     },
+     {
+      "lesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "role": "assessed",
+      "activity": "Different Slopes",
+      "page": 137,
+      "quote": "Find the slope of the line that passes through each pair of points."
+     }
+    ],
+    "why": "Two students compute the slope of the SAME line as 2/3 and 4/6 and the item asks who is right -- both are. It tests that slope is independent of which two points you pick, which is what Lesson 10's first activity establishes by recording vertical and horizontal change for several graphs before generalising."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 10,
+    "lessonTitle": "Meet Slope",
+    "activity": "Similar Triangles on the Same Line",
+    "page": 146,
+    "quote": "What do you notice about the last column in the table?",
+    "confidence": "high",
+    "why": "Item shows two students drawing different slope triangles on the same line, getting 2/3 and 4/6, and asks whether both are right. This activity has students compute (vertical side) / (horizontal side) for three different right triangles whose longest sides lie on the same line, get 0.75 every time, and explain why - the exact fact the item tests."
+   }
+  },
+  "g8-2025-046": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 34,
+   "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be reflected over the <span class=\"math\">y</span> axis to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span>?",
+   "choices": [],
+   "figures": [
+    "A is at negative 3, 4, B at negative 5, negative 1, and C at 1, 2."
+   ],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "introduces",
+      "activity": "Dilations on a Grid",
+      "page": 62,
+      "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "practises",
+      "activity": "Dilations and Slope Triangles",
+      "page": 171,
+      "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "assessed",
+      "activity": "Is the Point on the Line?",
+      "page": 178,
+      "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+     }
+    ],
+    "why": "A reflection over the y-axis with the vertex read off a graph, asked as a constructed response. Same reading as g8-2023-038."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Reflecting Points on the Coordinate Plane",
+    "page": 75,
+    "quote": "when reflecting over the vertical or horizontal axis, one coordinate value must stay the same",
+    "confidence": "high",
+    "why": "The item reflects A at negative 3, 4 over the y-axis, asks for A prime, and asks the student to explain how they knew. The explanation the item wants is this activity's stated key connection: one coordinate keeps its value and the other changes sign."
+   }
+  },
+  "g8-2026-001": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.81,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 4,
+   "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be translated <span class=\"math\">4</span> units to the left and <span class=\"math\">2</span> units up to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span> ?",
+   "choices": [
+    "<span class=\"math\">(0, − 1)</span>",
+    "<span class=\"math\">(2,1)</span>",
+    "<span class=\"math\">(− 1,7)</span>",
+    "<span class=\"math\">(−6,5)</span>"
+   ],
+   "figures": [
+    "Vertex A is at negative 2, 3. Vertex B is at 2, negative 2. Vertex C is at 3, 5."
+   ],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "introduces",
+      "activity": "Dilations on a Grid",
+      "page": 62,
+      "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "practises",
+      "activity": "Dilations and Slope Triangles",
+      "page": 171,
+      "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Using Equations for Lines",
+      "role": "assessed",
+      "activity": "Is the Point on the Line?",
+      "page": 178,
+      "quote": "Is the point (20, 13) on this line? Explain your reasoning."
+     }
+    ],
+    "why": "A translation 4 left and 2 up, asking the image of a vertex read off the graph. At p = 0.81 the easiest of the six NY-8.G.3 items, and the contrast is the point: a translation adds where a dilation multiplies, and the adding is the one students find straightforward."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Translating Coordinates",
+    "page": 74,
+    "quote": "Select all of the translations that take Triangle T to Triangle U",
+    "confidence": "medium",
+    "why": "The item translates a graphed triangle 4 units left and 2 units up and asks for A prime. Coordinate Moves is the lesson whose goal is determining the coordinates of an image after a transformation, and this Warm-up works the same triangle-and-translation relationship, though it runs the other way, asking students to name the translation rather than apply a stated one."
+   }
+  },
+  "g8-2026-008": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.61,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 10,
+   "stem": "A line is graphed on the coordinate plane shown below. Which equation represents the line shown on the coordinate plane?",
+   "choices": [
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 3</span>",
+    "<span class=\"math\">y = 3x − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">y = −3x + 6</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>2</span></span>x + 3</span>"
+   ],
+   "figures": [
+    "The line rises from left to right, crossing the y-axis at negative 3 and passing through 2, negative 2 and 6, 0."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 7,
+    "lessonTitle": "Representations of Linear Relationships",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Representations of Linear Relationships",
+      "role": "introduces",
+      "activity": "Rising Water Levels",
+      "page": 93,
+      "quote": "Record the data in the table."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Translating to y = mx + b",
+      "role": "practises",
+      "activity": "Translating a Line",
+      "page": 106,
+      "quote": "4 graphs showing line a and its image, line h, after a translation"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "assessed",
+      "activity": "Five Lines",
+      "page": 160,
+      "quote": "Write equations for lines a, b, c, d, and e."
+     }
+    ],
+    "why": "A line crossing the y-axis at -3 and passing through (6, 0), asking its equation. The distractors swap the slope with the intercept and flip the sign, so the item is about reading both parameters off the graph -- Lesson 7's cool-down asks for the slope and the vertical intercept of a filling tank."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 15,
+    "lessonTitle": "Using Linear Relations to Solve Problems",
+    "activity": "Five Savings Accounts",
+    "page": 194,
+    "quote": "Write an equation for each line on the graph.",
+    "confidence": "medium",
+    "why": "Item shows a line with y-intercept -3 through (2,-2) and (6,0) and asks which equation represents it. Step 3 of this activity is the same task - read each graphed line's slope and vertical intercept and write its equation - for five lines at once."
+   }
+  },
+  "g8-2026-020": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 17,
+   "stem": "Which equation represents the line that passes through the points <span class=\"math\">(0,9)</span> and <span class=\"math\">(3,0)</span> ?",
+   "choices": [
+    "<span class=\"math\">y = −3x + 3</span>",
+    "<span class=\"math\">y = −3x + 9</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 12,
+    "lessonTitle": "Equations of All Kinds of Lines",
+    "evidence": [
+     {
+      "lesson": 10,
+      "lessonTitle": "Calculating Slope",
+      "role": "introduces",
+      "activity": "Toward a More General Slope Formula",
+      "page": 133,
+      "quote": "Describe a procedure for finding the"
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "practises",
+      "activity": "All the Same",
+      "page": 153,
+      "quote": "Plot at least 10 points whose y-coordinate is -4 ."
+     },
+     {
+      "lesson": 12,
+      "lessonTitle": "Equations of All Kinds of Lines",
+      "role": "assessed",
+      "activity": "Five Lines",
+      "page": 160,
+      "quote": "Write equations for lines a, b, c, d, and e."
+     }
+    ],
+    "why": "The line through (0,9) and (3,0), asked without a graph -- g8-2023-020's twin. Its distractors pair -3 and -1/3 against intercepts 3 and 9, so slope and intercept can each be got wrong independently. At p = 0.54 it is much easier than its twin, and the only structural difference is that both coordinates here are positive."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Writing Relationships From Two Points",
+    "page": 173,
+    "quote": "Using what you know about similar triangles, find an equation for the line",
+    "confidence": "medium",
+    "why": "Item asks which equation represents the line through (0,9) and (3,0); here both the slope (-3) and the intercept (9) discriminate among the choices. This activity gives students two points on a line and asks for an equation for it and for its slope. Caveat: the y = mx + b form the item uses is established in Unit 3 Lesson 8, not here."
+   }
+  },
+  "g8-2026-041": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.41,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 34,
+   "stem": "Triangle <span class=\"math\">ABC</span> is graphed on a coordinate plane. The coordinates of the vertices are listed below. <span class=\"math\">•</span> <span class=\"math\">A (6, −4)</span> <span class=\"math\">•</span> <span class=\"math\">B (−3,8)</span> <span class=\"math\">•</span> <span class=\"math\">C (−9,3)</span> Triangle <span class=\"math\">ABC</span> is dilated by a scale factor of <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> with the center of dilation at the origin, resulting in Triangle <span class=\"math\">A′B′C′</span>. What are the coordinates of <span class=\"math\">C′</span> after the dilation?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 4,
+    "lessonTitle": "Dilations on a Square Grid",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "introduces",
+      "activity": "Dilations on a Grid",
+      "page": 62,
+      "quote": "Draw the image of quadrilateral ABCD after a dilation with center P"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "practises",
+      "activity": "Card Sort: Matching Dilations on a Coordinate Grid",
+      "page": 64,
+      "quote": "descriptions of dilations and graphs"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Dilations on a Square Grid",
+      "role": "assessed",
+      "activity": "A Dilated Image",
+      "page": 68,
+      "quote": "Draw the image of rectangle ABCD after a dilation using point P"
+     }
+    ],
+    "why": "A dilation by one third about the origin, coordinates given. A fractional scale factor shrinks rather than grows, which Lesson 4's cool-down uses and which the circular-grid lesson introduces with a scale factor of a third."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 5,
+    "lessonTitle": "More Dilations",
+    "activity": "Information Gap: Dilations",
+    "page": 74,
+    "quote": "the center of dilation, the coordinates of the polygon that they are dilating",
+    "confidence": "high",
+    "why": "The item supplies three vertices as a bare coordinate list plus a scale factor of one third and a centre at the origin, and asks for C prime. Those are precisely the three pieces of information this activity forces students to request before dilating, and Lesson 5 lists them as the vital information a dilation needs."
+   }
+  }
+ }
+}

@@ -1,0 +1,764 @@
+{
+ "scope": "unit7_1",
+ "items": {
+  "g8-2023-035": {
+   "standard": "NY-8.NS.1",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 22,
+   "stem": "Which statement about the value of <span class=\"math\">√<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?",
+   "choices": [
+    "It is irrational because the decimal equivalent eventually repeats.",
+    "It is rational because the decimal equivalent eventually terminates.",
+    "It is rational because the value as a decimal is equivalent to a fraction.",
+    "It is irrational because the decimal equivalent is non-repeating and does not terminate."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "introduces",
+      "activity": "Looking for a Solution",
+      "page": 62,
+      "quote": "Are any of these numbers a solution to the equation"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "practises",
+      "activity": "Looking for √2",
+      "page": 63,
+      "quote": "A rational number is a number that can be expressed as a"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "assessed",
+      "activity": "Types of Solutions",
+      "page": 66,
+      "quote": "In your own words, say what a rational number is."
+     }
+    ],
+    "why": "The square root of 50, with four statements about why it is rational or irrational. The key cites a non-repeating, non-terminating decimal, which is Lesson 4's own definition."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 17,
+    "lessonTitle": "Infinite Decimal Expansions",
+    "activity": "Some Numbers Are Not Rational",
+    "page": 206,
+    "quote": "no fractional representation exists for these numbers",
+    "confidence": "medium",
+    "why": "The item asks students to say whether the square root of 50 is rational or irrational and why, with the correct reason stated in terms of a non-repeating, non-terminating decimal. This activity is where the curriculum makes that case, though it frames irrationality as 'no fraction exists' and reaches the endless decimal through successive approximation rather than stating the decimal test the item uses."
+   }
+  },
+  "g8-2024-004": {
+   "standard": "NY-8.G.1b",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 8,
+   "stem": "Triangle <span class=\"math\">ABC</span> is rotated <span class=\"math\">90<sup>○</sup></span> about the origin and then reflected over the <span class=\"math\">y</span> axis to form triangle <span class=\"math\">A′B′C′</span>. One of the angles in triangle <span class=\"math\">ABC</span> has a measure of <span class=\"math\">115<sup>○</sup></span>. One of the angles in triangle <span class=\"math\">A′B′C′</span> has a measure of <span class=\"math\">40<sup>○</sup></span>. Which is the measure of an angle in triangle <span class=\"math\">ABC</span>?",
+   "choices": [
+    "<span class=\"math\">25<sup>○</sup></span>",
+    "<span class=\"math\">75<sup>○</sup></span>",
+    "<span class=\"math\">155<sup>○</sup></span>",
+    "<span class=\"math\">180<sup>○</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 10,
+    "lessonTitle": "Composing Figures",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "role": "introduces",
+      "activity": "Sides and Angles",
+      "page": 102,
+      "quote": "write the length of each side, in grid units"
+     },
+     {
+      "lesson": 10,
+      "lessonTitle": "Composing Figures",
+      "role": "practises",
+      "activity": "Triangle Plus One",
+      "page": 137,
+      "quote": "Rotate triangle ABC 180° using center M to form a new triangle"
+     },
+     {
+      "lesson": 10,
+      "lessonTitle": "Composing Figures",
+      "role": "assessed",
+      "activity": "Identifying Side Lengths and Angle Measures",
+      "page": 144,
+      "quote": "Here is a diagram showing triangle ABC and some transformations of triangle ABC"
+     }
+    ],
+    "why": "A triangle rotated then reflected, with one angle known in each of the original and the image, asking for a third. Angle preservation gives the correspondence and the angle sum finishes it, so the item needs Lesson 10's composed transformations rather than a single move."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 16,
+    "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+    "activity": "Angle Plus Two",
+    "page": 241,
+    "quote": "the measure of angle EAB equal to the measure of any angle",
+    "confidence": "medium",
+    "why": "The item requires two moves: an angle of the image equals an angle of the original (rigid motion preserves angles), then the third angle is 180 minus the other two. This activity asks both - whether a rotated image's angle equals an angle of the original triangle, and what three such angles sum to."
+   }
+  },
+  "g8-2024-023": {
+   "standard": "NY-8.G.5",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 15,
+   "stem": "One of the angles in a triangle measures <span class=\"math\">x</span> degrees. Another angle in the triangle measures <span class=\"math\">y</span> degrees. Which expression represents the measurement, in degrees, o f the third angle of the triangle?",
+   "choices": [
+    "<span class=\"math\">180 − (x + y)</span>",
+    "<span class=\"math\">180 − x + y</span>",
+    "<span class=\"math\">x + y − 180</span>",
+    "<span class=\"math\">x + y + 180</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 15,
+    "lessonTitle": "Adding the Angles in a Triangle",
+    "evidence": [
+     {
+      "lesson": 15,
+      "lessonTitle": "Adding the Angles in a Triangle",
+      "role": "introduces",
+      "activity": "Tear It Up",
+      "page": 232,
+      "quote": "you will see a page with three sets of angles and a blank space"
+     },
+     {
+      "lesson": 16,
+      "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+      "role": "practises",
+      "activity": "Every Triangle in the World",
+      "page": 243,
+      "quote": "What is the sum of the measures of angle DBA , angle ABC"
+     },
+     {
+      "lesson": 16,
+      "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+      "role": "assessed",
+      "activity": "Angle Sum",
+      "page": 248,
+      "quote": "What is the sum of the angle measures of triangle ABC ?"
+     }
+    ],
+    "why": "Two angles given as x and y, asking an EXPRESSION for the third. The answer is the angle sum written algebraically, and the distractors are the sum rearranged wrongly. Lesson 15 is where the sum is established by tearing the corners off a triangle; Lesson 16 proves it. This is the one NY-8.G.5 item with no parallel lines in it."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 16,
+    "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+    "activity": "Every Triangle in the World",
+    "page": 243,
+    "quote": "why the sum of the three angles in a triangle is 180",
+    "confidence": "medium",
+    "why": "The item asks for an expression, 180 - (x + y), for the third angle of a triangle. This activity is the general argument that any triangle's three angles sum to 180 with no numbers given, which is the fact the expression encodes. The curriculum never writes that fact algebraically."
+   }
+  },
+  "g8-2024-037": {
+   "standard": "NY-8.NS.2",
+   "pValue": 0.65,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 25,
+   "stem": "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?",
+   "choices": [
+    "between <span class=\"math\">0.5</span> and <span class=\"math\">1.0</span>",
+    "between <span class=\"math\">1.5</span> and <span class=\"math\">2.0</span>",
+    "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.0</span>",
+    "between <span class=\"math\">1.0</span> and <span class=\"math\">1.5</span> but closer to <span class=\"math\">1.5</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 6,
+    "lessonTitle": "Reasoning About Square Roots",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "Square Roots on the Number Line",
+      "role": "introduces",
+      "activity": "Square Root of 3",
+      "page": 73,
+      "quote": "Find a point on the number line that"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Reasoning About Square Roots",
+      "role": "practises",
+      "activity": "Square Root Values",
+      "page": 82,
+      "quote": "The value of a square root of a number lies between two consecutive whole numbers."
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Reasoning About Square Roots",
+      "role": "assessed",
+      "activity": "Betweens",
+      "page": 85,
+      "quote": "Which of the following numbers are greater than 6 and less than 8?"
+     }
+    ],
+    "why": "Which interval the square root of 2 falls in, and which end it is nearer. Lesson 6 is specifically about bounding a square root between consecutive whole numbers and reasoning about where inside; Lesson 5 places it, Lesson 6 argues about it."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "activity": "Three Squares",
+    "page": 60,
+    "quote": "the value of 2 is a bit less than 1.5",
+    "confidence": "high",
+    "why": "The item asks which statement best describes the square root of 2: between 1.0 and 1.5 but closer to 1.5. That is the stated purpose of this activity - students find the areas and side lengths of three squares and see the value is a bit less than 1.5."
+   }
+  },
+  "g8-2024-042": {
+   "standard": "NY-8.G.5",
+   "pValue": 0.22,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 29,
+   "stem": "In the figure below, line p is parallel to line q and lines <span class=\"math\">AD</span> and <span class=\"math\">AF</span> are transversals. What is the measure, in degrees, of <span class=\"math\">∠BAC</span>? Answerdegrees",
+   "choices": [],
+   "figures": [
+    "The angle at D is 110 degrees and the angle at F is 105 degrees. B and C lie on line p either side of the apex."
+   ],
+   "firstPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 14,
+    "lessonTitle": "Alternate Interior Angles",
+    "evidence": [
+     {
+      "lesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "role": "introduces",
+      "activity": "Cutting Parallel Lines With a Transversal",
+      "page": 215,
+      "quote": "Lines AC and DF are parallel. They are cut by transversal HJ ."
+     },
+     {
+      "lesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "role": "practises",
+      "activity": "Alternate Interior Angles Are Congruent",
+      "page": 218,
+      "quote": "Lines l and k are parallel and t is a transversal."
+     },
+     {
+      "lesson": 14,
+      "lessonTitle": "Alternate Interior Angles",
+      "role": "assessed",
+      "activity": "All The Rest",
+      "page": 224,
+      "quote": "The diagram shows two parallel lines cut by a transversal."
+     }
+    ],
+    "why": "Two parallel lines crossed by two transversals meeting at a point above them, asking for an angle at that point. At p = 0.22 the hardest item in the sweep: the vertex sits outside the parallel pair, so the alternate-interior relationship has to be applied twice before the triangle closes."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 16,
+    "lessonTitle": "Parallel Lines and the Angles in a Triangle",
+    "activity": "Every Triangle in the World",
+    "page": 243,
+    "quote": "the structure of parallel lines cut with a transversal to identify alternate interior angles",
+    "confidence": "medium",
+    "why": "The 2-credit item has a triangle whose base lies on one of two parallel lines and asks for the apex angle, given the two angles where the transversals cross the other parallel line. That is this activity's figure and method: carry angles across the parallels, then use the 180-degree sum."
+   }
+  },
+  "g8-2024-047": {
+   "standard": "NY-8.NS.1",
+   "pValue": 0.23,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 34,
+   "stem": "A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "introduces",
+      "activity": "Looking for a Solution",
+      "page": 62,
+      "quote": "Are any of these numbers a solution to the equation"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "practises",
+      "activity": "Looking for √2",
+      "page": 63,
+      "quote": "A rational number is a number that can be expressed as a"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "assessed",
+      "activity": "Types of Solutions",
+      "page": 66,
+      "quote": "In your own words, say what a rational number is."
+     }
+    ],
+    "why": "A list of numbers to classify, with the reasoning required. Lesson 4's cool-down asks for a definition of each kind in the student's own words plus three examples, which is this item with the list supplied. At p = 0.23 it is among the hardest here."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 16,
+    "lessonTitle": "Decimal Representations of Rational Numbers",
+    "activity": "Rational Numbers as Fractions",
+    "page": 191,
+    "quote": "Show that they are rational by writing them in the form",
+    "confidence": "high",
+    "why": "The 2-credit item gives a short list - a square root of a perfect square, a repeating decimal, a terminating decimal - and asks students to classify each and say how they know a number is rational. This activity's list has the same mix, including a square root, and asks for the same justification: write it as a fraction. The repeating-decimal member is settled one lesson later, in Unit 7 Lesson 17 'Some Numbers Are Rational'."
+   }
+  },
+  "g8-2025-007": {
+   "standard": "NY-8.G.7",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 9,
+   "stem": "The diagram below shows a person flying a kite. They let out <span class=\"math\">20</span> feet of string and are holding the end of the string <span class=\"math\">4</span> feet above the ground. The kite is directly above a spot on the ground that is <span class=\"math\">15</span> feet away from where they are standing. Which equation can be used to determine the value of  <span class=\"math\">x</span> ?",
+   "choices": [
+    "<span class=\"math\">x<sup>2</sup> = 20<sup>2</sup> + 15<sup>2</sup></span>",
+    "<span class=\"math\">24<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>",
+    "<span class=\"math\">20<sup>2</sup> = 19<sup>2</sup> + x<sup>2</sup></span>",
+    "<span class=\"math\">20<sup>2</sup> = 15<sup>2</sup> + x<sup>2</sup></span>"
+   ],
+   "figures": [
+    "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Finding Unknown Side Lengths",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "role": "introduces",
+      "activity": "Let’s Take It for a Spin",
+      "page": 110,
+      "quote": "Find the unknown side lengths in these right triangles."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "role": "practises",
+      "activity": "Which One Is the Hypotenuse?",
+      "page": 118,
+      "quote": "Label all the hypotenuses with c."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "role": "assessed",
+      "activity": "Could Be the Hypotenuse, Could Be a Leg",
+      "page": 122,
+      "quote": "A right triangle has sides of length 3, 4, and x."
+     }
+    ],
+    "why": "A kite on 20 feet of string held 4 feet up, asking which EQUATION finds x. The item never solves anything -- it turns on knowing that the 20-foot string is the hypotenuse and that the 4 feet must come off the height. Lesson 9's first activity is labelling which side is the hypotenuse, which is exactly the distinction the distractors test."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 11,
+    "lessonTitle": "Applications of the Pythagorean Theorem",
+    "activity": "How High Up?",
+    "page": 143,
+    "quote": "How high up the utility pole does the support pole reach",
+    "confidence": "high",
+    "why": "The item gives a kite string of 20 feet as the slanted side and 15 feet along the ground, and asks which equation finds the vertical height. This Cool-down is the same situation - a slanted 11.5 m pole, 4.5 m along the ground, find the height - so students must place the given lengths as hypotenuse and leg."
+   }
+  },
+  "g8-2025-037": {
+   "standard": "NY-8.NS.2",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 25,
+   "stem": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 5,
+    "lessonTitle": "Square Roots on the Number Line",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "Square Roots on the Number Line",
+      "role": "introduces",
+      "activity": "Square Root of 3",
+      "page": 73,
+      "quote": "Find a point on the number line that"
+     },
+     {
+      "lesson": 6,
+      "lessonTitle": "Reasoning About Square Roots",
+      "role": "practises",
+      "activity": "Solutions on a Number Line",
+      "page": 83,
+      "quote": "Plot x, y, and z on the number line."
+     },
+     {
+      "lesson": 5,
+      "lessonTitle": "Square Roots on the Number Line",
+      "role": "assessed",
+      "activity": "√_ Approximating 18",
+      "page": 77,
+      "quote": "Plot √ 18 on the -axis."
+     }
+    ],
+    "why": "Four number lines as the answer choices, for the sum of two square roots. The same plotting as g8-2026-038 with a sum to evaluate first."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 6,
+    "lessonTitle": "Reasoning About Square Roots",
+    "activity": "Solutions on a Number Line",
+    "page": 83,
+    "quote": "rational approximations of irrational numbers to place both rational and irrational numbers",
+    "confidence": "medium",
+    "why": "The item asks on which number line point P sits at the value of the square root of 4 plus the square root of 10, so students must approximate an irrational root and locate the total. This activity is where students use rational approximations to place square roots on a number line. The summing of two roots shows up only in the Math Talk that opens Unit 7 Lesson 11, which asks for the square root of 10 plus the square root of 97 to the nearest half."
+   }
+  },
+  "g8-2025-042": {
+   "standard": "NY-8.EE.2",
+   "pValue": 0.43,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 30,
+   "stem": "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "introduces",
+      "activity": "Looking for a Solution",
+      "page": 62,
+      "quote": "Are any of these numbers a solution to the equation"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "practises",
+      "activity": "Looking for √2",
+      "page": 63,
+      "quote": "A rational number is a number that can be expressed as a"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "assessed",
+      "activity": "Types of Solutions",
+      "page": 66,
+      "quote": "In your own words, say what a rational number is."
+     }
+    ],
+    "why": "Classify the square root of 1.44 as rational or irrational. It is rational -- 1.2 -- which is the trap, since a decimal under a radical looks irrational. Lesson 4 is where that distinction is drawn."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 16,
+    "lessonTitle": "Decimal Representations of Rational Numbers",
+    "activity": "Rational Numbers as Fractions",
+    "page": 191,
+    "quote": "not all numbers written using square root or cube root notation are irrational",
+    "confidence": "high",
+    "why": "The item asks students to classify the square root of 1.44 as rational or irrational and justify it. This activity's values were chosen for precisely that point, and it asks students to show such numbers are rational by writing them as fractions."
+   }
+  },
+  "g8-2025-047": {
+   "standard": "NY-8.G.6",
+   "pValue": 0.38,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 35,
+   "stem": "A student used the diagram shown below to support their work in representing the relationship among the lengths of the sides, in units, of a right triangle. The student then showed how the diagram relates to the Pythagorean theorem, but made an error as shown below. What is the error that the student made and what are the correct steps needed to show how the Pythagorean theorem shows the relationship among the lengths of the sides, in units, of the right triangle?",
+   "choices": [],
+   "figures": [
+    "The square on side a is 3 by 3, the square on side b is 4 by 4, and the square on the hypotenuse c is 5 by 5."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 8,
+    "lessonTitle": "A Proof of the Pythagorean Theorem",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "role": "introduces",
+      "activity": "Notice and Wonder: A Square and Four Triangles",
+      "page": 105,
+      "quote": "What do you notice? What do you wonder?"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "role": "practises",
+      "activity": "Adding Up Areas",
+      "page": 106,
+      "quote": "Both figures shown here are squares with a side length of a + b."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "role": "assessed",
+      "activity": "What Is the Hypotenuse?",
+      "page": 113,
+      "quote": "Find the length of the hypotenuse in a right triangle if a is 5 cm"
+     }
+    ],
+    "why": "A diagram with squares on each side of a right triangle, a student's erroneous working, and the error to be found and corrected. This is the only item in the sweep about WHY the theorem is true rather than how to use it, so it sits at Lesson 8, the proof, and not at Lesson 10 with the other three NY-8.G.6 items."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 7,
+    "lessonTitle": "Finding Side Lengths of Triangles",
+    "activity": "Does Plus Equal ?",
+    "page": 101,
+    "quote": "side lengths of the triangle and c is the longest side",
+    "confidence": "medium",
+    "why": "The item shows squares drawn on the three sides of a 3-4-5 right triangle and a student who wrote 5 squared + 4 squared = 3 squared; students must find the error and give the correct steps. This Cool-down is where the theorem is stated with the condition the student broke - c is the longest side - and the squares-on-sides diagram is this lesson's own representation. The area proof itself is Unit 7 Lesson 8, 'Adding Up Areas'."
+   }
+  },
+  "g8-2026-005": {
+   "standard": "NY-8.NS.1",
+   "pValue": 0.62,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 8,
+   "stem": "Which value is irrational?",
+   "choices": [
+    "<span class=\"math\">0</span>",
+    "<span class=\"math\">π</span>",
+    "<span class=\"math\">√<span class=\"repeat\">9</span></span>",
+    "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "evidence": [
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "introduces",
+      "activity": "Looking for a Solution",
+      "page": 62,
+      "quote": "Are any of these numbers a solution to the equation"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "practises",
+      "activity": "Looking for √2",
+      "page": 63,
+      "quote": "A rational number is a number that can be expressed as a"
+     },
+     {
+      "lesson": 4,
+      "lessonTitle": "Rational and Irrational Numbers",
+      "role": "assessed",
+      "activity": "Types of Solutions",
+      "page": 66,
+      "quote": "In your own words, say what a rational number is."
+     }
+    ],
+    "why": "Which value is irrational, with pi as the key against 0, root 9 and a third. Root 9 is the distractor that matters, and it is the one Lesson 4's Looking for a Solution prepares."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 17,
+    "lessonTitle": "Infinite Decimal Expansions",
+    "activity": "Some Numbers Are Not Rational",
+    "page": 206,
+    "quote": "how they might figure out a value for π using measurements of circles",
+    "confidence": "high",
+    "why": "The item asks which of 0, pi, the square root of 9, and one third is irrational. This activity is the one place in the unit that treats pi as an irrational number alongside the square root of 2, and the square root of a perfect square being rational is settled in the previous lesson."
+   }
+  },
+  "g8-2026-025": {
+   "standard": "NY-8.G.1b",
+   "pValue": 0.69,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 20,
+   "stem": "Triangle <span class=\"math\">ABC</span> is rotated clockwise about the origin to create triangle <span class=\"math\">XYZ</span> as shown on the coordinate plane below. Which statement is correct?",
+   "choices": [
+    "<span class=\"math\">∠A ≅ ∠Y</span>",
+    "<span class=\"math\">∠B ≅ ∠Y</span>",
+    "<span class=\"math\">∠B ≅ ∠Z</span>",
+    "<span class=\"math\">∠C ≅ ∠X</span>"
+   ],
+   "figures": [
+    "Triangle ABC has A at negative 2, 3, B at negative 5, 1 and C at negative 2, 1. Triangle XYZ has X at 3, 2, Y at 1, 5 and Z at 1, 2."
+   ],
+   "firstPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 8,
+    "lessonTitle": "Rotation Patterns",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "No Bending or Stretching",
+      "role": "introduces",
+      "activity": "Sides and Angles",
+      "page": 102,
+      "quote": "write the length of each side, in grid units"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Rotation Patterns",
+      "role": "practises",
+      "activity": "Rotating a Segment",
+      "page": 113,
+      "quote": "Rotate segment CD 180° around point D."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Rotation Patterns",
+      "role": "assessed",
+      "activity": "Is It a Rotation?",
+      "page": 119,
+      "quote": "Triangle ABC is rotated 180° around point C ."
+     }
+    ],
+    "why": "A triangle rotated clockwise, asking which angle is congruent to which. It is purely a correspondence question about a ROTATION specifically, which is Lesson 8's subject."
+   },
+   "secondPass": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 10,
+    "lessonTitle": "Composing Figures",
+    "activity": "Triangle Plus Two",
+    "page": 139,
+    "quote": "Find two pairs of angles in the diagram that have the same measure",
+    "confidence": "high",
+    "why": "The item asks which angle of a rotated triangle is congruent to which angle of the original. This activity asks students to identify corresponding points under a rigid transformation and then name pairs of angles that have the same measure and say how they know."
+   }
+  },
+  "g8-2026-035": {
+   "standard": "NY-8.G.7",
+   "pValue": 0.59,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 31,
+   "stem": "The diagram below shows a map of a store, a home, and a gas station. Directly north of the home is a store that is <span class=\"math\">12</span> miles away. Directly east of the home is a gas station that is <span class=\"math\">16</span> miles away. What is the distance, in miles, between the store and the gas station?",
+   "choices": [
+    "<span class=\"math\">14</span>",
+    "<span class=\"math\">20</span>",
+    "<span class=\"math\">28</span>",
+    "<span class=\"math\">56</span>"
+   ],
+   "figures": [
+    "The right angle is at Home. It is 12 miles from Home to the Store and 16 miles from Home to the Gas Station, with the third side joining the Store to the Gas Station."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Finding Unknown Side Lengths",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "A Proof of the Pythagorean Theorem",
+      "role": "introduces",
+      "activity": "Let’s Take It for a Spin",
+      "page": 110,
+      "quote": "Find the unknown side lengths in these right triangles."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "role": "practises",
+      "activity": "Find the Missing Side Lengths",
+      "page": 120,
+      "quote": "A right triangle has sides of length 2.4 cm and 6.5 cm."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Finding Unknown Side Lengths",
+      "role": "assessed",
+      "activity": "Could Be the Hypotenuse, Could Be a Leg",
+      "page": 122,
+      "quote": "A right triangle has sides of length 3, 4, and x."
+     }
+    ],
+    "why": "A store 12 miles north and a gas station 16 miles east of one home, asking the distance between them -- a right triangle in a context, with the right angle at the home. Same reading as g8-2023-040 with the triangle described rather than named."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 11,
+    "lessonTitle": "Applications of the Pythagorean Theorem",
+    "activity": "Cutting Corners",
+    "page": 139,
+    "quote": "The field is 100 meters long and 80 meters wide",
+    "confidence": "high",
+    "why": "The item gives 12 miles north and 16 miles east of a home and asks the distance between the two destinations - a real-world hypotenuse across a right angle. This activity is the same move: two perpendicular sides of a field, find the diagonal straight across."
+   }
+  }
+ }
+}

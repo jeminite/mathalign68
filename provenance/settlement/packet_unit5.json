@@ -1,0 +1,1172 @@
+{
+ "scope": "unit5",
+ "items": {
+  "g8-2023-026": {
+   "standard": "NY-8.F.2",
+   "pValue": 0.46,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 15,
+   "stem": "Two functions are described below. <span class=\"math\">•</span> Function A: A taxi driver charges customers a base amount of <span class=\"math\">$3.00</span> and also a n amount of <span class=\"math\">$2.00</span> per mile, <span class=\"math\">x</span>, for a total charge, <span class=\"math\">y</span>, to a customer. <span class=\"math\">•</span> Function B: The equation <span class=\"math\">y = 3x + 2</span> represents the relationship between the number of miles, <span class=\"math\">x</span>, a taxi travels and the total charge, <span class=\"math\">y</span>, to a customer. Which statement correctly compares the relationship between Function A and Function B ?",
+   "choices": [
+    "Function A has both a greater rate of change and a greater initial value.",
+    "Function B has both a greater rate of change and a greater initial value.",
+    "Function A has a greater rate of change than Function B, but the initial value for Function A is less than the initial value for Function B.",
+    "Function B has a greater rate of change than Function A, but the initial value for Function B is less than the initial value for Function A."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 7,
+    "lessonTitle": "Connecting Representations of Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Which Are the Same? Which Are Different?",
+      "page": 102,
+      "quote": "Here are three different ways of representing functions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "practises",
+      "activity": "Comparing Temperatures",
+      "page": 103,
+      "quote": "The graph shows the temperature between noon and midnight in City A"
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "assessed",
+      "activity": "Comparing Different Areas",
+      "page": 110,
+      "quote": "The area A of a circle with radius r"
+     }
+    ],
+    "why": "A taxi described in words against a taxi given as y = 3x + 2, compared on rate of change and initial value. Lesson 7 is the lesson for comparing functions presented DIFFERENTLY, and its warm-up puts an equation, a table and a graph side by side."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "Which tank started out with more water?",
+    "confidence": "high",
+    "why": "Function A is a verbal description ($3 base, $2 per mile) and Function B is the equation y = 3x + 2; the item asks which has the greater rate of change and which the greater initial value. This activity is built on that very pairing: Tank A is given as A = 200 + 8t and Tank B as a description (starts at 400 gallons, decreasing 5 gallons per minute), and students compare starting amounts and rates across the two forms."
+   }
+  },
+  "g8-2023-045": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.4,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 31,
+   "stem": "Function A and Function B are shown below. Which function has a greater rate of change? Be sure to include the rate of change for each function in your answer.",
+   "choices": [],
+   "figures": [
+    "Function A pairs negative 5 with negative 30, negative 3 with negative 18, 2 with 12, and 4 with 24 -- a rate of 6. Function B is a line rising 3 units over 6."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "introduces",
+      "activity": "Proportional Relationships Define Linear Functions",
+      "page": 119,
+      "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "practises",
+      "activity": "An Illuminated Moon",
+      "page": 133,
+      "quote": "On the second day, 6% is illuminated."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "assessed",
+      "activity": "Board Game Sales",
+      "page": 139,
+      "quote": "After 12 months, they sold 4 thousand games."
+     }
+    ],
+    "why": "A table against a graph, asking which function has the greater rate of change and for both rates. It is a rate-of-change item like the other two, with the comparison of Lesson 7 layered on."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 4,
+    "lessonTitle": "Comparing Proportional Relationships",
+    "activity": "Comparing Two Different Representations",
+    "page": 58,
+    "quote": "What is the value of the rate of change for each situation",
+    "confidence": "medium",
+    "why": "A table (rate 6) against a graphed line (rate 1/2): which function has the greater rate of change, and what is each rate? This activity asks that question twice, once with an equation against a description and once with a description against a table. Unit 5's Lesson 8 Activity 3 'Which Is Growing Faster?' asks the same thing in function language but is optional, which is why the required Unit 3 activity is named here."
+   }
+  },
+  "g8-2023-048": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 34,
+   "stem": "Three different functions are represented by the equation, table, and graph shown below. Determine whether each function is linear or nonlinear. Be sure to include what you know about the properties of all three functions in your answer.",
+   "choices": [],
+   "figures": [
+    "Function A is y equals 2x plus 3. Function B pairs negative 1 with 1, 0 with 0, 1 with 1, and 2 with 4. Function C is a steep straight line through the origin."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 7,
+    "lessonTitle": "Connecting Representations of Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Which Are the Same? Which Are Different?",
+      "page": 102,
+      "quote": "Here are three different ways of representing functions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "practises",
+      "activity": "Comparing Volumes",
+      "page": 105,
+      "quote": "The volume of a sphere is a function of its radius"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "assessed",
+      "activity": "Beginning to See Daylight",
+      "page": 128,
+      "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+     }
+    ],
+    "why": "Three functions given as an equation, a table and a graph, each to be classified linear or nonlinear. It needs both Lesson 7's skill -- read a function in any representation -- and Lesson 8's definition, and it is placed at 7 because the three representations are the item's difficulty. At p = 0.34 it is among the harder items here."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Equations and Graphs of Functions",
+    "page": 67,
+    "quote": "Monitor for students who recognize that there is one graph that is not linear",
+    "confidence": "medium",
+    "why": "An equation (y = 2x + 3), a table (the squaring pairs -1,1; 0,0; 1,1; 2,4) and a straight-line graph, each to be called linear or nonlinear with the properties named. This activity puts equations and graphs of linear and nonlinear functions side by side; the table half of the item is closer to Lesson 9's Warm-up, where students check whether a rate of change is constant."
+   }
+  },
+  "g8-2024-001": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.75,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 7,
+   "stem": "A group of friends went to a movie theater and paid <span class=\"math\">$15.00</span> for each movie ticket. The group of friends shared one container of popcorn that cost <span class=\"math\">$8.99</span>. Which equation can b e used to determine the total cost, <span class=\"math\">c,</span> for <span class=\"math\">n</span> tickets and the container of popcorn?",
+   "choices": [
+    "<span class=\"math\">c = 15n + 8.99</span>",
+    "<span class=\"math\">c = 8.99n + 15</span>",
+    "<span class=\"math\">c = 15 (n + 8.99)</span>",
+    "<span class=\"math\">c = 8.99 (n + 15)</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 3,
+    "lessonTitle": "Equations for Functions",
+    "evidence": [
+     {
+      "lesson": 3,
+      "lessonTitle": "Equations for Functions",
+      "role": "introduces",
+      "activity": "Diagrams, Equations, and Descriptions",
+      "page": 56,
+      "quote": "Match each of these descriptions with a diagram"
+     },
+     {
+      "lesson": 3,
+      "lessonTitle": "Equations for Functions",
+      "role": "practises",
+      "activity": "Dimes and Quarters",
+      "page": 59,
+      "quote": "Jada had some dimes and quarters that had a total value of $12.50."
+     },
+     {
+      "lesson": 3,
+      "lessonTitle": "Equations for Functions",
+      "role": "assessed",
+      "activity": "The Value of Some Quarters",
+      "page": 62,
+      "quote": "The value v of your quarters (in cents) is a function of n"
+     }
+    ],
+    "why": "Tickets at $15.00 each plus one $8.99 popcorn, asking which equation gives the total. The item never computes a rate -- it writes the equation -- so it belongs at Lesson 3, where a situation becomes an equation, rather than with the rate-of-change items. The distractors swap the coefficient and the constant, which is what Lesson 3's matching activity drills."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "Write an equation representing the relationship between B and t",
+    "confidence": "high",
+    "why": "The item wants the equation c = 15n + 8.99 built from a story with a per-unit rate and a single flat charge. In this activity Tank B is described the same way -- a starting amount of 400 gallons and a steady 5 gallons per minute -- and students are told to write the equation for it."
+   }
+  },
+  "g8-2024-007": {
+   "standard": "NY-8.F.2",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 9,
+   "stem": "Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for e ach electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true?",
+   "choices": [
+    "Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B.",
+    "Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B.",
+    "Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B.",
+    "Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B."
+   ],
+   "figures": [
+    "Electrician A charges C equals 25x plus 50. Electrician B charges 130 dollars for 3 hours, 150 for 4, and 170 for 5."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 7,
+    "lessonTitle": "Connecting Representations of Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Which Are the Same? Which Are Different?",
+      "page": 102,
+      "quote": "Here are three different ways of representing functions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "practises",
+      "activity": "Comparing Temperatures",
+      "page": 103,
+      "quote": "The graph shows the temperature between noon and midnight in City A"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "assessed",
+      "activity": "Beginning to See Daylight",
+      "page": 128,
+      "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+     }
+    ],
+    "why": "An equation against a table, compared on initial fee and hourly rate. Same reading as g8-2023-026 with the second representation a table rather than prose."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "Which tank started out with more water?",
+    "confidence": "medium",
+    "why": "Electrician A is the equation C = 25x + 50 and Electrician B is a table (130 at 3 h, 150 at 4, 170 at 5); the item compares initial fee and hourly rate. This is the activity that asks students to read initial value and rate of change out of differently represented linear functions and compare them. Medium because the activity pairs an equation with a description, not with a table -- no activity in Unit 5 compares an equation to a table this way."
+   }
+  },
+  "g8-2024-010": {
+   "standard": "NY-8.G.9",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 11,
+   "stem": "A sphere has a radius of <span class=\"math\">4</span> inches. A cone has a radius of <span class=\"math\">3</span> inches and a height of <span class=\"math\">8</span> inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+   "choices": [
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 20,
+    "lessonTitle": "The Volume of a Sphere",
+    "evidence": [
+     {
+      "lesson": 15,
+      "lessonTitle": "The Volume of a Cone",
+      "role": "introduces",
+      "activity": "From Cylinders to Cones",
+      "page": 220,
+      "quote": "A cone and cylinder have the same height, and their bases are congruent"
+     },
+     {
+      "lesson": 20,
+      "lessonTitle": "The Volume of a Sphere",
+      "role": "practises",
+      "activity": "Spheres in Cylinders",
+      "page": 285,
+      "quote": "A cone, a sphere, and a cylinder that all have the same radius and height"
+     },
+     {
+      "lesson": 20,
+      "lessonTitle": "The Volume of a Sphere",
+      "role": "assessed",
+      "activity": "Volumes of Spheres",
+      "page": 288,
+      "quote": "Recall that the volume of a sphere is given by the formula"
+     }
+    ],
+    "why": "The DIFFERENCE between a sphere's and a cone's volume, asked as an EXPRESSION rather than a number. Nothing is evaluated, so the item turns on knowing both formulas well enough to spot 4/3 pi r-cubed against 1/3 pi r-squared h -- and its distractors swap the square for the cube and the radius for the height. Lesson 20 is where the sphere is set beside the cone and the cylinder."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 21,
+    "lessonTitle": "Cylinders, Cones, and Spheres",
+    "activity": "The Right Fit (Optional)",
+    "page": 296,
+    "quote": "Cone with a height of 8 centimeters and a radius of 3 centimeters.",
+    "confidence": "medium",
+    "why": "The item wants an expression for the volume of a sphere (r 4) minus a cone (r 3, h 8) -- both formulas set up correctly side by side. This optional activity is the one place students apply the sphere and cone formulas to separately dimensioned figures and compare the results, and it even uses a cone of radius 3 and height 8. Lesson 21's Practice Problem 2 ('Calculate the volume of the following shapes': sphere, cylinder, cone) backs the lesson choice. Flagged because the activity is optional."
+   }
+  },
+  "g8-2024-020": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.63,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 14,
+   "stem": "Which equation represents a linear function?",
+   "choices": [
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>2</span></span>x − 3</span>",
+    "<span class=\"math\">y = x<sup>2</sup> + 5</span>",
+    "<span class=\"math\">y = x<sup>2</sup> + 2x</span>",
+    "<span class=\"math\">y = <span class=\"frac\"><span>1</span><span>5</span></span>x<sup>3</sup></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Comparing Volumes",
+      "page": 105,
+      "quote": "The volume of a sphere is a function of its radius"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "assessed",
+      "activity": "Comparing Different Areas",
+      "page": 110,
+      "quote": "The table shows the area of a square for specific side lengths."
+     }
+    ],
+    "why": "Four equations, one linear -- the distractors are x squared and x cubed. Lesson 8 is where linear functions are defined against things that are not, and Lesson 7's Comparing Volumes sets a cube's volume beside a sphere's for the same contrast."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Equations and Graphs of Functions",
+    "page": 67,
+    "quote": "Monitor for students who recognize that there is one graph that is not linear",
+    "confidence": "medium",
+    "why": "'Which equation represents a linear function?' -- y = (1/2)x - 3 against x^2 and x^3 equations. This activity is the only place in the grade-8 course where students sort a nonlinear equation from linear ones: three functions are matched to graphs and A = pi r^2 is the one that is not linear. Medium because the activity asks students to match equations to graphs; the linear/nonlinear distinction surfaces in the synthesis rather than in the prompt."
+   }
+  },
+  "g8-2024-033": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 22,
+   "stem": "The table below represents a function. Which statement describes the function?",
+   "choices": [
+    "The function is nonlinear because the <span class=\"math\">y</span> intercept is 0.",
+    "The function is linear because the rate of change is constant.",
+    "The function is linear because the <span class=\"math\">y</span> intercept is a constant value.",
+    "The function is nonlinear because the rate of change is not constant."
+   ],
+   "figures": [
+    "2.5 with 7.5, 3.5 with 10.5, 4.5 with 13.5, and 5.5 with 16.5 -- y is three times x each time."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "introduces",
+      "activity": "Proportional Relationships Define Linear Functions",
+      "page": 119,
+      "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "assessed",
+      "activity": "Beginning to See Daylight",
+      "page": 128,
+      "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+     }
+    ],
+    "why": "A table, with the key 'linear because the rate of change is constant'. This is the only NY-8.F.3 item that asks for the REASON rather than the classification, and constant rate of change is what Lesson 8 establishes as the defining property."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "Candlelight",
+    "page": 132,
+    "quote": "If yes, is it a linear function? Explain your thinking.",
+    "confidence": "medium",
+    "why": "A table of pairs (2.5 with 7.5, 3.5 with 10.5, ...) and the correct statement is 'linear because the rate of change is constant.' This Warm-up is where students take numeric pairs (12 in at 0 h, 10 at 1, 5.5 at 3) and decide whether the relationship is a linear function by checking whether the change is constant."
+   }
+  },
+  "g8-2024-035": {
+   "standard": "NY-8.G.9",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 24,
+   "stem": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of <span class=\"math\">π</span> ?",
+   "choices": [
+    "<span class=\"math\">4π</span>",
+    "<span class=\"math\">49π</span>",
+    "<span class=\"math\">73.5π</span>",
+    "<span class=\"math\">155.5π</span>"
+   ],
+   "figures": [
+    "The large can has a radius of 3.5 centimetres and a height of 10. The small can has a diameter of 7 centimetres and a height of 6."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 14,
+    "lessonTitle": "Finding Cylinder Dimensions",
+    "evidence": [
+     {
+      "lesson": 13,
+      "lessonTitle": "The Volume of a Cylinder",
+      "role": "introduces",
+      "activity": "A Cylinder’s Volume",
+      "page": 201,
+      "quote": "Here is a cylinder with height 4 units and diameter 10 units."
+     },
+     {
+      "lesson": 14,
+      "lessonTitle": "Finding Cylinder Dimensions",
+      "role": "practises",
+      "activity": "Cylinders with Unknown Dimensions",
+      "page": 211,
+      "quote": "Each row of the table has information about a particular cylinder."
+     },
+     {
+      "lesson": 14,
+      "lessonTitle": "Finding Cylinder Dimensions",
+      "role": "assessed",
+      "activity": "Find the Height",
+      "page": 214,
+      "quote": "This cylinder has a volume of 12π cubic inches and a diameter of 4 inches."
+     }
+    ],
+    "why": "Two cans compared, one given by radius and the other by diameter, asking the DIFFERENCE of their volumes in terms of pi. Two cylinders held against each other with mixed dimension types is Lesson 14's table activity rather than Lesson 13's single computation."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 13,
+    "lessonTitle": "The Volume of a Cylinder",
+    "activity": "A Cylinder’s Volume",
+    "page": 201,
+    "quote": "What is the volume of this cylinder? Express your answer in terms of π.",
+    "confidence": "medium",
+    "why": "Two cans (r 3.5, h 10 and d 7, h 6); the item wants the difference of their volumes in terms of pi. Every step the item needs -- diameter to radius, base area, volume in terms of pi -- is this activity. The subtraction itself is not asked anywhere in the unit; the nearest thing is Lesson 15's Cool-down, which asks for the volume of each of two figures but not their difference."
+   }
+  },
+  "g8-2024-045": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.27,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 32,
+   "stem": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "introduces",
+      "activity": "Proportional Relationships Define Linear Functions",
+      "page": 119,
+      "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "practises",
+      "activity": "An Illuminated Moon",
+      "page": 133,
+      "quote": "On the second day, 6% is illuminated."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "assessed",
+      "activity": "Board Game Sales",
+      "page": 139,
+      "quote": "After 12 months, they sold 4 thousand games."
+     }
+    ],
+    "why": "Two ordered pairs of a linear function, asking the rate of change. Lesson 9 models a linear function from two observations -- a candle at two times, the moon on two days -- which is exactly two points and a rate. At p = 0.27 it is the second hardest in the sweep."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "activity": "Different Slopes",
+    "page": 137,
+    "quote": "Find the slope of the line that passes through each pair of points.",
+    "confidence": "high",
+    "why": "Two ordered pairs of a linear function; find the rate of change (0.75). The Cool-down of 8.3.10 is that exact task, three times over, with bare pairs of points and no context. Note this is Unit 3, not Unit 5: no Unit 5 activity asks for a rate of change from two given points -- Lesson 9 does it only inside its lesson summary, on modeling data."
+   }
+  },
+  "g8-2025-039": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.29,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 27,
+   "stem": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+   "choices": [],
+   "figures": [
+    "Negative 18 with negative 6, negative 8 with negative 1, 0 with 3, 4 with 5, and 6 with 6."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "introduces",
+      "activity": "Proportional Relationships Define Linear Functions",
+      "page": 119,
+      "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "practises",
+      "activity": "An Illuminated Moon",
+      "page": 133,
+      "quote": "On the second day, 6% is illuminated."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "assessed",
+      "activity": "Board Game Sales",
+      "page": 139,
+      "quote": "After 12 months, they sold 4 thousand games."
+     }
+    ],
+    "why": "A table of values for a linear function, asking the rate of change. Same reading as g8-2024-045 with five rows instead of two points; at p = 0.29 it is barely easier."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "activity": "Different Slopes",
+    "page": 137,
+    "quote": "Find the slope of the line that passes through each pair of points.",
+    "confidence": "medium",
+    "why": "A five-row table for a linear function; find the rate of change (1/2). A table of a linear function is a list of points, and this Cool-down is where students find the rate of change from points. Medium, and again Unit 3: the curriculum never poses this with a table, and Unit 5's linear-function lessons always attach a context to the rate."
+   }
+  },
+  "g8-2025-041": {
+   "standard": "NY-8.F.2",
+   "pValue": 0.23,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 29,
+   "stem": "David and Lisa each earn money by mowing lawns. They both charge a one time maintenance fee and an hourly rate. David’s total charges, based on the number of hours he mows a lawn, are shown in the table below. The total charges, <span class=\"math\">y</span>, in dollars, for Lisa mowing the lawn for <span class=\"math\">x</span> hours is represented by the equation <span class=\"math\">y = 6x + 12.</span> What is the difference, in dollars, between the one time maintenance fee David charges and the one time maintenance fee Lisa charges?",
+   "choices": [],
+   "figures": [
+    "Half an hour for 17.50, one hour for 20.00, and two hours for 25.00."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 7,
+    "lessonTitle": "Connecting Representations of Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Which Are the Same? Which Are Different?",
+      "page": 102,
+      "quote": "Here are three different ways of representing functions."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "assessed",
+      "activity": "Beginning to See Daylight",
+      "page": 128,
+      "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+     }
+    ],
+    "why": "A table against y = 6x + 12, asking the difference between the two one-time fees -- so the student must read an initial value out of a table by extrapolating back to zero hours, then subtract. At p = 0.23 this is the hardest item in the sweep, and that back-to-zero step is why: Lesson 8's tanks give the initial value in the equation rather than hiding it in a table."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "Which tank started out with more water?",
+    "confidence": "medium",
+    "why": "David's charges come as a table (17.50 at 0.5 h, 20 at 1, 25 at 2) and Lisa's as y = 6x + 12; the item wants the difference of the two one-time fees, i.e. the two initial values. 'Which tank started out with more water?' is the same comparison of initial values across representations. Medium for the same reason as g8-2024-007: the table has to be extrapolated back to x = 0, which no Unit 5 activity asks for directly."
+   }
+  },
+  "g8-2025-043": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 31,
+   "stem": "The equations of two functions are shown below. Function A: <span class=\"math\">y = 3x + 8</span> Function B: <span class=\"math\">y = x<sup>2</sup> + 2</span> Classify each function as linear or nonlinear.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Comparing Volumes",
+      "page": 105,
+      "quote": "The volume of a sphere is a function of its radius"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "assessed",
+      "activity": "Comparing Different Areas",
+      "page": 110,
+      "quote": "The table shows the area of a square for specific side lengths."
+     }
+    ],
+    "why": "Two equations, y = 3x + 8 and y = x squared + 2, to classify. Same reading as the two multiple-choice items, asked as a constructed response."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Equations and Graphs of Functions",
+    "page": 67,
+    "quote": "Monitor for students who recognize that there is one graph that is not linear",
+    "confidence": "medium",
+    "why": "Classify y = 3x + 8 and y = x^2 + 2 as linear or nonlinear and explain. The curriculum never asks for that classification in so many words; the closest is this activity, where the squared equation is picked out as the one that is not linear and its curved graph is the reason."
+   }
+  },
+  "g8-2026-011": {
+   "standard": "NY-8.F.1",
+   "pValue": 0.44,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 12,
+   "stem": "Which relation is not a function?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "A is a row of points all at height 2. B is a set of points rising from left to right. C is a U-shaped curve opening upward. D is a V shape made of two rays meeting on the x-axis."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 2,
+    "lessonTitle": "Introduction to Functions",
+    "evidence": [
+     {
+      "lesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "role": "introduces",
+      "activity": "You Know This, Do You Know That?",
+      "page": 38,
+      "quote": "give examples of two different outputs that are possible for the same input"
+     },
+     {
+      "lesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "role": "practises",
+      "activity": "Using Function Language",
+      "page": 41,
+      "quote": "write a statement like “The height a rubber ball bounces to depends"
+     },
+     {
+      "lesson": 2,
+      "lessonTitle": "Introduction to Functions",
+      "role": "assessed",
+      "activity": "Wait Time",
+      "page": 45,
+      "quote": "You are in line to watch the volleyball championship."
+     }
+    ],
+    "why": "Which relation is NOT a function -- the same definition as the other three, asked as a negation."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Running around a Track",
+    "page": 70,
+    "quote": "a graph in which each input does not give exactly one output",
+    "confidence": "medium",
+    "why": "Four graphed relations; the sideways V (two rays meeting on the x-axis) is not a function. Same skill and same activity as the 2023 graph item -- the graph of Priya's distance is the curriculum's own example of a graph where one input has more than one output."
+   }
+  },
+  "g8-2026-014": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.58,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 13,
+   "stem": "Which equation represents a linear function?",
+   "choices": [
+    "<span class=\"math\">y = 2x</span>",
+    "<span class=\"math\">y = 2x<sup>3</sup></span>",
+    "<span class=\"math\">y = x<sup>2</sup> − 2</span>",
+    "<span class=\"math\">y = x<sup>2</sup> − x</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Comparing Volumes",
+      "page": 105,
+      "quote": "The volume of a sphere is a function of its radius"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "assessed",
+      "activity": "Comparing Different Areas",
+      "page": 110,
+      "quote": "The table shows the area of a square for specific side lengths."
+     }
+    ],
+    "why": "The same four-equation form as g8-2024-020, distractors again quadratic and cubic."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Equations and Graphs of Functions",
+    "page": 67,
+    "quote": "Monitor for students who recognize that there is one graph that is not linear",
+    "confidence": "medium",
+    "why": "Same question as g8-2024-020 with y = 2x against x^2 and x^3 equations, and the same evidence: the nonlinear A = pi r^2 set beside the linear d = 60t and q = 50 - 0.4d. Lesson 18's 'A Square Base' also contrasts a nonlinear volume function with earlier linear ones, but Lesson 18 is optional."
+   }
+  },
+  "g8-2026-019": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 16,
+   "stem": "Myla sells hot chocolate at a fundraising event. The function <span class=\"math\">y = 3x + 30</span> represents the total amount of money, <span class=\"math\">y</span>, she raises and includes the profit made by selling <span class=\"math\">x</span> cups of hot chocolate and a one time donation at the event. Which statement is true about the situation?",
+   "choices": [
+    "The profit per cup is <span class=\"math\">$3.00</span> and the number of cups she sells is <span class=\"math\">30</span>.",
+    "The number of cups she sells is <span class=\"math\">3</span> and the profit per cup is <span class=\"math\">$30.00</span>.",
+    "The profit per cup is <span class=\"math\">$3.00</span> and the amount of the donation is <span class=\"math\">$30.00</span>.",
+    "The amount of the donation is <span class=\"math\">$3.00</span> and the profit per cup is <span class=\"math\">$30.00</span>."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "evidence": [
+     {
+      "lesson": 3,
+      "lessonTitle": "Equations for Functions",
+      "role": "introduces",
+      "activity": "Diagrams, Equations, and Descriptions",
+      "page": 56,
+      "quote": "Match each of these descriptions with a diagram"
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "practises",
+      "activity": "An Illuminated Moon",
+      "page": 133,
+      "quote": "On the second day, 6% is illuminated."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "assessed",
+      "activity": "Board Game Sales",
+      "page": 139,
+      "quote": "After 12 months, they sold 4 thousand games."
+     }
+    ],
+    "why": "y = 3x + 30 for hot chocolate, asking what the 3 and the 30 MEAN -- profit per cup and a one-time donation. Interpreting the two parameters of a linear model in context is Lesson 9's subject; Lesson 3 is cited for where the equation form itself arrives."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "connect features of an equation representing a function to what that means in a context",
+    "confidence": "high",
+    "why": "Given y = 3x + 30 for a hot-chocolate fundraiser, the item asks what the 3 and the 30 mean. That is this activity's stated purpose, worked on A = 200 + 8t: the 200 is what the tank started with and the 8 is the per-minute rate, and students have to say which is which and why."
+   }
+  },
+  "g8-2026-026": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "C",
+   "pdfPage": 21,
+   "stem": "A linear function is graphed on the coordinate plane shown below. Which statement is true about the function?",
+   "choices": [
+    "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+    "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>.",
+    "The rate of change is <span class=\"math\">−<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+    "The rate of change is <span class=\"math\">−<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>."
+   ],
+   "figures": [
+    "The line crosses the y-axis at 4 and the x-axis at 8, falling one unit for every two it runs to the right."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "evidence": [
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "introduces",
+      "activity": "Proportional Relationships Define Linear Functions",
+      "page": 119,
+      "quote": "Jada earns $7 per hour mowing her neighbors’ lawns."
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "practises",
+      "activity": "Recycling",
+      "page": 137,
+      "quote": "the percentage of all garbage collected between 1991 and 2013"
+     },
+     {
+      "lesson": 9,
+      "lessonTitle": "Linear Models",
+      "role": "assessed",
+      "activity": "Board Game Sales",
+      "page": 139,
+      "quote": "After 12 months, they sold 4 thousand games."
+     }
+    ],
+    "why": "A line on a coordinate plane, asking for the rate of change and the y-intercept together. The negative slope is what the distractors turn on -- two offer +2/3. Reading both parameters off a graph is Lesson 9's modelling work."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 6,
+    "lessonTitle": "More Linear Relationships",
+    "activity": "Savings",
+    "page": 87,
+    "quote": "Determine the vertical intercept and explain what it represents in this situation.",
+    "confidence": "medium",
+    "why": "A graphed line; the item wants both the rate of change and the y-intercept. This Cool-down asks for exactly that pair off a graph -- calculate the slope, then determine the vertical intercept. Unit 3 rather than Unit 5 because the only Unit 5 activity that reads m and b off a graph, Lesson 8's 'Which Is Growing Faster?', is optional. The item is decontextualized; this Cool-down is a savings graph."
+   }
+  },
+  "g8-2026-027": {
+   "standard": "NY-8.F.2",
+   "pValue": 0.52,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 22,
+   "stem": "Miguel is comparing the costs of renting a photobooth for an event. The costs of two companies are described below. <span class=\"math\">•</span> The cost at Company A includes a <span class=\"math\">$180.00</span> set up fee plus an additional <span class=\"math\">$49.00</span> per hour. <span class=\"math\">•</span> The cost at Company B is represented by the equation <span class=\"math\">c = 99h + 150</span>, where <span class=\"math\">c</span> is the cost, in dollars, for <span class=\"math\">h</span> hours. Which statement correctly compares the costs for renting a photobooth?",
+   "choices": [
+    "Company A charges <span class=\"math\">$30.00</span> more per hour than Company B.",
+    "Company B charges <span class=\"math\">$50.00</span> more per hour than Company A.",
+    "Company A charges <span class=\"math\">$50.00</span> more per hour than Company B.",
+    "Company B charges <span class=\"math\">$30.00</span> more per hour than Company A."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 7,
+    "lessonTitle": "Connecting Representations of Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Which Are the Same? Which Are Different?",
+      "page": 102,
+      "quote": "Here are three different ways of representing functions."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "practises",
+      "activity": "Comparing Temperatures",
+      "page": 103,
+      "quote": "The graph shows the temperature between noon and midnight in City A"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "assessed",
+      "activity": "Beginning to See Daylight",
+      "page": 128,
+      "quote": "they gain 2 minutes of daylight each day after the spring equinox"
+     }
+    ],
+    "why": "Prose against an equation again, but the item asks only for the DIFFERENCE in hourly rate -- $99 against $49 -- so the initial values are distractor material. The comparison is still Lesson 7's."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "activity": "Is It Filling Up or Draining Out?",
+    "page": 122,
+    "quote": "Which tank started out with more water?",
+    "confidence": "high",
+    "why": "Company A is described ($180 set-up plus $49 per hour), Company B is the equation c = 99h + 150, and the item compares the per-hour charges. Same structure as the two tanks: one function as an equation, one as a description, compare the rate of change and the initial value."
+   }
+  },
+  "g8-2026-037": {
+   "standard": "NY-8.F.3",
+   "pValue": 0.49,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 32,
+   "stem": "Which table of values represents <span class=\"math\">y</span> as a linear function of <span class=\"math\">x</span> ?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "A pairs 2 with 4, 4 with 16, 6 with 36 and 8 with 64. B pairs 2 with 8, 4 with 64, 6 with 216 and 8 with 512. C pairs 2 with 8, 4 with 32, 6 with 72 and 8 with 128. D pairs 2 with 6, 4 with 10, 6 with 14 and 8 with 18."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 8,
+    "lessonTitle": "Linear Functions",
+    "evidence": [
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "introduces",
+      "activity": "Comparing Volumes",
+      "page": 105,
+      "quote": "The volume of a sphere is a function of its radius"
+     },
+     {
+      "lesson": 8,
+      "lessonTitle": "Linear Functions",
+      "role": "practises",
+      "activity": "Is It Filling Up or Draining Out?",
+      "page": 122,
+      "quote": "There are four tanks of water."
+     },
+     {
+      "lesson": 7,
+      "lessonTitle": "Connecting Representations of Functions",
+      "role": "assessed",
+      "activity": "Comparing Different Areas",
+      "page": 110,
+      "quote": "The table shows the area of a square for specific side lengths."
+     }
+    ],
+    "why": "Classifying linear against nonlinear, the fifth item on this standard to do so."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "Candlelight",
+    "page": 132,
+    "quote": "If yes, is it a linear function? Explain your thinking.",
+    "confidence": "medium",
+    "why": "Four tables; only D (2 with 6, 4 with 10, 6 with 14, 8 with 18) has a constant rate of change. Same skill and same activity as g8-2024-033 -- judging linearity from tabulated values. The other three tables are squaring, cubing and 2x^2 patterns, which the unit only meets as nonlinear volume functions in Lessons 17-18."
+   }
+  },
+  "g8-2026-044": {
+   "standard": "NY-8.F.5",
+   "pValue": 0.35,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 36,
+   "stem": "Sean is riding his bike along a trail. His distance from the start of the trail is a function of time, as shown in the graph below. Which segments of the graph show a period of time, if any, where Sean was resting and not riding his bike along the trail?",
+   "choices": [],
+   "figures": [
+    "Segment A rises from the origin to 15 miles at 1 hour. Segment B is flat at 15 miles until 2 hours. Segment C rises to 40 miles at 3 hours. Segment D is flat at 40 miles until 4 hours. Segment E falls to 0 miles at 5 hours."
+   ],
+   "firstPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 10,
+    "lessonTitle": "Piecewise Linear Functions",
+    "evidence": [
+     {
+      "lesson": 5,
+      "lessonTitle": "More Graphs of Functions",
+      "role": "introduces",
+      "activity": "Time and Temperature",
+      "page": 79,
+      "quote": "Approximately when is the temperature highest"
+     },
+     {
+      "lesson": 10,
+      "lessonTitle": "Piecewise Linear Functions",
+      "role": "practises",
+      "activity": "Dog Bath",
+      "page": 147,
+      "quote": "The graph shows the amount of water in the tub, in gallons"
+     },
+     {
+      "lesson": 10,
+      "lessonTitle": "Piecewise Linear Functions",
+      "role": "assessed",
+      "activity": "Lin’s Phone Charge",
+      "page": 153,
+      "quote": "When did she start using her phone?"
+     }
+    ],
+    "why": "Distance against time with four labelled segments, asking which show Sean resting. Resting is the flat segment, so this is g8-2025-044's reading with the segments named for the student. At p = 0.35 it is harder than its twin, which is worth noticing: naming the segments did not make it easier."
+   },
+   "secondPass": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 6,
+    "lessonTitle": "Even More Graphs of Functions",
+    "activity": "Sketching a Story about a Boy and a Bike",
+    "page": 93,
+    "quote": "rode to his friend’s house and stayed there for a while",
+    "confidence": "medium",
+    "why": "A distance-time graph in five segments; which segments show Sean resting? The answer is the flat ones, and this activity is where the curriculum ties 'stayed there for a while' to a flat piece of a distance graph -- students build Noah's bike graph from a story containing exactly that stop. The item runs the translation the other way, graph to story, which Lesson 10's Practice Problem 1 ('describe what a person watching the car would see') does."
+   }
+  }
+ }
+}
