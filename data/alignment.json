@@ -14063,6 +14063,3903 @@
    ],
    "why": "The item asks for the value of 2^5 * 10^0 * 3^-2, which needs exactly two facts about bases that are not 10: that a zero exponent gives 1, and that a negative exponent gives a fraction rather than a negative number (the key is 32/9; two distractors are negative). This activity asks both, in the item's own bases: it builds the table of powers of 2, then asks 'What is the value of 2^0?' and how 5^-3 and 3^-4 would be written as fractions. The first reading's Lesson 5, Negative Exponents With Powers of 10, is the runner-up because its table is where the meaning of a negative exponent is first built and the same misconception is headed off, but every value in it is a power of 10; this lesson is the one that carries that reasoning to bases 2, 3 and 5. Beware the data defect here: superscripts are stripped from the lesson index, so the task statement reads '5' and '3' where the workbook prints 5^-3 and 3^-4.",
    "settledBy": "blind second pass, settled by re-reading the lesson"
+  },
+  "g6-2023-003": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 16,
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "candidateLessons": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "assessed",
+     "activity": "Kitchen Cleaner",
+     "page": 218,
+     "quote": "Select all equations that can represent the relationship between b , cups of"
+    }
+   ],
+   "why": "The item asks which equation relates cookies c to days d at 450 per day. The Cool-down gives a constant-ratio table and asks which equations can represent the relationship between the two variables, with the reversed-variable distractors the item also uses.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+  },
+  "g6-2023-012": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 7,
+   "lessonTitle": "Write Expressions with Variables",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "assessed",
+     "activity": "Growth",
+     "page": 100,
+     "quote": "Circle the expression that represents the number of inches the plant grew"
+    }
+   ],
+   "why": "The item asks which expression is \"14 less than the product of 8 and y,\" where the trap is writing 14 − 8y. The Cool-down makes students choose between x − 8 and 8 − x for a \"grew by\" comparison — the same order-of-subtraction decision.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2a"
+  },
+  "g6-2023-014": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "practises",
+     "activity": "Row Game: Expression Explosion",
+     "page": 186,
+     "quote": "students use the order of operations to find the value of expressions"
+    }
+   ],
+   "why": "The item evaluates (3(7−2)+5^3)/2, which needs the parentheses, then the exponent, then the division. The Row Game is a column of numeric expressions with exponents that students evaluate by the order of operations, which is exactly the demand.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2023-018": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "practises",
+     "activity": "What’s the Value?",
+     "page": 195,
+     "quote": "using mathematical vocabulary related to expressions, such as “coefficient,” “variable,” and “exponent.”"
+    }
+   ],
+   "why": "The item asks for the coefficient of the variable in 5z + (9 ÷ 3). This is the only grade 6 activity in which students are expected to use the word \"coefficient\"; no grade 6 task actually asks a student to name the coefficient of an expression.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2b"
+  },
+  "g6-2023-022": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "practises",
+     "activity": "What’s the Value?",
+     "page": 195,
+     "quote": "They evaluate expressions when given a value for the variable."
+    }
+   ],
+   "why": "The item evaluates 5b + c^3 at b = 7, c = 4. The activity is a list of expressions with exponents and coefficients to evaluate at a given value of the variable.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2c"
+  },
+  "g6-2023-024": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 11,
+   "lessonTitle": "The Distributive Property, Part 3",
+   "candidateLessons": [
+    10,
+    11
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "The Distributive Property, Part 3",
+     "role": "practises",
+     "activity": "Writing Equivalent Expressions Using the Distributive Property",
+     "page": 142,
+     "quote": "students generate equivalent algebraic expressions using the distributive property"
+    }
+   ],
+   "why": "The item needs 8(2a + 3b) − 2b = 16a + 22b: distribute over two unlike terms, then collect the b terms. The distributing half is this activity (y(3x + 4z) is a row); the collecting half is not asked anywhere in grade 6. Optional lesson; non-optional runner-up is Lesson 10, \"Areas of Partitioned Rectangles.\"",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.3",
+   "evidenceIsOptional": true
+  },
+  "g6-2023-030": {
+   "course": "Imagine IM New York, Grade 6",
+   "status": "candidates-only",
+   "draft": true,
+   "edition": "Imagine IM New York, 6-8",
+   "candidateLessons": [
+    8,
+    9,
+    10
+   ],
+   "unitBasis": "course guide table only",
+   "why": "This item sits on an image-only page of the released PDF, so it has no text layer, no reviewed transcription and no stem. With nothing to read, no lesson is guessed: the candidate lessons are the ones the guide's table names for NY-6.EE.8, and nothing narrows them."
+  },
+  "g6-2023-035": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 11,
+   "lessonTitle": "The Distributive Property, Part 3",
+   "candidateLessons": [
+    10,
+    11
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "The Distributive Property, Part 3",
+     "role": "practises",
+     "activity": "Writing Equivalent Expressions Using the Distributive Property",
+     "page": 142,
+     "quote": "use the distributive property to write an equivalent expression"
+    }
+   ],
+   "why": "The item expands 4(3m + 1). The activity’s table contains 3(2x + 1) as a row to be rewritten as a sum — the same task with the same shape. Lesson 11 is marked optional in the pacing guide, so a class may never have done it; the non-optional runner-up is Lesson 10, Activity \"Areas of Partitioned Rectangles,\" where the same product-and-sum pair is written for a rectangle’s area.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.3",
+   "evidenceIsOptional": true
+  },
+  "g6-2023-040": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 10,
+   "lessonTitle": "The Distributive Property, Part 2",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 10,
+     "lessonTitle": "The Distributive Property, Part 2",
+     "role": "practises",
+     "activity": "Partitioned Rectangles When Lengths Are Unknown",
+     "page": 129,
+     "quote": "students use expressions with variables to represent lengths of sides and areas"
+    }
+   ],
+   "why": "The item composes a square, a 3x-by-x rectangle and a square into one rectangle and solves 12x = 60 from its perimeter. Composing rectangles with an unknown side and writing expressions for the composite is this activity; writing a perimeter expression and solving back for the unknown is not asked anywhere in grade 6, which fits the item’s p-value of 0.13.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2023-043": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "practises",
+     "activity": "Row Game: Expression Explosion",
+     "page": 186,
+     "quote": "use the order of operations to find the value of expressions with exponents"
+    }
+   ],
+   "why": "The item evaluates 7 × (5−3)^3 − 20 ÷ 4. The Row Game rows have the same shape — a product with an exponent plus or minus a second term — and are worked by the order of operations.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2023-046": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 17,
+   "lessonTitle": "Two Related Quantities, Part 2",
+   "candidateLessons": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Two Related Quantities, Part 2",
+     "role": "assessed",
+     "activity": "Interpret the Point",
+     "page": 230,
+     "quote": "What point on the graph would represent the time it takes the robot"
+    }
+   ],
+   "why": "The item reads a graph of chores against money, asks for the relationship and the dependent and independent variables, then for the earnings at 9 chores. The Cool-down asks which variable is independent, what a plotted point means, and what point would represent a value off the plotted range.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+  },
+  "g6-2024-002": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 7,
+   "lessonTitle": "Write Expressions with Variables",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "practises",
+     "activity": "Building Expressions",
+     "page": 97,
+     "quote": "Write expressions to show Clare’s age when her cousin is at different ages."
+    }
+   ],
+   "why": "The item asks for \"5 more than the product of 2 and y\" (2y + 5). This activity builds exactly those two pieces: x + 5 for \"5 years older\" and 3n for \"3 times as many.\"",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2a"
+  },
+  "g6-2024-003": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "B",
+   "sectionTitle": "Inequalities",
+   "primaryLesson": 9,
+   "lessonTitle": "Solutions of Inequalities",
+   "candidateLessons": [
+    9,
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "introduces",
+     "activity": "Amusement Park Rides",
+     "page": 113,
+     "quote": "a number that can be used in place of the variable to make"
+    }
+   ],
+   "why": "The item asks which value of b makes 3b > 12 true. This is the activity that defines a solution to an inequality as a value that makes it true and has students decide whether given heights qualify.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.5"
+  },
+  "g6-2024-011": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "B",
+   "sectionTitle": "Inequalities",
+   "primaryLesson": 9,
+   "lessonTitle": "Solutions of Inequalities",
+   "candidateLessons": [
+    8,
+    9,
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "assessed",
+     "activity": "Solutions of Inequalities",
+     "page": 119,
+     "quote": "Draw a number line to represent this inequality."
+    }
+   ],
+   "why": "The item goes the other way — given x ≥ −3, pick its graph. The Cool-down asks students to draw the number line for a given inequality, though it uses a strict inequality, so the closed circle for ≥ has to come from Lesson 8.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.8"
+  },
+  "g6-2024-014": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "introduces",
+     "activity": "Calculating Surface Area",
+     "page": 185,
+     "quote": "students extend their understanding of the order of operations to include expressions with"
+    }
+   ],
+   "why": "The item is 8^2 ÷ 4 × 2^3: the powers must be found before the multiplication and division. Jada and Noah argue over exactly that in 6 · 10^2, one squaring first and one multiplying first.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2024-022": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 7,
+   "lessonTitle": "Write Expressions with Variables",
+   "candidateLessons": [
+    2,
+    3,
+    5,
+    6,
+    7
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "practises",
+     "activity": "Building Expressions",
+     "page": 97,
+     "quote": "Write expressions that can show how many comic books Diego has for different"
+    }
+   ],
+   "why": "The item wants 3s − 4 for \"4 fewer than 3 times the number of stamps Tammy has.\" This activity writes 3n for \"3 times as many comic books\" and x + 5 for an age comparison; the item combines the two steps.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.6"
+  },
+  "g6-2024-036": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "A",
+   "sectionTitle": "Equations in One Variable",
+   "primaryLesson": 4,
+   "lessonTitle": "Practice Solving Equations",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Practice Solving Equations",
+     "role": "practises",
+     "activity": "Row Game: Solving Equations Practice",
+     "page": 61,
+     "quote": "The purpose of this activity is for students to practice solving equations."
+    }
+   ],
+   "why": "The item is 25h = 62.50, a px = q equation with a non-whole-number solution. The Row Game columns include 6x = 45 and 8x = 60, which are the same equation type with the same kind of answer.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2024-038": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "A",
+   "sectionTitle": "Equations in One Variable",
+   "primaryLesson": 4,
+   "lessonTitle": "Practice Solving Equations",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Practice Solving Equations",
+     "role": "assessed",
+     "activity": "Solve It!",
+     "page": 64,
+     "quote": "Solve each equation. Explain or show your reasoning."
+    }
+   ],
+   "why": "The item asks for the value of n making n/8 = 17 true. The Cool-down is three equations of the forms x + p = q and px = q to be solved, including a fractional-coefficient one.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2024-041": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 10,
+   "lessonTitle": "The Distributive Property, Part 2",
+   "candidateLessons": [
+    8,
+    10,
+    11
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 10,
+     "lessonTitle": "The Distributive Property, Part 2",
+     "role": "assessed",
+     "activity": "Which Expressions Represent Area?",
+     "page": 134,
+     "quote": "Select all the expressions that represent the large rectangle’s total area."
+    }
+   ],
+   "why": "The item asks why 6 + 8x is not equivalent to 3(3 + 5x) and wants a correct equivalent. This Cool-down asks students to separate correct distributions (5(b + 3), 5b + 15) from a plausible wrong one (3(5 + b)) for the same rectangle.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.4"
+  },
+  "g6-2024-042": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 16,
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "candidateLessons": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "introduces",
+     "activity": "Painting the Set",
+     "page": 213,
+     "quote": "the terms “dependent variable” and “independent variable” are introduced to describe the"
+    }
+   ],
+   "why": "The item gives c = 2.75t and asks for the relationship and which variable is independent. This activity is where the two terms are introduced, on a relationship of exactly this form written as an equation in two variables.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+  },
+  "g6-2025-005": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "assessed",
+     "activity": "Expressions with Exponents",
+     "page": 201,
+     "quote": "Find the value of each expression for the given value of x"
+    }
+   ],
+   "why": "The item evaluates c^3 + 4h − 7 at c = 2, h = 3. The Cool-down is the same task — 4 + x^2, 4^x, 4x at a given value — and is where the curriculum tests it.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2c"
+  },
+  "g6-2025-019": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "practises",
+     "activity": "Row Game: Expression Explosion",
+     "page": 186,
+     "quote": "Find the value of the expressions in one of the columns."
+    }
+   ],
+   "why": "The item evaluates (3^2 + 5·3)/2^3, with exponents in both numerator and denominator. The Row Game asks for the value of exactly this kind of multi-operation expression with exponents.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2025-023": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "practises",
+     "activity": "What’s the Value?",
+     "page": 195,
+     "quote": "when considering the difference between expressions like 3 x and 3x"
+    }
+   ],
+   "why": "The item asks for the coefficient in 2x^3, where the distractor is the exponent 3. The activity is built on telling 3^x from 3x and uses \"coefficient\" and \"exponent\" as the words for that difference.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2b"
+  },
+  "g6-2025-027": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "B",
+   "sectionTitle": "Inequalities",
+   "primaryLesson": 9,
+   "lessonTitle": "Solutions of Inequalities",
+   "candidateLessons": [
+    9,
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "assessed",
+     "activity": "Solutions of Inequalities",
+     "page": 119,
+     "quote": "Select all numbers that are solutions to the inequality w < 1 ."
+    }
+   ],
+   "why": "The item asks which number is NOT a solution to 3w ≥ 12. The Cool-down is the same sorting of candidate values into solutions and non-solutions of a given inequality.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.5"
+  },
+  "g6-2025-030": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 7,
+   "lessonTitle": "Write Expressions with Variables",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "practises",
+     "activity": "Scores and Stickers",
+     "page": 95,
+     "quote": "Another esport player scored p fewer points than Priya. Write an expression"
+    }
+   ],
+   "why": "The item wants \"the sum of fifteen and five less than twice a number n\" — 15 + (2n − 5). This activity writes a comparison expression with a variable (473 − p), but nothing in grade 6 nests two operations inside one phrase, which is why confidence is low and the item’s p-value is 0.26.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2a"
+  },
+  "g6-2025-038": {
+   "course": "Imagine IM New York, Grade 6",
+   "status": "candidates-only",
+   "draft": true,
+   "edition": "Imagine IM New York, 6-8",
+   "candidateLessons": [
+    8,
+    9,
+    10
+   ],
+   "unitBasis": "course guide table only",
+   "why": "This item sits on an image-only page of the released PDF, so it has no text layer, no reviewed transcription and no stem. With nothing to read, no lesson is guessed: the candidate lessons are the ones the guide's table names for NY-6.EE.8, and nothing narrows them."
+  },
+  "g6-2025-040": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "assessed",
+     "activity": "Calculating Volumes",
+     "page": 189,
+     "quote": "Jada says the total volume is 27,000 cubic inches. Noah says it is"
+    }
+   ],
+   "why": "The item is 4(3 + 5^2) − 6, whose trap is adding 3 + 5 before squaring. The Cool-down is that error exactly: Jada computes (20 + 10)^3 while Noah computes 20 + 10^3.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2025-041": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 16,
+   "lessonTitle": "Two Related Quantities, Part 1",
+   "candidateLessons": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "practises",
+     "activity": "Painting the Set",
+     "page": 213,
+     "quote": "allows students to interpret and write equations with variables"
+    }
+   ],
+   "why": "The item gives a table of blocks of cheese against dollars and asks for an equation for t in terms of b plus the dependent and independent variables. This activity moves from a table of equivalent ratios to equations in two variables and names the two kinds of variable.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+  },
+  "g6-2025-046": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "A",
+   "sectionTitle": "Equations in One Variable",
+   "primaryLesson": 5,
+   "lessonTitle": "Represent Situations with Equations",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Represent Situations with Equations",
+     "role": "practises",
+     "activity": "Choosing Equations to Match Situations",
+     "page": 70,
+     "quote": "practice matching equations to situations and then solving those equations using their choice"
+    }
+   ],
+   "why": "The item asks students to write and solve an equation twice — 9 · 2x = 54 for the rug and 7p = 784 for the price. This activity is write-or-choose-then-solve for situations of exactly the px = q shape (the solar-panel question is 1.5p = 100).",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2026-004": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "practises",
+     "activity": "What’s the Value?",
+     "page": 195,
+     "quote": "they also deepen their understanding of the order of operations"
+    }
+   ],
+   "why": "The item evaluates 2(12 − x) + y^2 at x = 7, y = 3, so a substitution has to be followed through parentheses and a power. This activity is where substitution and the order of operations are worked together.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2c"
+  },
+  "g6-2026-006": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "E",
+   "sectionTitle": "Squares and Cubes",
+   "primaryLesson": 18,
+   "lessonTitle": "Surface Area of a Cube",
+   "candidateLessons": [],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 18,
+     "lessonTitle": "Surface Area of a Cube",
+     "role": "practises",
+     "activity": "Every Cube in the Whole World",
+     "page": 305,
+     "quote": "students develop the formulas for the surface area and the volume of a"
+    }
+   ],
+   "why": "The item adds six side lengths, two of them containing x, to get 2x + 18 for a perimeter. This activity is the one place students build an expression for a figure’s total measurement from its parts with a variable edge length and collect like terms; no grade 6 activity writes a perimeter expression with variables.",
+   "unitBasis": "the item text alone -- the guide's table never cites NY-6.EE.6"
+  },
+  "g6-2026-014": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "E",
+   "sectionTitle": "Let’s Put It to Work",
+   "primaryLesson": 19,
+   "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+   "candidateLessons": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 19,
+     "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+     "role": "practises",
+     "activity": "Getting to Know an Equation",
+     "page": 250,
+     "quote": "each student focuses on just one of those equations to learn about the"
+    }
+   ],
+   "why": "The item wants c = 15p + 5 — a rate plus a one-time fee. Every two-variable equation in grade 6, here and in Lessons 16–18, uses a single operation (E = 6s, G = J + 13); nothing in the course combines a rate with a constant, so this placement covers the interpreting-an-equation-for-a-situation demand only.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+  },
+  "g6-2026-019": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 11,
+   "lessonTitle": "The Distributive Property, Part 3",
+   "candidateLessons": [
+    10,
+    11
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "The Distributive Property, Part 3",
+     "role": "practises",
+     "activity": "Writing Equivalent Expressions Using the Distributive Property",
+     "page": 142,
+     "quote": "They practice writing a sum or difference when given a product"
+    }
+   ],
+   "why": "The item needs 5(6m + 3) + 4m = 34m + 15, again distribute-then-collect. Only the distributing step is practised here, and in an optional lesson; non-optional runner-up is Lesson 10, \"Areas of Partitioned Rectangles.\"",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.3",
+   "evidenceIsOptional": true
+  },
+  "g6-2026-023": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "B",
+   "sectionTitle": "Inequalities",
+   "primaryLesson": 9,
+   "lessonTitle": "Solutions of Inequalities",
+   "candidateLessons": [
+    8,
+    9,
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "practises",
+     "activity": "Amusement Park Rides",
+     "page": 113,
+     "quote": "represent each height requirement on a number line"
+    }
+   ],
+   "why": "The item asks which number line shows \"a rider must be at least 48 inches tall.\" The activity is amusement-park height requirements, including a \"58 inches minimum,\" written as inequalities and graphed on number lines.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.8"
+  },
+  "g6-2026-026": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "B",
+   "sectionTitle": "Inequalities",
+   "primaryLesson": 9,
+   "lessonTitle": "Solutions of Inequalities",
+   "candidateLessons": [
+    9,
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Solutions of Inequalities",
+     "role": "practises",
+     "activity": "Amusement Park Rides",
+     "page": 113,
+     "quote": "determining whether a value is a solution to one or more of the"
+    }
+   ],
+   "why": "The item asks which value of k makes k − 16 > 29 true. Deciding whether a particular number satisfies a stated inequality is precisely the reasoning in the ride-height questions.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.5"
+  },
+  "g6-2026-027": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "A",
+   "sectionTitle": "Equations in One Variable",
+   "primaryLesson": 5,
+   "lessonTitle": "Represent Situations with Equations",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Represent Situations with Equations",
+     "role": "introduces",
+     "activity": "Storytime",
+     "page": 69,
+     "quote": "students select an equation with a variable that can represent a situation with"
+    }
+   ],
+   "why": "The item asks which equation determines the number of sugar-cookie boxes, x + 250 = 324. Storytime is three situations against six candidate equations, including the x + 5 = 20 versus x + 20 = 5 confusion the distractors exploit.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2026-030": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 7,
+   "lessonTitle": "Write Expressions with Variables",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Write Expressions with Variables",
+     "role": "practises",
+     "activity": "Scores and Stickers",
+     "page": 95,
+     "quote": "students relate quantities in situations to numerical and variable expressions"
+    }
+   ],
+   "why": "The item wants \"55 less than the sum of 4 and twice a number c\" — (4 + 2c) − 55. The activity practises the \"fewer than\" ordering with a variable, but again only one operation at a time.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2a"
+  },
+  "g6-2026-032": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 11,
+   "lessonTitle": "The Distributive Property, Part 3",
+   "candidateLessons": [
+    8,
+    10,
+    11
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "The Distributive Property, Part 3",
+     "role": "practises",
+     "activity": "Writing Equivalent Expressions Using the Distributive Property",
+     "page": 142,
+     "quote": "a product when given a sum or difference"
+    }
+   ],
+   "why": "The item factors 24x + 18y into 6(4x + 3y). This activity’s table runs in that direction too (4x − 20, 10x − 5 must be written as products). Optional lesson; the non-optional runner-up is Lesson 10, Activity \"Partitioned Rectangles When Lengths Are Unknown,\" where 8 · 5 + 5x is rewritten as the product 5(8 + x).",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.4",
+   "evidenceIsOptional": true
+  },
+  "g6-2026-038": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 15,
+   "lessonTitle": "Equivalent Exponential Expressions",
+   "candidateLessons": [
+    7,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Equivalent Exponential Expressions",
+     "role": "practises",
+     "activity": "What’s the Value?",
+     "page": 195,
+     "quote": "practice using mathematical vocabulary related to expressions, such as “coefficient,”"
+    }
+   ],
+   "why": "The item asks for the coefficient in 6n^5. Same activity, same discrimination between the number in front and the number above; the vocabulary is named in the Activity Synthesis rather than practised in a task.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2b"
+  },
+  "g6-2026-041": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "A",
+   "sectionTitle": "Equations in One Variable",
+   "primaryLesson": 5,
+   "lessonTitle": "Represent Situations with Equations",
+   "candidateLessons": [
+    3,
+    4,
+    5,
+    6,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Represent Situations with Equations",
+     "role": "practises",
+     "activity": "Choosing Equations to Match Situations",
+     "page": 70,
+     "quote": "Kiran scores 223 fewer points in a computer game than Mai."
+    }
+   ],
+   "why": "The item asks students to write and solve an equation for \"Dan has 43 fewer cards than Bella’s 150.\" The activity’s first question is the same sentence with different numbers, with the same competing equations to sort out.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+  },
+  "g6-2026-045": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "C",
+   "sectionTitle": "Expressions With Exponents",
+   "primaryLesson": 14,
+   "lessonTitle": "Evaluating Expressions with Exponents",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Evaluating Expressions with Exponents",
+     "role": "practises",
+     "activity": "Row Game: Expression Explosion",
+     "page": 186,
+     "quote": "Find the value of the expressions in one of the columns."
+    }
+   ],
+   "why": "The item evaluates 3(4^3 − 6^2) + 7(2 + 1)^3 — two groupings, three powers. The Row Game is the only place students are asked to find the values of expressions with exponents at this level of nesting.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.1"
+  },
+  "g6-2023-007": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "D",
+   "sectionTitle": "Surface Area",
+   "primaryLesson": 14,
+   "lessonTitle": "Nets and Surface Area",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Nets and Surface Area",
+     "role": "practises",
+     "activity": "Using Nets to Find Surface Area",
+     "page": 246,
+     "quote": "Find the surface area of each polyhedron. Explain your reasoning clearly."
+    }
+   ],
+   "why": "The item shows the net of a right square pyramid with the base edge and the slant height of each triangular face labelled, and asks for the surface area. This activity hands students nets of polyhedra and asks them to name each solid and find its surface area by adding the areas of the polygons in the net -- exactly the square-plus-four-triangles calculation the item wants. Lesson 13 Activity 1 'Prisms and Pyramids' is where pyramid nets are introduced, but it never asks for an area.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.4"
+  },
+  "g6-2023-015": {
+   "course": "Imagine IM New York, Grade 6",
+   "status": "candidates-only",
+   "draft": true,
+   "edition": "Imagine IM New York, 6-8",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    14,
+    19
+   ],
+   "unitBasis": "course guide table only",
+   "why": "This item sits on an image-only page of the released PDF, so it has no text layer, no reviewed transcription and no stem. With nothing to read, no lesson is guessed: the candidate lessons are the ones the guide's table names for NY-6.G.1, and nothing narrows them."
+  },
+  "g6-2023-033": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "practises",
+     "activity": "Cubes With Fractional Edge Lengths",
+     "page": 233,
+     "quote": "What is the volume, in cubic inches, of the rectangular prism?"
+    }
+   ],
+   "why": "A right rectangular prism drawn with all three edges labelled (8 in by 1 3/4 in by 5/8 in); find the volume in cubic inches. This activity is where students find the volume in cubic inches of a rectangular prism whose edge lengths include fractions, after establishing it by packing with unit-fraction cubes.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2023-037": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 9,
+   "lessonTitle": "Formula for the Area of a Triangle",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Formula for the Area of a Triangle",
+     "role": "assessed",
+     "activity": "Two More Triangles",
+     "page": 167,
+     "quote": "identify a base and a corresponding height. Use them to find the area"
+    }
+   ],
+   "why": "A right triangle with both legs labelled (22 ft and 25 ft) and the right angle marked; find the area. This Cool-down is where the curriculum tests exactly that move -- pick a base, pick the corresponding height, use them to find the area -- and in a right triangle the two legs are that pair.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2023-042": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "B",
+   "sectionTitle": "Meanings of Fraction Division",
+   "primaryLesson": 6,
+   "lessonTitle": "Using Diagrams to Find the Number of Groups",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Using Diagrams to Find the Number of Groups",
+     "role": "practises",
+     "activity": "Finding the Number of Groups",
+     "page": 95,
+     "quote": "How many groups of 1/2 pound are in 2 3/4 pounds?"
+    }
+   ],
+   "why": "8 1/4 cups of cereal, 3/4 cup per serving, how many servings -- a 'how many groups' division with a mixed-number dividend and a non-unit fraction divisor, work shown. This activity's first question is the same sentence with different numbers, and it asks students to write the equation and find the answer with reasoning.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+  },
+  "g6-2023-045": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "practises",
+     "activity": "Fish Tank (Optional)",
+     "page": 236,
+     "quote": "finding the volume of rectangular prisms given the area of the base"
+    }
+   ],
+   "why": "The item gives the base area (42 square feet) and the height (5 3/4 feet) rather than three edges, so it wants V = Bh with a fractional height. This activity's narrative is the one place in the unit that names that form -- 'finding the volume of rectangular prisms given the area of the base of the prism and its height' -- but the activity is optional. The non-optional runner-up is the same lesson's Cool-down 'Storage Box' (p. 238), which gives a base and a height and asks for the volume, then asks for a second method.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2",
+   "evidenceIsOptional": true
+  },
+  "g6-2024-015": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "B",
+   "sectionTitle": "Meanings of Fraction Division",
+   "primaryLesson": 5,
+   "lessonTitle": "How Many Groups? (Part 2)",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "How Many Groups? (Part 2)",
+     "role": "practises",
+     "activity": "Reasoning with Fraction Strips",
+     "page": 76,
+     "quote": "How many 1/8 s are in 1 1/4 ?"
+    }
+   ],
+   "why": "1 1/4 pounds of nuts into 1/8-pound bags, how many bags. This Warm-up asks 'How many 1/8 s are in 1 1/4 ?' -- the item's exact numbers, with the answer 10 -- and the distractor 5/32 is what a student gets by multiplying instead. Lesson 4 'How Many Groups? (Part 1)' also introduces unit-fraction divisors but is an optional lesson.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+  },
+  "g6-2024-020": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 14,
+   "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Fractional Lengths in Triangles and Prisms",
+     "role": "practises",
+     "activity": "Volumes of Cubes and Prisms",
+     "page": 223,
+     "quote": "What is the volume, in cubic inches, of a cube with edge lengths"
+    }
+   ],
+   "why": "A cube with every edge 2 1/2 inches; find the volume in cubic inches. This activity asks precisely that question for a cube with a fractional edge length (1/2 inch), and its Cool-down repeats it for 1/3 inch. Unit 1 Lesson 17 'Squares and Cubes' also cubes an edge length, but only whole-number ones, which is why the item sits in Unit 4.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2024-028": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 11,
+   "lessonTitle": "Polygons",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Polygons",
+     "role": "practises",
+     "activity": "Quadrilateral Strategies",
+     "page": 191,
+     "quote": "Find the area of two quadrilaterals of your choice. Show your reasoning."
+    }
+   ],
+   "why": "An isosceles trapezoid with both parallel sides (10 cm, 16 cm) and the height (15 cm) labelled; find the area. IM never gives a trapezoid formula, so the intended work is decomposition into a rectangle and two triangles -- which is this activity, whose narrative is about finding 'the area of quadrilaterals that are not parallelograms'.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2024-032": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "D",
+   "sectionTitle": "Surface Area",
+   "primaryLesson": 15,
+   "lessonTitle": "More Nets, More Surface Area",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "More Nets, More Surface Area",
+     "role": "assessed",
+     "activity": "Surface Area of a Triangular Prism",
+     "page": 265,
+     "quote": "In this net, the two triangles are right triangles. All quadrilaterals are rectangles."
+    }
+   ],
+   "why": "A skateboard ramp given as the net of a right triangular prism -- two right triangles and three rectangles -- with the surface area asked for. This Cool-down is that task verbatim: a net of right triangles and rectangles, find its surface area. It also asks which polyhedron the net makes, which the item's ramp context supplies.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.4"
+  },
+  "g6-2024-035": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "practises",
+     "activity": "Cubes With Fractional Edge Lengths",
+     "page": 233,
+     "quote": "a rectangular prism that is 3 inches by 1 inch by 1 1/3 inch"
+    }
+   ],
+   "why": "A cereal box given in prose as 8 1/10 by 4 4/5 by 12 1/2 inches; find its volume. The activity's prism is given the same way -- as three edge lengths, one of them fractional -- and asks for the volume in cubic inches.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2024-040": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "A",
+   "sectionTitle": "Reasoning to Find Area",
+   "primaryLesson": 3,
+   "lessonTitle": "Reasoning to Find Area",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Reasoning to Find Area",
+     "role": "assessed",
+     "activity": "Maritime Flag",
+     "page": 69,
+     "quote": "A maritime flag is shown. What is the area of the shaded part"
+    }
+   ],
+   "why": "A rectangular flag with a triangular notch cut out of one side; find the area of the shaded part. The Cool-down of this lesson is a maritime flag with a shaded part and the same question, and the lesson's strategies -- decompose, or enclose and subtract -- are what turn 9 by 5 minus the notch into an answer.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2024-044": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "E",
+   "sectionTitle": "Squares and Cubes",
+   "primaryLesson": 17,
+   "lessonTitle": "Squares and Cubes",
+   "candidateLessons": [],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Squares and Cubes",
+     "role": "introduces",
+     "activity": "Perfect Cubes",
+     "page": 291,
+     "quote": "A cube has a side length of 4 cm. What is its volume?"
+    }
+   ],
+   "why": "A cube built from unit cubes, 4 along each edge; name the perfect cube its volume represents and explain using volume and exponents. This activity introduces the term 'perfect cube' and then asks for the volume of a cube of side length 4 -- the item's own number, 64. The exponent half of the item is Activity 3 'Introducing Exponents' (p. 292) in the same lesson, and the preceding Activity 1 'Building with 32 Cubes' (p. 289, optional) is the one that builds the cube out of snap cubes.",
+   "unitBasis": "item text only: NY-6.G.5 appears nowhere in the guide's standard-to-lesson table for any grade and has no statement in data/standards.json (CCSS 6.G stops at 6.G.4), so there is no table prior. Unit 1 Section E 'Squares and Cubes' was chosen because the item's own words -- perfect cube, volume, exponents -- are that section's vocabulary."
+  },
+  "g6-2025-006": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "B",
+   "sectionTitle": "Meanings of Fraction Division",
+   "primaryLesson": 6,
+   "lessonTitle": "Using Diagrams to Find the Number of Groups",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Using Diagrams to Find the Number of Groups",
+     "role": "assessed",
+     "activity": "How Many in 2?",
+     "page": 99,
+     "quote": "How many 3/4 s are in 2?"
+    }
+   ],
+   "why": "4 1/2 cups of ice cream, 3/4 cup per serving, total number of full servings. The Cool-down of this lesson asks how many 3/4s are in a whole number -- the same divisor, the same question -- and is where the curriculum tests the interpretation.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+  },
+  "g6-2025-013": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "D",
+   "sectionTitle": "Surface Area",
+   "primaryLesson": 14,
+   "lessonTitle": "Nets and Surface Area",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Nets and Surface Area",
+     "role": "practises",
+     "activity": "Using Nets to Find Surface Area",
+     "page": 246,
+     "quote": "Name the polyhedron that each net would form when assembled."
+    }
+   ],
+   "why": "The item gives the net of a right rectangular prism with only some faces dimensioned (2 by 2 and 5 tall) and asks for surface area, so the student has to work out which faces the unlabelled rectangles are before adding. That is this activity's work: name the solid the net makes, then find its surface area from the polygons in the net.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.4"
+  },
+  "g6-2025-017": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 11,
+   "lessonTitle": "Polygons",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Polygons",
+     "role": "practises",
+     "activity": "Pinwheel (Optional)",
+     "page": 195,
+     "quote": "Decompose the pinwheel into triangles and find the areas"
+    }
+   ],
+   "why": "A regular hexagon drawn as six equilateral triangles from the centre, side 5 cm and the height from centre to side 4.3 cm; the distractors are one triangle (10.75) and two (21.5), so the item is 'find one triangle's area, then multiply by six'. This is the only activity in the unit that asks for the area of a polygon that is not a quadrilateral, and its narrative watches for students who decompose it into triangles -- but it is optional. The non-optional runner-up is Lesson 11 Activity 2 'Quadrilateral Strategies' (p. 191), which does the same decomposing but only on quadrilaterals.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1",
+   "evidenceIsOptional": true
+  },
+  "g6-2025-033": {
+   "course": "Imagine IM New York, Grade 6",
+   "status": "no-lesson-found",
+   "draft": true,
+   "edition": "Imagine IM New York, 6-8",
+   "why": "The item gives two recursive rules ('each x is 3 more than the one before', 'each y is 2 more than the one before'), starts at (1,1), and asks which graph shows the resulting ordered pairs. NY-5.OA.3 is a grade 5 standard appearing post-test on the grade 6 paper, and there is no grade 5 curriculum in this repository, so the home-grade rule has no grade to search. Nothing in grade 6 asks students to generate two number patterns from rules and graph the corresponding terms: Unit 7 Section C is plotting and interpreting given points (Lesson 12 Activity 1 'Axes Drawing Decisions' hands students the coordinates outright), and Unit 6 Section D builds tables and graphs from a context and an equation, never from a pair of 'start at, add' rules. Unit 6 Lesson 18's Cool-down 'Table, Equation, and Graph' (p. 243) is the nearest thing -- plot the ordered pairs from a table -- but it supplies the table rather than asking students to generate it, so it does not ask what the item asks."
+  },
+  "g6-2025-034": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "assessed",
+     "activity": "Storage Box",
+     "page": 238,
+     "quote": "Find the volume of the box in cubic inches. Show your reasoning."
+    }
+   ],
+   "why": "A gift box 7 3/5 by 5 4/5 by 2 1/2 centimetres; find the volume. The Cool-down of this lesson is a storage box given as a base measuring 3 by 4 inches and a height of 1 1/2 inches, with the volume asked for -- the curriculum testing the same computation on a prism with a fractional edge.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2025-036": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 11,
+   "lessonTitle": "Polygons",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Polygons",
+     "role": "practises",
+     "activity": "Quadrilateral Strategies",
+     "page": 191,
+     "quote": "decompose the quadrilateral into parallelograms and triangles to find the area"
+    }
+   ],
+   "why": "A parallelogram with part of it shaded; find the area of the shaded part. Whatever the shaded piece is, the work is to decompose the parallelogram and account for the unshaded corner, which is this activity. Confidence is low because the figure description does not reproduce the answer key: 2.4 cm across by 3 cm high is 7.2, not the keyed 5.4 (5.4 is a trapezoid with parallel sides 2.4 and 1.2 and height 3, or a triangle with base 3.6 and height 3), so the exact decomposition cannot be settled from the data in this repository.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2025-042": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "D",
+   "sectionTitle": "Surface Area",
+   "primaryLesson": 14,
+   "lessonTitle": "Nets and Surface Area",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Nets and Surface Area",
+     "role": "assessed",
+     "activity": "Unfolded",
+     "page": 251,
+     "quote": "Find the surface area (in square units) of the polyhedron. Show your reasoning."
+    }
+   ],
+   "why": "Same square-pyramid net, but as a 2-credit constructed response that says 'Show your work'. This Cool-down is where the curriculum itself tests the skill: a net is given, the student names the polyhedron and finds its surface area, showing reasoning. Lesson 14 Activity 1 'Using Nets to Find Surface Area' (p. 246) is the activity that teaches it.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.4"
+  },
+  "g6-2025-043": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 13,
+   "lessonTitle": "Rectangles with Fractional Side Lengths",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Rectangles with Fractional Side Lengths",
+     "role": "practises",
+     "activity": "How Many Would it Take?",
+     "page": 211,
+     "quote": "Find the length of the tray in inches. Show your reasoning."
+    }
+   ],
+   "why": "A table top with width 3 1/3 feet and area 21 2/3 square feet; find the length, work shown. This activity opens with a tray of width 11 1/4 inches and area 50 5/8 square inches and asks for its length -- the same missing-side-from-area division, and the only place in the unit that asks it of a rectangle. (Activities 1 and 2 of this lesson are optional; this one is not.)",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+  },
+  "g6-2026-009": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "C",
+   "sectionTitle": "Algorithm for Fraction Division",
+   "primaryLesson": 10,
+   "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 10,
+     "lessonTitle": "Dividing by Unit and Non-Unit Fractions",
+     "role": "practises",
+     "activity": "Dividing by Unit Fractions",
+     "page": 163,
+     "quote": "how to find how many halves, thirds, fourths, or sixths were in 6 wholes"
+    }
+   ],
+   "why": "2 1/2 cakes at 1/12 of a cake per serving, how many servings -- dividing by a unit fraction, and the answer (30) is too large to count out on a diagram. This activity is where students generalise from counting halves, thirds and sixths in a whole number to seeing that dividing by 1/b multiplies by b, which is the move the item rewards.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+  },
+  "g6-2026-011": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "practises",
+     "activity": "Cubes With Fractional Edge Lengths",
+     "page": 233,
+     "quote": "What is the volume, in cubic inches, of the rectangular prism? Explain or show"
+    }
+   ],
+   "why": "Storage boxes 3 2/3 by 3 1/2 by 6 inches; find the volume of each. Same activity. Lesson 15 Activity 2 'Fish Tank' (p. 236) is an even closer echo -- a tank 10 by 8 1/4 by 6 feet, 'What is the volume of the tank in cubic feet?' -- but it is optional, so the non-optional Activity 1 is cited instead.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2026-016": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "D",
+   "sectionTitle": "Surface Area",
+   "primaryLesson": 15,
+   "lessonTitle": "More Nets, More Surface Area",
+   "candidateLessons": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "More Nets, More Surface Area",
+     "role": "assessed",
+     "activity": "Surface Area of a Triangular Prism",
+     "page": 265,
+     "quote": "What is its surface area in square units? Show your reasoning."
+    }
+   ],
+   "why": "Net of a right triangular prism (three rectangles in a row, a triangle above and below the middle one), surface area asked. The Cool-down of this lesson is the same net and the same question. Lesson 15 Activity 1 'Building Prisms and Pyramids' runs the other direction -- solid first, then draw the net -- so it is a weaker match for an item that hands the net over.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.4"
+  },
+  "g6-2026-022": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "E",
+   "sectionTitle": "Squares and Cubes",
+   "primaryLesson": 17,
+   "lessonTitle": "Squares and Cubes",
+   "candidateLessons": [],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Squares and Cubes",
+     "role": "practises",
+     "activity": "Introducing Exponents",
+     "page": 292,
+     "quote": "A cube has edge length 5 in. Use an exponent to express its volume."
+    }
+   ],
+   "why": "A model of 5 layers of 5 rows of 5 unit cubes; which perfect cube does it represent (125). This activity asks for the volume of a cube of edge length 5 expressed with an exponent -- the item's number and its two ideas, volume and exponent notation. Activity 2 'Perfect Cubes' (p. 291) in the same lesson supplies the term itself. Unit 6's exponent lessons (Lessons 12-15, 'Meaning of Exponents' onward) were read and rejected: they evaluate and compare exponential expressions but never tie one to a cube built from unit cubes.",
+   "unitBasis": "item text only: the guide's standard-to-lesson table never cites NY-6.G.5, in any grade, and the standard has no statement in data/standards.json, so the placement comes from the item's wording -- a unit-cube model, a perfect cube, volume and exponents -- against Unit 1 Section E 'Squares and Cubes'."
+  },
+  "g6-2026-029": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 9,
+   "lessonTitle": "Formula for the Area of a Triangle",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Formula for the Area of a Triangle",
+     "role": "practises",
+     "activity": "Applying the Formula for Area of Triangles",
+     "page": 163,
+     "quote": "circle a base measurement that you can use to find the area"
+    }
+   ],
+   "why": "The fabric is a parallelogram cut by a diagonal into two sails; the shaded sail has base 8 m and height 6 m, and the slanted side of 10 m is a distractor (the wrong choices are 30, 48 and 60). This activity's whole point is that each triangle is 'labeled with two or three measurements' and students must first decide which lengths can be used before applying 1/2 b h. Lesson 8's Warm-up 'Composing Parallelograms' (p. 141, 'The triangle covers half of the region of each parallelogram') is the runner-up and explains the halving the diagram invites.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2026-035": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "D",
+   "sectionTitle": "Fractions in Lengths, Areas, and Volumes",
+   "primaryLesson": 15,
+   "lessonTitle": "Volume of Prisms",
+   "candidateLessons": [
+    14,
+    15,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Volume of Prisms",
+     "role": "practises",
+     "activity": "Cubes With Fractional Edge Lengths",
+     "page": 233,
+     "quote": "What is the volume, in cubic inches, of the rectangular prism? Explain or show"
+    }
+   ],
+   "why": "A right rectangular prism with three mixed-number edges (9 1/3 by 2 1/2 by 5 1/4), volume in cubic inches. Same activity: a prism with a fractional edge length, volume asked in cubic inches. The item is harder only in that all three factors are mixed numbers.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.G.2"
+  },
+  "g6-2026-042": {
+   "course": "Imagine IM New York, Grade 6",
+   "status": "no-lesson-found",
+   "draft": true,
+   "edition": "Imagine IM New York, 6-8",
+   "why": "The item gives two rules ('x: start at 2, add 2' and 'y: start at 4, add 4'), asks for the first five numbers of each pattern and how the corresponding values relate (each y is twice the matching x). Same situation: a grade 5 standard, post-test, with no grade 5 curriculum to search. The closest grade 6 activity is the Warm-up 'What's the Relationship?' in Unit 6 Lesson 16 'Two Related Quantities, Part 1' (p. 211), which gives a table of two people's ages and says 'Describe the relationship between the ages of the two students in two ways' -- but the table is given, the relationship is additive, and students are never asked to generate two patterns from recursive rules. Stretching it to cover this item would be the topical-similarity mistake the project's rules forbid, so the honest entry is no-lesson-found."
+  },
+  "g6-2026-043": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 1,
+   "unitTitle": "Area and Surface Area",
+   "sectionLetter": "C",
+   "sectionTitle": "Triangles and Other Polygons",
+   "primaryLesson": 11,
+   "lessonTitle": "Polygons",
+   "candidateLessons": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Polygons",
+     "role": "practises",
+     "activity": "Quadrilateral Strategies",
+     "page": 191,
+     "quote": "enclose the figure in a rectangle and subtract the area of the extra pieces"
+    }
+   ],
+   "why": "A right trapezoid (two right angles marked; parallel sides 11.5 cm and 15.2 cm, the 8.8 cm side perpendicular to both) with the area asked for and work shown. Again a non-parallelogram quadrilateral, handled by decomposing into a rectangle and a triangle or by enclosing and subtracting -- both strategies named in this activity.",
+   "unitBasis": "course guide table; grade 6 Unit 1 is where the guide teaches NY-6.G.1"
+  },
+  "g6-2026-046": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 4,
+   "unitTitle": "Dividing Fractions",
+   "sectionLetter": "E",
+   "sectionTitle": "Let’s Put It to Work",
+   "primaryLesson": 16,
+   "lessonTitle": "Solving Problems Involving Fractions",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Solving Problems Involving Fractions",
+     "role": "practises",
+     "activity": "Making Ornaments",
+     "page": 251,
+     "quote": "how many whole batches of ornaments can they make? Explain your reasoning."
+    }
+   ],
+   "why": "4 3/4 cups of dried bananas at 1/3 cup per batch, maximum number of FULL batches -- 4 3/4 divided by 1/3 is 14 1/4, and the item wants 14. Discarding the remainder is the distinctive demand, and this activity is the one that makes it: its narrative says 'The question asks for the whole-number of batches that can be made with available ingredients.' Lesson 16 is an optional lesson, though. The non-optional runner-up is Lesson 6 Activity 2 'Finding the Number of Groups' (p. 95), which sets up the division but never asks students to drop a partial group.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1",
+   "evidenceIsOptional": true
+  },
+  "g6-2023-002": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 2,
+   "lessonTitle": "Points on the Number Line",
+   "candidateLessons": [
+    1,
+    2,
+    4,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "introduces",
+     "activity": "A Point on the Number Line",
+     "page": 38,
+     "quote": "prime students to locate negative fractions on a number line"
+    }
+   ],
+   "why": "The item plots P, Q, R, S between -2 and 2 and asks which one is -1 1/3, so the work is placing a negative mixed number between two integer landmarks. This Warm-up asks which number could be represented by a labeled point and, per its narrative, exists to prime students to locate negative fractions relative to landmarks on the number line.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.6c"
+  },
+  "g6-2023-013": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "D",
+   "sectionTitle": "Common Factors and Common Multiples",
+   "primaryLesson": 17,
+   "lessonTitle": "Common Multiples",
+   "candidateLessons": [
+    16,
+    17,
+    18
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Common Multiples",
+     "role": "assessed",
+     "activity": "In Your Own Words Again",
+     "page": 210,
+     "quote": "What is the least common multiple of 6 and 9?"
+    }
+   ],
+   "why": "The item asks for the least common multiple of 9 and 12 with no context at all. This Cool-down asks for the least common multiple of 6 and 9 in exactly that bare form, with reasoning.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.4"
+  },
+  "g6-2023-017": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 6,
+   "lessonTitle": "Absolute Value of Numbers",
+   "candidateLessons": [
+    4,
+    6,
+    7,
+    13
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Absolute Value of Numbers",
+     "role": "practises",
+     "activity": "Absolute Elevation and Temperature",
+     "page": 80,
+     "quote": "Which temperature is closer to the freezing point: -6 °C or 3 °C?"
+    }
+   ],
+   "why": "The item gives four signed elevations (83, -122, 456, -17) and asks which is closest to sea level, i.e. which has the smallest absolute value. This activity asks which of a negative and a positive temperature is closer to the freezing point and which has the smaller absolute value, and repeats the same move for elevations above and below sea level. Lesson 1's Cool-down 'Agree or Disagree?' asks the same 'closer to sea level' question informally before absolute value is named.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.7c"
+  },
+  "g6-2023-021": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 15,
+   "lessonTitle": "Shapes in the Coordinate Plane",
+   "candidateLessons": [
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Perimeter of a Polygon",
+     "page": 187,
+     "quote": "Find the perimeter of the polygon."
+    }
+   ],
+   "why": "The item lists four vertices of a quadrilateral with no picture and asks for the length of side AB, a horizontal side running from x=-4 to x=6. This Cool-down gives a list of vertices, has students plot and connect them, and then find the perimeter, which requires exactly these coordinate-differenced side lengths. Runner-up: lesson 14's 'Finding Distances in a Coordinate Plane', which does the same distance work but on points that are already plotted.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.G.3"
+  },
+  "g6-2023-038": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 3,
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "candidateLessons": [
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "assessed",
+     "activity": "Making More Comparisons",
+     "page": 54,
+     "quote": "Use the symbol < or > to compare the elevations of Death Valley and Westmorland."
+    }
+   ],
+   "why": "The item gives -27 degrees F and -35 degrees F and asks the student to write a comparison statement using an inequality symbol. This Cool-down asks students to write exactly that kind of symbol comparison for two negative elevations (-282 and -157). The same misconception the item targets is rehearsed in this lesson's 'Comparing Temperatures', where Jada claims -14 is less than -21. The item's own symbol list also offers ≤ and ≥, which IM does not introduce until lesson 8, 'Writing and Graphing Inequalities'.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.7b"
+  },
+  "g6-2024-004": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    11,
+    13,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "students develop strategies for finding the distance between two points in the coordinate plane"
+    }
+   ],
+   "why": "The item gives (-7,-8) and (-7,4) with no grid and asks the vertical distance, which crosses the x-axis. This activity is where students develop strategies for the distance between two points, restricted to horizontal and vertical distances, which is exactly the move the item needs.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.8"
+  },
+  "g6-2024-018": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 2,
+   "lessonTitle": "Points on the Number Line",
+   "candidateLessons": [
+    1,
+    2,
+    4,
+    7,
+    14
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "assessed",
+     "activity": "Positive, Negative, and Opposite",
+     "page": 44,
+     "quote": "What is the opposite of the opposite of -3.2?"
+    }
+   ],
+   "why": "The item asks which expression represents the opposite of -2 1/2, and the key is -(-2 1/2), a nested opposite. This Cool-down asks for the opposite of the opposite of -3.2, the same idea. The gap is notational: IM asks for the resulting value, while NYSED asks students to recognise the written form -(-2 1/2), which may be why this item's p-value is 0.28, the lowest in the set.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.6a"
+  },
+  "g6-2024-026": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    1,
+    2,
+    4,
+    7,
+    11,
+    12,
+    14
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "Signs of Numbers in Coordinates",
+     "page": 174,
+     "quote": "students connect opposite signs in coordinates to reflections across one or both axes"
+    }
+   ],
+   "why": "The item asks for the reflection of (-4,6) over the x-axis. This activity is where opposite signs in coordinates are connected to reflection across one or both axes, and students compare pairs of points by how far they are from each axis and on which side.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.6b"
+  },
+  "g6-2024-029": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 3,
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "candidateLessons": [
+    3,
+    4,
+    6,
+    7,
+    9
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "introduces",
+     "activity": "Comparing Temperatures",
+     "page": 49,
+     "quote": "larger numbers are to the right on a horizontal number line"
+    }
+   ],
+   "why": "Given -9/20 > -21/24, the item asks which statement about the two numbers' positions on a number line is true: right/left of each other, and right/left of 0. This activity is where students see that larger numbers are to the right on a horizontal number line and smaller ones to the left, and critique Jada's claim that -14 is less than -21.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.7a"
+  },
+  "g6-2024-037": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Points and Distances",
+     "page": 179,
+     "quote": "What is the distance between points C and D?"
+    }
+   ],
+   "why": "The item shows a plotted parallelogram and asks the distance between vertices A(-6,6) and D(4,6), a horizontal length read off an existing grid. This Cool-down gives four plotted points and asks for the distance between two named pairs, which is the same work; the parallelogram wrapper is decoration. Runner-up: lesson 15's 'Perimeter of a Polygon', which does this for a polygon's sides but has students plot it first.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.G.3"
+  },
+  "g6-2024-043": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "D",
+   "sectionTitle": "Common Factors and Common Multiples",
+   "primaryLesson": 16,
+   "lessonTitle": "Common Factors",
+   "candidateLessons": [
+    16,
+    17,
+    18
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Common Factors",
+     "role": "assessed",
+     "activity": "In Your Own Words",
+     "page": 200,
+     "quote": "In your own words, what is the greatest common factor of two whole numbers?"
+    }
+   ],
+   "why": "The item asks students to judge a claim that 4 is the greatest common factor of 24 and 40 because both are multiples of 4, so it turns on the difference between a common factor and the greatest one. This Cool-down asks students to state in their own words what the greatest common factor of two whole numbers is and how to find it, which is the distinction the item tests.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.4"
+  },
+  "g6-2024-045": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    11,
+    13,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "Label each point with its coordinates."
+    }
+   ],
+   "why": "The item asks for the distance from a school at (3,2) to a house at (3,6) on a plotted first-quadrant grid, and explicitly requires the student to state both coordinate pairs and explain. This activity has students label each plotted point with its coordinates and then find the distance between pairs of points, in that order.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.8"
+  },
+  "g6-2025-003": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 11,
+   "lessonTitle": "Points in the Coordinate Plane",
+   "candidateLessons": [
+    1,
+    2,
+    4,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Points in the Coordinate Plane",
+     "role": "introduces",
+     "activity": "The Coordinate Plane",
+     "page": 142,
+     "quote": "They use ordered pairs to plot and label coordinates and identify their quadrants."
+    }
+   ],
+   "why": "The item plots W, X, Y, Z at the four sign combinations of (±2, ±3) and asks which is at (-2,3), so it is decided purely by the signs of the coordinates. This activity extends the axes to four quadrants, has students write the coordinates of labeled points, plot (-2, 5), and reason about which quadrant a point with a given sign pattern falls in. Lesson 13's Warm-up 'Unlabeled Points' asks the same matching task later.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.6c"
+  },
+  "g6-2025-031": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 5,
+   "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+   "candidateLessons": [
+    1,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Using Negative Numbers to Make Sense of Contexts",
+     "role": "assessed",
+     "activity": "Event Planner",
+     "page": 73,
+     "quote": "For which items did the event planner receive money?"
+    }
+   ],
+   "why": "The item asks which pair of integers represents a $65 deposit followed by a $20 withdrawal, i.e. assigning signs to money in and money out. This Cool-down gives a table of an event planner's signed money activity and asks which items brought money in and what a negative amount means, the same sign convention in the same kind of context.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.5"
+  },
+  "g6-2025-039": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "D",
+   "sectionTitle": "Common Factors and Common Multiples",
+   "primaryLesson": 16,
+   "lessonTitle": "Common Factors",
+   "candidateLessons": [
+    16,
+    17,
+    18
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Common Factors",
+     "role": "assessed",
+     "activity": "In Your Own Words",
+     "page": 200,
+     "quote": "What is the greatest common factor of 24 and 64? Explain or show your reasoning."
+    }
+   ],
+   "why": "The item asks for the greatest common factor of 72 and 96 with no context. This Cool-down asks for the greatest common factor of 24 and 64 in exactly that bare form.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.4"
+  },
+  "g6-2025-044": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    11,
+    13,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "Find the distance between each pair of points."
+    }
+   ],
+   "why": "The item asks the distance from a cabbage patch at (5,-3) to a broccoli patch at (-2,-3) on a plotted grid where one unit is one foot, crossing the y-axis. This activity is where students find horizontal and vertical distances between plotted points, including pairs whose segment crosses an axis.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.8"
+  },
+  "g6-2026-002": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 1,
+   "lessonTitle": "Positive and Negative Numbers",
+   "candidateLessons": [
+    1,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 1,
+     "lessonTitle": "Positive and Negative Numbers",
+     "role": "introduces",
+     "activity": "High Places, Low Places",
+     "page": 29,
+     "quote": "How would you describe the elevation of Death Valley, CA in relation to sea level?"
+    }
+   ],
+   "why": "The item marks three cities at -5, -2 and 2 on an elevation number line and asks which statement about above/below sea level is true. This activity gives a table of positive, negative and zero city elevations and asks students to describe each one in relation to sea level.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.5"
+  },
+  "g6-2026-005": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 15,
+   "lessonTitle": "Shapes in the Coordinate Plane",
+   "candidateLessons": [
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Shapes in the Coordinate Plane",
+     "role": "assessed",
+     "activity": "Perimeter of a Polygon",
+     "page": 187,
+     "quote": "Plot the following points in the coordinate plane, and connect them in the order listed"
+    }
+   ],
+   "why": "The item lists the four vertices of a rectangle with no picture and asks the length of side BC, a vertical side from y=3 to y=-7 that crosses the x-axis. This Cool-down has students plot a polygon from a list of vertices and find its perimeter, which requires exactly these side lengths, including sides that cross an axis.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.G.3"
+  },
+  "g6-2026-008": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 2,
+   "lessonTitle": "Points on the Number Line",
+   "candidateLessons": [
+    1,
+    2,
+    4,
+    7,
+    14
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Points on the Number Line",
+     "role": "introduces",
+     "activity": "Folded Number Lines",
+     "page": 41,
+     "quote": "Which number is the same distance away from 0 as is the number 4?"
+    }
+   ],
+   "why": "The item plots points at -4.5, -3.5, 3.5 and 4.5 and asks which represents the opposite of 4 1/2. This activity builds the number line by folding it at 0, defines opposites as two numbers the same distance from 0, and asks which number is the same distance from 0 as a given number.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.6a"
+  },
+  "g6-2026-017": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "D",
+   "sectionTitle": "Common Factors and Common Multiples",
+   "primaryLesson": 18,
+   "lessonTitle": "Using Common Multiples and Common Factors",
+   "candidateLessons": [
+    16,
+    17,
+    18
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 18,
+     "lessonTitle": "Using Common Multiples and Common Factors",
+     "role": "practises",
+     "activity": "Factors and Multiples",
+     "page": 214,
+     "quote": "Find the smallest number of plates and cups that meets her requirement."
+    }
+   ],
+   "why": "The item has two events repeating every 6 and every 8 days and asks the fewest days until they coincide, i.e. the least common multiple of 6 and 8. This activity's party problem uses packs of 8 and packs of 6 and asks for the smallest number that meets the requirement, the same computation and the same answer of 24. The 'every n days' framing itself appears in this lesson's optional Activity 2 (soccer games every 3rd and 4th day) and in its Cool-down, which names a florist ordering every 6 and every 4 days but asks only for classification, not a solution.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.4"
+  },
+  "g6-2026-020": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 7,
+   "lessonTitle": "Comparing Numbers and Distance from Zero",
+   "candidateLessons": [
+    4,
+    6,
+    7
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "Comparing Numbers and Distance from Zero",
+     "role": "introduces",
+     "activity": "Submarine",
+     "page": 87,
+     "quote": "Andre is farther away from sea level than the submarine."
+    }
+   ],
+   "why": "The item asks which statement pairing an order comparison with an absolute value comparison is true for -15 and -5; the key requires -15 < -5 and |-15| > |-5|. This Warm-up states exactly that pairing in context: a person whose elevation is less than the submarine's is farther from sea level than the submarine. This lesson's Cool-down 'True or False?' tests the same statements symbolically, but its absolute value bars were lost in extraction, so it cannot be quoted reliably.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.7d"
+  },
+  "g6-2026-033": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "C",
+   "sectionTitle": "The Coordinate Plane",
+   "primaryLesson": 14,
+   "lessonTitle": "Distances in the Coordinate Plane",
+   "candidateLessons": [
+    11,
+    13,
+    14,
+    15,
+    19
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 14,
+     "lessonTitle": "Distances in the Coordinate Plane",
+     "role": "practises",
+     "activity": "Finding Distances in a Coordinate Plane",
+     "page": 176,
+     "quote": "Which of the points are 5 units from -1.5, -3 ?"
+    }
+   ],
+   "why": "The item works backwards: given that A and B are 5 units apart, decide which pair of ordered pairs could be their coordinates. The last question of this activity asks the same reverse question, which of several points are 5 units from a given point, and the rest of the activity establishes the horizontal and vertical distance method the item needs.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.8"
+  },
+  "g6-2026-039": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 7,
+   "unitTitle": "Rational Numbers",
+   "sectionLetter": "A",
+   "sectionTitle": "Negative Numbers and Absolute Value",
+   "primaryLesson": 3,
+   "lessonTitle": "Comparing Positive and Negative Numbers",
+   "candidateLessons": [
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Comparing Positive and Negative Numbers",
+     "role": "assessed",
+     "activity": "Making More Comparisons",
+     "page": 54,
+     "quote": "Use the symbol < or > to compare the elevations of Death Valley and Tallahassee."
+    }
+   ],
+   "why": "The item asks students to write a numerical statement using >, < or = comparing -5 F and -9 F. This Cool-down asks students to write exactly that kind of symbol comparison for given signed elevations; its third question compares two negative elevations, matching the item's two negative temperatures.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.NS.7b"
+  },
+  "g6-2023-031": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 13,
+   "lessonTitle": "Benchmark Percentages",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Benchmark Percentages",
+     "role": "practises",
+     "activity": "Nine is …",
+     "page": 211,
+     "quote": "9 is 75% of what number?"
+    }
+   ],
+   "why": "The item asks, with no context at all, 'The number 60 is 75% of what number?' This activity is four bare questions of exactly that form -- one of them the same 75% -- asking students to find the value that corresponds to 100% mentally.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c"
+  },
+  "g6-2023-032": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 11,
+   "lessonTitle": "Representing Ratios with Tables",
+   "candidateLessons": [
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Representing Ratios with Tables",
+     "role": "practises",
+     "activity": "Batches of Nihaizu Sauce",
+     "page": 167,
+     "quote": "Complete the table so that ratios represented by each row are equivalent"
+    }
+   ],
+   "why": "The item shows a two-row teachers-to-students table with three cells blank and asks which completion keeps the ratio constant. This activity hands students a recipe table with cells missing, deliberately out of order so skip counting fails, and asks for exactly that completion.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3a"
+  },
+  "g6-2023-034": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "A",
+   "sectionTitle": "Units of Measurement and Unit Conversion",
+   "primaryLesson": 3,
+   "lessonTitle": "Converting Units",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Converting Units",
+     "role": "introduces",
+     "activity": "Road Sign",
+     "page": 55,
+     "quote": "A distance of 8 kilometers is approximately 5 miles"
+    }
+   ],
+   "why": "The item gives a yards-to-miles ratio of 3,520 : 2 and asks how many yards are in 5 miles. Road Sign is where two units of length are first treated as a ratio (8 km to 5 mi), with students finding the amount per 1 mile and scaling it, which is the item's method.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2023-036": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 13,
+   "lessonTitle": "Tables and Double Number Line Diagrams",
+   "candidateLessons": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Tables and Double Number Line Diagrams",
+     "role": "practises",
+     "activity": "Biking 3,000 Meters",
+     "page": 192,
+     "quote": "At this rate, how long would it take her to bike 3,000 meters?"
+    }
+   ],
+   "why": "The item gives 8 miles in 60 minutes and asks how long 12 miles takes. This activity gives 150 meters in 20 seconds and asks how long 3,000 meters takes, using a table of equivalent ratios -- the same time-from-distance question at a constant rate.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2023-039": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "E",
+   "sectionTitle": "Part-Part-Whole Ratios",
+   "primaryLesson": 15,
+   "lessonTitle": "Part-Part-Whole Ratios",
+   "candidateLessons": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Part-Part-Whole Ratios",
+     "role": "introduces",
+     "activity": "Cubes of Paint",
+     "page": 223,
+     "quote": "the ratio between the two quantities and their total"
+    }
+   ],
+   "why": "The item asks for the ratio of circles to the TOTAL number of shapes in a picture. Cubes of Paint is the only place in grade 6 where students relate the parts of a ratio to the whole (5 ml red and 3 ml blue make 8 ml maroon); note that the curriculum never asks students to write a part-to-total ratio itself, so this is the nearest activity rather than an exact match.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1"
+  },
+  "g6-2023-041": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 7,
+   "lessonTitle": "More Rate Comparisons",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 7,
+     "lessonTitle": "More Rate Comparisons",
+     "role": "assessed",
+     "activity": "Rulers by the Pack",
+     "page": 123,
+     "quote": "Which is the better deal? Explain how you know."
+    }
+   ],
+   "why": "The item gives two stores selling the same candle in different pack sizes and asks which has the lower unit rate, with an explanation. This Cool-down gives two pack sizes of rulers at two prices and asks which is the better deal and how you know -- the curriculum's own test of that comparison.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
+  },
+  "g6-2023-044": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 9,
+   "lessonTitle": "More about Constant Speed",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "More about Constant Speed",
+     "role": "assessed",
+     "activity": "Penguin Speed",
+     "page": 153,
+     "quote": "They both walk for 30 seconds. At these rates, how far apart"
+    }
+   ],
+   "why": "The item gives two distance-time tables for two cars and asks the difference in distance after 8 hours. This Cool-down gives two walking rates, runs both for a common 30 seconds, and asks how far apart they end up -- the same two-rates-one-elapsed-time difference. Lesson 9 is flagged optional, so this is weaker evidence; the non-optional runner-up is Unit 2 Lesson 13 'Biking 3,000 Meters', which extends a rate table for two movers but never asks for a difference.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3b",
+   "evidenceIsOptional": true
+  },
+  "g6-2024-023": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "A",
+   "sectionTitle": "Units of Measurement and Unit Conversion",
+   "primaryLesson": 3,
+   "lessonTitle": "Converting Units",
+   "candidateLessons": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Converting Units",
+     "role": "assessed",
+     "activity": "Buckets",
+     "page": 64,
+     "quote": "There are 8 pints in 1 gallon. Which bucket holds less water?"
+    }
+   ],
+   "why": "The item asks how many pints are in 6 gallons. This Cool-down hands students the same conversion fact, 8 pints in 1 gallon, and requires converting between the two units to compare buckets.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3d"
+  },
+  "g6-2024-031": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "C",
+   "sectionTitle": "Representing Equivalent Ratios",
+   "primaryLesson": 8,
+   "lessonTitle": "How Much for One?",
+   "candidateLessons": [
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 8,
+     "lessonTitle": "How Much for One?",
+     "role": "introduces",
+     "activity": "Grocery Shopping",
+     "page": 123,
+     "quote": "What is the cost per bottle of water?"
+    }
+   ],
+   "why": "The item gives 104 calories in an 8-ounce serving and asks for the amount in 1 ounce. This is the activity where 'how much for one' is introduced -- twelve bottles for $9, what is the cost per bottle -- dividing a quantity by the number of units to get the value per 1.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.2"
+  },
+  "g6-2024-033": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 13,
+   "lessonTitle": "Benchmark Percentages",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 13,
+     "lessonTitle": "Benchmark Percentages",
+     "role": "practises",
+     "activity": "Nine is …",
+     "page": 211,
+     "quote": "9 is 25% of what number?"
+    }
+   ],
+   "why": "The item asks 'The number 4 is 16% of what number?' with no context. This activity asks exactly that form, but only for benchmark percentages (50, 25, 10, 75); 16% is outside the set grade 6 works with. The nearest non-benchmark work is Unit 3 Lesson 11 'Puppies Grow Up', which finds 100% from 30%, so the item's wording is taught here but its arithmetic is at the edge of the grade.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c"
+  },
+  "g6-2024-034": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 8,
+   "lessonTitle": "Solving Rate Problems",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 8,
+     "lessonTitle": "Solving Rate Problems",
+     "role": "practises",
+     "activity": "Window Washing",
+     "page": 132,
+     "quote": "A window-washing crew can wash 15 windows in 18 minutes"
+    }
+   ],
+   "why": "The item gives a machine making 7 pounds of chocolate in 42 minutes and asks how long 9 pounds takes. This activity gives a crew washing 15 windows in 18 minutes and asks how long a different number of windows takes, with the number deliberately not a multiple so students find the rate for one.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2024-039": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 5,
+   "lessonTitle": "Interpreting Rates",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Interpreting Rates",
+     "role": "introduces",
+     "activity": "Cooking Kinche",
+     "page": 86,
+     "quote": "That’s 0.4 cup of wheat per cup of water."
+    }
+   ],
+   "why": "The item gives 6 gallons of orange paint to 8 gallons of blue and asks how much orange goes with 1 gallon of blue -- a unit rate less than 1. Cooking Kinche is where both unit rates of a ratio are named and one of them, 0.4 cup of wheat per cup of water, is exactly this less-than-one form.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
+  },
+  "g6-2024-046": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 6,
+   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+     "role": "practises",
+     "activity": "Making Bracelets",
+     "page": 103,
+     "quote": "finding an unknown value in a ratio given the other value"
+    }
+   ],
+   "why": "The item gives two savings tables at constant rates and asks for the difference in totals at 16 months, a month neither table reaches. Making Bracelets is a table with a constant rate column in which students find far-out unknown values from that rate; the item adds a second table and a subtraction on top of that move.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3a"
+  },
+  "g6-2025-001": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 11,
+   "lessonTitle": "Representing Ratios with Tables",
+   "candidateLessons": [
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Representing Ratios with Tables",
+     "role": "assessed",
+     "activity": "Batches of Cookies in a Table",
+     "page": 171,
+     "quote": "Write a sentence that describes a ratio shown in the table"
+    }
+   ],
+   "why": "The item states a recipe ratio of 2 cups cheese to 8 ounces noodles and asks which of four tables represents it; the distractors add a fixed amount down the rows instead of scaling. This Cool-down is the curriculum's own check that a recipe's equivalent ratios are what a table's rows show, and that a new row must keep that ratio.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3a"
+  },
+  "g6-2025-016": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 4,
+   "lessonTitle": "Comparing Speeds and Prices",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Comparing Speeds and Prices",
+     "role": "assessed",
+     "activity": "Sparkling Water",
+     "page": 81,
+     "quote": "How much cheaper or more expensive? Show your reasoning."
+    }
+   ],
+   "why": "The item asks how many MORE pages per minute one copier prints than another -- two rates per 1, then a subtraction. This Cool-down asks the same two-step: find the unit price this week, compare it to the usual one, and say how much cheaper or more expensive. The exact wording 'how much faster is that person than the other' appears in Lesson 9 'Swimming and Biking', but that lesson is optional.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2025-021": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 16,
+   "lessonTitle": "Finding the Percentage",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Finding the Percentage",
+     "role": "assessed",
+     "activity": "Library and Cafeteria",
+     "page": 255,
+     "quote": "The library has a capacity of 23 people. What percentage of the school"
+    }
+   ],
+   "why": "The item gives 50 students, 12 reading and 11 playing an instrument, and asks what percent chose either. This Cool-down asks what percentage 23 is of 50 -- the same numbers and the same question. Lesson 16 is optional in its entirety (it generalizes beyond grade 6), so this is weaker evidence; the non-optional runner-up is the Lesson 14 Warm-up 'Matching the Percentage', which asks 'B is what percentage of C?' but only for benchmark pairs.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c",
+   "evidenceIsOptional": true
+  },
+  "g6-2025-028": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "A",
+   "sectionTitle": "What are Ratios?",
+   "primaryLesson": 1,
+   "lessonTitle": "Introducing Ratios and Ratio Language",
+   "candidateLessons": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 1,
+     "lessonTitle": "Introducing Ratios and Ratio Language",
+     "role": "introduces",
+     "activity": "The Teacher’s Collection",
+     "page": 28,
+     "quote": "Create categories whose quantities can be rearranged into smaller groups"
+    }
+   ],
+   "why": "The item asks for the ratio of students in two grade levels combined to students in two other grade levels combined, and the only correct choice is the reduced form 9 : 5 rather than 18 : 10. This activity has students choose how to group a collection into categories, count them, and write the ratio, and it explicitly watches for categories whose counts get rearranged into smaller groups.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1"
+  },
+  "g6-2025-032": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "A",
+   "sectionTitle": "Units of Measurement and Unit Conversion",
+   "primaryLesson": 3,
+   "lessonTitle": "Converting Units",
+   "candidateLessons": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Converting Units",
+     "role": "practises",
+     "activity": "Road Sign",
+     "page": 55,
+     "quote": "The speed limit on a Canadian highway is 80 kilometers per hour."
+    }
+   ],
+   "why": "The item converts an average speed of 12 miles per hour into feet per minute. Road Sign's second question is the only place in grade 6 where a speed stated in one pair of units has to be re-expressed in another (80 km/h against 75 mi/h); the item is harder because both the distance and the time unit change.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3d"
+  },
+  "g6-2025-035": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 5,
+   "lessonTitle": "Interpreting Rates",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 5,
+     "lessonTitle": "Interpreting Rates",
+     "role": "practises",
+     "activity": "Laundry Detergent and Raffle Tickets",
+     "page": 89,
+     "quote": "For each situation, find the unit rates."
+    }
+   ],
+   "why": "The item gives $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples and asks which has the greater unit price and what it is. This activity is two separate cost situations in which students compute the price per 1 for each, which is the whole of the item's work; the comparison itself is a one-step addition to that.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
+  },
+  "g6-2025-037": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 12,
+   "lessonTitle": "Representing Percentages in Different Ways",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 12,
+     "lessonTitle": "Representing Percentages in Different Ways",
+     "role": "assessed",
+     "activity": "Small and Large",
+     "page": 204,
+     "quote": "This is 75% of the water that a large tank holds."
+    }
+   ],
+   "why": "The item says 6 students are 24% of a class and asks for the class total. This Cool-down says 36 liters is 75% of a large tank and asks what the tank holds -- the same find-the-whole-from-a-part-and-its-percentage question, and the place the curriculum tests it.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c"
+  },
+  "g6-2025-045": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 12,
+   "lessonTitle": "Navigating a Table of Equivalent Ratios",
+   "candidateLessons": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 12,
+     "lessonTitle": "Navigating a Table of Equivalent Ratios",
+     "role": "practises",
+     "activity": "Comparing Taco Prices",
+     "page": 178,
+     "quote": "At this rate, how many tacos could he buy for $15?"
+    }
+   ],
+   "why": "The item gives a 2 cups sesame to 5 cups pretzels ratio and asks for the pretzels that go with 3 cups of sesame, so the scale factor is 1.5 rather than a whole number. This activity has the same shape: 4 tacos for $6, then how many for $15, where a table and a value-per-1 step are needed because neither value is a multiple of the other.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2026-001": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "C",
+   "sectionTitle": "Representing Equivalent Ratios",
+   "primaryLesson": 9,
+   "lessonTitle": "Constant Speed",
+   "candidateLessons": [
+    10
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 9,
+     "lessonTitle": "Constant Speed",
+     "role": "practises",
+     "activity": "Moving for 10 Seconds",
+     "page": 137,
+     "quote": "How far did each person move in 1 second?"
+    }
+   ],
+   "why": "The item gives 686 meters in 2 seconds and asks for the speed in meters per second. This activity gives distances covered in 10 seconds and asks how far each person moved in 1 second -- distance per 1 unit of time, which is the definition the item is testing.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.2"
+  },
+  "g6-2026-003": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "A",
+   "sectionTitle": "Units of Measurement and Unit Conversion",
+   "primaryLesson": 3,
+   "lessonTitle": "Converting Units",
+   "candidateLessons": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Converting Units",
+     "role": "practises",
+     "activity": "Cooking with a Tablespoon",
+     "page": 60,
+     "quote": "decide whether to multiply or divide by the unit rate"
+    }
+   ],
+   "why": "The item does not ask for the answer but for the EXPRESSION, 72 divided by 16, that converts 72 ounces to pounds. This activity converts with the same factor of 16 in both directions (cups to tablespoons and 28 tablespoons back to cups) and is explicitly about deciding whether to multiply or divide by the conversion rate.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3d"
+  },
+  "g6-2026-010": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 17,
+   "lessonTitle": "Two Related Quantities, Part 2",
+   "candidateLessons": [
+    16,
+    17
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 17,
+     "lessonTitle": "Two Related Quantities, Part 2",
+     "role": "practises",
+     "activity": "The Robot Race",
+     "page": 225,
+     "quote": "compare the unit rates in meters per minute for three robotics teams"
+    }
+   ],
+   "why": "The item plots gallons against minutes for a hose running at a constant rate and asks for the amount at 3 minutes, a time not plotted, so the unit rate of 9 gallons per minute must be recovered from the graph. This activity builds tables, graphs and equations for constant-rate distance-time situations and has students compute the unit rate from them; its Cool-down 'Interpret the Point' then asks what a particular point on such a graph means.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.RP.3a"
+  },
+  "g6-2026-012": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "E",
+   "sectionTitle": "Part-Part-Whole Ratios",
+   "primaryLesson": 15,
+   "lessonTitle": "Part-Part-Whole Ratios",
+   "candidateLessons": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 15,
+     "lessonTitle": "Part-Part-Whole Ratios",
+     "role": "introduces",
+     "activity": "Cubes of Paint",
+     "page": 223,
+     "quote": "How many milliliters of maroon paint will there be?"
+    }
+   ],
+   "why": "The item asks for the ratio of roses to the total number of flowers, so students must add the three counts to get the whole. Cubes of Paint is where the whole is first built from the parts of a ratio; as with the other part-to-total item, grade 6 never asks students to write the part-to-total ratio itself.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1"
+  },
+  "g6-2026-015": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "A",
+   "sectionTitle": "Units of Measurement and Unit Conversion",
+   "primaryLesson": 3,
+   "lessonTitle": "Converting Units",
+   "candidateLessons": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 3,
+     "lessonTitle": "Converting Units",
+     "role": "practises",
+     "activity": "Cooking with a Tablespoon",
+     "page": 60,
+     "quote": "In the cookbook, it says that 1 cup equals 16 tablespoons."
+    }
+   ],
+   "why": "The item says 1 cup is 16 tablespoons and asks how many tablespoons make 3/4 cup. This activity states the same conversion in the same words and asks students to measure fractional amounts of a cup, including 1/4 cup, with a tablespoon.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3d"
+  },
+  "g6-2026-021": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 12,
+   "lessonTitle": "Navigating a Table of Equivalent Ratios",
+   "candidateLessons": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 12,
+     "lessonTitle": "Navigating a Table of Equivalent Ratios",
+     "role": "practises",
+     "activity": "Hourly Wages",
+     "page": 181,
+     "quote": "At this rate, how much would Lin be paid for 3 hours of work?"
+    }
+   ],
+   "why": "The item gives 6 decorations in 39 minutes and asks about 14 decorations, where 14 is not a multiple of 6 and the rate per one is 6.5 minutes. This activity is built on exactly that difficulty: $90 for 5 hours, then 8 hours and 3 hours, with an equivalent ratio having a quantity of 1 as the intermediate step.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3b"
+  },
+  "g6-2026-024": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 11,
+   "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 11,
+     "lessonTitle": "Representing Percentages with Double Number Line Diagrams",
+     "role": "practises",
+     "activity": "Puppies Grow Up",
+     "page": 184,
+     "quote": "opportunity for students to find 100% of quantities given other percentages"
+    }
+   ],
+   "why": "The item says 6 goals are 30% of a team's total and asks for the total. This activity asks for 100% of a quantity given 20% and then given 30%, and the teacher notes single out the 30% case because 100 is not a multiple of 30 -- the item's exact arithmetic.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c"
+  },
+  "g6-2026-028": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "A",
+   "sectionTitle": "What are Ratios?",
+   "primaryLesson": 2,
+   "lessonTitle": "Representing Ratios with Diagrams",
+   "candidateLessons": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 2,
+     "lessonTitle": "Representing Ratios with Diagrams",
+     "role": "introduces",
+     "activity": "Blue Paint and Play Clay",
+     "page": 40,
+     "quote": "circle all those that correctly describe this situation"
+    }
+   ],
+   "why": "The item gives 6 eggs for every 4 cups of flour and asks which 'for every' statement is true, the correct one being the regrouped 3 eggs for every 2 cups. This activity gives a 2 to 6 mixture and asks students to circle which of seven statements correctly describe it, several of them regrouped 'for every' forms of the same ratio.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1"
+  },
+  "g6-2026-031": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "C",
+   "sectionTitle": "Percentages",
+   "primaryLesson": 16,
+   "lessonTitle": "Finding the Percentage",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 16,
+     "lessonTitle": "Finding the Percentage",
+     "role": "practises",
+     "activity": "Restaurant Capacity",
+     "page": 250,
+     "quote": "What percentage of its capacity is 9 people?"
+    }
+   ],
+   "why": "The item gives a survey table of three flavors and asks what percent chose vanilla, so students must sum the table to 50 first and then find 21 as a percentage of it. This activity asks what percentage 9 and 51 are of 75, the same question for a non-benchmark pair. Lesson 16 is optional in its entirety, so this is weaker evidence; the non-optional runner-up is the Lesson 14 Warm-up 'Matching the Percentage'.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c",
+   "evidenceIsOptional": true
+  },
+  "g6-2026-034": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 6,
+   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "candidateLessons": [
+    5,
+    6,
+    7,
+    9,
+    15
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 6,
+     "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+     "role": "practises",
+     "activity": "Binders and Notebooks",
+     "page": 100,
+     "quote": "when two ratios are equivalent, they have the same unit rate"
+    }
+   ],
+   "why": "The item says 3 notebooks cost $6 and asks which table shows that relationship; the distractors swap which row holds which quantity or scale the wrong way. This activity is a binder and a notebook price table with a unit price column, and its point is that every row of a correct table shares one unit rate -- the test the item's four tables have to be put to.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3a"
+  },
+  "g6-2026-044": {
+   "course": "Imagine IM New York, Grade 6",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 4,
+   "lessonTitle": "Comparing Speeds and Prices",
+   "candidateLessons": [
+    4,
+    5,
+    6,
+    8
+   ],
+   "edition": "Imagine IM New York, 6-8",
+   "status": "evidenced",
+   "draft": true,
+   "evidence": [
+    {
+     "lesson": 4,
+     "lessonTitle": "Comparing Speeds and Prices",
+     "role": "practises",
+     "activity": "The Best Deal on Beans",
+     "page": 77,
+     "quote": "Which store is offering the best deal? Explain your reasoning."
+    }
+   ],
+   "why": "The item gives two stores selling paper towels in different pack sizes and asks which has the lower price per roll, with both unit rates stated. This activity puts four stores' ads for the same can of beans side by side and asks which is the best deal with reasoning, which is the same comparison of prices per 1.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
   }
  }
 }

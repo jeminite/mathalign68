@@ -1,146 +1,146 @@
 {
-  "testId": "g6-2025",
-  "status": "reviewed",
-  "answerKey": "BABCDADACAADDCACCDB",
-  "answerKeyItems": [
-    1,
-    3,
-    5,
-    6,
-    13,
-    16,
-    17,
-    19,
-    21,
-    23,
-    27,
-    28,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36
-  ],
-  "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
-  "constructedResponse": {
-    "37": {
-      "answer": "25 students",
-      "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
-      "check": "6 students are 24% of the class, and 6 over 0.24 is 25. Both figures are in this item's own transcribed stem."
-    },
-    "38": {
-      "answer": "x ≥ 15",
-      "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
-      "check": "The number line is shaded from 15 rightwards with a closed circle at 15. This item is not transcribed -- its page is not in the page map -- so the answer is recorded for completeness only."
-    },
-    "39": {
-      "answer": "24",
-      "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
-      "check": "72 is 24 times 3 and 96 is 24 times 4. Both numbers are in this item's own transcribed stem."
-    },
-    "40": {
-      "answer": "106",
-      "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
-      "check": "5 squared is 25, plus 3 is 28, times 4 is 112, less 6 is 106. The expression is this item's own transcribed stem, and it depends on the exponent being read."
-    },
-    "41": {
-      "answer": "t = 56b; t is the dependent variable and b the independent one",
-      "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
-      "check": "Every row of the table divides to 56: 112 over 2, 224 over 4, 336 over 6, 448 over 8. The table is this item's figure."
-    },
-    "42": {
-      "answer": "60 square centimeters",
-      "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
-      "check": "The square base is 5 by 5, which is 25, and the four triangles are each a half of 5 by 3.5, which is 35 in total. Both dimensions are in this item's figure."
-    },
-    "43": {
-      "answer": "6 1/2 feet",
-      "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
-      "check": "Twenty-one and two thirds divided by three and a third is 65/3 times 3/10, which is six and a half. Both quantities are in this item's own transcribed stem."
-    },
-    "44": {
-      "answer": "7 feet",
-      "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
-      "check": "The cabbage is at 5, negative 3 and the broccoli at negative 2, negative 3, so they are 5 plus 2 apart. Both points are labelled in this item's figure."
-    },
-    "45": {
-      "answer": "7.5 cups of pretzels",
-      "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-      "check": "Two cups of sesame to five of pretzels is 2.5 cups of pretzels per cup of sesame, and 3 times 2.5 is 7.5. Both quantities are in this item's own stem."
-    },
-    "46": {
-      "answer": "x = 3, and each rug costs $112",
-      "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
-      "check": "9 times 2x equals 54 gives x = 3; 7p = 784 gives p = 112. The rug's dimensions are in this item's figure and the total is in its stem."
-    }
+ "testId": "g6-2025",
+ "status": "reviewed",
+ "answerKey": "BABCDADACAADDCACCDB",
+ "answerKeyItems": [
+  1,
+  3,
+  5,
+  6,
+  13,
+  16,
+  17,
+  19,
+  21,
+  23,
+  27,
+  28,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36
+ ],
+ "keySource": "The key is NYSED's own, read from the Map to the Standards in the released-items PDF and carried into provenance/itemmap_g6-2025.json by tools/extract_item_map.py. tools/merge_content.py re-checks every letter against that file item by item and refuses to build if one disagrees, so the key here cannot drift from the official table or be shifted by one released item. Every constructed-response answer below cites NYSED's own exemplary-response page and is checked against this project's transcription of the same item.",
+ "constructedResponse": {
+  "37": {
+   "answer": "25 students",
+   "source": "NYSED exemplary response, scoring materials page 7 (PDF page 8)",
+   "check": "6 students are 24% of the class, and 6 over 0.24 is 25. Both figures are in this item's own transcribed stem."
   },
-  "visuals": {
-    "G6-2025/q01.png": {
-      "type": "Tables as Answer Choices",
-      "alt": "Four Recipe tables labelled A to D, this item's answer choices, each pairing cups of cheese with ounces of noodles.",
-      "long": "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead."
-    },
-    "G6-2025/q03.png": {
-      "type": "Coordinate Plane",
-      "alt": "Four labelled points W, X, Y and Z plotted on a coordinate plane ruled from negative 6 to 6.",
-      "long": "W is at negative 2, 3; Z is at 2, 3; X is at negative 2, negative 3; Y is at 2, negative 3."
-    },
-    "G6-2025/q13.png": {
-      "type": "Diagram",
-      "alt": "The net of a rectangular prism with three of its dimensions labelled in centimetres.",
-      "long": "The small face is 2 centimetres by 2 centimetres and the long face is 5 centimetres tall."
-    },
-    "G6-2025/q17.png": {
-      "type": "Diagram",
-      "alt": "A regular hexagon divided into six triangles from its centre, with side and height labelled in centimetres.",
-      "long": "Each side is 5 centimetres and the height from the centre to a side is 4.3 centimetres."
-    },
-    "G6-2025/q21.png": {
-      "type": "Data Table",
-      "alt": "A table titled Favorite Hobbies giving the number of students choosing each of four hobbies.",
-      "long": "Reading 12, playing a musical instrument 11, watching movies 9, and playing sports 18."
-    },
-    "G6-2025/q33.png": {
-      "type": "Graphs as Answer Choices",
-      "alt": "Four coordinate grids labelled A to D, this item's answer choices, each with a handful of plotted points.",
-      "long": "They differ in where the points sit and whether they climb in a straight line."
-    },
-    "G6-2025/q36.png": {
-      "type": "Diagram",
-      "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
-      "long": "The shaded part is 2.4 centimetres across, the height is 3 centimetres, and the unshaded corner is 1.2 centimetres."
-    },
-    "G6-2025/q41.png": {
-      "type": "Data Table",
-      "alt": "A table titled Cheese Prices pairing blocks of cheese with a total price in dollars.",
-      "long": "2 blocks for 112 dollars, 4 for 224, 6 for 336, and 8 for 448."
-    },
-    "G6-2025/q42.png": {
-      "type": "Diagram",
-      "alt": "The net of a right square pyramid with its base and triangle height labelled in centimetres.",
-      "long": "The square base is 5 centimetres on each side and each triangular face is 3.5 centimetres tall."
-    },
-    "G6-2025/q44.png": {
-      "type": "Coordinate Plane",
-      "alt": "A grid titled Paige's Garden with two labelled points, Broccoli and Cabbage.",
-      "long": "The broccoli patch is at negative 2, negative 3 and the cabbage patch is at 5, negative 3."
-    },
-    "G6-2025/q46.png": {
-      "type": "Diagram",
-      "alt": "A rectangle representing a rug, with its width given as a number and its height in terms of x.",
-      "long": "The rectangle is 9 feet wide and 2x feet tall."
-    }
+  "38": {
+   "answer": "x ≥ 15",
+   "source": "NYSED exemplary response, scoring materials page 12 (PDF page 13)",
+   "check": "The number line is shaded from 15 rightwards with a closed circle at 15. This item is not transcribed -- its page is not in the page map -- so the answer is recorded for completeness only."
   },
-  "choicesInImage": [
-    1,
-    33
-  ],
-  "tablesInImage": [
-    1,
-    21,
-    41
-  ],
-  "reviewNotes": []
+  "39": {
+   "answer": "24",
+   "source": "NYSED exemplary response, scoring materials page 17 (PDF page 18)",
+   "check": "72 is 24 times 3 and 96 is 24 times 4. Both numbers are in this item's own transcribed stem."
+  },
+  "40": {
+   "answer": "106",
+   "source": "NYSED exemplary response, scoring materials page 22 (PDF page 23)",
+   "check": "5 squared is 25, plus 3 is 28, times 4 is 112, less 6 is 106. The expression is this item's own transcribed stem, and it depends on the exponent being read."
+  },
+  "41": {
+   "answer": "t = 56b; t is the dependent variable and b the independent one",
+   "source": "NYSED exemplary response, scoring materials page 32 (PDF page 33)",
+   "check": "Every row of the table divides to 56: 112 over 2, 224 over 4, 336 over 6, 448 over 8. The table is this item's figure."
+  },
+  "42": {
+   "answer": "60 square centimeters",
+   "source": "NYSED exemplary response, scoring materials page 42 (PDF page 43)",
+   "check": "The square base is 5 by 5, which is 25, and the four triangles are each a half of 5 by 3.5, which is 35 in total. Both dimensions are in this item's figure."
+  },
+  "43": {
+   "answer": "6 1/2 feet",
+   "source": "NYSED exemplary response, scoring materials page 52 (PDF page 53)",
+   "check": "Twenty-one and two thirds divided by three and a third is 65/3 times 3/10, which is six and a half. Both quantities are in this item's own transcribed stem."
+  },
+  "44": {
+   "answer": "7 feet",
+   "source": "NYSED exemplary response, scoring materials page 62 (PDF page 63)",
+   "check": "The cabbage is at 5, negative 3 and the broccoli at negative 2, negative 3, so they are 5 plus 2 apart. Both points are labelled in this item's figure."
+  },
+  "45": {
+   "answer": "7.5 cups of pretzels",
+   "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
+   "check": "Two cups of sesame to five of pretzels is 2.5 cups of pretzels per cup of sesame, and 3 times 2.5 is 7.5. Both quantities are in this item's own stem."
+  },
+  "46": {
+   "answer": "x = 3, and each rug costs $112",
+   "source": "NYSED exemplary response, scoring materials page 82 (PDF page 83)",
+   "check": "9 times 2x equals 54 gives x = 3; 7p = 784 gives p = 112. The rug's dimensions are in this item's figure and the total is in its stem."
+  }
+ },
+ "visuals": {
+  "G6-2025/q01.png": {
+   "type": "Tables as Answer Choices",
+   "alt": "Four Recipe tables labelled A to D, this item's answer choices, each pairing cups of cheese with ounces of noodles.",
+   "long": "Only one keeps a constant ratio of noodles to cheese down every row; the others add a fixed amount instead."
+  },
+  "G6-2025/q03.png": {
+   "type": "Coordinate Plane",
+   "alt": "Four labelled points W, X, Y and Z plotted on a coordinate plane ruled from negative 6 to 6.",
+   "long": "W is at negative 2, 3; Z is at 2, 3; X is at negative 2, negative 3; Y is at 2, negative 3."
+  },
+  "G6-2025/q13.png": {
+   "type": "Diagram",
+   "alt": "The net of a rectangular prism with three of its dimensions labelled in centimetres.",
+   "long": "The small face is 2 centimetres by 2 centimetres and the long face is 5 centimetres tall."
+  },
+  "G6-2025/q17.png": {
+   "type": "Diagram",
+   "alt": "A regular hexagon divided into six triangles from its centre, with side and height labelled in centimetres.",
+   "long": "Each side is 5 centimetres and the height from the centre to a side is 4.3 centimetres."
+  },
+  "G6-2025/q21.png": {
+   "type": "Data Table",
+   "alt": "A table titled Favorite Hobbies giving the number of students choosing each of four hobbies.",
+   "long": "Reading 12, playing a musical instrument 11, watching movies 9, and playing sports 18."
+  },
+  "G6-2025/q33.png": {
+   "type": "Graphs as Answer Choices",
+   "alt": "Four coordinate grids labelled A to D, this item's answer choices, each with a handful of plotted points.",
+   "long": "They differ in where the points sit and whether they climb in a straight line."
+  },
+  "G6-2025/q36.png": {
+   "type": "Diagram",
+   "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
+   "long": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
+  },
+  "G6-2025/q41.png": {
+   "type": "Data Table",
+   "alt": "A table titled Cheese Prices pairing blocks of cheese with a total price in dollars.",
+   "long": "2 blocks for 112 dollars, 4 for 224, 6 for 336, and 8 for 448."
+  },
+  "G6-2025/q42.png": {
+   "type": "Diagram",
+   "alt": "The net of a right square pyramid with its base and triangle height labelled in centimetres.",
+   "long": "The square base is 5 centimetres on each side and each triangular face is 3.5 centimetres tall."
+  },
+  "G6-2025/q44.png": {
+   "type": "Coordinate Plane",
+   "alt": "A grid titled Paige's Garden with two labelled points, Broccoli and Cabbage.",
+   "long": "The broccoli patch is at negative 2, negative 3 and the cabbage patch is at 5, negative 3."
+  },
+  "G6-2025/q46.png": {
+   "type": "Diagram",
+   "alt": "A rectangle representing a rug, with its width given as a number and its height in terms of x.",
+   "long": "The rectangle is 9 feet wide and 2x feet tall."
+  }
+ },
+ "choicesInImage": [
+  1,
+  33
+ ],
+ "tablesInImage": [
+  1,
+  21,
+  41
+ ],
+ "reviewNotes": []
 }

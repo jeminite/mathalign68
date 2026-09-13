@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-12T21:23:06",
+    "built": "2026-09-12T21:33:49",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -69,7 +69,7 @@
     "alignmentCoverage": {
       "aligned": 264,
       "total": 396,
-      "drafted": 6,
+      "drafted": 132,
       "note": "Curriculum alignment is a judgement, made against the activity each lesson actually asks students to do and published with that activity named so it can be checked. Items with alignmentBasis 'unaligned' have not been judged yet; entries still in draft are not published at all."
     },
     "disclaimer": "A working analysis, shared in case it is useful. The item data and the statewide P-values are NYSED's own, published with each year's released questions. Where a question is shown, its wording comes from the PDF's own text layer character for character and only the mathematics is reconstructed -- but reconstructed maths can be wrong, so every item links to the official page and that page is the authority. Curriculum alignment is a judgement call by one teacher rather than official guidance. Corrections and disagreement are welcome.",
@@ -8264,7 +8264,7 @@
           "file": "G6-2025/q36.png",
           "type": "Diagram",
           "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
-          "longDescription": "The shaded part is 2.4 centimetres across, the height is 3 centimetres, and the unshaded corner is 1.2 centimetres."
+          "longDescription": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
         }
       ],
       "tablesInImage": false,

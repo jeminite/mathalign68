@@ -2762,7 +2762,7 @@
           "file": "G6-2025/q36.png",
           "type": "Diagram",
           "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
-          "longDescription": "The shaded part is 2.4 centimetres across, the height is 3 centimetres, and the unshaded corner is 1.2 centimetres."
+          "longDescription": "A dashed vertical line divides the parallelogram into an unshaded triangle on the left and a shaded trapezoid on the right. The shaded part's top edge is 2.4 centimetres and its bottom edge is shorter, the triangle's base along the bottom is 1.2 centimetres, and the vertical height is 3 centimetres."
         }
       ],
       "tablesInImage": false,
