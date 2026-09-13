@@ -1,0 +1,574 @@
+{
+ "scope": "blind re-settlement sample",
+ "items": {
+  "g8-2023-015": {
+   "standard": "NY-8.EE.1",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Which expression has a value of <span class=\"math\"><span class=\"frac\"><span>1</span><span>16</span></span></span> ?",
+   "choices": [
+    "<span class=\"math\">(2<sup>−4</sup>)<sup>−1</sup></span>",
+    "<span class=\"math\">(2<sup>4</sup>)<sup>−1</sup></span>",
+    "<span class=\"math\">(2<sup>8</sup>)<sup>−2</sup></span>",
+    "<span class=\"math\">(2<sup>−8</sup>)<sup>−2</sup></span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 5,
+    "lessonTitle": "Negative Exponents With Powers of 10",
+    "activity": "Negative Exponent Table",
+    "page": 61,
+    "quote": "Complete the table to explore what negative exponents mean."
+   },
+   "readingB": {
+    "unit": 8,
+    "unitTitle": "Exponents and Scientific Notation",
+    "lesson": 6,
+    "lessonTitle": "What About Other Bases?",
+    "activity": "Exponent Rules With Bases Other than 10",
+    "page": 77,
+    "quote": "practice using exponent rules to analyze expressions and identify equivalent expressions"
+   }
+  },
+  "g8-2023-022": {
+   "standard": "NY-7.G.2",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Trent draws a triangle with one interior angle measuring <span class=\"math\">34<sup>○</sup></span>. Which angle measures could be the measures of the other two interior angles in Trent’s triangle?",
+   "choices": [
+    "<span class=\"math\">46<sup>○</sup></span> and <span class=\"math\">90<sup>○</sup></span>",
+    "<span class=\"math\">53<sup>○</sup></span> and <span class=\"math\">127<sup>○</sup></span>",
+    "<span class=\"math\">66<sup>○</sup></span> and <span class=\"math\">80<sup>○</sup></span>",
+    "<span class=\"math\">68<sup>○</sup></span> and <span class=\"math\">68<sup>○</sup></span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 8,
+    "unitTitle": "Angles, Triangles, and Prisms",
+    "lesson": 8,
+    "lessonTitle": "Triangles With 3 Common Measures",
+    "activity": "2 Angles and 1 Side",
+    "page": 121,
+    "quote": "How many different triangles are there? Explain or show your reasoning"
+   },
+   "readingB": {
+    "unit": 8,
+    "unitTitle": "Angles, Triangles, and Prisms",
+    "lesson": 10,
+    "lessonTitle": "Drawing Triangles (Part 2)",
+    "activity": "Three Angles",
+    "page": 143,
+    "quote": "Draw as many different triangles as you can with each of these sets of measurements"
+   }
+  },
+  "g8-2023-038": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.52,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "Quadrilateral <span class=\"math\">ABCD</span> is graphed on a coordinate plane, with point <span class=\"math\">C</span> plotted at <span class=\"math\">(−4,3)</span>. Quadrilateral <span class=\"math\">ABCD</span> is then reflected over the <span class=\"math\">y</span> -axis to create its image <span class=\"math\">A′B′C′D′</span>. After the reflection, what are the coordinates of point <span class=\"math\">C′</span> ?",
+   "choices": [
+    "<span class=\"math\">(4,3)</span>",
+    "<span class=\"math\">(4, −3)</span>",
+    "<span class=\"math\">(−4,3)</span>",
+    "<span class=\"math\">(−4, −3)</span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Reflecting Points on the Coordinate Plane",
+    "page": 75,
+    "quote": "generalize to describe where a reflection over the y-axis takes any point"
+   },
+   "readingB": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Dilations and Slope Triangles",
+    "page": 171,
+    "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+   }
+  },
+  "g8-2023-043": {
+   "standard": "NY-8.EE.7b",
+   "pValue": 0.46,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "What value of <span class=\"math\">x</span> makes the equation shown below true?",
+   "choices": [],
+   "figures": [],
+   "readingA": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 4,
+    "lessonTitle": "More Balanced Moves",
+    "activity": "Make Your Own Steps",
+    "page": 59,
+    "quote": "solve equations individually and then compare differing, though accurate, solution paths"
+   },
+   "readingB": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 5,
+    "lessonTitle": "Solving Any Linear Equation",
+    "activity": "Trading Moves",
+    "page": 67,
+    "quote": "Select 2 to solve with your partner by taking turns describing a move"
+   }
+  },
+  "g8-2023-045": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.4,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Function A and Function B are shown below. Which function has a greater rate of change? Be sure to include the rate of change for each function in your answer.",
+   "choices": [],
+   "figures": [
+    "Function A pairs negative 5 with negative 30, negative 3 with negative 18, 2 with 12, and 4 with 24 -- a rate of 6. Function B is a line rising 3 units over 6."
+   ],
+   "readingA": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 4,
+    "lessonTitle": "Comparing Proportional Relationships",
+    "activity": "Comparing Two Different Representations",
+    "page": 58,
+    "quote": "What is the value of the rate of change for each situation"
+   },
+   "readingB": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "An Illuminated Moon",
+    "page": 133,
+    "quote": "On the second day, 6% is illuminated."
+   }
+  },
+  "g8-2024-010": {
+   "standard": "NY-8.G.9",
+   "pValue": 0.51,
+   "type": "Multiple Choice",
+   "key": "A",
+   "stem": "A sphere has a radius of <span class=\"math\">4</span> inches. A cone has a radius of <span class=\"math\">3</span> inches and a height of <span class=\"math\">8</span> inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone?",
+   "choices": [
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+    "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 21,
+    "lessonTitle": "Cylinders, Cones, and Spheres",
+    "activity": "The Right Fit (Optional)",
+    "page": 296,
+    "quote": "Cone with a height of 8 centimeters and a radius of 3 centimeters."
+   },
+   "readingB": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 20,
+    "lessonTitle": "The Volume of a Sphere",
+    "activity": "Spheres in Cylinders",
+    "page": 285,
+    "quote": "A cone, a sphere, and a cylinder that all have the same radius and height"
+   }
+  },
+  "g8-2024-045": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.27,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Two ordered pairs of a linear function are shown below. What is the rate of change for the function?",
+   "choices": [],
+   "figures": [],
+   "readingA": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "An Illuminated Moon",
+    "page": 133,
+    "quote": "On the second day, 6% is illuminated."
+   },
+   "readingB": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "activity": "Different Slopes",
+    "page": 137,
+    "quote": "Find the slope of the line that passes through each pair of points."
+   }
+  },
+  "g8-2025-035": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.43,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "Brayden and Hannah were asked to calculate the slope of the same line. Brayden calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and Hannah calculated the slope to be <span class=\"math\"><span class=\"frac\"><span>4</span><span>6</span></span></span>. Their work is shown below. Which statement is true?",
+   "choices": [
+    "Only Brayden calculated the slope correctly.",
+    "Only Hannah calculated the slope correctly.",
+    "Both Brayden and Hannah calculated the slope correctly.",
+    "Neither Brayden nor Hannah calculated the slope correctly."
+   ],
+   "figures": [
+    "Brayden marks a rise of 3 against a run of 2. Hannah marks a rise of 4 against a run of 6 on the same line."
+   ],
+   "readingA": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 10,
+    "lessonTitle": "Meet Slope",
+    "activity": "Similar Triangles on the Same Line",
+    "page": 146,
+    "quote": "What do you notice about the last column in the table?"
+   },
+   "readingB": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "activity": "Toward a More General Slope Formula",
+    "page": 133,
+    "quote": "Describe a procedure for finding the"
+   }
+  },
+  "g8-2025-037": {
+   "standard": "NY-8.NS.2",
+   "pValue": 0.57,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "They differ only in where P sits: about 3, about 4, about 5, and about 7."
+   ],
+   "readingA": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 5,
+    "lessonTitle": "Square Roots on the Number Line",
+    "activity": "Square Root of 3",
+    "page": 73,
+    "quote": "Find a point on the number line that"
+   },
+   "readingB": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 6,
+    "lessonTitle": "Reasoning About Square Roots",
+    "activity": "Solutions on a Number Line",
+    "page": 83,
+    "quote": "rational approximations of irrational numbers to place both rational and irrational numbers"
+   }
+  },
+  "g8-2025-039": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.29,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "A table of values for a linear function is shown below. What is the rate of change for this function?",
+   "choices": [],
+   "figures": [
+    "Negative 18 with negative 6, negative 8 with negative 1, 0 with 3, 4 with 5, and 6 with 6."
+   ],
+   "readingA": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 10,
+    "lessonTitle": "Calculating Slope",
+    "activity": "Different Slopes",
+    "page": 137,
+    "quote": "Find the slope of the line that passes through each pair of points."
+   },
+   "readingB": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "An Illuminated Moon",
+    "page": 133,
+    "quote": "On the second day, 6% is illuminated."
+   }
+  },
+  "g8-2025-046": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.34,
+   "type": "Constructed Response",
+   "key": null,
+   "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be reflected over the <span class=\"math\">y</span> axis to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span>?",
+   "choices": [],
+   "figures": [
+    "A is at negative 3, 4, B at negative 5, negative 1, and C at 1, 2."
+   ],
+   "readingA": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Dilations and Slope Triangles",
+    "page": 171,
+    "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+   },
+   "readingB": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Reflecting Points on the Coordinate Plane",
+    "page": 75,
+    "quote": "when reflecting over the vertical or horizontal axis, one coordinate value must stay the same"
+   }
+  },
+  "g8-2026-001": {
+   "standard": "NY-8.G.3",
+   "pValue": 0.81,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "Triangle <span class=\"math\">ABC</span> is graphed on the coordinate plane shown below. Triangle <span class=\"math\">ABC</span> will be translated <span class=\"math\">4</span> units to the left and <span class=\"math\">2</span> units up to create triangle <span class=\"math\">A′B′C′</span>. What will be the coordinates of vertex <span class=\"math\">A′</span> ?",
+   "choices": [
+    "<span class=\"math\">(0, − 1)</span>",
+    "<span class=\"math\">(2,1)</span>",
+    "<span class=\"math\">(− 1,7)</span>",
+    "<span class=\"math\">(−6,5)</span>"
+   ],
+   "figures": [
+    "Vertex A is at negative 2, 3. Vertex B is at 2, negative 2. Vertex C is at 3, 5."
+   ],
+   "readingA": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Dilations and Slope Triangles",
+    "page": 171,
+    "quote": "Draw the dilation of triangle ABC with center (0, 1)"
+   },
+   "readingB": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 5,
+    "lessonTitle": "Coordinate Moves",
+    "activity": "Translating Coordinates",
+    "page": 74,
+    "quote": "Select all of the translations that take Triangle T to Triangle U"
+   }
+  },
+  "g8-2026-005": {
+   "standard": "NY-8.NS.1",
+   "pValue": 0.62,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Which value is irrational?",
+   "choices": [
+    "<span class=\"math\">0</span>",
+    "<span class=\"math\">π</span>",
+    "<span class=\"math\">√<span class=\"repeat\">9</span></span>",
+    "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 4,
+    "lessonTitle": "Rational and Irrational Numbers",
+    "activity": "Looking for a Solution",
+    "page": 62,
+    "quote": "Are any of these numbers a solution to the equation"
+   },
+   "readingB": {
+    "unit": 7,
+    "unitTitle": "Pythagorean Theorem and Irrational Numbers",
+    "lesson": 17,
+    "lessonTitle": "Infinite Decimal Expansions",
+    "activity": "Some Numbers Are Not Rational",
+    "page": 206,
+    "quote": "how they might figure out a value for π using measurements of circles"
+   }
+  },
+  "g8-2026-011": {
+   "standard": "NY-8.F.1",
+   "pValue": 0.44,
+   "type": "Multiple Choice",
+   "key": "D",
+   "stem": "Which relation is not a function?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "A is a row of points all at height 2. B is a set of points rising from left to right. C is a U-shaped curve opening upward. D is a V shape made of two rays meeting on the x-axis."
+   ],
+   "readingA": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 4,
+    "lessonTitle": "Tables, Equations, and Graphs of Functions",
+    "activity": "Running around a Track",
+    "page": 70,
+    "quote": "a graph in which each input does not give exactly one output"
+   },
+   "readingB": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 2,
+    "lessonTitle": "Introduction to Functions",
+    "activity": "You Know This, Do You Know That?",
+    "page": 38,
+    "quote": "give examples of two different outputs that are possible for the same input"
+   }
+  },
+  "g8-2026-012": {
+   "standard": "NY-8.EE.7a",
+   "pValue": 0.48,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Which equation has an infinite number of solutions?",
+   "choices": [
+    "<span class=\"math\">2x − 1 = 2 (x − 1)</span>",
+    "<span class=\"math\">2x − 2 = 2 (x − 1)</span>",
+    "<span class=\"math\">2x − 3 = 3 (x − 1)</span>",
+    "<span class=\"math\">2x + 3 = 3 (x − 1)</span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 7,
+    "lessonTitle": "All, Some, or No Solutions",
+    "activity": "Thinking About Solutions",
+    "page": 91,
+    "quote": "2t + 6 = 2t + 3"
+   },
+   "readingB": {
+    "unit": 4,
+    "unitTitle": "Linear Equations and Linear Systems",
+    "lesson": 8,
+    "lessonTitle": "How Many Solutions?",
+    "activity": "Make Use of Structure",
+    "page": 101,
+    "quote": "determine whether it has no solutions, exactly one solution, or is true for all"
+   }
+  },
+  "g8-2026-020": {
+   "standard": "NY-8.EE.6",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Which equation represents the line that passes through the points <span class=\"math\">(0,9)</span> and <span class=\"math\">(3,0)</span> ?",
+   "choices": [
+    "<span class=\"math\">y = −3x + 3</span>",
+    "<span class=\"math\">y = −3x + 9</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
+    "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>"
+   ],
+   "figures": [],
+   "readingA": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 12,
+    "lessonTitle": "Equations of All Kinds of Lines",
+    "activity": "All the Same",
+    "page": 153,
+    "quote": "Plot at least 10 points whose y-coordinate is -4 ."
+   },
+   "readingB": {
+    "unit": 2,
+    "unitTitle": "Dilations, Similarity, and Introducing Slope",
+    "lesson": 12,
+    "lessonTitle": "Using Equations for Lines",
+    "activity": "Writing Relationships From Two Points",
+    "page": 173,
+    "quote": "Using what you know about similar triangles, find an equation for the line"
+   }
+  },
+  "g8-2026-025": {
+   "standard": "NY-8.G.1b",
+   "pValue": 0.69,
+   "type": "Multiple Choice",
+   "key": "B",
+   "stem": "Triangle <span class=\"math\">ABC</span> is rotated clockwise about the origin to create triangle <span class=\"math\">XYZ</span> as shown on the coordinate plane below. Which statement is correct?",
+   "choices": [
+    "<span class=\"math\">∠A ≅ ∠Y</span>",
+    "<span class=\"math\">∠B ≅ ∠Y</span>",
+    "<span class=\"math\">∠B ≅ ∠Z</span>",
+    "<span class=\"math\">∠C ≅ ∠X</span>"
+   ],
+   "figures": [
+    "Triangle ABC has A at negative 2, 3, B at negative 5, 1 and C at negative 2, 1. Triangle XYZ has X at 3, 2, Y at 1, 5 and Z at 1, 2."
+   ],
+   "readingA": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 10,
+    "lessonTitle": "Composing Figures",
+    "activity": "Triangle Plus Two",
+    "page": 139,
+    "quote": "Find two pairs of angles in the diagram that have the same measure"
+   },
+   "readingB": {
+    "unit": 1,
+    "unitTitle": "Rigid Transformations and Congruence",
+    "lesson": 8,
+    "lessonTitle": "Rotation Patterns",
+    "activity": "Rotating a Segment",
+    "page": 113,
+    "quote": "Rotate segment CD 180° around point D."
+   }
+  },
+  "g8-2026-026": {
+   "standard": "NY-8.F.4",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "C",
+   "stem": "A linear function is graphed on the coordinate plane shown below. Which statement is true about the function?",
+   "choices": [
+    "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+    "The rate of change is <span class=\"math\"><span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>.",
+    "The rate of change is <span class=\"math\">−<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">4</span>.",
+    "The rate of change is <span class=\"math\">−<span class=\"frac\"><span>2</span><span>3</span></span></span> and the <span class=\"math\">y</span> intercept is <span class=\"math\">6</span>."
+   ],
+   "figures": [
+    "The line crosses the y-axis at 4 and the x-axis at 8, falling one unit for every two it runs to the right."
+   ],
+   "readingA": {
+    "unit": 5,
+    "unitTitle": "Functions and Volume",
+    "lesson": 9,
+    "lessonTitle": "Linear Models",
+    "activity": "Recycling",
+    "page": 137,
+    "quote": "the percentage of all garbage collected between 1991 and 2013"
+   },
+   "readingB": {
+    "unit": 3,
+    "unitTitle": "Linear Relationships",
+    "lesson": 6,
+    "lessonTitle": "More Linear Relationships",
+    "activity": "Savings",
+    "page": 87,
+    "quote": "Determine the vertical intercept and explain what it represents in this situation."
+   }
+  }
+ }
+}

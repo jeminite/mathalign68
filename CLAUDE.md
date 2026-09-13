@@ -100,6 +100,22 @@ Have a second pass **re-derive** the placement from the lessons rather than
 review the first pass's prose. Reviewing prose finds typos; re-deriving finds
 wrong answers.
 
+**A second pass that wins overwhelmingly is a warning, not a triumph.** Grade
+8's blind second pass agreed with the first on only 55.6% of items, and
+settlement went 50-4 to the second reading. That is not two good readings
+differing: it is one bad one. A blind re-test -- the two readings relabelled
+A/B, the side randomised per item, both citations verified to resolve -- chose
+the second reading 18 times out of 18, and named the fault in the same terms the
+settlers had: the first pass matched a TOPIC LABEL rather than the item's
+question, which is the failure this file already warns about two paragraphs
+down. Settlement then moved grade 8 toward its one outside signal (section
+agreement 63.7% -> 69.2%), which internal churn would not do. So read a
+disagreement rate as a measure of irreducible judgement ONLY once both readings
+have been shown to be competent; otherwise it is measuring the weaker one.
+`provenance/alignment_second_pass_g8.md` has the whole sequence, including a
+first blind test whose instrument was broken in the flattering direction and had
+to be thrown away.
+
 **Two careful readings agree on the lesson about two thirds of the time, and
 that is the honest ceiling.** Grade 7's blind second pass compared 129 items and
 matched 85 -- 65.9%, before any settling. Only 17 of the 44 disagreements
