@@ -28,10 +28,10 @@ the table).
 
 | | |
 |---|---|
-| NYCPS's lesson is **inside** the publisher's candidate set | **127 / 164 — 77.4%** |
+| NYCPS's lesson is **inside** the publisher's candidate set | **130 / 167 — 77.8%** |
 | outside the set, but inside a unit the set names | 31 / 164 — 18.9% |
 | in a unit the candidate set never mentions | 6 / 164 — 3.7% |
-| **unit-level agreement** | **158 / 164 — 96.3%** |
+| **unit-level agreement** | **161 / 167 — 96.4%** |
 
 ## What this means
 
@@ -97,7 +97,7 @@ Three signals, measured separately against the same 160-odd citations:
 
 | signal | names NYCPS's lesson |
 |---|---|
-| course guide's *Lessons by Standard* table | 77.4% |
+| course guide's *Lessons by Standard* table | 77.8% |
 | **unit guide's own per-lesson `Addressing` tag** | **82.6%** |
 | lexical similarity alone (tf-idf, first attempt) | 58.1% at k=8 |
 
@@ -148,3 +148,22 @@ Unchanged from Part 1, and they bound everything above: grade 8 has no NYCPS
 lesson citations, so none of these recall figures are measured on grade 8; and
 the NYCPS sheets stop at 2025, so the 123 items from 2026 have no independent
 check of any kind.
+
+
+---
+
+## Re-measured after a regex fix (three more rows now parse)
+
+The citation pattern required the singular word "Lesson". Three grade 6 rows write
+`Unit 7, Lessons 8` — plural, for a single lesson — and were silently dropped, which made the
+sheet look three rows thinner than it is rather than raising any error. A citation that fails to
+parse is indistinguishable from one that does not exist.
+
+With `Lessons?` the comparable set goes from 164 to 167, and the figures move slightly: lesson
+agreement **77.4% → 77.8%**, unit agreement **96.3% → 96.4%**. The conclusion is unchanged, and
+the correction is recorded because the old numbers are quoted in `CLAUDE.md` and in
+`provenance/alignment_second_pass_g7.md`.
+
+This matters most for grade 6, whose NYCPS sheet is the best external check in the project: all
+87 rows carry a Curriculum Note naming a specific lesson, and all 87 standards match
+`items.json` exactly. Grade 8's sheet, by contrast, cites no lessons at all.

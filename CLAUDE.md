@@ -86,8 +86,8 @@ finding about the curriculum, not a failure.
 
 **Do not treat the standard-to-lesson table as the search space.**
 `provenance/alignment_baseline_measurement.md` measures it against NYCPS's
-independent citations: it names the right unit 96.3% of the time and the right
-lesson only 77.4%. Use it to pick the unit, then read the lessons. Deferring to
+independent citations: it names the right unit 96.4% of the time and the right
+lesson only 77.8%. Use it to pick the unit, then read the lessons. Deferring to
 that table against your own reading is the documented cause of RegentsAlign's 26
 placement errors.
 

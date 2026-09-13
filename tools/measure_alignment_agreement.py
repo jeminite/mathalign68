@@ -35,7 +35,11 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NYCPS = os.path.join(ROOT, "sources", "nycps")
-CITE = re.compile(r"Grade\s+(\d),\s*Unit\s+(\d+),\s*Lesson\s+(\d+)\s*:?\s*[\"“]?([^\"”\n]*)")
+# "Lessons?" with the optional s: three grade 6 rows read "Unit 7, Lessons 8"
+# for a single lesson. The singular-only pattern silently dropped them, and a
+# citation that does not parse is indistinguishable from one that does not
+# exist -- it just makes the sheet look 3 rows thinner than it is.
+CITE = re.compile(r"Grade\s+(\d),\s*Unit\s+(\d+),\s*Lessons?\s+(\d+)\s*:?\s*[\"“]?([^\"”\n]*)")
 
 
 def norm(t):
