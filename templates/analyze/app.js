@@ -149,6 +149,120 @@
     });
     h.push("</tbody></table>");
 
+    /* ---- where to focus next year ---- */
+    h.push("<h3>Where to focus next year</h3>");
+    var f = r.focus.filter(function (x) { return x.creditsLost > 0; });
+    if (!f.length) {
+      h.push('<p class="muted">This class was at or above the State on every standard.</p>');
+    } else {
+      h.push('<p class="note">Ranked by <strong>expected credits lost per student per year</strong> ' +
+             "\u2014 the gap multiplied by how many credits that standard actually carries, " +
+             "averaged over every grade " + (r.grade || "") + " test published here. Two " +
+             "standards with the same gap are not equally costly: one worth 2.5 credits a year " +
+             "matters more than one worth 1.</p>");
+      h.push('<table class="grid"><thead><tr><th>Standard</th><th>Your class</th><th>State</th>' +
+             "<th>Diff</th><th>Credits/yr</th><th>On how many tests</th><th>Credits lost</th>" +
+             "<th>Taught in</th></tr></thead><tbody>");
+      f.forEach(function (x) {
+        h.push("<tr><td>" + esc(x.standard) + "</td><td>" + pc(x.classP) + "</td><td>" +
+               pc(x.stateP) + '</td><td class="' + gapClass(x.gap) + '">' + gapStr(x.gap) +
+               "</td><td>" + x.creditsPerYear.toFixed(2) + "</td><td>" + x.recurs + " of " +
+               x.ofYears + '</td><td><strong>' + x.creditsLost.toFixed(2) + "</strong></td><td>" +
+               unitCell(r, x.standard) + "</td></tr>");
+      });
+      h.push("</tbody></table>");
+      var lost = f.reduce(function (a, x) { return a + x.creditsLost; }, 0);
+      h.push('<p class="note">Those add to about <strong>' + lost.toFixed(1) + " credits</strong> " +
+             "per student per year." + plContext(r, lost) + "</p>");
+    }
+
+    /* ---- what gates proficiency ---- */
+    h.push("<h3>What gates proficiency</h3>");
+    if (!r.gating.usable) {
+      h.push('<p class="muted">' + esc(r.gating.why) + ".</p>");
+    } else {
+      var g = r.gating, sz = g.sizes;
+      h.push('<p class="note">Each standard\u2019s credits earned, split by the level each ' +
+             "student actually reached on this test \u2014 Level 1 (" + sz.L1 + " students), " +
+             "Level 2 (" + sz.L2 + "), Level 3 (" + sz.L3 + "), Level 4 (" + sz.L4 + "). " +
+             "A standard \u201cgates\u201d a threshold when the band above handles it and the " +
+             "band below does not. \u201cHandles it\u201d means earning at least " +
+             Math.round(g.threshold * 100) + "% of its credits; that line is a judgement, and " +
+             "moving it moves these lists.</p>");
+      [["gates-L2-L3", "Gates Level 3 \u2014 proficiency", true],
+       ["gates-L1-L2", "Gates Level 2", false],
+       ["gates-L3-L4", "Gates Level 4", false],
+       ["weak-for-all", "Weak for every band", false],
+       ["mixed", "No clean threshold", false],
+       ["solid", "Already solid everywhere", false]].forEach(function (b) {
+        var rows = g.rows.filter(function (x) { return x.bucket === b[0]; });
+        if (!rows.length) return;
+        h.push("<h4>" + b[1] + " <span class=\"muted\">\u00b7 " + rows.length +
+               " standard" + (rows.length === 1 ? "" : "s") + "</span></h4>");
+        if (b[2]) {
+          h.push('<p class="note">The highest-leverage list on this page. A credit is worth ' +
+                 "roughly double here \u2014 see the note below \u2014 so these are the " +
+                 "cheapest places to move a student across the proficiency line.</p>");
+        }
+        h.push('<table class="grid"><thead><tr><th>Standard</th><th>Credits</th>' +
+               "<th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Level 4</th>" +
+               "<th>Taught in</th></tr></thead><tbody>");
+        rows.forEach(function (x) {
+          h.push("<tr><td>" + esc(x.standard) + "</td><td>" + x.credits + "</td>" +
+                 ["L1", "L2", "L3", "L4"].map(function (k) {
+                   var v = x.byBand[k];
+                   var cls = v === null ? "" : (v >= g.threshold ? "g-good" : "g-bad");
+                   return '<td class="' + cls + '">' + pc(v) + "</td>";
+                 }).join("") + "<td>" + unitCell(r, x.standard) + "</td></tr>");
+        });
+        h.push("</tbody></table>");
+      });
+    }
+
+    /* ---- when it is taught ---- */
+    var G = r.gatingByUnit;
+    if (G && G.units && G.units.length) {
+      h.push("<h3>When the gating content is taught</h3>");
+      h.push('<p class="note">The standards that gate proficiency, placed against the ' +
+             "35-week Imagine IM pacing calendar. The unit a standard belongs to is taken from " +
+             "the publisher\u2019s own standard-to-lesson table, which names the right " +
+             "<em>unit</em> 96.3% of the time and the right lesson only 77.4%, so this is unit " +
+             "level only.</p>");
+      h.push('<table class="grid"><thead><tr><th>Unit</th><th>Starts</th>' +
+             "<th>Gating credits</th><th>Standards</th></tr></thead><tbody>");
+      G.units.forEach(function (u) {
+        h.push("<tr><td>" + u.unit + " \u2014 " + esc(u.title || "?") + "</td><td>week " +
+               (u.startWeek === null ? "?" : u.startWeek) + "</td><td>" + u.credits +
+               "</td><td>" + u.standards.map(esc).join(", ") + "</td></tr>");
+      });
+      h.push("</tbody></table>");
+      if (G.doubleCounted) {
+        h.push('<p class="note">A standard taught in more than one unit is counted in each, so ' +
+               "these do not sum to the " + G.distinctCredits + " distinct gating credits.</p>");
+      }
+      var late = G.units.filter(function (u) { return u.startWeek >= 21 && u.startWeek <= 29; });
+      if (late.length) {
+        var lateCr = late.reduce(function (a, u) { return a + u.credits; }, 0);
+        h.push('<div class="caution"><strong>' + lateCr + " of the gating credits are taught " +
+               "in weeks 21\u201329</strong> \u2014 " +
+               late.map(function (u) { return "Unit " + u.unit + " (week " + u.startWeek + ")"; })
+                 .join(" and ") + " \u2014 against a State test in roughly week 30. The content " +
+               "that most decides whether a student reaches proficiency arrives last, with the " +
+               "least room left to reteach it. That is a pacing decision rather than an " +
+               "instructional one, and it is the most actionable thing on this page.</div>");
+      }
+    }
+
+    if (r.placement && r.placement.unplaced.length) {
+      h.push('<p class="note">Not found in the grade ' + (r.grade || "") +
+             " standard-to-lesson table at all: " + r.placement.unplaced.map(esc).join(", ") +
+             ". That is a gap in the published index, not a gap in your teaching.</p>");
+    }
+    if (r.placement && r.placement.priorGrade.length) {
+      h.push('<p class="note">Assessed here but taught a year earlier, so they sit in no grade ' +
+             (r.grade || "") + " unit: " + r.placement.priorGrade.map(esc).join(", ") + ".</p>");
+    }
+
     /* ---- rollups ---- */
     h.push("<h3>By standard</h3>");
     h.push(rollupTable(r.byStandard, "Standard"));
@@ -215,6 +329,35 @@
     $("out").innerHTML = h.join("");
     $("print").onclick = function () { window.print(); };
     $("again").onclick = reset;
+  }
+
+  // Which unit(s) a standard is taught in, and when. Unit level only.
+  function unitCell(r, std) {
+    var us = (r.placement && r.placement.byStandard[std]) || [];
+    if (!us.length) return '<span class="muted">\u2014</span>';
+    return us.map(function (u) {
+      return "U" + u.unit + (u.startWeek === null ? "" : " (wk " + u.startWeek + ")");
+    }).join(", ");
+  }
+
+  // Turn a credits figure into proficiency-level terms, and refuse to when the
+  // curve could not be recovered. This is the sentence that keeps the whole page
+  // honest: closing the State gap is worth far less than it sounds.
+  function plContext(r, lostCredits) {
+    var c = r.curve;
+    if (!c || !c.usable) return "";
+    var l2 = (c.bands.filter(function (b) { return b.band === "L2"; })[0] || {}).plPerCredit;
+    if (!l2) return "";
+    var cut = c.cuts.filter(function (x) { return x.level === 3; })[0] || {};
+    var move = (lostCredits * l2).toFixed(2);
+    return " On this test a credit was worth about " + l2.toFixed(3) + " of a proficiency " +
+           "level just below the Level 3 line, so recovering all of them would move a student " +
+           "there by roughly <strong>" + move + " of a level</strong>" +
+           (cut.raw ? " \u2014 and Level 3 itself began at " + cut.raw + " of " +
+            r.totalCredits + " credits" : "") +
+           ". Closing the gap to the State average is worth real credits, but it is " +
+           "<strong>not</strong> the same as moving a student up a level: that takes closer to " +
+           "8 credits from mid-Level 2.";
   }
 
   function tally(i) {

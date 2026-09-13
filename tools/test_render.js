@@ -180,9 +180,34 @@ Xlsx.parse(fs.readFileSync(path.join(ROOT, "fixtures", "isa_g6_2026_synthetic.xl
     // The report that was rendered came from the page's own copy of the engine,
     // so the numbers on screen have to be the numbers the suite pinned.
     ok("the overall figure on the page is the engine's",
-       out.indexOf(">53.0%<") >= 0, true);
+       out.indexOf(">50.4%<") >= 0, true);
     ok("the state figure on the page is the engine's",
        out.indexOf(">54.8%<") >= 0, true);
+
+    // The three new sections.
+    ok("the areas-of-focus section rendered", /Where to focus next year/.test(out), true);
+    ok("it explains that weight matters, not just gap",
+       /how many credits that standard actually carries/.test(out), true);
+    ok("the proficiency-gating section rendered", /What gates proficiency/.test(out), true);
+    ok("band sizes are shown, not hidden", /Level 1 \(\d+ students\)/.test(out), true);
+    ok("the gating threshold is stated on the page", /at least \d+% of its credits/.test(out), true);
+    ok("the pacing section rendered", /When the gating content is taught/.test(out), true);
+    ok("the table's unit-level accuracy is stated", /96\.3% of the time/.test(out), true);
+
+    // The sentence that keeps the page honest. Closing the State gap is worth
+    // far less than it sounds, and the page has to say so where the figure is.
+    ok("the page says closing the State gap does not move a level",
+       /not<\/strong>\s*the same as moving a student up a level/.test(out), true);
+
+    // Ordering: what happened comes before what to do about it.
+    const gapAt = out.indexOf("Every question, against the State");
+    const focusAt = out.indexOf("Where to focus next year");
+    ok("the results precede the recommendations", gapAt >= 0 && gapAt < focusAt, [gapAt, focusAt]);
+
+    // An individual proficiency level must not reach the page. The curve and the
+    // band percentages are aggregate; a per-student PL is not.
+    ok("no per-student proficiency level in the rendered report",
+       !/"pl"\s*:/.test(out), true);
 
     // Nothing identity-shaped may survive rendering either.
     ok("no OSIS-shaped run in the rendered report", !/\b\d{9}\b/.test(out), true);

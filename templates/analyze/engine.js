@@ -109,6 +109,36 @@
     return -1;
   }
 
+  // The proficiency-level column, and the second exception to "never read left
+  // of the grid". It is read for exactly two aggregate purposes -- recovering
+  // the raw-to-PL curve, which is a property of the TEST, and banding students
+  // so the report can say which standards gate which threshold. No individual
+  // PL ever reaches the report; assertNoIdentity enforces that with a banned
+  // key list rather than trusting this comment.
+  //
+  // Guarded the same mechanical way as the Class column: the header must be
+  // exactly "NYS Math", the index must not be 0, and every value must parse as
+  // a number inside the level scale. A column of anything else is refused
+  // whole rather than read partially.
+  function findPlColumn(grid, headerRow, firstQCol) {
+    if (!grid[headerRow]) return -1;
+    for (var c = 1; c < firstQCol; c++) {
+      if (cell(grid[headerRow][c]).toLowerCase() !== "nys math") continue;
+      var seen = 0;
+      for (var r = headerRow + 1; r < Math.min(grid.length, headerRow + 400); r++) {
+        var v = cell(grid[r] && grid[r][c]);
+        if (!v) continue;
+        var n = parseFloat(v);
+        // 1.0 to 4.6: the NYS level scale with headroom. A percentage, a scale
+        // score in the hundreds, or a letter grade all fall outside it.
+        if (isNaN(n) || n < 1 || n > 4.6) return -1;
+        seen++;
+      }
+      return seen ? c : -1;
+    }
+    return -1;
+  }
+
   function parseGrid(grid) {
     var warn = [];
     if (!grid || !grid.length) {
@@ -130,6 +160,7 @@
     }
 
     var classCol = findClassColumn(grid, head.row, firstQCol);
+    var plCol = findPlColumn(grid, head.row, firstQCol);
     var students = [], sections = {};
     for (var r = head.row + 1; r < grid.length; r++) {
       if (!grid[r]) continue;
@@ -142,7 +173,12 @@
       if (!any) continue;                       // blank or spacer row
       var sec = classCol >= 0 ? (cell(grid[r][classCol]) || null) : null;
       if (sec) sections[sec] = (sections[sec] || 0) + 1;
-      students.push({ section: sec, resp: resp });
+      var pl = null;
+      if (plCol >= 0) {
+        var pv = parseFloat(cell(grid[r][plCol]));
+        if (!isNaN(pv)) pl = pv;
+      }
+      students.push({ section: sec, resp: resp, pl: pl });
     }
 
     if (!students.length) {
@@ -162,7 +198,7 @@
     }
 
     return { questions: qs, std: head.std, students: students, sections: sections,
-             headerRow: head.row + 1, warnings: warn };
+             hasPl: plCol >= 0, headerRow: head.row + 1, warnings: warn };
   }
 
   /* --------------------------------------------------------------- identify */
@@ -199,6 +235,122 @@
                       "trust. MathAlign68 covers grades 6–8 for 2023–2026." };
     }
     return { testId: best.testId, agree: best.agree, total: total, runnerUp: next.agree };
+  }
+
+  /* --------------------------------------------------------------- pl curve */
+
+  // Recover raw-credits -> proficiency level from the file's own PL column.
+  //
+  // It is a LOOKUP, not a fit. On the one real export in hand the PL is a
+  // collision-free strictly-increasing function of raw credits: 35 distinct raw
+  // values across 78 students, not one mapping to two PLs. So the conversion is
+  // recovered rather than estimated, and a target can be stated in credits --
+  // the only unit a student can act on.
+  //
+  // If it ever DOES collide, that assumption is broken for that file and every
+  // downstream PL claim is suppressed. Averaging the colliding values would
+  // produce a curve that looks fine and is wrong. See provenance/pl_curve.md.
+  var PL_CUTS = [2, 3, 4];
+
+  function plCurve(rawByStudent, pls, total) {
+    var seen = {}, collisions = 0;
+    for (var i = 0; i < pls.length; i++) {
+      if (pls[i] === null || rawByStudent[i] === null) continue;
+      var raw = rawByStudent[i];
+      if (!(raw in seen)) { seen[raw] = pls[i]; continue; }
+      if (Math.abs(seen[raw] - pls[i]) > 0.005) collisions++;
+    }
+    var points = Object.keys(seen).map(Number).sort(function (a, b) { return a - b; });
+    if (points.length < 6) {
+      return { usable: false, why: "too few distinct raw scores (" + points.length +
+                                  ") to recover a curve", points: points.length };
+    }
+    for (var j = 0; j + 1 < points.length; j++) {
+      if (seen[points[j + 1]] <= seen[points[j]]) collisions++;   // not monotonic
+    }
+    if (collisions) {
+      return { usable: false, why: "the proficiency level is not a clean function of raw " +
+                                   "credits in this file (" + collisions + " conflict(s)), so " +
+                                   "no credit target can be trusted from it",
+               collisions: collisions, points: points.length };
+    }
+
+    // Named `level`, not `pl`, so that `pl` stays reserved for per-student
+    // data and assertNoIdentity's banned-key list needs no path exception.
+    var table = points.map(function (r) { return { raw: r, level: seen[r] }; });
+
+    // Which cut points landed on an OBSERVED raw score and which are bracketed
+    // between two. On the real file Level 3 and Level 4 are exact and Level 2
+    // is not, and presenting all three with equal confidence would be a lie.
+    var cuts = PL_CUTS.map(function (cut) {
+      var exact = points.filter(function (r) { return Math.abs(seen[r] - cut) < 0.005; });
+      if (exact.length) {
+        return { level: cut, raw: exact[0], exact: true,
+                 pctOfTest: total ? Math.round(1000 * exact[0] / total) / 10 : null };
+      }
+      var below = points.filter(function (r) { return seen[r] < cut; });
+      var above = points.filter(function (r) { return seen[r] > cut; });
+      if (!below.length || !above.length) return { level: cut, raw: null, exact: false };
+      var lo = below[below.length - 1], hi = above[0];
+      return { level: cut, raw: hi, exact: false, between: [lo, hi],
+               pctOfTest: total ? Math.round(1000 * hi / total) / 10 : null };
+    });
+
+    // PL gained per credit, between adjacent observed points, per level band.
+    // The L2 band runs at roughly double the others: a student just below
+    // proficient is the cheapest to move. That is a targeting fact and the page
+    // presents it as one.
+    var bands = [[1, 2, "L1"], [2, 3, "L2"], [3, 4, "L3"], [4, 9, "L4"]].map(function (b) {
+      var rates = [];
+      for (var k = 0; k + 1 < points.length; k++) {
+        var a = points[k], c = points[k + 1];
+        // BOTH endpoints inside the band. A segment that crosses a threshold
+        // belongs to neither: raw 23->24 is the credit that carries a student
+        // from 2.94 into proficiency, and counting it as an L2 rate pulled the
+        // L2 figure down by half a point. Likewise raw 38 (3.97) is an L3
+        // point, and including it in L4 understated L4.
+        if (seen[a] >= b[0] && seen[a] < b[1] && seen[c] >= b[0] && seen[c] < b[1]) {
+          rates.push((seen[c] - seen[a]) / (c - a));
+        }
+      }
+      var mean = rates.length ? rates.reduce(function (x, y) { return x + y; }, 0) / rates.length : null;
+      return { band: b[2], plPerCredit: mean === null ? null : Math.round(mean * 1000) / 1000,
+               segments: rates.length };
+    });
+
+    function rawFor(pl) {
+      var over = points.filter(function (r) { return seen[r] > pl; });
+      return over.length ? over[0] : null;
+    }
+    function plFor(raw) {
+      if (raw in seen) return seen[raw];
+      var below = points.filter(function (r) { return r <= raw; });
+      return below.length ? seen[below[below.length - 1]] : null;
+    }
+
+    return { usable: true, total: total, table: table, cuts: cuts, bands: bands,
+             points: points.length, collisions: 0,
+             // Raw scores nobody in this class earned. Anything between two
+             // observed points is interpolation; the page says so.
+             unobserved: (function () {
+               var out = [];
+               for (var r = points[0]; r <= total; r++) if (!(r in seen)) out.push(r);
+               return out;
+             })(),
+             rawFor: rawFor, plFor: plFor };
+  }
+
+  // "From PL x, how many more credits to get above PL y?" -- the question the
+  // whole curve exists to answer. A band-level answer would be wrong for almost
+  // everyone in the band: 2.75-3.25 is 8 credits at the bottom and 1 at the top.
+  function creditsToReach(curve, fromPl, targetPl) {
+    if (!curve.usable) return null;
+    var from = null;
+    curve.table.forEach(function (t) { if (t.level <= fromPl) from = t.raw; });
+    if (from === null) from = curve.table[0].raw;
+    var to = curve.rawFor(targetPl);
+    if (to === null) return null;
+    return { fromRaw: from, toRaw: to, credits: Math.max(0, to - from) };
   }
 
   /* ---------------------------------------------------------------- analyse */
@@ -374,6 +526,62 @@
       if (i.stateP !== null) stateAll += i.stateP * i.credits * n;
     });
 
+    // Per-student raw credit totals, on the matched items only. These exist to
+    // build the curve and to band students; they are NOT part of the report and
+    // assertNoIdentity refuses a report that carries them.
+    var totalCredits = items.reduce(function (a, i) { return a + i.credits; }, 0);
+    var rawByStudent = parsed.students.map(function (s) {
+      var raw = 0;
+      items.forEach(function (i) {
+        var meta = byItem[i.item], v = s.resp[i.item];
+        if (v === null) return;
+        if (meta.type === "Multiple Choice") {
+          if (meta.key && v.toUpperCase() === meta.key.toUpperCase()) raw += meta.credits;
+        } else {
+          var pv = parseFloat(v);
+          if (!isNaN(pv)) raw += pv;
+        }
+      });
+      return raw;
+    });
+    var curve = parsed.hasPl
+      ? plCurve(rawByStudent, parsed.students.map(function (s) { return s.pl; }), totalCredits)
+      : { usable: false, why: "this file carries no proficiency-level column" };
+
+    var gating = parsed.hasPl ? bandGating(parsed, items, byItem)
+                              : { usable: false, why: "this file carries no proficiency-level column" };
+    var focusRows = focus(items, data, test.grade);
+    var place = placement(items, data, test.grade);
+
+    // Gating credits per unit -- the finding that turned out to matter most on
+    // the real file. The standards that gate proficiency concentrate in units
+    // taught after the midpoint of the year, against a test in roughly week 30.
+    var gatingByUnit = { units: [], distinctCredits: 0, doubleCounted: false };
+    if (gating.usable) {
+      var acc = {};
+      gating.rows.filter(function (r) { return r.bucket === "gates-L2-L3"; }).forEach(function (r) {
+        (place.byStandard[r.standard] || []).forEach(function (u) {
+          var a = acc[u.unit] = acc[u.unit] ||
+            { unit: u.unit, title: u.title, startWeek: u.startWeek, credits: 0, standards: [] };
+          a.credits += r.credits;
+          if (a.standards.indexOf(r.standard) < 0) a.standards.push(r.standard);
+        });
+      });
+      gatingByUnit = Object.keys(acc).map(function (k) { return acc[k]; })
+        .sort(function (a, b) { return b.credits - a.credits; });
+
+      // A standard taught in several units is counted in each, so the per-unit
+      // figures deliberately do NOT sum to the gating total -- NY-6.RP.3c alone
+      // appears in units 3, 6 and 9. Publish the true distinct total beside them
+      // so the page can say so rather than implying a partition.
+      var distinct = gating.rows.filter(function (r) { return r.bucket === "gates-L2-L3"; })
+        .reduce(function (a, r) { return a + r.credits; }, 0);
+      gatingByUnit.distinctCredits = distinct;
+      gatingByUnit = { units: gatingByUnit, distinctCredits: distinct,
+                       doubleCounted: gatingByUnit.reduce(function (a, u) {
+                         return a + u.credits; }, 0) !== distinct };
+    }
+
     return {
       testId: testId, grade: test.grade || null, year: test.year || null,
       label: test.label || testId,
@@ -393,12 +601,189 @@
       byDomain: rollup(function (i) { return i.domain; },
                        function (i) { return i.domainLabel; }),
       bySection: bySection,
+      totalCredits: totalCredits,
+      curve: curve, gating: gating, focus: focusRows,
+      placement: place, gatingByUnit: gatingByUnit,
       constructed: items.filter(function (i) { return i.type === "cr"; })
                         .sort(function (a, b) { return b.zeroCredit - a.zeroCredit; }),
       omissions: items.filter(function (i) { return i.omitted > 0; })
                       .sort(function (a, b) { return b.omitted - a.omitted; }),
       warnings: parsed.warnings || []
     };
+  }
+
+  /* ------------------------------------------------------ focus and gating */
+
+  // Expected credits lost per student per year, per standard.
+  //
+  // Ranking by gap alone is wrong, and the real file shows exactly why:
+  // NY-6.EE.8 and NY-6.G.1 share a -17.8% gap, but G.1 is worth 2.5 credits a
+  // year and EE.8 is worth 1. Sorting by gap puts them level. Multiplying the
+  // gap by how many credits the standard actually carries -- averaged over
+  // every same-grade test in the payload -- puts G.1 first, which is where it
+  // belongs.
+  function focus(items, data, grade) {
+    var years = {}, weight = {};
+    data.items.forEach(function (it) {
+      if (it.grade !== grade) return;
+      years[it.year] = 1;
+      (weight[it.standard] = weight[it.standard] || {})[it.year] =
+        ((weight[it.standard] || {})[it.year] || 0) + it.credits;
+    });
+    var yrs = Object.keys(years).map(Number).sort();
+    if (!yrs.length) return [];
+
+    var byStd = {};
+    items.forEach(function (i) {
+      var g = byStd[i.standard] = byStd[i.standard] ||
+        { standard: i.standard, domain: i.domain, domainLabel: i.domainLabel,
+          items: [], earned: 0, possible: 0, stateEarned: 0 };
+      g.items.push(i.item);
+      g.earned += i.earned;
+      g.possible += i.credits * i.n;
+      if (i.stateP !== null) g.stateEarned += i.stateP * i.credits * i.n;
+    });
+
+    return Object.keys(byStd).map(function (k) {
+      var g = byStd[k], w = weight[k] || {};
+      var classP = g.possible ? g.earned / g.possible : null;
+      var stateP = g.possible ? g.stateEarned / g.possible : null;
+      var gap = (classP === null || stateP === null) ? null : classP - stateP;
+      var mean = yrs.reduce(function (a, y) { return a + (w[y] || 0); }, 0) / yrs.length;
+      var recurs = yrs.filter(function (y) { return w[y]; }).length;
+      return { standard: k, domain: g.domain, domainLabel: g.domainLabel,
+               items: g.items, classP: pct(classP), stateP: pct(stateP), gap: pct(gap),
+               creditsPerYear: Math.round(mean * 100) / 100,
+               recurs: recurs, ofYears: yrs.length,
+               // Negative gap only: a standard the class beat the state on is
+               // not an area of focus, and signing it would sort it into the
+               // middle rather than out of the way.
+               creditsLost: gap === null || gap >= 0 ? 0 : Math.round(-gap * mean * 100) / 100 };
+    }).sort(function (a, b) { return b.creditsLost - a.creditsLost; });
+  }
+
+  // Which threshold does each standard gate?
+  //
+  // Borrowed from AlgebraTeaching's Performance_Band_Analysis, which buckets
+  // standards by which score band they block rather than by raw difficulty.
+  // That report calls its own thresholds "a heuristic, not a fitted model";
+  // this one is grounded in the student's own published PL instead.
+  //
+  // 0.60 of available credits is the line for "this band handles it". It is a
+  // judgement, so it is named, reported on the page, and kept in one place.
+  var GATING_THRESHOLD = 0.6;
+  // Below this a band's percentage is noise. AlgebraTeaching scoped this whole
+  // analysis down because its bands held 4-10 students; refusing is better than
+  // publishing a number that cannot bear weight.
+  var MIN_BAND = 5;
+
+  function bandGating(parsed, items, byItem) {
+    var withPl = parsed.students.filter(function (s) { return s.pl !== null; });
+    if (withPl.length < 4 * MIN_BAND) {
+      return { usable: false, why: "not enough students with a proficiency level to band" };
+    }
+    var NAMES = ["L1", "L2", "L3", "L4"];
+    function bandOf(pl) { return pl < 2 ? "L1" : (pl < 3 ? "L2" : (pl < 4 ? "L3" : "L4")); }
+    var groups = {}, sizes = {};
+    NAMES.forEach(function (b) { groups[b] = []; sizes[b] = 0; });
+    withPl.forEach(function (s) { var b = bandOf(s.pl); groups[b].push(s); sizes[b]++; });
+
+    var small = NAMES.filter(function (b) { return sizes[b] < MIN_BAND; });
+    if (small.length) {
+      return { usable: false, sizes: sizes,
+               why: "band" + (small.length === 1 ? " " : "s ") + small.join(", ") +
+                    " " + (small.length === 1 ? "holds" : "hold") + " fewer than " +
+                    MIN_BAND + " students, too few to report a percentage for" };
+    }
+
+    var byStd = {};
+    items.forEach(function (i) {
+      (byStd[i.standard] = byStd[i.standard] || []).push(i.item);
+    });
+
+    var rows = Object.keys(byStd).map(function (std) {
+      var qs = byStd[std];
+      var credits = qs.reduce(function (a, q) { return a + (byItem[q].credits || 1); }, 0);
+      var per = {};
+      NAMES.forEach(function (b) {
+        var roster = groups[b], got = 0;
+        roster.forEach(function (s) {
+          qs.forEach(function (q) {
+            var meta = byItem[q], v = s.resp[q];
+            if (v === null) return;
+            if (meta.type === "Multiple Choice") {
+              if (meta.key && v.toUpperCase() === meta.key.toUpperCase()) got += meta.credits;
+            } else {
+              var n = parseFloat(v);
+              if (!isNaN(n)) got += n;
+            }
+          });
+        });
+        per[b] = roster.length ? pct(got / (credits * roster.length)) : null;
+      });
+
+      var T = GATING_THRESHOLD;
+      var bucket;
+      if (NAMES.every(function (b) { return per[b] >= T; })) bucket = "solid";
+      else if (NAMES.every(function (b) { return per[b] < T; })) bucket = "weak-for-all";
+      else if (per.L2 >= T && per.L1 < T) bucket = "gates-L1-L2";
+      else if (per.L3 >= T && per.L2 < T) bucket = "gates-L2-L3";
+      else if (per.L4 >= T && per.L3 < T) bucket = "gates-L3-L4";
+      else bucket = "mixed";
+      return { standard: std, credits: credits, items: qs, byBand: per, bucket: bucket };
+    });
+
+    var ORDER = ["gates-L2-L3", "gates-L1-L2", "gates-L3-L4", "weak-for-all", "mixed", "solid"];
+    rows.sort(function (a, b) {
+      var d = ORDER.indexOf(a.bucket) - ORDER.indexOf(b.bucket);
+      return d || b.credits - a.credits;
+    });
+    return { usable: true, threshold: GATING_THRESHOLD, minBand: MIN_BAND, sizes: sizes,
+             students: withPl.length, rows: rows };
+  }
+
+  // Where a standard is taught, and when.
+  //
+  // UNIT granularity only. provenance/alignment_baseline_measurement.md measures
+  // the publisher's standard-to-lesson table at 96.3% for the unit and 77.4% for
+  // the lesson, and CLAUDE.md says to use it to pick the unit and then read the
+  // lessons. A focus report needs the unit, which is the part it is good at.
+  function placement(items, data, grade) {
+    var cur = ((data.curriculum || {}).grades || {})[String(grade)] || {};
+    var s2l = cur.standardToLessons || {};
+    // Pacing is already folded into each published unit by build/payload.py --
+    // startWeek, the day range and the mid-unit assessment flag all live there.
+    // Reading it from the unit rather than republishing a pacing block keeps one
+    // copy of the 35-week table on the site.
+    var units = cur.units || {};
+    var out = {}, unplaced = [], priorGrade = [];
+    items.forEach(function (i) {
+      var codes = s2l[i.standard] || [];
+      if (!codes.length) {
+        // A prior-grade post-test standard is not IN this grade's curriculum and
+        // never will be, so it is not a gap in the index -- it is the test
+        // assessing something taught a year earlier. Kept separate, because
+        // reporting NY-5.OA.3 next to NY-6.G.5 as the same kind of problem
+        // would send someone looking for a grade 6 lesson that cannot exist.
+        var list = (i.postTest || i.standard.indexOf("NY-" + grade + ".") !== 0)
+          ? priorGrade : unplaced;
+        if (list.indexOf(i.standard) < 0) list.push(i.standard);
+        return;
+      }
+      var seenUnits = {};
+      codes.forEach(function (c) {
+        var parts = String(c).split(".");
+        if (parts.length >= 2) seenUnits[parts[1]] = 1;
+      });
+      out[i.standard] = Object.keys(seenUnits).sort(function (a, b) { return a - b; })
+        .map(function (u) {
+          var p = units[u] || {};
+          return { unit: Number(u), title: p.title || null, startWeek: p.startWeek || null,
+                   days: p.days || null, midUnitAssessment: !!p.midUnitAssessment };
+        });
+    });
+    return { byStandard: out, unplaced: unplaced, priorGrade: priorGrade,
+             unitAccuracy: 0.963, lessonAccuracy: 0.774 };
   }
 
   /* -------------------------------------------------------------- the guard */
@@ -414,6 +799,31 @@
     var OSIS = /\b\d{9}\b/;
     var NAME = /\b[A-Z]{2,}, ?[A-Z]{2,}\b/;
     var seen = [];
+
+    // A proficiency level is not name-shaped and not OSIS-shaped, so the two
+    // patterns above would never catch one. The PL column IS student data: it
+    // is read to recover the curve and to band students, both aggregate, and an
+    // individual PL must not survive into the report. Mechanical list rather
+    // than a convention, because the next person to add a field will not read
+    // this comment.
+    var BANNED_KEYS = ["pl", "plByStudent", "rawByStudent", "perStudent",
+                       "students_", "roster", "osis", "studentName"];
+    (function walkKeys(node, path) {
+      if (!node || typeof node !== "object") return;
+      if (seen.indexOf(node) >= 0) return;
+      seen.push(node);
+      if (Array.isArray(node)) {
+        node.forEach(function (v, i) { walkKeys(v, path + "[" + i + "]"); });
+        return;
+      }
+      Object.keys(node).forEach(function (k) {
+        if (BANNED_KEYS.indexOf(k) >= 0) {
+          throw new Error("assertNoIdentity: student-level key '" + k + "' at " + path);
+        }
+        walkKeys(node[k], path + "." + k);
+      });
+    })(report, "");
+    seen = [];
 
     // Item stems and answer choices come from the published payload, which is
     // NYSED's own text and contains no student data by construction. Walking
@@ -464,7 +874,10 @@
   }
 
   var api = { parseGrid: parseGrid, findHeaderRow: findHeaderRow,
-              findClassColumn: findClassColumn, identifyTest: identifyTest,
+              findClassColumn: findClassColumn, findPlColumn: findPlColumn,
+              identifyTest: identifyTest, plCurve: plCurve,
+              creditsToReach: creditsToReach, focus: focus,
+              bandGating: bandGating, placement: placement,
               analyse: analyse, assertNoIdentity: assertNoIdentity, run: run };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.ClassEngine = api;

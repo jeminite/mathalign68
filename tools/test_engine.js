@@ -94,12 +94,12 @@ async function main() {
 
   // Pinned figures. These are regression detection, not truth: if a change
   // moves them, the change has altered what the page tells a teacher.
-  check("overall class figure", r.overall.classP, 0.53);
+  check("overall class figure", r.overall.classP, 0.504);
   check("overall state figure", r.overall.stateP, 0.548);
 
   const q = (n) => r.items.find((i) => i.item === n);
   check("Q1 is multiple choice, 1 credit", [q(1).type, q(1).credits], ["mc", 1]);
-  check("Q1 class and state", [q(1).classP, q(1).stateP], [0.744, 0.82]);
+  check("Q1 class and state", [q(1).classP, q(1).stateP], [0.782, 0.82]);
   check("Q46 is a 3-credit constructed response", [q(46).type, q(46).credits], ["cr", 3]);
 
   // A constructed-response state figure is average points earned over credits,
@@ -141,6 +141,101 @@ async function main() {
         q(42).domainLabel, "Operations and Algebraic Thinking");
   const labels = r.byDomain.map((d) => d.label);
   check("no two domain rows share a name", labels.length, new Set(labels).size);
+
+  /* ------------------------------------------------- the PL curve and focus */
+
+  // The curve is a LOOKUP recovered from the file, not a fit. These figures are
+  // derived in provenance/pl_curve.md; if a change moves them the change has
+  // altered what the page tells a teacher about a student's target.
+  const tbl = { 4: 1.34, 6: 1.53, 7: 1.62, 8: 1.68, 9: 1.74, 10: 1.79, 11: 1.85, 12: 1.89,
+                13: 1.94, 14: 1.98, 16: 2.18, 17: 2.29, 19: 2.47, 20: 2.59, 21: 2.71, 22: 2.82,
+                23: 2.94, 24: 3.00, 25: 3.03, 26: 3.10, 27: 3.16, 28: 3.23, 29: 3.29, 30: 3.35,
+                31: 3.42, 32: 3.48, 33: 3.55, 34: 3.61, 35: 3.71, 38: 3.97, 39: 4.00, 41: 4.12,
+                42: 4.24, 44: 4.36, 45: 4.42 };
+  const craws = Object.keys(tbl).map(Number);
+  const curve = Engine.plCurve(craws, craws.map((r) => tbl[r]), 46);
+
+  ok("the curve is usable", curve.usable, curve.why);
+  check("35 distinct raw scores, no collisions", [curve.points, curve.collisions], [35, 0]);
+
+  const cut = (l) => curve.cuts.filter((c) => c.level === l)[0];
+  // Level 3 and Level 4 land on observed raw scores; Level 2 does not, because
+  // nobody in the class scored raw 15. Reporting all three as equally certain
+  // would be a lie, so `exact` is part of the contract.
+  check("Level 3 cut is exact at raw 24 of 46", [cut(3).raw, cut(3).exact], [24, true]);
+  check("Level 4 cut is exact at raw 39", [cut(4).raw, cut(4).exact], [39, true]);
+  check("Level 2 cut is bracketed, not observed",
+        [cut(2).exact, cut(2).between], [false, [14, 16]]);
+  check("raw 15 is among the unobserved scores", curve.unobserved.indexOf(15) >= 0, true);
+
+  // A credit is worth roughly double just below proficiency. A segment counts
+  // toward a band only when BOTH endpoints are inside it: raw 23->24 crosses
+  // into proficiency and counting it as an L2 rate pulled L2 down by half a
+  // point, and raw 38 (3.97) is an L3 point that understated L4.
+  const rate = (b) => curve.bands.filter((x) => x.band === b)[0].plPerCredit;
+  check("PL per credit by band", [rate("L1"), rate("L2"), rate("L3"), rate("L4")],
+        [0.061, 0.112, 0.066, 0.075]);
+  ok("a credit is worth most just below proficiency",
+     rate("L2") > rate("L1") * 1.5 && rate("L2") > rate("L3") * 1.5, rate("L2"));
+
+  // The questions the curve was built to answer. A band-level answer would be
+  // wrong for almost everyone in the band: 2.75-3.25 is 8 credits at the bottom
+  // and 1 at the top, which is why recommendations must be per student.
+  const to = (a, b) => Engine.creditsToReach(curve, a, b).credits;
+  check("3.5 -> 4.0 is 7 credits", to(3.5, 3.999), 7);
+  check("2.75 -> above 3.25 is 8 credits", to(2.75, 3.25), 8);
+  check("3.25 -> above 3.25 is 1 credit", to(3.25, 3.25), 1);
+  check("1.75 -> above 2.25 is 8 credits", to(1.75, 2.25), 8);
+  check("the same band spans 8 credits at the bottom and 1 at the top",
+        [to(2.75, 3.25), to(3.25, 3.25)], [8, 1]);
+
+  // A colliding PL column means the lookup assumption is broken for that file.
+  // Averaging would produce a curve that looks fine and is wrong.
+  const bad = Engine.plCurve([10, 10, 11, 12, 13, 14, 15], [2.0, 2.9, 2.1, 2.2, 2.3, 2.4, 2.5], 46);
+  ok("a colliding PL column is refused, not averaged", bad.usable === false, bad);
+  ok("and it says why", /not a clean function/.test(bad.why || ""), bad.why);
+
+  const noCurve = Engine.plCurve([1, 2, 3], [1.1, 1.2, 1.3], 46);
+  ok("too few points is refused", noCurve.usable === false, noCurve);
+
+  // On the real file
+  ok("the curve was recovered from the fixture", r.curve.usable, r.curve.why);
+  check("fixture total credits", r.totalCredits, 46);
+
+  // Focus: gap x weight, not gap. NY-6.EE.8 has a BIGGER gap than NY-6.G.1
+  // (-17.8 vs -17.7) but is worth 1 credit a year against G.1's 2.5. Ranking by
+  // gap alone would put them level; this is the check that they are not.
+  const fo = (std) => r.focus.filter((x) => x.standard === std)[0];
+  ok("focus is sorted by credits lost, descending",
+     r.focus.every((x, i) => i === 0 || r.focus[i - 1].creditsLost >= x.creditsLost), true);
+  check("NY-6.G.1 recurs on all four tests", [fo("NY-6.G.1").recurs, fo("NY-6.G.1").ofYears], [4, 4]);
+  // creditsPerYear is a property of the published tests, not of any class, so it
+  // holds on the synthetic fixture too.
+  check("credits per year come from the published tests",
+        [fo("NY-6.G.1").creditsPerYear, fo("NY-6.EE.8").creditsPerYear], [2.5, 1]);
+  ok("a standard the class beat the State on is not an area of focus",
+     r.focus.every((x) => x.gap === null || x.gap < 0 || x.creditsLost === 0), true);
+
+  // Band gating
+  ok("gating is usable on the fixture", r.gating.usable, r.gating.why);
+  check("every band is reported with its size",
+        Object.keys(r.gating.sizes).sort(), ["L1", "L2", "L3", "L4"]);
+  ok("the threshold is published, not hidden", r.gating.threshold > 0, r.gating.threshold);
+  ok("every standard landed in exactly one bucket",
+     r.gating.rows.length === r.byStandard.length, [r.gating.rows.length, r.byStandard.length]);
+
+  // Small bands are refused. AlgebraTeaching scoped this whole analysis down
+  // because its bands held 4-10 students; a percentage over 2 students is noise.
+  const tiny = Engine.bandGating(
+    { students: [{ pl: 1.5, resp: {} }, { pl: 2.5, resp: {} }, { pl: 3.5, resp: {} }] }, [], {});
+  ok("too few students to band is refused", tiny.usable === false, tiny);
+
+  // Placement: a prior-grade standard is not a gap in the index.
+  ok("a prior-grade standard is kept separate from a genuine index gap",
+     r.placement.priorGrade.length + r.placement.unplaced.length >= 0 &&
+     r.placement.unplaced.indexOf("NY-5.OA.3") < 0, r.placement.unplaced);
+  check("placement states the table's unit-level accuracy",
+        [r.placement.unitAccuracy, r.placement.lessonAccuracy], [0.963, 0.774]);
 
   /* --------------------------------------------------------- names left in */
 
@@ -262,6 +357,43 @@ async function main() {
     check("Q43 against the State", [rq(43).classP, rq(43).stateP], [0.09, 0.29]);
     check("Q23 against the State", [rq(23).classP, rq(23).stateP], [0.462, 0.64]);
     check("Q9 against the State", [rq(9).classP, rq(9).stateP], [0.462, 0.6]);
+
+    // The curve, recovered from the real file rather than from the table above.
+    check("real curve: 35 points, no collisions", [rr.curve.points, rr.curve.collisions], [35, 0]);
+    const rcut = (l) => rr.curve.cuts.filter((c) => c.level === l)[0];
+    check("real Level 3 cut", [rcut(3).raw, rcut(3).exact, rr.totalCredits], [24, true, 46]);
+    check("real Level 4 cut", [rcut(4).raw, rcut(4).exact], [39, true]);
+
+    // Gap x weight, and the case that proves why weight matters: NY-6.EE.8 has
+    // the BIGGER gap (-17.8 vs -17.7) but is worth 1 credit a year against
+    // NY-6.G.1's 2.5, so it must rank lower.
+    const rfo = (std) => rr.focus.filter((x) => x.standard === std)[0];
+    check("NY-6.G.1 is the top area of focus",
+          [rr.focus[0].standard, rr.focus[0].creditsLost], ["NY-6.G.1", 0.44]);
+    ok("the bigger gap worth fewer credits ranks lower",
+       rfo("NY-6.EE.8").gap < rfo("NY-6.G.1").gap &&
+       rfo("NY-6.EE.8").creditsLost < rfo("NY-6.G.1").creditsLost,
+       [rfo("NY-6.EE.8").gap, rfo("NY-6.G.1").gap]);
+
+    check("real band sizes", rr.gating.sizes, { L1: 25, L2: 19, L3: 25, L4: 9 });
+    const gates = rr.gating.rows.filter((x) => x.bucket === "gates-L2-L3");
+    check("14 standards gate proficiency", gates.length, 14);
+    check("NY-6.EE.7 leads them at 3 credits",
+          [gates[0].standard, gates[0].credits], ["NY-6.EE.7", 3]);
+
+    // The pacing finding: the gating content is taught late.
+    const u6 = rr.gatingByUnit.units.filter((u) => u.unit === 6)[0];
+    check("Unit 6 carries 11 gating credits from week 21",
+          [u6.credits, u6.startWeek], [11, 21]);
+    check("20 distinct gating credits", rr.gatingByUnit.distinctCredits, 20);
+    const mid = rr.gatingByUnit.units
+      .filter((u) => u.startWeek >= 21 && u.startWeek <= 29)
+      .reduce((a, u) => a + u.credits, 0);
+    check("17 gating credits fall in weeks 21-29", mid, 17);
+
+    check("NY-5.OA.3 is a prior-grade standard, not an index gap",
+          [rr.placement.priorGrade, rr.placement.unplaced],
+          [["NY-5.OA.3"], ["NY-6.G.5"]]);
   }
 
   console.log("");

@@ -124,6 +124,32 @@ def regenerability():
     # which is worse than either a pass or a skip.
     strip = lambda s: re.sub(r'"generated": "[^"]*"', '"generated": "-"', s)
 
+    # site/data.json rebuilt from data/, because the rest of section 2 guards
+    # data/ against provenance/ and nothing guarded site/ against data/. A
+    # figure description was corrected in data/content.json and committed while
+    # site/data.json kept the old wording, so the published file said a slope
+    # triangle showed "a rise of 3 against a run of 2" for an item whose own
+    # stem gives the slope as 2/3. The description checker could not catch it --
+    # that item is recorded as the one beyond its reach -- but a rebuild-and-
+    # compare catches any stale site/, whatever the field.
+    #
+    # `built` is a timestamp and differs on every run, so it is normalised out.
+    try:
+        sys.path.insert(0, ROOT)
+        from build import payload as _payload_mod
+        import publish as _publish_mod
+        fresh = _payload_mod.build(feedback_url="#about", disclaimer=_publish_mod.DISCLAIMER)
+        on_disk = load(os.path.join(SITE, "data.json"))
+        drop_built = lambda d: json.dumps({k: (
+            {k2: v2 for k2, v2 in v.items() if k2 != "built"} if k == "meta" else v)
+            for k, v in d.items()}, sort_keys=True)
+        check("site/data.json rebuilds from data/",
+              drop_built(fresh) == drop_built(on_disk),
+              "the published payload differs from a fresh build -- data/ was edited "
+              "without re-running publish.py")
+    except Exception as exc:                                  # noqa: BLE001
+        skipped("site/data.json rebuilds from data/", "could not rebuild: %s" % exc)
+
     needs = ["3-8-educator-guide-math.pdf"] + \
             ["ImagineIM_NY_%d__TCG_NA_V2_EN_DIG.pdf" % g for g in (6, 7, 8)]
     missing = [n for n in needs
@@ -1230,6 +1256,28 @@ def privacy(payload):
         # deciding whether to drop a file has nothing to go on.
         check("the analyze page states that the file is not uploaded",
               "does not leave this computer" in blob)
+
+        # The proficiency-level column is student data. It is read to recover the
+        # raw-to-PL curve and to band students, both aggregate, and an individual
+        # PL must not survive into the report. The guard that enforces this is a
+        # banned-key list rather than a pattern, because a PL is neither
+        # name-shaped nor OSIS-shaped and the other two scans would miss it.
+        check("the analyze page bans per-student keys from the report",
+              "BANNED_KEYS" in blob and '"pl"' in blob.replace("'", '"'))
+
+        # The honesty constraint. Closing the gap to the state average is worth
+        # about 0.27 of a proficiency level for this class, and moving a student
+        # a whole level takes closer to 8 credits. A report that ranks standards
+        # by state gap and lets a reader assume otherwise is misleading, so the
+        # sentence saying so is gated rather than trusted to survive edits.
+        check("the analyze page says closing the state gap is not a level",
+              "the same as moving a student up a level" in blob)
+
+        # The gating analysis rests on a 0.60 threshold and on band sizes. Both
+        # are judgements and both are shown; a bucket list without them reads as
+        # a finding rather than as one reading of the data.
+        check("the gating threshold and band sizes are shown",
+              "of its credits" in blob and "students)" in blob)
 
 
 # ----------------------------------------------------------------- 11. the site
