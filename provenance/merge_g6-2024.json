@@ -95,7 +95,7 @@
   "G6-2024/q32.png": {
    "type": "Diagram",
    "alt": "The net of a triangular prism with its dimensions labelled in feet.",
-   "long": "The central rectangle is 6 feet by 4 feet, the two triangles have a height of 2.5 feet, and the slanted faces are 6.5 feet."
+   "long": "The net is a row of three rectangles, each 4 feet tall: one 2.5 feet wide, then one 6 feet wide, then one 6.5 feet wide. A right triangle sits above and another below the middle rectangle, each with legs of 2.5 feet and 6 feet and a slanted side of 6.5 feet."
   },
   "G6-2024/q37.png": {
    "type": "Coordinate Plane",

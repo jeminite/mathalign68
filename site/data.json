@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-12T21:33:49",
+    "built": "2026-09-12T22:44:21",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -5998,7 +5998,7 @@
           "file": "G6-2024/q32.png",
           "type": "Diagram",
           "alt": "The net of a triangular prism with its dimensions labelled in feet.",
-          "longDescription": "The central rectangle is 6 feet by 4 feet, the two triangles have a height of 2.5 feet, and the slanted faces are 6.5 feet."
+          "longDescription": "The net is a row of three rectangles, each 4 feet tall: one 2.5 feet wide, then one 6 feet wide, then one 6.5 feet wide. A right triangle sits above and another below the middle rectangle, each with legs of 2.5 feet and 6 feet and a slanted side of 6.5 feet."
         }
       ],
       "tablesInImage": false,
@@ -11373,7 +11373,7 @@
           "file": "G6-2026/q43.png",
           "type": "Diagram",
           "alt": "A trapezoid with its dimensions labelled in centimetres and two right angles marked.",
-          "longDescription": "The top is 8.8 centimetres, the right side is 11.5 centimetres, and the left side is 15.2 centimetres."
+          "longDescription": "The trapezoid has a horizontal top edge of 8.8 centimetres that meets both side edges at right angles. The left side is 15.2 centimetres and the right side is 11.5 centimetres, and a slanted edge joins their lower ends."
         }
       ],
       "tablesInImage": false,
