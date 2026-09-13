@@ -14229,8 +14229,9 @@
      "quote": "using mathematical vocabulary related to expressions, such as “coefficient,” “variable,” and “exponent.”"
     }
    ],
-   "why": "The item asks for the coefficient of the variable in 5z + (9 ÷ 3). This is the only grade 6 activity in which students are expected to use the word \"coefficient\"; no grade 6 task actually asks a student to name the coefficient of an expression.",
-   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2b"
+   "why": "The item shows 5z + (9 ÷ 3) and asks which number is the coefficient of the variable, with 9 and 3 from the second term as distractors — pure 6.EE.2b vocabulary about the parts of an expression. This activity is the only one in grade 6 whose own text says students use the word “coefficient” about an expression, and the work itself — telling 3^x apart from 3x — is exactly the business of deciding what role a number plays in an expression. The losing reading, Unit 6 Lesson 2 “Truth and Equations,” is genuinely where 3 ⋅ x is first written as 3x, so it owns the notation; it is second best because its Warm-up asks only “What do you notice? What do you wonder?” and never names a coefficient. Recorded honestly: no grade 6 ACTIVITY asks a student to name the coefficient of an expression. The only prompt in the whole course that asks the item's question is a practice problem, Unit 6 Lesson 6 “Percentages and Equations” Problem 5b (p87), “What is the coefficient of the variable?” for 2n = 7; and the only student-facing use of the word inside an activity is Unit 6 Lesson 17's Cool-down “Interpret the Point” (p230), which hands the student the coefficient and asks what it means.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.2b",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2023-022": {
    "course": "Imagine IM New York, Grade 6",
@@ -14345,8 +14346,8 @@
    "unitTitle": "Expressions and Equations",
    "sectionLetter": "B",
    "sectionTitle": "Equal and Equivalent",
-   "primaryLesson": 11,
-   "lessonTitle": "The Distributive Property, Part 3",
+   "primaryLesson": 10,
+   "lessonTitle": "The Distributive Property, Part 2",
    "candidateLessons": [
     10,
     11
@@ -14356,17 +14357,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 11,
-     "lessonTitle": "The Distributive Property, Part 3",
-     "role": "practises",
-     "activity": "Writing Equivalent Expressions Using the Distributive Property",
-     "page": 142,
-     "quote": "use the distributive property to write an equivalent expression"
+     "lesson": 10,
+     "lessonTitle": "The Distributive Property, Part 2",
+     "role": "assessed",
+     "activity": "Which Expressions Represent Area?",
+     "page": 134,
+     "quote": "Select all the expressions that represent the large rectangle’s total area."
     }
    ],
-   "why": "The item expands 4(3m + 1). The activity’s table contains 3(2x + 1) as a row to be rewritten as a sum — the same task with the same shape. Lesson 11 is marked optional in the pacing guide, so a class may never have done it; the non-optional runner-up is Lesson 10, Activity \"Areas of Partitioned Rectangles,\" where the same product-and-sum pair is written for a rectangle’s area.",
+   "why": "The item asks which expression is equivalent to 4(3m + 1), i.e. distribute a number over a sum containing a variable, with distractors that add instead of multiplying (7m + 1) or distribute to only one term (12m + 1). This Cool-down is where the curriculum tests that move: students must accept 5(b + 3), 5b + 15 and 15 + 5b as the same area and reject 3(5 + b) and 3 ⋅ 5 + 3b — the same select-the-equivalent-expression question. The losing reading, Unit 6 Lesson 11 “The Distributive Property, Part 3,” has the item's literal surface form (its table contains 3(2x + 1)) and is the only place the inner coefficient step 4 ⋅ 3m is rehearsed, but that lesson is marked optional in the pacing table, so an assessed activity in a required lesson beats an exact numeral match a class may never have seen. Medium confidence because of that missing inner-coefficient step.",
    "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.3",
-   "evidenceIsOptional": true
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2023-040": {
    "course": "Imagine IM New York, Grade 6",
@@ -14603,8 +14604,8 @@
    "unitTitle": "Rational Numbers",
    "sectionLetter": "B",
    "sectionTitle": "Inequalities",
-   "primaryLesson": 9,
-   "lessonTitle": "Solutions of Inequalities",
+   "primaryLesson": 8,
+   "lessonTitle": "Writing and Graphing Inequalities",
    "candidateLessons": [
     8,
     9,
@@ -14615,16 +14616,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 9,
-     "lessonTitle": "Solutions of Inequalities",
-     "role": "assessed",
-     "activity": "Solutions of Inequalities",
-     "page": 119,
-     "quote": "Draw a number line to represent this inequality."
+     "lesson": 8,
+     "lessonTitle": "Writing and Graphing Inequalities",
+     "role": "introduces",
+     "activity": "Stories about 9",
+     "page": 104,
+     "quote": "closed (include) or open (exclude) circle at the boundary of the constraint"
     }
    ],
-   "why": "The item goes the other way — given x ≥ −3, pick its graph. The Cool-down asks students to draw the number line for a given inequality, though it uses a strict inequality, so the closed circle for ≥ has to come from Lesson 8.",
-   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.8"
+   "why": "The item shows four number lines and asks which represents x ≥ −3; they differ only in whether the circle at −3 is filled and which way the ray is shaded, so the item is a match-a-math-statement-to-a-graph task turning on the endpoint convention. This card sort is precisely that — stories, descriptions of values, math statements and number lines matched to each other — and it is where the curriculum makes the closed-versus-open circle decision explicit. The losing reading, Unit 7 Lesson 9 “Solutions of Inequalities,” asks students to draw a number line for w < 1; it is second best because it runs in the opposite direction (draw, not choose) and its inequality is strict, so the closed circle that decides this item is never exercised there.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.EE.8",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-014": {
    "course": "Imagine IM New York, Grade 6",
@@ -14725,8 +14727,8 @@
    "unitTitle": "Expressions and Equations",
    "sectionLetter": "A",
    "sectionTitle": "Equations in One Variable",
-   "primaryLesson": 4,
-   "lessonTitle": "Practice Solving Equations",
+   "primaryLesson": 5,
+   "lessonTitle": "Represent Situations with Equations",
    "candidateLessons": [
     3,
     4,
@@ -14739,16 +14741,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 4,
-     "lessonTitle": "Practice Solving Equations",
-     "role": "practises",
-     "activity": "Row Game: Solving Equations Practice",
-     "page": 61,
-     "quote": "The purpose of this activity is for students to practice solving equations."
+     "lesson": 5,
+     "lessonTitle": "Represent Situations with Equations",
+     "role": "assessed",
+     "activity": "More Storytime",
+     "page": 74,
+     "quote": "Each notebook costs 5.70. How many notebooks does Diego buy"
     }
    ],
-   "why": "The item is 25h = 62.50, a px = q equation with a non-whole-number solution. The Row Game columns include 6x = 45 and 8x = 60, which are the same equation type with the same kind of answer.",
-   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7"
+   "why": "The item gives a rate ($25.00 per hour) and a total ($62.50) and asks for the number of hours, so a student must set up 25x = 62.50 and solve it, landing on a non-whole-number answer. The second reading's lesson stands — Unit 6 Lesson 5 is where a situation is matched to an equation and then solved — but the tighter evidence inside it is this Cool-down rather than Activity 2: its second question is the item with different nouns, a unit price and a total with the three candidate equations x + 5.7 = 17.1, 5.7x = 17.1 and 17.1x = 5.7. The losing reading, Unit 6 Lesson 4 “Practice Solving Equations” (Row Game, p61), does contain px = q equations with non-whole solutions such as 6x = 45; it is second best because it supplies the equation ready-made and the item's real demand is building it from the situation.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.7",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-038": {
    "course": "Imagine IM New York, Grade 6",
@@ -14846,10 +14849,10 @@
    "course": "Imagine IM New York, Grade 6",
    "unit": 6,
    "unitTitle": "Expressions and Equations",
-   "sectionLetter": "D",
-   "sectionTitle": "Relationships Between Quantities",
-   "primaryLesson": 16,
-   "lessonTitle": "Two Related Quantities, Part 1",
+   "sectionLetter": "E",
+   "sectionTitle": "Let’s Put It to Work",
+   "primaryLesson": 19,
+   "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
    "candidateLessons": [
     16,
     17,
@@ -14861,16 +14864,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 16,
-     "lessonTitle": "Two Related Quantities, Part 1",
-     "role": "introduces",
-     "activity": "Painting the Set",
-     "page": 213,
-     "quote": "the terms “dependent variable” and “independent variable” are introduced to describe the"
+     "lesson": 19,
+     "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+     "role": "practises",
+     "activity": "Sharing Your Equation with Others",
+     "page": 253,
+     "quote": "How the dependent variable and independent variable are related."
     }
    ],
-   "why": "The item gives c = 2.75t and asks for the relationship and which variable is independent. This activity is where the two terms are introduced, on a relationship of exactly this form written as an equation in two variables.",
-   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+   "why": "The item hands the student the equation c = 2.75t and asks two things: describe the relationship in words, and say which variable is independent and which is dependent. That is this activity's stated deliverable — students must be prepared to explain what each variable represents and how the dependent and independent variables are related — for an equation they were given, several of which (E = 6s, m = 8.96V, g = 28.35z) have exactly this item's rate-times-a-variable form. The losing reading, Unit 6 Lesson 16 “Two Related Quantities, Part 1,” is where the two terms are coined, and that is a real claim; it is second best because Lesson 16's work runs situation-to-equation (build a table, then write the equation) while this item runs equation-to-description, which is what Lesson 19 is built to do.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2025-005": {
    "course": "Imagine IM New York, Grade 6",
@@ -15174,14 +15178,15 @@
     {
      "lesson": 16,
      "lessonTitle": "Two Related Quantities, Part 1",
-     "role": "practises",
+     "role": "introduces",
      "activity": "Painting the Set",
      "page": 213,
      "quote": "allows students to interpret and write equations with variables"
     }
    ],
-   "why": "The item gives a table of blocks of cheese against dollars and asks for an equation for t in terms of b plus the dependent and independent variables. This activity moves from a table of equivalent ratios to equations in two variables and names the two kinds of variable.",
-   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+   "why": "The item gives a table of cheese blocks against dollars paid and asks for an equation for t in terms of b, plus which variable is independent and which dependent. This activity runs in that direction: students complete a table of equivalent ratios, describe how one quantity relates to the other, write equations with two variables from it, and the Activity Synthesis is where “dependent variable” and “independent variable” are introduced. The losing reading, Unit 6 Lesson 19 “Tables, Equations, and Graphs, Oh My!” (Card Sort: Equations and Tables, p249), does pair tables with equations, but every equation there is handed to the student ready-made — Lesson 19 never has anyone write one from a table, which is the item's whole demand. Medium because the only task in the course that literally asks for an equation written from a table is the Cool-down of Lesson 18 (p243), and Lesson 18 is optional.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2025-046": {
    "course": "Imagine IM New York, Grade 6",
@@ -15280,37 +15285,38 @@
   },
   "g6-2026-006": {
    "course": "Imagine IM New York, Grade 6",
-   "unit": 1,
-   "unitTitle": "Area and Surface Area",
-   "sectionLetter": "E",
-   "sectionTitle": "Squares and Cubes",
-   "primaryLesson": 18,
-   "lessonTitle": "Surface Area of a Cube",
+   "unit": 6,
+   "unitTitle": "Expressions and Equations",
+   "sectionLetter": "B",
+   "sectionTitle": "Equal and Equivalent",
+   "primaryLesson": 10,
+   "lessonTitle": "The Distributive Property, Part 2",
    "candidateLessons": [],
    "edition": "Imagine IM New York, 6-8",
    "status": "evidenced",
    "draft": true,
    "evidence": [
     {
-     "lesson": 18,
-     "lessonTitle": "Surface Area of a Cube",
-     "role": "practises",
-     "activity": "Every Cube in the Whole World",
-     "page": 305,
-     "quote": "students develop the formulas for the surface area and the volume of a"
+     "lesson": 10,
+     "lessonTitle": "The Distributive Property, Part 2",
+     "role": "introduces",
+     "activity": "Partitioned Rectangles When Lengths Are Unknown",
+     "page": 129,
+     "quote": "Write an expression for the sum of the areas of the two rectangles."
     }
    ],
-   "why": "The item adds six side lengths, two of them containing x, to get 2x + 18 for a perimeter. This activity is the one place students build an expression for a figure’s total measurement from its parts with a variable edge length and collect like terms; no grade 6 activity writes a perimeter expression with variables.",
-   "unitBasis": "the item text alone -- the guide's table never cites NY-6.EE.6"
+   "why": "The item adds the six labelled sides of an L-shaped figure (2, x, 5, 2, x + 3, 6) into 2x + 18, so it wants an expression for a figure's total measurement built from parts, two of which carry a variable, with the x terms and the constants each collected. The gap the first reading reported is real and I verified it: NO grade 6 activity anywhere asks for a perimeter expression containing a variable. “Perimeter” appears in only three student tasks in the whole course — a units Warm-up (U1 L16), the Cool-down of the OPTIONAL Unit 6 Lesson 18 (a P-and-side-length table, p243), and a numeric polygon perimeter from coordinates (U7 L15) — and the one variable perimeter in grade 6 is a practice problem in the OPTIONAL Unit 6 Lesson 11 (p148, “the perimeter of a square with side length s cm”). So this is the closest available, not a true match: here students write an expression for a figure's total measurement when one length is unknown, producing the item's constant-plus-variable-term shape (40 + 5x), in a required lesson of the unit that owns NY-6.EE.6. The losing reading, Unit 1 Lesson 18 “Surface Area of a Cube” (Every Cube in the Whole World, p305), does build a total measurement from a variable edge length; it is second best because all six of its parts are identical, so it produces 6s² with no constant term and none of the like-term collection across unlike lengths that decides this item's distractors.",
+   "unitBasis": "the item text alone -- the guide's table never cites NY-6.EE.6",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2026-014": {
    "course": "Imagine IM New York, Grade 6",
    "unit": 6,
    "unitTitle": "Expressions and Equations",
-   "sectionLetter": "E",
-   "sectionTitle": "Let’s Put It to Work",
-   "primaryLesson": 19,
-   "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+   "sectionLetter": "D",
+   "sectionTitle": "Relationships Between Quantities",
+   "primaryLesson": 16,
+   "lessonTitle": "Two Related Quantities, Part 1",
    "candidateLessons": [
     16,
     17,
@@ -15322,16 +15328,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 19,
-     "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
-     "role": "practises",
-     "activity": "Getting to Know an Equation",
-     "page": 250,
-     "quote": "each student focuses on just one of those equations to learn about the"
+     "lesson": 16,
+     "lessonTitle": "Two Related Quantities, Part 1",
+     "role": "assessed",
+     "activity": "Kitchen Cleaner",
+     "page": 218,
+     "quote": "Select all equations that can represent the relationship between b"
     }
    ],
-   "why": "The item wants c = 15p + 5 — a rate plus a one-time fee. Every two-variable equation in grade 6, here and in Lessons 16–18, uses a single operation (E = 6s, G = J + 13); nothing in the course combines a rate with a constant, so this placement covers the interpreting-an-equation-for-a-situation demand only.",
-   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9"
+   "why": "The item describes a situation — $15 per large pizza plus a one-time $5 delivery charge — and asks which equation could be used for the total charge c of p pizzas, with distractors (c = 15 + 5p, c = 15 × 5 + p) that turn on which quantity carries the multiplier. This Cool-down is the curriculum's test of that exact choice: given a relationship between two quantities, select all the equations that can represent it, from a list (w = 1/2 b, b = 1/2 w, b = w, b = 2w, w = 2b) whose whole point is which variable takes the coefficient. The losing reading, Unit 6 Lesson 19 “Tables, Equations, and Graphs, Oh My!” (Getting to Know an Equation, p250), runs the other way — it hands out equations and asks what situation they describe — so it is second best for an item that starts from a situation. Medium, and both readings were right to flag it: no grade 6 activity writes a two-variable equation that combines a rate with a fixed amount; every relationship in Unit 6 Section D is a single operation, so the +5 in this item is unrehearsed.",
+   "unitBasis": "course guide table; grade 6 Unit 6 is where the guide teaches NY-6.EE.9",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2026-019": {
    "course": "Imagine IM New York, Grade 6",
@@ -16045,8 +16052,9 @@
      "quote": "How many 1/8 s are in 1 1/4 ?"
     }
    ],
-   "why": "1 1/4 pounds of nuts into 1/8-pound bags, how many bags. This Warm-up asks 'How many 1/8 s are in 1 1/4 ?' -- the item's exact numbers, with the answer 10 -- and the distractor 5/32 is what a student gets by multiplying instead. Lesson 4 'How Many Groups? (Part 1)' also introduces unit-fraction divisors but is an optional lesson.",
-   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1"
+   "why": "The item puts 1 1/4 pounds of nuts into 1/8-pound bags and asks how many bags. This Warm-up asks “How many 1/8 s are in 1 1/4 ?” — the item's exact numbers, exact question and exact answer of 10 — in a required lesson, and its distractor 5/32 is what multiplying instead of dividing produces. The losing reading, Unit 4 Lesson 6 “Using Diagrams to Find the Number of Groups” (Finding the Number of Groups, p95), asks the same question in the item's own units (“How many groups of 1/2 pound are in 2 3/4 pounds?”) and is the contextual version of the task; it is second best only because the numbers and phrasing of this item appear verbatim one lesson earlier.",
+   "unitBasis": "course guide table; grade 6 Unit 4 is where the guide teaches NY-6.NS.1",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-020": {
    "course": "Imagine IM New York, Grade 6",
@@ -17546,8 +17554,9 @@
      "quote": "What is the distance between points C and D?"
     }
    ],
-   "why": "The item shows a plotted parallelogram and asks the distance between vertices A(-6,6) and D(4,6), a horizontal length read off an existing grid. This Cool-down gives four plotted points and asks for the distance between two named pairs, which is the same work; the parallelogram wrapper is decoration. Runner-up: lesson 15's 'Perimeter of a Polygon', which does this for a polygon's sides but has students plot it first.",
-   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.G.3"
+   "why": "The item supplies a plotted parallelogram and asks the distance between A(−6, 6) and D(4, 6) — one horizontal length read off a grid that is already drawn. This Cool-down asks the item's question word for word, of points already plotted. The losing reading, Unit 7 Lesson 15 “Shapes in the Coordinate Plane” (Perimeter of a Polygon, p187), is the lesson the curriculum itself tags with NY-6.G.3 and it does compute side lengths from coordinates; it is second best because it asks for a perimeter and makes students plot the figure from a list of vertices first, and this item hands the figure over and asks for a single distance.",
+   "unitBasis": "course guide table; grade 6 Unit 7 is where the guide teaches NY-6.G.3",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-043": {
    "course": "Imagine IM New York, Grade 6",
@@ -18350,10 +18359,10 @@
    "course": "Imagine IM New York, Grade 6",
    "unit": 2,
    "unitTitle": "Introducing Ratios",
-   "sectionLetter": "E",
-   "sectionTitle": "Part-Part-Whole Ratios",
-   "primaryLesson": 15,
-   "lessonTitle": "Part-Part-Whole Ratios",
+   "sectionLetter": "A",
+   "sectionTitle": "What are Ratios?",
+   "primaryLesson": 1,
+   "lessonTitle": "Introducing Ratios and Ratio Language",
    "candidateLessons": [
     1,
     2,
@@ -18366,16 +18375,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 15,
-     "lessonTitle": "Part-Part-Whole Ratios",
-     "role": "introduces",
-     "activity": "Cubes of Paint",
-     "page": 223,
-     "quote": "the ratio between the two quantities and their total"
+     "lesson": 1,
+     "lessonTitle": "Introducing Ratios and Ratio Language",
+     "role": "assessed",
+     "activity": "A Collection of Animals",
+     "page": 33,
+     "quote": "Write two sentences that describe a ratio of types of animals"
     }
    ],
-   "why": "The item asks for the ratio of circles to the TOTAL number of shapes in a picture. Cubes of Paint is the only place in grade 6 where students relate the parts of a ratio to the whole (5 ml red and 3 ml blue make 8 ml maroon); note that the curriculum never asks students to write a part-to-total ratio itself, so this is the nearest activity rather than an exact match.",
-   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1"
+   "why": "The item shows five shapes — two circles, two squares, one triangle — and asks for the ratio of circles to the total number of shapes, so the work is: read a pictured collection, count a category, count the whole, state a ratio. This Cool-down is the assessed version of exactly that: a pictured collection of dogs, mice and cats with the instruction to write ratio sentences about it. The losing reading, Unit 2 Lesson 15 “Part-Part-Whole Ratios” (Cubes of Paint, p223), is where the parts of a ratio are first related to their total (5 ml red and 3 ml blue make 8 ml maroon), which is the one idea this Cool-down lacks; it is second best because its own question is “how many millilitres of maroon paint will there be,” a total, never a part-to-whole ratio. Worth recording: grade 6 asks for part-to-part ratios only — no activity in the course asks a student to write a part-to-total ratio, so the item's exact form is unrehearsed either way.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.1",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2023-041": {
    "course": "Imagine IM New York, Grade 6",
@@ -18453,9 +18463,10 @@
      "quote": "They both walk for 30 seconds. At these rates, how far apart"
     }
    ],
-   "why": "The item gives two distance-time tables for two cars and asks the difference in distance after 8 hours. This Cool-down gives two walking rates, runs both for a common 30 seconds, and asks how far apart they end up -- the same two-rates-one-elapsed-time difference. Lesson 9 is flagged optional, so this is weaker evidence; the non-optional runner-up is Unit 2 Lesson 13 'Biking 3,000 Meters', which extends a rate table for two movers but never asks for a difference.",
+   "why": "The item gives two distance-time tables (Car A 65 mph, Car B 62 mph), extends both to 8 hours and asks for the difference in distance. This Cool-down is the only place in grade 6 that poses that whole question: two movers at constant rates given as ratios, a shared elapsed time, and how far apart they end up. The losing reading, Unit 3 Lesson 6 “Equivalent Ratios Have the Same Unit Rates” (Cheetah Speed, p110), is the non-optional runner-up and does the item's heavy lifting — a time/distance/speed table with a distance to be found for a time that is not listed — but it never asks for a comparison, and its table hands students a speed column that the item's tables do not. Lesson 9 is marked optional in the pacing table, so this evidence is weaker than its fit suggests; a class that skipped it has met the difference question only in the Unit 2 Lesson 14 Warm-up (p205), “A red car and a blue car ... How far apart are they after 4 hours?”, which withholds the rates on purpose.",
    "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3b",
-   "evidenceIsOptional": true
+   "evidenceIsOptional": true,
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-023": {
    "course": "Imagine IM New York, Grade 6",
@@ -18508,12 +18519,12 @@
   },
   "g6-2024-031": {
    "course": "Imagine IM New York, Grade 6",
-   "unit": 2,
-   "unitTitle": "Introducing Ratios",
-   "sectionLetter": "C",
-   "sectionTitle": "Representing Equivalent Ratios",
-   "primaryLesson": 8,
-   "lessonTitle": "How Much for One?",
+   "unit": 3,
+   "unitTitle": "Unit Rates and Percentages",
+   "sectionLetter": "B",
+   "sectionTitle": "Rates",
+   "primaryLesson": 5,
+   "lessonTitle": "Interpreting Rates",
    "candidateLessons": [
     10
    ],
@@ -18522,16 +18533,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 8,
-     "lessonTitle": "How Much for One?",
+     "lesson": 5,
+     "lessonTitle": "Interpreting Rates",
      "role": "introduces",
-     "activity": "Grocery Shopping",
-     "page": 123,
-     "quote": "What is the cost per bottle of water?"
+     "activity": "Laundry Detergent and Raffle Tickets",
+     "page": 89,
+     "quote": "How many gallons of detergent does the laundry service use per week?"
     }
    ],
-   "why": "The item gives 104 calories in an 8-ounce serving and asks for the amount in 1 ounce. This is the activity where 'how much for one' is introduced -- twelve bottles for $9, what is the cost per bottle -- dividing a quantity by the number of units to get the value per 1.",
-   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.2"
+   "why": "The item gives 104 calories in an 8-ounce serving and asks for the calories in 1 ounce, so the per-1 value is itself the answer, in a context that is not a price. This activity is where the term unit rate is introduced as the amount of one quantity per 1 of the other, and its first question — 10 gallons of detergent every 6 weeks, how many gallons per week — is the item's division in a non-price setting. The losing reading, Unit 2 Lesson 8 “How Much for One?”, is where the per-1 move is first taught and is a fair second best, but every one of its tasks is a unit PRICE (cost per bottle, per bag, per book); the generalisation to any pair of quantities, which is what this item needs, happens here in Unit 3.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.2",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2024-033": {
    "course": "Imagine IM New York, Grade 6",
@@ -18987,8 +18999,8 @@
    "unitTitle": "Unit Rates and Percentages",
    "sectionLetter": "B",
    "sectionTitle": "Rates",
-   "primaryLesson": 5,
-   "lessonTitle": "Interpreting Rates",
+   "primaryLesson": 4,
+   "lessonTitle": "Comparing Speeds and Prices",
    "candidateLessons": [
     4,
     5,
@@ -19000,16 +19012,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 5,
-     "lessonTitle": "Interpreting Rates",
+     "lesson": 4,
+     "lessonTitle": "Comparing Speeds and Prices",
      "role": "practises",
-     "activity": "Laundry Detergent and Raffle Tickets",
-     "page": 89,
-     "quote": "For each situation, find the unit rates."
+     "activity": "The Best Deal on Beans",
+     "page": 77,
+     "quote": "students compare rates per 1 in a shopping context"
     }
    ],
-   "why": "The item gives $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples and asks which has the greater unit price and what it is. This activity is two separate cost situations in which students compute the price per 1 for each, which is the whole of the item's work; the comparison itself is a one-step addition to that.",
-   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
+   "why": "The item gives $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples and asks which statement about the two unit prices is true, so both prices per 1 must be computed ($1.25 and $1.15) and compared. This activity is the curriculum's shopping comparison of prices per 1, with each price given as “n for $X” exactly as the item gives them. The losing reading, Unit 3 Lesson 5 “Interpreting Rates” (Laundry Detergent and Raffle Tickets, p89), is where unit rates are named and computed and would produce both of the item's numbers; it is second best because it never compares the two situations it sets up, and comparison is the item's actual question. Medium confidence: this activity, and the Cool-down “Sparkling Water” in the same lesson, ask which price is LOWER, while the item asks which is greater.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2025-037": {
    "course": "Imagine IM New York, Grade 6",
@@ -19377,14 +19390,15 @@
     {
      "lesson": 12,
      "lessonTitle": "Navigating a Table of Equivalent Ratios",
-     "role": "practises",
+     "role": "introduces",
      "activity": "Hourly Wages",
      "page": 181,
      "quote": "At this rate, how much would Lin be paid for 3 hours of work?"
     }
    ],
-   "why": "The item gives 6 decorations in 39 minutes and asks about 14 decorations, where 14 is not a multiple of 6 and the rate per one is 6.5 minutes. This activity is built on exactly that difficulty: $90 for 5 hours, then 8 hours and 3 hours, with an equivalent ratio having a quantity of 1 as the intermediate step.",
-   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3b"
+   "why": "The item gives 6 decorations in 39 minutes and asks about 14 decorations, where 14 is not a multiple of 6, so the way through is the per-1 value (6.5 minutes each) used as an intermediate step to a scaled answer of 91 minutes. This activity exists for that difficulty: $90 for 5 hours, then 8 hours, 3 hours and 2.1 hours, with the narrative naming the two insights — that corresponding quantities are not always multiples of each other, and that an equivalent ratio with a value of 1 is the helpful middle step. The losing reading, Unit 3 Lesson 8 “Solving Rate Problems” (Window Washing, p132), is also built on a non-multiple target and is a genuine second best; it loses because its 24,348 windows make it a modelling task about choosing a strategy at scale, while this item is the small, clean scale-through-1 that Lesson 12 introduces.",
+   "unitBasis": "course guide table; grade 6 Unit 2 is where the guide teaches NY-6.RP.3b",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2026-024": {
    "course": "Imagine IM New York, Grade 6",
@@ -19492,8 +19506,8 @@
    "unitTitle": "Unit Rates and Percentages",
    "sectionLetter": "C",
    "sectionTitle": "Percentages",
-   "primaryLesson": 16,
-   "lessonTitle": "Finding the Percentage",
+   "primaryLesson": 14,
+   "lessonTitle": "Solving Percentage Problems",
    "candidateLessons": [
     5,
     6,
@@ -19512,26 +19526,26 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 16,
-     "lessonTitle": "Finding the Percentage",
+     "lesson": 14,
+     "lessonTitle": "Solving Percentage Problems",
      "role": "practises",
-     "activity": "Restaurant Capacity",
-     "page": 250,
-     "quote": "What percentage of its capacity is 9 people?"
+     "activity": "Matching the Percentage",
+     "page": 222,
+     "quote": "students determine what percentage one number is of another number"
     }
    ],
-   "why": "The item gives a survey table of three flavors and asks what percent chose vanilla, so students must sum the table to 50 first and then find 21 as a percentage of it. This activity asks what percentage 9 and 51 are of 75, the same question for a non-benchmark pair. Lesson 16 is optional in its entirety, so this is weaker evidence; the non-optional runner-up is the Lesson 14 Warm-up 'Matching the Percentage'.",
+   "why": "The item gives an art-club survey table (chocolate 18, vanilla 21, strawberry 11) and asks what percent chose vanilla, so students must total the table to 50 and then answer “21 is what percentage of 50?” This Warm-up asks that question form directly and its pairs are related by benchmark factors, which is exactly what 50 to 100 is — double it and 21 becomes 42. It is in a required lesson. The losing reading, Unit 3 Lesson 16 “Finding the Percentage” (Restaurant Capacity, p250), is the closer numerical analogue and its own Cool-down even uses a school of 50 people; it is second best because the pacing table marks the whole of Lesson 16 optional, so a class may never have met it. Medium: no percentage activity in grade 6 makes students build the whole by summing a table first, which is the step this item adds.",
    "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3c",
-   "evidenceIsOptional": true
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2026-034": {
    "course": "Imagine IM New York, Grade 6",
-   "unit": 3,
-   "unitTitle": "Unit Rates and Percentages",
-   "sectionLetter": "B",
-   "sectionTitle": "Rates",
-   "primaryLesson": 6,
-   "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+   "unit": 2,
+   "unitTitle": "Introducing Ratios",
+   "sectionLetter": "D",
+   "sectionTitle": "Solving Ratio and Rate Problems",
+   "primaryLesson": 13,
+   "lessonTitle": "Tables and Double Number Line Diagrams",
    "candidateLessons": [
     5,
     6,
@@ -19544,16 +19558,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 6,
-     "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+     "lesson": 13,
+     "lessonTitle": "Tables and Double Number Line Diagrams",
      "role": "practises",
-     "activity": "Binders and Notebooks",
-     "page": 100,
-     "quote": "when two ratios are equivalent, they have the same unit rate"
+     "activity": "Running 3,000 Meters",
+     "page": 191,
+     "quote": "Do you agree that this table represents the situation?"
     }
    ],
-   "why": "The item says 3 notebooks cost $6 and asks which table shows that relationship; the distractors swap which row holds which quantity or scale the wrong way. This activity is a binder and a notebook price table with a unit price column, and its point is that every row of a correct table shares one unit rate -- the test the item's four tables have to be put to.",
-   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3a"
+   "why": "The item says 3 notebooks cost $6 and asks which of four tables shows that relationship; the distractors swap which row holds the counts and which the prices, or scale the wrong quantity. This Warm-up asks the item's question outright — it hands students a headerless table that conflicts with the situation described (3,000 sitting in the wrong place) and asks whether it really represents it — so both of the item's failure modes, wrong placement and wrong scaling, are what students must check. The losing reading, Unit 3 Lesson 6 “Equivalent Ratios Have the Same Unit Rates” (Binders and Notebooks, p100), supplies the test each candidate table must pass, that every row shares one unit rate, and even uses notebooks and prices; it is second best because students there complete a table they are told is correct rather than judging whether a table represents a situation at all.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.3a",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   },
   "g6-2026-044": {
    "course": "Imagine IM New York, Grade 6",
@@ -19561,8 +19576,8 @@
    "unitTitle": "Unit Rates and Percentages",
    "sectionLetter": "B",
    "sectionTitle": "Rates",
-   "primaryLesson": 4,
-   "lessonTitle": "Comparing Speeds and Prices",
+   "primaryLesson": 7,
+   "lessonTitle": "More Rate Comparisons",
    "candidateLessons": [
     4,
     5,
@@ -19574,16 +19589,17 @@
    "draft": true,
    "evidence": [
     {
-     "lesson": 4,
-     "lessonTitle": "Comparing Speeds and Prices",
-     "role": "practises",
-     "activity": "The Best Deal on Beans",
-     "page": 77,
-     "quote": "Which store is offering the best deal? Explain your reasoning."
+     "lesson": 7,
+     "lessonTitle": "More Rate Comparisons",
+     "role": "assessed",
+     "activity": "Rulers by the Pack",
+     "page": 123,
+     "quote": "A store sells wooden rulers in packs of 10 and packs of 6."
     }
    ],
-   "why": "The item gives two stores selling paper towels in different pack sizes and asks which has the lower price per roll, with both unit rates stated. This activity puts four stores' ads for the same can of beans side by side and asks which is the best deal with reasoning, which is the same comparison of prices per 1.",
-   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2"
+   "why": "The item gives Store A at 6 rolls for $12.24 and Store B at 9 rolls for $19.62, asks which has the lower price per roll, and requires the unit rate for each store in the answer. This Cool-down is the same task with equally unfriendly money: two pack sizes of one product ($8.49 for 10, $5.40 for 6), compute both prices per one, say which is better and explain how you know. The losing reading, Unit 3 Lesson 4 “Comparing Speeds and Prices” (The Best Deal on Beans, p77), is where comparing prices per 1 while shopping is introduced and is a fair second best; it loses because it spreads the comparison over four ads and asks only for the winner, where this Cool-down is the assessed two-offer version the item copies.",
+   "unitBasis": "course guide table; grade 6 Unit 3 is where the guide teaches NY-6.RP.2",
+   "settledBy": "blind second pass, settled by re-reading the lesson"
   }
  }
 }

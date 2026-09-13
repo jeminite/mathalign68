@@ -1,0 +1,639 @@
+{
+ "scope": "grade 6 disagreements",
+ "items": {
+  "g6-2023-018": {
+   "standard": "NY-6.EE.2b",
+   "pValue": 0.5,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 12,
+   "stem": "An expression is shown below. What is the coefficient of the variable in this expression?",
+   "choices": [
+    "<span class=\"math\">5</span>",
+    "<span class=\"math\">z</span>",
+    "<span class=\"math\">9</span>",
+    "<span class=\"math\">3</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 15,
+    "lessonTitle": "Equivalent Exponential Expressions",
+    "activity": "What’s the Value?",
+    "page": 195,
+    "quote": "using mathematical vocabulary related to expressions, such as “coefficient,” “variable,” and “exponent.”",
+    "why": "The item asks for the coefficient of the variable in 5z + (9 ÷ 3). This is the only grade 6 activity in which students are expected to use the word \"coefficient\"; no grade 6 task actually asks a student to name the coefficient of an expression."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 2,
+    "lessonTitle": "Truth and Equations",
+    "activity": "Notice and Wonder: Equations",
+    "page": 35,
+    "quote": "3 ⋅ x = 18 C. 3x = 18",
+    "confidence": "medium",
+    "why": "The item displays 5z + (9 ÷ 3) and asks for the coefficient of the variable, with 9 and 3 from the other term as distractors. This Warm-up is the definitional moment: students meet 3 ⋅ x rewritten as 3x, and the synthesis then names 3 the coefficient. Medium because no grade 6 ACTIVITY asks a student to name a coefficient — the only 'what is the coefficient of the variable?' prompt is a practice problem in Lesson 6, 'Percentages and Equations' (p87)."
+   }
+  },
+  "g6-2023-035": {
+   "standard": "NY-6.EE.3",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 22,
+   "stem": "Which expression is equivalent to <span class=\"math\">4(3m + 1)</span>?",
+   "choices": [
+    "<span class=\"math\">7m + 1</span>",
+    "<span class=\"math\">7m + 5</span>",
+    "<span class=\"math\">12m + 1</span>",
+    "<span class=\"math\">12m + 4</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 11,
+    "lessonTitle": "The Distributive Property, Part 3",
+    "activity": "Writing Equivalent Expressions Using the Distributive Property",
+    "page": 142,
+    "quote": "use the distributive property to write an equivalent expression",
+    "why": "The item expands 4(3m + 1). The activity’s table contains 3(2x + 1) as a row to be rewritten as a sum — the same task with the same shape. Lesson 11 is marked optional in the pacing guide, so a class may never have done it; the non-optional runner-up is Lesson 10, Activity \"Areas of Partitioned Rectangles,\" where the same product-and-sum pair is written for a rectangle’s area."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 10,
+    "lessonTitle": "The Distributive Property, Part 2",
+    "activity": "Which Expressions Represent Area?",
+    "page": 134,
+    "quote": "Select all the expressions that represent the large rectangle’s total area.",
+    "confidence": "high",
+    "why": "The item asks which expression is equivalent to 4(3m + 1), i.e. distribute a number over a sum containing a variable. This Cool-down is the curriculum's test of that move: students must see that 5(b + 3) and 5b + 15 are the same area, and reject 3(5 + b). Lesson 11's 'Writing Equivalent Expressions Using the Distributive Property' (p142) has the exact form 3(2x + 1) but that lesson is optional."
+   }
+  },
+  "g6-2023-039": {
+   "standard": "NY-6.RP.1",
+   "pValue": 0.69,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 25,
+   "stem": "A set of shapes is shown below. What is the ratio of the number of circles to the total number of shapes?",
+   "choices": [],
+   "figures": [
+    "Two circles come first, then two squares, then one triangle -- five shapes in all."
+   ],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 15,
+    "lessonTitle": "Part-Part-Whole Ratios",
+    "activity": "Cubes of Paint",
+    "page": 223,
+    "quote": "the ratio between the two quantities and their total",
+    "why": "The item asks for the ratio of circles to the TOTAL number of shapes in a picture. Cubes of Paint is the only place in grade 6 where students relate the parts of a ratio to the whole (5 ml red and 3 ml blue make 8 ml maroon); note that the curriculum never asks students to write a part-to-total ratio itself, so this is the nearest activity rather than an exact match."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 1,
+    "lessonTitle": "Introducing Ratios and Ratio Language",
+    "activity": "A Collection of Animals",
+    "page": 33,
+    "quote": "Write two sentences that describe a ratio of types of animals",
+    "confidence": "medium",
+    "why": "The item shows a collection of five shapes and asks for the ratio of circles to the total number of shapes. This Cool-down shows a collection of dogs, mice and cats and asks students to write ratio sentences about it - the same read-a-collection-and-name-the-ratio task. Caveat: every ratio IM asks for here is part-to-part; the part-to-whole form the test uses is never asked outright (nearest is Unit 2 Lesson 15, Cubes of Paint)."
+   }
+  },
+  "g6-2023-044": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.47,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 30,
+   "stem": "The tables below show the ratios of distance to time traveled by Car A and Car B. If both cars maintain their rates of speed, what is the difference between the distances, in miles, traveled by Car A and by Car B after 8 hours?",
+   "choices": [],
+   "figures": [
+    "Car A: 2 hours 130 miles, 4 hours 260, 6 hours 390. Car B: 3 hours 186 miles, 5 hours 310, 7 hours 434."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 9,
+    "lessonTitle": "More about Constant Speed",
+    "activity": "Penguin Speed",
+    "page": 153,
+    "quote": "They both walk for 30 seconds. At these rates, how far apart",
+    "why": "The item gives two distance-time tables for two cars and asks the difference in distance after 8 hours. This Cool-down gives two walking rates, runs both for a common 30 seconds, and asks how far apart they end up -- the same two-rates-one-elapsed-time difference. Lesson 9 is flagged optional, so this is weaker evidence; the non-optional runner-up is Unit 2 Lesson 13 'Biking 3,000 Meters', which extends a rate table for two movers but never asks for a difference."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 6,
+    "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+    "activity": "Cheetah Speed",
+    "page": 110,
+    "quote": "Complete the table to represent a cheetah running at a constant speed",
+    "confidence": "high",
+    "why": "The item gives two time-and-distance tables for cars at constant speed and asks for the difference in distance at 8 hours. This Cool-down is the same table: time, distance and a speed column at a constant rate, with students filling in a distance for a time that is not listed. The item only adds a subtraction at the end."
+   }
+  },
+  "g6-2024-011": {
+   "standard": "NY-6.EE.8",
+   "pValue": 0.55,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 9,
+   "stem": "Which number line represents <span class=\"math\">x ≥ −3</span> ?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "They differ in whether the circle at negative 3 is filled or open and in whether the shaded ray runs left or right."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 9,
+    "lessonTitle": "Solutions of Inequalities",
+    "activity": "Solutions of Inequalities",
+    "page": 119,
+    "quote": "Draw a number line to represent this inequality.",
+    "why": "The item goes the other way — given x ≥ −3, pick its graph. The Cool-down asks students to draw the number line for a given inequality, though it uses a strict inequality, so the closed circle for ≥ has to come from Lesson 8."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 8,
+    "lessonTitle": "Writing and Graphing Inequalities",
+    "activity": "Stories about 9",
+    "page": 104,
+    "quote": "closed (include) or open (exclude) circle at the boundary of the constraint",
+    "confidence": "high",
+    "why": "The item shows four number lines and asks which represents x ≥ −3; the four differ only in whether the circle at −3 is filled and which way the ray is shaded. This activity is the match between math statements and number lines, and it is where the curriculum makes the filled-versus-open circle decision explicit. The negative boundary itself is grade 6 work from this unit's Section A."
+   }
+  },
+  "g6-2024-015": {
+   "standard": "NY-6.NS.1",
+   "pValue": 0.54,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 10,
+   "stem": "Ben purchases <span class=\"math\">1 <span class=\"frac\"><span>1</span><span>4</span></span></span> pounds of nuts and puts them into bags. Each bag holds <span class=\"math\"><span class=\"frac\"><span>1</span><span>8</span></span></span> pound of nuts. He uses all the nuts to fill each bag completely. How many bags does Ben fill with nuts?",
+   "choices": [
+    "<span class=\"math\"><span class=\"frac\"><span>5</span><span>32</span></span></span>",
+    "<span class=\"math\">1 <span class=\"frac\"><span>1</span><span>8</span></span></span>",
+    "<span class=\"math\">2</span>",
+    "<span class=\"math\">10</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 5,
+    "lessonTitle": "How Many Groups? (Part 2)",
+    "activity": "Reasoning with Fraction Strips",
+    "page": 76,
+    "quote": "How many 1/8 s are in 1 1/4 ?",
+    "why": "1 1/4 pounds of nuts into 1/8-pound bags, how many bags. This Warm-up asks 'How many 1/8 s are in 1 1/4 ?' -- the item's exact numbers, with the answer 10 -- and the distractor 5/32 is what a student gets by multiplying instead. Lesson 4 'How Many Groups? (Part 1)' also introduces unit-fraction divisors but is an optional lesson."
+   },
+   "secondPass": {
+    "unit": 4,
+    "unitTitle": "Dividing Fractions",
+    "lesson": 6,
+    "lessonTitle": "Using Diagrams to Find the Number of Groups",
+    "activity": "Finding the Number of Groups",
+    "page": 95,
+    "quote": "students apply the reasoning strategies they learned in earlier activities to solve division problems",
+    "confidence": "high",
+    "why": "1 1/4 pounds of nuts into 1/8-pound bags: how many bags? The activity's first question is the same sentence with different numbers - how many groups of a fractional pound are in a mixed number of pounds. Lesson 10 Activity 1 'Dividing by Unit Fractions' (p163) is the runner-up: it is where dividing by a unit fraction is generalised to multiplying by its denominator, which is the shortcut this item's distractors (5/32, 1 1/8, 2) are built to punish."
+   }
+  },
+  "g6-2024-031": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.89,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 20,
+   "stem": "There are 104 calories in an 8-ounce serving of soda. How many calories are in 1 ounce of soda?",
+   "choices": [
+    "13",
+    "26",
+    "52",
+    "96"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 8,
+    "lessonTitle": "How Much for One?",
+    "activity": "Grocery Shopping",
+    "page": 123,
+    "quote": "What is the cost per bottle of water?",
+    "why": "The item gives 104 calories in an 8-ounce serving and asks for the amount in 1 ounce. This is the activity where 'how much for one' is introduced -- twelve bottles for $9, what is the cost per bottle -- dividing a quantity by the number of units to get the value per 1."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 5,
+    "lessonTitle": "Interpreting Rates",
+    "activity": "Laundry Detergent and Raffle Tickets",
+    "page": 89,
+    "quote": "For each situation, find the unit rates.",
+    "confidence": "high",
+    "why": "The item gives 104 calories per 8-ounce serving and asks for the calories in 1 ounce. This is the activity where the term unit rate is introduced and where students compute the amount per 1 in a non-price context (10 gallons of detergent every 6 weeks, gallons per week), exactly the division the item requires."
+   }
+  },
+  "g6-2024-036": {
+   "standard": "NY-6.EE.7",
+   "pValue": 0.71,
+   "type": "Multiple Choice",
+   "key": "A",
+   "pdfPage": 22,
+   "stem": "A tutoring company charges <span class=\"math\">$25.00</span> per hour to tutor a student. How many hours o f tutoring would cost <span class=\"math\">$62.50</span> ?",
+   "choices": [
+    "<span class=\"math\">2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">3 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">37<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+    "<span class=\"math\">87<span class=\"frac\"><span>1</span><span>2</span></span></span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 4,
+    "lessonTitle": "Practice Solving Equations",
+    "activity": "Row Game: Solving Equations Practice",
+    "page": 61,
+    "quote": "The purpose of this activity is for students to practice solving equations.",
+    "why": "The item is 25h = 62.50, a px = q equation with a non-whole-number solution. The Row Game columns include 6x = 45 and 8x = 60, which are the same equation type with the same kind of answer."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 5,
+    "lessonTitle": "Represent Situations with Equations",
+    "activity": "Choosing Equations to Match Situations",
+    "page": 70,
+    "quote": "Circle all of the equations that describe each situation. Then find the solution",
+    "confidence": "high",
+    "why": "The item gives a rate ($25.00 per hour) and a total ($62.50) and asks for the number of hours — set up 25x = 62.50 and solve. This activity is where students match a situation to a px = q equation and then solve it; its solar-panel question, 1.5p = 100, is the same shape."
+   }
+  },
+  "g6-2024-037": {
+   "standard": "NY-6.G.3",
+   "pValue": 0.2,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 23,
+   "stem": "The four vertices of a parallelogram are plotted on the coordinate plane shown below. What is the distance, in units, between vertices A and D ?",
+   "choices": [],
+   "figures": [
+    "A is at negative 6, 6; D is at 4, 6; B is at 2, negative 4; C is at 12, negative 4."
+   ],
+   "firstPass": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 14,
+    "lessonTitle": "Distances in the Coordinate Plane",
+    "activity": "Points and Distances",
+    "page": 179,
+    "quote": "What is the distance between points C and D?",
+    "why": "The item shows a plotted parallelogram and asks the distance between vertices A(-6,6) and D(4,6), a horizontal length read off an existing grid. This Cool-down gives four plotted points and asks for the distance between two named pairs, which is the same work; the parallelogram wrapper is decoration. Runner-up: lesson 15's 'Perimeter of a Polygon', which does this for a polygon's sides but has students plot it first."
+   },
+   "secondPass": {
+    "unit": 7,
+    "unitTitle": "Rational Numbers",
+    "lesson": 15,
+    "lessonTitle": "Shapes in the Coordinate Plane",
+    "activity": "Perimeter of a Polygon",
+    "page": 187,
+    "quote": "connect them in the order listed to create a polygon",
+    "confidence": "high",
+    "why": "The item shows a plotted parallelogram and asks the distance between vertices A (-6, 6) and D (4, 6). Lesson 15's Cool-down builds a polygon from listed vertices and asks for its perimeter, so every side length is computed from coordinates the way this item asks for one. Because the figure is supplied, Lesson 14's Cool-down 'Points and Distances' (p. 179) is an equally direct match for the arithmetic."
+   }
+  },
+  "g6-2024-042": {
+   "standard": "NY-6.EE.9",
+   "pValue": 0.28,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 28,
+   "stem": "Mike needs a ticket every time he rides the bus. Given the equation <span class=\"math\">c = 2.75t</span>, what is the relationship between <span class=\"math\">t</span>, the number of tickets that Mike buys, and <span class=\"math\">c</span>, the total cost?  Be sure to identify which variable is independent and which variable is dependent in your answer.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 16,
+    "lessonTitle": "Two Related Quantities, Part 1",
+    "activity": "Painting the Set",
+    "page": 213,
+    "quote": "the terms “dependent variable” and “independent variable” are introduced to describe the",
+    "why": "The item gives c = 2.75t and asks for the relationship and which variable is independent. This activity is where the two terms are introduced, on a relationship of exactly this form written as an equation in two variables."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 19,
+    "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+    "activity": "Sharing Your Equation with Others",
+    "page": 253,
+    "quote": "How the dependent variable and independent variable are related.",
+    "confidence": "high",
+    "why": "The item gives the equation c = 2.75t and asks students to describe the relationship in words and say which variable is independent and which is dependent. That is this activity's explicit deliverable — students must be prepared to explain what each variable represents and how the dependent and independent variables are related for their own assigned equation."
+   }
+  },
+  "g6-2025-035": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.47,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 25,
+   "stem": "Hannah buys oranges and apples from the grocery store. She pays $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples. Which statement about the fruit is true?",
+   "choices": [
+    "Apples have the greater unit price at $1.15.",
+    "Apples have the greater unit price at $1.25.",
+    "Oranges have the greater unit price at $1.15.",
+    "Oranges have the greater unit price at $1.25."
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 5,
+    "lessonTitle": "Interpreting Rates",
+    "activity": "Laundry Detergent and Raffle Tickets",
+    "page": 89,
+    "quote": "For each situation, find the unit rates.",
+    "why": "The item gives $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples and asks which has the greater unit price and what it is. This activity is two separate cost situations in which students compute the price per 1 for each, which is the whole of the item's work; the comparison itself is a one-step addition to that."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 4,
+    "lessonTitle": "Comparing Speeds and Prices",
+    "activity": "The Best Deal on Beans",
+    "page": 77,
+    "quote": "students compare rates per 1 in a shopping context",
+    "confidence": "medium",
+    "why": "The item gives $6.25 for 5 pounds of oranges and $6.90 for 6 pounds of apples and asks which statement about the two unit prices is true, so both unit prices must be computed and compared. This activity is the shopping-context comparison of prices per 1 across several offers. It asks for the lowest price rather than the greatest, which is the only mismatch."
+   }
+  },
+  "g6-2025-041": {
+   "standard": "NY-6.EE.9",
+   "pValue": 0.16,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 31,
+   "stem": "A restaurant buys cheese in large blocks. The table below shows the relationship between the number of blocks of cheese, b, that they buy, and the total amount paid, t, in dollars. Based on the data in the table, write an equation to represent the total price, t, in terms of the number of blocks of cheese bought, b. Be sure to identify the independent and dependent variables in your explanation.",
+   "choices": [],
+   "figures": [
+    "2 blocks for 112 dollars, 4 for 224, 6 for 336, and 8 for 448."
+   ],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 16,
+    "lessonTitle": "Two Related Quantities, Part 1",
+    "activity": "Painting the Set",
+    "page": 213,
+    "quote": "allows students to interpret and write equations with variables",
+    "why": "The item gives a table of blocks of cheese against dollars and asks for an equation for t in terms of b plus the dependent and independent variables. This activity moves from a table of equivalent ratios to equations in two variables and names the two kinds of variable."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 19,
+    "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+    "activity": "Card Sort: Equations and Tables",
+    "page": 249,
+    "quote": "Take turns with your partner to match an equation with a table.",
+    "confidence": "medium",
+    "why": "The item gives a table of cheese blocks against total paid and asks for an equation for t in terms of b, plus the independent and dependent variables. This Card Sort is the non-optional table-to-equation work, and its narrative has students reason from the table about which column is the dependent variable. Medium because the card sort has students match a ready-made equation rather than write one; the write-an-equation-from-a-table task is the Cool-down of Lesson 18, 'More Relationships' (p243), which the pacing table marks optional."
+   }
+  },
+  "g6-2026-006": {
+   "standard": "NY-6.EE.6",
+   "pValue": 0.45,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 6,
+   "stem": "Which expression represents the perimeter, in units, of the figure shown below?",
+   "choices": [
+    "<span class=\"math\">x + 15</span>",
+    "<span class=\"math\">x + 18</span>",
+    "<span class=\"math\">2x + 15</span>",
+    "<span class=\"math\">2x + 18</span>"
+   ],
+   "figures": [
+    "Going round the figure the sides are 2, x, 5, 2, x plus 3, and 6."
+   ],
+   "firstPass": {
+    "unit": 1,
+    "unitTitle": "Area and Surface Area",
+    "lesson": 18,
+    "lessonTitle": "Surface Area of a Cube",
+    "activity": "Every Cube in the Whole World",
+    "page": 305,
+    "quote": "students develop the formulas for the surface area and the volume of a",
+    "why": "The item adds six side lengths, two of them containing x, to get 2x + 18 for a perimeter. This activity is the one place students build an expression for a figure’s total measurement from its parts with a variable edge length and collect like terms; no grade 6 activity writes a perimeter expression with variables."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 10,
+    "lessonTitle": "The Distributive Property, Part 2",
+    "activity": "Partitioned Rectangles When Lengths Are Unknown",
+    "page": 129,
+    "quote": "Write an expression for the sum of the areas of the two rectangles.",
+    "confidence": "low",
+    "why": "The item sums six labelled sides of an L-shaped figure (2, x, 5, 2, x + 3, 6) into 2x + 18. The closest thing the curriculum asks is this activity, where students write an expression for a figure's total measurement when one length is unknown, producing a mixed expression such as 40 + 5x. Low confidence: no grade 6 activity asks for a perimeter expression at all, and collecting the figure's two x terms is rehearsed only in the optional Lesson 11, 'The Distributive Property, Part 3' (p142)."
+   }
+  },
+  "g6-2026-014": {
+   "standard": "NY-6.EE.9",
+   "pValue": 0.56,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 10,
+   "stem": "A pizza shop charges <span class=\"math\">$15.00</span> for each large pizza. There is a one time charge of <span class=\"math\">$5.00</span> to deliver any number of pizzas. Which equation could be used to determine the total charge, <span class=\"math\">c</span>, in dollars, of a delivery order of <span class=\"math\">p</span> large pizzas?",
+   "choices": [
+    "<span class=\"math\">c = 15 + 5p</span>",
+    "<span class=\"math\">c = 15p + 5</span>",
+    "<span class=\"math\">c = 15 + 5 + p</span>",
+    "<span class=\"math\">c = 15 × 5 + p</span>"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 19,
+    "lessonTitle": "Tables, Equations, and Graphs, Oh My!",
+    "activity": "Getting to Know an Equation",
+    "page": 250,
+    "quote": "each student focuses on just one of those equations to learn about the",
+    "why": "The item wants c = 15p + 5 — a rate plus a one-time fee. Every two-variable equation in grade 6, here and in Lessons 16–18, uses a single operation (E = 6s, G = J + 13); nothing in the course combines a rate with a constant, so this placement covers the interpreting-an-equation-for-a-situation demand only."
+   },
+   "secondPass": {
+    "unit": 6,
+    "unitTitle": "Expressions and Equations",
+    "lesson": 16,
+    "lessonTitle": "Two Related Quantities, Part 1",
+    "activity": "Kitchen Cleaner",
+    "page": 218,
+    "quote": "Select all equations that can represent the relationship between b",
+    "confidence": "medium",
+    "why": "The item asks for c = 15p + 5 — a per-pizza rate plus a one-time delivery charge — and its distractors turn on which quantity carries the multiplier. The Cool-down tests exactly that choice between equations relating two quantities. Medium because no grade 6 activity writes a two-variable equation that combines a rate with a fixed amount; every relationship in Unit 6 Section D is a single operation."
+   }
+  },
+  "g6-2026-021": {
+   "standard": "NY-6.RP.3b",
+   "pValue": 0.43,
+   "type": "Multiple Choice",
+   "key": "D",
+   "pdfPage": 13,
+   "stem": "Tina makes 6 paper decorations in 39 minutes. At this rate, how many minutes will it take Tina to make 14 paper decorations?",
+   "choices": [
+    "47",
+    "59",
+    "84",
+    "91"
+   ],
+   "figures": [],
+   "firstPass": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 12,
+    "lessonTitle": "Navigating a Table of Equivalent Ratios",
+    "activity": "Hourly Wages",
+    "page": 181,
+    "quote": "At this rate, how much would Lin be paid for 3 hours of work?",
+    "why": "The item gives 6 decorations in 39 minutes and asks about 14 decorations, where 14 is not a multiple of 6 and the rate per one is 6.5 minutes. This activity is built on exactly that difficulty: $90 for 5 hours, then 8 hours and 3 hours, with an equivalent ratio having a quantity of 1 as the intermediate step."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 8,
+    "lessonTitle": "Solving Rate Problems",
+    "activity": "Window Washing",
+    "page": 132,
+    "quote": "Find the number of windows that can be washed in 1 minute",
+    "confidence": "high",
+    "why": "The item says Tina makes 6 decorations in 39 minutes and asks how long 14 take, which forces a non-integer rate of 6.5 minutes each. This activity is the same question with numbers deliberately chosen so the target is not a multiple of the given ratio, and its narrative names finding the amount for 1 and scaling as the way through."
+   }
+  },
+  "g6-2026-031": {
+   "standard": "NY-6.RP.3c",
+   "pValue": 0.6,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 22,
+   "stem": "A teacher surveyed all of the students in the art club to determine their favorite ice cream flavor. Each student chose one flavor. The results of the survey are shown in the table below. What percent of the students in the art club chose vanilla ice cream as their favorite flavor?",
+   "choices": [
+    "21%",
+    "42%",
+    "58%",
+    "72%"
+   ],
+   "figures": [
+    "Chocolate 18, vanilla 21, strawberry 11."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 16,
+    "lessonTitle": "Finding the Percentage",
+    "activity": "Restaurant Capacity",
+    "page": 250,
+    "quote": "What percentage of its capacity is 9 people?",
+    "why": "The item gives a survey table of three flavors and asks what percent chose vanilla, so students must sum the table to 50 first and then find 21 as a percentage of it. This activity asks what percentage 9 and 51 are of 75, the same question for a non-benchmark pair. Lesson 16 is optional in its entirety, so this is weaker evidence; the non-optional runner-up is the Lesson 14 Warm-up 'Matching the Percentage'."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 14,
+    "lessonTitle": "Solving Percentage Problems",
+    "activity": "Matching the Percentage",
+    "page": 222,
+    "quote": "students determine what percentage one number is of another number",
+    "confidence": "medium",
+    "why": "The item gives an art-club survey table (18, 21, 11) and asks what percent chose vanilla, so students must total the table to 50 first and then find 21 of 50. This Warm-up asks the 'B is what percentage of C' question directly and is in a required lesson. The closer match, Restaurant Capacity in Lesson 16 ('What percentage of its capacity is 9 people?'), is in the lesson the pacing table marks optional."
+   }
+  },
+  "g6-2026-034": {
+   "standard": "NY-6.RP.3a",
+   "pValue": 0.77,
+   "type": "Multiple Choice",
+   "key": "B",
+   "pdfPage": 23,
+   "stem": "A store has a sale on one type of notebook. The price of 3 of these notebooks is $6. Which table shows the same relationship for each given number of notebooks of this type and the total price for those notebooks?",
+   "choices": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figures": [
+    "Each pairs a number of notebooks with a price in dollars. They differ in which row holds which values and in whether the prices double the notebook counts or the other way round."
+   ],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 6,
+    "lessonTitle": "Equivalent Ratios Have the Same Unit Rates",
+    "activity": "Binders and Notebooks",
+    "page": 100,
+    "quote": "when two ratios are equivalent, they have the same unit rate",
+    "why": "The item says 3 notebooks cost $6 and asks which table shows that relationship; the distractors swap which row holds which quantity or scale the wrong way. This activity is a binder and a notebook price table with a unit price column, and its point is that every row of a correct table shares one unit rate -- the test the item's four tables have to be put to."
+   },
+   "secondPass": {
+    "unit": 2,
+    "unitTitle": "Introducing Ratios",
+    "lesson": 13,
+    "lessonTitle": "Tables and Double Number Line Diagrams",
+    "activity": "Running 3,000 Meters",
+    "page": 191,
+    "quote": "Do you agree that this table represents the situation?",
+    "confidence": "medium",
+    "why": "The item says 3 notebooks cost $6 and asks which table shows that relationship; the distractors swap which row holds the counts and which holds the prices, or double the wrong quantity. This Warm-up hands students a table that conflicts with the situation described (the headerless table puts 3,000 in the wrong place) and asks whether it really represents the situation - the same attention to which quantity sits where."
+   }
+  },
+  "g6-2026-044": {
+   "standard": "NY-6.RP.2",
+   "pValue": 0.52,
+   "type": "Constructed Response",
+   "key": null,
+   "pdfPage": 30,
+   "stem": "Two stores sell the same size rolls of paper towels in different packages. <span class=\"math\">•</span> Store A sells 6 rolls for $12.24 <span class=\"math\">•</span> Store B sells 9 rolls for $19.62 Which store has the lower price per roll of paper towels? Be sure to include the unit rate for each store in your answer.",
+   "choices": [],
+   "figures": [],
+   "firstPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 4,
+    "lessonTitle": "Comparing Speeds and Prices",
+    "activity": "The Best Deal on Beans",
+    "page": 77,
+    "quote": "Which store is offering the best deal? Explain your reasoning.",
+    "why": "The item gives two stores selling paper towels in different pack sizes and asks which has the lower price per roll, with both unit rates stated. This activity puts four stores' ads for the same can of beans side by side and asks which is the best deal with reasoning, which is the same comparison of prices per 1."
+   },
+   "secondPass": {
+    "unit": 3,
+    "unitTitle": "Unit Rates and Percentages",
+    "lesson": 7,
+    "lessonTitle": "More Rate Comparisons",
+    "activity": "Rulers by the Pack",
+    "page": 123,
+    "quote": "A store sells wooden rulers in packs of 10 and packs of 6.",
+    "confidence": "high",
+    "why": "The item gives 6 rolls for $12.24 and 9 rolls for $19.62, asks which store has the lower price per roll, and requires the unit rate for each store in the answer. This Cool-down is the same task with equally unfriendly numbers ($8.49 for 10, $5.40 for 6): two pack sizes, compute both prices per one, say which is better."
+   }
+  }
+ }
+}
