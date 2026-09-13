@@ -76,3 +76,22 @@ The audit covered coordinate planes only, because they are the figures whose
 content reduces to numbers a script can re-derive. Diagrams, tables and geometric
 figures still rest on a person having read them, and this note is the honest
 record of that limit.
+
+## A tenth defect, outside the checker's reach
+
+While settling the alignment disagreements, a reader noticed that
+`g8-2025-035`'s description said *"Brayden marks a rise of 3 against a run of
+2."* The item's own stem says Brayden calculated the slope as **2/3**, and the
+artwork labels his triangle 2 up and 3 across. The rise and the run had been
+transposed, so the description contradicted both the stem above it and the
+answer key, which says both students are right.
+
+`check_plotted_points.py` cannot catch this one and never will: the figure plots
+no points. It is two line graphs with labelled arrows, and the numbers that
+matter are printed on the arrows rather than implied by a lattice position.
+
+That is the honest boundary. The checker covers coordinate planes, which are the
+figures whose content reduces to numbers a script can re-derive from the drawing.
+Everything else — diagrams, tables, labelled constructions, geometric figures —
+still rests on a person having read the picture, and a description that
+contradicts its own stem is the shape those errors take.
