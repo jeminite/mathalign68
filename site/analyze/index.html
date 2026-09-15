@@ -957,7 +957,13 @@ table.grid a:hover { text-decoration:underline }
   // one is kept.
   function findClassColumn(grid, headerRow, firstQCol) {
     if (!grid[headerRow]) return -1;
-    for (var c = 1; c < firstQCol; c++) {
+    // Column 0 is included, because an export with its name column already
+    // deleted puts `Class` there -- the school's 2025 files and its 2026 grade
+    // 7 and 8 files all do. What keeps that safe is not the index but the two
+    // guards below: the header must read exactly `Class`, and every value must
+    // be short, comma-free and not name-shaped. A column of names under any
+    // header is refused whole, at index 0 or anywhere else.
+    for (var c = 0; c < firstQCol; c++) {
       if (cell(grid[headerRow][c]).toLowerCase() !== "class") continue;
       for (var r = headerRow + 1; r < Math.min(grid.length, headerRow + 40); r++) {
         var v = cell(grid[r] && grid[r][c]);
@@ -1070,6 +1076,15 @@ table.grid a:hover { text-decoration:underline }
   // standard. Scoring those pairs against all twelve tests puts the right one
   // at 39 of 39 and the runner-up at 2, so this can demand a decisive winner
   // and refuse rather than join against the nearest neighbour.
+  //
+  // Agreement is measured against the questions the candidate test RELEASED,
+  // not against the file's column count. The export scores every operational
+  // item and NYSED releases only some of them: 2026 released all 39 of grade
+  // 6's, 2025 released 29. A 2025 file therefore agrees on 29 of 29 released
+  // questions and carries 10 the payload has no key for -- a clean
+  // identification, not a doubtful one, and the first version of this rule
+  // (80% of the file's questions) refused it. The extra questions are counted
+  // here as `unreleased`, listed by analyse() as `unmatched`, and never scored.
   function identifyTest(parsed, data) {
     var byTest = {};
     data.items.forEach(function (it) {
@@ -1077,26 +1092,36 @@ table.grid a:hover { text-decoration:underline }
     });
     var total = parsed.questions.length;
     var scores = Object.keys(byTest).map(function (testId) {
-      var agree = 0;
+      var agree = 0, published = 0;
       parsed.questions.forEach(function (q) {
-        if (byTest[testId][q] && byTest[testId][q] === parsed.std[q]) agree++;
+        if (!byTest[testId][q]) return;          // not released; no key to score it
+        published++;
+        if (byTest[testId][q] === parsed.std[q]) agree++;
       });
-      return { testId: testId, agree: agree };
+      return { testId: testId, agree: agree, published: published };
     }).sort(function (a, b) { return b.agree - a.agree; });
 
     var best = scores[0], next = scores[1] || { agree: 0 };
-    // Both halves matter. A high score alone could come from two tests that
+    // All three matter. A high score alone could come from two tests that
     // share a blueprint; a wide margin alone could be two poor scores far
-    // apart. The observed numbers clear this by a distance (39/39, 19.5x).
-    if (!best || best.agree < total * 0.8 || best.agree < next.agree * 2) {
-      return { testId: null, agree: best ? best.agree : 0, total: total,
-               runnerUp: next.agree,
+    // apart; and ten agreeing questions is the floor because findHeaderRow
+    // already needs ten headers, so anything smaller is a fragment. The
+    // observed numbers clear this by a distance (39/39 and 29/29 against a
+    // runner-up of 2 to 5).
+    var ag = best ? best.agree : 0, pub = best ? best.published : 0;
+    if (!best || ag < 10 || ag < pub * 0.8 || ag < next.agree * 2) {
+      return { testId: null, agree: ag, published: pub, total: total,
+               unreleased: total - pub, runnerUp: next.agree,
                error: "This file could not be matched to a published test. Its question " +
-                      "headers agreed with the closest one on " + (best ? best.agree : 0) +
-                      " of " + total + " standards, which is not a clear enough match to " +
-                      "trust. MathAlign68 covers grades 6–8 for 2023–2026." };
+                      "headers agreed with the closest one on " + ag + " of the " + pub +
+                      " questions that test released" +
+                      (total - pub > 0 ? " (a further " + (total - pub) +
+                                         " questions in the file were not released)" : "") +
+                      ", which is not a clear enough match to trust. MathAlign68 covers " +
+                      "grades 6–8 for 2023–2026." };
     }
-    return { testId: best.testId, agree: best.agree, total: total, runnerUp: next.agree };
+    return { testId: best.testId, agree: ag, published: pub, total: total,
+             unreleased: total - pub, runnerUp: next.agree };
   }
 
   /* --------------------------------------------------------------- pl curve */
@@ -1410,9 +1435,17 @@ table.grid a:hover { text-decoration:underline }
       });
       return raw;
     });
-    var curve = parsed.hasPl
-      ? plCurve(rawByStudent, parsed.students.map(function (s) { return s.pl; }), totalCredits)
-      : { usable: false, why: "this file carries no proficiency-level column" };
+    // A curve needs the whole raw score. When NYSED released fewer questions
+    // than the export scores, the credits summed here are a part of each
+    // student's raw score and would recover a conversion that looks fine and
+    // is wrong -- refused outright rather than left to the collision check.
+    var curve = !parsed.hasPl
+      ? { usable: false, why: "this file carries no proficiency-level column" }
+      : unmatched.length
+        ? { usable: false, why: unmatched.length + " scored questions on this test were not " +
+                                "released, so the credits counted here are not the raw score " +
+                                "and no conversion can be read from them" }
+        : plCurve(rawByStudent, parsed.students.map(function (s) { return s.pl; }), totalCredits);
 
     var gating = parsed.hasPl ? bandGating(parsed, items, byItem)
                               : { usable: false, why: "this file carries no proficiency-level column" };

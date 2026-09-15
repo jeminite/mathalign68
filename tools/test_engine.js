@@ -486,12 +486,73 @@ async function main() {
 
   /* ------------------------------------------------------- the Class column */
 
-  // Column 0 is never read, whatever it is headed. A file that labels its very
-  // first column "Class" must not thereby unlock the column where the name
-  // lives in every other file.
-  const spoof = [["Class", "Q1 (6.RP.2)", "Q2 (6.NS.5)"]];
-  check("a Class header on column 0 is refused",
-        Engine.findClassColumn(spoof, 0, 1), -1);
+  // Column 0 may hold `Class` -- an export whose name column has already been
+  // deleted puts it there, and the school's 2025 files do -- but only under
+  // the same guards as any other index: the header must read exactly Class,
+  // and no value may look like a person. Until 2026-09-14 index 0 was refused
+  // outright, which silently dropped every section on those files.
+  const first = [["Class", "Q1 (6.RP.2)", "Q2 (6.NS.5)"], ["6A1", "A", "B"], ["6A2", "C", "D"]];
+  check("a Class header on column 0 is read, under the value guards",
+        Engine.findClassColumn(first, 0, 1), 0);
+  const firstNames = [["Class", "Q1 (6.RP.2)", "Q2 (6.NS.5)"],
+                      ["Jane Doe", "A", "B"], ["John Roe", "C", "D"]];
+  check("column 0 headed Class but holding names is refused",
+        Engine.findClassColumn(firstNames, 0, 1), -1);
+  const unheaded = [["Student Name", "Q1 (6.RP.2)"], ["6A1", "A"]];
+  check("column 0 under any other header is never read",
+        Engine.findClassColumn(unheaded, 0, 1), -1);
+
+  /* ------------------------- a test that released fewer questions than it scored */
+
+  // The school's export scores every operational item; NYSED released only 29
+  // of grade 6's 39 in 2025. Such a file must identify on the questions the
+  // test released, name the ones it did not, score only the released ones, and
+  // refuse to read a curve from a partial raw score. Its layout also differs:
+  // two header rows (the first without parentheses), no name column so Class
+  // is column 0, and ELA columns beside the mathematics ones.
+  {
+    const pub = DATA.items.filter((i) => i.testId === "g6-2025");
+    const extra = { 2: "6.EE.5", 7: "6.G.5", 9: "6.RP.3d", 10: "6.EE.8", 11: "6.EE.4",
+                    14: "6.EE.7", 20: "6.EE.3", 24: "6.G.2", 25: "6.NS.6b", 29: "6.NS.7c" };
+    const heads = pub.map((i) => ({ q: i.item, std: i.standard.replace(/^NY-/, ""),
+                                    cr: i.type === "Multiple Choice" ? 0 : i.credits }))
+      .concat(Object.keys(extra).map((q) => ({ q: +q, std: extra[q], cr: 0 })))
+      .sort((a, b) => a.q - b.q);
+    const left = ["Class", "MC%", "CR%", "NYS Math", "NYS ELA", "Math Lv", "ELA Lv"];
+    const partial = [left.concat(heads.map((h) => "Q" + h.q + " " + h.std)),
+                     left.concat(heads.map((h) => "Q" + h.q + " (" + h.std + ")"))];
+    for (let s = 0; s < 12; s++) {
+      const row = [s % 2 ? "6A1" : "6A4", 0.5, 0.2, 1.5 + s * 0.25, 2.1, "L2", "L2"];
+      heads.forEach((h, k) => row.push(h.cr ? (s + k) % (h.cr + 1) : "ABCD"[(s + k) % 4]));
+      partial.push(row);
+    }
+    const pp = Engine.parseGrid(partial);
+    check("the parenthesised second header row is the one read", pp.headerRow, 2);
+    const pr = Engine.run(partial, DATA);
+    ok("a partial-release file analyses without error", !pr.error, pr.error);
+    check("it identifies on the questions the test released", pr.testId, "g6-2025");
+    check("29 of 29 released questions agree; 10 in the file were not released",
+          [pr.identify.agree, pr.identify.published, pr.identify.total, pr.identify.unreleased],
+          [29, 29, 39, 10]);
+    check("the unreleased questions are named, never scored",
+          pr.unmatched.map((u) => u.item), [2, 7, 9, 10, 11, 14, 20, 24, 25, 29]);
+    check("only released credits count as possible", pr.overall.possible, 37 * 12);
+    ok("no curve is read from a partial raw score",
+       !pr.curve.usable && /not released/.test(pr.curve.why), pr.curve);
+    check("Class on column 0 yields sections", Object.keys(pr.sections).sort(), ["6A1", "6A4"]);
+    check("the ELA columns raise no warning", pr.warnings.length, 0);
+
+    // And a file that disagrees on released questions is still refused: the
+    // same grid with every released standard shifted to the next question's.
+    const wrong = partial.map((r) => r.slice());
+    for (let c = left.length; c < wrong[1].length - 1; c++) {
+      const m = /^Q(\d+) \((.*)\)$/.exec(wrong[1][c]);
+      const n = /^Q(\d+) \((.*)\)$/.exec(wrong[1][c + 1]);
+      wrong[1][c] = "Q" + m[1] + " (" + n[2] + ")";
+    }
+    const wr = Engine.run(wrong, DATA);
+    ok("a file whose released questions disagree is refused", !!wr.error, wr.identify);
+  }
 
   // Values that look like people, not sections.
   const namey = [["x", "Class", "Q1 (6.RP.2)"], ["", "Jane Doe", "A"], ["", "John Roe", "B"]];
@@ -601,14 +662,19 @@ async function main() {
           [gates[0].standard, gates[0].credits], ["NY-6.EE.7", 3]);
 
     // The pacing finding: the gating content is taught late.
+    // These three pins moved when placement() began carrying the judged
+    // lessons (4acddba, 2026-09-13): Unit 6 went from 11 to 8 gating credits
+    // and the week 21-29 window from 17 to 13, as items judged into other
+    // units left it. Re-pinned 2026-09-14 after checking the HEAD engine gave
+    // the same figures before the identification change of that day.
     const u6 = rr.gatingByUnit.units.filter((u) => u.unit === 6)[0];
-    check("Unit 6 carries 11 gating credits from week 21",
-          [u6.credits, u6.startWeek], [11, 21]);
+    check("Unit 6 carries 8 gating credits from week 21",
+          [u6.credits, u6.startWeek], [8, 21]);
     check("20 distinct gating credits", rr.gatingByUnit.distinctCredits, 20);
     const mid = rr.gatingByUnit.units
       .filter((u) => u.startWeek >= 21 && u.startWeek <= 29)
       .reduce((a, u) => a + u.credits, 0);
-    check("17 gating credits fall in weeks 21-29", mid, 17);
+    check("13 gating credits fall in weeks 21-29", mid, 13);
 
     // The checkpoint findings on the real file.
     check("Unit 6's set is capped at six, not ten",
@@ -617,9 +683,11 @@ async function main() {
           rr.checkpoints.lateWithoutMidUnit.map((u) => u.unit), [7]);
     check("17 checkpoint items in total", rr.checkpoints.totalItems, 17);
 
+    // NY-6.G.5 was the one unplaced standard until the judged placement
+    // supplied a lesson for it (4acddba); nothing is unplaced now.
     check("NY-5.OA.3 is a prior-grade standard, not an index gap",
           [rr.placement.priorGrade, rr.placement.unplaced],
-          [["NY-5.OA.3"], ["NY-6.G.5"]]);
+          [["NY-5.OA.3"], []]);
   }
 
   console.log("");

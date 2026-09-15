@@ -160,11 +160,15 @@ teacher's own browser: `site/analyze/` reads the dropped file locally, fetches n
   and it is narrow:** a column headed exactly `Class` is read for section codes, because the
   per-section view is the most actionable thing the analyser produces -- on the one real export
   in hand, an item that reads as a 0.18 cohort-wide gap is 0.65 / 0.48 / 0.37 / 0.11 by room.
-  Three guards make it mechanical rather than a judgement: the header must be exactly `Class`,
-  the index must not be 0 (column 0 is where the name lives, and no header spelling may unlock
-  it), and every value must be short, comma-free and not name-shaped. Then the inherited
-  uniqueness guard discards the column anyway if its codes are mostly unique, because a code
-  appearing once per row is a per-student identifier.
+  Two guards make it mechanical rather than a judgement: the header must be exactly `Class`,
+  and every value must be short, comma-free and not name-shaped. The index may be 0 -- an
+  export whose name column has already been deleted puts `Class` there, and the school's 2025
+  files and its 2026 grade 7 and 8 files all do -- because it is the value guard, not the
+  index, that keeps a column of names out: a column of names is refused whole under any
+  header at any index. (Until 2026-09-14 index 0 was refused outright, which silently dropped
+  every section on those files.) Then the inherited uniqueness guard discards the column
+  anyway if its codes are mostly unique, because a code appearing once per row is a
+  per-student identifier.
 - The name column is never read at all. The warning that a file still has names in it is raised
   by counting **distinct** name-shaped values, not occurrences: a redacted export repeats one
   placeholder down that column, and warning every time trains a teacher to click past the
