@@ -17,7 +17,7 @@ grade 6's alignment, the analyzer rewiring and the figure audit.
 Nothing open here; kept as a section because both were this file's largest risk
 and because what is left over is small and specific.
 
-**Alt text.** All 152 figures read against their committed crop: 138 sound, 14
+**Alt text.** All 152 figures (148 since four became text, below) read against their committed crop: 138 sound, 14
 failed (9.2%, against 31.7% for the `longDescription`s), every failure read a
 second time before it was changed, all 14 corrected through the merge specs.
 `provenance/figure_descriptions.md` has the audit, `provenance/figure_audit/`
@@ -70,10 +70,14 @@ still to be written. `g7-2023-016` is still unread.
 
 ## 3. Published data that is still wrong
 
-- **`g7-2026-026`'s stem.** Needs the tall delimiters clustered and hand-labelled;
-  raising the height cap fixed its target and silently emptied another item's four
-  answer choices. `provenance/tall_delimiters.md` has the geometry and the
-  nine-item corpus diff.
+- ~~**`g7-2026-026`'s stem.**~~ **Fixed 2026-09-21.** Stretched parentheses, brackets and
+  braces are admitted to the decoder, by width, and labelled. 13 items moved. Four of the five
+  "regressions" that stopped the first attempt were the page being right and the site being
+  wrong -- `g7-2024-037` published a product as a mixed number, `g6-2024-018` two of its four
+  choices as different numbers -- and `g8-2024-045` had been publishing a question about two
+  ordered pairs with no pairs in it. `provenance/tall_delimiters.md`. Four `visuals` entries
+  are now orphans in their specs (`G7-2023/q05`, `G7-2024/q15_1`, `G7-2026/q47`,
+  `G8-2025/q15`): those figures became text.
 - ~~**Radical overbars publish as repeating-decimal marks**~~ **Fixed 2026-09-21**, in the
   decoder: sixteen radicals and nineteen segment bars, a phantom minus sign in
   `g8-2023-007`, and every repeating decimal's bar sitting over its decimal point.

@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g8-2025.json.",
     "items": 31,
     "itemsWithUnresolved": 0,
-    "figures": 21,
-    "displayExpressions": 5
+    "figures": 20,
+    "displayExpressions": 6
   },
   "items": [
     {
@@ -406,23 +406,18 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G8-2025/q15.png",
           "rect": [
             108.46,
             82.89,
             197.84,
             107.2
           ],
-          "paths": 19,
-          "decodedLabels": "<span class=\"frac\"><span>1</span><span>3</span></span> ,1.1<span class=\"repeat\">3</span>,<span class=\"radical\"><span class=\"radicand\">5</span></span>,<span class=\"frac\"><span>5</span><span>2</span></span>",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\">{ <span class=\"frac\"><span>1</span><span>3</span></span> ,1.1<span class=\"repeat\">3</span>,<span class=\"radical\"><span class=\"radicand\">5</span></span>,<span class=\"frac\"><span>5</span><span>2</span></span> }</span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {

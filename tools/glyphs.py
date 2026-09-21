@@ -56,6 +56,22 @@ TABLE = os.path.join(ROOT, "data", "glyphs.json")
 MIN_W, MAX_W = 0.5, 14.0
 MIN_H, MAX_H = 0.5, 16.0
 
+# A STRETCHED DELIMITER IS TALLER THAN ANY LETTER. A parenthesis, bracket or
+# brace round a stacked fraction grows to fit it -- 23pt where body text is 8 --
+# so MAX_H discarded every one before clustering saw it. They were not
+# unlabelled, they were absent, and grade 7 2026 item 26's (4/5)(0.2)(-5/8)
+# published as "4/5 (0.2) - 5/8": a product wearing a subtraction's clothes,
+# whose value is not among its own four choices.
+#
+# Height alone cannot admit them. Twelve clusters in the corpus are this tall
+# and six are pieces of figures -- dashed height lines, an arrowhead, a kite,
+# the edges of a hexagon -- and the last attempt, which raised MAX_H and told
+# the rest apart by geometry, fixed four items and broke five. Every delimiter
+# is between 3 and 4.5pt wide and no figure piece is, so that is the gate; what
+# each one IS remains a label a person gave it in data/glyphs.json.
+DELIM_MAX_H = 26.0
+DELIM_MIN_W, DELIM_MAX_W = 2.5, 5.5
+
 # A fraction bar is a glyph but not a letter shape, and it is as wide as
 # whatever it divides. Capping every candidate at MAX_W dropped the bar over
 # item 34's "-45" (about 17pt) before decoding, so three of that item's four
@@ -162,7 +178,9 @@ def shape_of(drawing):
     rect = drawing["rect"]
     w, h = rect.width, rect.height
     is_rule = h < RULE_MAX_H and w < RULE_MAX_W
-    if not is_rule and not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
+    is_delim = MAX_H <= h < DELIM_MAX_H and DELIM_MIN_W < w < DELIM_MAX_W
+    if not is_rule and not is_delim \
+            and not (MIN_W < w < MAX_W and MIN_H < h < MAX_H):
         return None
     if is_rule and not (MIN_W < w and RULE_MIN_H < h):
         return None
@@ -534,7 +552,12 @@ class GlyphTable:
             # 1^16, where two superscript glyphs outnumber the single base.
             # Superscripts are always drawn smaller than the text they sit on,
             # so the tallest glyphs are body text by definition.
-            sized = [glyphs[i][0] for i in indices if glyphs[i][2] != RULE]
+            # ...unless it is a stretched delimiter, which is taller than the
+            # text it encloses. Beside one, max_h is the bracket, `tall` holds
+            # nothing but brackets, and every digit looks raised: (0.2) came
+            # out as 0 and 2 superscripted with a multiplication dot between.
+            sized = [glyphs[i][0] for i in indices
+                     if glyphs[i][2] != RULE and glyphs[i][0].height < MAX_H]
             if not sized:
                 return
             max_h = max(r.height for r in sized)

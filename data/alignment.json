@@ -3874,7 +3874,7 @@
      "quote": "Do you agree with his answers? If you disagree, explain your reasoning."
     }
    ],
-   "why": "NOTE ON THE STEM: the published stem reads 4/5 (0.2) - 5/8, which is a subtraction whose value is not among the four choices. The PDF's vector geometry shows three bracketed factors -- (4/5)(0.2)(-5/8) -- and only that product gives NYSED's key of -1/10. Aligned as the product it is: a chain of three signed factors mixing a decimal and two fractions, which is Lesson 10's Row Game."
+   "why": "NOTE ON THE STEM: until 2026-09-21 the published stem read 4/5 (0.2) - 5/8, a subtraction whose value is not among the four choices, because the stretched parentheses were discarded before decoding. The page shows three bracketed factors -- (4/5)(0.2)(-5/8) -- and only that product gives NYSED's key of -1/10; the stem now says so. Aligned as the product it always was: a chain of three signed factors mixing a decimal and two fractions, which is Lesson 10's Row Game."
   },
   "g7-2025-032": {
    "course": "Imagine IM New York, Grade 7",

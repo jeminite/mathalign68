@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2026.json.",
     "items": 42,
     "itemsWithUnresolved": 0,
-    "figures": 15,
-    "displayExpressions": 3
+    "figures": 14,
+    "displayExpressions": 4
   },
   "items": [
     {
@@ -193,9 +193,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "What is the value of the expression <span class=\"math\">− <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">÷</span> <span class=\"math\">− <span class=\"frac\"><span>1</span><span>3</span></span></span> ?",
+      "stemHtml": "What is the value of the expression <span class=\"math\">(− <span class=\"frac\"><span>5</span><span>6</span></span>) ÷ (− <span class=\"frac\"><span>1</span><span>3</span></span>)</span> ?",
       "stemLines": [
-        "What is the value of the expression <span class=\"math\">− <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">÷</span> <span class=\"math\">− <span class=\"frac\"><span>1</span><span>3</span></span></span> ?"
+        "What is the value of the expression <span class=\"math\">(− <span class=\"frac\"><span>5</span><span>6</span></span>) ÷ (− <span class=\"frac\"><span>1</span><span>3</span></span>)</span> ?"
       ],
       "prose": "What is the value of the expression  ?",
       "proseAllLines": "What is the value of the expression  ?",
@@ -1165,9 +1165,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">− <span class=\"frac\"><span>5</span><span>8</span></span></span> ?",
+      "stemHtml": "What is the value of <span class=\"math\">(<span class=\"frac\"><span>4</span><span>5</span></span>) (0.2) (− <span class=\"frac\"><span>5</span><span>8</span></span>)</span> ?",
       "stemLines": [
-        "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">− <span class=\"frac\"><span>5</span><span>8</span></span></span> ?"
+        "What is the value of <span class=\"math\">(<span class=\"frac\"><span>4</span><span>5</span></span>) (0.2) (− <span class=\"frac\"><span>5</span><span>8</span></span>)</span> ?"
       ],
       "prose": "What is the value of  ?",
       "proseAllLines": "What is the value of  ?",
@@ -1550,9 +1550,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">(<span class=\"frac\"><span>−45</span><span>−9</span></span>)</span> ?",
       "stemLines": [
-        "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?"
+        "Which expression is equivalent to <span class=\"math\">(<span class=\"frac\"><span>−45</span><span>−9</span></span>)</span> ?"
       ],
       "prose": "Which expression is equivalent to  ?",
       "proseAllLines": "Which expression is equivalent to  ?",
@@ -1560,7 +1560,7 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\">− <span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "html": "<span class=\"math\">− (<span class=\"frac\"><span>45</span><span>9</span></span>)</span>",
           "x": 75.5,
           "y": 483.7
         },
@@ -2017,23 +2017,18 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G7-2026/q47.png",
           "rect": [
             108.99,
             103.89,
             200.31,
             128.14
           ],
-          "paths": 17,
-          "decodedLabels": "<span class=\"frac\"><span>1</span><span>2</span></span> (−0.4) ÷ <span class=\"frac\"><span>1</span><span>3</span></span>",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\">(<span class=\"frac\"><span>1</span><span>2</span></span>) (−0.4) ÷ (<span class=\"frac\"><span>1</span><span>3</span></span>)</span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {

@@ -22,7 +22,7 @@ filter plus Standard, Question type, Year, four sort orders and a widened search
 tab; the same unit filter and a "Taught in" column on Items; and shift-click multi-level sort in
 every table on the site.
 
-**All twelve tests are published — 387 of 396 items carry the actual question**, with 152 figures
+**All twelve tests are published — 387 of 396 items carry the actual question**, with 148 figures
 and 118 constructed-response answers taken from NYSED's own exemplary responses. The nine that
 remain are items whose pages `build_pagemap.py` deliberately leaves undetermined; they still show
 their standard, their statewide P-value and a link to the official page.

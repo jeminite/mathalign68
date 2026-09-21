@@ -36,11 +36,12 @@
     "reviewNotes": {
       "g7-2026": [
         "Item 27's missing y -- 'the amount of juice, , that can be made' -- and the same gap in item 7's 'a proportional relationship between  and x' are both CLOSED. The cause was that where maths is lifted out of a sentence the PDF's text layer leaves a space, and that space's box is as wide as the value that is missing, so the reader treated it as occupied and hid the very glyph belonging there. Whitespace no longer occupies a line.",
-        "Item 7's repeating-decimal overbar covers '.3' rather than just the '3', so 3.3-repeating renders with the bar one character too wide.",
-        "Item 47 is a displayed expression published as an image rather than as text. It reads correctly; it is simply less good than markup would be. Item 20 was in the same state until wide fraction bars were admitted to the glyph table, and now renders as text.",
+        "Item 7's repeating-decimal overbar covered '.3' rather than just the '3'. CLOSED 2026-09-21: an overbar now claims only the glyphs it is drawn over, where it had borrowed a fraction bar's 1.5pt of slack and caught the decimal point by a twentieth of a point.",
+        "Item 47 was a displayed expression published as an image rather than as text. CLOSED 2026-09-21: its stretched parentheses are taller than the glyph table's height cap and were discarded before decoding, so the block was not all glyphs and fell back to a picture. They are admitted now, and it renders as text, as item 20 has since wide fraction bars were admitted.",
         "Item 31's displayed expression decodes as '(5.2 - 1.6) + (---) = 0', where the three rules are an answer box rather than minus signs.",
         "Two of the 42 stems carry a trailing artifact from their answer line, which in these two items shares a prose line with the end of the question: item 40 ends '...should Mr. Morgano receive? $' and item 45 ends '...in the sixth grade? Answerstudents'. Left visible rather than hand-patched, because editing a stem would break the prose-fidelity check that makes this data trustworthy -- the fix belongs in the extractor's line classification.",
-        "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems."
+        "Three values in this test were WRONG in the first published version and are corrected here: item 34's stem read -45 over 9 where the page says -45 over -9, item 43's price list read $1 and $1 where the page says $12.50 and $10.25, and item 36's expression read x - with the 0.25x shown separately beside it. All three had the same cause -- the right-hand bound on a prose line's maths cut a value in half, and the remainder was published as a stray expression. The extractor now grows an accepted run rightwards, so a value that continues past the text is completed. Nothing was hand-edited; re-running the extractor produces these stems.",
+        "Item 26's stem was WRONG until 2026-09-21: it published 4/5 (0.2) - 5/8, a subtraction whose value is not among the four choices, where the page draws the product (4/5)(0.2)(-5/8). The stretched parentheses round each fraction were taller than the glyph table's height cap and were discarded, and with the grouping gone the minus read as an operator. Items 4 and 34 regained parentheses the same way. Nothing was hand-edited."
       ],
       "g8-2026": [],
       "g6-2026": [],
@@ -1243,22 +1244,22 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\">− 2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "text": "<span class=\"math\">− (2 <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">− −2<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "text": "<span class=\"math\">− (−2 <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "isCorrect": true
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "text": "<span class=\"math\">−2 (<span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">2 − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "text": "<span class=\"math\">2 (− <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "isCorrect": false
         }
       ],
@@ -4498,7 +4499,9 @@
       "prose": "Which expression is equivalent to the one shown below?",
       "creditLine": null,
       "instructions": [],
-      "display": [],
+      "display": [
+        "<span class=\"math\">−1.5 + <span class=\"frac\"><span>2</span><span>5</span></span> + (−7) + 2.6</span>"
+      ],
       "choices": [
         {
           "label": "A",
@@ -4512,23 +4515,16 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span> + (−4.4)</span>",
+          "text": "<span class=\"math\">(−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span>) + (−4.4)</span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span> + (−9.6)</span>",
+          "text": "<span class=\"math\">(−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span>) + (−9.6)</span>",
           "isCorrect": false
         }
       ],
-      "figures": [
-        {
-          "file": "G7-2023/q05.png",
-          "type": "Expression",
-          "alt": "A displayed sum of four signed numbers, one of them a stacked fraction.",
-          "longDescription": "The expression reads negative 1.5 plus two fifths plus negative 7 plus 2.6, with two fifths written as a stacked fraction."
-        }
-      ],
+      "figures": [],
       "tablesInImage": false,
       "choicesInImage": false,
       "sourcePage": 8,
@@ -5707,7 +5703,9 @@
       "prose": "What is the value of the expression shown below?",
       "creditLine": null,
       "instructions": [],
-      "display": [],
+      "display": [
+        "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span> − (<span class=\"frac\"><span>2</span><span>3</span></span> + <span class=\"frac\"><span>5</span><span>7</span></span>) − 2 <span class=\"frac\"><span>1</span><span>5</span></span></span>"
+      ],
       "choices": [
         {
           "label": "A",
@@ -5730,14 +5728,7 @@
           "isCorrect": true
         }
       ],
-      "figures": [
-        {
-          "file": "G7-2024/q15_1.png",
-          "type": "Expression",
-          "alt": "The expression one third, minus the sum of two thirds and five sevenths, minus two and one fifth, with answer choice A shown beneath it.",
-          "longDescription": "A single expression is shown. It is one third, minus the quantity two thirds plus five sevenths, minus the mixed number two and one fifth. Only two thirds and five sevenths are inside the parentheses; the two and one fifth is subtracted after the parentheses close. Below the expression the image also shows answer choice A, negative one fifteenth."
-        }
-      ],
+      "figures": [],
       "tablesInImage": false,
       "choicesInImage": false,
       "sourcePage": 12,
@@ -6062,8 +6053,8 @@
     "g7-2024-037": {
       "id": "g7-2024-037",
       "item": 37,
-      "stemHtml": "Which expression is equivalent to  <span class=\"math\">17</span> <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> <span class=\"math\">x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?",
-      "stem": "Which expression is equivalent to 17 (1)/(3) x − (7)/(2)x ?",
+      "stemHtml": "Which expression is equivalent to  <span class=\"math\">17 (<span class=\"frac\"><span>1</span><span>3</span></span>) x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?",
+      "stem": "Which expression is equivalent to 17 ((1)/(3)) x − (7)/(2)x ?",
       "prose": "Which expression is equivalent to   ?",
       "creditLine": null,
       "instructions": [],
@@ -6784,8 +6775,8 @@
     "g7-2025-023": {
       "id": "g7-2025-023",
       "item": 23,
-      "stemHtml": "What is the product of <span class=\"math\">−6</span> <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
-      "stem": "What is the product of −6 −1 (1)/(2) ?",
+      "stemHtml": "What is the product of <span class=\"math\">(−6) (− 1 <span class=\"frac\"><span>1</span><span>2</span></span>)</span> ?",
+      "stem": "What is the product of (−6) (− 1 (1)/(2)) ?",
       "prose": "What is the product of  ?",
       "creditLine": null,
       "instructions": [],
@@ -7637,8 +7628,8 @@
     "g7-2026-004": {
       "id": "g7-2026-004",
       "item": 4,
-      "stemHtml": "What is the value of the expression <span class=\"math\">− <span class=\"frac\"><span>5</span><span>6</span></span></span> <span class=\"math\">÷</span> <span class=\"math\">− <span class=\"frac\"><span>1</span><span>3</span></span></span> ?",
-      "stem": "What is the value of the expression − (5)/(6) ÷ − (1)/(3) ?",
+      "stemHtml": "What is the value of the expression <span class=\"math\">(− <span class=\"frac\"><span>5</span><span>6</span></span>) ÷ (− <span class=\"frac\"><span>1</span><span>3</span></span>)</span> ?",
+      "stem": "What is the value of the expression (− (5)/(6)) ÷ (− (1)/(3)) ?",
       "prose": "What is the value of the expression  ?",
       "creditLine": null,
       "instructions": [],
@@ -8377,8 +8368,8 @@
     "g7-2026-026": {
       "id": "g7-2026-026",
       "item": 26,
-      "stemHtml": "What is the value of <span class=\"math\"><span class=\"frac\"><span>4</span><span>5</span></span></span> <span class=\"math\">(0.2)</span> <span class=\"math\">− <span class=\"frac\"><span>5</span><span>8</span></span></span> ?",
-      "stem": "What is the value of (4)/(5) (0.2) − (5)/(8) ?",
+      "stemHtml": "What is the value of <span class=\"math\">(<span class=\"frac\"><span>4</span><span>5</span></span>) (0.2) (− <span class=\"frac\"><span>5</span><span>8</span></span>)</span> ?",
+      "stem": "What is the value of ((4)/(5)) (0.2) (− (5)/(8)) ?",
       "prose": "What is the value of  ?",
       "creditLine": null,
       "instructions": [],
@@ -8659,8 +8650,8 @@
     "g7-2026-034": {
       "id": "g7-2026-034",
       "item": 34,
-      "stemHtml": "Which expression is equivalent to <span class=\"math\"><span class=\"frac\"><span>−45</span><span>−9</span></span></span> ?",
-      "stem": "Which expression is equivalent to (−45)/(−9) ?",
+      "stemHtml": "Which expression is equivalent to <span class=\"math\">(<span class=\"frac\"><span>−45</span><span>−9</span></span>)</span> ?",
+      "stem": "Which expression is equivalent to ((−45)/(−9)) ?",
       "prose": "Which expression is equivalent to  ?",
       "creditLine": null,
       "instructions": [],
@@ -8668,7 +8659,7 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\">− <span class=\"frac\"><span>45</span><span>9</span></span></span>",
+          "text": "<span class=\"math\">− (<span class=\"frac\"><span>45</span><span>9</span></span>)</span>",
           "isCorrect": false
         },
         {
@@ -9027,16 +9018,11 @@
         "Show your work.",
         "Answer"
       ],
-      "display": [],
-      "choices": [],
-      "figures": [
-        {
-          "file": "G7-2026/q47.png",
-          "type": "Expression",
-          "alt": "The expression one half times negative 0.4, divided by one third.",
-          "longDescription": "Displayed as an image rather than as text. It reads open bracket one half close bracket times open bracket negative 0.4 close bracket, divided by open bracket one third close bracket, with the halves and thirds written as stacked fractions."
-        }
+      "display": [
+        "<span class=\"math\">(<span class=\"frac\"><span>1</span><span>2</span></span>) (−0.4) ÷ (<span class=\"frac\"><span>1</span><span>3</span></span>)</span>"
       ],
+      "choices": [],
+      "figures": [],
       "tablesInImage": false,
       "choicesInImage": false,
       "sourcePage": 35,
@@ -10423,22 +10409,22 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "text": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8) ]</span>",
           "isCorrect": true
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "text": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8) ]</span>",
           "isCorrect": false
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "text": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3) ]</span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "text": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3) ]</span>",
           "isCorrect": false
         }
       ],
@@ -11189,7 +11175,9 @@
         "Show your work.",
         "Answer"
       ],
-      "display": [],
+      "display": [
+        "<span class=\"math\">(2,4 <span class=\"frac\"><span>1</span><span>2</span></span>), (3,5 <span class=\"frac\"><span>1</span><span>4</span></span>)</span>"
+      ],
       "choices": [],
       "figures": [],
       "tablesInImage": false,
@@ -11550,7 +11538,9 @@
       "prose": "A set of numbers is shown below. What number would need to be removed from the set so that the set contains only rational numbers?",
       "creditLine": null,
       "instructions": [],
-      "display": [],
+      "display": [
+        "<span class=\"math\">{ <span class=\"frac\"><span>1</span><span>3</span></span> ,1.1<span class=\"repeat\">3</span>,<span class=\"radical\"><span class=\"radicand\">5</span></span>,<span class=\"frac\"><span>5</span><span>2</span></span> }</span>"
+      ],
       "choices": [
         {
           "label": "A",
@@ -11573,14 +11563,7 @@
           "isCorrect": false
         }
       ],
-      "figures": [
-        {
-          "file": "G8-2025/q15.png",
-          "type": "Expression",
-          "alt": "A set of four numbers shown in braces.",
-          "longDescription": "One third, 1.1 with 3 repeating, the square root of 5, and five halves."
-        }
-      ],
+      "figures": [],
       "tablesInImage": false,
       "choicesInImage": false,
       "sourcePage": 12,
@@ -13178,12 +13161,12 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
+          "text": "<span class=\"math\">y = − (<span class=\"frac\"><span>1</span><span>3</span></span>)x + 3</span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>",
+          "text": "<span class=\"math\">y = − (<span class=\"frac\"><span>1</span><span>3</span></span>)x + 9</span>",
           "isCorrect": false
         }
       ],

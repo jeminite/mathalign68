@@ -321,25 +321,25 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\">− 2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "html": "<span class=\"math\">− (2 <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "x": 75.5,
           "y": 339.7
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">− −2<span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "html": "<span class=\"math\">− (−2 <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "x": 76.1,
           "y": 378.0
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">−2 <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "html": "<span class=\"math\">−2 (<span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "x": 75.6,
           "y": 416.2
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">2 − <span class=\"frac\"><span>1</span><span>2</span></span></span>",
+          "html": "<span class=\"math\">2 (− <span class=\"frac\"><span>1</span><span>2</span></span>)</span>",
           "x": 75.1,
           "y": 455.2
         }

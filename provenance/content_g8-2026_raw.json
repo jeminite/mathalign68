@@ -963,13 +963,13 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 3</span>",
+          "html": "<span class=\"math\">y = − (<span class=\"frac\"><span>1</span><span>3</span></span>)x + 3</span>",
           "x": 75.6,
           "y": 152.6
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">y = − <span class=\"frac\"><span>1</span><span>3</span></span> x + 9</span>",
+          "html": "<span class=\"math\">y = − (<span class=\"frac\"><span>1</span><span>3</span></span>)x + 9</span>",
           "x": 75.1,
           "y": 191.6
         }

@@ -564,9 +564,9 @@
       "credits": 1,
       "session": 1,
       "creditLine": null,
-      "stemHtml": "What is the product of <span class=\"math\">−6</span> <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?",
+      "stemHtml": "What is the product of <span class=\"math\">(−6) (− 1 <span class=\"frac\"><span>1</span><span>2</span></span>)</span> ?",
       "stemLines": [
-        "What is the product of <span class=\"math\">−6</span> <span class=\"math\">−1 <span class=\"frac\"><span>1</span><span>2</span></span></span> ?"
+        "What is the product of <span class=\"math\">(−6) (− 1 <span class=\"frac\"><span>1</span><span>2</span></span>)</span> ?"
       ],
       "prose": "What is the product of  ?",
       "proseAllLines": "What is the product of  ?",

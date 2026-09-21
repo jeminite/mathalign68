@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2023.json.",
     "items": 27,
     "itemsWithUnresolved": 0,
-    "figures": 9,
-    "displayExpressions": 0
+    "figures": 8,
+    "displayExpressions": 1
   },
   "items": [
     {
@@ -104,35 +104,30 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span> + (−4.4)</span>",
+          "html": "<span class=\"math\">(−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span>) + (−4.4)</span>",
           "x": 75.6,
           "y": 578.0
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span> + (−9.6)</span>",
+          "html": "<span class=\"math\">(−<span class=\"frac\"><span>1</span><span>5</span></span> + <span class=\"frac\"><span>2</span><span>5</span></span>) + (−9.6)</span>",
           "x": 75.1,
           "y": 613.3
         }
       ],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G7-2023/q05.png",
           "rect": [
-            107.4,
-            464.96,
-            217.19,
-            492.04
+            108.31,
+            467.3,
+            216.84,
+            491.14
           ],
-          "paths": 17,
-          "decodedLabels": "−1.5 + <span class=\"frac\"><span>2</span><span>5</span></span> + (−7) + 2.6",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\">−1.5 + <span class=\"frac\"><span>2</span><span>5</span></span> + (−7) + 2.6</span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {

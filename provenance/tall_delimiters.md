@@ -1,4 +1,8 @@
-# Why `g7-2026-026` is still wrong, and what a fix has to survive
+# Why `g7-2026-026` was wrong, and what the fix had to survive
+
+> **Fixed 2026-09-21.** The first attempt, recorded below as it was written, stopped because
+> it counted five regressions. **Four of the five were not regressions.** Read the last
+> section before relying on anything in the middle of this note.
 
 `g7-2026-026` publishes as `4/5 (0.2) − 5/8`, a subtraction whose value (−0.465) is not among
 its four choices. The PDF draws `(4/5)(0.2)(−5/8) = −1/10`, which is NYSED's key. This is an
@@ -90,3 +94,54 @@ done
 against. It does still write figure crops into `assets/`, so check `git status` afterwards —
 this attempt left an `assets/G8-2024/q10.png` behind, cropped from the choices it had just
 emptied.
+
+
+## The second attempt, 2026-09-21 -- and what the first one got wrong
+
+Done the way the section above asks. Every tall glyph-shaped path on an item page was
+clustered and **looked at in its page context**: 61 paths, 12 clusters.
+
+| cluster | n | w x h | what it is |
+|---|---|---|---|
+| T00, T01 | 22, 22 | 4.47 x 23.0 | stretched `(` and `)` |
+| T02, T03 | 4, 4 | 3.05 x 23.1 | stretched `[` and `]` -- `g8-2024-010`'s four choices |
+| T09, T10 | 1, 1 | 4.2 x 23.1 | stretched `{` and `}` -- `g8-2025-015`'s set |
+| T04 | 2 | 13.6 x 23.6 | the double edge of a hexagon, in a figure |
+| T05, T07, T11 | 1, 1, 1 | 1.0 x 16-22 | dashed height lines, in figures |
+| T06 | 1 | 13.6 x 19.1 | a spinner's arrowhead |
+| T08 | 1 | 11.6 x 18.1 | a kite |
+
+**Width separates them completely.** Every delimiter is between 3 and 4.5pt wide; no figure
+piece is. So `shape_of` admits a tall shape only if it is that narrow (`DELIM_*` in
+`tools/glyphs.py`), and the six figure pieces never reach the decoder. What each admitted shape
+*is* remains a label: a stretched parenthesis normalises to the same outline as an ordinary
+one, so T00, T01, T09 and T10 matched clusters a person had already labelled, and only the two
+square brackets were new (`g442`, `g443`, labelled by eye from the page). The
+delimiter-exclusion fix to the baseline estimate is kept, as this note said it must be.
+
+**The corpus diff: 27 fields in 13 items, nothing else in 396.** The four items the first
+attempt called fixes, and then:
+
+| item | the first attempt called it | what the page shows |
+|---|---|---|
+| `g7-2024-037` | regression, "a spurious paren around the fractional part of a mixed number" | **17(1/3)x** -- a product. There is no mixed number. The published "17 1/3 x" was the error: it reads as seventeen and a third. |
+| `g8-2026-020` | regression | **y = -(1/3)x + 3**, parentheses drawn, in choices C and D |
+| `g7-2026-034` | regression | **(-45/-9)** in the stem and **-(45/9)** in choice A, both drawn |
+| `g6-2024-018` | regression, "all four choices re-bracketed" | **-(2 1/2), -(-2 1/2), -2(1/2), 2(-1/2)**. Published, choice C read as minus two and a half where the page says minus one, and D read as one and a half where the page says minus one. |
+| `g8-2024-010` | "lost all four answer choices" | gains its square brackets; nothing is emptied. That loss came from guessing at the tall shapes by geometry, which this attempt does not do. |
+
+Every one was checked against a render of the page, not against the published text. **That is
+the whole lesson of this note's first half:** its diff was judged against what the site already
+said, so where the site was wrong, being right looked like breakage. A corpus diff says what
+moved. Only the page says which side was correct.
+
+Four more items changed shape rather than wording. `g7-2023-005`, `g7-2024-015`,
+`g7-2026-047` and `g8-2025-015` each showed their expression as a picture, because a block
+holding a discarded delimiter was not all glyphs and fell back to a figure; they are text now,
+and the site publishes 148 figures rather than 152. And `g8-2024-045` -- "Two ordered pairs of
+a linear function are shown below" -- had been publishing **no pairs at all**, neither as text
+nor as a picture. It shows (2, 4 1/2), (3, 5 1/4) now.
+
+Left ugly rather than patched: `g8-2025-015`'s set reads `{ 1/3 ,1.13...` with a space before
+its first comma, because a stacked fraction is its own line and the comma after it is spaced as
+if it began a new one.

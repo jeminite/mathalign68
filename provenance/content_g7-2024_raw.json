@@ -9,8 +9,8 @@
     "status": "FIRST PASS -- review against the rendered pages before merging. Nothing here is publishable until it is in provenance/merge_g7-2024.json.",
     "items": 29,
     "itemsWithUnresolved": 0,
-    "figures": 9,
-    "displayExpressions": 0
+    "figures": 8,
+    "displayExpressions": 1
   },
   "items": [
     {
@@ -473,23 +473,18 @@
         }
       ],
       "choicesInImage": false,
-      "display": [],
-      "figures": [
+      "display": [
         {
-          "file": "G7-2024/q15_1.png",
           "rect": [
-            75.48,
+            108.78,
             82.14,
             206.52,
-            139.96
+            106.39
           ],
-          "paths": 18,
-          "decodedLabels": "<span class=\"frac\"><span>1</span><span>3</span></span> − <span class=\"frac\"><span>2</span><span>3</span></span> + <span class=\"frac\"><span>5</span><span>7</span></span> − 2 <span class=\"frac\"><span>1</span><span>5</span></span>",
-          "undecodedGlyphs": 0,
-          "alt": "",
-          "longDescription": ""
+          "html": "<span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span> − (<span class=\"frac\"><span>2</span><span>3</span></span> + <span class=\"frac\"><span>5</span><span>7</span></span>) − 2 <span class=\"frac\"><span>1</span><span>5</span></span></span>"
         }
       ],
+      "figures": [],
       "unresolved": []
     },
     {
@@ -918,9 +913,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which expression is equivalent to  <span class=\"math\">17</span> <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> <span class=\"math\">x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?",
+      "stemHtml": "Which expression is equivalent to  <span class=\"math\">17 (<span class=\"frac\"><span>1</span><span>3</span></span>) x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?",
       "stemLines": [
-        "Which expression is equivalent to  <span class=\"math\">17</span> <span class=\"math\"><span class=\"frac\"><span>1</span><span>3</span></span></span> <span class=\"math\">x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?"
+        "Which expression is equivalent to  <span class=\"math\">17 (<span class=\"frac\"><span>1</span><span>3</span></span>) x − <span class=\"frac\"><span>7</span><span>2</span></span>x</span> ?"
       ],
       "prose": "Which expression is equivalent to   ?",
       "proseAllLines": "Which expression is equivalent to   ?",

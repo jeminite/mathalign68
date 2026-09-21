@@ -10,7 +10,7 @@
     "items": 31,
     "itemsWithUnresolved": 0,
     "figures": 12,
-    "displayExpressions": 6
+    "displayExpressions": 7
   },
   "items": [
     {
@@ -343,25 +343,25 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "html": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8) ]</span>",
           "x": 75.5,
           "y": 121.9
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8)</span>",
+          "html": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (3<sup>2</sup>) (8) ]</span>",
           "x": 76.1,
           "y": 160.1
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "html": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>3</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3) ]</span>",
           "x": 75.6,
           "y": 199.1
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">π <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3)</span>",
+          "html": "<span class=\"math\">π [ <span class=\"frac\"><span>4</span><span>3</span></span> (4<sup>2</sup>) − <span class=\"frac\"><span>1</span><span>3</span></span> (8)<sup>2</sup> (3) ]</span>",
           "x": 75.1,
           "y": 237.4
         }
@@ -1337,7 +1337,17 @@
       ],
       "choices": [],
       "choicesInImage": false,
-      "display": [],
+      "display": [
+        {
+          "rect": [
+            108.96,
+            104.38,
+            190.58,
+            124.43
+          ],
+          "html": "<span class=\"math\">(2,4 <span class=\"frac\"><span>1</span><span>2</span></span>), (3,5 <span class=\"frac\"><span>1</span><span>4</span></span>)</span>"
+        }
+      ],
       "figures": [],
       "unresolved": []
     },
