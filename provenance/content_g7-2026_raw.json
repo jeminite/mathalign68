@@ -350,13 +350,13 @@
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">y = x + 3<span class=\"repeat\">.3</span></span>",
+          "html": "<span class=\"math\">y = x + 3.<span class=\"repeat\">3</span></span>",
           "x": 76.1,
           "y": 267.4
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">y = 3<span class=\"repeat\">.3</span> x</span>",
+          "html": "<span class=\"math\">y = 3.<span class=\"repeat\">3</span>x</span>",
           "x": 75.6,
           "y": 296.6
         },

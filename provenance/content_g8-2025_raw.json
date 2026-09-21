@@ -394,7 +394,7 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">√<span class=\"repeat\">5</span></span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">5</span></span></span>",
           "x": 75.6,
           "y": 229.1
         },
@@ -417,7 +417,7 @@
             107.2
           ],
           "paths": 19,
-          "decodedLabels": "<span class=\"frac\"><span>1</span><span>3</span></span> ,1·1<span class=\"repeat\">3,</span> √<span class=\"repeat\">5,</span> <span class=\"frac\"><span>5</span><span>2</span></span>",
+          "decodedLabels": "<span class=\"frac\"><span>1</span><span>3</span></span> ,1.1<span class=\"repeat\">3</span>,<span class=\"radical\"><span class=\"radicand\">5</span></span>,<span class=\"frac\"><span>5</span><span>2</span></span>",
           "undecodedGlyphs": 0,
           "alt": "",
           "longDescription": ""
@@ -489,25 +489,25 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">J′M′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">J′K′</span> ∥ <span class=\"segment\">J′M′</span></span>",
           "x": 75.5,
           "y": 508.9
         },
         {
           "label": "B",
-          "html": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">J′K′</span> ∥ <span class=\"segment\">L′M′</span></span>",
           "x": 76.1,
           "y": 538.9
         },
         {
           "label": "C",
-          "html": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">J′K′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">K′L′</span> ∥ <span class=\"segment\">J′K′</span></span>",
           "x": 75.6,
           "y": 568.9
         },
         {
           "label": "D",
-          "html": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">K′L′</span> ∥ <span class=\"segment\">L′M′</span></span>",
           "x": 75.1,
           "y": 598.1
         }
@@ -1122,9 +1122,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
+      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">4</span></span> + <span class=\"radical\"><span class=\"radicand\">10</span></span></span>?",
       "stemLines": [
-        "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?"
+        "On which number line does point P represent the value of the expression <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">4</span></span> + <span class=\"radical\"><span class=\"radicand\">10</span></span></span>?"
       ],
       "prose": "On which number line does point P represent the value of the expression ?",
       "proseAllLines": "On which number line does point P represent the value of the expression ?",
@@ -1346,9 +1346,9 @@
       "credits": 2,
       "session": 2,
       "creditLine": "This question is worth 2 credits.",
-      "stemHtml": "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
+      "stemHtml": "Classify <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">1.44</span></span></span> as being rational or irrational.",
       "stemLines": [
-        "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational."
+        "Classify <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">1.44</span></span></span> as being rational or irrational."
       ],
       "prose": "Classify  as being rational or irrational.",
       "proseAllLines": "This question is worth 2 credits. Classify  as being rational or irrational. Explain how you know your answer is correct.",

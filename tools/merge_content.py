@@ -66,6 +66,9 @@ def plain(html):
     for _ in range(4):                      # fractions nest
         s = re.sub(r'<span class="frac"><span>(.*?)</span><span>(.*?)</span></span>',
                    r"(\1)/(\2)", s)
+    s = re.sub(r'<span class="radical"><span class="radicand">(.*?)</span></span>',
+               r"√(\1)", s)
+    s = re.sub(r'<span class="segment">(.*?)</span>', r"segment \1", s)
     s = re.sub(r'<span class="repeat">(.*?)</span>', r"\1-repeating", s)
     s = re.sub(r"<sup>(.*?)</sup>", r"^\1", s)
     s = re.sub(r"<sub>(.*?)</sub>", r"_\1", s)

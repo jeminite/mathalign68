@@ -115,6 +115,11 @@ BAR = "|"
 # right digits, an unreadable number, and four choices no longer distinct.
 NUMERIC = set("0123456789.,")
 
+# What a bar can be attached to. A radical sign at its left end makes it a
+# vinculum; letters and primes beneath it make it a segment, as in J'K'.
+RADICAL = "\u221a"
+PRIMES = set("\u2032\u2033'")
+
 # decode() returns HTML (it emits <span class="frac"> for fractions), so a
 # decoded character that is HTML-special has to be escaped or it corrupts the
 # markup. This was not theoretical: item 21's choice B decoded correctly as
@@ -189,6 +194,20 @@ def shape_of(drawing):
     }
 
 
+def _under(rect, below, glyphs):
+    """The glyphs a bar is actually drawn over.
+
+    The 1.5pt of slack that gathers a fraction's numerator and denominator is
+    right for a fraction, whose bar overhangs what it divides. An overbar covers
+    exactly what it marks, and the slack let the bar over the last digit of
+    3.3-repeating claim the decimal point beside it by a twentieth of a point --
+    ".3 repeating", which is how every such number in the corpus published.
+    """
+    return [j for j in below
+            if min(rect.x1, glyphs[j][0].x1) - max(rect.x0, glyphs[j][0].x0)
+            > 0.5 * glyphs[j][0].width]
+
+
 def _is_overbar(rect, below, glyphs):
     """Is this rule a repeating-decimal overbar rather than a minus sign?
 
@@ -197,6 +216,8 @@ def _is_overbar(rect, below, glyphs):
     a whole fraction bar away -- and reading that as an overbar turned item 34's
     (-45)/9 and 45/(-9) into the same thing.
     """
+    if not below:
+        return False
     gap = min((glyphs[j][0].y0 - rect.y1) for j in below)
     if not 0 <= gap < 5.0:
         return False
@@ -350,8 +371,20 @@ class GlyphTable:
                 # side only merged the vinculum of a radical with another
                 # radical's vinculum further LEFT on the same line, and grade 8
                 # 2026 item 7 lost the bar over the 9 in its square root of 9.
+                #
+                # TOUCHING OR OVERLAPPING, not only abutting. The pieces are
+                # often drawn as dashes that overlap: the bar over the 50 in
+                # grade 8 2023 item 35's square root is 271.0-277.9 and
+                # 276.7-283.6, a 1.2pt overlap that the old -0.6 floor refused,
+                # so each digit kept a bar of its own; and the bar over segment
+                # DF in item 40 is nineteen 1.4pt dashes stepping 0.8pt, of
+                # which the floor merged some and left the rest to be read as a
+                # minus sign -- "Side - DF". A piece that starts anywhere inside
+                # the bar so far, or just off its end, is more of the same bar.
+                # The left bound is what still keeps another radical's vinculum,
+                # further left on the line, out of this one.
                 if (abs(r.y0 - h.y0) < 0.35 and abs(r.y1 - h.y1) < 0.35
-                        and -0.6 <= r.x0 - h.x1 <= 0.6):
+                        and h.x0 - 0.6 <= r.x0 <= h.x1 + 0.6):
                     glyphs[head][0] = fitz.Rect(h.x0, min(h.y0, r.y0),
                                                 max(h.x1, r.x1), max(h.y1, r.y1))
                     absorbed.add(i)
@@ -364,6 +397,8 @@ class GlyphTable:
         consumed = set()
         fractions = {}
         overbars = {}
+        radicals = {}       # first covered glyph -> the radical sign's rect
+        segments = set()    # first covered glyph, where the bar names a segment
         for i, (rect, shape, label) in enumerate(glyphs):
             if label != RULE:
                 continue
@@ -395,7 +430,8 @@ class GlyphTable:
                 fractions[i] = (above, below)
                 consumed.update(above)
                 consumed.update(below)
-            elif below and not above and _is_overbar(rect, below, glyphs):
+            elif below and not above and _is_overbar(rect, _under(rect, below, glyphs), glyphs):
+                below = _under(rect, below, glyphs)
                 # Content below and nothing above, directly over the digits: a
                 # repeating-decimal overbar, not a minus sign. Item 7's choices
                 # are 3.3-repeating, and reading the bar as a minus published
@@ -410,6 +446,26 @@ class GlyphTable:
                 overbars[first] = sorted(below, key=lambda j: glyphs[j][0].x0)
                 consumed.add(i)
                 consumed.update(j for j in below if j != first)
+                # A BAR OVER DIGITS IS NOT ALWAYS A REPEATING DECIMAL. Every bar
+                # used to publish as one, which drew well enough -- a border
+                # over the digits -- and said the wrong thing: grade 8 2025
+                # item 42 asks whether the square root of 1.44 is rational, and
+                # its stem read "1.44 repeating", which asserts the opposite of
+                # what makes the answer right. What the bar means is decided by
+                # what it is attached to: a radical sign at its left end makes
+                # it a vinculum, letters beneath it make it a segment, and only
+                # otherwise is it a repetend.
+                for j, (r2, s2, l2) in enumerate(glyphs):
+                    if l2 == RADICAL and j not in consumed \
+                            and abs(r2.x1 - rect.x0) < 2.0 \
+                            and r2.y0 - 3.0 < rect.y0 < r2.y1:
+                        radicals[first] = r2
+                        consumed.add(j)
+                        break
+                else:
+                    if all((glyphs[j][2] or "").isalpha() or glyphs[j][2] in PRIMES
+                           for j in below):
+                        segments.add(first)
 
         # ---- reading order ----------------------------------------------
         # Lines are found by VERTICAL OVERLAP, not by y0. A period sits on the
@@ -596,6 +652,9 @@ class GlyphTable:
             if in_sup and not want_sup:
                 close_sup()
                 in_sup = False
+            if i in radicals:
+                # Space it from the radical sign, which is where it starts.
+                rect = rect | radicals[i]
             if prev is not None:
                 same_line = rect.y0 < prev.y1 - 0.5 and rect.y1 > prev.y0 + 0.5
                 if not same_line and i not in fractions:
@@ -624,7 +683,13 @@ class GlyphTable:
             elif i in overbars:
                 digits = text_of(overbars[i])
                 unknown += digits.count("\ufffd")
-                out.append('<span class="repeat">%s</span>' % digits)
+                if i in radicals:
+                    out.append('<span class="radical"><span class="radicand">%s'
+                               '</span></span>' % digits)
+                elif i in segments:
+                    out.append('<span class="segment">%s</span>' % digits)
+                else:
+                    out.append('<span class="repeat">%s</span>' % digits)
             elif i in blanks:
                 out.append("____")              # a blank to fill in, not a minus
             elif i in middots:
@@ -637,6 +702,12 @@ class GlyphTable:
             else:
                 out.append(escape(label))
             prev = rect
+            if i in overbars:
+                # What follows is spaced from the END of what the bar covers,
+                # not from its first glyph, or every wide radicand is followed
+                # by a space that is not on the page.
+                for j in overbars[i]:
+                    prev = prev | glyphs[j][0]
             prev_opening_bar = (label == BAR and bars_seen % 2 == 0)
             if label == BAR:
                 bars_seen += 1

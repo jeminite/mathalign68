@@ -140,13 +140,13 @@
       "choices": [
         {
           "label": "A",
-          "html": "Function A has a greater rate of change than Function B because <span class=\"math\">− 1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
+          "html": "Function A has a greater rate of change than Function B because <span class=\"math\">1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
           "x": 75.5,
           "y": 263.6
         },
         {
           "label": "B",
-          "html": "Function B has a greater rate of change than Function A because <span class=\"math\">− 1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
+          "html": "Function B has a greater rate of change than Function A because <span class=\"math\">1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
           "x": 76.1,
           "y": 293.6
         },
@@ -213,13 +213,13 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">4</span><span class=\"repeat\">5</span></span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">145</span></span></span>",
           "x": 75.6,
           "y": 524.5
         },
         {
           "label": "D",
-          "html": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">8</span><span class=\"repeat\">5</span></span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">185</span></span></span>",
           "x": 75.1,
           "y": 554.5
         }
@@ -921,9 +921,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which statement about the value of <span class=\"math\">√<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?",
+      "stemHtml": "Which statement about the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">50</span></span></span> is true?",
       "stemLines": [
-        "Which statement about the value of <span class=\"math\">√<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?"
+        "Which statement about the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">50</span></span></span> is true?"
       ],
       "prose": "Which statement about the value of  is true?",
       "proseAllLines": "Which statement about the value of  is true? It is irrational because the decimal equivalent eventually repeats. It is rational because the decimal equivalent eventually terminates. It is rational because the value as a decimal is equivalent to a fraction. It is irrational because the decimal equivalent is non-repeating and does not terminate.",
@@ -1141,10 +1141,10 @@
       "credits": 1,
       "session": 2,
       "creditLine": "This question is worth 1 credit.",
-      "stemHtml": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\">− <span class=\"repeat\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\">− <span class=\"repeat\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\">− <span class=\"repeat\">DE</span></span> ?",
+      "stemHtml": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\"><span class=\"segment\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\"><span class=\"segment\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\"><span class=\"segment\">DE</span></span> ?",
       "stemLines": [
-        "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\">− <span class=\"repeat\">DF</span></span> has a length of",
-        "<span class=\"math\">9</span> inches and side <span class=\"math\">− <span class=\"repeat\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\">− <span class=\"repeat\">DE</span></span> ?"
+        "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\"><span class=\"segment\">DF</span></span> has a length of",
+        "<span class=\"math\">9</span> inches and side <span class=\"math\"><span class=\"segment\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\"><span class=\"segment\">DE</span></span> ?"
       ],
       "prose": "Triangle  is a right triangle with a right angle at vertex . Side  has a length of inches and side  has a length of  inches. What is the length, in inches, of side  ?",
       "proseAllLines": "This question is worth 1 credit. Triangle  is a right triangle with a right angle at vertex . Side  has a length of inches and side  has a length of  inches. What is the length, in inches, of side  ? Answer     inches",

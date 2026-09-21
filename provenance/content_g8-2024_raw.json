@@ -10,7 +10,7 @@
     "items": 31,
     "itemsWithUnresolved": 0,
     "figures": 12,
-    "displayExpressions": 5
+    "displayExpressions": 6
   },
   "items": [
     {
@@ -850,25 +850,25 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\"><span class=\"repeat\">FG</span></span> and <span class=\"math\"><span class=\"repeat\">F′J′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">FG</span></span> and <span class=\"math\"><span class=\"segment\">F′J′</span></span>",
           "x": 75.5,
           "y": 377.6
         },
         {
           "label": "B",
-          "html": "<span class=\"math\"><span class=\"repeat\">JF</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">JF</span></span> and <span class=\"math\"><span class=\"segment\">H′J′</span></span>",
           "x": 76.1,
           "y": 407.6
         },
         {
           "label": "C",
-          "html": "<span class=\"math\"><span class=\"repeat\">GH</span></span> and <span class=\"math\"><span class=\"repeat\">H′G′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">GH</span></span> and <span class=\"math\"><span class=\"segment\">H′G′</span></span>",
           "x": 75.6,
           "y": 437.6
         },
         {
           "label": "D",
-          "html": "<span class=\"math\"><span class=\"repeat\">HG</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "html": "<span class=\"math\"><span class=\"segment\">HG</span></span> and <span class=\"math\"><span class=\"segment\">H′J′</span></span>",
           "x": 75.1,
           "y": 466.9
         }
@@ -1019,9 +1019,9 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?",
+      "stemHtml": "Which statement best describes the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">2</span></span></span> ?",
       "stemLines": [
-        "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?"
+        "Which statement best describes the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">2</span></span></span> ?"
       ],
       "prose": "Which statement best describes the value of  ?",
       "proseAllLines": "Which statement best describes the value of  ? between  and between  and between  and  but closer to between  and  but closer to",
@@ -1402,7 +1402,16 @@
             140.4,
             140.71
           ],
-          "html": "<span class=\"math\">• √<span class=\"repeat\">49</span> • 1<span class=\"repeat\">.3</span></span>"
+          "html": "<span class=\"math\">• <span class=\"radical\"><span class=\"radicand\">49</span></span> • 1.<span class=\"repeat\">3</span></span>"
+        },
+        {
+          "rect": [
+            110.4,
+            152.92,
+            140.4,
+            197.93
+          ],
+          "html": "<span class=\"math\">• <span class=\"radical\"><span class=\"radicand\">32</span></span> • <span class=\"frac\"><span>7</span><span>2</span></span></span>"
         },
         {
           "rect": [

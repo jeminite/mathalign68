@@ -591,7 +591,17 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
             continue
         # One glyph on its own is a label, not an expression -- the y and x on
         # a graph's axes were being published as displayed maths.
-        if (r.height < 34 and r.width < 380 and glyphs
+        #
+        # TWO LINES, ONE OF THEM A FRACTION, IS STILL AN EXPRESSION. The bound
+        # here was 34pt, one line of type. Grade 8 2024 item 47 lists five
+        # numbers to classify; the square root of 32 and seven halves sit close
+        # enough to be one block, 50pt tall because of the stacked fraction, so
+        # the block failed this test, went on to be a figure, was under
+        # FIGURE_MIN_AREA, and was dropped without a word. The item published
+        # with three of its five numbers, and its answer -- "the square root of
+        # 32 is irrational" -- was about a number the question never showed. It
+        # must still be nothing but glyphs and decode with nothing unknown.
+        if (r.height < 70 and r.width < 380 and glyphs
                 and len(glyphs) == len(blk) and len(glyphs) >= 2):
             text, unknown = table.decode(blk)
             if not unknown:

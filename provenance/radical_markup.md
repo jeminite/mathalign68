@@ -1,5 +1,8 @@
 # Radicals are published with a repeating-decimal bar, not a radical sign
 
+> **Fixed 2026-09-21.** What follows is the record of the defect as found; the fix and
+> what it turned out to involve are at the end.
+
 Sixteen radicals across ten grade 8 items are marked up as a literal `√` followed by a
 `<span class="repeat">`, which is the class for a repeating decimal. The stylesheet carries a
 dedicated pair for this — `.radical` and `.radicand`, complete with a `\221A` pseudo-element —
@@ -48,3 +51,49 @@ Worth checking at the same time whether the `.radical` path is dead code or whet
 
 None of this affects where the items are taught: all eleven are placed in grade 8 Unit 7 on
 what they ask, and the alignment reads through the defect without difficulty.
+
+## The fix, 2026-09-21
+
+In `tools/glyphs.py`, not in the data, and verified the way this note asked: all twelve tests
+re-extracted with crops redirected to a scratch directory, every stem, choice, display and
+figure rect diffed against `provenance/content_*_raw.json`. **25 fields moved in 15 items and
+nothing else in 396.** The count above was low: there were sixteen radicals, and also nineteen
+segment bars going through the same path.
+
+Three things were wrong, and only the first was the one this note describes.
+
+**Every bar was a repetend.** `decode()` had one output for a rule sitting over glyphs:
+`.repeat`. What a bar means is decided by what it is attached to, so it now looks: a radical
+sign whose right edge meets the bar's left end makes it a vinculum (`.radical` / `.radicand`,
+and the sign itself is dropped because the stylesheet draws it); letters and primes beneath it
+make it a segment (`.segment`, new); only otherwise is it a repetend. The `.radical` path was
+dead code from the day it was transplanted -- nothing in `extract_items.py` ever reached it.
+
+**A bar is drawn as overlapping dashes, and the merge only accepted abutting ones.** The
+vinculum over the 50 in `g8-2023-035` is two pieces, 271.0-277.9 and 276.7-283.6, a 1.2pt
+overlap; the merge's floor was -0.6, so each digit kept a bar of its own. The bar over segment
+DF in `g8-2023-040` is nineteen 1.4pt dashes stepping 0.8pt; some merged, and the leftovers
+were read as minus signs. A bar's rect sits above the line it marks, so it forms a line of its
+own and sorts ahead of everything -- which is how **`g8-2023-007` published "− 1.25 > 3.3"
+for a page that says "1.25 > 3.3"**: a phantom minus, in a live answer choice, that no one had
+noticed and that was not on this note's list. A piece that starts anywhere inside the bar so
+far, or just off its end, is now more of the same bar; the left bound still keeps another
+radical's vinculum out.
+
+**The bar over the last digit of 3.3-repeating claimed the decimal point too.** The 1.5pt of
+slack that gathers a fraction's numerator is right for a fraction and wrong for an overbar; the
+point fell inside it by 0.05pt, so every repeating decimal in the corpus published with the bar
+over ".3". `_under()` keeps only the glyphs a bar actually covers.
+
+`plain()` in `tools/merge_content.py` gained the two new spans -- `√(50)`, `segment DF` -- so
+the searchable text no longer says "repeating" either.
+
+**Found on the way, and also fixed:** `g8-2024-047` asks the student to classify five numbers
+and published three. √32 and 7/2 sit close enough to be one block, 50pt tall because of the
+stacked fraction; the displayed-expression test allowed 34pt; the block went on to be a figure,
+was under the minimum area, and was dropped without a word. Its own answer said √32 is
+irrational about a number the question never showed. The bound is 70pt now; the corpus diff for
+that change is that one item.
+
+`preflight.py`: *every bar says what it is: no bare radical sign, no repetend of letters.* It
+fails 12 items on the old `content.json`.

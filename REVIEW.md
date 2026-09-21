@@ -74,8 +74,12 @@ still to be written. `g7-2023-016` is still unread.
   raising the height cap fixed its target and silently emptied another item's four
   answer choices. `provenance/tall_delimiters.md` has the geometry and the
   nine-item corpus diff.
-- **Radical overbars publish as repeating-decimal marks** in 14 grade 8 items —
-  `√50` reads as `√5-repeating0-repeating`. `provenance/radical_markup.md`.
+- ~~**Radical overbars publish as repeating-decimal marks**~~ **Fixed 2026-09-21**, in the
+  decoder: sixteen radicals and nineteen segment bars, a phantom minus sign in
+  `g8-2023-007`, and every repeating decimal's bar sitting over its decimal point.
+  `g8-2024-047` was publishing three of its five numbers; also fixed.
+  `provenance/radical_markup.md`. One orphan left behind: `merge_g8-2024.json` still has
+  a `visuals` entry for `G8-2024/q47.png`, a figure the extractor no longer makes.
 - **Two activity names publish with a drawn symbol missing**: `Using` is *Using π*
   (7.3.4), `Does Plus Equal ?` is *Does a² + b² Equal c²?* (8.7.7). Deliberate —
   a citation must quote what the index stores or the gate cannot resolve it. See

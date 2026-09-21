@@ -937,6 +937,13 @@ def transcription(payload):
         "no ligature or unmapped-glyph damage survives": [],
         "no hair or thin space survives": [],
         "no function name is kerned open, as in f (x)": [],
+        # Every bar the decoder found was once published as a repeating decimal:
+        # sixteen square roots and nineteen segments, among them a stem asking
+        # whether the square root of 1.44 is rational that read "1.44
+        # repeating", and "DF repeating" for a side of a triangle. It drew well
+        # enough -- a border over the glyphs -- so nobody reading the page saw
+        # it. A repetend is digits, and a radical sign never stands bare.
+        "every bar says what it is: no bare radical sign, no repetend of letters": [],
     }
     for r in rows:
         tag = r["id"]
@@ -951,6 +958,12 @@ def transcription(payload):
             problems["no ligature or unmapped-glyph damage survives"].append(tag)
         if re.search(r"[\u2009\u200a]", blob):
             problems["no hair or thin space survives"].append(tag)
+        shown = blob + " ".join(r.get("display") or [])
+        if "\u221a" in shown or any(
+                re.search(r"[^0-9.,]", strip_tags(m))
+                for m in re.findall(r'<span class="repeat">(.*?)</span>', shown)):
+            problems["every bar says what it is: no bare radical sign, "
+                     "no repetend of letters"].append(tag)
         if KERN.search(strip_tags(blob)):
             problems["no function name is kerned open, as in f (x)"].append(tag)
 

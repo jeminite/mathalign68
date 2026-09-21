@@ -278,7 +278,7 @@
         },
         {
           "label": "C",
-          "html": "<span class=\"math\">√<span class=\"repeat\">9</span></span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span></span>",
           "x": 75.6,
           "y": 147.4
         },
@@ -373,13 +373,13 @@
       "choices": [
         {
           "label": "A",
-          "html": "<span class=\"math\">√<span class=\"repeat\">9</span> + √<span class=\"repeat\">12</span> = 15</span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = 15</span>",
           "x": 75.5,
           "y": 103.1
         },
         {
           "label": "B",
-          "html": "<span class=\"math\">√<span class=\"repeat\">9</span> + √<span class=\"repeat\">12</span> = √<span class=\"repeat\">15</span></span>",
+          "html": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = <span class=\"radical\"><span class=\"radicand\">15</span></span></span>",
           "x": 76.1,
           "y": 133.1
         },
@@ -1858,10 +1858,10 @@
       "credits": 1,
       "session": 2,
       "creditLine": null,
-      "stemHtml": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\">√<span class=\"repeat\">10</span></span> ?",
+      "stemHtml": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">10</span></span></span> ?",
       "stemLines": [
         "Points A, B, C, and D are plotted on the number line shown below.",
-        "Which point represents the best approximation of the value of <span class=\"math\">√<span class=\"repeat\">10</span></span> ?"
+        "Which point represents the best approximation of the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">10</span></span></span> ?"
       ],
       "prose": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of  ?",
       "proseAllLines": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of  ? point A point B point C point D",

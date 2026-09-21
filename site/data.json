@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-21T12:59:26",
+    "built": "2026-09-21T13:20:06",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -25141,12 +25141,12 @@
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">y = x + 3<span class=\"repeat\">.3</span></span>",
+          "text": "<span class=\"math\">y = x + 3.<span class=\"repeat\">3</span></span>",
           "isCorrect": false
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">y = 3<span class=\"repeat\">.3</span> x</span>",
+          "text": "<span class=\"math\">y = 3.<span class=\"repeat\">3</span>x</span>",
           "isCorrect": false
         },
         {
@@ -29118,12 +29118,12 @@
       "choiceList": [
         {
           "label": "A",
-          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">\u2212 1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
+          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">\u2212 1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
+          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
           "isCorrect": false
         },
         {
@@ -29245,12 +29245,12 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">1</span><span class=\"repeat\">4</span><span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">145</span></span></span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">1</span><span class=\"repeat\">8</span><span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">185</span></span></span>",
           "isCorrect": false
         }
       ],
@@ -30814,8 +30814,8 @@
         15
       ],
       "notes": "Every answer choice is a claim about the DECIMAL of the square root of 50 - it repeats, it terminates, or it does neither - and the key is the last of those, so the item turns on decimal behaviour rather than on Lesson 4's 'cannot be written as a fraction'. Lesson 17 is the only place the curriculum looks at what an irrational number's decimal actually does: in this activity long division is unavailable because there are no two integers to divide, so students build the decimal of the square root of 2 by successive approximation, and the lesson's own synthesis and summary state the test the item uses - the expansions never end and never repeat. That statement lives in the lesson synthesis and summary, not in any activity task, so the quote here is the definitional line from the activity itself. The first reading's Unit 7 Lesson 4, 'Rational and Irrational Numbers', is second best: it defines irrational as not expressible as a fraction, which is the framing of the item's distractor C rather than of the key, and it never mentions decimals at all.",
-      "stem": "Which statement about the value of <span class=\"math\">\u221a<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?",
-      "stemPlain": "Which statement about the value of \u221a5-repeating0-repeating is true?",
+      "stem": "Which statement about the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">50</span></span></span> is true?",
+      "stemPlain": "Which statement about the value of \u221a(50) is true?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],
@@ -31329,8 +31329,8 @@
         15
       ],
       "notes": "A right angle at F, legs 9 and 12, asking for DE. Lesson 9 is the find-the-missing-side lesson and its second activity is a list of exactly these. NOTE ON THE STEM: the segment overbars on DF and FE and DE are published as repeating-decimal marks, so the stem reads 'DF-repeating'. The placement is unaffected.",
-      "stem": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\">\u2212 <span class=\"repeat\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\">\u2212 <span class=\"repeat\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\">\u2212 <span class=\"repeat\">DE</span></span> ?",
-      "stemPlain": "Triangle DEF is a right triangle with a right angle at vertex F. Side \u2212 DF-repeating has a length of 9 inches and side \u2212 FE-repeating has a length of 12 inches. What is the length, in inches, of side \u2212 DE-repeating ?",
+      "stem": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\"><span class=\"segment\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\"><span class=\"segment\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\"><span class=\"segment\">DE</span></span> ?",
+      "stemPlain": "Triangle DEF is a right triangle with a right angle at vertex F. Side segment DF has a length of 9 inches and side segment FE has a length of 12 inches. What is the length, in inches, of side segment DE ?",
       "stemAfter": null,
       "creditLine": "This question is worth 1 credit.",
       "instructions": [
@@ -34014,22 +34014,22 @@
       "choiceList": [
         {
           "label": "A",
-          "text": "<span class=\"math\"><span class=\"repeat\">FG</span></span> and <span class=\"math\"><span class=\"repeat\">F\u2032J\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">FG</span></span> and <span class=\"math\"><span class=\"segment\">F\u2032J\u2032</span></span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\"><span class=\"repeat\">JF</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032J\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">JF</span></span> and <span class=\"math\"><span class=\"segment\">H\u2032J\u2032</span></span>",
           "isCorrect": false
         },
         {
           "label": "C",
-          "text": "<span class=\"math\"><span class=\"repeat\">GH</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032G\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">GH</span></span> and <span class=\"math\"><span class=\"segment\">H\u2032G\u2032</span></span>",
           "isCorrect": true
         },
         {
           "label": "D",
-          "text": "<span class=\"math\"><span class=\"repeat\">HG</span></span> and <span class=\"math\"><span class=\"repeat\">H\u2032J\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">HG</span></span> and <span class=\"math\"><span class=\"segment\">H\u2032J\u2032</span></span>",
           "isCorrect": false
         }
       ],
@@ -34348,8 +34348,8 @@
         15
       ],
       "notes": "The item asks which interval the square root of 2 sits in and which end it is nearer: between 1.0 and 1.5 but closer to 1.5. That is this activity's conclusion in so many words - students find the side length of a square of area 2 and see it is around 1.5 units or a little less. The first reading's Unit 7 Lesson 6, 'Reasoning About Square Roots', is second best: its 'Square Root Values' bounds a root between consecutive WHOLE numbers, which only gets the item as far as 'between 1 and 2' and cannot separate the two surviving choices. Unit 7 Lesson 17's 'Some Numbers Are Not Rational' later sharpens the same value to between 1.4 and 1.5, but Lesson 4 is where the item's own level of precision is first reached.",
-      "stem": "Which statement best describes the value of <span class=\"math\">\u221a<span class=\"repeat\">2</span></span> ?",
-      "stemPlain": "Which statement best describes the value of \u221a2-repeating ?",
+      "stem": "Which statement best describes the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">2</span></span></span> ?",
+      "stemPlain": "Which statement best describes the value of \u221a(2) ?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],
@@ -35366,7 +35366,8 @@
         "Explain your answer."
       ],
       "display": [
-        "<span class=\"math\">\u2022 \u221a<span class=\"repeat\">49</span> \u2022 1<span class=\"repeat\">.3</span></span>",
+        "<span class=\"math\">\u2022 <span class=\"radical\"><span class=\"radicand\">49</span></span> \u2022 1.<span class=\"repeat\">3</span></span>",
+        "<span class=\"math\">\u2022 <span class=\"radical\"><span class=\"radicand\">32</span></span> \u2022 <span class=\"frac\"><span>7</span><span>2</span></span></span>",
         "<span class=\"math\">\u2022 1.234</span>"
       ],
       "choiceList": [],
@@ -35377,7 +35378,7 @@
         "answer": "The square root of 49, 1.3 repeating, seven halves and 1.234 are rational; the square root of 32 is irrational",
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-        "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is in this item's figure."
+        "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is the item's three displayed expressions."
       },
       "transcribed": true
     },
@@ -36258,7 +36259,7 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">5</span></span></span>",
           "isCorrect": true
         },
         {
@@ -36470,22 +36471,22 @@
       "choiceList": [
         {
           "label": "A",
-          "text": "<span class=\"math\"><span class=\"repeat\">J\u2032K\u2032</span> \u2225 <span class=\"repeat\">J\u2032M\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">J\u2032K\u2032</span> \u2225 <span class=\"segment\">J\u2032M\u2032</span></span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\"><span class=\"repeat\">J\u2032K\u2032</span> \u2225 <span class=\"repeat\">L\u2032M\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">J\u2032K\u2032</span> \u2225 <span class=\"segment\">L\u2032M\u2032</span></span>",
           "isCorrect": true
         },
         {
           "label": "C",
-          "text": "<span class=\"math\"><span class=\"repeat\">K\u2032L\u2032</span> \u2225 <span class=\"repeat\">J\u2032K\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">K\u2032L\u2032</span> \u2225 <span class=\"segment\">J\u2032K\u2032</span></span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\"><span class=\"repeat\">K\u2032L\u2032</span> \u2225 <span class=\"repeat\">L\u2032M\u2032</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">K\u2032L\u2032</span> \u2225 <span class=\"segment\">L\u2032M\u2032</span></span>",
           "isCorrect": false
         }
       ],
@@ -37697,8 +37698,8 @@
         15
       ],
       "notes": "The item needs the square root of 4 exactly and the square root of 10 approximately, then asks which of four number lines puts P at the total, about 5. This activity is that same mix - plot the square roots of 3, 16 and 30 on one number line - and its narrative names the skill as using rational approximations of irrational numbers to place both kinds of number. The first reading's Unit 7 Lesson 5, 'Square Roots on the Number Line', is second best: it locates a root by drawing a square and comparing its side, a geometric route the item does not need, and it takes one root at a time. Nothing in the curriculum asks for a sum of two square roots except the Warm-up Math Talk that opens Unit 7 Lesson 11, which asks for the square root of 10 plus the square root of 97 to the nearest half.",
-      "stem": "On which number line does point P represent the value of the expression <span class=\"math\">\u221a<span class=\"repeat\">4</span> + \u221a<span class=\"repeat\">10</span></span>?",
-      "stemPlain": "On which number line does point P represent the value of the expression \u221a4-repeating + \u221a10-repeating?",
+      "stem": "On which number line does point P represent the value of the expression <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">4</span></span> + <span class=\"radical\"><span class=\"radicand\">10</span></span></span>?",
+      "stemPlain": "On which number line does point P represent the value of the expression \u221a(4) + \u221a(10)?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],
@@ -38213,8 +38214,8 @@
         15
       ],
       "notes": "The item asks students to classify the square root of 1.44; it is 1.2, and the trap is that a decimal under a radical looks irrational. This activity's values were chosen for precisely that trap - its narrative says so in the quoted words - and it asks students to show such numbers are rational by writing them as fractions, which is the justification the item wants. The first reading's Unit 7 Lesson 4, 'Rational and Irrational Numbers', is second best: it is where rational and irrational are defined, but every root Lesson 4 handles is the square root of 2 and irrational, so nothing there rehearses a root that turns out rational.",
-      "stem": "Classify <span class=\"math\">\u221a<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
-      "stemPlain": "Classify \u221a1.44-repeating as being rational or irrational.",
+      "stem": "Classify <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">1.44</span></span></span> as being rational or irrational.",
+      "stemPlain": "Classify \u221a(1.44) as being rational or irrational.",
       "stemAfter": null,
       "creditLine": "This question is worth 2 credits.",
       "instructions": [
@@ -39369,7 +39370,7 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span></span>",
           "isCorrect": false
         },
         {
@@ -39580,12 +39581,12 @@
       "choiceList": [
         {
           "label": "A",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span> + \u221a<span class=\"repeat\">12</span> = 15</span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = 15</span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">\u221a<span class=\"repeat\">9</span> + \u221a<span class=\"repeat\">12</span> = \u221a<span class=\"repeat\">15</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = <span class=\"radical\"><span class=\"radicand\">15</span></span></span>",
           "isCorrect": false
         },
         {
@@ -42666,8 +42667,8 @@
         15
       ],
       "notes": "Four points on a number line, asking which best approximates the square root of 10. Lesson 5 is the lesson that puts a square root ON the number line, and its cool-down plots one.",
-      "stem": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\">\u221a<span class=\"repeat\">10</span></span> ?",
-      "stemPlain": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of \u221a10-repeating ?",
+      "stem": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">10</span></span></span> ?",
+      "stemPlain": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of \u221a(10) ?",
       "stemAfter": null,
       "creditLine": null,
       "instructions": [],

@@ -7762,12 +7762,12 @@
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">y = x + 3<span class=\"repeat\">.3</span></span>",
+          "text": "<span class=\"math\">y = x + 3.<span class=\"repeat\">3</span></span>",
           "isCorrect": false
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">y = 3<span class=\"repeat\">.3</span> x</span>",
+          "text": "<span class=\"math\">y = 3.<span class=\"repeat\">3</span>x</span>",
           "isCorrect": false
         },
         {
@@ -9166,12 +9166,12 @@
       "choices": [
         {
           "label": "A",
-          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">− 1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
+          "text": "Function A has a greater rate of change than Function B because <span class=\"math\">1.25 &gt; 3.<span class=\"repeat\">3</span></span>.",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">− 1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
+          "text": "Function B has a greater rate of change than Function A because <span class=\"math\">1.25 &lt; 3.<span class=\"repeat\">3</span></span>.",
           "isCorrect": false
         },
         {
@@ -9220,12 +9220,12 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">4</span><span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">145</span></span></span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\">√<span class=\"repeat\">1</span><span class=\"repeat\">8</span><span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">185</span></span></span>",
           "isCorrect": false
         }
       ],
@@ -9754,8 +9754,8 @@
     "g8-2023-035": {
       "id": "g8-2023-035",
       "item": 35,
-      "stemHtml": "Which statement about the value of <span class=\"math\">√<span class=\"repeat\">5</span><span class=\"repeat\">0</span></span> is true?",
-      "stem": "Which statement about the value of √5-repeating0-repeating is true?",
+      "stemHtml": "Which statement about the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">50</span></span></span> is true?",
+      "stem": "Which statement about the value of √(50) is true?",
       "prose": "Which statement about the value of  is true?",
       "creditLine": null,
       "instructions": [],
@@ -9933,8 +9933,8 @@
     "g8-2023-040": {
       "id": "g8-2023-040",
       "item": 40,
-      "stemHtml": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\">− <span class=\"repeat\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\">− <span class=\"repeat\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\">− <span class=\"repeat\">DE</span></span> ?",
-      "stem": "Triangle DEF is a right triangle with a right angle at vertex F. Side − DF-repeating has a length of 9 inches and side − FE-repeating has a length of 12 inches. What is the length, in inches, of side − DE-repeating ?",
+      "stemHtml": "Triangle <span class=\"math\">DEF</span> is a right triangle with a right angle at vertex <span class=\"math\">F</span>. Side <span class=\"math\"><span class=\"segment\">DF</span></span> has a length of <span class=\"math\">9</span> inches and side <span class=\"math\"><span class=\"segment\">FE</span></span> has a length of <span class=\"math\">12</span> inches. What is the length, in inches, of side <span class=\"math\"><span class=\"segment\">DE</span></span> ?",
+      "stem": "Triangle DEF is a right triangle with a right angle at vertex F. Side segment DF has a length of 9 inches and side segment FE has a length of 12 inches. What is the length, in inches, of side segment DE ?",
       "prose": "Triangle  is a right triangle with a right angle at vertex . Side  has a length of inches and side  has a length of  inches. What is the length, in inches, of side  ?",
       "creditLine": "This question is worth 1 credit.",
       "instructions": [
@@ -10814,22 +10814,22 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\"><span class=\"repeat\">FG</span></span> and <span class=\"math\"><span class=\"repeat\">F′J′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">FG</span></span> and <span class=\"math\"><span class=\"segment\">F′J′</span></span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\"><span class=\"repeat\">JF</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">JF</span></span> and <span class=\"math\"><span class=\"segment\">H′J′</span></span>",
           "isCorrect": false
         },
         {
           "label": "C",
-          "text": "<span class=\"math\"><span class=\"repeat\">GH</span></span> and <span class=\"math\"><span class=\"repeat\">H′G′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">GH</span></span> and <span class=\"math\"><span class=\"segment\">H′G′</span></span>",
           "isCorrect": true
         },
         {
           "label": "D",
-          "text": "<span class=\"math\"><span class=\"repeat\">HG</span></span> and <span class=\"math\"><span class=\"repeat\">H′J′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">HG</span></span> and <span class=\"math\"><span class=\"segment\">H′J′</span></span>",
           "isCorrect": false
         }
       ],
@@ -10932,8 +10932,8 @@
     "g8-2024-037": {
       "id": "g8-2024-037",
       "item": 37,
-      "stemHtml": "Which statement best describes the value of <span class=\"math\">√<span class=\"repeat\">2</span></span> ?",
-      "stem": "Which statement best describes the value of √2-repeating ?",
+      "stemHtml": "Which statement best describes the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">2</span></span></span> ?",
+      "stem": "Which statement best describes the value of √(2) ?",
       "prose": "Which statement best describes the value of  ?",
       "creditLine": null,
       "instructions": [],
@@ -11241,7 +11241,8 @@
         "Explain your answer."
       ],
       "display": [
-        "<span class=\"math\">• √<span class=\"repeat\">49</span> • 1<span class=\"repeat\">.3</span></span>",
+        "<span class=\"math\">• <span class=\"radical\"><span class=\"radicand\">49</span></span> • 1.<span class=\"repeat\">3</span></span>",
+        "<span class=\"math\">• <span class=\"radical\"><span class=\"radicand\">32</span></span> • <span class=\"frac\"><span>7</span><span>2</span></span></span>",
         "<span class=\"math\">• 1.234</span>"
       ],
       "choices": [],
@@ -11254,7 +11255,7 @@
         "answer": "The square root of 49, 1.3 repeating, seven halves and 1.234 are rational; the square root of 32 is irrational",
         "note": null,
         "source": "NYSED exemplary response, scoring materials page 72 (PDF page 73)",
-        "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is in this item's figure."
+        "check": "49 is a perfect square and 32 is not; a repeating or terminating decimal and a fraction of integers are all rational. The list is the item's three displayed expressions."
       }
     },
     "g8-2024-048": {
@@ -11563,7 +11564,7 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">√<span class=\"repeat\">5</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">5</span></span></span>",
           "isCorrect": true
         },
         {
@@ -11634,22 +11635,22 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">J′M′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">J′K′</span> ∥ <span class=\"segment\">J′M′</span></span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\"><span class=\"repeat\">J′K′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">J′K′</span> ∥ <span class=\"segment\">L′M′</span></span>",
           "isCorrect": true
         },
         {
           "label": "C",
-          "text": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">J′K′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">K′L′</span> ∥ <span class=\"segment\">J′K′</span></span>",
           "isCorrect": false
         },
         {
           "label": "D",
-          "text": "<span class=\"math\"><span class=\"repeat\">K′L′</span> ∥ <span class=\"repeat\">L′M′</span></span>",
+          "text": "<span class=\"math\"><span class=\"segment\">K′L′</span> ∥ <span class=\"segment\">L′M′</span></span>",
           "isCorrect": false
         }
       ],
@@ -12090,8 +12091,8 @@
     "g8-2025-037": {
       "id": "g8-2025-037",
       "item": 37,
-      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\">√<span class=\"repeat\">4</span> + √<span class=\"repeat\">10</span></span>?",
-      "stem": "On which number line does point P represent the value of the expression √4-repeating + √10-repeating?",
+      "stemHtml": "On which number line does point P represent the value of the expression <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">4</span></span> + <span class=\"radical\"><span class=\"radicand\">10</span></span></span>?",
+      "stem": "On which number line does point P represent the value of the expression √(4) + √(10)?",
       "prose": "On which number line does point P represent the value of the expression ?",
       "creditLine": null,
       "instructions": [],
@@ -12264,8 +12265,8 @@
     "g8-2025-042": {
       "id": "g8-2025-042",
       "item": 42,
-      "stemHtml": "Classify <span class=\"math\">√<span class=\"repeat\">1.44</span></span> as being rational or irrational.",
-      "stem": "Classify √1.44-repeating as being rational or irrational.",
+      "stemHtml": "Classify <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">1.44</span></span></span> as being rational or irrational.",
+      "stem": "Classify √(1.44) as being rational or irrational.",
       "prose": "Classify  as being rational or irrational.",
       "creditLine": "This question is worth 2 credits.",
       "instructions": [
@@ -12654,7 +12655,7 @@
         },
         {
           "label": "C",
-          "text": "<span class=\"math\">√<span class=\"repeat\">9</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span></span>",
           "isCorrect": false
         },
         {
@@ -12725,12 +12726,12 @@
       "choices": [
         {
           "label": "A",
-          "text": "<span class=\"math\">√<span class=\"repeat\">9</span> + √<span class=\"repeat\">12</span> = 15</span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = 15</span>",
           "isCorrect": false
         },
         {
           "label": "B",
-          "text": "<span class=\"math\">√<span class=\"repeat\">9</span> + √<span class=\"repeat\">12</span> = √<span class=\"repeat\">15</span></span>",
+          "text": "<span class=\"math\"><span class=\"radical\"><span class=\"radicand\">9</span></span> + <span class=\"radical\"><span class=\"radicand\">12</span></span> = <span class=\"radical\"><span class=\"radicand\">15</span></span></span>",
           "isCorrect": false
         },
         {
@@ -13821,8 +13822,8 @@
     "g8-2026-038": {
       "id": "g8-2026-038",
       "item": 38,
-      "stemHtml": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\">√<span class=\"repeat\">10</span></span> ?",
-      "stem": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of √10-repeating ?",
+      "stemHtml": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of <span class=\"math\"><span class=\"radical\"><span class=\"radicand\">10</span></span></span> ?",
+      "stem": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of √(10) ?",
       "prose": "Points A, B, C, and D are plotted on the number line shown below. Which point represents the best approximation of the value of  ?",
       "creditLine": null,
       "instructions": [],
