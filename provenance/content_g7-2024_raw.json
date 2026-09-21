@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/extract_items.py",
-    "generated": "2026-09-11",
+    "generated": "2026-09-21",
     "testId": "g7-2024",
     "source": "sources/2024-released-items-math-g7.pdf",
     "assetDir": "G7-2024",
@@ -587,10 +587,10 @@
         {
           "file": "G7-2024/q21.png",
           "rect": [
-            277.88,
-            311.68,
-            344.76,
-            394.73
+            259.6,
+            306.52,
+            357.95,
+            399.98
           ],
           "paths": 31,
           "decodedLabels": "� � � � �� � � � � �� � � � ��� � � � ��� �",

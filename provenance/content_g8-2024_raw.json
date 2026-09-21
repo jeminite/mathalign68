@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/extract_items.py",
-    "generated": "2026-09-11",
+    "generated": "2026-09-21",
     "testId": "g8-2024",
     "source": "sources/2024-released-items-math-g8.pdf",
     "assetDir": "G8-2024",
@@ -818,7 +818,7 @@
         {
           "file": "G8-2024/q33.png",
           "rect": [
-            120.92,
+            120.91,
             91.0,
             210.11,
             215.87
@@ -1241,7 +1241,7 @@
             191.59,
             113.37,
             426.13,
-            345.75
+            310.2
           ],
           "paths": 32,
           "decodedLabels": "�� •� � � � • • � � � � � � �<sup>�</sup> � ��<sup>�</sup> � �• • � � �",

@@ -879,6 +879,54 @@ def transcription(payload):
              "description is unchecked: %s"
              % (len(unreadable), ", ".join(unreadable)))
 
+    # A crop is a picture of the figure, so no line of the page's text may run
+    # through its edge. 22 of the 152 published crops carried a line of their
+    # own question, sliced off at the figure's left and right: the mathematics
+    # in a line of prose is set in another font and arrives as spans of a few
+    # characters, grow_for_labels took each for a label, and where the question
+    # carried on beneath its picture the crop grew down to enclose them. Every
+    # other published field was checked against something; a crop was checked
+    # against nothing, so it took reading all 152 by eye to find. A line lying
+    # wholly inside the crop is a title or a label and is fine -- a line that
+    # crosses its edge never is, which makes the test mechanical.
+    figure_drafts = glob.glob(os.path.join(PROV, "content_*_raw.json"))
+    label = "no figure crop slices through a line of the page's text"
+    if not figure_drafts:
+        skipped(label, "no extractor drafts on disk")
+    else:
+        import fitz
+        published = {fig.get("file") for entry in content_box.values()
+                     for fig in entry.get("figures") or []}
+        pad, cut, unsourced = 8.0, [], set()      # pad is extract_items.CROP_PAD
+        for path in sorted(figure_drafts):
+            draft = load(path)
+            pdf = os.path.join(ROOT, draft["meta"]["source"])
+            if not os.path.exists(pdf):
+                unsourced.add(draft["meta"]["testId"])
+                continue
+            doc, lines_on = fitz.open(pdf), {}
+            for it in draft["items"]:
+                for fig in it.get("figures") or []:
+                    if fig["file"] not in published:
+                        continue
+                    if it["page"] not in lines_on:
+                        lines_on[it["page"]] = [
+                            fitz.Rect(ln["bbox"])
+                            for blk in doc[it["page"] - 1].get_text("dict")["blocks"]
+                            for ln in blk.get("lines", [])
+                            if "".join(sp["text"] for sp in ln["spans"]).strip()]
+                    x0, y0, x1, y1 = fig["rect"]
+                    for ln in lines_on[it["page"]]:
+                        mid = (ln.y0 + ln.y1) / 2.0
+                        if y0 - pad < mid < y1 + pad and ln.x1 > x0 - pad and ln.x0 < x1 + pad \
+                                and (ln.x0 < x0 - pad - 2 or ln.x1 > x1 + pad + 2):
+                            cut.append(fig["file"])
+                            break
+        check(label, not cut, ", ".join(cut[:8]))
+        if unsourced:
+            note("crops unchecked for want of the source PDF: %s"
+                 % ", ".join(sorted(unsourced)))
+
     # ---- structure -----------------------------------------------------
     problems = {
         "every stem, stemAfter and choice has balanced tags": [],

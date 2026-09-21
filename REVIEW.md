@@ -12,46 +12,41 @@ grade 6's alignment, the analyzer rewiring and the figure audit.
 
 ---
 
-## 1. Alt text is audited; the figure crops are now the open risk
+## 1. Alt text and figure crops: audited and fixed, 2026-09-21
 
-**Alt text: done 2026-09-21.** All 152 figures were read against their committed
-crop. 138 sound, **14 failed (9.2%)** -- 10 `wrong`, 4 `insufficient` -- against
-the 31.7% the `longDescription` audit found on the same figures. Every failure
-was read a second time against the artwork before it was changed; one first-pass
-verdict was overruled. The 14 corrections went in through the merge specs, not by
-hand. `provenance/figure_audit/alt_verdict_<test>.json` holds a verdict per
-figure, `alt_applied.json` the before and after.
+Nothing open here; kept as a section because both were this file's largest risk
+and because what is left over is small and specific.
 
-The failures were the same family as before, in miniature: a count or a name
-asserted from memory rather than read -- "Triangle ABC" on a four-sided ABCD,
-"two lines crossing" on three, "two entries replaced" on three, a range true of
-one axis stated for both. One leaked its item's answer (`g7-2024-021`, "y column
-runs in quarters" on a table keyed y = 1/4 x).
+**Alt text.** All 152 figures read against their committed crop: 138 sound, 14
+failed (9.2%, against 31.7% for the `longDescription`s), every failure read a
+second time before it was changed, all 14 corrected through the merge specs.
+`provenance/figure_descriptions.md` has the audit, `provenance/figure_audit/`
+the verdict per figure.
 
-**What the audit found that nobody was looking for: 23 of 152 crops are wrong
-(15%).** This file knew of two. 21 carry a clipped line of the question's stem
-beneath the artwork, and two have lost part of the figure:
+**Crops.** Reading every crop found what nobody was looking for: **33 of 152
+were wrong**, where this file had known of two. 22 carried a line of their own
+question sliced off beneath the artwork, and 11 had a ruled border cut off --
+one of them, `g8-2026-037`, an answer-choice figure that had lost the letters A
+and B. Two causes in `tools/extract_items.py`, both fixed, 39 crops re-cut, the
+other 113 byte-identical and not one stem or choice moved.
+`provenance/figure_crops.md` has both causes and the corpus diff.
+`preflight.py` now fails a crop that slices a line of text.
 
-- `g8-2026-037` -- the answer-choice letters **A and B are cut off**; only C and
-  D show. An answer-choice figure with half its letters missing.
-- `g8-2023-034` -- the left border of the Function A table is cut off.
+**Left over, all small:**
 
-The stray-stem crops, by test: g6 2023 Q2, 2024 Q40, 2025 Q3, 2026 Q8; g7 2023
-Q13 and Q42, 2026 Q18 and Q38; g8 2023 Q19, Q25, Q29; 2024 Q42; 2025 Q17, Q19,
-Q32, Q38, Q46; 2026 Q1, Q29, Q31, Q38. (`g7-2023-005` also has two specks of a
-descender on its top edge.) Each verdict file has the exact text under
-`cropDefect`.
-
-**One cause, not yet fixed.** `grow_for_labels()` in `tools/extract_items.py`
-treats any text span of 12 characters or fewer within 34pt below the artwork as
-a label and grows the crop to enclose it. When the question continues *under*
-the picture, the stem's short spans -- "A'", "?", a fraction -- qualify, the crop
-grows down to their baseline, and the line is sliced at the figure's own left
-and right edges. That is why every stray line is clipped at the sides and nearly
-every one ends in a prime, a fraction or a question mark. It is an extractor
-change, so the rule applies: re-extract all twelve tests with `--stdout` and
-diff every crop, not the 21 you meant to fix. MS343Teaching projects these crops
-to students, so it is visible there first.
+- `g7-2023-005`'s crop still has two specks on its top edge: descenders of the
+  stem line above, reached by the 8pt padding. `g7-2025-002` has a band of white
+  beneath tables B and D. Neither loses or adds content.
+- `g7-2024-015`'s crop still shows answer choice A beneath its expression, and
+  its alt says so. The same thing was removed from `g7-2023-005` by the fix;
+  this one survives because nothing on A's line is prose. Harmless -- the choice
+  is published as text as well -- but inconsistent.
+- Three figures are typed "Line Graph" and draw points with no line:
+  `g6-2023-046`, `g7-2025-033`, and Kaley's half of `g8-2025-048`.
+- The new crop check cannot see a ruled border cut off, only sliced text. That
+  half is fixed at the cause (`extent_of`) and guarded by nothing.
+- **MS343Teaching's decks and packs embed these crops** and keep the old ones
+  until they are regenerated there (`make`, then `make freeze`).
 
 ## 2. Three figure descriptions still cannot be written
 

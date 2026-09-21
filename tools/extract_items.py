@@ -121,6 +121,7 @@ INLINE_MAX_H = 20.0     # taller than this is not inline maths
 FIGURE_MIN_AREA = 2000.0
 CROP_ZOOM = 3           # 3x ~ 216 dpi, so gridlines survive zooming
 CROP_PAD = 8.0
+PROSE_BAND = 8.0        # how far off a prose line's box its own fragments sit
 HOLE_ZOOM = 8           # a hole crop is tiny; render it big for review
 
 
@@ -193,6 +194,26 @@ def bbox_of(group):
     for dr in group[1:]:
         r = r | dr["rect"]
     return r
+
+
+def extent_of(group):
+    """What a block of drawings really spans, ruled lines included.
+
+    bbox_of cannot see a ruled line. A stroked horizontal or vertical has a
+    rectangle of no height or no width, PyMuPDF calls that empty, and its union
+    operator ignores an empty rectangle without a word. So a table's border was
+    in the crop only when the glyphs inside it, plus CROP_PAD, happened to reach
+    that far. On grade 8 2026 item 37 and 2023 item 34 they did not: the left
+    border was cut off, and with the box 19pt too narrow the choice letters A
+    and B fell a point outside grow_for_labels' reach, so an answer-choice
+    figure published with half its letters missing.
+
+    Used for the crop only. bbox_of still decides what is a figure, a choice or
+    a displayed expression, because changing that moves stems.
+    """
+    rects = [dr["rect"] for dr in group]
+    return fitz.Rect(min(r.x0 for r in rects), min(r.y0 for r in rects),
+                     max(r.x1 for r in rects), max(r.y1 for r in rects))
 
 
 # ------------------------------------------------------------------ the item
@@ -601,6 +622,9 @@ def extract_item(page, number, y_lo, y_hi, table, tag, adir, meta):
         r = bbox_of(blk)
         if r.width * r.height < FIGURE_MIN_AREA:
             continue
+        # The size test above stays on bbox_of so that no new figure appears;
+        # the crop is cut from what the block actually spans.
+        r = extent_of(blk)
         glyphs = [dr for dr in blk if shape_of(dr) is not None]
         # A FIGURE STOPS WHERE THE ITEM DOES. The drawing band reaches past the
         # text bound to catch a last answer choice, and grade 7 2024 item 11 has
@@ -718,22 +742,40 @@ def grow_for_labels(rect, page, y_lo, y_hi):
     just outside the artwork is a label, not prose; the asymmetric vertical
     margin is because a caption sits below while the equation being graphed
     sits above.
+
+    SHORT IS NOT THE SAME AS A LABEL. A line of prose is not one span: the
+    mathematics in it is set in another font, so "What will be the coordinates
+    of vertex A' ?" arrives as a long span and then "A", a prime and "?" as
+    spans of their own. Each of those is under twelve characters, so where the
+    question carried on beneath its picture they counted as labels, the crop
+    grew down to their baseline, and 22 of 152 published figures carried a line
+    of the stem sliced off at the figure's own left and right edges. Nothing
+    checked a crop against anything, so it took reading every one to find.
+    A short span is therefore a label only if it does not share a line with
+    prose; PROSE_BAND is wide enough to hold a fraction's numerator and a
+    prime, which sit off the baseline of the line they belong to.
     """
+    spans = [sp for blk in page.get_text("dict")["blocks"]
+             for line in blk.get("lines", []) for sp in line["spans"]
+             if y_lo <= sp["bbox"][1] < y_hi]
+    prose = [sp["bbox"] for sp in spans
+             if len(sp["text"].strip()) > 12
+             and sp["bbox"][2] > rect.x0 - 40 and sp["bbox"][0] < rect.x1 + 40
+             and (sp["bbox"][1] >= rect.y1 or sp["bbox"][3] <= rect.y0)]
     grown = fitz.Rect(rect)
-    for blk in page.get_text("dict")["blocks"]:
-        for line in blk.get("lines", []):
-            for sp in line["spans"]:
-                b = sp["bbox"]
-                if not (y_lo <= b[1] < y_hi):
-                    continue
-                if len(sp["text"].strip()) > 12:
-                    continue                      # prose, not a label
-                if b[0] < MARGIN_X:
-                    continue                      # the item number in the margin
-                cx = (b[0] + b[2]) / 2.0
-                if rect.x0 - 40 <= cx <= rect.x1 + 40 and \
-                   rect.y0 - 14 <= b[1] <= rect.y1 + 34:
-                    grown = grown | fitz.Rect(b)
+    for sp in spans:
+        b = sp["bbox"]
+        if len(sp["text"].strip()) > 12:
+            continue                      # prose, not a label
+        if b[0] < MARGIN_X:
+            continue                      # the item number in the margin
+        cy = (b[1] + b[3]) / 2.0
+        if any(p[1] - PROSE_BAND <= cy <= p[3] + PROSE_BAND for p in prose):
+            continue                      # a fragment of a line of prose
+        cx = (b[0] + b[2]) / 2.0
+        if rect.x0 - 40 <= cx <= rect.x1 + 40 and \
+           rect.y0 - 14 <= b[1] <= rect.y1 + 34:
+            grown = grown | fitz.Rect(b)
     return grown
 
 

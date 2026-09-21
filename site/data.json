@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-21T10:45:03",
+    "built": "2026-09-21T12:59:26",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -15632,7 +15632,7 @@
         {
           "file": "G7-2023/q05.png",
           "type": "Expression",
-          "alt": "A displayed sum of four signed numbers, with answer choice A shown beneath it.",
+          "alt": "A displayed sum of four signed numbers, one of them a stacked fraction.",
           "longDescription": "The expression reads negative 1.5 plus two fifths plus negative 7 plus 2.6, with two fifths written as a stacked fraction."
         }
       ],

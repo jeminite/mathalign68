@@ -184,7 +184,7 @@ a clone builds and deploys without them; what a clone cannot do is re-derive the
 `provenance/imagine_guides.md` records their sha256 and what depends on them.
 
 `python3 tools/test_extractor.py` runs 169 checks over all fourteen extractions, and
-`python3 tools/preflight.py` runs 126 more against the built site. Two of them are worth knowing
+`python3 tools/preflight.py` runs 127 more against the built site. Two of them are worth knowing
 about because they are the reason the rest can be trusted:
 
 - **Every answer key is re-derived by a second, unrelated method.** Preflight re-reads each PDF
@@ -281,7 +281,7 @@ promise and is just the wrong denominator.
 from the educator guide and cross-validated against all 420 standard citations in the twelve
 item maps; test blueprint authored with its counts confirmed twice; all twelve maps extracted,
 plus the two CCLS-era 2022 maps kept as regression coverage; 387 of 396 items deep-linked to
-their exact PDF page; the site built and passing a 126-check deploy gate.
+their exact PDF page; the site built and passing a 127-check deploy gate.
 
 **Phase 2, the class-results analyzer, is built** — the part your colleagues will actually use.
 Drop a NYSED *Item Student Analysis* export on `/analyze/` and it identifies the test from its

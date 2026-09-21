@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/extract_items.py",
-    "generated": "2026-09-11",
+    "generated": "2026-09-21",
     "testId": "g6-2025",
     "source": "sources/2025-released-items-math-g6.pdf",
     "assetDir": "G6-2025",
@@ -124,7 +124,7 @@
             189.49,
             95.5,
             427.31,
-            367.5
+            330.25
           ],
           "paths": 111,
           "decodedLabels": "� � � � � • � � • � � � � ____� ____� ____� ____� ____� ____� � � � � � � � � � � � • � � • � � −� −� �",
@@ -391,7 +391,7 @@
         {
           "file": "G6-2025/q17.png",
           "rect": [
-            118.85,
+            118.75,
             95.5,
             282.8,
             241.75

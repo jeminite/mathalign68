@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "tools/extract_items.py",
-    "generated": "2026-09-11",
+    "generated": "2026-09-21",
     "testId": "g6-2024",
     "source": "sources/2024-released-items-math-g6.pdf",
     "assetDir": "G6-2024",
@@ -762,7 +762,7 @@
             205.99,
             307.54,
             411.56,
-            423.38
+            426.3
           ],
           "paths": 64,
           "decodedLabels": "� � � � �� � � � � � �� �<span class=\"frac\"><span>�</span><span>���</span></span> − � � � �� ____ − � � � � �� − � � � ��",
@@ -1068,8 +1068,8 @@
           "rect": [
             167.15,
             111.11,
-            453.54,
-            297.75
+            450.15,
+            264.89
           ],
           "paths": 22,
           "decodedLabels": "�<sup>�</sup> �<sup>��</sup> � � �� � ��",
@@ -1261,8 +1261,8 @@
           "rect": [
             77.82,
             142.13,
-            536.93,
-            195.14
+            537.0,
+            195.23
           ],
           "paths": 124,
           "decodedLabels": "���<sup>�</sup>� ���� ��� � ���<sup>�</sup>� ���� ��� ������ �� ������ � � � � ������ �� ������ � � � � � ������� ��������� � � �� �� �� ������� ��������� �� �� � �� � ��",
