@@ -316,6 +316,13 @@ th:not(.plain) { cursor:pointer }
  * different numbers, and item 7's answer choices include both. */
 .repeat { border-top: 1.3px solid currentColor; padding-top: 1px }
 
+/* ------------------------------------------------------------- segments */
+/* The same bar over letters names a segment: DF with a bar is the segment, DF
+ * without one is its length. Drawn like a repetend and kept a class of its own
+ * because it says something else -- every bar was once published as .repeat,
+ * and "DF repeating" is what a reader of the data, not the pixels, was given. */
+.segment { border-top: 1.3px solid currentColor; padding-top: 1px }
+
 /* ---------------------------------------------------------------- radicals */
 .radical { display: inline-flex; align-items: flex-start;
            font-family: "Cambria Math", Cambria, serif }
