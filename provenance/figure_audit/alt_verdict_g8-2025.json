@@ -1,0 +1,253 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 8 2025 (21 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 17,
+  "wrong": 4,
+  "insufficient": 0
+ },
+ "items": {
+  "g8-2025-002#0": {
+   "id": "g8-2025-002",
+   "figureIndex": 0,
+   "file": "G8-2025/q02.png",
+   "alt": "Four scatter plots labelled A to D, this item's answer choices, each with a straight line drawn through the same set of points.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four first-quadrant grids laid out two by two, lettered A (top left), B (below A), C (top right), D (below C), x from 0 to 10 and y from 0 to 8. Each carries the same eight points and one straight line: falling and above most points in A, horizontal near y = 3 in B, falling through the points in C, rising in D.",
+   "replacement": null,
+   "why": "Four plots, letters, one line each and an identical point set: all as stated."
+  },
+  "g8-2025-004#0": {
+   "id": "g8-2025-004",
+   "figureIndex": 0,
+   "file": "G8-2025/q04_1.png",
+   "alt": "A shaded plane slicing vertically through a square pyramid.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A pyramid on a four-sided base drawn in perspective, with a dashed height and a right-angle mark at its foot, cut by a shaded vertical plane that passes through the apex and down to the base. Nothing in the drawing marks the base as square.",
+   "replacement": "A shaded plane slicing vertically through a rectangular pyramid.",
+   "why": "The alt names a square pyramid; the artwork does not mark the base as square and the item's own stem calls it a 'right rectangular pyramid', so the alt contradicts the stem printed above it."
+  },
+  "g8-2025-007#0": {
+   "id": "g8-2025-007",
+   "figureIndex": 0,
+   "file": "G8-2025/q07.png",
+   "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A person holding a kite string labelled 20 ft that runs up to a kite. A dashed horizontal from the hand meets a dashed vertical from the kite at a marked right angle; the vertical above that line is labelled x, the part below it 4 ft, the hand is 4 ft above the ground, and the ground distance is 15 ft.",
+   "replacement": "A person flying a kite on a 20 ft string, with the kite's height above the hand labelled x and the ground distance 15 ft.",
+   "why": "The alt says the height is labelled in feet; the kite's height is labelled x, the unknown the item asks about, and the only vertical lengths given in feet are the two 4 ft hand heights, which the alt does not mention."
+  },
+  "g8-2025-008#0": {
+   "id": "g8-2025-008",
+   "figureIndex": 0,
+   "file": "G8-2025/q08_1.png",
+   "alt": "A line falling from left to right across a coordinate plane, crossing both axes within the first quadrant's edge.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane with x labelled from -4 to 6 and y from -1 to 5. One line with arrowheads falls from upper left to lower right, crossing the y-axis at 3 and the x-axis at 6.",
+   "replacement": null,
+   "why": "A falling line that meets both axes on their positive halves, as stated; 'within the first quadrant's edge' is awkward wording but not untrue."
+  },
+  "g8-2025-015#0": {
+   "id": "g8-2025-015",
+   "figureIndex": 0,
+   "file": "G8-2025/q15.png",
+   "alt": "A set of four numbers shown in braces.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A set in braces holding four numbers: 1/3, 1.13 with a bar over the 3, the square root of 5, and 5/2.",
+   "replacement": null,
+   "why": "Four numbers in braces, as stated."
+  },
+  "g8-2025-017#0": {
+   "id": "g8-2025-017",
+   "figureIndex": 0,
+   "file": "G8-2025/q17.png",
+   "alt": "Rectangle JKLM drawn in the first quadrant of a coordinate plane ruled from negative 10 to 10.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -10 to 10 on both axes. Rectangle JKLM in the first quadrant with J (1, 4), K (1, 1), L (3, 1) and M (3, 4).",
+   "replacement": null,
+   "why": "Rectangle, vertex letters, quadrant and axis range all match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the grid: 'ement about the line segments of rectangle J'K'L'M' is true?'."
+  },
+  "g8-2025-019#0": {
+   "id": "g8-2025-019",
+   "figureIndex": 0,
+   "file": "G8-2025/q19.png",
+   "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -10 to 10 on both axes. A FOUR-sided figure ABCD in the second quadrant: A (-3, 4), B (-3, 1), C (-1, 2) and D (-1, 3), with D and C on the grid line one unit left of the y-axis.",
+   "replacement": "Four-sided figure ABCD drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "why": "The alt says triangle ABC; the artwork draws a quadrilateral with four labelled vertices A, B, C and D, and the stem says 'Figure ABCD'. Wrong shape and a missing vertex letter.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the grid: 'be the coordinates of vertex A' ?'."
+  },
+  "g8-2025-027#0": {
+   "id": "g8-2025-027",
+   "figureIndex": 0,
+   "file": "G8-2025/q27.png",
+   "alt": "A cone with its height and the full width of its base labelled in yards, with the right angle at the centre marked.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A cone with a dashed vertical height labelled 8 yd and a dashed line right across the base labelled 6 yd, with a right-angle mark where the height meets that line at the centre of the base.",
+   "replacement": null,
+   "why": "It now says 'the full width of its base', which is what the 6 yd label spans; the earlier radius/diameter error is gone. Height, unit and right angle all match."
+  },
+  "g8-2025-031#0": {
+   "id": "g8-2025-031",
+   "figureIndex": 0,
+   "file": "G8-2025/q31.png",
+   "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "THREE lines crossing at a single point, one horizontal and two slanted, making six angles. The angle above the left horizontal ray is labelled (6x - 23) degrees and the angle below the right horizontal ray is labelled (4x + 11) degrees; the two are vertical angles.",
+   "replacement": "Three lines crossing at one point, with two of the six angles they form labelled in terms of x.",
+   "why": "The alt says two lines crossing; the artwork shows three, and the stem says 'three intersecting lines'. A wrong count that contradicts the stem."
+  },
+  "g8-2025-032#0": {
+   "id": "g8-2025-032",
+   "figureIndex": 0,
+   "file": "G8-2025/q32.png",
+   "alt": "A graph titled Taylor's Gym Membership, cost in dollars against number of months.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled TAYLOR'S GYM MEMBERSHIP, x-axis Number of Months 0 to 10, y-axis Cost (dollars) 0 to 250 in steps of 25, with a straight line from the origin ending in an arrowhead at (10, 250).",
+   "replacement": null,
+   "why": "Title and both axis quantities match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the graph: 'tifies the gym membership with the lower cos'."
+  },
+  "g8-2025-034#0": {
+   "id": "g8-2025-034",
+   "figureIndex": 0,
+   "file": "G8-2025/q34.png",
+   "alt": "Two congruent quadrilaterals on a coordinate plane, ABCD below the x-axis and QRSP above it.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane with x labelled -9 to 9 and y -4 to 4. Trapezoid ABCD in the third quadrant: A (-6, -1), B (-3, -1), C (-2, -3), D (-7, -3). A second trapezoid in the first quadrant with Q (3, 1), P (6, 1), S (7, 3), R (2, 3).",
+   "replacement": null,
+   "why": "Two four-sided figures of the same size, one below and one above the x-axis, with the vertex letters as drawn; QRSP is a valid cyclic order of the letters the stem calls PQRS."
+  },
+  "g8-2025-035#0": {
+   "id": "g8-2025-035",
+   "figureIndex": 0,
+   "file": "G8-2025/q35.png",
+   "alt": "Two graphs side by side, Brayden's Work and Hannah's Work, each showing the same line with a slope triangle drawn on it.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two coordinate planes side by side titled BRAYDEN'S WORK and HANNAH'S WORK, each labelled about -4 to 4, each showing the same rising line through (0, 1) and (3, 3). Brayden's arrows are labelled 2 up and 3 across; Hannah's are labelled 6 across and 4 up.",
+   "replacement": null,
+   "why": "Titles, the shared line and a slope triangle on each all match."
+  },
+  "g8-2025-036#0": {
+   "id": "g8-2025-036",
+   "figureIndex": 0,
+   "file": "G8-2025/q36.png",
+   "alt": "A two-column table of x and y values with five rows running through zero.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A two-column table headed x and y with five rows: -2 and -12, -1 and -7, 0 and -2, 1 and 3, 2 and 8.",
+   "replacement": null,
+   "why": "Two columns, five rows, x running through zero: as stated."
+  },
+  "g8-2025-037#0": {
+   "id": "g8-2025-037",
+   "figureIndex": 0,
+   "file": "G8-2025/q37.png",
+   "alt": "Four number lines labelled A to D, this item's answer choices, each from negative 1 to 8 with a point P marked.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four number lines stacked and lettered A, B, C, D, each labelled from -1 to 8 with one point P: a little left of 3 in A, a little left of 4 in B, a little right of 5 in C, and at 7 in D.",
+   "replacement": null,
+   "why": "Four lines, letters, range and a point P on each all match."
+  },
+  "g8-2025-038#0": {
+   "id": "g8-2025-038",
+   "figureIndex": 0,
+   "file": "G8-2025/q38.png",
+   "alt": "A scatter plot of about thirty points on a grid running to 60 on both axes.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid with both axes labelled 0 to 60 in steps of 5 and 31 plotted points rising from about (6, 6) to about (51, 53). No title, no axis names and no line.",
+   "replacement": null,
+   "why": "I count 31 points, so 'about thirty' holds, and both axes run to 60.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the plot: 'statement best describes the association bet'."
+  },
+  "g8-2025-039#0": {
+   "id": "g8-2025-039",
+   "figureIndex": 0,
+   "file": "G8-2025/q39.png",
+   "alt": "A five-row table of x and y values for a linear function.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A two-column table headed x and y with five rows: -18 and -6, -8 and -1, 0 and 3, 4 and 5, 6 and 6.",
+   "replacement": null,
+   "why": "Five rows of x and y; the values do rise at a constant rate, and the stem calls it a linear function."
+  },
+  "g8-2025-041#0": {
+   "id": "g8-2025-041",
+   "figureIndex": 0,
+   "file": "G8-2025/q41.png",
+   "alt": "A table titled David's Charges pairing hours mowed with total charges in dollars.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled DAVID'S CHARGES with columns Time Mowed (hours) and Total Charges (dollars) and three rows: 0.5 and 17.50, 1 and 20.00, 2 and 25.00.",
+   "replacement": null,
+   "why": "Title, both column quantities and units match."
+  },
+  "g8-2025-044#0": {
+   "id": "g8-2025-044",
+   "figureIndex": 0,
+   "file": "G8-2025/q44.png",
+   "alt": "A graph titled Roller Coaster Speed, speed in miles per hour against time in seconds.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled ROLLER COASTER SPEED, x-axis Time (seconds) 0 to 45, y-axis Speed (mph) 0 to 90. The graph curves up from the origin to 50 mph at 25 seconds, drops to 30 mph at 30 seconds, stays flat to 40 seconds, then falls in a straight line to zero at 45 seconds.",
+   "replacement": null,
+   "why": "Title and both axis quantities and units match."
+  },
+  "g8-2025-046#0": {
+   "id": "g8-2025-046",
+   "figureIndex": 0,
+   "file": "G8-2025/q46.png",
+   "alt": "Triangle ABC drawn across the y-axis on a coordinate plane ruled from negative 7 to 7.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -7 to 7 on both axes. Triangle ABC with A (-3, 4), B (-5, -1) and C (1, 2); sides AC and BC cross the y-axis.",
+   "replacement": null,
+   "why": "Triangle, letters, position across the y-axis and axis range all match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the grid: 'oordinates of vertex A' ?'."
+  },
+  "g8-2025-047#0": {
+   "id": "g8-2025-047",
+   "figureIndex": 0,
+   "file": "G8-2025/q47_1.png",
+   "alt": "A right triangle with a squared grid drawn on each of its three sides, the sides labelled a, b and c.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A right triangle with a marked right angle and a gridded square built outward on each side: a 3-by-3 square with sides labelled a, a 4-by-4 square labelled b, and a 5-by-5 square on the hypotenuse labelled c.",
+   "replacement": null,
+   "why": "Three gridded squares and the labels a, b and c, as stated."
+  },
+  "g8-2025-048#0": {
+   "id": "g8-2025-048",
+   "figureIndex": 0,
+   "file": "G8-2025/q48.png",
+   "alt": "Kaley's sleep time as a graph and Mark's as a table, both against number of nights.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "On the left a first-quadrant grid titled KALEY'S SLEEP TIME, Total Number of Nights 0 to 6 against Total Time (hours) 0 to 42 in sevens, with five points from (1, 7) to (5, 35) and no line. On the right a table titled MARK'S SLEEP TIME: 2 and 18, 3 and 27, 4 and 36, 5 and 45.",
+   "replacement": null,
+   "why": "The alt is true. Note for the figure's `type` field, not the alt: it is recorded as 'Line Graph and Data Table' and the graph is a point plot with no line drawn."
+  }
+ }
+}

@@ -86,12 +86,12 @@
   },
   "G8-2025/q04_1.png": {
    "type": "Diagram",
-   "alt": "A shaded plane slicing vertically through a square pyramid.",
+   "alt": "A shaded plane slicing vertically through a rectangular pyramid.",
    "long": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two."
   },
   "G8-2025/q07.png": {
    "type": "Diagram",
-   "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+   "alt": "A person flying a kite on a 20 ft string, with the kite's height above the hand labelled x and the ground distance 15 ft.",
    "long": "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
   },
   "G8-2025/q08_1.png": {
@@ -111,7 +111,7 @@
   },
   "G8-2025/q19.png": {
    "type": "Coordinate Plane",
-   "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "alt": "Four-sided figure ABCD drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
    "long": "A coordinate plane is shown with both axes marked in single units from -10 to 10. Four-sided figure ABCD sits above the x-axis and just left of the y-axis. Its vertices are A at (-3, 4), B at (-3, 1), C at (-1, 2) and D at (-1, 3). Side AB is vertical and 3 units long, and side DC is vertical and 1 unit long."
   },
   "G8-2025/q27.png": {
@@ -121,7 +121,7 @@
   },
   "G8-2025/q31.png": {
    "type": "Diagram",
-   "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+   "alt": "Three lines crossing at one point, with two of the six angles they form labelled in terms of x.",
    "long": "Three lines cross at a single point: one horizontal, one rising to the upper right, and one rising to the upper left. The angle marked 6x minus 23 degrees lies above the horizontal line, between the horizontal ray going left and the ray going up to the left. The angle marked 4x plus 11 degrees lies below the horizontal line, between the horizontal ray going right and the ray going down to the right. The two are vertical angles."
   },
   "G8-2025/q32.png": {

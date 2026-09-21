@@ -1,0 +1,142 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 8 2023 (11 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 9,
+  "wrong": 2,
+  "insufficient": 0
+ },
+ "items": {
+  "g8-2023-002#0": {
+   "id": "g8-2023-002",
+   "figureIndex": 0,
+   "file": "G8-2023/q02.png",
+   "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four scatter plots lettered A (upper left), C (upper right), B (lower left) and D (lower right). Each has axes x and y numbered 0 to 11 in single units, so the grid is eleven squares by eleven, and each holds exactly ten points: A curving upward, C an arch, B patternless, D falling in a near-straight band.",
+   "replacement": "Four scatter plots labelled A to D, this item's answer choices, each showing ten points on a grid numbered from 0 to 11.",
+   "why": "The grid is eleven by eleven (axes numbered 0 to 11), not ten by ten, and every plot has exactly ten points, which 'about a dozen' overstates."
+  },
+  "g8-2023-007#0": {
+   "id": "g8-2023-007",
+   "figureIndex": 0,
+   "file": "G8-2023/q07.png",
+   "alt": "Function A given as an equation and Function B given as a table of x and y values.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed FUNCTION A over the equation y = 5/4 x, and FUNCTION B over a two-column x, y table with three rows: 5 and 1.5, 10 and 3, 15 and 4.5.",
+   "replacement": null,
+   "why": "Equation for A and an x-y table for B, as stated."
+  },
+  "g8-2023-019#0": {
+   "id": "g8-2023-019",
+   "figureIndex": 0,
+   "file": "G8-2023/q19.png",
+   "alt": "Triangle ABC and its image triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane numbered every 2 from -12 to 12 (grid runs one square further). Triangle ABC in quadrant IV at A(4,-4), B(8,-8), C(10,-5); triangle A'B'C' in quadrant III at A'(-4,-2), B'(-8,-6), C'(-10,-3).",
+   "replacement": null,
+   "why": "Both triangles, their letters and the numbered range all match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the plane: 'ransformations maps triangle ABC onto triangle A'B'C' ?'."
+  },
+  "g8-2023-025#0": {
+   "id": "g8-2023-025",
+   "figureIndex": 0,
+   "file": "G8-2023/q25.png",
+   "alt": "Two parallel lines a and b cut by a transversal c, with two angles labelled in terms of x.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two horizontal lines labelled a (upper) and b (lower) crossed by a transversal c rising to the right. One angle at line a is labelled (13x + 6) degrees and one at line b is labelled (11x + 30) degrees.",
+   "replacement": null,
+   "why": "Lines a, b, c and two angle expressions in x, as stated.",
+   "cropDefect": "The crop carries a stray, clipped fragment of the stem beneath the diagram: 'of x ?'."
+  },
+  "g8-2023-029#0": {
+   "id": "g8-2023-029",
+   "figureIndex": 0,
+   "file": "G8-2023/q29.png",
+   "alt": "Triangle ABC and triangle A prime B prime C prime on a coordinate plane ruled from negative 12 to 12.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane numbered every 2 from -12 to 12. Small triangle ABC in quadrant I at A(2,4), B(2,2), C(6,2); larger triangle A'B'C' in quadrant IV at A'(4,-8), B'(4,-4), C'(12,-4).",
+   "replacement": null,
+   "why": "Both triangles, their letters and the numbered range match; the alt rightly does not call the image congruent.",
+   "cropDefect": "The crop carries a stray line of the stem beneath the plane, clipped at both ends: 'ransformations could have been used to take triangle ABC to triangle'."
+  },
+  "g8-2023-033#0": {
+   "id": "g8-2023-033",
+   "figureIndex": 0,
+   "file": "G8-2023/q33.png",
+   "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane with both axes numbered in single units from -6 to 6; the grid itself runs one unnumbered square further, to 7. One straight line with arrows at both ends rises left to right through plotted points (0,1) and (6,4), crossing the x-axis at -2.",
+   "replacement": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 6 to 6.",
+   "why": "The axes are numbered -6 to 6; 7 is only the unnumbered edge of the grid, and every other plane in this corpus (e.g. g8-2023-019, g8-2024-041) is described by its numbered range, as this figure's own longDescription does."
+  },
+  "g8-2023-034#0": {
+   "id": "g8-2023-034",
+   "figureIndex": 0,
+   "file": "G8-2023/q34.png",
+   "alt": "Function A as a table of x and y values and Function B as a line graphed on a coordinate plane.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed FUNCTION A over a two-column x, y table with four rows (-6,-12; -2,-4; 0,0; 2,4), and FUNCTION B over a four-quadrant plane numbered every 2 from -10 to 10 with a line, arrows at both ends, through the origin and a plotted point at (4,6).",
+   "replacement": null,
+   "why": "A table for A and a graphed line on a coordinate plane for B, as stated.",
+   "cropDefect": "The left edge of the Function A table is cut off: the table's left border is missing and its horizontal rules run into the edge of the image."
+  },
+  "g8-2023-036#0": {
+   "id": "g8-2023-036",
+   "figureIndex": 0,
+   "file": "G8-2023/q36.png",
+   "alt": "Four graphs labelled A, B, C and D, which are this item's answer choices.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four four-quadrant planes numbered -8 to 8, lettered A (upper left), C (upper right), B (lower left), D (lower right). A is a sideways U opening right from (-6,0) through (0,5) and (0,-5); C is its mirror image turning at (6,0); B is a vertical line at x = 3; D is a horizontal line at y = 3.",
+   "replacement": null,
+   "why": "Four lettered graphs that are the answer choices; brief but true, and it identifies the figure."
+  },
+  "g8-2023-042#0": {
+   "id": "g8-2023-042",
+   "figureIndex": 0,
+   "file": "G8-2023/q42.png",
+   "alt": "Triangle XYZ and its congruent image triangle X prime Y prime Z prime on a coordinate plane ruled from negative 12 to 12.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane numbered in single units from -12 to 12. Triangle XYZ in quadrant II at X(-10,2), Y(-3,5), Z(-4,2); triangle X'Y'Z' at X'(-7,-4), Y'(0,-7), Z'(-1,-4).",
+   "replacement": null,
+   "why": "Both triangles, their letters and the numbered range match; 'congruent' is the stem's own word."
+  },
+  "g8-2023-045#0": {
+   "id": "g8-2023-045",
+   "figureIndex": 0,
+   "file": "G8-2023/q45.png",
+   "alt": "Function A as a four-row table of values and Function B as a line rising gently across a first-quadrant grid.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed FUNCTION A over an x, y table with four rows (-5,-30; -3,-18; 2,12; 4,24), and FUNCTION B over a first-quadrant grid numbered 0 to 7 with a ray from a plotted point at the origin through a plotted point at (6,3), ending in one arrowhead.",
+   "replacement": null,
+   "why": "Four rows, first-quadrant grid and a gently rising graph all match; strictly the graph is a ray from the origin rather than a line, which is not worth failing an identification for."
+  },
+  "g8-2023-048#0": {
+   "id": "g8-2023-048",
+   "figureIndex": 0,
+   "file": "G8-2023/q48.png",
+   "alt": "Three functions shown three ways: Function A as an equation, Function B as a table, Function C as a graph.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed FUNCTION A over the equation y = 2x + 3, FUNCTION B over an x, y table with four rows (-1,1; 0,0; 1,1; 2,4), and FUNCTION C over a plane numbered -4 to 4 across and -6 to 6 up, with a steep line through plotted points (0,-4) and (1,-1).",
+   "replacement": null,
+   "why": "Equation, table and graph for A, B and C, as stated."
+  }
+ }
+}

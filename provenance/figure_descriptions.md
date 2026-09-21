@@ -178,6 +178,43 @@ the audit did not resolve: `g7-2023-016` (box-plot five-number summaries),
 `g7-2026-014` (Team B's dot counts), `g7-2026-027` (the coordinates of Q, R, S)
 and `g8-2026-034`'s companion reading.
 
-**Alt text has never been audited.** 152 descriptions, median 15 words, checked
-only for existence, uniqueness and now self-consistency. If the `longDescription`
-rate is any guide, roughly a third of them do not say what they should.
+~~**Alt text has never been audited.**~~ Done 2026-09-21; see below.
+
+
+---
+
+# The alt-text audit
+
+All 152, each read against its crop, 2026-09-21. The question was narrower than
+the one asked of a `longDescription`: *is every fact the alt states drawn, and
+does it identify the figure?* An alt is an identification, not a substitute for
+the picture, and was not failed for leaving the answer out of reach.
+
+| | figures | sound | wrong | insufficient |
+|---|---|---|---|---|
+| first reading | 152 | 137 | 11 | 4 |
+| after a second reading of every failure | 152 | 138 | 10 | 4 |
+
+**14 of 152 failed: 9.2%**, not the third that was feared. A short
+identification has less room to be wrong than a description does, and most alts
+name a kind of figure and stop.
+
+Where they failed, it was where they went past that and asserted a count, a
+name or a range: a quadrilateral called a triangle, three lines called two,
+three blanks called two, "about a dozen points" where there are ten, a range
+true of the x-axis given for the whole plane (three times). The rule the first
+audit arrived at holds here too -- **where the text named something it had
+counted, it was right; where it summarised, it was wrong.**
+
+The second reading mattered once. `g7-2025-003`'s choice D was failed for
+saying "four desserts" when two of the four letters are main courses; but the
+artwork itself labels that row "Dessert", so the alt says what is drawn. Kept.
+
+The corrections went into `provenance/merge_<test>.json` and through
+`tools/merge_content.py`; a diff of `data/content.json` before and after shows
+14 `alt` fields and the date, nothing else. `figure_audit/alt_verdict_*.json`
+and `alt_applied.json` are the record.
+
+**The larger finding was not about alt text.** Reading every crop found 23
+defective ones, 21 of them carrying a clipped line of the stem. `REVIEW.md`
+section 1 has the list and the cause, in `grow_for_labels()`.

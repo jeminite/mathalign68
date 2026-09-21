@@ -81,7 +81,7 @@
  "visuals": {
   "G8-2023/q02.png": {
    "type": "Graphs as Answer Choices",
-   "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+   "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing ten points on a grid numbered from 0 to 11.",
    "long": "Four scatter plots are shown, each on axes labeled x and y and marked in single units from 0 to 11. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A ten points bend upward: they sit almost on the x-axis at about (1, 0.2), (2, 0.2) and (3.6, 0.4), then climb more and more steeply through about (5, 1), (6.3, 1.8), (7.3, 2.9) and (8, 4.1) to about (9, 5.5), (9, 7) and (9, 8.3), so the path curves rather than running straight. In plot C ten points rise to a peak and then fall, forming an arch: about (0.2, 4.5), (1, 6), (1.2, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) and (9, 4). In plot B ten points are scattered with no pattern at all: about (2, 5), (3, 9), (4, 6.5), (4.6, 9), (5, 4.5), (7, 7), (7, 4), (8, 9), (9, 7) and (9, 6.5). In plot D ten points fall from upper left to lower right in a narrow, nearly straight band: about (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) and (10, 2)."
   },
   "G8-2023/q07.png": {
@@ -106,7 +106,7 @@
   },
   "G8-2023/q33.png": {
    "type": "Coordinate Plane",
-   "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+   "alt": "A straight line with a positive slope graphed on a coordinate plane numbered from negative 6 to 6.",
    "long": "A coordinate plane is shown with both axes marked in single units from -6 to 6. A single straight line rises from the lower left to the upper right across the whole grid. Two points are plotted on it: (0, 1), on the y-axis, and (6, 4). The line also crosses the x-axis at (-2, 0)."
   },
   "G8-2023/q34.png": {

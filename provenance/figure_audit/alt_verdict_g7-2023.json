@@ -1,0 +1,119 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 7 2023 (9 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 9,
+  "wrong": 0,
+  "insufficient": 0
+ },
+ "items": {
+  "g7-2023-004#0": {
+   "id": "g7-2023-004",
+   "figureIndex": 0,
+   "file": "G7-2023/q04.png",
+   "alt": "A table titled Number of Pages Read, pairing a number of days with a total number of pages.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled NUMBER OF PAGES READ with columns Number of Days and Total Number of Pages; four rows: 2 and 32, 4 and 64, 5 and 80, 7 and 112.",
+   "replacement": null,
+   "why": "Title and both column headings match."
+  },
+  "g7-2023-005#0": {
+   "id": "g7-2023-005",
+   "figureIndex": 0,
+   "file": "G7-2023/q05.png",
+   "alt": "A displayed sum of four signed numbers, with answer choice A shown beneath it.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "The displayed sum -1.5 + 2/5 + (-7) + 2.6, and beneath it the letter A with answer choice A, (-5.5 + 2.6) + 2/5.",
+   "replacement": null,
+   "why": "Four addends, two of them negative, with choice A beneath, as stated.",
+   "cropDefect": "Two small stray marks sit on the top edge of the crop: the clipped descenders of the stem line above ('...expression...'). The crop also carries answer choice A, which the alt acknowledges."
+  },
+  "g7-2023-013#0": {
+   "id": "g7-2023-013",
+   "figureIndex": 0,
+   "file": "G7-2023/q13.png",
+   "alt": "A table titled Babysitting Earnings, pairing hours worked with dollars earned.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled BABYSITTING EARNINGS with columns Number of Hours, h and Earnings, d (dollars); four rows: 4 and $50.00, 5 and $62.50, 6 and $75.00, 9 and $112.50.",
+   "replacement": null,
+   "why": "Title, hours and dollars all match.",
+   "cropDefect": "The crop carries two stray lines of the stem beneath the table, clipped at the left and right: 'vhich statement is true about the relationship bet' and 'nd the amount of money, d, she earns?'."
+  },
+  "g7-2023-016#0": {
+   "id": "g7-2023-016",
+   "figureIndex": 0,
+   "file": "G7-2023/q16.png",
+   "alt": "Two box plots titled Test Scores, one for Class A and one for Class B, on a scale from 60 to 100.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two box plots titled TEST SCORES over one number line labelled 60 to 100 in fives. Class A runs from about 66 to 95 with a box from about 77.5 to 86 and median about 82.5; Class B runs from 75 to 100 with a box from 85 to about 96 and median about 94.",
+   "replacement": null,
+   "why": "Title, the two class labels and the 60-to-100 scale all match."
+  },
+  "g7-2023-025#0": {
+   "id": "g7-2023-025",
+   "figureIndex": 0,
+   "file": "G7-2023/q25.png",
+   "alt": "A graph titled Joseph's Earnings, dollars earned against hours worked.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled JOSEPH'S EARNINGS, x-axis Hours Worked 0 to 10, y-axis Earnings (dollars) 0 to 100 in twenties. A line with an arrowhead rises from the origin through two plotted points at (2, 30) and (6, 90).",
+   "replacement": null,
+   "why": "Title and both axis quantities match; a line is drawn."
+  },
+  "g7-2023-031#0": {
+   "id": "g7-2023-031",
+   "figureIndex": 0,
+   "file": "G7-2023/q31.png",
+   "alt": "A dot plot titled Hits at Baseball Tournament, counting players against number of hits, from 0 to 7.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A line plot titled HITS AT BASEBALL TOURNAMENT on a number line labelled Number of Hits, 0 to 7. Marks are X's: 3 at 0, 7 at 1, none at 2, 5 at 3, 4 at 4, 2 at 5, 5 at 6 and 1 at 7, 27 in all.",
+   "replacement": null,
+   "why": "Title, axis label and 0-to-7 range match; the stem says each mark is a player. The marks are X's rather than dots, which the alt does not contradict."
+  },
+  "g7-2023-039#0": {
+   "id": "g7-2023-039",
+   "figureIndex": 0,
+   "file": "G7-2023/q39.png",
+   "alt": "A table titled Amount of Flour for Cookies, pairing cups of flour with number of cookies.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled AMOUNT OF FLOUR FOR COOKIES with columns Cups of Flour (x) and Number of Cookies (y); five rows: 1 1/2 and 24, 3 and 48, 4 1/2 and 72, 6 and 96, 7 1/2 and 120.",
+   "replacement": null,
+   "why": "Title and both column headings match."
+  },
+  "g7-2023-042#0": {
+   "id": "g7-2023-042",
+   "figureIndex": 0,
+   "file": "G7-2023/q42.png",
+   "alt": "A table titled Distance Robot Traveled, pairing time in seconds with distance in feet.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled DISTANCE ROBOT TRAVELED with columns Time, t (seconds) and Distance, d (feet); four rows: 2 and 1, 4 and 2, 10 and 5, 16 and 8.",
+   "replacement": null,
+   "why": "Title, seconds and feet all match.",
+   "cropDefect": "The crop carries two stray lines of the stem beneath the table, clipped at both sides and the second cut through horizontally by the bottom edge: 'resent the distance, d, in feet, the robot t' and 'seconds will it take for the robot to trave'."
+  },
+  "g7-2023-045#0": {
+   "id": "g7-2023-045",
+   "figureIndex": 0,
+   "file": "G7-2023/q45.png",
+   "alt": "A scale drawing titled Diagram of Classroom Floor, a rectangle with its two dimensions marked in inches.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A plain upright rectangle titled DIAGRAM OF CLASSROOM FLOOR, with a dimension line reading 2 in. down the right side and one reading 1.5 in. along the bottom.",
+   "replacement": null,
+   "why": "Title, shape and the two inch dimensions all match."
+  }
+ }
+}

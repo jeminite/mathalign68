@@ -7,31 +7,51 @@ they are. `RESUME.md` says **where the work is up to**. This file lists what a
 Nothing here blocks the deploy gate. That is the point: `preflight.py` catches
 what a machine can catch, and everything below is what it cannot.
 
-**Last reviewed 2026-09-13**, after grade 6's alignment, the analyzer rewiring
-and the figure audit.
+**Last reviewed 2026-09-21**, after the alt-text audit. Before that 2026-09-13, after
+grade 6's alignment, the analyzer rewiring and the figure audit.
 
 ---
 
-## 1. Alt text has never been audited — the largest open risk
+## 1. Alt text is audited; the figure crops are now the open risk
 
-152 figures, every one with alt text, median 15 words. `preflight.py` checks
-three things about it: that it exists, that no two figures share the same
-string, and (new) that it does not contradict its own `longDescription`. Nothing
-checks whether it **describes the figure**.
+**Alt text: done 2026-09-21.** All 152 figures were read against their committed
+crop. 138 sound, **14 failed (9.2%)** -- 10 `wrong`, 4 `insufficient` -- against
+the 31.7% the `longDescription` audit found on the same figures. Every failure
+was read a second time against the artwork before it was changed; one first-pass
+verdict was overruled. The 14 corrections went in through the merge specs, not by
+hand. `provenance/figure_audit/alt_verdict_<test>.json` holds a verdict per
+figure, `alt_applied.json` the before and after.
 
-The comparison that makes this urgent: the `longDescription` on the same 152
-figures was checked the same three ways, and when 140 of them were finally read
-against the artwork, **31.7% failed**. Alt text is the same surface, written by
-the same hand, in the same sitting.
+The failures were the same family as before, in miniature: a count or a name
+asserted from memory rather than read -- "Triangle ABC" on a four-sided ABCD,
+"two lines crossing" on three, "two entries replaced" on three, a range true of
+one axis stated for both. One leaked its item's answer (`g7-2024-021`, "y column
+runs in quarters" on a table keyed y = 1/4 x).
 
-The self-consistency check caught one contradiction immediately — `g8-2025-027`'s
-alt said "base radius" where the artwork labels a diameter.
+**What the audit found that nobody was looking for: 23 of 152 crops are wrong
+(15%).** This file knew of two. 21 carry a clipped line of the question's stem
+beneath the artwork, and two have lost part of the figure:
 
-**The method is known and cheap.** Every figure is a committed PNG under
-`assets/`, named in its own `file` field. `provenance/figure_descriptions.md`
-records the two waves, the verdict vocabulary and what the failures had in
-common. Alt text is shorter than a long description, so this is a smaller job
-than the audit that just finished.
+- `g8-2026-037` -- the answer-choice letters **A and B are cut off**; only C and
+  D show. An answer-choice figure with half its letters missing.
+- `g8-2023-034` -- the left border of the Function A table is cut off.
+
+The stray-stem crops, by test: g6 2023 Q2, 2024 Q40, 2025 Q3, 2026 Q8; g7 2023
+Q13 and Q42, 2026 Q18 and Q38; g8 2023 Q19, Q25, Q29; 2024 Q42; 2025 Q17, Q19,
+Q32, Q38, Q46; 2026 Q1, Q29, Q31, Q38. (`g7-2023-005` also has two specks of a
+descender on its top edge.) Each verdict file has the exact text under
+`cropDefect`.
+
+**One cause, not yet fixed.** `grow_for_labels()` in `tools/extract_items.py`
+treats any text span of 12 characters or fewer within 34pt below the artwork as
+a label and grows the crop to enclose it. When the question continues *under*
+the picture, the stem's short spans -- "A'", "?", a fraction -- qualify, the crop
+grows down to their baseline, and the line is sliced at the figure's own left
+and right edges. That is why every stray line is clipped at the sides and nearly
+every one ends in a prime, a fraction or a question mark. It is an extractor
+change, so the rule applies: re-extract all twelve tests with `--stdout` and
+diff every crop, not the 21 you meant to fix. MS343Teaching projects these crops
+to students, so it is visible there first.
 
 ## 2. Three figure descriptions still cannot be written
 
@@ -46,6 +66,12 @@ all `insufficient`:
 
 The crops are at `assets/G7-2023/q16.png`, `assets/G7-2026/q14.png`,
 `assets/G7-2026/q27.png`.
+
+**Two of the three have now been read (2026-09-21), by two readers independently,
+and agree.** `g7-2026-014`, Team B: 2, 4, 3, 5, 3 dots above 0 to 4 -- 17 in all.
+`g7-2026-027`: P (0, 0), Q (1, 4), R (1.5, 6), S (2, 8); the grid is ruled every
+half apple, and **Q is the point at x = 1**. The descriptions themselves are
+still to be written. `g7-2023-016` is still unread.
 
 ## 3. Published data that is still wrong
 

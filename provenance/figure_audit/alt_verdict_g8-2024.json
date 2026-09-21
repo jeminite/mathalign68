@@ -1,0 +1,150 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 8 2024 (12 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 11,
+  "wrong": 0,
+  "insufficient": 1
+ },
+ "items": {
+  "g8-2024-002#0": {
+   "id": "g8-2024-002",
+   "figureIndex": 0,
+   "file": "G8-2024/q02.png",
+   "alt": "A scatter plot of about twenty points on a grid running from 0 to 12 on both axes.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid with x and y axes numbered in single units from 0 to 12, holding 21 plotted points that drift upward from (1,1) to (10,9) with wide scatter.",
+   "replacement": null,
+   "why": "21 points is 'about twenty', and both axes run 0 to 12."
+  },
+  "g8-2024-007#0": {
+   "id": "g8-2024-007",
+   "figureIndex": 0,
+   "file": "G8-2024/q07.png",
+   "alt": "Electrician A's charge given as an equation and Electrician B's given as a table.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed ELECTRICIAN A over the equation C = 25x + 50, and ELECTRICIAN B over a table with columns Time (hours) and Total Charge (dollars): 3 and 130, 4 and 150, 5 and 170.",
+   "replacement": null,
+   "why": "An equation for A and a table for B, as stated."
+  },
+  "g8-2024-018#0": {
+   "id": "g8-2024-018",
+   "figureIndex": 0,
+   "file": "G8-2024/q18.png",
+   "alt": "A scatter plot titled Alligator's Weight with a line of best fit, weight in pounds against time in weeks.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A graph titled ALLIGATOR'S WEIGHT, y-axis Weight (pounds) numbered 5 to 25, x-axis Time (weeks) numbered 0 to 50, with seven plotted points and a straight line drawn through them rising from about 6 to about 20.",
+   "replacement": null,
+   "why": "Title, both axis quantities and the fitted line all match."
+  },
+  "g8-2024-019#0": {
+   "id": "g8-2024-019",
+   "figureIndex": 0,
+   "file": "G8-2024/q19.png",
+   "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
+   "verdict": "insufficient",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane numbered every 2 from -10 to 10. Trapezoid ABCD sits in quadrant III at A(-10,-4), B(-8,-8), C(-4,-8), D(-4,-4), and A'B'C'D' sits in quadrant IV at A'(10,-4), B'(8,-8), C'(4,-8), D'(4,-4). BOTH figures lie below the x-axis, on opposite sides of the y-axis.",
+   "replacement": "Trapezoid ABCD and its image A prime B prime C prime D prime, both below the x-axis, on a coordinate plane ruled from negative 10 to 10.",
+   "why": "Nothing stated is false, but 'its image ... below the x-axis' reads as though only the image is below it, when the original is too; it also omits the coordinate plane and its range, which every sibling alt gives."
+  },
+  "g8-2024-033#0": {
+   "id": "g8-2024-033",
+   "figureIndex": 0,
+   "file": "G8-2024/q33.png",
+   "alt": "A two-column table of x and y values with four rows.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A two-column table headed x and y with four data rows: 2.5 and 7.5, 3.5 and 10.5, 4.5 and 13.5, 5.5 and 16.5.",
+   "replacement": null,
+   "why": "Two columns, x and y, four rows."
+  },
+  "g8-2024-034#0": {
+   "id": "g8-2024-034",
+   "figureIndex": 0,
+   "file": "G8-2024/q34.png",
+   "alt": "Quadrilateral FGHJ and its congruent image F prime G prime H prime J prime on a coordinate plane.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A plane numbered -7 to 7 across and -1 to 7 up. Parallelogram FGHJ at F(0,0), G(4,0), H(6,5), J(2,5); F'G'H'J' at F'(0,0), G'(0,4), H'(-5,6), J'(-5,2), sharing the origin vertex.",
+   "replacement": null,
+   "why": "Both quadrilaterals and their letters match; the image is the same size, so 'congruent' is drawn."
+  },
+  "g8-2024-035#0": {
+   "id": "g8-2024-035",
+   "figureIndex": 0,
+   "file": "G8-2024/q35.png",
+   "alt": "Two cylinders side by side, a large can and a small can, with their dimensions labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two cylinders headed LARGE CAN and SMALL CAN. The large can shows a dashed radius of 3.5 cm and a height of 10 cm; the small can shows a dashed diameter of 7 cm and a height of 6 cm.",
+   "replacement": null,
+   "why": "Two cans with dimensions in centimetres; the alt does not commit to radius or diameter, so it cannot get that wrong."
+  },
+  "g8-2024-039#0": {
+   "id": "g8-2024-039",
+   "figureIndex": 0,
+   "file": "G8-2024/q39.png",
+   "alt": "A cone titled Popcorn Container with its radius and height labelled in inches.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A cone, point down, titled POPCORN CONTAINER. A dashed segment from the centre of the circular top to its rim is bracketed as 3 in., and a vertical bracket beside the cone reads 5 in.",
+   "replacement": null,
+   "why": "Title, cone, radius (centre to rim) and height in inches all match."
+  },
+  "g8-2024-041#0": {
+   "id": "g8-2024-041",
+   "figureIndex": 0,
+   "file": "G8-2024/q41.png",
+   "alt": "Line segment AB drawn on a coordinate plane ruled from negative 10 to 10.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant plane numbered in single units from -10 to 10, with one segment joining plotted points A(2,-4) and B(7,8).",
+   "replacement": null,
+   "why": "Segment AB, its letters and the numbered range match."
+  },
+  "g8-2024-042#0": {
+   "id": "g8-2024-042",
+   "figureIndex": 0,
+   "file": "G8-2024/q42.png",
+   "alt": "Two parallel lines p and q crossed by two transversals AD and AF meeting above them at A, with two angles marked.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two horizontal lines labelled p (upper) and q (lower). Two lines cross at point A above them: one runs down-left through B on p to D below q, the other down-right through C on p to F below q. Angles of 110 degrees and 105 degrees are marked where they cross q.",
+   "replacement": null,
+   "why": "Lines p and q, transversals AD and AF meeting at A above them, and two marked angles, as stated.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the diagram: 'in degrees, of angle BAC ?'."
+  },
+  "g8-2024-044#0": {
+   "id": "g8-2024-044",
+   "figureIndex": 0,
+   "file": "G8-2024/q44.png",
+   "alt": "Dog A's run given as a table and Dog B's given as a graph.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Headed DOG A over a table with columns Time, x (seconds) and Distance, y (feet): 2 and 56, 4 and 112, 6 and 168, 8 and 224. Headed DOG B over a graph of Distance (feet), 0 to 200, against Time (seconds), 0 to 10, with a line from the origin through a plotted point at (8, 200).",
+   "replacement": null,
+   "why": "A table for Dog A and a graph for Dog B, as stated."
+  },
+  "g8-2024-048#0": {
+   "id": "g8-2024-048",
+   "figureIndex": 0,
+   "file": "G8-2024/q48.png",
+   "alt": "A graph titled Store B, total price in dollars against fabric length in yards, with two points labelled.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A graph titled STORE B, Total Price (dollars) numbered 0 to 30 against Fabric Length (yards) numbered 0 to 10, with a line from the origin and two plotted points labelled (2, 5.5) and (6, 16.5).",
+   "replacement": null,
+   "why": "Title, both axis quantities and the two labelled points all match."
+  }
+ }
+}

@@ -96,12 +96,12 @@
   },
   "G7-2024/q15_1.png": {
    "type": "Expression",
-   "alt": "A displayed expression with answer choice A shown beneath it.",
+   "alt": "The expression one third, minus the sum of two thirds and five sevenths, minus two and one fifth, with answer choice A shown beneath it.",
    "long": "A single expression is shown. It is one third, minus the quantity two thirds plus five sevenths, minus the mixed number two and one fifth. Only two thirds and five sevenths are inside the parentheses; the two and one fifth is subtracted after the parentheses close. Below the expression the image also shows answer choice A, negative one fifteenth."
   },
   "G7-2024/q21.png": {
    "type": "Data Table",
-   "alt": "A two-column table of x and y values whose y column runs in quarters.",
+   "alt": "A two-column table of x and y values with four rows, the y values written as decimals.",
    "long": "Columns are x and y. The rows read 9 and 2.25; 13 and 3.25; 17 and 4.25; 21 and 5.25."
   },
   "G7-2024/q35_1.png": {

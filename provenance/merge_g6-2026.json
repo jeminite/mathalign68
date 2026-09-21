@@ -106,12 +106,12 @@
   },
   "G6-2026/q23.png": {
    "type": "Number Lines as Answer Choices",
-   "alt": "Four number lines labelled A, B, C and D, which are this item's answer choices.",
+   "alt": "Four number lines labelled A to D, this item's answer choices, each running from 45 to 55 with a circle at 48.",
    "long": "Four number lines, labeled A, B, C and D, each running from 45 to 55 and marked at every whole number. Line A has a filled circle at 48 and the line to the right of it is drawn heavy. Line B has an open circle at 48 and the line to the right of it is drawn heavy. Line C has a filled circle at 48 and the line to the left of it is drawn heavy. Line D has an open circle at 48 and the line to the left of it is drawn heavy."
   },
   "G6-2026/q29.png": {
    "type": "Diagram",
-   "alt": "A parallelogram divided into two triangles, with its dimensions labelled in metres.",
+   "alt": "A parallelogram divided into two triangles, one of them shaded, with its dimensions labelled in metres.",
    "long": "The fabric is a parallelogram that leans to the right. Its left-hand side is vertical and 6 meters long, and the side running up and to the right from the top of that vertical side is 10 meters long; the other two sides are parallel to these. A horizontal segment 8 meters long runs from the top of the 6 meter side across to the opposite corner, dividing the parallelogram into two triangles, and a right angle is marked where that segment meets the 6 meter side. The lower of the two triangles, the one bounded by the 6 meter vertical side and the 8 meter segment, is shaded."
   },
   "G6-2026/q31.png": {

@@ -1,0 +1,253 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 8 2026 (21 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 20,
+  "wrong": 1,
+  "insufficient": 0
+ },
+ "items": {
+  "g8-2026-001#0": {
+   "id": "g8-2026-001",
+   "figureIndex": 0,
+   "file": "G8-2026/q01.png",
+   "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 10 to 10 on both axes.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -10 to 10 on both axes. Triangle ABC with A (-2, 3), B (2, -2) and C (3, 5).",
+   "replacement": null,
+   "why": "Triangle, letters and axis range match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the grid: 'be the coordinates of vertex A' ?'."
+  },
+  "g8-2026-002#0": {
+   "id": "g8-2026-002",
+   "figureIndex": 0,
+   "file": "G8-2026/q02.png",
+   "alt": "A line graph titled Store B Apple Prices, price in dollars against weight of apples in pounds.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled STORE B APPLE PRICES, x-axis Weight of Apples (pounds) 0 to 5, y-axis Price (dollars) 0 to 11. A straight line from the origin ends in an arrowhead, with one point marked on it at (4, 9).",
+   "replacement": null,
+   "why": "Title and both axis quantities and units match."
+  },
+  "g8-2026-004#0": {
+   "id": "g8-2026-004",
+   "figureIndex": 0,
+   "file": "G8-2026/q04.png",
+   "alt": "A scatter plot titled Ticket Sales with a line of best fit, number of tickets sold against day.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled TICKET SALES, x-axis Day 0 to 10, y-axis Number of Tickets Sold 0 to 35 in fives. Eight points fall from (1, 30) to (9, 10) and a straight falling line is drawn through them.",
+   "replacement": null,
+   "why": "Title, axis quantities and the drawn trend line all match."
+  },
+  "g8-2026-006#0": {
+   "id": "g8-2026-006",
+   "figureIndex": 0,
+   "file": "G8-2026/q06.png",
+   "alt": "A cylindrical can of tomatoes with its width and height labelled.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A cylindrical can with a tomato on its label. A bracket across the top reads 7 cm and a bracket down the side reads 10 cm.",
+   "replacement": null,
+   "why": "A can with its width and height labelled, as stated."
+  },
+  "g8-2026-008#0": {
+   "id": "g8-2026-008",
+   "figureIndex": 0,
+   "file": "G8-2026/q08.png",
+   "alt": "A straight line graphed on a coordinate plane ruled from negative 7 to 7 on both axes.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -7 to 7 on both axes. One rising straight line with arrowheads, crossing the y-axis at -3 and the x-axis at 6.",
+   "replacement": null,
+   "why": "One straight line, and the axis range is right on both axes."
+  },
+  "g8-2026-010#0": {
+   "id": "g8-2026-010",
+   "figureIndex": 0,
+   "file": "G8-2026/q10.png",
+   "alt": "Rectangles JKLM and PQRS plotted on a coordinate plane ruled from negative 10 to 10.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -10 to 10 on both axes. Rectangle JKLM in the first quadrant: J (2, 8), K (2, 4), L (8, 4), M (8, 8). Rectangle PQRS in the second quadrant: P (-4, 1), Q (-2, 1), R (-2, 4), S (-4, 4).",
+   "replacement": null,
+   "why": "Two rectangles, both sets of vertex letters and the axis range match."
+  },
+  "g8-2026-011#0": {
+   "id": "g8-2026-011",
+   "figureIndex": 0,
+   "file": "G8-2026/q11.png",
+   "alt": "Four small coordinate graphs labelled A, B, C and D, which are this item's answer choices.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four small graphs laid out two by two, lettered A (top left), B (below A), C (top right), D (below C). A: five points in a horizontal row at y = 2. B: five scattered points. C: a U-shaped curve with its vertex at the origin. D: two rays from the origin, one rising and one falling to the right.",
+   "replacement": null,
+   "why": "Four lettered coordinate graphs, as stated; the mapping of letters to graphs is the longDescription's job."
+  },
+  "g8-2026-017#0": {
+   "id": "g8-2026-017",
+   "figureIndex": 0,
+   "file": "G8-2026/q17.png",
+   "alt": "Two triangles, EFG and ABC, with their side lengths and angle measures labelled.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A smaller triangle EFG above a larger triangle ABC in the same orientation. EFG: EF 94 cm, EG 66 cm, angle E 76 degrees, angle G 65 degrees; FG and angle F are left unlabelled. ABC: AB 188 cm, AC 132 cm, BC 201 cm, angles A 76, B 39 and C 65 degrees.",
+   "replacement": null,
+   "why": "Both triangles and their letters are right and sides and angles are labelled; that EFG's labelling is partial is detail for the longDescription."
+  },
+  "g8-2026-018#0": {
+   "id": "g8-2026-018",
+   "figureIndex": 0,
+   "file": "G8-2026/q18.png",
+   "alt": "The graph of a function on a coordinate plane ruled from negative 8 to 8.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane with the x-axis labelled from -8 to 8 but the y-axis labelled only from -2 to 8. The graph is three straight pieces: falling from the upper left to (-6, 5), flat at y = 5 to (2, 5), then rising to the upper right, with an arrowhead at each end.",
+   "replacement": "The graph of a function in three straight pieces, on a coordinate plane with x from negative 8 to 8 and y from negative 2 to 8.",
+   "why": "The alt gives one range, negative 8 to 8, for the plane; only the x-axis runs that far. The y-axis stops at -2, so the stated range is wrong for one of the two axes."
+  },
+  "g8-2026-022#0": {
+   "id": "g8-2026-022",
+   "figureIndex": 0,
+   "file": "G8-2026/q22.png",
+   "alt": "Two congruent triangles, ABC and DEF, plotted on a coordinate plane.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane with x labelled -8 to 8 and y -6 to 6. Triangle ABC in the second quadrant: A (-3, 5), B (-5, 1), C (-1, 3). Triangle DEF: D (4, 0), E (6, -4), F (2, -2).",
+   "replacement": null,
+   "why": "Two triangles with the letters as drawn; their side lengths match pairwise, and the stem states they are congruent."
+  },
+  "g8-2026-023#0": {
+   "id": "g8-2026-023",
+   "figureIndex": 0,
+   "file": "G8-2026/q23_1.png",
+   "alt": "Two intersecting lines with two of the angles they form labelled.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two lines crossing, one horizontal and one slanting up to the right. The angle above the horizontal on the left of the slanted line is labelled (4x - 15) degrees and the angle below the horizontal on its right is labelled 115 degrees.",
+   "replacement": null,
+   "why": "Two lines and two labelled angles, as stated."
+  },
+  "g8-2026-025#0": {
+   "id": "g8-2026-025",
+   "figureIndex": 0,
+   "file": "G8-2026/q25.png",
+   "alt": "Triangle ABC and triangle XYZ plotted on a coordinate plane ruled from negative 6 to 6.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -6 to 6 on both axes. Right triangle ABC in the second quadrant: A (-2, 3), B (-5, 1), C (-2, 1). Right triangle XYZ in the first quadrant: X (3, 2), Y (1, 5), Z (1, 2).",
+   "replacement": null,
+   "why": "Both triangles, their letters and the axis range match."
+  },
+  "g8-2026-026#0": {
+   "id": "g8-2026-026",
+   "figureIndex": 0,
+   "file": "G8-2026/q26.png",
+   "alt": "A straight line with a negative slope graphed on a coordinate plane.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane with x labelled in twos from -2 to 8 and y in twos to 6. One falling straight line with arrowheads, crossing the y-axis at 4 and the x-axis at 6.",
+   "replacement": null,
+   "why": "One straight line with a negative slope, as stated."
+  },
+  "g8-2026-029#0": {
+   "id": "g8-2026-029",
+   "figureIndex": 0,
+   "file": "G8-2026/q29.png",
+   "alt": "Triangle ABC plotted on a coordinate plane ruled from negative 9 to 9.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A coordinate plane labelled -9 to 9 on both axes. Right triangle ABC with A (-4, 3), B (-4, -3) and C (7, -3).",
+   "replacement": null,
+   "why": "Triangle, letters and axis range match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the grid: 'ength, in units, of side A'B' ?'."
+  },
+  "g8-2026-031#0": {
+   "id": "g8-2026-031",
+   "figureIndex": 0,
+   "file": "G8-2026/q31.png",
+   "alt": "Two parallel lines a and b cut by two transversals q and t, with three angles numbered.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two horizontal lines labelled a (upper) and b (lower) and two slanted lines labelled t and q that cross each other at a single point on line a. Angles 1 and 2 are numbered at that point below line a, and angle 3 is numbered where t meets line b, above b on the left.",
+   "replacement": null,
+   "why": "Lines a and b, transversals q and t, and three numbered angles all match; the stem states that a is parallel to b.",
+   "cropDefect": "The crop carries two stray, clipped lines of the stem beneath the diagram: 'e of angle 1 is 79 degrees and the measure of angle 3 is 1' and, cut through horizontally at the bottom edge, 'ngle 2 ?'."
+  },
+  "g8-2026-034#0": {
+   "id": "g8-2026-034",
+   "figureIndex": 0,
+   "file": "G8-2026/q34.png",
+   "alt": "Four scatter plots labelled A, B, C and D, which are this item's answer choices.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four first-quadrant scatter plots laid out two by two, lettered A (top left), B (below A), C (top right), D (below C), each on axes 0 to 10. A's points fall to the right, B's rise, C's fall and then rise in a V, and D's are scattered with no pattern.",
+   "replacement": null,
+   "why": "Four lettered scatter plots, as stated."
+  },
+  "g8-2026-035#0": {
+   "id": "g8-2026-035",
+   "figureIndex": 0,
+   "file": "G8-2026/q35.png",
+   "alt": "A right triangle joining Home, Store and Gas Station, drawn with dashed lines.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A right triangle drawn in dashed lines with a dot at each vertex: Store above Home, Gas Station to the right of Home, and a right-angle mark at Home. Home to Store is labelled 12 miles and Home to Gas Station 16 miles; Store to Gas Station is unlabelled.",
+   "replacement": null,
+   "why": "The three place names, the right triangle and the dashed lines all match."
+  },
+  "g8-2026-037#0": {
+   "id": "g8-2026-037",
+   "figureIndex": 0,
+   "file": "G8-2026/q37.png",
+   "alt": "Four tables of x and y values labelled A, B, C and D, which are this item's answer choices.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four four-row tables of x and y laid out two by two. The right-hand pair are lettered C (top) and D (bottom). The left-hand pair have NO visible letters in the crop: their left borders sit on the image's left edge.",
+   "replacement": null,
+   "why": "The alt describes the source artwork correctly -- the stem's choices are A, B, C and D -- but the committed crop has lost two of the four letters it names; the fault is the crop's, not the alt's.",
+   "cropDefect": "The crop cuts off the left of the figure: the answer-choice letters A and B, which stand to the left of the two left-hand tables exactly as C and D stand to the left of the right-hand ones, are missing. The left tables' borders begin at x = 0 of a 926-pixel-wide image."
+  },
+  "g8-2026-038#0": {
+   "id": "g8-2026-038",
+   "figureIndex": 0,
+   "file": "G8-2026/q38.png",
+   "alt": "A number line from 0 to 5 with four points marked A, B, C and D.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A number line with arrowheads labelled 0 to 5 and four points: A a little right of 2, B just left of 3, C just right of 3, and D at 5.",
+   "replacement": null,
+   "why": "Range, count and letters all match.",
+   "cropDefect": "The crop carries a stray, clipped line of the stem beneath the number line: 'point represents the best approxima'."
+  },
+  "g8-2026-044#0": {
+   "id": "g8-2026-044",
+   "figureIndex": 0,
+   "file": "G8-2026/q44.png",
+   "alt": "A graph titled Sean's Bike Trip, distance in miles against time in hours, with five segments labelled A to E.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled SEAN'S BIKE TRIP, x-axis Time (hours) 0 to 5, y-axis Distance (miles) 0 to 45. Five straight segments lettered A to E: rising to 15 miles at 1 hour, flat to 1.5 hours, rising to 40 miles at 3 hours, flat to 4 hours, falling to zero at 5 hours.",
+   "replacement": null,
+   "why": "Title, axis quantities and five lettered segments all match."
+  },
+  "g8-2026-048#0": {
+   "id": "g8-2026-048",
+   "figureIndex": 0,
+   "file": "G8-2026/q48.png",
+   "alt": "A table titled Splash Zone and a scatter plot titled Tube Time, both giving cost against number of people.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "On the left a table titled SPLASH ZONE with columns Number of people, x and Cost, c: 3 and $33.75, 4 and $45.00, 5 and $56.25, 6 and $67.50. On the right a first-quadrant grid titled TUBE TIME, Number of people 0 to 6 against Cost (dollars) 0 to 72 in twelves, with four points from (2, 24) to (5, 60) and no line.",
+   "replacement": null,
+   "why": "Both titles, both forms and both quantities match."
+  }
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "scope": "alt text, read against the committed crop -- batch 3, grade 6 2025 (11 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 11,
+  "wrong": 0,
+  "insufficient": 0
+ },
+ "items": {
+  "g6-2025-001#0": {
+   "id": "g6-2025-001",
+   "figureIndex": 0,
+   "file": "G6-2025/q01.png",
+   "alt": "Four Recipe tables labelled A to D, this item's answer choices, each pairing cups of cheese with ounces of noodles.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four tables laid out two by two, each titled RECIPE with columns Cheese (cups) and Noodles (ounces) and four rows. A is top left, B below A, C top right, D below C. A: 2-8, 3-9, 4-10, 5-11. B: 2-8, 4-16, 6-24, 8-32. C: 8-2, 9-3, 10-4, 11-5. D: 8-2, 16-4, 24-6, 32-8.",
+   "replacement": null,
+   "why": "Four Recipe tables A to D pairing cups of cheese with ounces of noodles, as stated."
+  },
+  "g6-2025-003#0": {
+   "id": "g6-2025-003",
+   "figureIndex": 0,
+   "file": "G6-2025/q03.png",
+   "alt": "Four labelled points W, X, Y and Z plotted on a coordinate plane ruled from negative 6 to 6.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant coordinate plane with both axes numbered -6 to 6 in ones (grid one square beyond). Four labelled points: W (-2, 3), Z (2, 3), X (-2, -3), Y (2, -3).",
+   "replacement": null,
+   "why": "Four points, the four letters and the -6 to 6 range on both axes all match.",
+   "cropDefect": "NEW, not one of the known two. The crop carries a stray, clipped line of the stem beneath the plane: 'd at (-2, 3) ?'. Same defect as g6-2024-040 and g6-2026-008."
+  },
+  "g6-2025-013#0": {
+   "id": "g6-2025-013",
+   "figureIndex": 0,
+   "file": "G6-2025/q13.png",
+   "alt": "The net of a rectangular prism with three of its dimensions labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A net of a rectangular prism: four rectangles in a row separated by dashed folds, with a square flap above the second rectangle and another below the first. Three labels: 2 cm across the top flap, 2 cm for its height, and 5 cm for the height of the row.",
+   "replacement": null,
+   "why": "A rectangular-prism net with exactly three labelled dimensions in centimetres, as stated."
+  },
+  "g6-2025-017#0": {
+   "id": "g6-2025-017",
+   "figureIndex": 0,
+   "file": "G6-2025/q17.png",
+   "alt": "A regular hexagon divided into six triangles from its centre, with side and height labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A regular hexagon cut into six triangles by three lines through a marked centre point. All six sides are labelled 5 cm, and a dashed perpendicular from the centre to the bottom side is labelled 4.3 cm with a right-angle mark.",
+   "replacement": null,
+   "why": "Hexagon, six triangles from the centre, side and height in centimetres: all as stated."
+  },
+  "g6-2025-021#0": {
+   "id": "g6-2025-021",
+   "figureIndex": 0,
+   "file": "G6-2025/q21.png",
+   "alt": "A table titled Favorite Hobbies giving the number of students choosing each of four hobbies.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled FAVORITE HOBBIES with columns Hobby and Number of Students: Reading 12, Playing a musical instrument 11, Watching movies 9, Playing sports 18.",
+   "replacement": null,
+   "why": "Title and the count of four hobbies both match."
+  },
+  "g6-2025-033#0": {
+   "id": "g6-2025-033",
+   "figureIndex": 0,
+   "file": "G6-2025/q33.png",
+   "alt": "Four coordinate grids labelled A to D, this item's answer choices, each with a handful of plotted points.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four first-quadrant grids laid out two by two, axes 0 to 10; A top left, B below A, C top right, D below C. A has 4 points (1,1) (4,4) (7,7) (10,10); B has 5 points (1,1) (3,3) (5,5) (7,7) (9,9); C has 4 points (1,1) (4,3) (7,5) (10,7); D has 4 points (1,1) (3,4) (5,7) (7,10). No lines are drawn.",
+   "replacement": null,
+   "why": "Four grids A to D with four or five plotted points each; 'a handful' is fair and nothing stated is absent."
+  },
+  "g6-2025-036#0": {
+   "id": "g6-2025-036",
+   "figureIndex": 0,
+   "file": "G6-2025/q36.png",
+   "alt": "A parallelogram with part of it shaded, its base, height and the unshaded offset labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A right-leaning parallelogram. A dashed vertical from the top-left corner to the bottom edge cuts off an unshaded triangle on the left; the rest is shaded grey. Labels: 2.4 cm across the top edge, 3 cm for the vertical height at the right, and 1.2 cm under the unshaded part of the bottom edge.",
+   "replacement": null,
+   "why": "Part shaded, and the base length, height and unshaded offset labelled in centimetres, as stated."
+  },
+  "g6-2025-041#0": {
+   "id": "g6-2025-041",
+   "figureIndex": 0,
+   "file": "G6-2025/q41.png",
+   "alt": "A table titled Cheese Prices pairing blocks of cheese with a total price in dollars.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled CHEESE PRICES with columns Amount of Cheese, b (blocks) and Total Price, t (dollars): 2-112, 4-224, 6-336, 8-448.",
+   "replacement": null,
+   "why": "Title and both quantities as stated."
+  },
+  "g6-2025-042#0": {
+   "id": "g6-2025-042",
+   "figureIndex": 0,
+   "file": "G6-2025/q42.png",
+   "alt": "The net of a right square pyramid with its base and triangle height labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A net of a square pyramid: a dashed square base with a triangle on each of its four sides. The base is labelled 5 cm and the top triangle's height is labelled 3.5 cm.",
+   "replacement": null,
+   "why": "Base and triangle height labelled in centimetres, as stated."
+  },
+  "g6-2025-044#0": {
+   "id": "g6-2025-044",
+   "figureIndex": 0,
+   "file": "G6-2025/q44.png",
+   "alt": "A grid titled Paige's Garden with two labelled points, Broccoli and Cabbage.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant grid titled PAIGE'S GARDEN, x-axis numbered -4 to 6 and y-axis -4 to 3. Two labelled points: Broccoli at (-2, -3) and Cabbage at (5, -3).",
+   "replacement": null,
+   "why": "Title, two points and both labels match."
+  },
+  "g6-2025-046#0": {
+   "id": "g6-2025-046",
+   "figureIndex": 0,
+   "file": "G6-2025/q46.png",
+   "alt": "A rectangle representing a rug, with its width given as a number and its height in terms of x.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A plain rectangle with a dimension line under it reading 9 feet and one at its right reading 2x feet.",
+   "replacement": null,
+   "why": "Width a number, height in terms of x, as stated."
+  }
+ }
+}

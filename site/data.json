@@ -2,7 +2,7 @@
   "meta": {
     "schemaVersion": "1.0",
     "generatedBy": "publish.py",
-    "built": "2026-09-14T20:31:37",
+    "built": "2026-09-21T10:45:03",
     "project": "MathAlign68",
     "what": "NYS Grades 6-8 mathematics tests, Next Generation standards era, mapped to standards, statewide difficulty and the Imagine IM 6-8 curriculum.",
     "contract": "This file is the public contract. Build on it rather than on the project's internals: it is versioned with each deploy, contains no student data by construction, and reproduces no item text.",
@@ -4431,7 +4431,7 @@
         {
           "file": "G6-2023/q32_1.png",
           "type": "Data Table",
-          "alt": "A two-row table titled Teachers and Students with two entries replaced by question marks.",
+          "alt": "A two-row table titled Teachers and Students with three entries replaced by question marks.",
           "longDescription": "The teacher row reads 2, question mark, 8, 12, question mark. The student row reads 5, 15, question mark, 30, 75."
         },
         {
@@ -7814,7 +7814,7 @@
         {
           "file": "G6-2024/q37.png",
           "type": "Coordinate Plane",
-          "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
+          "alt": "Four labelled points A, B, C and D on a coordinate plane numbered in twos, negative 12 to 12 across and negative 6 to 6 up.",
           "longDescription": "A is at negative 6, 6; D is at 4, 6; B is at 2, negative 4; C is at 12, negative 4."
         }
       ],
@@ -13508,7 +13508,7 @@
         {
           "file": "G6-2026/q23.png",
           "type": "Number Lines as Answer Choices",
-          "alt": "Four number lines labelled A, B, C and D, which are this item's answer choices.",
+          "alt": "Four number lines labelled A to D, this item's answer choices, each running from 45 to 55 with a circle at 48.",
           "longDescription": "Four number lines, labeled A, B, C and D, each running from 45 to 55 and marked at every whole number. Line A has a filled circle at 48 and the line to the right of it is drawn heavy. Line B has an open circle at 48 and the line to the right of it is drawn heavy. Line C has a filled circle at 48 and the line to the left of it is drawn heavy. Line D has an open circle at 48 and the line to the left of it is drawn heavy."
         }
       ],
@@ -14031,7 +14031,7 @@
         {
           "file": "G6-2026/q29.png",
           "type": "Diagram",
-          "alt": "A parallelogram divided into two triangles, with its dimensions labelled in metres.",
+          "alt": "A parallelogram divided into two triangles, one of them shaded, with its dimensions labelled in metres.",
           "longDescription": "The fabric is a parallelogram that leans to the right. Its left-hand side is vertical and 6 meters long, and the side running up and to the right from the top of that vertical side is 10 meters long; the other two sides are parallel to these. A horizontal segment 8 meters long runs from the top of the 6 meter side across to the opposite corner, dividing the parallelogram into two triangles, and a right angle is marked where that segment meets the 6 meter side. The lower of the two triangles, the one bounded by the 6 meter vertical side and the 8 meter segment, is shaded."
         }
       ],
@@ -19210,7 +19210,7 @@
         {
           "file": "G7-2024/q15_1.png",
           "type": "Expression",
-          "alt": "A displayed expression with answer choice A shown beneath it.",
+          "alt": "The expression one third, minus the sum of two thirds and five sevenths, minus two and one fifth, with answer choice A shown beneath it.",
           "longDescription": "A single expression is shown. It is one third, minus the quantity two thirds plus five sevenths, minus the mixed number two and one fifth. Only two thirds and five sevenths are inside the parentheses; the two and one fifth is subtracted after the parentheses close. Below the expression the image also shows answer choice A, negative one fifteenth."
         }
       ],
@@ -19441,7 +19441,7 @@
         {
           "file": "G7-2024/q21.png",
           "type": "Data Table",
-          "alt": "A two-column table of x and y values whose y column runs in quarters.",
+          "alt": "A two-column table of x and y values with four rows, the y values written as decimals.",
           "longDescription": "Columns are x and y. The rows read 9 and 2.25; 13 and 3.25; 17 and 4.25; 21 and 5.25."
         }
       ],
@@ -28911,7 +28911,7 @@
         {
           "file": "G8-2023/q02.png",
           "type": "Graphs as Answer Choices",
-          "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+          "alt": "Four scatter plots labelled A to D, this item's answer choices, each showing ten points on a grid numbered from 0 to 11.",
           "longDescription": "Four scatter plots are shown, each on axes labeled x and y and marked in single units from 0 to 11. Plot A is at the upper left, plot C at the upper right, plot B at the lower left, and plot D at the lower right. In plot A ten points bend upward: they sit almost on the x-axis at about (1, 0.2), (2, 0.2) and (3.6, 0.4), then climb more and more steeply through about (5, 1), (6.3, 1.8), (7.3, 2.9) and (8, 4.1) to about (9, 5.5), (9, 7) and (9, 8.3), so the path curves rather than running straight. In plot C ten points rise to a peak and then fall, forming an arch: about (0.2, 4.5), (1, 6), (1.2, 6.5), (1.5, 8), (3, 9), (5, 10), (7, 9), (7.5, 7), (8.5, 5) and (9, 4). In plot B ten points are scattered with no pattern at all: about (2, 5), (3, 9), (4, 6.5), (4.6, 9), (5, 4.5), (7, 7), (7, 4), (8, 9), (9, 7) and (9, 6.5). In plot D ten points fall from upper left to lower right in a narrow, nearly straight band: about (1, 10), (1.5, 9), (2, 8), (3, 7), (4, 6), (5.5, 5), (6, 4), (7, 3), (8.5, 2) and (10, 2)."
         }
       ],
@@ -30604,7 +30604,7 @@
         {
           "file": "G8-2023/q33.png",
           "type": "Coordinate Plane",
-          "alt": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+          "alt": "A straight line with a positive slope graphed on a coordinate plane numbered from negative 6 to 6.",
           "longDescription": "A coordinate plane is shown with both axes marked in single units from -6 to 6. A single straight line rises from the lower left to the upper right across the whole grid. Two points are plotted on it: (0, 1), on the y-axis, and (6, 4). The line also crosses the x-axis at (-2, 0)."
         }
       ],
@@ -33241,7 +33241,7 @@
         {
           "file": "G8-2024/q19.png",
           "type": "Coordinate Plane",
-          "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
+          "alt": "Trapezoid ABCD and its image A prime B prime C prime D prime, both below the x-axis, on a coordinate plane numbered in twos from negative 10 to 10.",
           "longDescription": "ABCD lies left of the y-axis and its image lies right of it, mirrored across the y-axis."
         }
       ],
@@ -35701,7 +35701,7 @@
         {
           "file": "G8-2025/q04_1.png",
           "type": "Diagram",
-          "alt": "A shaded plane slicing vertically through a square pyramid.",
+          "alt": "A shaded plane slicing vertically through a rectangular pyramid.",
           "longDescription": "The cross-section runs from the apex straight down to the base, cutting the pyramid in two."
         }
       ],
@@ -35826,7 +35826,7 @@
         {
           "file": "G8-2025/q07.png",
           "type": "Diagram",
-          "alt": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+          "alt": "A person flying a kite on a 20 ft string, with the kite's height above the hand labelled x and the ground distance 15 ft.",
           "longDescription": "The string is 20 feet, the person's hand is 4 feet above the ground, the kite is x feet above that, and the horizontal distance is 15 feet."
         }
       ],
@@ -36605,7 +36605,7 @@
         {
           "file": "G8-2025/q19.png",
           "type": "Coordinate Plane",
-          "alt": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+          "alt": "Four-sided figure ABCD drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
           "longDescription": "A coordinate plane is shown with both axes marked in single units from -10 to 10. Four-sided figure ABCD sits above the x-axis and just left of the y-axis. Its vertices are A at (-3, 4), B at (-3, 1), C at (-1, 2) and D at (-1, 3). Side AB is vertical and 3 units long, and side DC is vertical and 1 unit long."
         }
       ],
@@ -37052,7 +37052,7 @@
         {
           "file": "G8-2025/q31.png",
           "type": "Diagram",
-          "alt": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+          "alt": "Three lines crossing at one point, with two of the six angles they form labelled in terms of x.",
           "longDescription": "Three lines cross at a single point: one horizontal, one rising to the upper right, and one rising to the upper left. The angle marked 6x minus 23 degrees lies above the horizontal line, between the horizontal ray going left and the ray going up to the left. The angle marked 4x plus 11 degrees lies below the horizontal line, between the horizontal ray going right and the ray going down to the right. The two are vertical angles."
         }
       ],
@@ -40629,7 +40629,7 @@
         {
           "file": "G8-2026/q18.png",
           "type": "Coordinate Plane",
-          "alt": "The graph of a function on a coordinate plane ruled from negative 8 to 8.",
+          "alt": "The graph of a function in three straight pieces, on a coordinate plane with x from negative 8 to 8 and y from negative 2 to 8.",
           "longDescription": "The graph falls steeply from the upper left to the point negative 6, 5, runs flat at a height of 5 from x equals negative 6 to x equals 2, then rises steadily to the upper right."
         }
       ],

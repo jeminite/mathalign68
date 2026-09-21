@@ -1,0 +1,117 @@
+{
+ "scope": "alt text, read against the committed crop -- batch 2, grade 6 2024 (9 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 8,
+  "wrong": 1,
+  "insufficient": 0
+ },
+ "items": {
+  "g6-2024-011#0": {
+   "id": "g6-2024-011",
+   "figureIndex": 0,
+   "file": "G6-2024/q11.png",
+   "alt": "Four number lines labelled A to D, this item's answer choices, each running from negative 6 to 6 with a mark at negative 3.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four stacked number lines lettered A, B, C, D, each labelled at every integer from -6 to 6 with arrowheads at both ends. A: filled circle at -3, heavy to the left. B: filled circle at -3, heavy to the right. C: open circle at -3, heavy to the left. D: open circle at -3, heavy to the right.",
+   "replacement": null,
+   "why": "Four lines, A to D, -6 to 6, a circle at -3 on each: all as stated."
+  },
+  "g6-2024-020#0": {
+   "id": "g6-2024-020",
+   "figureIndex": 0,
+   "file": "G6-2024/q20.png",
+   "alt": "A cube with one edge length labelled in inches.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A cube drawn in oblique view with a single dimension line under the front bottom edge reading 2 1/2 in.",
+   "replacement": null,
+   "why": "One edge labelled, in inches, as stated."
+  },
+  "g6-2024-028#0": {
+   "id": "g6-2024-028",
+   "figureIndex": 0,
+   "file": "G6-2024/q28.png",
+   "alt": "A trapezoid with its two parallel sides and its height labelled in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "An isosceles trapezoid with the top side labelled 10 cm, the bottom side 16 cm, and a dashed perpendicular height of 15 cm with a right-angle mark at its foot.",
+   "replacement": null,
+   "why": "Two parallel sides and the height labelled in centimetres, as stated."
+  },
+  "g6-2024-032#0": {
+   "id": "g6-2024-032",
+   "figureIndex": 0,
+   "file": "G6-2024/q32.png",
+   "alt": "The net of a triangular prism with its dimensions labelled in feet.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A net: a row of three rectangles 4 ft tall, labelled 2.5 ft, 6 ft and 6.5 ft wide, with a right triangle above and another below the middle (dashed) rectangle. Each triangle has legs 2.5 ft and 6 ft, right angle marked, and the lower one's slanted side is labelled 6.5 ft.",
+   "replacement": null,
+   "why": "A triangular-prism net with every dimension in feet, as stated."
+  },
+  "g6-2024-037#0": {
+   "id": "g6-2024-037",
+   "figureIndex": 0,
+   "file": "G6-2024/q37.png",
+   "alt": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A four-quadrant coordinate plane ruled two units to the square. The x-axis is numbered -12 to 12 in twos (grid reaching one square further each way); the y-axis is numbered only -6 to 6 (grid reaching to 8 and -8). Four labelled points: A (-6, 6), D (4, 6), B (2, -4), C (12, -4).",
+   "replacement": "Four labelled points A, B, C and D on a coordinate plane numbered in twos, negative 12 to 12 across and negative 6 to 6 up.",
+   "why": "'Ruled from negative 12 to 12' is true of the x-axis only: the y-axis is numbered -6 to 6 and the grid stops at 8, so the plane is a wide rectangle, not the square the alt describes. The points and their letters are right."
+  },
+  "g6-2024-040#0": {
+   "id": "g6-2024-040",
+   "figureIndex": 0,
+   "file": "G6-2024/q40.png",
+   "alt": "A rectangular flag with a white triangular notch cut into one side, the rest shaded, dimensions in centimetres.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A rectangle shaded grey, 9 cm along the bottom and 5 cm up the right side, with a white triangle whose base is the whole right-hand edge and whose apex points into the flag; a dashed 4.5 cm segment with a right-angle mark runs from the apex to the right edge.",
+   "replacement": null,
+   "why": "Rectangle, white triangular notch in one side, remainder shaded, centimetres: all as stated.",
+   "cropDefect": "CONFIRMED. The crop carries a stray, clipped line of the stem beneath the figure: ', in square centimeters, of the shaded section of the flag?'."
+  },
+  "g6-2024-044#0": {
+   "id": "g6-2024-044",
+   "figureIndex": 0,
+   "file": "G6-2024/q44.png",
+   "alt": "A cube built from smaller unit cubes.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A cube in oblique view built from unit cubes, 4 by 4 on the front face, 4 by 4 on the top and 4 by 4 on the right side. No labels. There is a little empty margin below and to the right of the drawing but no stray text.",
+   "replacement": null,
+   "why": "A cube of smaller unit cubes, as stated; the alt rightly leaves the count of 4 per edge to the longDescription, since the count is the answer."
+  },
+  "g6-2024-045#0": {
+   "id": "g6-2024-045",
+   "figureIndex": 0,
+   "file": "G6-2024/q45.png",
+   "alt": "A first-quadrant grid with two labelled points, House and School.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid with both axes numbered 0 to 7. Two labelled points: House at (3, 6) and School at (3, 2).",
+   "replacement": null,
+   "why": "First quadrant, two points, both labels: as stated."
+  },
+  "g6-2024-046#0": {
+   "id": "g6-2024-046",
+   "figureIndex": 0,
+   "file": "G6-2024/q46.png",
+   "alt": "Two tables, Rex's Savings and Nero's Savings, each pairing months with dollars saved.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two tables side by side, REX'S SAVINGS and NERO'S SAVINGS, each with rows Number of Months and Savings (dollars) and four columns. Rex: 2, 4, 6, 8 months for 18, 36, 54, 72. Nero: 3, 6, 9, 12 months for 36, 72, 108, 144.",
+   "replacement": null,
+   "why": "Both titles and both quantities as stated."
+  }
+ }
+}

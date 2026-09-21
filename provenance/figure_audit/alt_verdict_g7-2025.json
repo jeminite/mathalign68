@@ -1,0 +1,161 @@
+{
+ "scope": "alt text, read against the committed crop -- grade 7 2025 (13 of 152 figures)",
+ "question": "Is every fact the alt text states shown in the artwork, and does it identify the figure? Alt text is an identification, not a substitute for the picture: reaching the answer is the longDescription's job and is not asked of it here.",
+ "vocabulary": {
+  "sound": "every stated fact is drawn and the figure is identified",
+  "wrong": "states something the artwork does not show",
+  "insufficient": "true, but does not identify the figure or omits what distinguishes it from its neighbours"
+ },
+ "audited": "2026-09-21",
+ "tally": {
+  "sound": 12,
+  "wrong": 1,
+  "insufficient": 0
+ },
+ "items": {
+  "g7-2025-002#0": {
+   "id": "g7-2025-002",
+   "figureIndex": 0,
+   "file": "G7-2025/q02.png",
+   "alt": "Four Calorie Information tables labelled A to D, this item's answer choices, each pairing cheese slices with calories.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Four tables each titled CALORIE INFORMATION with columns Number of Cheese Slices and Number of Calories, lettered A and B down the left and C and D down the right. A: 2/226, 4/452, 5/678, 8/904. B: 2/208, 4/416, 5/624, 8/832. C: 1/106, 2/212, 3/318, 4/424. D: 1/103, 2/206, 3/412, 4/824.",
+   "replacement": null,
+   "why": "Four tables, the title, the letters and both column headings match.",
+   "cropDefect": "Not a defect of content: the crop has a band of empty white space beneath tables B and D."
+  },
+  "g7-2025-003#0": {
+   "id": "g7-2025-003",
+   "figureIndex": 0,
+   "file": "G7-2025/q03_1.png",
+   "alt": "Answer choice A: a tree diagram with two main courses, each branching to two desserts.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "The letter A beside a tree diagram with rows labelled Main Course and Dessert. Two main courses, C and S, each branch to P and B.",
+   "replacement": null,
+   "why": "Two main courses, two dessert branches each, as stated."
+  },
+  "g7-2025-003#1": {
+   "id": "g7-2025-003",
+   "figureIndex": 1,
+   "file": "G7-2025/q03_2.png",
+   "alt": "Answer choice B: a tree diagram with three main courses, each branching to two desserts.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "The letter B beside a tree diagram with rows labelled Main Course and Dessert. Three main courses, C, S and F, each branch to P and B.",
+   "replacement": null,
+   "why": "Three main courses, two dessert branches each, as stated."
+  },
+  "g7-2025-003#2": {
+   "id": "g7-2025-003",
+   "figureIndex": 2,
+   "file": "G7-2025/q03_3.png",
+   "alt": "Answer choice C: a tree diagram with three main courses whose dessert branches repeat the same letter.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "The letter C beside a tree diagram with rows labelled Main Course and Dessert. Three main courses, C, S and F, each with two branches: C to P and P, S to B and B, F to P and P.",
+   "replacement": null,
+   "why": "Each main course's two branches do repeat one letter."
+  },
+  "g7-2025-003#3": {
+   "id": "g7-2025-003",
+   "figureIndex": 3,
+   "file": "G7-2025/q03_4.png",
+   "alt": "Answer choice D: a tree diagram with three main courses, each branching to four desserts.",
+   "verdict": "wrong",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "The letter D beside a tree diagram with rows labelled Main Course and Dessert. Three main courses, C, S and F, each with four branches: C to P, B, S, F; S to P, B, C, F; F to P, B, C, S. Only P and B are desserts; the other two letters under each main course are the other two main courses.",
+   "replacement": "Answer choice D: a tree diagram with three main courses, each with four branches, to both desserts and to the other two main courses.",
+   "why": "The alt says each main course branches to four desserts; the artwork shows two desserts (P, B) plus two main-course letters under each, and the stem defines only two desserts. A marginal call: the row is labelled Dessert, but what distinguishes D is exactly that the extra letters are not desserts."
+  },
+  "g7-2025-008#0": {
+   "id": "g7-2025-008",
+   "figureIndex": 0,
+   "file": "G7-2025/q08_1.png",
+   "alt": "A table titled Ticket Costs pairing tickets purchased with total cost in dollars.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled TICKET COSTS with columns Number of Tickets Purchased, t and Total Cost, c (dollars); three rows: 3 and 81.00, 5 and 135.00, 10 and 270.00.",
+   "replacement": null,
+   "why": "Title and both column headings match."
+  },
+  "g7-2025-010#0": {
+   "id": "g7-2025-010",
+   "figureIndex": 0,
+   "file": "G7-2025/q10_1.png",
+   "alt": "A rectangle with its height labelled in feet and its width labelled x.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A plain rectangle, wider than tall, with a dimension line reading 6.5 ft down the right side and one reading x along the bottom.",
+   "replacement": null,
+   "why": "Height in feet and width x, as stated."
+  },
+  "g7-2025-014#0": {
+   "id": "g7-2025-014",
+   "figureIndex": 0,
+   "file": "G7-2025/q14.png",
+   "alt": "A graph titled Alexis's Earnings, wages in dollars against hours worked, with three points labelled.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled ALEXIS'S EARNINGS, x-axis Number of Hours 0 to 12, y-axis Wages Earned (dollars) 0 to 160. A line from the origin passes through three plotted points labelled (4, 55), (7, 96.25) and (11, 151.25).",
+   "replacement": null,
+   "why": "Title, both axis quantities and the three labelled points all match."
+  },
+  "g7-2025-033#0": {
+   "id": "g7-2025-033",
+   "figureIndex": 0,
+   "file": "G7-2025/q33.png",
+   "alt": "A graph titled Yogurt Prices, price in dollars against number of containers.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A first-quadrant grid titled YOGURT PRICES, x-axis Number of Containers 0 to 5, y-axis Price (dollars) 0 to 4. Four plotted points at (1, 0.50), (2, 1), (3, 1.50) and (4, 2), with no line drawn through them.",
+   "replacement": null,
+   "why": "The alt is true and claims no line. Note for the figure's `type` field, not the alt: it is recorded as 'Line Graph' and the artwork is a point plot with no line."
+  },
+  "g7-2025-035#0": {
+   "id": "g7-2025-035",
+   "figureIndex": 0,
+   "file": "G7-2025/q35.png",
+   "alt": "Two box plots titled Number of Words Typed, one for Semester 1 and one for Semester 2, on a scale from 25 to 75.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two box plots titled NUMBER OF WORDS TYPED over one number line labelled Average Number of Words Typed (per minute), 25 to 75 in fives. Semester 1: 30, 35, 40, 45, 50. Semester 2: 30, 40, 55, 65, 70.",
+   "replacement": null,
+   "why": "Title, both semester labels and the 25-to-75 scale match."
+  },
+  "g7-2025-039#0": {
+   "id": "g7-2025-039",
+   "figureIndex": 0,
+   "file": "G7-2025/q39.png",
+   "alt": "A histogram titled Books Read, number of students against a range of books.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A histogram titled BOOKS READ, y-axis Number of Students 0 to 14 in twos, x-axis Number of Books with three bars: 0-3 at 9, 4-7 at 13 and 8-11 at 6.",
+   "replacement": null,
+   "why": "Title and both axis quantities match; the bars are over ranges of books."
+  },
+  "g7-2025-041#0": {
+   "id": "g7-2025-041",
+   "figureIndex": 0,
+   "file": "G7-2025/q41.png",
+   "alt": "Two spinners, A divided into three equal sections and B into four, each with an arrow.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "Two circular spinners titled SPINNER A and SPINNER B. A has three equal sections numbered 1, 2, 3 with its arrow in section 1; B has four equal sections numbered 5, 6, 7, 8 with its arrow in section 7.",
+   "replacement": null,
+   "why": "Three and four sections counted, each spinner with an arrow."
+  },
+  "g7-2025-045#0": {
+   "id": "g7-2025-045",
+   "figureIndex": 0,
+   "file": "G7-2025/q45.png",
+   "alt": "A table titled Soda Prices pairing a number of cans with a price in dollars.",
+   "verdict": "sound",
+   "readTheCrop": true,
+   "whatTheArtworkShows": "A table titled SODA PRICES with columns Number of Cans and Price (dollars); four rows: 2 and 5.50, 4 and 11.00, 8 and 22.00, 10 and 27.50.",
+   "replacement": null,
+   "why": "Title and both column headings match."
+  }
+ }
+}

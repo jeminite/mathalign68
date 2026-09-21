@@ -1,0 +1,117 @@
+{
+ "scope": "alt text on all 152 figures, each read against its committed crop",
+ "audited": "2026-09-21",
+ "firstReading": {
+  "sound": 137,
+  "wrong": 11,
+  "insufficient": 4
+ },
+ "overruledOnSecondReading": {
+  "g7-2025-003#3": "Kept as written. The artwork itself labels the lower row 'Dessert', so 'each branching to four desserts' is what is drawn; that two of the four letters are main courses is what makes D a distractor, and saying so is the longDescription's job."
+ },
+ "final": {
+  "sound": 138,
+  "failed": 14,
+  "rate": 0.092
+ },
+ "applied": {
+  "g6-2023-032#0": {
+   "file": "G6-2023/q32_1.png",
+   "verdict": "wrong",
+   "was": "A two-row table titled Teachers and Students with two entries replaced by question marks.",
+   "now": "A two-row table titled Teachers and Students with three entries replaced by question marks.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g7-2024-015#0": {
+   "file": "G7-2024/q15_1.png",
+   "verdict": "insufficient",
+   "was": "A displayed expression with answer choice A shown beneath it.",
+   "now": "The expression one third, minus the sum of two thirds and five sevenths, minus two and one fifth, with answer choice A shown beneath it.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g7-2024-021#0": {
+   "file": "G7-2024/q21.png",
+   "verdict": "wrong",
+   "was": "A two-column table of x and y values whose y column runs in quarters.",
+   "now": "A two-column table of x and y values with four rows, the y values written as decimals.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2026-018#0": {
+   "file": "G8-2026/q18.png",
+   "verdict": "wrong",
+   "was": "The graph of a function on a coordinate plane ruled from negative 8 to 8.",
+   "now": "The graph of a function in three straight pieces, on a coordinate plane with x from negative 8 to 8 and y from negative 2 to 8.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g6-2024-037#0": {
+   "file": "G6-2024/q37.png",
+   "verdict": "wrong",
+   "was": "Four labelled points A, B, C and D plotted on a coordinate plane ruled from negative 12 to 12.",
+   "now": "Four labelled points A, B, C and D on a coordinate plane numbered in twos, negative 12 to 12 across and negative 6 to 6 up.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2025-004#0": {
+   "file": "G8-2025/q04_1.png",
+   "verdict": "wrong",
+   "was": "A shaded plane slicing vertically through a square pyramid.",
+   "now": "A shaded plane slicing vertically through a rectangular pyramid.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2025-007#0": {
+   "file": "G8-2025/q07.png",
+   "verdict": "wrong",
+   "was": "A person flying a kite, with the string, the height and the ground distance labelled in feet.",
+   "now": "A person flying a kite on a 20 ft string, with the kite's height above the hand labelled x and the ground distance 15 ft.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2025-019#0": {
+   "file": "G8-2025/q19.png",
+   "verdict": "wrong",
+   "was": "Triangle ABC drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "now": "Four-sided figure ABCD drawn left of the y-axis on a coordinate plane ruled from negative 10 to 10.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2025-031#0": {
+   "file": "G8-2025/q31.png",
+   "verdict": "wrong",
+   "was": "Two lines crossing, with the two angles either side of the crossing labelled in terms of x.",
+   "now": "Three lines crossing at one point, with two of the six angles they form labelled in terms of x.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2024-019#0": {
+   "file": "G8-2024/q19.png",
+   "verdict": "insufficient",
+   "was": "Trapezoid ABCD and its image A prime B prime C prime D prime below the x-axis.",
+   "now": "Trapezoid ABCD and its image A prime B prime C prime D prime, both below the x-axis, on a coordinate plane numbered in twos from negative 10 to 10.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g6-2026-023#0": {
+   "file": "G6-2026/q23.png",
+   "verdict": "insufficient",
+   "was": "Four number lines labelled A, B, C and D, which are this item's answer choices.",
+   "now": "Four number lines labelled A to D, this item's answer choices, each running from 45 to 55 with a circle at 48.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g6-2026-029#0": {
+   "file": "G6-2026/q29.png",
+   "verdict": "insufficient",
+   "was": "A parallelogram divided into two triangles, with its dimensions labelled in metres.",
+   "now": "A parallelogram divided into two triangles, one of them shaded, with its dimensions labelled in metres.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2023-002#0": {
+   "file": "G8-2023/q02.png",
+   "verdict": "wrong",
+   "was": "Four scatter plots labelled A to D, this item's answer choices, each showing about a dozen points on a ten-by-ten grid.",
+   "now": "Four scatter plots labelled A to D, this item's answer choices, each showing ten points on a grid numbered from 0 to 11.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  },
+  "g8-2023-033#0": {
+   "file": "G8-2023/q33.png",
+   "verdict": "wrong",
+   "was": "A straight line with a positive slope graphed on a coordinate plane ruled from negative 7 to 7.",
+   "now": "A straight line with a positive slope graphed on a coordinate plane numbered from negative 6 to 6.",
+   "secondReading": "confirmed against the crop by a second reader, 2026-09-21"
+  }
+ }
+}
