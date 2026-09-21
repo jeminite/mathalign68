@@ -10,6 +10,8 @@ commit message.
 project relates to RegentsAlign, AlgebraTeaching, MS343Teaching and TeachingBrain. If a
 relationship changes, fix it there first, then update the pointer here.
 
+**Anything bigger than one sitting starts with four lines of intent** at the top of its entry in `RESUME.md` or `REVIEW.md` -- true when done, must not change, out of scope, checked against what. The convention is written once, in `~/Desktop/ClaudeProjects/CLAUDE.md`; read it there. The fourth line exists because of this project: `provenance/tall_delimiters.md`.
+
 **MS343Teaching imports this project's `templates/analyze/engine.js` and reads its
 `site/data.json`**, both one way and both on published files. So the engine is a small public API
 as well as this site's internals: renaming what it returns breaks a caller that is invisible from
